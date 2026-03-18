@@ -1,0 +1,113 @@
+name: Foundation Models
+group: models
+color: "oklch(0.62 0.20 270)"
+icon: Brain
+subcategories:
+  - name: Model Providers
+    items:
+      - name: Alibaba Cloud (Qwen)
+        logo: alibaba-cloud-qwen.webp
+        homepage_url: https://qwen.ai
+        repo_url: https://github.com/QwenLM/Qwen3
+        description: "Alibaba Cloud's Qwen model family — Qwen3-Coder and Qwen3-Max lead the open-weight coding model landscape"
+      - name: ByteDance
+        logo: bytedance.webp
+        homepage_url: https://www.volcengine.com/
+        description: "ByteDance's Volcengine AI division — Doubao-Seed-Code model integrated into the Trae IDE"
+      - name: Cognition (SWE-1)
+        logo: cognition-swe-1.webp
+        homepage_url: https://cognition.ai
+        description: "Creator of SWE-1.5 — a fast-agent frontier-size model with near-SOTA coding performance"
+      - name: DeepSeek
+        logo: deepseek.webp
+        homepage_url: https://deepseek.com
+        repo_url: https://github.com/deepseek-ai/DeepSeek-V3
+        description: "Chinese AI lab behind DeepSeek-V3 and R1 series — high-performance open-weight models"
+      - name: Inception Labs
+        logo: inception-labs.webp
+        homepage_url: https://inceptionlabs.ai
+        description: "Creator of Mercury Code — a diffusion LLM optimized for coding workflows with 128K context"
+      - name: JetBrains AI
+        logo: jetbrains-ai.webp
+        homepage_url: https://www.jetbrains.com/
+        repo_url: https://huggingface.co/JetBrains/Mellum-4b-base
+        description: "JetBrains' Mellum — a 4B parameter open-source model for code completion"
+      - name: Moonshot AI
+        logo: moonshot-ai.webp
+        homepage_url: https://moonshot.cn
+        description: "Chinese AI startup behind Kimi — 1M-token context window with strong long-document reasoning"
+      - name: Nous Research
+        logo: nous-research.webp
+        homepage_url: https://nousresearch.com/
+        repo_url: https://github.com/NousResearch/hermes-agent
+        description: "Open-source AI research collective behind the Hermes and NousCoder model families"
+      - name: Salesforce AI Research
+        logo: salesforce-ai-research.webp
+        homepage_url: https://www.salesforceairesearch.com/
+        description: "Creator of CoDA — a diffusion-based language model for code generation"
+      - name: Z.ai (GLM)
+        logo: z-ai-glm.webp
+        homepage_url: https://z.ai
+        description: "Creator of the GLM model family for intelligent agents"
+  - name: Coding Model Timeline
+    items:
+      - name: Claude Opus 4.6
+        logo: claude-opus-4-6.webp
+        homepage_url: https://www.anthropic.com/news/claude-opus-4-6
+        description: "Anthropic (Feb 2026) — smartest model with improved coding, 1M token context (beta), SOTA on Terminal-Bench 2.0"
+      - name: GPT-5.3-Codex
+        logo: gpt-5-3-codex.webp
+        homepage_url: https://openai.com/index/introducing-gpt-5-3-codex
+        description: "OpenAI (Feb 2026) — most capable agentic coding model; 25% faster, first model to help create itself"
+      - name: Kimi K2.5
+        logo: hugging-face.webp
+        homepage_url: https://huggingface.co/moonshotai/Kimi-K2.5
+        description: "Moonshot AI (Jan 2026) — global SOTA on agentic benchmarks; HLE 50.2%, SWE-bench Verified 76.8%"
+      - name: GLM-4.7-Flash
+        logo: hugging-face.webp
+        homepage_url: https://huggingface.co/zai-org/GLM-4.7-Flash
+        description: "Z.ai (Jan 2026) — local coding and agentic assistant; new standard for the 30B class"
+      - name: Devstral 2
+        logo: devstral-2.webp
+        homepage_url: https://mistral.ai/news/devstral-2-vibe-cli
+        description: "Mistral AI (Dec 2025) — open-source SOTA for code agents in two sizes (123B and 24B)"
+      - name: rnj-1-instruct
+        logo: hugging-face.webp
+        homepage_url: https://huggingface.co/EssentialAI/rnj-1-instruct
+        description: "Essential AI (Dec 2025) — trained from scratch for code and STEM, strong agentic capabilities"
+      - name: Gemini 3
+        logo: gemini-3.webp
+        homepage_url: https://blog.google/technology/developers/gemini-3-developers/
+        description: "Google (Nov 2025) — surpasses Gemini 2.5 Pro at coding; masters agentic workflows"
+      - name: Mercury Code
+        logo: mercury-code.webp
+        homepage_url: https://docs.inceptionlabs.ai/get-started/models
+        description: "Inception Labs (Nov 2025) — diffusion LLM for coding workflows with streaming and 128K context"
+      - name: Composer
+        logo: composer.webp
+        homepage_url: https://cursor.com/blog/2-0
+        description: "Cursor (Oct 2025) — 4x faster than similarly intelligent models, built for low-latency agentic coding"
+      - name: SWE-1.5
+        logo: swe-1-5.webp
+        homepage_url: https://cognition.ai/blog/swe-1-5
+        description: "Windsurf / Cognition (Oct 2025) — fast-agent frontier-size model; 6x faster than Haiku 4.5"
+      - name: KAT-Dev-72B-Exp
+        logo: hugging-face.webp
+        homepage_url: https://huggingface.co/Kwaipilot/KAT-Dev-72B-Exp
+        description: "Kwaipilot (Oct 2025) — open-source 72B model for software engineering; 74.6% on SWE-Bench Verified"
+      - name: Code World Model
+        logo: hugging-face.webp
+        homepage_url: https://huggingface.co/facebook/cwm
+        description: "AI at Meta (Sep 2025) — LLM trained to reason about how code affects program state"
+      - name: Qwen3-Coder
+        logo: hugging-face.webp
+        homepage_url: https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct
+        description: "Alibaba Cloud (Jul 2025) — agentic code model at 480B parameters with A35B active"
+      - name: Grok Code Fast 1
+        logo: grok-code-fast-1.webp
+        homepage_url: https://x.ai/news/grok-code-fast-1
+        description: "xAI (Aug 2025) — speedy and economical reasoning model that excels at agentic coding"
+      - name: Llama 4 Maverick
+        logo: llama-4-maverick.webp
+        homepage_url: https://llama.meta.com/get-started/
+        description: "Meta (Apr 2025) — code-tuned open-weight model"

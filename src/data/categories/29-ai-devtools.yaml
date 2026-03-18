@@ -1,0 +1,36 @@
+name: AI DevTools & Integrations
+group: product
+color: "oklch(0.62 0.20 198)"
+icon: Plug
+subcategories:
+  - name: AI DevTools
+    items:
+      - name: Agents.md
+        logo: agents-md.webp
+        homepage_url: https://agents.md/
+        description: "A simple, open format for guiding coding agents; used by over 20k open-source projects"
+      - name: Anannas
+        logo: anannas.webp
+        homepage_url: https://anannas.ai/
+        description: "Single API to access any LLM with seamless multi-model gateway and cost control"
+      - name: CodeRabbit
+        logo: coderabbit.webp
+        homepage_url: https://www.coderabbit.ai
+        description: "AI-powered code reviews — cut code review time and bugs in half"
+      - name: Fabric
+        logo: github.webp
+        homepage_url: https://github.com/danielmiessler/Fabric
+        repo_url: https://github.com/danielmiessler/Fabric
+        description: "Open-source modular framework for solving specific problems using crowdsourced AI prompts"
+      - name: Giga AI
+        logo: giga-ai.webp
+        homepage_url: https://gigamind.dev/context
+        description: "Context engineering that improves AI quality and understanding"
+      - name: Vercel AI Gateway
+        logo: vercel-ai-gateway.webp
+        homepage_url: https://vercel.com/blog/ai-gateway-is-now-generally-available
+        description: "A gateway to access hundreds of models with zero markup on tokens, including BYOK"
+      - name: Vibetunnel
+        logo: vibetunnel.webp
+        homepage_url: https://vibetunnel.sh/
+        description: "Proxies your terminals right into the browser so you can vibe-code from anywhere"

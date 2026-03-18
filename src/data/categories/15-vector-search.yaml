@@ -1,0 +1,85 @@
+name: Vector & Search
+group: infrastructure
+color: "oklch(0.62 0.20 68)"
+icon: MagnifyingGlass
+subcategories:
+  - name: Vector Databases
+    items:
+      - name: Pinecone
+        homepage_url: https://pinecone.io
+        logo: pinecone.webp
+        crunchbase: https://www.crunchbase.com/organization/pinecone
+        description: "Managed vector database for ML applications"
+        tags: [vector-db, managed]
+      - name: Weaviate
+        homepage_url: https://weaviate.io
+        repo_url: https://github.com/weaviate/weaviate
+        logo: weaviate.webp
+        description: "Open-source vector database with ML integrations"
+        tags: [vector-db, oss]
+      - name: Qdrant
+        homepage_url: https://qdrant.tech
+        repo_url: https://github.com/qdrant/qdrant
+        logo: qdrant.webp
+        description: "Vector similarity search engine"
+        tags: [vector-db, rust, oss]
+      - name: Chroma
+        homepage_url: https://trychroma.com
+        repo_url: https://github.com/chroma-core/chroma
+        logo: chroma.webp
+        description: "AI-native open-source embedding database"
+        tags: [vector-db, embeddings, oss]
+      - name: Milvus
+        homepage_url: https://milvus.io
+        repo_url: https://github.com/milvus-io/milvus
+        logo: milvus.webp
+        project: graduated
+        description: "Open-source vector database built for AI"
+        tags: [vector-db, distributed, oss]
+      - name: pgvector
+        homepage_url: https://github.com/pgvector/pgvector
+        repo_url: https://github.com/pgvector/pgvector
+        logo: github.webp
+        description: "Vector similarity search for PostgreSQL"
+        tags: [vector-db, postgresql, oss]
+  - name: Semantic Search
+    items:
+      - name: Elasticsearch
+        homepage_url: https://elastic.co/elasticsearch
+        repo_url: https://github.com/elastic/elasticsearch
+        logo: elasticsearch.webp
+        description: "Distributed search and analytics engine"
+        tags: [search, distributed]
+      - name: OpenSearch
+        homepage_url: https://opensearch.org
+        repo_url: https://github.com/opensearch-project/OpenSearch
+        logo: opensearch.webp
+        project: sandbox
+        description: "Community-driven fork of Elasticsearch"
+        tags: [search, distributed]
+      - name: Vespa
+        homepage_url: https://vespa.ai
+        repo_url: https://github.com/vespa-engine/vespa
+        logo: vespa.webp
+        description: "Big data serving engine with ML integration"
+        tags: [search, serving]
+  - name: Similarity & Indexing
+    items:
+      - name: FAISS
+        homepage_url: https://faiss.ai
+        repo_url: https://github.com/facebookresearch/faiss
+        logo: meta.webp
+        description: "Library for efficient similarity search by Meta"
+        tags: [similarity, indexing, cpp]
+      - name: Annoy
+        homepage_url: https://github.com/spotify/annoy
+        repo_url: https://github.com/spotify/annoy
+        logo: github.webp
+        description: "Approximate nearest neighbors by Spotify"
+        tags: [similarity, indexing]
+      - name: ScaNN
+        homepage_url: https://github.com/google-research/google-research/tree/master/scann
+        repo_url: https://github.com/google-research/google-research
+        logo: github.webp
+        description: "Scalable nearest neighbors library by Google"
+        tags: [similarity, indexing]

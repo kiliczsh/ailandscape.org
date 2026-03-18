@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ailandscape.org/sitemap.xml

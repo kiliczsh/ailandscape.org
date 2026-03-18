@@ -1,0 +1,42 @@
+name: OpenClaw Ecosystem
+group: product
+color: "oklch(0.62 0.20 153)"
+icon: Plug
+subcategories:
+  - name: Core & Hardware
+    items:
+      - name: ironclaw
+        logo: ironclaw.webp
+        homepage_url: https://www.ironclaw.com
+        repo_url: https://github.com/nearai/ironclaw
+        description: "OpenClaw-inspired implementation in Rust, focused on privacy and security"
+      - name: nanoclaw
+        logo: nanoclaw.webp
+        homepage_url: https://nanoclaw.dev
+        repo_url: https://github.com/gavrielc/nanoclaw
+        description: "Lightweight OpenClaw alternative that runs inside Apple containers for sandboxing"
+      - name: NemoClaw
+        logo: nemoclaw.webp
+        homepage_url: https://docs.nvidia.com/nemoclaw/latest/
+        repo_url: https://github.com/NVIDIA/NemoClaw
+        description: "NVIDIA plugin for secure OpenClaw installation"
+      - name: openclaw
+        logo: openclaw.webp
+        homepage_url: https://openclaw.ai
+        repo_url: https://github.com/openclaw/openclaw
+        description: "Your own personal AI assistant — the core framework"
+      - name: piclaw
+        logo: github.webp
+        homepage_url: https://github.com/rcarmo/piclaw
+        repo_url: https://github.com/rcarmo/piclaw
+        description: "Raspberry Pi-based general-purpose agent"
+      - name: picoclaw
+        logo: picoclaw.webp
+        homepage_url: https://picoclaw.io
+        repo_url: https://github.com/sipeed/picoclaw
+        description: "Ultra-efficient AI assistant for microcontrollers"
+      - name: zclaw
+        logo: zclaw.webp
+        homepage_url: https://zclaw.dev
+        repo_url: https://github.com/tnm/zclaw
+        description: "The smallest possible AI personal assistant for ESP32"

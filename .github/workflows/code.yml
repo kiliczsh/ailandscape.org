@@ -1,0 +1,50 @@
+name: Code
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - '!src/data/**'
+      - 'public/**'
+      - '!public/logos/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.json'
+      - 'biome.json'
+      - 'next.config.ts'
+      - 'postcss.config.mjs'
+      - '.github/workflows/code.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - '!src/data/**'
+      - 'public/**'
+      - '!public/logos/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.json'
+      - 'biome.json'
+      - 'next.config.ts'
+      - 'postcss.config.mjs'
+      - '.github/workflows/code.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build

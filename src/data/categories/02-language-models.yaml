@@ -1,0 +1,133 @@
+name: Language Models
+group: models
+color: "oklch(0.62 0.20 280)"
+icon: ChatText
+subcategories:
+  - name: Proprietary LLMs
+    items:
+      - name: GPT-4
+        homepage_url: https://openai.com/gpt-4
+        logo: openai.webp
+        description: "OpenAI's flagship large language model"
+        tags: [llm, api]
+      - name: Claude
+        homepage_url: https://anthropic.com
+        logo: anthropic.webp
+        description: "Anthropic's family of AI assistants"
+        tags: [llm, api]
+      - name: Gemini
+        homepage_url: https://deepmind.google/technologies/gemini
+        logo: gemini.webp
+        description: "Google DeepMind's multimodal AI model"
+        tags: [llm, api, multimodal]
+      - name: Grok-2
+        homepage_url: https://x.ai/grok
+        logo: xai.webp
+        description: "xAI's frontier language model with real-time data access"
+        tags: [llm, api]
+      - name: Mistral Large
+        homepage_url: https://mistral.ai/news/mistral-large
+        logo: mistral.webp
+        description: "Mistral AI's top-tier proprietary language model"
+        tags: [llm, api]
+      - name: Command R+
+        homepage_url: https://cohere.com/command
+        logo: cohere.webp
+        description: "Cohere's RAG-optimized enterprise language model"
+        tags: [llm, api, rag]
+  - name: Open Weights LLMs
+    items:
+      - name: Llama
+        homepage_url: https://llama.meta.com
+        repo_url: https://github.com/meta-llama/llama
+        logo: meta.webp
+        description: "Meta's open-weights large language model"
+        tags: [llm, open-weights]
+      - name: Mistral
+        homepage_url: https://mistral.ai
+        logo: mistral.webp
+        description: "Efficient open-weights language models"
+        tags: [llm, open-weights]
+      - name: Falcon
+        homepage_url: https://falconllm.tii.ae
+        logo: falcon.webp
+        description: "TII's open-weights language model"
+        tags: [llm, open-weights]
+      - name: Qwen 2.5
+        homepage_url: https://qwenlm.github.io
+        repo_url: https://github.com/QwenLM/Qwen2.5
+        description: "Alibaba's high-performance open-weights language model"
+        tags: [llm, open-weights]
+      - name: DeepSeek-V2
+        homepage_url: https://deepseek.com
+        repo_url: https://github.com/deepseek-ai/DeepSeek-V2
+        logo: deepseek.webp
+        description: "Mixture-of-experts LLM with strong coding and reasoning"
+        tags: [llm, open-weights, moe]
+      - name: Phi-3
+        homepage_url: https://ollama.com/library/phi3
+        logo: microsoft.webp
+        description: "Microsoft's small but capable open-weights model"
+        tags: [llm, open-weights, small]
+      - name: Gemma 2
+        homepage_url: https://ai.google.dev/gemma
+        logo: gemini.webp
+        description: "Google's lightweight open-weights language model"
+        tags: [llm, open-weights]
+  - name: Small / Edge LLMs
+    items:
+      - name: Phi-3 Mini
+        homepage_url: https://ollama.com/library/phi3
+        logo: microsoft.webp
+        description: "Microsoft's 3.8B parameter model for edge deployment"
+        tags: [llm, open-weights, edge, small]
+      - name: Gemma 2B
+        homepage_url: https://ai.google.dev/gemma
+        logo: gemini.webp
+        description: "Google's 2B open-weights model for on-device use"
+        tags: [llm, open-weights, edge, small]
+      - name: Llama 3.2 1B/3B
+        homepage_url: https://llama.meta.com
+        repo_url: https://github.com/meta-llama/llama
+        logo: meta.webp
+        description: "Meta's compact Llama models for edge and mobile"
+        tags: [llm, open-weights, edge, small]
+      - name: SmolLM
+        homepage_url: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
+        repo_url: https://github.com/huggingface/smollm
+        logo: hugging-face.webp
+        description: "Hugging Face's tiny yet capable language model"
+        tags: [llm, open-weights, edge, small]
+      - name: MobileLLM
+        homepage_url: https://github.com/facebookresearch/MobileLLM
+        repo_url: https://github.com/facebookresearch/MobileLLM
+        logo: meta.webp
+        description: "Meta's sub-billion parameter models for mobile devices"
+        tags: [llm, open-weights, mobile, small]
+  - name: Reasoning & CoT Models
+    items:
+      - name: o1
+        homepage_url: https://openai.com/o1
+        logo: openai.webp
+        description: "OpenAI's reasoning model with extended chain-of-thought"
+        tags: [llm, reasoning, cot, proprietary]
+      - name: o3-mini
+        homepage_url: https://openai.com/index/openai-o3-mini/
+        logo: openai.webp
+        description: "OpenAI's efficient reasoning model for complex tasks"
+        tags: [llm, reasoning, cot, proprietary]
+      - name: DeepSeek-R1
+        homepage_url: https://www.deepseek.com
+        repo_url: https://github.com/deepseek-ai/DeepSeek-R1
+        logo: deepseek.webp
+        description: "Open-weights reasoning model rivaling o1"
+        tags: [llm, reasoning, open-weights]
+      - name: QwQ-32B
+        homepage_url: https://qwenlm.github.io/blog/qwq-32b
+        description: "Qwen's open reasoning model with strong math capabilities"
+        tags: [llm, reasoning, open-weights]
+      - name: Gemini Thinking
+        homepage_url: https://deepmind.google/technologies/gemini
+        logo: gemini.webp
+        description: "Google's extended-thinking variant of Gemini"
+        tags: [llm, reasoning, cot, proprietary]

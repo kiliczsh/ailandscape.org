@@ -1,0 +1,26 @@
+name: LLM Training
+group: infrastructure
+color: "oklch(0.62 0.20 43)"
+icon: Database
+subcategories:
+  - name: Training & Fine-tuning
+    items:
+      - name: Axolotl
+        logo: axolotl.webp
+        homepage_url: https://docs.axolotl.ai
+        repo_url: https://github.com/axolotl-ai-cloud/axolotl
+        description: "Open-source framework for fine-tuning LLMs supporting LoRA, QLoRA, DeepSpeed, and multi-GPU"
+      - name: OpenRLHF
+        homepage_url: https://openrlhf.readthedocs.io/
+        repo_url: https://github.com/OpenRLHF/OpenRLHF
+        description: "Easy-to-use, scalable RLHF framework supporting 70B+ PPO full tuning, iterative DPO, and LoRA"
+      - name: TRL
+        logo: trl.webp
+        homepage_url: http://hf.co/docs/trl
+        repo_url: https://github.com/huggingface/trl
+        description: "Full-stack library for training transformer LMs with RLHF, SFT, reward modeling, and PPO"
+      - name: unsloth
+        logo: unsloth.webp
+        homepage_url: https://unsloth.ai/docs
+        repo_url: https://github.com/unslothai/unsloth
+        description: "2-5x faster LLM fine-tuning with 70% less memory"

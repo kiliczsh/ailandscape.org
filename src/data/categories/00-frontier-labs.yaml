@@ -1,0 +1,86 @@
+name: Frontier Labs
+group: labs
+color: "oklch(0.62 0.22 230)"
+icon: Buildings
+subcategories:
+  - name: Closed / Proprietary Labs
+    items:
+      - name: OpenAI
+        homepage_url: https://openai.com
+        logo: openai.webp
+        description: "Creator of GPT-4, ChatGPT, and DALL-E"
+        tags: [lab, llm, proprietary]
+      - name: Anthropic
+        homepage_url: https://anthropic.com
+        logo: anthropic.webp
+        description: "AI safety company behind the Claude model family"
+        tags: [lab, llm, safety, proprietary]
+      - name: Google DeepMind
+        homepage_url: https://deepmind.google
+        logo: deepmind.webp
+        description: "Google's AI research lab behind Gemini and AlphaFold"
+        tags: [lab, llm, research, proprietary]
+      - name: xAI
+        homepage_url: https://x.ai
+        logo: xai.webp
+        description: "Elon Musk's AI company, creator of Grok"
+        tags: [lab, llm, proprietary]
+      - name: Mistral AI
+        homepage_url: https://mistral.ai
+        logo: mistral.webp
+        description: "European AI lab known for efficient open and closed models"
+        tags: [lab, llm, proprietary]
+      - name: Cohere
+        homepage_url: https://cohere.com
+        logo: cohere.webp
+        description: "Enterprise NLP and embedding model provider"
+        tags: [lab, llm, enterprise, proprietary]
+  - name: Open Research Labs
+    items:
+      - name: Meta AI (FAIR)
+        homepage_url: https://ai.meta.com
+        logo: meta.webp
+        description: "Meta's Fundamental AI Research team, creators of Llama"
+        tags: [lab, llm, open-weights, research]
+      - name: Allen Institute for AI
+        homepage_url: https://allenai.org
+        logo: allenai.webp
+        description: "Non-profit AI research institute, creators of OLMo and Dolma"
+        tags: [lab, research, oss]
+      - name: EleutherAI
+        homepage_url: https://www.eleuther.ai
+        logo: eleutherai.webp
+        description: "Decentralized AI research collective focused on open models"
+        tags: [lab, llm, open-weights, oss]
+      - name: Stability AI
+        homepage_url: https://stability.ai
+        logo: stability-ai.webp
+        description: "Open AI lab behind Stable Diffusion and SDXL"
+        tags: [lab, image-generation, open-weights]
+      - name: TII
+        homepage_url: https://tii.ae
+        logo: tii.webp
+        description: "Technology Innovation Institute, creators of Falcon LLM"
+        tags: [lab, llm, open-weights]
+  - name: Academic & Non-Profit Labs
+    items:
+      - name: Stanford HAI
+        homepage_url: https://hai.stanford.edu
+        logo: stanford.webp
+        description: "Stanford's Human-Centered AI Institute"
+        tags: [lab, academic, research]
+      - name: Berkeley BAIR
+        homepage_url: https://bair.berkeley.edu
+        logo: berkeley.webp
+        description: "Berkeley Artificial Intelligence Research Lab"
+        tags: [lab, academic, research]
+      - name: CMU LTI
+        homepage_url: https://www.lti.cs.cmu.edu
+        logo: cmu.webp
+        description: "Carnegie Mellon's Language Technologies Institute"
+        tags: [lab, academic, nlp]
+      - name: Hugging Face
+        homepage_url: https://huggingface.co
+        logo: hugging-face.webp
+        description: "Community AI platform and open model hub"
+        tags: [lab, platform, open-weights, community]

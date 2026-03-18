@@ -1,0 +1,162 @@
+name: AI App Builders
+group: product
+color: "oklch(0.62 0.20 175)"
+icon: Cube
+subcategories:
+  - name: Chat & Browser Builders
+    items:
+      - name: 21st.dev
+        logo: 21st-dev.webp
+        homepage_url: https://21st.dev/
+        description: "Build products that reflect the team's own taste with AI assistance"
+      - name: a0
+        logo: a0.webp
+        homepage_url: https://a0.dev/
+        description: "YC-backed — ship mobile apps to the App Store and Google Play with AI"
+      - name: Anything
+        logo: anything.webp
+        homepage_url: https://www.createanything.com/
+        description: "Create powerful apps and websites by chatting with AI"
+      - name: Aura
+        logo: aura.webp
+        homepage_url: https://aura.build/
+        description: "Generate beautiful designs in seconds and export to HTML or Figma"
+      - name: Base44
+        logo: base44.webp
+        homepage_url: https://base44.com/
+        description: "Build fully-functional apps in minutes with just your words"
+      - name: Blink.new
+        logo: blink-new.webp
+        homepage_url: https://blink.new/
+        description: "The world's first vibe coding platform that builds agentic AI apps"
+      - name: Bolt.new
+        logo: bolt-new.webp
+        homepage_url: https://bolt.new/
+        repo_url: https://github.com/stackblitz/bolt.new
+        description: "StackBlitz's browser-based AI app builder — prompt to full-stack app with live preview and one-click deployment"
+      - name: Emergent
+        logo: emergent.webp
+        homepage_url: https://app.emergent.sh/register
+        description: "YC-backed platform to build ambitious apps with agentic vibe-coding"
+      - name: Google Build
+        logo: google-build.webp
+        homepage_url: https://aistudio.google.com/apps
+        description: "Build your ideas with Gemini in Google AI Studio"
+      - name: Lovable
+        logo: lovable.webp
+        homepage_url: https://lovable.dev/
+        description: "Chat-to-app builder that turns natural language into production-ready web apps with GitHub sync"
+      - name: Mocha
+        logo: mocha.webp
+        homepage_url: https://getmocha.com/
+        description: "YC-backed no-code AI app builder"
+      - name: Nectry
+        logo: nectry.webp
+        homepage_url: https://nectry.com/
+        description: "Responsible vibe coding for the enterprise"
+      - name: orchids
+        logo: orchids.webp
+        homepage_url: https://www.orchids.app/
+        description: "YC-backed — the world's first AI Full Stack Engineer"
+      - name: Reflex
+        logo: reflex.webp
+        homepage_url: https://reflex.dev/
+        repo_url: https://github.com/reflex-dev/reflex
+        description: "From prompt to production — build and deploy Python apps with AI"
+      - name: Replit Agent
+        logo: replit-agent.webp
+        homepage_url: https://replit.com/
+        description: "Replit's cloud IDE with an integrated AI agent that writes code and deploys full applications"
+      - name: Rocket
+        logo: rocket.webp
+        homepage_url: https://www.rocket.new/
+        description: "Think It. Type It. Launch It."
+      - name: Same
+        logo: same.webp
+        homepage_url: https://same.new/
+        description: "YC-backed — build fullstack web apps by prompting"
+      - name: Superblocks
+        logo: superblocks.webp
+        homepage_url: https://www.superblocks.com/
+        description: "Build secure internal apps with AI assistance"
+      - name: v0.dev
+        logo: v0-dev.webp
+        homepage_url: https://v0.dev/
+        description: "Vercel's text-to-UI generator — describe any component and get production-ready React/Tailwind/shadcn code"
+      - name: VibeFlow
+        logo: vibeflow.webp
+        homepage_url: https://vibeflow.ai/
+        description: "YC-backed — transform AI-generated frontend mockups into fully functional applications"
+      - name: vybe
+        logo: vybe.webp
+        homepage_url: https://www.vybe.build/
+        description: "Build internal apps 10x faster with AI"
+  - name: Mobile App Builders
+    items:
+      - name: bitrig
+        logo: bitrig.webp
+        homepage_url: https://www.bitrig.app/
+        description: "Build apps for your phone, on your phone"
+      - name: Bloom
+        logo: bloom.webp
+        homepage_url: https://bloom.diy/
+        description: "YC-backed — go from idea to native mobile app on your phone without writing a single line of code"
+      - name: Rork
+        logo: rork.webp
+        homepage_url: https://rork.com/
+        description: "Builds complete, cross-platform mobile apps using AI and React Native"
+      - name: sleek.design
+        logo: sleek-design.webp
+        homepage_url: https://sleek.design/
+        description: "Design mobile apps in minutes"
+      - name: Variant
+        logo: variant.webp
+        homepage_url: https://variant.ai/
+        description: "Gives your ideas room to grow — branch, remix, and build"
+      - name: Vibe Code Go
+        logo: vibe-code-go.webp
+        homepage_url: https://vibecodego.com/
+        description: "YC-backed — code from your phone, a mobile app for software engineers"
+      - name: Vibecode
+        logo: vibecode.webp
+        homepage_url: https://www.vibecodeapp.com/
+        description: "Create native apps in seconds with AI"
+  - name: Open Source Builders
+    items:
+      - name: Adorable
+        logo: github.webp
+        homepage_url: https://github.com/freestyle-sh/Adorable
+        repo_url: https://github.com/freestyle-sh/Adorable
+        description: "Open-source Lovable alternative built on Freestyle"
+      - name: app.build
+        logo: app-build.webp
+        homepage_url: https://www.app.build/
+        description: "Open-source AI agent that builds full-stack apps"
+      - name: bolt.diy
+        logo: github.webp
+        homepage_url: https://github.com/stackblitz-labs/bolt.diy
+        repo_url: https://github.com/stackblitz-labs/bolt.diy
+        description: "Open-source Bolt — AI-powered full-stack web development with support for any LLM"
+      - name: Cloudflare VibeSDK
+        logo: cloudflare-vibesdk.webp
+        homepage_url: https://build.cloudflare.dev/
+        description: "Run an entire vibe coding platform end-to-end with one click on Cloudflare"
+      - name: Dyad
+        logo: github.webp
+        homepage_url: https://github.com/dyad-sh/dyad
+        repo_url: https://github.com/dyad-sh/dyad
+        description: "Local, open-source AI app builder that runs entirely on your machine — no cloud required"
+      - name: Hugging Face DeepSite
+        logo: hugging-face.webp
+        homepage_url: https://huggingface.co/deepsite
+        description: "Simple and powerful AI Vibe Code Editor hosted on Hugging Face"
+      - name: Open Lovable
+        logo: github.webp
+        homepage_url: https://github.com/firecrawl/open-lovable
+        repo_url: https://github.com/firecrawl/open-lovable
+        description: "Clone and recreate any website as a modern React app in seconds"
+      - name: ToolJet
+        logo: tooljet.webp
+        homepage_url: https://tooljet.com
+        repo_url: https://github.com/ToolJet/ToolJet
+        description: "Open-source low-code framework for building internal tools with 50+ data source connectors"
