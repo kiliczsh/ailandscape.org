@@ -1,7 +1,7 @@
 "use client";
 
 import { MagnifyingGlass, X } from "@phosphor-icons/react";
-import { GithubLogo, GitPullRequest } from "@phosphor-icons/react/dist/ssr";
+import { GithubLogo, PlusCircle } from "@phosphor-icons/react/dist/ssr";
 import { Suspense, useState } from "react";
 import { HeaderSearch } from "@/components/landscape/header-search";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -63,13 +63,13 @@ export function SiteHeader() {
           </button>
 
           <a
-            href="https://github.com/kiliczsh/ailandscape.org/compare"
+            href="https://github.com/kiliczsh/ailandscape.org/issues/new/choose"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Submit a tool via GitHub PR (opens in new tab)"
+            aria-label="Submit a tool via GitHub issue (opens in new tab)"
             className="flex h-11 w-11 items-center justify-center gap-1 rounded text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring sm:h-auto sm:w-auto"
           >
-            <GitPullRequest size={16} aria-hidden="true" />
+            <PlusCircle size={16} aria-hidden="true" />
             <span className="hidden sm:inline">Submit</span>
           </a>
 
