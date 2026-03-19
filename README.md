@@ -1,6 +1,8 @@
-# AILand — AI Ecosystem Landscape
+# ailandscape.org — AI Ecosystem Landscape
 
 A comprehensive, interactive map of the AI tools ecosystem. Browse tools across models, infrastructure, protocols, security, and product categories — inspired by the [CNCF Landscape](https://landscape.cncf.io).
+
+Live at [ailandscape.org](https://ailandscape.org).
 
 ## Features
 
