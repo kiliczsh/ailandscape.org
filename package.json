@@ -10,7 +10,8 @@
     "url": "https://github.com/kiliczsh/ailandscape.org.git"
   },
   "scripts": {
-    "build": "opennextjs-cloudflare build",
+    "build": "next build",
+    "build:cf": "opennextjs-cloudflare build",
     "dev": "next dev",
     "start": "next start",
     "lint": "biome check",

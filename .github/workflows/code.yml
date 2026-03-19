@@ -13,6 +13,8 @@ on:
       - 'tsconfig.json'
       - 'biome.json'
       - 'next.config.ts'
+      - 'open-next.config.ts'
+      - 'wrangler.jsonc'
       - 'postcss.config.mjs'
       - '.github/workflows/code.yml'
   pull_request:
@@ -27,6 +29,8 @@ on:
       - 'tsconfig.json'
       - 'biome.json'
       - 'next.config.ts'
+      - 'open-next.config.ts'
+      - 'wrangler.jsonc'
       - 'postcss.config.mjs'
       - '.github/workflows/code.yml'
 
