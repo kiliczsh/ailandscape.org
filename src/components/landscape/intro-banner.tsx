@@ -4,7 +4,7 @@ import { Asterisk } from "@phosphor-icons/react";
 
 const ITEMS = [
   "The complete map of the AI ecosystem",
-  "1,000+ AI tools and frameworks mapped",
+  "AI tools and frameworks mapped",
   "Models · Infrastructure · Product · Security",
   "Open source landscape — contribute anytime",
   "Filter, search, and compare tools instantly",
