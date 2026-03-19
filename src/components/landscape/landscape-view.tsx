@@ -8,10 +8,11 @@ import { LandscapeFilterProvider } from "@/contexts/landscape-filter-context";
 import { useLandscapeParams } from "@/hooks/use-landscape-params";
 import { trackEvent } from "@/lib/analytics";
 import type { LandscapeData, LandscapeItem } from "@/types/landscape";
-import { CategoryRow } from "./category-row";
+import { SubcategoryCard } from "./category-card";
 import { CommandPalette } from "./command-palette";
 import { FilterBar } from "./filter-bar";
-import { ItemModal } from "./item-card";
+import { ItemAvatar, ItemModal } from "./item-card";
+import { TierListPanel } from "./tier-list-panel";
 
 interface LandscapeViewProps {
   data: LandscapeData;
@@ -82,7 +83,7 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     [filteredData],
   );
 
-  // Per-category item counts for badges
+  // Per-category item counts for badges / CategoryRow
   const categoryTotalCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     for (const cat of data.landscape) {
@@ -93,17 +94,6 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     }
     return counts;
   }, [data]);
-
-  const categoryFilteredCounts = useMemo(() => {
-    const counts: Record<string, number> = {};
-    for (const cat of filteredData.landscape) {
-      counts[cat.name] = cat.subcategories.reduce(
-        (s, sub) => s + sub.items.length,
-        0,
-      );
-    }
-    return counts;
-  }, [filteredData]);
 
   // Look up active item data across the full (unfiltered) dataset so the
   // dialog works even when the item's category is currently filtered out.
@@ -152,10 +142,11 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     }
   }, [activeItemData]);
 
-  // Cleanup timer on unmount
+  // Cleanup timers on unmount
   useEffect(
     () => () => {
       if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+      if (panelCloseTimerRef.current) clearTimeout(panelCloseTimerRef.current);
     },
     [],
   );
@@ -198,6 +189,31 @@ export function LandscapeView({ data }: LandscapeViewProps) {
       findItem,
     ],
   );
+
+  // Selected subcategory for tier list: { categoryName, subIndex }
+  const [selected, setSelected] = useState<{
+    categoryName: string;
+    subIndex: number;
+  } | null>(null);
+
+  // Track which category panel is animating closed so it stays mounted
+  // during the CSS grid collapse animation before unmounting.
+  const [closingCategoryName, setClosingCategoryName] = useState<string | null>(
+    null,
+  );
+  const panelCloseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handlePanelClose = useCallback(() => {
+    const name = selected?.categoryName ?? null;
+    setSelected(null);
+    if (name) {
+      setClosingCategoryName(name);
+      panelCloseTimerRef.current = setTimeout(() => {
+        setClosingCategoryName(null);
+        panelCloseTimerRef.current = null;
+      }, 350);
+    }
+  }, [selected]);
 
   // Track which categories have already animated so filter changes don't
   // re-trigger the entry animation for previously-seen categories.
@@ -248,7 +264,7 @@ export function LandscapeView({ data }: LandscapeViewProps) {
             ? "No items match the current filters."
             : `Showing ${visibleItems} of ${totalItems} tools.`}
         </output>
-        <div className="flex-1 overflow-x-auto">
+        <div className="flex-1 overflow-y-auto">
           {filteredData.landscape.length === 0 ? (
             <Empty className="border-0 py-20">
               <EmptyHeader>
@@ -269,32 +285,211 @@ export function LandscapeView({ data }: LandscapeViewProps) {
                 Clear filters
               </Button>
             </Empty>
-          ) : (
-            <div className="min-w-0">
-              {filteredData.landscape.map((category, index) => {
-                const isFirstAppearance = !everShownRef.current.has(
-                  category.name,
-                );
+          ) : viewMode === "grid" ? (
+            <div className="flex flex-col">
+              {filteredData.landscape.map((category) => {
+                const color = category.color ?? "oklch(0.4 0.14 265)";
+                const isThisCategorySelected =
+                  selected?.categoryName === category.name;
+
                 return (
-                  <CategoryRow
+                  <div
                     key={category.name}
-                    category={category}
-                    viewMode={viewMode}
-                    isFirstCategory={index === 0}
-                    totalItemCount={categoryTotalCounts[category.name] ?? 0}
-                    filteredItemCount={
-                      categoryFilteredCounts[category.name] ?? 0
-                    }
-                    style={
-                      isFirstAppearance
-                        ? {
-                            animation:
-                              "fade-in-up 450ms cubic-bezier(0.25, 1, 0.5, 1) both",
-                            animationDelay: `${Math.min(index * 30, 150)}ms`,
+                    className="border-b border-border last:border-b-0"
+                  >
+                    {/* Category header */}
+                    <div
+                      className="flex items-center gap-2 px-4 py-2 border-b border-border/40"
+                      style={{ backgroundColor: `${color}18` }}
+                    >
+                      <div
+                        className="h-2.5 w-2.5 rounded-sm shrink-0"
+                        style={{ backgroundColor: color }}
+                      />
+                      <span
+                        className="text-sm font-bold tracking-wide"
+                        style={{ color }}
+                      >
+                        {category.name}
+                      </span>
+                      <span className="text-[11px] text-muted-foreground">
+                        {categoryTotalCounts[category.name] ?? 0} tools
+                      </span>
+                    </div>
+
+                    {/* Subcategory rows */}
+                    <div className="divide-y divide-border/30">
+                      {category.subcategories.map((sub, subIndex) => {
+                        const isSubSelected =
+                          isThisCategorySelected &&
+                          selected?.subIndex === subIndex;
+
+                        return (
+                          <div key={sub.name} className="px-4 py-3">
+                            {/* Subcategory label — click to open tier list */}
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setSelected(
+                                  isSubSelected
+                                    ? null
+                                    : { categoryName: category.name, subIndex },
+                                )
+                              }
+                              className="flex items-center gap-1.5 mb-2.5 group"
+                            >
+                              <span
+                                className="text-xs font-semibold transition-opacity group-hover:opacity-100 opacity-70"
+                                style={{ color }}
+                              >
+                                {sub.name}
+                              </span>
+                              <span
+                                className="rounded px-1 py-0.5 text-[9px] font-bold text-white shrink-0"
+                                style={{ backgroundColor: color }}
+                              >
+                                {sub.items.length}
+                              </span>
+                            </button>
+
+                            {/* Items grid */}
+                            <div className="flex flex-wrap gap-1.5">
+                              {sub.items.map((item) => (
+                                <button
+                                  key={item.name}
+                                  type="button"
+                                  onClick={() =>
+                                    contextValue.onItemClick(item.name)
+                                  }
+                                  className="flex flex-col items-center gap-1 rounded-lg p-1.5 hover:bg-accent/60 transition-colors cursor-pointer"
+                                  style={{ width: 72 }}
+                                  title={item.name}
+                                >
+                                  <div className="w-12 h-12 shrink-0 overflow-hidden rounded-lg border border-border/50 bg-background/80">
+                                    <ItemAvatar
+                                      name={item.name}
+                                      logo={item.logo}
+                                      containerClass="h-full w-full rounded-lg"
+                                    />
+                                  </div>
+                                  <span className="w-full line-clamp-2 text-center text-[10px] leading-tight text-foreground/70">
+                                    {item.name}
+                                  </span>
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    {/* Tier list panel */}
+                    <div
+                      className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                        isThisCategorySelected
+                          ? "grid-rows-[1fr]"
+                          : "grid-rows-[0fr]"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        {(isThisCategorySelected ||
+                          closingCategoryName === category.name) && (
+                          <TierListPanel
+                            categoryName={category.name}
+                            categoryColor={category.color}
+                            subcategories={category.subcategories}
+                            initialTab={
+                              isThisCategorySelected
+                                ? (selected?.subIndex ?? 0)
+                                : 0
+                            }
+                            onClose={handlePanelClose}
+                          />
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="flex flex-wrap gap-4 p-4 items-start">
+              {filteredData.landscape.map((category) => {
+                const color = category.color ?? "oklch(0.4 0.14 265)";
+                const isThisCategorySelected =
+                  selected?.categoryName === category.name;
+
+                return (
+                  <div
+                    key={category.name}
+                    className="flex flex-col gap-3 min-w-0"
+                  >
+                    {/* Small colored category title */}
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="h-2.5 w-2.5 rounded-sm shrink-0"
+                        style={{ backgroundColor: color }}
+                      />
+                      <span
+                        className="text-sm font-bold tracking-wide"
+                        style={{ color }}
+                      >
+                        {category.name}
+                      </span>
+                      <span className="text-[11px] text-muted-foreground">
+                        {categoryTotalCounts[category.name] ?? 0} tools
+                      </span>
+                    </div>
+
+                    {/* Subcategories — flex-wrap, natural sizing */}
+                    <div className="flex flex-wrap gap-3">
+                      {category.subcategories.map((sub, subIndex) => (
+                        <SubcategoryCard
+                          key={sub.name}
+                          subcategory={sub}
+                          categoryColor={color}
+                          isSelected={
+                            isThisCategorySelected &&
+                            selected?.subIndex === subIndex
                           }
-                        : undefined
-                    }
-                  />
+                          onClick={() =>
+                            setSelected(
+                              isThisCategorySelected &&
+                                selected?.subIndex === subIndex
+                                ? null
+                                : { categoryName: category.name, subIndex },
+                            )
+                          }
+                        />
+                      ))}
+                    </div>
+
+                    {/* Tier list panel — stays mounted during close animation */}
+                    <div
+                      className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                        isThisCategorySelected
+                          ? "grid-rows-[1fr]"
+                          : "grid-rows-[0fr]"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        {(isThisCategorySelected ||
+                          closingCategoryName === category.name) && (
+                          <TierListPanel
+                            categoryName={category.name}
+                            categoryColor={category.color}
+                            subcategories={category.subcategories}
+                            initialTab={
+                              isThisCategorySelected
+                                ? (selected?.subIndex ?? 0)
+                                : 0
+                            }
+                            onClose={handlePanelClose}
+                          />
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 );
               })}
             </div>

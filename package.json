@@ -47,5 +47,8 @@
     "tsx": "^4.21.0",
     "typescript": "^5",
     "wrangler": "^4.75.0"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/oxide-darwin-arm64": "^4.2.2"
   }
 }
