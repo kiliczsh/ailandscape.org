@@ -1,7 +1,14 @@
 {
-  "name": "ailand",
+  "name": "ailandscape.org",
   "version": "0.1.0",
   "private": true,
+  "description": "A comprehensive, community-driven landscape of AI tools and ecosystem.",
+  "author": "Muhammed Kılıç",
+  "homepage": "https://ailandscape.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiliczsh/ailandscape.org.git"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
