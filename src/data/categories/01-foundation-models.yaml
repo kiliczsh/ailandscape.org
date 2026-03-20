@@ -6,7 +6,7 @@ subcategories:
   - name: Model Providers
     items:
       - name: Alibaba Cloud (Qwen)
-        logo: alibaba-cloud-qwen.webp
+        logo: qwen.webp
         homepage_url: https://qwen.ai
         repo_url: https://github.com/QwenLM/Qwen3
         description: "Alibaba Cloud's Qwen model family — Qwen3-Coder and Qwen3-Max lead the open-weight coding model landscape"
@@ -18,37 +18,15 @@ subcategories:
         logo: cognition-swe-1.webp
         homepage_url: https://cognition.ai
         description: "Creator of SWE-1.5 — a fast-agent frontier-size model with near-SOTA coding performance"
-      - name: DeepSeek
-        logo: deepseek.webp
-        homepage_url: https://deepseek.com
-        repo_url: https://github.com/deepseek-ai/DeepSeek-V3
-        description: "Chinese AI lab behind DeepSeek-V3 and R1 series — high-performance open-weight models"
-      - name: Inception Labs
-        logo: inception-labs.webp
-        homepage_url: https://inceptionlabs.ai
-        description: "Creator of Mercury Code — a diffusion LLM optimized for coding workflows with 128K context"
       - name: JetBrains AI
         logo: jetbrains-ai.webp
         homepage_url: https://www.jetbrains.com/
         repo_url: https://huggingface.co/JetBrains/Mellum-4b-base
         description: "JetBrains' Mellum — a 4B parameter open-source model for code completion"
-      - name: Moonshot AI
-        logo: moonshot-ai.webp
-        homepage_url: https://moonshot.cn
-        description: "Chinese AI startup behind Kimi — 1M-token context window with strong long-document reasoning"
-      - name: Nous Research
-        logo: nous-research.webp
-        homepage_url: https://nousresearch.com/
-        repo_url: https://github.com/NousResearch/hermes-agent
-        description: "Open-source AI research collective behind the Hermes and NousCoder model families"
       - name: Salesforce AI Research
         logo: salesforce-ai-research.webp
         homepage_url: https://www.salesforceairesearch.com/
         description: "Creator of CoDA — a diffusion-based language model for code generation"
-      - name: Z.ai (GLM)
-        logo: z-ai-glm.webp
-        homepage_url: https://z.ai
-        description: "Creator of the GLM model family for intelligent agents"
   - name: Coding Model Timeline
     items:
       - name: Claude Opus 4.6

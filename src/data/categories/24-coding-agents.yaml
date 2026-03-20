@@ -14,10 +14,6 @@ subcategories:
         logo: amp.webp
         homepage_url: https://ampcode.com/
         description: "Sourcegraph's coding agent (CLI and VS Code) powered by Claude with multi-repo context"
-      - name: Reflection AI
-        logo: reflection-ai.webp
-        homepage_url: https://reflection.ai/
-        description: "AI research lab building enterprise code research and reasoning agents"
       - name: Blackbox AI
         logo: blackbox-ai.webp
         homepage_url: https://www.blackbox.ai/
