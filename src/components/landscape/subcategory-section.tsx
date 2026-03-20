@@ -1,9 +1,17 @@
 "use client";
 
-import { Rows } from "@phosphor-icons/react";
+import { LinkSimple, Rows } from "@phosphor-icons/react";
+import { toast } from "sonner";
 import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import type { Subcategory } from "@/types/landscape";
 import { ItemCard } from "./item-card";
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
 
 interface SubcategorySectionProps {
   subcategory: Subcategory;
@@ -40,21 +48,46 @@ export function SubcategorySection({
 
   return (
     <section className="flex w-full flex-col border-b border-border last:border-b-0 sm:min-w-[192px] sm:w-auto sm:flex-1 sm:border-b-0 sm:border-r sm:last:border-r-0">
-      <button
-        type="button"
-        onClick={() => onTierListOpen(categoryName, subcategory, categoryColor)}
-        title={`${subcategory.name} — Tier List`}
-        className={`flex items-center gap-1 px-2 py-1 cursor-pointer hover:brightness-110 transition-[filter] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset ${textClass}`}
+      <div
+        className={`flex items-center gap-1 px-2 py-1 ${textClass}`}
         style={subheaderColor ? { backgroundColor: subheaderColor } : undefined}
       >
         <h3
-          className="min-w-0 truncate text-sm font-semibold flex-1 text-left"
+          className="min-w-0 truncate text-sm font-semibold flex-1"
           title={subcategory.name}
         >
           {subcategory.name}
         </h3>
-        <Rows size={12} className="shrink-0 opacity-50" />
-      </button>
+        <button
+          type="button"
+          onClick={() => {
+            const url = new URL(window.location.origin);
+            const params = new URLSearchParams();
+            params.set("category", slugify(categoryName));
+            params.set("utm_source", "ailandscape");
+            params.set("utm_medium", "share");
+            params.set("utm_campaign", "subcategory");
+            url.search = params.toString();
+            url.hash = slugify(subcategory.name);
+            navigator.clipboard.writeText(url.toString());
+            toast.success("Link copied!");
+          }}
+          title={`Share ${subcategory.name}`}
+          className="flex h-5 w-5 shrink-0 items-center justify-center rounded opacity-40 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <LinkSimple size={11} />
+        </button>
+        <button
+          type="button"
+          onClick={() =>
+            onTierListOpen(categoryName, subcategory, categoryColor)
+          }
+          title={`Tier List — ${subcategory.name}`}
+          className="flex h-5 w-5 shrink-0 items-center justify-center rounded opacity-40 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <Rows size={11} />
+        </button>
+      </div>
       <div
         className={
           viewMode === "card"

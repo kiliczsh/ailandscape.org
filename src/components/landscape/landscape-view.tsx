@@ -29,11 +29,13 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     viewMode: urlViewMode,
     activeTag,
     activeItem,
+    activeCategory,
     setQuery,
     setGroupFilter,
     setViewMode,
     setActiveTag,
     setActiveItem,
+    setActiveCategory,
   } = useLandscapeParams();
 
   const viewMode = urlViewMode;
@@ -217,6 +219,24 @@ export function LandscapeView({ data }: LandscapeViewProps) {
       findItem,
     ],
   );
+
+  // Auto-scroll to category when ?category= param is present
+  useEffect(() => {
+    if (!activeCategory) return;
+    const slug = activeCategory
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+    const el = document.getElementById(`category-${slug}`);
+    if (el) {
+      // Small delay to let layout settle
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+      // Clear param after scroll so it doesn't re-trigger
+      setActiveCategory("");
+    }
+  }, [activeCategory, setActiveCategory]);
 
   // Track which categories have already animated so filter changes don't
   // re-trigger the entry animation for previously-seen categories.

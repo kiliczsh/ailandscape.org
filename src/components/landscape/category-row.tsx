@@ -15,6 +15,7 @@ import {
   HardDrives,
   Image,
   Intersect,
+  LinkSimple,
   MagnifyingGlass,
   Plug,
   Robot,
@@ -24,6 +25,7 @@ import {
   Waveform,
 } from "@phosphor-icons/react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { toast } from "sonner";
 
 import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import type { Category } from "@/types/landscape";
@@ -126,11 +128,32 @@ export function CategoryRow({
   const [collapsed, setCollapsed] = useState(false);
   const expandButtonRef = useRef<HTMLButtonElement>(null);
   const baseColor = category.color ?? DEFAULT_COLOR;
+  const slug = category.name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
   const { onTierListOpen } = useLandscapeFilter();
 
   const allItems = useMemo(
     () => category.subcategories.flatMap((sub) => sub.items),
     [category.subcategories],
+  );
+
+  const handleShareCategory = useCallback(
+    (e: React.MouseEvent) => {
+      e.stopPropagation();
+      const url = new URL(window.location.href);
+      // Clean existing params, keep only essentials
+      const params = new URLSearchParams();
+      params.set("category", slug);
+      params.set("utm_source", "ailandscape");
+      params.set("utm_medium", "share");
+      params.set("utm_campaign", "category");
+      url.search = params.toString();
+      navigator.clipboard.writeText(url.toString());
+      toast.success("Link copied!");
+    },
+    [slug],
   );
 
   const handleTierListClick = useCallback(
@@ -156,10 +179,6 @@ export function CategoryRow({
   const IconComponent = category.icon
     ? (ICONS[category.icon] ?? Shapes)
     : Shapes;
-  const slug = category.name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
   const sectionId = `category-${slug}`;
   const contentId = `category-${slug}-content`;
   const headingId = `category-${slug}-heading`;
@@ -199,6 +218,14 @@ export function CategoryRow({
         </button>
         <button
           type="button"
+          onClick={handleShareCategory}
+          title={`Share ${category.name}`}
+          className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <LinkSimple size={13} />
+        </button>
+        <button
+          type="button"
           onClick={handleTierListClick}
           title={`Tier List — ${category.name}`}
           className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
@@ -229,6 +256,14 @@ export function CategoryRow({
               totalItemCount={totalItemCount}
               filteredItemCount={filteredItemCount}
             />
+          </button>
+          <button
+            type="button"
+            onClick={handleShareCategory}
+            title={`Share ${category.name}`}
+            className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <LinkSimple size={13} />
           </button>
           <button
             type="button"

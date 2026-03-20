@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/dialog";
 import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import { trackEvent } from "@/lib/analytics";
+import { appendUtm } from "@/lib/utm";
 import type { LandscapeItem } from "@/types/landscape";
 import { HighlightText } from "./highlight-text";
 
@@ -177,7 +178,7 @@ export function ItemModal({
           {item.homepage_url && (
             <Button asChild size="sm" className="gap-1.5">
               <a
-                href={item.homepage_url}
+                href={appendUtm(item.homepage_url, "website")}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>
@@ -195,7 +196,7 @@ export function ItemModal({
           {item.repo_url && (
             <Button asChild variant="outline" size="sm" className="gap-1.5">
               <a
-                href={item.repo_url}
+                href={appendUtm(item.repo_url, "repo")}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>

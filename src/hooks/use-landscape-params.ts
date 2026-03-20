@@ -34,6 +34,7 @@ export function useLandscapeParams() {
   const viewMode = validView(searchParams.get("view"));
   const activeTag = searchParams.get("tag") ?? "";
   const activeItem = searchParams.get("item") ?? "";
+  const activeCategory = searchParams.get("category") ?? "";
 
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -107,16 +108,31 @@ export function useLandscapeParams() {
     [router, searchParams],
   );
 
+  const setActiveCategory = useCallback(
+    (category: string) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (category) {
+        params.set("category", category);
+      } else {
+        params.delete("category");
+      }
+      router.replace(`?${params.toString()}`, { scroll: false });
+    },
+    [router, searchParams],
+  );
+
   return {
     query,
     groupFilter,
     viewMode,
     activeTag,
     activeItem,
+    activeCategory,
     setQuery,
     setGroupFilter,
     setViewMode,
     setActiveTag,
     setActiveItem,
+    setActiveCategory,
   };
 }
