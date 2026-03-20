@@ -1,10 +1,13 @@
 "use client";
 
+import { Rows } from "@phosphor-icons/react";
+import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import type { Subcategory } from "@/types/landscape";
 import { ItemCard } from "./item-card";
 
 interface SubcategorySectionProps {
   subcategory: Subcategory;
+  categoryName: string;
   subheaderColor?: string;
   categoryColor?: string;
   viewMode?: "grid" | "card";
@@ -26,26 +29,32 @@ function getTextClass(subheaderColor?: string): string {
 
 export function SubcategorySection({
   subcategory,
+  categoryName,
   subheaderColor,
   categoryColor,
   viewMode = "grid",
   isFirstSubcategory = false,
 }: SubcategorySectionProps) {
   const textClass = getTextClass(subheaderColor);
+  const { onTierListOpen } = useLandscapeFilter();
 
   return (
     <section className="flex w-full flex-col border-b border-border last:border-b-0 sm:min-w-[192px] sm:w-auto sm:flex-1 sm:border-b-0 sm:border-r sm:last:border-r-0">
-      <div
-        className={`flex items-center gap-1 px-2 py-1 ${textClass}`}
+      <button
+        type="button"
+        onClick={() => onTierListOpen(categoryName, subcategory, categoryColor)}
+        title={`${subcategory.name} — Tier List`}
+        className={`flex items-center gap-1 px-2 py-1 cursor-pointer hover:brightness-110 transition-[filter] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset ${textClass}`}
         style={subheaderColor ? { backgroundColor: subheaderColor } : undefined}
       >
         <h3
-          className="min-w-0 truncate text-sm font-semibold"
+          className="min-w-0 truncate text-sm font-semibold flex-1 text-left"
           title={subcategory.name}
         >
           {subcategory.name}
         </h3>
-      </div>
+        <Rows size={12} className="shrink-0 opacity-50" />
+      </button>
       <div
         className={
           viewMode === "card"

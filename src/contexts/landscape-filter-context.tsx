@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import type { TagsMap } from "@/types/landscape";
+import type { Subcategory, TagsMap } from "@/types/landscape";
 
 interface LandscapeFilterContextValue {
   query: string;
@@ -10,6 +10,11 @@ interface LandscapeFilterContextValue {
   tags: TagsMap;
   onTagClick: (tag: string) => void;
   onItemClick: (item: string) => void;
+  onTierListOpen: (
+    categoryName: string,
+    subcategory: Subcategory,
+    categoryColor?: string,
+  ) => void;
 }
 
 const LandscapeFilterContext = createContext<LandscapeFilterContextValue>({
@@ -19,6 +24,7 @@ const LandscapeFilterContext = createContext<LandscapeFilterContextValue>({
   tags: {},
   onTagClick: () => {},
   onItemClick: () => {},
+  onTierListOpen: () => {},
 });
 
 export function LandscapeFilterProvider({

@@ -7,11 +7,16 @@ import { Empty, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
 import { LandscapeFilterProvider } from "@/contexts/landscape-filter-context";
 import { useLandscapeParams } from "@/hooks/use-landscape-params";
 import { trackEvent } from "@/lib/analytics";
-import type { LandscapeData, LandscapeItem } from "@/types/landscape";
+import type {
+  LandscapeData,
+  LandscapeItem,
+  Subcategory,
+} from "@/types/landscape";
 import { CategoryRow } from "./category-row";
 import { CommandPalette } from "./command-palette";
 import { FilterBar } from "./filter-bar";
 import { ItemModal } from "./item-card";
+import { TierListModal } from "./tier-list-modal";
 
 interface LandscapeViewProps {
   data: LandscapeData;
@@ -136,6 +141,13 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     [data],
   );
 
+  // Tier list modal state
+  const [tierListData, setTierListData] = useState<{
+    categoryName: string;
+    subcategory: Subcategory;
+    categoryColor?: string;
+  } | null>(null);
+
   // Separate boolean drives the Radix open prop — lets exit animation play
   // before we clear the URL state.
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -187,6 +199,13 @@ export function LandscapeView({ data }: LandscapeViewProps) {
         setDialogOpen(true);
         setActiveItem(name);
       },
+      onTierListOpen: (
+        categoryName: string,
+        subcategory: Subcategory,
+        categoryColor?: string,
+      ) => {
+        setTierListData({ categoryName, subcategory, categoryColor });
+      },
     }),
     [
       query,
@@ -215,6 +234,17 @@ export function LandscapeView({ data }: LandscapeViewProps) {
       <CommandPalette data={data} />
       {/* Single Dialog for URL-driven item detail — kept mounted during exit
           animation so data-closed classes can play before unmount */}
+      {tierListData && (
+        <TierListModal
+          open={!!tierListData}
+          onOpenChange={(open) => {
+            if (!open) setTierListData(null);
+          }}
+          categoryName={tierListData.categoryName}
+          subcategory={tierListData.subcategory}
+          categoryColor={tierListData.categoryColor}
+        />
+      )}
       {modalItem && (
         <Dialog
           open={dialogOpen}

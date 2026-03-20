@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { Toaster } from "sonner";
 import { IntroBanner } from "@/components/landscape/intro-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -107,6 +108,7 @@ export default function RootLayout({
               {children}
             </main>
             <SiteFooter />
+            <Toaster position="bottom-center" richColors />
           </TooltipProvider>
         </ThemeProvider>
       </body>

@@ -18,12 +18,14 @@ import {
   MagnifyingGlass,
   Plug,
   Robot,
+  Rows,
   Shapes,
   ShieldCheck,
   Waveform,
 } from "@phosphor-icons/react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
+import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import type { Category } from "@/types/landscape";
 import { SubcategorySection } from "./subcategory-section";
 
@@ -124,6 +126,24 @@ export function CategoryRow({
   const [collapsed, setCollapsed] = useState(false);
   const expandButtonRef = useRef<HTMLButtonElement>(null);
   const baseColor = category.color ?? DEFAULT_COLOR;
+  const { onTierListOpen } = useLandscapeFilter();
+
+  const allItems = useMemo(
+    () => category.subcategories.flatMap((sub) => sub.items),
+    [category.subcategories],
+  );
+
+  const handleTierListClick = useCallback(
+    (e: React.MouseEvent) => {
+      e.stopPropagation();
+      onTierListOpen(
+        category.name,
+        { name: category.name, items: allItems },
+        baseColor,
+      );
+    },
+    [category.name, allItems, baseColor, onTierListOpen],
+  );
 
   useEffect(() => {
     if (collapsed) {
@@ -155,46 +175,70 @@ export function CategoryRow({
         {category.name}
       </h2>
       {/* Mobile: always-visible horizontal toggle */}
-      <button
-        type="button"
-        onClick={() => setCollapsed((c) => !c)}
+      <div
         className="flex w-full items-center gap-2 px-3 py-2.5 sm:hidden"
         style={{ backgroundColor: sidebarColor }}
-        aria-expanded={!collapsed}
-        aria-controls={contentId}
-        aria-label={
-          collapsed ? `Expand ${category.name}` : `Collapse ${category.name}`
-        }
       >
-        <ToggleBarContent
-          caretClass={collapsed ? "-rotate-90" : ""}
-          name={category.name}
-          iconComponent={IconComponent}
-          totalItemCount={totalItemCount}
-          filteredItemCount={filteredItemCount}
-        />
-      </button>
-
-      {/* Desktop: horizontal bar — only when collapsed */}
-      {collapsed && (
         <button
-          ref={expandButtonRef}
           type="button"
-          onClick={() => setCollapsed(false)}
-          className="hidden w-full items-center gap-2 px-3 py-2.5 sm:flex"
-          style={{ backgroundColor: sidebarColor }}
-          aria-expanded={false}
+          onClick={() => setCollapsed((c) => !c)}
+          className="flex flex-1 items-center gap-2 min-w-0"
+          aria-expanded={!collapsed}
           aria-controls={contentId}
-          aria-label={`Expand ${category.name}`}
+          aria-label={
+            collapsed ? `Expand ${category.name}` : `Collapse ${category.name}`
+          }
         >
           <ToggleBarContent
-            caretClass="-rotate-90"
+            caretClass={collapsed ? "-rotate-90" : ""}
             name={category.name}
             iconComponent={IconComponent}
             totalItemCount={totalItemCount}
             filteredItemCount={filteredItemCount}
           />
         </button>
+        <button
+          type="button"
+          onClick={handleTierListClick}
+          title={`Tier List — ${category.name}`}
+          className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <Rows size={13} />
+        </button>
+      </div>
+
+      {/* Desktop: horizontal bar — only when collapsed */}
+      {collapsed && (
+        <div
+          className="hidden w-full items-center gap-2 px-3 py-2.5 sm:flex"
+          style={{ backgroundColor: sidebarColor }}
+        >
+          <button
+            ref={expandButtonRef}
+            type="button"
+            onClick={() => setCollapsed(false)}
+            className="flex flex-1 items-center gap-2 min-w-0"
+            aria-expanded={false}
+            aria-controls={contentId}
+            aria-label={`Expand ${category.name}`}
+          >
+            <ToggleBarContent
+              caretClass="-rotate-90"
+              name={category.name}
+              iconComponent={IconComponent}
+              totalItemCount={totalItemCount}
+              filteredItemCount={filteredItemCount}
+            />
+          </button>
+          <button
+            type="button"
+            onClick={handleTierListClick}
+            title={`Tier List — ${category.name}`}
+            className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <Rows size={13} />
+          </button>
+        </div>
       )}
 
       {/* Collapsible content — CSS grid trick, no layout shift */}
@@ -237,6 +281,7 @@ export function CategoryRow({
                 <SubcategorySection
                   key={`${category.name}-${sub.name}`}
                   subcategory={sub}
+                  categoryName={category.name}
                   subheaderColor={baseColor}
                   categoryColor={baseColor}
                   viewMode={viewMode}
