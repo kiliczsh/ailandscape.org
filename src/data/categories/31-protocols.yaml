@@ -31,24 +31,12 @@ subcategories:
         tags: [protocol, agents, decentralized]
   - name: Data & Interop Standards
     items:
-      - name: OpenAPI
-        homepage_url: https://openapis.org
-        repo_url: https://github.com/OAI/OpenAPI-Specification
-        logo: openapi.webp
-        description: "Industry standard for describing REST APIs"
-        tags: [protocol, api, rest]
       - name: AsyncAPI
         homepage_url: https://asyncapi.com
         repo_url: https://github.com/asyncapi/spec
         logo: asyncapi.webp
         description: "Open standard for event-driven and async APIs"
         tags: [protocol, api, async]
-      - name: JSON Schema
-        homepage_url: https://json-schema.org
-        repo_url: https://github.com/json-schema-org/json-schema-spec
-        logo: json-schema.webp
-        description: "Vocabulary for annotating and validating JSON documents"
-        tags: [protocol, schema, json]
       - name: GraphQL
         homepage_url: https://graphql.org
         repo_url: https://github.com/graphql/graphql-spec
@@ -61,3 +49,15 @@ subcategories:
         logo: grpc.webp
         description: "High-performance RPC framework by Google"
         tags: [protocol, rpc, streaming]
+      - name: JSON Schema
+        homepage_url: https://json-schema.org
+        repo_url: https://github.com/json-schema-org/json-schema-spec
+        logo: json-schema.webp
+        description: "Vocabulary for annotating and validating JSON documents"
+        tags: [protocol, schema, json]
+      - name: OpenAPI
+        homepage_url: https://openapis.org
+        repo_url: https://github.com/OAI/OpenAPI-Specification
+        logo: openapi.webp
+        description: "Industry standard for describing REST APIs"
+        tags: [protocol, api, rest]

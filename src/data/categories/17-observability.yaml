@@ -5,6 +5,12 @@ icon: ChartLine
 subcategories:
   - name: Model Monitoring
     items:
+      - name: Arize AI
+        homepage_url: https://arize.com
+        logo: arize.webp
+        crunchbase: https://www.crunchbase.com/organization/arize-ai
+        description: "ML observability and monitoring platform"
+        tags: [monitoring, observability]
       - name: Evidently
         homepage_url: https://evidentlyai.com
         repo_url: https://github.com/evidentlyai/evidently
@@ -12,42 +18,19 @@ subcategories:
         crunchbase: https://www.crunchbase.com/organization/evidently-ai
         description: "ML model monitoring and data quality checks"
         tags: [monitoring, data-drift]
-      - name: Arize AI
-        homepage_url: https://arize.com
-        logo: arize.webp
-        crunchbase: https://www.crunchbase.com/organization/arize-ai
-        description: "ML observability and monitoring platform"
-        tags: [monitoring, observability]
+      - name: Fiddler AI
+        homepage_url: https://fiddler.ai
+        logo: fiddler.webp
+        description: "ML model performance management"
+        tags: [monitoring, explainability]
       - name: WhyLabs
         homepage_url: https://whylabs.ai
         repo_url: https://github.com/whylabs/whylogs
         logo: whylabs.webp
         description: "AI observability and data monitoring"
         tags: [monitoring, data-logging]
-      - name: Fiddler AI
-        homepage_url: https://fiddler.ai
-        logo: fiddler.webp
-        description: "ML model performance management"
-        tags: [monitoring, explainability]
   - name: Explainability
     items:
-      - name: SHAP
-        homepage_url: https://shap.readthedocs.io
-        repo_url: https://github.com/shap/shap
-        description: "Game theoretic approach to explain ML model outputs"
-        tags: [explainability, xai]
-      - name: LIME
-        homepage_url: https://github.com/marcotcr/lime
-        repo_url: https://github.com/marcotcr/lime
-        logo: gh-marcotcr.png
-        description: "Local interpretable model-agnostic explanations"
-        tags: [explainability, xai]
-      - name: InterpretML
-        homepage_url: https://interpret.ml
-        repo_url: https://github.com/interpretml/interpret
-        logo: interpret-ml.webp
-        description: "Microsoft's toolkit for model interpretability"
-        tags: [explainability, xai]
       - name: Captum
         homepage_url: https://captum.ai
         repo_url: https://github.com/pytorch/captum
@@ -59,38 +42,55 @@ subcategories:
         repo_url: https://github.com/eli5-org/eli5
         description: "Debug and explain ML classifiers and regressors"
         tags: [explainability, xai, python]
+      - name: InterpretML
+        homepage_url: https://interpret.ml
+        repo_url: https://github.com/interpretml/interpret
+        logo: interpret-ml.webp
+        description: "Microsoft's toolkit for model interpretability"
+        tags: [explainability, xai]
+      - name: LIME
+        homepage_url: https://github.com/marcotcr/lime
+        repo_url: https://github.com/marcotcr/lime
+        logo: gh-marcotcr.png
+        description: "Local interpretable model-agnostic explanations"
+        tags: [explainability, xai]
+      - name: SHAP
+        homepage_url: https://shap.readthedocs.io
+        repo_url: https://github.com/shap/shap
+        description: "Game theoretic approach to explain ML model outputs"
+        tags: [explainability, xai]
   - name: LLM Observability
     items:
-      - name: Langfuse
-        homepage_url: https://langfuse.com
-        repo_url: https://github.com/langfuse/langfuse
-        logo: langfuse.webp
-        description: "Open-source LLM engineering platform for tracing and evals"
-        tags: [observability, llm, tracing, oss]
-      - name: Phoenix (Arize)
-        homepage_url: https://phoenix.arize.com
-        repo_url: https://github.com/Arize-ai/phoenix
-        logo: arize.webp
-        description: "Open-source AI observability and evaluation platform"
-        tags: [observability, llm, tracing, oss]
       - name: Helicone
         homepage_url: https://helicone.ai
         repo_url: https://github.com/Helicone/helicone
         logo: helicone.webp
         description: "Open-source LLM observability and proxy"
         tags: [observability, llm, proxy, oss]
-      - name: Traceloop
-        homepage_url: https://traceloop.com
-        repo_url: https://github.com/traceloop/openllmetry
-        logo: traceloop.webp
-        description: "OpenTelemetry-based LLM observability"
-        tags: [observability, llm, opentelemetry]
+      - name: Langfuse
+        homepage_url: https://langfuse.com
+        repo_url: https://github.com/langfuse/langfuse
+        logo: langfuse.webp
+        description: "Open-source LLM engineering platform for tracing and evals"
+        tags: [observability, llm, tracing, oss]
       - name: Opik
         homepage_url: https://comet.com/site/products/opik
         repo_url: https://github.com/comet-ml/opik
         logo: comet-ml.webp
         description: "Open-source LLM evaluation and tracing by Comet"
         tags: [observability, llm, evaluation, oss]
+      - name: Phoenix (Arize)
+        homepage_url: https://phoenix.arize.com
+        repo_url: https://github.com/Arize-ai/phoenix
+        logo: arize.webp
+        description: "Open-source AI observability and evaluation platform"
+        tags: [observability, llm, tracing, oss]
+      - name: Traceloop
+        homepage_url: https://traceloop.com
+        repo_url: https://github.com/traceloop/openllmetry
+        logo: traceloop.webp
+        description: "OpenTelemetry-based LLM observability"
+        tags: [observability, llm, opentelemetry]
   - name: AI Safety & Alignment
     items:
       - name: Anthropic Constitutional AI
@@ -100,29 +100,17 @@ subcategories:
         tags: [safety, alignment, research]
   - name: Benchmarks & Evaluation
     items:
-      - name: HELM
-        homepage_url: https://crfm.stanford.edu/helm
-        repo_url: https://github.com/stanford-crfm/helm
-        logo: stanford.webp
-        description: "Holistic evaluation of language models"
-        tags: [evaluation, benchmarks, llm]
       - name: EleutherAI LM Evaluation Harness
         homepage_url: https://github.com/EleutherAI/lm-evaluation-harness
         repo_url: https://github.com/EleutherAI/lm-evaluation-harness
         logo: eleutherai.webp
         description: "Framework for few-shot language model evaluation"
         tags: [evaluation, benchmarks, llm]
-      - name: Ragas
-        homepage_url: https://ragas.io
-        repo_url: https://github.com/explodinggradients/ragas
-        logo: ragas.webp
-        description: "Evaluation framework for RAG pipelines"
-        tags: [evaluation, rag]
-      - name: MMLU
-        homepage_url: https://github.com/hendrycks/test
-        repo_url: https://github.com/hendrycks/test
-        logo: gh-hendrycks.png
-        description: "Massive Multitask Language Understanding benchmark"
+      - name: HELM
+        homepage_url: https://crfm.stanford.edu/helm
+        repo_url: https://github.com/stanford-crfm/helm
+        logo: stanford.webp
+        description: "Holistic evaluation of language models"
         tags: [evaluation, benchmarks, llm]
       - name: HumanEval
         homepage_url: https://github.com/openai/human-eval
@@ -136,3 +124,15 @@ subcategories:
         logo: lmsys.webp
         description: "Human-preference LLM ranking via pairwise comparisons"
         tags: [evaluation, benchmarks, human-eval]
+      - name: MMLU
+        homepage_url: https://github.com/hendrycks/test
+        repo_url: https://github.com/hendrycks/test
+        logo: gh-hendrycks.png
+        description: "Massive Multitask Language Understanding benchmark"
+        tags: [evaluation, benchmarks, llm]
+      - name: Ragas
+        homepage_url: https://ragas.io
+        repo_url: https://github.com/explodinggradients/ragas
+        logo: ragas.webp
+        description: "Evaluation framework for RAG pipelines"
+        tags: [evaluation, rag]

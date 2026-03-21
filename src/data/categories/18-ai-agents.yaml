@@ -11,18 +11,18 @@ subcategories:
         project: sandbox
         description: "Multi-agent conversation framework by Microsoft"
         tags: [agents, multi-agent]
-      - name: CrewAI
-        homepage_url: https://crewai.com
-        repo_url: https://github.com/crewAIInc/crewAI
-        logo: crewai.webp
-        description: "Framework for orchestrating role-playing AI agents"
-        tags: [agents, multi-agent, python]
       - name: AutoGPT
         homepage_url: https://agpt.co
         repo_url: https://github.com/Significant-Gravitas/AutoGPT
         logo: autogpt.webp
         description: "Autonomous AI agent platform"
         tags: [agents, autonomous]
+      - name: CrewAI
+        homepage_url: https://crewai.com
+        repo_url: https://github.com/crewAIInc/crewAI
+        logo: crewai.webp
+        description: "Framework for orchestrating role-playing AI agents"
+        tags: [agents, multi-agent, python]
       - name: LangGraph
         homepage_url: https://langchain-ai.github.io/langgraph
         repo_url: https://github.com/langchain-ai/langgraph
@@ -30,33 +30,33 @@ subcategories:
         tags: [agents, workflows, python]
   - name: Autonomous Coding Agents
     items:
+      - name: Aider
+        homepage_url: https://aider.chat
+        repo_url: https://github.com/paul-gauthier/aider
+        description: "AI pair programming in your terminal"
+        tags: [agents, coding, cli, oss]
+      - name: Claude Code
+        homepage_url: https://claude.ai/code
+        logo: anthropic.webp
+        description: "Anthropic's agentic coding tool for terminal use"
+        tags: [agents, coding, cli]
       - name: Devin
         homepage_url: https://devin.ai
         logo: devin.webp
         description: "Fully autonomous AI software engineer by Cognition"
         tags: [agents, coding, autonomous]
-      - name: SWE-agent
-        homepage_url: https://swe-agent.com
-        repo_url: https://github.com/princeton-nlp/SWE-agent
-        logo: swe-agent.webp
-        description: "Autonomous GitHub issue-fixing agent by Princeton"
-        tags: [agents, coding, autonomous, oss]
       - name: OpenHands
         homepage_url: https://www.all-hands.dev
         repo_url: https://github.com/All-Hands-AI/OpenHands
         logo: openhands.webp
         description: "Open-source platform for software development agents"
         tags: [agents, coding, autonomous, oss]
-      - name: Claude Code
-        homepage_url: https://claude.ai/code
-        logo: anthropic.webp
-        description: "Anthropic's agentic coding tool for terminal use"
-        tags: [agents, coding, cli]
-      - name: Aider
-        homepage_url: https://aider.chat
-        repo_url: https://github.com/paul-gauthier/aider
-        description: "AI pair programming in your terminal"
-        tags: [agents, coding, cli, oss]
+      - name: SWE-agent
+        homepage_url: https://swe-agent.com
+        repo_url: https://github.com/princeton-nlp/SWE-agent
+        logo: swe-agent.webp
+        description: "Autonomous GitHub issue-fixing agent by Princeton"
+        tags: [agents, coding, autonomous, oss]
   - name: Browser & Computer Use
     items:
       - name: Browser Use
@@ -78,16 +78,6 @@ subcategories:
         tags: [agents, browser, automation, oss]
   - name: Voice AI Agents
     items:
-      - name: Vapi
-        homepage_url: https://vapi.ai
-        logo: vapi.webp
-        description: "Voice AI infrastructure for building voice agents"
-        tags: [agents, voice, api]
-      - name: Retell AI
-        homepage_url: https://retellai.com
-        logo: retell.webp
-        description: "Platform for building conversational voice AI agents"
-        tags: [agents, voice, api]
       - name: Bland AI
         homepage_url: https://bland.ai
         logo: bland.webp
@@ -99,3 +89,13 @@ subcategories:
         logo: livekit.webp
         description: "Open-source framework for real-time voice AI agents"
         tags: [agents, voice, realtime, oss]
+      - name: Retell AI
+        homepage_url: https://retellai.com
+        logo: retell.webp
+        description: "Platform for building conversational voice AI agents"
+        tags: [agents, voice, api]
+      - name: Vapi
+        homepage_url: https://vapi.ai
+        logo: vapi.webp
+        description: "Voice AI infrastructure for building voice agents"
+        tags: [agents, voice, api]

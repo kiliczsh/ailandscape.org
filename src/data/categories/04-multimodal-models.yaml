@@ -5,36 +5,36 @@ icon: Intersect
 subcategories:
   - name: Vision-Language Models
     items:
-      - name: GPT-4V
-        homepage_url: https://openai.com/research/gpt-4v-system-card
-        logo: openai.webp
-        description: "OpenAI's vision-capable language model"
-        tags: [multimodal, vision, llm]
-      - name: Gemini Pro Vision
-        homepage_url: https://deepmind.google/technologies/gemini
-        logo: gemini.webp
-        description: "Google's multimodal model with vision capabilities"
-        tags: [multimodal, vision, llm]
-      - name: LLaVA
-        homepage_url: https://llava-vl.github.io
-        repo_url: https://github.com/haotian-liu/LLaVA
-        description: "Open-source visual instruction tuning model"
-        tags: [multimodal, vision, oss]
       - name: Flamingo
         homepage_url: https://deepmind.google/discover/blog/tackling-multiple-tasks-with-a-single-visual-language-model
         logo: deepmind.webp
         description: "DeepMind's visual language model"
         tags: [multimodal, vision, open-weights]
-      - name: LLaVA-1.6
-        homepage_url: https://llava-vl.github.io/blog/2024-01-30-llava-1-6
-        repo_url: https://github.com/haotian-liu/LLaVA
-        description: "Improved LLaVA with enhanced OCR and reasoning"
-        tags: [multimodal, vision, oss]
+      - name: Gemini Pro Vision
+        homepage_url: https://deepmind.google/technologies/gemini
+        logo: gemini.webp
+        description: "Google's multimodal model with vision capabilities"
+        tags: [multimodal, vision, llm]
+      - name: GPT-4V
+        homepage_url: https://openai.com/research/gpt-4v-system-card
+        logo: openai.webp
+        description: "OpenAI's vision-capable language model"
+        tags: [multimodal, vision, llm]
       - name: InternVL 2
         homepage_url: https://internvl.github.io
         repo_url: https://github.com/OpenGVLab/InternVL
         description: "Strong open-source vision-language model by Shanghai AI Lab"
         tags: [multimodal, vision, open-weights]
+      - name: LLaVA
+        homepage_url: https://llava-vl.github.io
+        repo_url: https://github.com/haotian-liu/LLaVA
+        description: "Open-source visual instruction tuning model"
+        tags: [multimodal, vision, oss]
+      - name: LLaVA-1.6
+        homepage_url: https://llava-vl.github.io/blog/2024-01-30-llava-1-6
+        repo_url: https://github.com/haotian-liu/LLaVA
+        description: "Improved LLaVA with enhanced OCR and reasoning"
+        tags: [multimodal, vision, oss]
       - name: Qwen-VL
         homepage_url: https://qwenlm.github.io/blog/qwen-vl
         repo_url: https://github.com/QwenLM/Qwen-VL

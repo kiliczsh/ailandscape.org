@@ -5,6 +5,11 @@ icon: GitBranch
 subcategories:
   - name: Experiment Tracking
     items:
+      - name: Comet ML
+        homepage_url: https://comet.com
+        logo: comet-ml.webp
+        description: "ML experiment management platform"
+        tags: [experiment-tracking]
       - name: MLflow
         homepage_url: https://mlflow.org
         repo_url: https://github.com/mlflow/mlflow
@@ -12,24 +17,24 @@ subcategories:
         project: graduated
         description: "Open source platform for ML lifecycle"
         tags: [experiment-tracking, model-registry]
+      - name: Neptune
+        homepage_url: https://neptune.ai
+        logo: neptune.webp
+        description: "Experiment tracking for ML teams"
+        tags: [experiment-tracking]
       - name: Weights & Biases
         homepage_url: https://wandb.ai
         logo: wandb.webp
         crunchbase: https://www.crunchbase.com/organization/weights-biases
         description: "Developer tools for ML experiment tracking"
         tags: [experiment-tracking, visualization]
-      - name: Neptune
-        homepage_url: https://neptune.ai
-        logo: neptune.webp
-        description: "Experiment tracking for ML teams"
-        tags: [experiment-tracking]
-      - name: Comet ML
-        homepage_url: https://comet.com
-        logo: comet-ml.webp
-        description: "ML experiment management platform"
-        tags: [experiment-tracking]
   - name: Model Registry
     items:
+      - name: Hugging Face Hub
+        homepage_url: https://huggingface.co/models
+        logo: hugging-face.webp
+        description: "Community model repository and registry"
+        tags: [model-registry, community]
       - name: MLflow Model Registry
         homepage_url: https://mlflow.org/docs/latest/model-registry.html
         repo_url: https://github.com/mlflow/mlflow
@@ -37,13 +42,14 @@ subcategories:
         project: graduated
         description: "Centralized model store for lifecycle management"
         tags: [model-registry]
-      - name: Hugging Face Hub
-        homepage_url: https://huggingface.co/models
-        logo: hugging-face.webp
-        description: "Community model repository and registry"
-        tags: [model-registry, community]
   - name: Pipeline Orchestration
     items:
+      - name: Apache Airflow
+        homepage_url: https://airflow.apache.org
+        repo_url: https://github.com/apache/airflow
+        project: graduated
+        description: "Workflow automation and scheduling platform"
+        tags: [orchestration, scheduling]
       - name: Kubeflow
         homepage_url: https://kubeflow.org
         repo_url: https://github.com/kubeflow/kubeflow
@@ -51,12 +57,6 @@ subcategories:
         project: graduated
         description: "Kubernetes-native ML pipeline orchestration"
         tags: [orchestration, kubernetes]
-      - name: Apache Airflow
-        homepage_url: https://airflow.apache.org
-        repo_url: https://github.com/apache/airflow
-        project: graduated
-        description: "Workflow automation and scheduling platform"
-        tags: [orchestration, scheduling]
       - name: Prefect
         homepage_url: https://prefect.io
         repo_url: https://github.com/PrefectHQ/prefect
@@ -77,17 +77,17 @@ subcategories:
         logo: feast.webp
         description: "Open source feature store for ML"
         tags: [feature-store]
-      - name: Tecton
-        homepage_url: https://tecton.ai
-        logo: tecton.webp
-        description: "Enterprise feature platform for ML"
-        tags: [feature-store, enterprise]
       - name: Hopsworks
         homepage_url: https://hopsworks.ai
         repo_url: https://github.com/logicalclocks/hopsworks
         logo: hopsworks.webp
         description: "Feature store and MLOps platform"
         tags: [feature-store, mlops]
+      - name: Tecton
+        homepage_url: https://tecton.ai
+        logo: tecton.webp
+        description: "Enterprise feature platform for ML"
+        tags: [feature-store, enterprise]
       - name: Vertex Feature Store
         homepage_url: https://cloud.google.com/vertex-ai/docs/featurestore
         logo: google-cloud.webp
@@ -95,18 +95,18 @@ subcategories:
         tags: [feature-store, cloud, google]
   - name: CI/CD for ML
     items:
-      - name: DVC
-        homepage_url: https://dvc.org
-        repo_url: https://github.com/iterative/dvc
-        logo: dvc.webp
-        description: "Data version control for ML projects"
-        tags: [version-control, cicd]
       - name: CML
         homepage_url: https://cml.dev
         repo_url: https://github.com/iterative/cml
         logo: cml.webp
         description: "Continuous machine learning CI/CD tool"
         tags: [cicd, github-actions]
+      - name: DVC
+        homepage_url: https://dvc.org
+        repo_url: https://github.com/iterative/dvc
+        logo: dvc.webp
+        description: "Data version control for ML projects"
+        tags: [version-control, cicd]
       - name: GitHub Actions
         homepage_url: https://github.com/features/actions
         logo: gh-features.png

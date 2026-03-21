@@ -5,6 +5,18 @@ icon: Database
 subcategories:
   - name: LLM Frameworks & RAG
     items:
+      - name: DSPy
+        homepage_url: https://dspy.ai
+        repo_url: https://github.com/stanfordnlp/dspy
+        logo: dspy.webp
+        description: "Framework for algorithmically optimizing LM prompts and pipelines"
+        tags: [llm, framework, optimization]
+      - name: Haystack
+        homepage_url: https://haystack.deepset.ai
+        repo_url: https://github.com/deepset-ai/haystack
+        logo: haystack.webp
+        description: "End-to-end NLP framework for LLM apps"
+        tags: [llm, framework, search]
       - name: LangChain
         homepage_url: https://langchain.com
         repo_url: https://github.com/langchain-ai/langchain
@@ -17,12 +29,6 @@ subcategories:
         logo: llamaindex.webp
         description: "Data framework for LLM applications"
         tags: [llm, framework, rag]
-      - name: Haystack
-        homepage_url: https://haystack.deepset.ai
-        repo_url: https://github.com/deepset-ai/haystack
-        logo: haystack.webp
-        description: "End-to-end NLP framework for LLM apps"
-        tags: [llm, framework, search]
       - name: Semantic Kernel
         homepage_url: https://learn.microsoft.com/semantic-kernel
         repo_url: https://github.com/microsoft/semantic-kernel
@@ -35,19 +41,25 @@ subcategories:
         logo: spring.webp
         description: "Spring framework for Java AI application development"
         tags: [llm, framework, java]
-      - name: DSPy
-        homepage_url: https://dspy.ai
-        repo_url: https://github.com/stanfordnlp/dspy
-        logo: dspy.webp
-        description: "Framework for algorithmically optimizing LM prompts and pipelines"
-        tags: [llm, framework, optimization]
   - name: Retrieval & Reranking
     items:
+      - name: BGE Reranker
+        homepage_url: https://huggingface.co/BAAI/bge-reranker-v2-m3
+        repo_url: https://github.com/FlagOpen/FlagEmbedding
+        logo: hugging-face.webp
+        description: "BAAI's high-performance multilingual reranker"
+        tags: [rag, reranking, multilingual, oss]
       - name: Cohere Rerank 3
         homepage_url: https://cohere.com/rerank
         logo: cohere.webp
         description: "State-of-the-art reranking model for RAG relevance"
         tags: [rag, reranking, api]
+      - name: ColBERT
+        homepage_url: https://github.com/stanford-futuredata/ColBERT
+        repo_url: https://github.com/stanford-futuredata/ColBERT
+        logo: stanford.webp
+        description: "Late interaction retrieval model with token-level embeddings"
+        tags: [rag, retrieval, reranking, oss]
       - name: FlashRank
         homepage_url: https://github.com/PrithivirajDamodaran/FlashRank
         repo_url: https://github.com/PrithivirajDamodaran/FlashRank
@@ -59,26 +71,8 @@ subcategories:
         logo: jina.webp
         description: "Multilingual reranker for improving RAG precision"
         tags: [rag, reranking, multilingual]
-      - name: ColBERT
-        homepage_url: https://github.com/stanford-futuredata/ColBERT
-        repo_url: https://github.com/stanford-futuredata/ColBERT
-        logo: stanford.webp
-        description: "Late interaction retrieval model with token-level embeddings"
-        tags: [rag, retrieval, reranking, oss]
-      - name: BGE Reranker
-        homepage_url: https://huggingface.co/BAAI/bge-reranker-v2-m3
-        repo_url: https://github.com/FlagOpen/FlagEmbedding
-        logo: hugging-face.webp
-        description: "BAAI's high-performance multilingual reranker"
-        tags: [rag, reranking, multilingual, oss]
   - name: Document Parsing
     items:
-      - name: Unstructured
-        homepage_url: https://unstructured.io
-        repo_url: https://github.com/Unstructured-IO/unstructured
-        logo: unstructured.webp
-        description: "Document processing for RAG pipelines"
-        tags: [rag, document-processing, oss]
       - name: Docling
         homepage_url: https://github.com/DS4SD/docling
         repo_url: https://github.com/DS4SD/docling
@@ -90,14 +84,20 @@ subcategories:
         logo: llamaindex.webp
         description: "Optimized document parsing for RAG by LlamaIndex"
         tags: [document-processing, pdf, api]
-      - name: Reducto
-        homepage_url: https://reducto.ai
-        logo: reducto.webp
-        description: "High-accuracy document extraction for complex PDFs"
-        tags: [document-processing, pdf, api]
       - name: Marker
         homepage_url: https://github.com/VikParuchuri/marker
         repo_url: https://github.com/VikParuchuri/marker
         logo: gh-VikParuchuri.png
         description: "Convert PDFs to markdown quickly and accurately"
         tags: [document-processing, pdf, oss]
+      - name: Reducto
+        homepage_url: https://reducto.ai
+        logo: reducto.webp
+        description: "High-accuracy document extraction for complex PDFs"
+        tags: [document-processing, pdf, api]
+      - name: Unstructured
+        homepage_url: https://unstructured.io
+        repo_url: https://github.com/Unstructured-IO/unstructured
+        logo: unstructured.webp
+        description: "Document processing for RAG pipelines"
+        tags: [rag, document-processing, oss]

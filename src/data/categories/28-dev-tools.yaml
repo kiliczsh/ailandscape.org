@@ -5,35 +5,35 @@ icon: Code
 subcategories:
   - name: Prompt Engineering
     items:
-      - name: PromptFlow
-        homepage_url: https://microsoft.github.io/promptflow
-        repo_url: https://github.com/microsoft/promptflow
-        logo: microsoft.webp
-        description: "Suite of development tools for LLM apps"
-        tags: [prompt-engineering, workflows]
-      - name: PromptLayer
-        homepage_url: https://promptlayer.com
-        logo: promptlayer.webp
-        description: "Prompt versioning and management platform"
-        tags: [prompt-engineering, management]
       - name: Guidance
         homepage_url: https://github.com/guidance-ai/guidance
         repo_url: https://github.com/guidance-ai/guidance
         logo: gh-guidance-ai.png
         description: "Constrained generation and prompt control by Microsoft"
         tags: [prompt-engineering, constrained-generation, oss]
+      - name: PromptFlow
+        homepage_url: https://microsoft.github.io/promptflow
+        repo_url: https://github.com/microsoft/promptflow
+        logo: microsoft.webp
+        description: "Suite of development tools for LLM apps"
+        tags: [prompt-engineering, workflows]
       - name: Promptfoo
         homepage_url: https://promptfoo.dev
         repo_url: https://github.com/promptfoo/promptfoo
         logo: promptfoo.webp
         description: "Test, evaluate, and red-team LLM prompts"
         tags: [prompt-engineering, evaluation, oss]
+      - name: PromptLayer
+        homepage_url: https://promptlayer.com
+        logo: promptlayer.webp
+        description: "Prompt versioning and management platform"
+        tags: [prompt-engineering, management]
   - name: Evaluation & Testing
     items:
-      - name: LangSmith
-        homepage_url: https://smith.langchain.com
-        logo: langchain.webp
-        description: "Platform for debugging and evaluating LLM apps"
+      - name: Braintrust
+        homepage_url: https://braintrust.dev
+        logo: braintrust.webp
+        description: "LLM evaluation and prompt management platform"
         tags: [evaluation, testing, llm]
       - name: DeepEval
         homepage_url: https://deepeval.com
@@ -41,28 +41,34 @@ subcategories:
         logo: deepeval.webp
         description: "Open-source LLM evaluation framework"
         tags: [evaluation, testing, llm]
-      - name: Braintrust
-        homepage_url: https://braintrust.dev
-        logo: braintrust.webp
-        description: "LLM evaluation and prompt management platform"
+      - name: LangSmith
+        homepage_url: https://smith.langchain.com
+        logo: langchain.webp
+        description: "Platform for debugging and evaluating LLM apps"
         tags: [evaluation, testing, llm]
   - name: Coding Assistants
     items:
-      - name: GitHub Copilot
-        homepage_url: https://github.com/features/copilot
-        logo: gh-features.png
-        description: "AI pair programmer for code completion"
-        tags: [coding, ide, copilot]
-      - name: Cursor
-        homepage_url: https://cursor.sh
-        logo: cursor.webp
-        description: "AI-native code editor"
-        tags: [coding, ide]
       - name: Codeium
         homepage_url: https://codeium.com
         logo: codeium.webp
         description: "Free AI code acceleration toolkit"
         tags: [coding, ide, free]
+      - name: Continue
+        homepage_url: https://continue.dev
+        repo_url: https://github.com/continuedev/continue
+        logo: continue.webp
+        description: "Open-source AI code assistant for VS Code and JetBrains"
+        tags: [coding, ide, oss]
+      - name: Cursor
+        homepage_url: https://cursor.sh
+        logo: cursor.webp
+        description: "AI-native code editor"
+        tags: [coding, ide]
+      - name: GitHub Copilot
+        homepage_url: https://github.com/features/copilot
+        logo: gh-features.png
+        description: "AI pair programmer for code completion"
+        tags: [coding, ide, copilot]
       - name: Tabnine
         homepage_url: https://tabnine.com
         logo: tabnine.webp
@@ -73,9 +79,3 @@ subcategories:
         logo: windsurf.webp
         description: "Agentic IDE by Codeium with deep codebase awareness"
         tags: [coding, ide, agentic]
-      - name: Continue
-        homepage_url: https://continue.dev
-        repo_url: https://github.com/continuedev/continue
-        logo: continue.webp
-        description: "Open-source AI code assistant for VS Code and JetBrains"
-        tags: [coding, ide, oss]

@@ -5,24 +5,6 @@ icon: MagnifyingGlass
 subcategories:
   - name: Vector Databases
     items:
-      - name: Pinecone
-        homepage_url: https://pinecone.io
-        logo: pinecone.webp
-        crunchbase: https://www.crunchbase.com/organization/pinecone
-        description: "Managed vector database for ML applications"
-        tags: [vector-db, managed]
-      - name: Weaviate
-        homepage_url: https://weaviate.io
-        repo_url: https://github.com/weaviate/weaviate
-        logo: weaviate.webp
-        description: "Open-source vector database with ML integrations"
-        tags: [vector-db, oss]
-      - name: Qdrant
-        homepage_url: https://qdrant.tech
-        repo_url: https://github.com/qdrant/qdrant
-        logo: qdrant.webp
-        description: "Vector similarity search engine"
-        tags: [vector-db, rust, oss]
       - name: Chroma
         homepage_url: https://trychroma.com
         repo_url: https://github.com/chroma-core/chroma
@@ -42,6 +24,24 @@ subcategories:
         logo: gh-pgvector.png
         description: "Vector similarity search for PostgreSQL"
         tags: [vector-db, postgresql, oss]
+      - name: Pinecone
+        homepage_url: https://pinecone.io
+        logo: pinecone.webp
+        crunchbase: https://www.crunchbase.com/organization/pinecone
+        description: "Managed vector database for ML applications"
+        tags: [vector-db, managed]
+      - name: Qdrant
+        homepage_url: https://qdrant.tech
+        repo_url: https://github.com/qdrant/qdrant
+        logo: qdrant.webp
+        description: "Vector similarity search engine"
+        tags: [vector-db, rust, oss]
+      - name: Weaviate
+        homepage_url: https://weaviate.io
+        repo_url: https://github.com/weaviate/weaviate
+        logo: weaviate.webp
+        description: "Open-source vector database with ML integrations"
+        tags: [vector-db, oss]
   - name: Semantic Search
     items:
       - name: Elasticsearch
@@ -65,18 +65,18 @@ subcategories:
         tags: [search, serving]
   - name: Similarity & Indexing
     items:
-      - name: FAISS
-        homepage_url: https://faiss.ai
-        repo_url: https://github.com/facebookresearch/faiss
-        logo: meta.webp
-        description: "Library for efficient similarity search by Meta"
-        tags: [similarity, indexing, cpp]
       - name: Annoy
         homepage_url: https://github.com/spotify/annoy
         repo_url: https://github.com/spotify/annoy
         logo: gh-spotify.png
         description: "Approximate nearest neighbors by Spotify"
         tags: [similarity, indexing]
+      - name: FAISS
+        homepage_url: https://faiss.ai
+        repo_url: https://github.com/facebookresearch/faiss
+        logo: meta.webp
+        description: "Library for efficient similarity search by Meta"
+        tags: [similarity, indexing, cpp]
       - name: ScaNN
         homepage_url: https://github.com/google-research/google-research/tree/master/scann
         repo_url: https://github.com/google-research/google-research

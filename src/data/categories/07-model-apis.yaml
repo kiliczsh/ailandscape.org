@@ -5,31 +5,31 @@ icon: Plug
 subcategories:
   - name: Hosted Model APIs
     items:
-      - name: OpenAI API
-        homepage_url: https://platform.openai.com
-        logo: openai.webp
-        description: "APIs for GPT models, DALL-E, and Whisper"
-        tags: [api, llm, saas]
       - name: Anthropic API
         homepage_url: https://anthropic.com/api
         logo: anthropic.webp
         description: "APIs for Claude language models"
         tags: [api, llm, saas]
-      - name: Together AI
-        homepage_url: https://together.ai
-        logo: together-ai.webp
-        description: "Cloud platform for running open-source models"
-        tags: [api, open-models, cloud]
-      - name: Replicate
-        homepage_url: https://replicate.com
-        logo: replicate.webp
-        description: "Run open-source ML models via API"
-        tags: [api, open-models, cloud]
       - name: Cerebras Inference
         homepage_url: https://cerebras.ai/inference
         logo: cerebras.webp
         description: "Ultra-fast LLM inference API powered by Cerebras hardware"
         tags: [api, llm, fast-inference]
+      - name: OpenAI API
+        homepage_url: https://platform.openai.com
+        logo: openai.webp
+        description: "APIs for GPT models, DALL-E, and Whisper"
+        tags: [api, llm, saas]
+      - name: Replicate
+        homepage_url: https://replicate.com
+        logo: replicate.webp
+        description: "Run open-source ML models via API"
+        tags: [api, open-models, cloud]
+      - name: Together AI
+        homepage_url: https://together.ai
+        logo: together-ai.webp
+        description: "Cloud platform for running open-source models"
+        tags: [api, open-models, cloud]
   - name: AI Gateway & Proxy
     items:
       - name: LiteLLM
@@ -38,18 +38,18 @@ subcategories:
         logo: litellm.webp
         description: "Unified API gateway for 100+ LLM providers"
         tags: [gateway, proxy, llm, oss]
-      - name: PortKey
-        homepage_url: https://portkey.ai
-        logo: portkey.webp
-        description: "AI gateway with observability and fallback routing"
-        tags: [gateway, proxy, llm, observability]
-      - name: OpenRouter
-        homepage_url: https://openrouter.ai
-        logo: openrouter.webp
-        description: "Unified interface for frontier AI models"
-        tags: [gateway, proxy, llm]
       - name: Martian
         homepage_url: https://withmartian.com
         logo: martian.webp
         description: "Intelligent LLM router for cost and performance optimization"
         tags: [gateway, routing, llm]
+      - name: OpenRouter
+        homepage_url: https://openrouter.ai
+        logo: openrouter.webp
+        description: "Unified interface for frontier AI models"
+        tags: [gateway, proxy, llm]
+      - name: PortKey
+        homepage_url: https://portkey.ai
+        logo: portkey.webp
+        description: "AI gateway with observability and fallback routing"
+        tags: [gateway, proxy, llm, observability]

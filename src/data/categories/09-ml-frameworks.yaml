@@ -5,6 +5,17 @@ icon: Brain
 subcategories:
   - name: Deep Learning
     items:
+      - name: JAX
+        homepage_url: https://jax.readthedocs.io
+        repo_url: https://github.com/google/jax
+        description: "Google's composable function transformations for ML"
+        tags: [deep-learning, python, autodiff]
+      - name: Keras
+        homepage_url: https://keras.io
+        repo_url: https://github.com/keras-team/keras
+        logo: keras.webp
+        description: "High-level neural networks API"
+        tags: [deep-learning, python]
       - name: PyTorch
         homepage_url: https://pytorch.org
         repo_url: https://github.com/pytorch/pytorch
@@ -19,35 +30,8 @@ subcategories:
         project: graduated
         description: "Google's end-to-end open source ML platform"
         tags: [deep-learning, python]
-      - name: JAX
-        homepage_url: https://jax.readthedocs.io
-        repo_url: https://github.com/google/jax
-        description: "Google's composable function transformations for ML"
-        tags: [deep-learning, python, autodiff]
-      - name: Keras
-        homepage_url: https://keras.io
-        repo_url: https://github.com/keras-team/keras
-        logo: keras.webp
-        description: "High-level neural networks API"
-        tags: [deep-learning, python]
   - name: Classical ML
     items:
-      - name: scikit-learn
-        homepage_url: https://scikit-learn.org
-        repo_url: https://github.com/scikit-learn/scikit-learn
-        logo: scikit-learn.webp
-        description: "Machine learning in Python"
-        tags: [classical-ml, python]
-      - name: XGBoost
-        homepage_url: https://xgboost.readthedocs.io
-        repo_url: https://github.com/dmlc/xgboost
-        description: "Optimized gradient boosting library"
-        tags: [classical-ml, gradient-boosting]
-      - name: LightGBM
-        homepage_url: https://lightgbm.readthedocs.io
-        repo_url: https://github.com/microsoft/LightGBM
-        description: "Fast gradient boosting framework by Microsoft"
-        tags: [classical-ml, gradient-boosting]
       - name: Accord.NET
         homepage_url: http://accord-framework.net
         repo_url: https://github.com/accord-net/framework
@@ -67,6 +51,22 @@ subcategories:
         project: incubating
         description: "High-performance distributed machine learning platform"
         tags: [classical-ml, distributed]
+      - name: LightGBM
+        homepage_url: https://lightgbm.readthedocs.io
+        repo_url: https://github.com/microsoft/LightGBM
+        description: "Fast gradient boosting framework by Microsoft"
+        tags: [classical-ml, gradient-boosting]
+      - name: scikit-learn
+        homepage_url: https://scikit-learn.org
+        repo_url: https://github.com/scikit-learn/scikit-learn
+        logo: scikit-learn.webp
+        description: "Machine learning in Python"
+        tags: [classical-ml, python]
+      - name: XGBoost
+        homepage_url: https://xgboost.readthedocs.io
+        repo_url: https://github.com/dmlc/xgboost
+        description: "Optimized gradient boosting library"
+        tags: [classical-ml, gradient-boosting]
   - name: AutoML
     items:
       - name: Auto-sklearn
@@ -74,17 +74,6 @@ subcategories:
         repo_url: https://github.com/automl/auto-sklearn
         description: "Automated machine learning toolkit"
         tags: [automl, python]
-      - name: H2O AutoML
-        homepage_url: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html
-        repo_url: https://github.com/h2oai/h2o-3
-        logo: h2o.webp
-        description: "Automatic machine learning from H2O.ai"
-        tags: [automl]
-      - name: Google AutoML
-        homepage_url: https://cloud.google.com/automl
-        logo: google-cloud.webp
-        description: "Google Cloud's automated ML service"
-        tags: [automl, cloud]
       - name: AutoGluon
         homepage_url: https://auto.gluon.ai
         repo_url: https://github.com/autogluon/autogluon
@@ -97,19 +86,19 @@ subcategories:
         logo: microsoft.webp
         description: "Fast and Lightweight AutoML by Microsoft"
         tags: [automl, python, fast]
+      - name: Google AutoML
+        homepage_url: https://cloud.google.com/automl
+        logo: google-cloud.webp
+        description: "Google Cloud's automated ML service"
+        tags: [automl, cloud]
+      - name: H2O AutoML
+        homepage_url: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html
+        repo_url: https://github.com/h2oai/h2o-3
+        logo: h2o.webp
+        description: "Automatic machine learning from H2O.ai"
+        tags: [automl]
   - name: Reinforcement Learning
     items:
-      - name: Stable Baselines3
-        homepage_url: https://stable-baselines3.readthedocs.io
-        repo_url: https://github.com/DLR-RM/stable-baselines3
-        description: "Reliable RL algorithm implementations"
-        tags: [reinforcement-learning, python]
-      - name: Ray RLlib
-        homepage_url: https://docs.ray.io/en/latest/rllib/index.html
-        repo_url: https://github.com/ray-project/ray
-        logo: ray.webp
-        description: "Scalable reinforcement learning library"
-        tags: [reinforcement-learning, distributed]
       - name: OpenAI Gym
         homepage_url: https://gymnasium.farama.org
         repo_url: https://github.com/Farama-Foundation/Gymnasium
@@ -122,20 +111,31 @@ subcategories:
         logo: pettingzoo.webp
         description: "Multi-agent RL environment API"
         tags: [reinforcement-learning, multi-agent, environments]
+      - name: Ray RLlib
+        homepage_url: https://docs.ray.io/en/latest/rllib/index.html
+        repo_url: https://github.com/ray-project/ray
+        logo: ray.webp
+        description: "Scalable reinforcement learning library"
+        tags: [reinforcement-learning, distributed]
+      - name: Stable Baselines3
+        homepage_url: https://stable-baselines3.readthedocs.io
+        repo_url: https://github.com/DLR-RM/stable-baselines3
+        description: "Reliable RL algorithm implementations"
+        tags: [reinforcement-learning, python]
   - name: SDK & Libraries
     items:
-      - name: Hugging Face Transformers
-        homepage_url: https://huggingface.co/docs/transformers
-        repo_url: https://github.com/huggingface/transformers
-        logo: hugging-face.webp
-        description: "State-of-the-art ML for PyTorch, TF, and JAX"
-        tags: [sdk, transformers, nlp]
       - name: Diffusers
         homepage_url: https://huggingface.co/docs/diffusers
         repo_url: https://github.com/huggingface/diffusers
         logo: hugging-face.webp
         description: "State-of-the-art diffusion models library"
         tags: [sdk, diffusion, image-generation]
+      - name: Hugging Face Transformers
+        homepage_url: https://huggingface.co/docs/transformers
+        repo_url: https://github.com/huggingface/transformers
+        logo: hugging-face.webp
+        description: "State-of-the-art ML for PyTorch, TF, and JAX"
+        tags: [sdk, transformers, nlp]
       - name: OpenAI Python SDK
         homepage_url: https://github.com/openai/openai-python
         repo_url: https://github.com/openai/openai-python

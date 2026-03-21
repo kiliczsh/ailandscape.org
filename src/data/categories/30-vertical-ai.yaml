@@ -5,16 +5,6 @@ icon: Buildings
 subcategories:
   - name: Search
     items:
-      - name: Perplexity AI
-        homepage_url: https://perplexity.ai
-        logo: perplexity.webp
-        description: "AI-powered answer engine with real-time search"
-        tags: [search, ai, proprietary]
-      - name: You.com
-        homepage_url: https://you.com
-        logo: you-com.webp
-        description: "AI search engine with personalized results"
-        tags: [search, ai, proprietary]
       - name: Exa AI
         homepage_url: https://exa.ai
         logo: exa.webp
@@ -25,40 +15,50 @@ subcategories:
         logo: kagi.webp
         description: "Privacy-focused AI-enhanced search engine"
         tags: [search, privacy, proprietary]
+      - name: Perplexity AI
+        homepage_url: https://perplexity.ai
+        logo: perplexity.webp
+        description: "AI-powered answer engine with real-time search"
+        tags: [search, ai, proprietary]
+      - name: You.com
+        homepage_url: https://you.com
+        logo: you-com.webp
+        description: "AI search engine with personalized results"
+        tags: [search, ai, proprietary]
   - name: Healthcare
     items:
-      - name: Med-PaLM 2
-        homepage_url: https://sites.research.google/med-palm
-        logo: google-cloud.webp
-        description: "Google's medical question-answering AI model"
-        tags: [healthcare, llm, research]
-      - name: BioMedLM
-        homepage_url: https://crfm.stanford.edu/2022/12/15/biomedlm.html
-        logo: stanford.webp
-        description: "Stanford's biomedical language model"
-        tags: [healthcare, llm, open-weights]
-      - name: Nabla
-        homepage_url: https://nabla.com
-        logo: nabla.webp
-        description: "AI-powered ambient documentation for clinicians"
-        tags: [healthcare, documentation, proprietary]
       - name: Abridge
         homepage_url: https://abridge.com
         logo: abridge.webp
         description: "AI for automated clinical note generation"
         tags: [healthcare, documentation, proprietary]
+      - name: BioMedLM
+        homepage_url: https://crfm.stanford.edu/2022/12/15/biomedlm.html
+        logo: stanford.webp
+        description: "Stanford's biomedical language model"
+        tags: [healthcare, llm, open-weights]
+      - name: Med-PaLM 2
+        homepage_url: https://sites.research.google/med-palm
+        logo: google-cloud.webp
+        description: "Google's medical question-answering AI model"
+        tags: [healthcare, llm, research]
+      - name: Nabla
+        homepage_url: https://nabla.com
+        logo: nabla.webp
+        description: "AI-powered ambient documentation for clinicians"
+        tags: [healthcare, documentation, proprietary]
   - name: Legal
     items:
-      - name: Harvey AI
-        homepage_url: https://harvey.ai
-        logo: harvey.webp
-        description: "AI platform for legal research and document drafting"
-        tags: [legal, llm, proprietary]
       - name: Casetext
         homepage_url: https://casetext.com
         logo: casetext.webp
         description: "AI legal research assistant acquired by Thomson Reuters"
         tags: [legal, research, proprietary]
+      - name: Harvey AI
+        homepage_url: https://harvey.ai
+        logo: harvey.webp
+        description: "AI platform for legal research and document drafting"
+        tags: [legal, llm, proprietary]
       - name: Lexis+ AI
         homepage_url: https://lexisnexis.com/en-us/products/lexis-plus-ai.page
         logo: lexisnexis.webp
@@ -84,16 +84,16 @@ subcategories:
         tags: [finance, analytics, proprietary]
   - name: Education
     items:
-      - name: Khanmigo
-        homepage_url: https://khanacademy.org/khan-labs
-        logo: khanacademy.webp
-        description: "Khan Academy's AI tutor and teaching assistant"
-        tags: [education, tutor, proprietary]
       - name: Duolingo Max
         homepage_url: https://duolingo.com/max
         logo: duolingo.webp
         description: "Duolingo's AI-powered language learning features"
         tags: [education, language-learning, proprietary]
+      - name: Khanmigo
+        homepage_url: https://khanacademy.org/khan-labs
+        logo: khanacademy.webp
+        description: "Khan Academy's AI tutor and teaching assistant"
+        tags: [education, tutor, proprietary]
       - name: Synthesis Tutor
         homepage_url: https://synthesis.com
         logo: synthesis.webp
