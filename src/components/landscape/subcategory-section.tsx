@@ -1,6 +1,6 @@
 "use client";
 
-import { LinkSimple, Rows } from "@phosphor-icons/react";
+import { Medal, ShareNetwork } from "@phosphor-icons/react";
 import { toast } from "sonner";
 import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import type { Subcategory } from "@/types/landscape";
@@ -73,9 +73,9 @@ export function SubcategorySection({
             toast.success("Link copied!");
           }}
           title={`Share ${subcategory.name}`}
-          className="flex h-5 w-5 shrink-0 items-center justify-center rounded opacity-40 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-white/50 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <LinkSimple size={11} />
+          <ShareNetwork size={11} />
         </button>
         <button
           type="button"
@@ -83,9 +83,9 @@ export function SubcategorySection({
             onTierListOpen(categoryName, subcategory, categoryColor)
           }
           title={`Tier List — ${subcategory.name}`}
-          className="flex h-5 w-5 shrink-0 items-center justify-center rounded opacity-40 hover:opacity-100 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-white/50 hover:text-amber-200 hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <Rows size={11} />
+          <Medal size={11} />
         </button>
       </div>
       <div

@@ -15,12 +15,12 @@ import {
   HardDrives,
   Image,
   Intersect,
-  LinkSimple,
   MagnifyingGlass,
+  Medal,
   Plug,
   Robot,
-  Rows,
   Shapes,
+  ShareNetwork,
   ShieldCheck,
   Waveform,
 } from "@phosphor-icons/react";
@@ -222,7 +222,7 @@ export function CategoryRow({
           title={`Share ${category.name}`}
           className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <LinkSimple size={13} />
+          <ShareNetwork size={13} />
         </button>
         <button
           type="button"
@@ -230,7 +230,7 @@ export function CategoryRow({
           title={`Tier List — ${category.name}`}
           className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <Rows size={13} />
+          <Medal size={13} />
         </button>
       </div>
 
@@ -263,15 +263,15 @@ export function CategoryRow({
             title={`Share ${category.name}`}
             className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            <LinkSimple size={13} />
+            <ShareNetwork size={13} />
           </button>
           <button
             type="button"
             onClick={handleTierListClick}
             title={`Tier List — ${category.name}`}
-            className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-amber-200 hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            <Rows size={13} />
+            <Medal size={13} />
           </button>
         </div>
       )}
