@@ -14,7 +14,7 @@ subcategories:
         homepage_url: https://github.com/kcosr/assistant
         repo_url: https://github.com/kcosr/assistant
         logo: gh-kcosr.png
-        description: "Panel-based personal assistant with a plugin architecture for productivity workflows"
+        description: "Panel-based personal assistant with a plugin architecture for productivity"
       - name: babyagi3
         homepage_url: https://babyagi.org/
         repo_url: https://github.com/yoheinakajima/babyagi3
@@ -47,7 +47,7 @@ subcategories:
         homepage_url: https://docs.letta.com/
         repo_url: https://github.com/cpacker/MemGPT
         logo: memgpt.webp
-        description: "Teaching LLMs memory management for unbounded context; OS-inspired virtual context management"
+        description: "OS-inspired memory management for LLMs enabling unbounded virtual context"
       - name: mercury
         homepage_url: https://github.com/Michaelliv/mercury
         repo_url: https://github.com/Michaelliv/mercury

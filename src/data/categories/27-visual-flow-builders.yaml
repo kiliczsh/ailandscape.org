@@ -19,9 +19,9 @@ subcategories:
         homepage_url: https://github.com/kreneskyp/ix
         repo_url: https://github.com/kreneskyp/ix
         logo: gh-kreneskyp.png
-        description: "Autonomous GPT-4 agent platform with a visual graph editor for designing chains and agents"
+        description: "Autonomous GPT-4 agent platform with a visual graph editor for chains and agents"
       - name: Magick
         homepage_url: https://www.magickml.com/
         repo_url: https://github.com/Oneirocom/Magick
         logo: magick.webp
-        description: "Visual AI agent development platform with a node-based editor for building complex AI workflows"
+        description: "Visual AI agent platform with a node-based editor for complex AI workflows"

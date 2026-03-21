@@ -14,8 +14,13 @@ labels: data
 <!-- e.g. "Foundation Models → Model Providers" -->
 
 **Description (one sentence, ≤80 chars):**
+<!-- Describe what it does, not what it is. No trailing period. -->
 
-**GitHub URL (optional):**
+**Repo URL (optional):**
+<!-- GitHub, GitLab, or any public source repo -->
+
+**Twitter / X URL (optional):**
+<!-- e.g. https://x.com/toolname -->
 
 **Suggested tags:**
 <!-- Comma-separated, e.g. llm, api, oss -->

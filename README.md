@@ -55,12 +55,15 @@ color: "oklch(0.62 0.22 230)"      # OKLCH color token for category accent
 icon: Buildings                    # Phosphor icon name
 subcategories:
   - name: Open Research Labs
-    items:
+    items:                         # sorted A–Z by name within each subcategory
       - name: Nous Research
         homepage_url: https://nousresearch.com
-        logo: nous-research.webp   # filename inside public/logos/
+        repo_url: https://github.com/NousResearch    # optional
+        logo: nous-research.webp                     # filename inside public/logos/
+        crunchbase: https://www.crunchbase.com/organization/nous-research  # optional
+        twitter_url: https://x.com/NousResearch      # optional
+        project: graduated                           # optional: graduated | incubating | sandbox
         description: "Open-weights research lab known for Hermes and Nous-Capybara models"
-        github_url: https://github.com/NousResearch   # optional
         tags: [lab, llm, open-weights, research]
 ```
 

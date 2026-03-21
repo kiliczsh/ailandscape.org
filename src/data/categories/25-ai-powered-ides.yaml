@@ -8,15 +8,15 @@ subcategories:
       - name: Atom
         homepage_url: https://atom-editor.cc/
         logo: atom.webp
-        description: "Atom community fork — hackable text editor built on Electron with AI plugin support"
+        description: "Atom community fork — hackable Electron text editor with AI plugin support"
       - name: Eclipse
         homepage_url: https://www.eclipse.org/eclipseide/
         logo: eclipse.webp
-        description: "Open-source IDE supporting Java, C/C++, PHP, and more with a rich plugin ecosystem"
+        description: "Open-source IDE supporting Java, C/C++, PHP, and more with a rich plugin system"
       - name: IntelliJ IDEA
         homepage_url: https://www.jetbrains.com/idea/
         logo: intellij-idea.webp
-        description: "JetBrains' flagship IDE with deep language support and integrated AI coding assistance via Junie"
+        description: "JetBrains' flagship IDE with deep language support and AI assistance via Junie"
       - name: PyCharm
         homepage_url: https://www.jetbrains.com/pycharm/
         logo: pycharm.webp
@@ -24,7 +24,7 @@ subcategories:
       - name: Visual Studio Code
         homepage_url: https://code.visualstudio.com/
         logo: visual-studio-code.webp
-        description: "Microsoft's free, open-source code editor with AI-powered coding assistance via GitHub Copilot"
+        description: "Microsoft's free open-source code editor with AI assistance via GitHub Copilot"
       - name: WebStorm
         homepage_url: https://www.jetbrains.com/webstorm/
         logo: webstorm.webp
@@ -32,7 +32,7 @@ subcategories:
       - name: Xcode
         homepage_url: https://developer.apple.com/xcode/
         logo: xcode.webp
-        description: "Apple's integrated development environment for macOS, iOS, watchOS, and tvOS apps"
+        description: "Apple's IDE for macOS, iOS, watchOS, and tvOS app development"
   - name: Agentic Editors
     items:
       - name: Google Antigravity
@@ -42,26 +42,26 @@ subcategories:
       - name: Kiro
         homepage_url: https://kiro.dev/
         logo: kiro.webp
-        description: "Amazon's AI IDE with spec-driven development — agents write and execute specs to reduce hallucinations"
+        description: "Amazon's AI IDE with spec-driven development — agents write and execute specs"
       - name: Warp
         homepage_url: https://www.warp.dev/
         repo_url: https://github.com/warpdotdev/Warp
         logo: warp.webp
-        description: "AI-native terminal and agentic development environment with inline AI and team collaboration"
+        description: "AI-native terminal with inline AI, agentic workflows, and team collaboration"
   - name: AI Extensions & Platforms
     items:
       - name: Augment Code
         homepage_url: https://www.augmentcode.com/
         repo_url: https://github.com/augmentcode/auggie
         logo: augment-code.webp
-        description: "Developer AI platform with deep codebase understanding and persistent context across sessions"
+        description: "Developer AI platform with deep codebase understanding and persistent context"
       - name: Trae
         homepage_url: https://www.trae.ai/
         repo_url: https://github.com/Trae-AI/TRAE
         logo: trae.webp
-        description: "ByteDance's AI IDE with Builder agent mode, MCP support, and free access to frontier models"
+        description: "ByteDance's AI IDE with Builder mode, MCP support, and free frontier models"
       - name: Zed
         homepage_url: https://zed.dev/
         repo_url: https://github.com/zed-industries/zed
         logo: zed.webp
-        description: "High-performance collaborative code editor built in Rust with native AI chat and multi-model support"
+        description: "High-performance Rust code editor with native AI chat and multi-model support"

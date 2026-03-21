@@ -9,11 +9,11 @@ subcategories:
         homepage_url: https://aws.amazon.com/q/developer/
         repo_url: https://github.com/aws/amazon-q-developer-cli
         logo: amazon-q-developer.webp
-        description: "AWS's AI code-generation and refactoring CLI with deep AWS integration and an autonomous /dev agent mode"
+        description: "AWS AI coding agent with deep AWS integration and an autonomous /dev mode"
       - name: Amp
         homepage_url: https://ampcode.com/
         logo: amp.webp
-        description: "Sourcegraph's coding agent (CLI and VS Code) powered by Claude with multi-repo context"
+        description: "Sourcegraph's coding agent for CLI and VS Code with multi-repo codebase context"
       - name: Blackbox AI
         homepage_url: https://www.blackbox.ai/
         logo: blackbox-ai.webp
@@ -33,17 +33,17 @@ subcategories:
       - name: Factory
         homepage_url: https://www.factory.ai/
         logo: factory.webp
-        description: "Delegate software engineering tasks to AI Droids — runs multi-step workflows from ticket to merged PR"
+        description: "Delegate engineering tasks to AI Droids — from ticket to merged PR autonomously"
       - name: Forge Code
         homepage_url: https://forgecode.dev
         repo_url: https://github.com/antinomyhq/forge
         logo: forge-code.webp
-        description: "AI software engineering agent that runs in your terminal with deep codebase understanding"
+        description: "Terminal AI software engineering agent with deep codebase understanding"
       - name: Gemini Code Assist
         homepage_url: https://codeassist.google/
         repo_url: https://github.com/google-gemini/gemini-cli
         logo: gemini-code-assist.webp
-        description: "Google's AI coding assistant powered by Gemini; integrates into VS Code, JetBrains, and the Gemini CLI"
+        description: "Gemini-powered coding assistant integrating into VS Code, JetBrains, and the CLI"
       - name: GitHub Copilot CLI
         homepage_url: https://github.blog/changelog/2025-09-25-github-copilot-cli-is-now-in-public-preview/
         logo: github-copilot-cli.webp
@@ -51,7 +51,7 @@ subcategories:
       - name: Goose
         homepage_url: https://block.github.io/goose/
         repo_url: https://github.com/block/goose
-        description: "Block's open-source extensible AI agent — runs tools, executes code, browses the web, and manages files"
+        description: "Block's open-source AI agent — runs tools, executes code, and browses the web"
       - name: JetBrains Junie
         homepage_url: https://www.jetbrains.com/junie/
         logo: jetbrains-junie.webp
@@ -59,16 +59,16 @@ subcategories:
       - name: Jules
         homepage_url: https://jules.google/
         logo: jules.webp
-        description: "Google's asynchronous AI coding agent that works independently on GitHub issues and pull requests"
+        description: "Google's async AI coding agent that works independently on GitHub issues and PRs"
       - name: Kimi-CLI
         homepage_url: https://www.kimi.com/code
         logo: kimi-cli.webp
-        description: "CLI agent for software development and terminal operations, powered by Kimi models"
+        description: "CLI agent for software development and terminal operations powered by Kimi"
       - name: OpenAI Codex
         homepage_url: https://openai.com/codex/
         repo_url: https://github.com/openai/codex
         logo: openai-codex.webp
-        description: "OpenAI's cloud coding agent toolkit powered by codex-1 — plans tasks, writes code, and opens PRs autonomously"
+        description: "OpenAI's cloud coding agent powered by codex-1 — plans tasks and opens PRs"
       - name: Scout
         homepage_url: https://scout.new/
         logo: scout.webp
@@ -109,24 +109,24 @@ subcategories:
         description: "Command-line coding assistant powered by Mistral's open-weight models"
       - name: Open Interpreter
         homepage_url: http://openinterpreter.com/
-        repo_url: https://github.com/KillianLucas/open-interpreter
-        logo: open-interpreter.webp
-        description: "A natural language interface for computers; lets LLMs run code, browse, and manage files locally"
+        repo_url: https://github.com/openinterpreter/open-interpreter
+        logo: openinterpreter.webp
+        description: "Natural language interface for computers; lets LLMs run code and manage files"
       - name: OpenAI Codex CLI
         homepage_url: https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started
         repo_url: https://github.com/openai/codex
         logo: openai-codex-cli.webp
-        description: "OpenAI's open-source command-line agent; the CLI counterpart to the cloud Codex agent"
+        description: "OpenAI's open-source command-line agent — the CLI counterpart to cloud Codex"
       - name: OpenCode
         homepage_url: https://github.com/opencode-ai/opencode
         repo_url: https://github.com/opencode-ai/opencode
         logo: gh-opencode-ai.png
-        description: "Open-source terminal coding assistant with multi-provider model support and TUI interface"
+        description: "Open-source terminal coding assistant with multi-provider support and a TUI"
       - name: potpie
         homepage_url: https://potpie.ai
         repo_url: https://github.com/potpie-ai/potpie
         logo: potpie.webp
-        description: "Open-source AI agents for your codebase — Q&A, testing, debugging, and system design agents"
+        description: "Open-source AI agents for your codebase — Q&A, testing, debugging, and design"
       - name: Qwen Code
         homepage_url: https://github.com/QwenLM/qwen-code
         repo_url: https://github.com/QwenLM/qwen-code
@@ -136,7 +136,7 @@ subcategories:
         homepage_url: https://github.com/RooCodeInc/Roo-Code
         repo_url: https://github.com/RooCodeInc/Roo-Code
         logo: gh-RooCodeInc.png
-        description: "Cline fork for VS Code with enhanced multi-model support and boomerang task orchestration"
+        description: "VS Code fork of Cline with enhanced multi-model support and boomerang tasks"
       - name: Ruler
         homepage_url: https://okigu.com/ruler
         repo_url: https://github.com/intellectronica/ruler

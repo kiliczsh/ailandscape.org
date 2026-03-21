@@ -7,7 +7,7 @@ subcategories:
     items:
       - name: Aider Leaderboard
         homepage_url: https://aider.chat/docs/leaderboards/
-        description: "Aider's polyglot coding leaderboard measuring LLM performance across multiple programming languages"
+        description: "Aider's polyglot coding leaderboard measuring LLM performance across languages"
       - name: BigCodeArena
         homepage_url: https://huggingface.co/spaces/bigcode/arena
         logo: hugging-face.webp
@@ -15,7 +15,7 @@ subcategories:
       - name: CORE-Bench Hard
         homepage_url: https://hal.cs.princeton.edu/corebench_hard
         logo: core-bench-hard.webp
-        description: "Agent installs dependencies, runs published scientific paper code, and answers questions about results"
+        description: "Agent installs deps, runs published scientific code, and answers questions"
       - name: Live-SWE-agent
         homepage_url: https://live-swe-agent.github.io/
         description: "Can software engineering agents self-evolve on the fly? A living benchmark"
@@ -25,10 +25,10 @@ subcategories:
       - name: LiveCodeBench Pro
         homepage_url: https://livecodebenchpro.com/
         logo: livecodebench-pro.webp
-        description: "Benchmark from Codeforces, ICPC, and IOI problems, continuously updated to reduce data contamination"
+        description: "Codeforces, ICPC, and IOI problems; regularly updated to prevent contamination"
       - name: Multi-SWE-bench
         homepage_url: https://multi-swe-bench.github.io/
-        description: "A multilingual benchmark for issue resolving across multiple programming languages"
+        description: "Multilingual benchmark for issue resolving across multiple programming languages"
       - name: SWE-bench
         homepage_url: https://www.swebench.com/
         logo: swe-bench.webp
@@ -36,15 +36,15 @@ subcategories:
       - name: SWE-bench Multilingual
         homepage_url: https://swe-bench.com/
         logo: swe-bench-multilingual.webp
-        description: "300 curated SWE-bench style tasks from 42 repositories representing 9 programming languages"
+        description: "300 curated SWE-bench tasks from 42 repositories across 9 programming languages"
       - name: SWE-Bench Pro Commercial
         homepage_url: https://scale.com/leaderboard/swe_bench_pro_commercial
         logo: swe-bench-pro-commercial.webp
-        description: "Scale AI's rigorous real-world software engineering benchmark using a commercial dataset"
+        description: "Scale AI's real-world software engineering benchmark using a commercial dataset"
       - name: SWE-Bench Pro Public
         homepage_url: https://scale.com/leaderboard/swe_bench_pro_public
         logo: swe-bench-pro-public.webp
-        description: "Public version of Scale AI's SWE-Bench Pro evaluating AI agents on real-world software engineering tasks"
+        description: "Public version of Scale AI's SWE-Bench Pro for real-world software engineering"
       - name: SWE-DEV
         homepage_url: https://github.com/DorothyDUUU/SWE-Dev
         repo_url: https://github.com/DorothyDUUU/SWE-Dev
@@ -53,17 +53,17 @@ subcategories:
       - name: SWE-rebench
         homepage_url: https://swe-rebench.com/
         logo: swe-rebench.webp
-        description: "A continuously evolving and decontaminated benchmark for software engineering LLMs"
+        description: "Continuously evolving and decontaminated benchmark for software engineering LLMs"
   - name: Agent & General Benchmarks
     items:
       - name: APEX-Agents
         homepage_url: https://www.mercor.com/apex/apex-agents-leaderboard/
         logo: apex-agents.webp
-        description: "The AI Productivity Index for Agents — measures whether frontier AI agents can execute long-horizon tasks"
+        description: "Measures whether frontier AI agents can execute real long-horizon tasks"
       - name: ARC-AGI-2
         homepage_url: https://arcprize.org/leaderboard
         logo: arc-agi-2.webp
-        description: "Stress tests the efficiency and capability of state-of-the-art AI reasoning systems"
+        description: "Stress-tests efficiency and capability of state-of-the-art AI reasoning systems"
       - name: Context-Bench
         homepage_url: https://leaderboard.letta.com/
         logo: context-bench.webp
@@ -75,17 +75,17 @@ subcategories:
       - name: Modu Merge Rate Leaderboard
         homepage_url: https://www.askmodu.com/rankings
         logo: modu-merge-rate-leaderboard.webp
-        description: "Real-world success rates: ranking top coding agents by their pull request merge performance"
+        description: "Ranking top coding agents by real-world pull request merge success rates"
       - name: OSWorld
         homepage_url: https://os-world.github.io/
-        description: "Benchmarking multimodal agents for open-ended tasks in real computer environments"
+        description: "Benchmarks multimodal agents on open-ended tasks in real computer environments"
       - name: PR Arena
         homepage_url: https://prarena.ai/
         description: "Software engineering agents head-to-head on real pull request tasks"
       - name: Repo Bench
         homepage_url: https://repoprompt.com/bench
         logo: repo-bench.webp
-        description: "Measuring large context reasoning, file editing precision, and instruction adherence"
+        description: "Measures large-context reasoning, edit precision, and instruction adherence"
       - name: Terminal-Bench
         homepage_url: https://www.tbench.ai/leaderboard
         logo: terminal-bench.webp
@@ -107,4 +107,4 @@ subcategories:
       - name: OpenRouter Rankings
         homepage_url: https://openrouter.ai/rankings
         logo: openrouter-rankings.webp
-        description: "Model market share, use case categories, and app rankings across the OpenRouter platform"
+        description: "Model market share, use-case categories, and app rankings on OpenRouter"

@@ -15,16 +15,23 @@ All landscape data lives in `src/data/categories/` — one YAML file per categor
 
 ### Entry schema
 
+Keys must appear in this order (omit fields that don't apply):
+
 ```yaml
-name: Entry Name
-homepage_url: https://example.com
-logo: filename.webp        # file in public/logos/ — omit if unavailable
-description: "One sentence describing what it does"
-github_url: https://github.com/org/repo   # optional
-tags: [tag-a, tag-b]
+name: Entry Name                                  # required
+homepage_url: https://example.com                 # required
+repo_url: https://github.com/org/repo            # optional — source repo
+logo: filename.webp                               # optional — file in public/logos/
+crunchbase: https://www.crunchbase.com/organization/example  # optional
+twitter_url: https://x.com/example               # optional
+project: graduated                                # optional — graduated | incubating | sandbox
+description: "One sentence describing what it does"  # recommended, ≤80 chars
+tags: [tag-a, tag-b]                             # recommended
 ```
 
-**Description:** one sentence, ~80 chars max, no trailing period. Describe what it *does*, not what it *is*.
+**Description:** one sentence, ≤80 chars, no trailing period. Describe what it *does*, not what it *is*.
+
+**Item order:** entries within a subcategory must be sorted **alphabetically (A–Z, case-insensitive)** by name.
 
 ### Logos
 
@@ -79,9 +86,11 @@ All four steps must pass. A few notes:
 
 ## PR checklist
 
-- [ ] `make validate` passes
+- [ ] `make validate` passes (zero errors, zero warnings)
 - [ ] `make lint` passes
 - [ ] `make build` compiles cleanly
 - [ ] Logo is `.webp` in `public/logos/` (if applicable)
 - [ ] Description ≤80 chars, no trailing period
 - [ ] All tags resolve in `tags.yaml`
+- [ ] Item keys in canonical order
+- [ ] Items sorted alphabetically within subcategory

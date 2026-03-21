@@ -23,26 +23,26 @@ subcategories:
         homepage_url: https://ollama.com
         repo_url: https://github.com/ollama/ollama
         logo: ollama.webp
-        description: "Get up and running with local LLMs (Llama, Qwen, Gemma, and more) with a single command"
+        description: "Run local LLMs (Llama, Qwen, Gemma, and more) with a single command"
       - name: Open WebUI
         homepage_url: https://openwebui.com/
         repo_url: https://github.com/open-webui/open-webui
         logo: open-webui.webp
-        description: "Self-hosted chat interface for local and cloud LLMs; supports Ollama, OpenAI-compatible APIs, RAG, and tools"
+        description: "Self-hosted chat UI for local and cloud LLMs; Ollama, OpenAI-compatible API, RAG"
       - name: SGLang
         homepage_url: https://sglang.io
         repo_url: https://github.com/sgl-project/sglang
         logo: sglang.webp
-        description: "Fast serving framework for LLMs and vision language models with structured generation support"
+        description: "Fast serving framework for LLMs and VLMs with structured generation support"
       - name: SillyTavern
         homepage_url: https://sillytavern.app/
         repo_url: https://github.com/SillyTavern/SillyTavern
         logo: sillytavern.webp
-        description: "Locally installed UI for text, image, and voice LLMs with extensive customization"
+        description: "Locally installed UI for text, image, and voice LLMs with deep customization"
       - name: TensorRT-LLM
         homepage_url: https://nvidia.github.io/TensorRT-LLM/
         repo_url: https://github.com/NVIDIA/TensorRT-LLM
-        description: "NVIDIA's framework for optimized LLM inference on NVIDIA GPUs with TensorRT acceleration"
+        description: "NVIDIA's LLM inference framework for NVIDIA GPUs with TensorRT acceleration"
   - name: Cloud AI Platforms
     items:
       - name: Akash Network
@@ -53,12 +53,12 @@ subcategories:
       - name: AWS Bedrock
         homepage_url: https://aws.amazon.com/bedrock/
         logo: aws-bedrock.webp
-        description: "Fully managed AWS service for accessing foundation models from Anthropic, Meta, Mistral, and others"
+        description: "AWS managed service for foundation models from Anthropic, Meta, and Mistral"
       - name: Cloudflare AI
         homepage_url: https://ai.cloudflare.com
         repo_url: https://github.com/cloudflare/workers-ai-provider
         logo: cloudflare-ai.webp
-        description: "Run AI inference at the edge with Cloudflare Workers AI; deploy models globally with zero cold starts"
+        description: "AI inference at the edge via Cloudflare Workers AI with zero cold starts"
       - name: Fireworks AI
         homepage_url: https://fireworks.ai
         description: "Fast, affordable inference API for open-source models with sub-100ms latency"
@@ -66,4 +66,4 @@ subcategories:
         homepage_url: https://www.heurist.ai/
         repo_url: https://github.com/heurist-network/heurist-agent-framework
         logo: heurist.webp
-        description: "Decentralized AI compute network aggregating idle GPUs for low-latency, verifiable model inference"
+        description: "Decentralized GPU network for low-latency, verifiable AI model inference"

@@ -14,12 +14,12 @@ subcategories:
         homepage_url: https://ai-maestro.23blocks.com
         repo_url: https://github.com/23blocks-OS/ai-maestro
         logo: ai-maestro.webp
-        description: "Dashboard for orchestrating Claude, Aider, and Cursor agents across multiple machines"
+        description: "Dashboard for orchestrating Claude, Aider, and Cursor agents across machines"
       - name: aizen
         homepage_url: https://aizen.win
         repo_url: https://github.com/vivy-company/aizen
         logo: aizen.webp
-        description: "macOS workspace that assigns each git worktree its own terminal, browser, and agent session"
+        description: "macOS workspace giving each git worktree its own terminal, browser, and agent"
       - name: ariana
         homepage_url: https://ariana.dev
         repo_url: https://github.com/ariana-dot-dev/ariana
@@ -48,17 +48,17 @@ subcategories:
         homepage_url: https://dorothyai.app
         repo_url: https://github.com/Charlie85270/Dorothy
         logo: dorothy.webp
-        description: "Desktop app for orchestrating multiple AI CLI agents with automations and Kanban management"
+        description: "Desktop app for orchestrating multiple AI CLI agents with automations and Kanban"
       - name: emdash
         homepage_url: https://emdash.sh
         repo_url: https://github.com/generalaction/emdash
         logo: emdash.webp
-        description: "Open-source Agentic Development Environment; 22+ agents, SSH remote support (YC W26)"
+        description: "Agentic Development Environment; 22+ agents, SSH remote support (YC W26)"
       - name: Happy Coder
         homepage_url: https://happy.engineering
         repo_url: https://github.com/slopus/happy
         logo: happy-coder.webp
-        description: "Mobile and web client for Claude Code and Codex with realtime voice and encryption"
+        description: "Mobile and web client for Claude Code and Codex with realtime voice"
       - name: jat
         homepage_url: https://jat.tools
         repo_url: https://github.com/joewinke/jat
@@ -88,7 +88,7 @@ subcategories:
         homepage_url: https://www.vibekanban.com/
         repo_url: https://github.com/BloopAI/vibe-kanban
         logo: vibe-kanban.webp
-        description: "Kanban board for managing AI coding agents; Tauri desktop app and self-hostable web"
+        description: "Kanban board for managing AI coding agents; Tauri desktop and self-hostable web"
       - name: vibe-tree
         homepage_url: https://github.com/sahithvibudhi/vibe-tree
         repo_url: https://github.com/sahithvibudhi/vibe-tree
@@ -120,7 +120,7 @@ subcategories:
         homepage_url: https://github.com/musistudio/claude-code-router
         repo_url: https://github.com/musistudio/claude-code-router
         logo: gh-musistudio.png
-        description: "Route Claude Code requests to different models with multi-provider support and dynamic switching"
+        description: "Route Claude Code requests to different models with multi-provider support"
       - name: claude-squad
         homepage_url: https://smtg-ai.github.io/claude-squad/
         repo_url: https://github.com/smtg-ai/claude-squad
@@ -139,7 +139,7 @@ subcategories:
         homepage_url: https://github.com/aorumbayev/kagan
         repo_url: https://github.com/aorumbayev/kagan
         logo: gh-aorumbayev.png
-        description: "AI-powered Kanban TUI for autonomous development workflows with Claude Code integration"
+        description: "AI Kanban TUI for autonomous development workflows with Claude Code integration"
       - name: openkanban
         homepage_url: https://github.com/TechDufus/openkanban
         repo_url: https://github.com/techdufus/openkanban

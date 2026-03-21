@@ -33,7 +33,7 @@ subcategories:
         homepage_url: https://bolt.new/
         repo_url: https://github.com/stackblitz/bolt.new
         logo: bolt-new.webp
-        description: "StackBlitz's browser-based AI app builder — prompt to full-stack app with live preview and one-click deployment"
+        description: "StackBlitz's AI app builder — prompt to full-stack with live preview and deploy"
       - name: Emergent
         homepage_url: https://app.emergent.sh/register
         logo: emergent.webp
@@ -45,7 +45,7 @@ subcategories:
       - name: Lovable
         homepage_url: https://lovable.dev/
         logo: lovable.webp
-        description: "Chat-to-app builder that turns natural language into production-ready web apps with GitHub sync"
+        description: "Chat-to-app builder that turns natural language into production-ready web apps"
       - name: Mocha
         homepage_url: https://getmocha.com/
         logo: mocha.webp
@@ -66,11 +66,11 @@ subcategories:
       - name: Replit Agent
         homepage_url: https://replit.com/
         logo: replit-agent.webp
-        description: "Replit's cloud IDE with an integrated AI agent that writes code and deploys full applications"
+        description: "Replit's cloud IDE with an integrated AI agent that writes and deploys full apps"
       - name: Rocket
         homepage_url: https://www.rocket.new/
         logo: rocket.webp
-        description: "Think It. Type It. Launch It."
+        description: "Think It. Type It. Launch It"
       - name: Same
         homepage_url: https://same.new/
         logo: same.webp
@@ -82,11 +82,11 @@ subcategories:
       - name: v0.dev
         homepage_url: https://v0.dev/
         logo: v0-dev.webp
-        description: "Vercel's text-to-UI generator — describe any component and get production-ready React/Tailwind/shadcn code"
+        description: "Vercel's UI generator — describe any UI and get production-ready shadcn code"
       - name: VibeFlow
         homepage_url: https://vibeflow.ai/
         logo: vibeflow.webp
-        description: "YC-backed — transform AI-generated frontend mockups into fully functional applications"
+        description: "YC-backed — transform AI-generated frontend mockups into functional applications"
       - name: vybe
         homepage_url: https://www.vybe.build/
         logo: vybe.webp
@@ -100,7 +100,7 @@ subcategories:
       - name: Bloom
         homepage_url: https://bloom.diy/
         logo: bloom.webp
-        description: "YC-backed — go from idea to native mobile app on your phone without writing a single line of code"
+        description: "YC-backed — go from idea to native mobile app on your phone without any code"
       - name: Rork
         homepage_url: https://rork.com/
         logo: rork.webp
@@ -136,7 +136,7 @@ subcategories:
         homepage_url: https://github.com/stackblitz-labs/bolt.diy
         repo_url: https://github.com/stackblitz-labs/bolt.diy
         logo: gh-stackblitz-labs.png
-        description: "Open-source Bolt — AI-powered full-stack web development with support for any LLM"
+        description: "Open-source Bolt — AI-powered full-stack web development with any LLM"
       - name: Cloudflare VibeSDK
         homepage_url: https://build.cloudflare.dev/
         logo: cloudflare-vibesdk.webp
@@ -145,7 +145,7 @@ subcategories:
         homepage_url: https://github.com/dyad-sh/dyad
         repo_url: https://github.com/dyad-sh/dyad
         logo: gh-dyad-sh.png
-        description: "Local, open-source AI app builder that runs entirely on your machine — no cloud required"
+        description: "Local, open-source AI app builder that runs entirely on your machine"
       - name: Hugging Face DeepSite
         homepage_url: https://huggingface.co/deepsite
         logo: hugging-face.webp
@@ -159,4 +159,4 @@ subcategories:
         homepage_url: https://tooljet.com
         repo_url: https://github.com/ToolJet/ToolJet
         logo: tooljet.webp
-        description: "Open-source low-code framework for building internal tools with 50+ data source connectors"
+        description: "Open-source low-code platform for internal tools with 50+ data source connectors"

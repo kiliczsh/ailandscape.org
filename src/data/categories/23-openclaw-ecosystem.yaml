@@ -14,7 +14,7 @@ subcategories:
         homepage_url: https://nanoclaw.dev
         repo_url: https://github.com/gavrielc/nanoclaw
         logo: nanoclaw.webp
-        description: "Lightweight OpenClaw alternative that runs inside Apple containers for sandboxing"
+        description: "Lightweight OpenClaw alternative running inside Apple containers for sandboxing"
       - name: NemoClaw
         homepage_url: https://docs.nvidia.com/nemoclaw/latest/
         repo_url: https://github.com/NVIDIA/NemoClaw

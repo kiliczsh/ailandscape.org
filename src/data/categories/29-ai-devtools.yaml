@@ -8,7 +8,7 @@ subcategories:
       - name: Agents.md
         homepage_url: https://agents.md/
         logo: agents-md.webp
-        description: "A simple, open format for guiding coding agents; used by over 20k open-source projects"
+        description: "Simple, open format for guiding coding agents; used by 20k+ open-source projects"
       - name: Anannas
         homepage_url: https://anannas.ai/
         logo: anannas.webp
@@ -21,7 +21,7 @@ subcategories:
         homepage_url: https://github.com/danielmiessler/Fabric
         repo_url: https://github.com/danielmiessler/Fabric
         logo: gh-danielmiessler.png
-        description: "Open-source modular framework for solving specific problems using crowdsourced AI prompts"
+        description: "Open-source modular framework for solving problems using crowdsourced AI prompts"
       - name: Giga AI
         homepage_url: https://gigamind.dev/context
         logo: giga-ai.webp
@@ -29,7 +29,7 @@ subcategories:
       - name: Vercel AI Gateway
         homepage_url: https://vercel.com/blog/ai-gateway-is-now-generally-available
         logo: vercel-ai-gateway.webp
-        description: "A gateway to access hundreds of models with zero markup on tokens, including BYOK"
+        description: "Gateway to access hundreds of models with zero token markup, including BYOK"
       - name: Vibetunnel
         homepage_url: https://vibetunnel.sh/
         logo: vibetunnel.webp

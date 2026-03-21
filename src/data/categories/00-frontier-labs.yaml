@@ -151,7 +151,7 @@ subcategories:
       - name: Essential AI
         homepage_url: https://www.essential.ai
         logo: essential-ai.webp
-        description: "Open platform to democratize frontier AI capabilities through collaborative science"
+        description: "Open platform to democratize frontier AI through collaborative science"
         tags: [lab, llm, open-weights]
       - name: Hugging Face
         homepage_url: https://huggingface.co
@@ -161,17 +161,17 @@ subcategories:
       - name: Meta AI
         homepage_url: https://ai.meta.com
         logo: meta.webp
-        description: "Meta's AI division — FAIR, Reality Labs, and Superintelligence Labs; creators of Llama"
+        description: "Meta's AI division — FAIR and Superintelligence Labs; creators of Llama"
         tags: [lab, llm, open-weights, research]
       - name: Moonshot AI
         homepage_url: https://moonshot.ai
         logo: moonshot-ai.webp
-        description: "Chinese AI startup behind Kimi — focused on AGI through efficient energy-to-intelligence conversion"
+        description: "Chinese AI startup behind Kimi — focused on AGI and energy efficiency"
         tags: [lab, llm]
       - name: Nous Research
         homepage_url: https://nousresearch.com
         logo: nous-research.webp
-        description: "Open-source AI research collective behind the Hermes and NousCoder model families"
+        description: "Open-source AI research collective behind the Hermes and NousCoder families"
         tags: [lab, llm, open-weights, oss]
       - name: PleIAs
         homepage_url: https://pleias.fr

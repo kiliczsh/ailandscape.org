@@ -12,17 +12,17 @@ subcategories:
       - name: BabyAGI
         homepage_url: https://babyagi.org/
         repo_url: https://github.com/yoheinakajima/babyagi
-        description: "Minimal task-driven autonomous agent using GPT-4 and vector databases to iteratively complete goals"
+        description: "Minimal task-driven autonomous agent using GPT-4 and vector databases"
       - name: GPT Engineer
         homepage_url: https://gptengineer.app
         repo_url: https://github.com/AntonOsika/gpt-engineer
         logo: gpt-engineer.webp
-        description: "Specify what you want to build; the AI asks clarifying questions and generates the full codebase"
+        description: "Describe what to build; AI asks clarifying questions and generates the codebase"
       - name: LoopGPT
         homepage_url: https://github.com/farizrahman4u/loopgpt
         repo_url: https://github.com/farizrahman4u/loopgpt
         logo: gh-farizrahman4u.png
-        description: "Re-implementation of AutoGPT with modular architecture and better memory management"
+        description: "AutoGPT re-implementation with modular architecture and better memory handling"
       - name: nullclaw
         homepage_url: https://nullclaw.io
         repo_url: https://github.com/nullclaw/nullclaw

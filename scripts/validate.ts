@@ -235,6 +235,128 @@ for (const { file, data } of categories) {
 
 ok("Empty subcategory check complete");
 
+// ── 8. Description quality ────────────────────────────────────────────────────
+
+section("8. Description quality");
+
+let descIssues = 0;
+
+for (const { file, data } of categories) {
+  for (const sub of data.subcategories ?? []) {
+    for (const item of sub.items ?? []) {
+      const desc = item.description as string | undefined;
+      if (!desc) continue;
+      if (desc.length > 80) {
+        warn(
+          `${file} › "${item.name}": description too long (${desc.length} chars, max 80)`,
+        );
+        descIssues++;
+      }
+      if (desc.trimEnd().endsWith(".")) {
+        warn(`${file} › "${item.name}": description has trailing period`);
+        descIssues++;
+      }
+    }
+  }
+}
+
+if (descIssues === 0) ok("All descriptions within limits");
+
+// ── 9. Item key order ─────────────────────────────────────────────────────────
+
+section("9. Item key order");
+
+const CANONICAL_KEY_ORDER = [
+  "name",
+  "homepage_url",
+  "repo_url",
+  "logo",
+  "crunchbase",
+  "twitter_url",
+  "project",
+  "description",
+  "tags",
+];
+
+let keyOrderIssues = 0;
+
+for (const { file, data } of categories) {
+  for (const sub of data.subcategories ?? []) {
+    for (const item of sub.items ?? []) {
+      const keys = Object.keys(item);
+      const known = CANONICAL_KEY_ORDER.filter((k) => keys.includes(k));
+      const unknown = keys.filter((k) => !CANONICAL_KEY_ORDER.includes(k));
+      const expected = [...known, ...unknown];
+      if (!keys.every((k, i) => k === expected[i])) {
+        warn(
+          `${file} › "${item.name}": key order [${keys.join(", ")}] — expected [${expected.join(", ")}]`,
+        );
+        keyOrderIssues++;
+      }
+    }
+  }
+}
+
+if (keyOrderIssues === 0) ok("All item keys in canonical order");
+
+// ── 9. Alphabetical item sort ─────────────────────────────────────────────────
+
+section("10. Alphabetical item sort");
+
+let sortIssues = 0;
+
+for (const { file, data } of categories) {
+  for (const sub of data.subcategories ?? []) {
+    const items = sub.items ?? [];
+    const names = items.map((i) => i.name);
+    const sorted = [...names].sort((a, b) =>
+      a.localeCompare(b, undefined, { sensitivity: "base" }),
+    );
+    const firstUnsorted = names.find((n, i) => n !== sorted[i]);
+    if (firstUnsorted) {
+      warn(
+        `${file} › "${sub.name}": items not sorted (first: "${firstUnsorted}")`,
+      );
+      sortIssues++;
+    }
+  }
+}
+
+if (sortIssues === 0) ok("All subcategory items sorted alphabetically");
+
+// ── 10. URL field formats ──────────────────────────────────────────────────────
+
+section("11. URL field formats");
+
+let urlIssues = 0;
+
+for (const { file, data } of categories) {
+  for (const sub of data.subcategories ?? []) {
+    for (const item of sub.items ?? []) {
+      if (item.twitter_url) {
+        const u = item.twitter_url as string;
+        if (!/^https?:\/\/(www\.)?(x\.com|twitter\.com)\//.test(u)) {
+          warn(
+            `${file} › "${item.name}": twitter_url "${u}" is not an x.com/twitter.com URL`,
+          );
+          urlIssues++;
+        }
+      }
+      if (item.crunchbase) {
+        const u = item.crunchbase as string;
+        if (!u.includes("crunchbase.com")) {
+          warn(
+            `${file} › "${item.name}": crunchbase "${u}" is not a crunchbase.com URL`,
+          );
+          urlIssues++;
+        }
+      }
+    }
+  }
+}
+
+if (urlIssues === 0) ok("URL field formats valid");
+
 // ── Summary ───────────────────────────────────────────────────────────────────
 
 const totalItems = categories.reduce(
