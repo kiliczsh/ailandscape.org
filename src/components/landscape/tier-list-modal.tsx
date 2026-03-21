@@ -18,15 +18,16 @@ import {
 import type { LandscapeItem, Subcategory } from "@/types/landscape";
 import { ItemAvatar } from "./item-card";
 
-type Tier = "S+" | "S" | "A" | "B" | "C" | "D";
+type Tier = "S" | "A" | "B" | "C" | "D" | "E" | "F";
 
 const TIERS: { id: Tier; color: string; textColor: string }[] = [
-  { id: "S+", color: "oklch(0.48 0.24 25)", textColor: "#fff" },
-  { id: "S", color: "oklch(0.55 0.22 35)", textColor: "#fff" },
-  { id: "A", color: "oklch(0.65 0.19 50)", textColor: "#fff" },
-  { id: "B", color: "oklch(0.72 0.16 90)", textColor: "oklch(0.2 0.08 90)" },
-  { id: "C", color: "oklch(0.62 0.15 145)", textColor: "#fff" },
-  { id: "D", color: "oklch(0.55 0.13 240)", textColor: "#fff" },
+  { id: "S", color: "oklch(0.52 0.20 145)", textColor: "#fff" },
+  { id: "A", color: "oklch(0.62 0.18 120)", textColor: "#fff" },
+  { id: "B", color: "oklch(0.70 0.16 90)", textColor: "oklch(0.2 0.08 90)" },
+  { id: "C", color: "oklch(0.72 0.15 70)", textColor: "oklch(0.2 0.08 70)" },
+  { id: "D", color: "oklch(0.65 0.19 50)", textColor: "#fff" },
+  { id: "E", color: "oklch(0.58 0.22 35)", textColor: "#fff" },
+  { id: "F", color: "oklch(0.50 0.24 25)", textColor: "#fff" },
 ];
 
 function storageKey(categoryName: string, subName: string) {
