@@ -15,6 +15,7 @@ const VALID_GROUPS: GroupFilter[] = [
   "protocols",
   "security",
   "product",
+  "ecosystem",
 ];
 const VALID_VIEWS: ViewMode[] = ["grid", "card"];
 
