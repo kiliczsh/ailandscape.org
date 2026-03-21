@@ -8,8 +8,8 @@ subcategories:
       - name: Apache Spark
         homepage_url: https://spark.apache.org
         repo_url: https://github.com/apache/spark
-        project: graduated
         crunchbase: https://www.crunchbase.com/organization/apache
+        project: graduated
         description: "Unified analytics engine for large-scale data"
         tags: [batch, distributed, python, scala]
       - name: Apache Hadoop

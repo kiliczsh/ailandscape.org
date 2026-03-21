@@ -6,144 +6,144 @@ subcategories:
   - name: Commercial Agents
     items:
       - name: Amazon Q Developer
-        logo: amazon-q-developer.webp
         homepage_url: https://aws.amazon.com/q/developer/
         repo_url: https://github.com/aws/amazon-q-developer-cli
+        logo: amazon-q-developer.webp
         description: "AWS's AI code-generation and refactoring CLI with deep AWS integration and an autonomous /dev agent mode"
       - name: Amp
-        logo: amp.webp
         homepage_url: https://ampcode.com/
+        logo: amp.webp
         description: "Sourcegraph's coding agent (CLI and VS Code) powered by Claude with multi-repo context"
       - name: Blackbox AI
-        logo: blackbox-ai.webp
         homepage_url: https://www.blackbox.ai/
+        logo: blackbox-ai.webp
         description: "Autonomous AI Coding Agent with integrated IDE"
       - name: Codebuff
-        logo: codebuff.webp
         homepage_url: https://www.codebuff.com/
+        logo: codebuff.webp
         description: "Works in your terminal to help you write and deeply understand your code"
       - name: Conductor
-        logo: conductor.webp
         homepage_url: https://conductor.build/
+        logo: conductor.webp
         description: "Run fleets of Claude Code agents in parallel across isolated git worktrees"
       - name: CTO.new
-        logo: cto-new.webp
         homepage_url: https://cto.new
+        logo: cto-new.webp
         description: "Completely free AI code agent"
       - name: Factory
-        logo: factory.webp
         homepage_url: https://www.factory.ai/
+        logo: factory.webp
         description: "Delegate software engineering tasks to AI Droids — runs multi-step workflows from ticket to merged PR"
       - name: Forge Code
-        logo: forge-code.webp
         homepage_url: https://forgecode.dev
         repo_url: https://github.com/antinomyhq/forge
+        logo: forge-code.webp
         description: "AI software engineering agent that runs in your terminal with deep codebase understanding"
       - name: Gemini Code Assist
-        logo: gemini-code-assist.webp
         homepage_url: https://codeassist.google/
         repo_url: https://github.com/google-gemini/gemini-cli
+        logo: gemini-code-assist.webp
         description: "Google's AI coding assistant powered by Gemini; integrates into VS Code, JetBrains, and the Gemini CLI"
       - name: GitHub Copilot CLI
-        logo: github-copilot-cli.webp
         homepage_url: https://github.blog/changelog/2025-09-25-github-copilot-cli-is-now-in-public-preview/
+        logo: github-copilot-cli.webp
         description: "The power of GitHub Copilot coding agent brought directly to your terminal"
       - name: Goose
         homepage_url: https://block.github.io/goose/
         repo_url: https://github.com/block/goose
         description: "Block's open-source extensible AI agent — runs tools, executes code, browses the web, and manages files"
       - name: JetBrains Junie
-        logo: jetbrains-junie.webp
         homepage_url: https://www.jetbrains.com/junie/
+        logo: jetbrains-junie.webp
         description: "JetBrains' smart coding agent deeply integrated into IntelliJ-based IDEs"
       - name: Jules
-        logo: jules.webp
         homepage_url: https://jules.google/
+        logo: jules.webp
         description: "Google's asynchronous AI coding agent that works independently on GitHub issues and pull requests"
       - name: Kimi-CLI
-        logo: kimi-cli.webp
         homepage_url: https://www.kimi.com/code
+        logo: kimi-cli.webp
         description: "CLI agent for software development and terminal operations, powered by Kimi models"
       - name: OpenAI Codex
-        logo: openai-codex.webp
         homepage_url: https://openai.com/codex/
         repo_url: https://github.com/openai/codex
+        logo: openai-codex.webp
         description: "OpenAI's cloud coding agent toolkit powered by codex-1 — plans tasks, writes code, and opens PRs autonomously"
       - name: Scout
-        logo: scout.webp
         homepage_url: https://scout.new/
+        logo: scout.webp
         description: "Coding and research agent for complex multi-file tasks"
       - name: Slate
-        logo: slate.webp
         homepage_url: https://randomlabs.ai/
+        logo: slate.webp
         description: "Purpose-built agent for long and complex coding tasks"
   - name: Code-Writing Agents
     items:
       - name: Charm
-        logo: charm.webp
         homepage_url: https://charm.land/
+        logo: charm.webp
         description: "A charming terminal coding agent built on Charm's TUI framework"
       - name: Cline
-        logo: cline.webp
         homepage_url: https://cline.bot/
         repo_url: https://github.com/cline/cline
+        logo: cline.webp
         description: "Autonomous coding agent for VS Code with human-in-the-loop approval gates"
       - name: DeepCode
-        logo: gh-HKUDS.png
         homepage_url: https://github.com/HKUDS/DeepCode
         repo_url: https://github.com/HKUDS/DeepCode
+        logo: gh-HKUDS.png
         description: "Transforms research papers and natural language into production-ready code"
       - name: Gemini CLI
-        logo: gh-google-gemini.png
         homepage_url: https://github.com/google-gemini/gemini-cli
         repo_url: https://github.com/google-gemini/gemini-cli
+        logo: gh-google-gemini.png
         description: "Google's open-source terminal agent powered by Gemini models"
       - name: Kilo Code
-        logo: kilo-code.webp
         homepage_url: https://kilocode.ai/
+        logo: kilo-code.webp
         description: "AI coding agent for VS Code and JetBrains with multi-provider model support"
       - name: Mistral Vibe CLI
-        logo: gh-mistralai.png
         homepage_url: https://github.com/mistralai/mistral-vibe
         repo_url: https://github.com/mistralai/mistral-vibe
+        logo: gh-mistralai.png
         description: "Command-line coding assistant powered by Mistral's open-weight models"
       - name: Open Interpreter
-        logo: open-interpreter.webp
         homepage_url: http://openinterpreter.com/
         repo_url: https://github.com/KillianLucas/open-interpreter
+        logo: open-interpreter.webp
         description: "A natural language interface for computers; lets LLMs run code, browse, and manage files locally"
       - name: OpenAI Codex CLI
-        logo: openai-codex-cli.webp
         homepage_url: https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started
         repo_url: https://github.com/openai/codex
+        logo: openai-codex-cli.webp
         description: "OpenAI's open-source command-line agent; the CLI counterpart to the cloud Codex agent"
       - name: OpenCode
-        logo: gh-opencode-ai.png
         homepage_url: https://github.com/opencode-ai/opencode
         repo_url: https://github.com/opencode-ai/opencode
+        logo: gh-opencode-ai.png
         description: "Open-source terminal coding assistant with multi-provider model support and TUI interface"
       - name: potpie
-        logo: potpie.webp
         homepage_url: https://potpie.ai
         repo_url: https://github.com/potpie-ai/potpie
+        logo: potpie.webp
         description: "Open-source AI agents for your codebase — Q&A, testing, debugging, and system design agents"
       - name: Qwen Code
-        logo: gh-QwenLM.png
         homepage_url: https://github.com/QwenLM/qwen-code
         repo_url: https://github.com/QwenLM/qwen-code
+        logo: gh-QwenLM.png
         description: "Alibaba's CLI coding agent powered by Qwen3-Coder"
       - name: Roo Code
-        logo: gh-RooCodeInc.png
         homepage_url: https://github.com/RooCodeInc/Roo-Code
         repo_url: https://github.com/RooCodeInc/Roo-Code
+        logo: gh-RooCodeInc.png
         description: "Cline fork for VS Code with enhanced multi-model support and boomerang task orchestration"
       - name: Ruler
-        logo: ruler.webp
         homepage_url: https://okigu.com/ruler
         repo_url: https://github.com/intellectronica/ruler
+        logo: ruler.webp
         description: "Central AI agent rule registry for consistent agent behavior across projects"
       - name: Steel Browser
-        logo: steel-browser.webp
         homepage_url: https://steel.dev
         repo_url: https://github.com/steel-dev/steel-browser
+        logo: steel-browser.webp
         description: "Open-source browser sandbox and automation infrastructure for AI agents"

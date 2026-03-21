@@ -6,152 +6,152 @@ subcategories:
   - name: Multi-Agent Runners
     items:
       - name: 1code
-        logo: 1code.webp
         homepage_url: https://1code.dev
         repo_url: https://github.com/21st-dev/1code
+        logo: 1code.webp
         description: "UI for Claude Code with local and remote agent execution"
       - name: ai-maestro
-        logo: ai-maestro.webp
         homepage_url: https://ai-maestro.23blocks.com
         repo_url: https://github.com/23blocks-OS/ai-maestro
+        logo: ai-maestro.webp
         description: "Dashboard for orchestrating Claude, Aider, and Cursor agents across multiple machines"
       - name: aizen
-        logo: aizen.webp
         homepage_url: https://aizen.win
         repo_url: https://github.com/vivy-company/aizen
+        logo: aizen.webp
         description: "macOS workspace that assigns each git worktree its own terminal, browser, and agent session"
       - name: ariana
-        logo: ariana.webp
         homepage_url: https://ariana.dev
         repo_url: https://github.com/ariana-dot-dev/ariana
+        logo: ariana.webp
         description: "The IDE of the future"
       - name: automaker
-        logo: automaker.webp
         homepage_url: https://automaker.app/
         repo_url: https://github.com/AutoMaker-Org/automaker
+        logo: automaker.webp
         description: "Kanban-driven autonomous AI development studio; Electron desktop and web mode"
       - name: CodexMonitor
-        logo: codexmonitor.webp
         homepage_url: https://www.codexmonitor.app
         repo_url: https://github.com/Dimillian/CodexMonitor
+        logo: codexmonitor.webp
         description: "Orchestrate multiple Codex agents across local workspaces"
       - name: constellagent
         homepage_url: https://constellagent.vercel.app/
         repo_url: https://github.com/owengretzinger/constellagent
         description: "macOS app where each agent gets its own terminal, editor, and git worktree"
       - name: crystal
-        logo: crystal.webp
         homepage_url: https://nimbalyst.com/
         repo_url: https://github.com/stravu/crystal
+        logo: crystal.webp
         description: "Run multiple Codex and Claude Code sessions in parallel git worktrees"
       - name: dorothy
-        logo: dorothy.webp
         homepage_url: https://dorothyai.app
         repo_url: https://github.com/Charlie85270/Dorothy
+        logo: dorothy.webp
         description: "Desktop app for orchestrating multiple AI CLI agents with automations and Kanban management"
       - name: emdash
-        logo: emdash.webp
         homepage_url: https://emdash.sh
         repo_url: https://github.com/generalaction/emdash
+        logo: emdash.webp
         description: "Open-source Agentic Development Environment; 22+ agents, SSH remote support (YC W26)"
       - name: Happy Coder
-        logo: happy-coder.webp
         homepage_url: https://happy.engineering
         repo_url: https://github.com/slopus/happy
+        logo: happy-coder.webp
         description: "Mobile and web client for Claude Code and Codex with realtime voice and encryption"
       - name: jat
-        logo: jat.webp
         homepage_url: https://jat.tools
         repo_url: https://github.com/joewinke/jat
+        logo: jat.webp
         description: "Agentic IDE"
       - name: jean
-        logo: jean.webp
         homepage_url: https://jean.build
         repo_url: https://github.com/coollabsio/jean
+        logo: jean.webp
         description: "Orchestrate Claude, Codex, and OpenCode agents across projects and git worktrees"
       - name: mux
-        logo: mux.webp
         homepage_url: https://mux.coder.com
         repo_url: https://github.com/coder/mux
+        logo: mux.webp
         description: "Desktop app for isolated, parallel agentic development"
       - name: supacode
-        logo: supacode.webp
         homepage_url: https://supacode.sh
         repo_url: https://github.com/supabitapp/supacode
+        logo: supacode.webp
         description: "Native macOS coding agent orchestrator"
       - name: t3code
-        logo: t3code.webp
         homepage_url: https://t3.codes
         repo_url: https://github.com/pingdotgg/t3code
+        logo: t3code.webp
         description: "Minimal web GUI for coding agents"
       - name: vibe-kanban
-        logo: vibe-kanban.webp
         homepage_url: https://www.vibekanban.com/
         repo_url: https://github.com/BloopAI/vibe-kanban
+        logo: vibe-kanban.webp
         description: "Kanban board for managing AI coding agents; Tauri desktop app and self-hostable web"
       - name: vibe-tree
-        logo: gh-sahithvibudhi.png
         homepage_url: https://github.com/sahithvibudhi/vibe-tree
         repo_url: https://github.com/sahithvibudhi/vibe-tree
+        logo: gh-sahithvibudhi.png
         description: "Vibe code with Claude in parallel git worktrees"
       - name: vibecraft
-        logo: gh-rayzhudev.png
         homepage_url: https://github.com/rayzhudev/vibecraft
         repo_url: https://github.com/rayzhudev/vibecraft
+        logo: gh-rayzhudev.png
         description: "RTS-style workspace for managing AI coding agents"
   - name: Terminal & CLI
     items:
       - name: agent-deck
-        logo: agent-deck.webp
         homepage_url: https://discord.gg/e4xSs6NBN8
         repo_url: https://github.com/asheshgoplani/agent-deck
+        logo: agent-deck.webp
         description: "Terminal session manager for AI coding agents"
       - name: amux
-        logo: gh-andyrewlee.png
         homepage_url: https://github.com/andyrewlee/amux
         repo_url: https://github.com/andyrewlee/amux
+        logo: gh-andyrewlee.png
         description: "TUI for easily running parallel coding agents"
       - name: claude_code_bridge
-        logo: gh-bfly123.png
         homepage_url: https://github.com/bfly123/claude_code_bridge
         repo_url: https://github.com/bfly123/claude_code_bridge
+        logo: gh-bfly123.png
         description: "Real-time multi-AI collaboration bridge"
       - name: claude-code-router
-        logo: gh-musistudio.png
         homepage_url: https://github.com/musistudio/claude-code-router
         repo_url: https://github.com/musistudio/claude-code-router
+        logo: gh-musistudio.png
         description: "Route Claude Code requests to different models with multi-provider support and dynamic switching"
       - name: claude-squad
         homepage_url: https://smtg-ai.github.io/claude-squad/
         repo_url: https://github.com/smtg-ai/claude-squad
         description: "Manage multiple AI terminal agents in the background"
       - name: cmux
-        logo: cmux.webp
         homepage_url: https://cmux.dev
         repo_url: https://github.com/manaflow-ai/cmux
+        logo: cmux.webp
         description: "Open-source platform for running multiple coding agents in parallel"
       - name: dmux
-        logo: dmux.webp
         homepage_url: https://dmux.ai
         repo_url: https://github.com/standardagents/dmux
+        logo: dmux.webp
         description: "Parallel agents with tmux and worktrees"
       - name: Kagan
-        logo: gh-aorumbayev.png
         homepage_url: https://github.com/aorumbayev/kagan
         repo_url: https://github.com/aorumbayev/kagan
+        logo: gh-aorumbayev.png
         description: "AI-powered Kanban TUI for autonomous development workflows with Claude Code integration"
       - name: openkanban
-        logo: gh-TechDufus.png
         homepage_url: https://github.com/TechDufus/openkanban
         repo_url: https://github.com/techdufus/openkanban
+        logo: gh-TechDufus.png
         description: "TUI kanban board for orchestrating AI coding agents"
       - name: subtask
-        logo: gh-zippoxer.png
         homepage_url: https://github.com/zippoxer/subtask
         repo_url: https://github.com/zippoxer/subtask
+        logo: gh-zippoxer.png
         description: "Claude skill for running subagents across Git worktrees"
       - name: superset
-        logo: superset.webp
         homepage_url: https://superset.sh
         repo_url: https://github.com/superset-sh/superset
+        logo: superset.webp
         description: "A terminal environment built for coding agents"

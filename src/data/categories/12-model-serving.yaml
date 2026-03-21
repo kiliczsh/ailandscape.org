@@ -6,38 +6,38 @@ subcategories:
   - name: Inference Engines
     items:
       - name: FastChat
-        logo: gh-lm-sys.png
         homepage_url: https://github.com/lm-sys/FastChat
         repo_url: https://github.com/lm-sys/FastChat
+        logo: gh-lm-sys.png
         description: "Distributed multi-model LLM serving system with OpenAI-compatible API and web UI"
       - name: Harbor
-        logo: gh-av.png
         homepage_url: https://github.com/av/harbor
         repo_url: https://github.com/av/harbor
+        logo: gh-av.png
         description: "Effortlessly run LLM backends, APIs, frontends, and services with one command"
       - name: LM Studio
-        logo: lm-studio.webp
         homepage_url: https://lmstudio.ai/
+        logo: lm-studio.webp
         description: "Desktop app for discovering, downloading, and running open-weight LLMs locally"
       - name: ollama
-        logo: ollama.webp
         homepage_url: https://ollama.com
         repo_url: https://github.com/ollama/ollama
+        logo: ollama.webp
         description: "Get up and running with local LLMs (Llama, Qwen, Gemma, and more) with a single command"
       - name: Open WebUI
-        logo: open-webui.webp
         homepage_url: https://openwebui.com/
         repo_url: https://github.com/open-webui/open-webui
+        logo: open-webui.webp
         description: "Self-hosted chat interface for local and cloud LLMs; supports Ollama, OpenAI-compatible APIs, RAG, and tools"
       - name: SGLang
-        logo: sglang.webp
         homepage_url: https://sglang.io
         repo_url: https://github.com/sgl-project/sglang
+        logo: sglang.webp
         description: "Fast serving framework for LLMs and vision language models with structured generation support"
       - name: SillyTavern
-        logo: sillytavern.webp
         homepage_url: https://sillytavern.app/
         repo_url: https://github.com/SillyTavern/SillyTavern
+        logo: sillytavern.webp
         description: "Locally installed UI for text, image, and voice LLMs with extensive customization"
       - name: TensorRT-LLM
         homepage_url: https://nvidia.github.io/TensorRT-LLM/
@@ -46,24 +46,24 @@ subcategories:
   - name: Cloud AI Platforms
     items:
       - name: Akash Network
-        logo: akash-network.webp
         homepage_url: https://akash.network
         repo_url: https://github.com/akash-network/provider
+        logo: akash-network.webp
         description: "Decentralized cloud compute marketplace for AI workloads on GPU nodes"
       - name: AWS Bedrock
-        logo: aws-bedrock.webp
         homepage_url: https://aws.amazon.com/bedrock/
+        logo: aws-bedrock.webp
         description: "Fully managed AWS service for accessing foundation models from Anthropic, Meta, Mistral, and others"
       - name: Cloudflare AI
-        logo: cloudflare-ai.webp
         homepage_url: https://ai.cloudflare.com
         repo_url: https://github.com/cloudflare/workers-ai-provider
+        logo: cloudflare-ai.webp
         description: "Run AI inference at the edge with Cloudflare Workers AI; deploy models globally with zero cold starts"
       - name: Fireworks AI
         homepage_url: https://fireworks.ai
         description: "Fast, affordable inference API for open-source models with sub-100ms latency"
       - name: Heurist
-        logo: heurist.webp
         homepage_url: https://www.heurist.ai/
         repo_url: https://github.com/heurist-network/heurist-agent-framework
+        logo: heurist.webp
         description: "Decentralized AI compute network aggregating idle GPUs for low-latency, verifiable model inference"

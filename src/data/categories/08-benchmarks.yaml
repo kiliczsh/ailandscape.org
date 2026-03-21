@@ -9,12 +9,12 @@ subcategories:
         homepage_url: https://aider.chat/docs/leaderboards/
         description: "Aider's polyglot coding leaderboard measuring LLM performance across multiple programming languages"
       - name: BigCodeArena
-        logo: hugging-face.webp
         homepage_url: https://huggingface.co/spaces/bigcode/arena
+        logo: hugging-face.webp
         description: "A human-in-the-loop platform for evaluating code generation through execution"
       - name: CORE-Bench Hard
-        logo: core-bench-hard.webp
         homepage_url: https://hal.cs.princeton.edu/corebench_hard
+        logo: core-bench-hard.webp
         description: "Agent installs dependencies, runs published scientific paper code, and answers questions about results"
       - name: Live-SWE-agent
         homepage_url: https://live-swe-agent.github.io/
@@ -23,58 +23,58 @@ subcategories:
         homepage_url: https://livecodebench.github.io/leaderboard.html
         description: "Holistic and contamination-free evaluation of large language models for code"
       - name: LiveCodeBench Pro
-        logo: livecodebench-pro.webp
         homepage_url: https://livecodebenchpro.com/
+        logo: livecodebench-pro.webp
         description: "Benchmark from Codeforces, ICPC, and IOI problems, continuously updated to reduce data contamination"
       - name: Multi-SWE-bench
         homepage_url: https://multi-swe-bench.github.io/
         description: "A multilingual benchmark for issue resolving across multiple programming languages"
       - name: SWE-bench
-        logo: swe-bench.webp
         homepage_url: https://www.swebench.com/
+        logo: swe-bench.webp
         description: "Evaluates LLM performance on real-world software issues collected from GitHub"
       - name: SWE-bench Multilingual
-        logo: swe-bench-multilingual.webp
         homepage_url: https://swe-bench.com/
+        logo: swe-bench-multilingual.webp
         description: "300 curated SWE-bench style tasks from 42 repositories representing 9 programming languages"
       - name: SWE-Bench Pro Commercial
-        logo: swe-bench-pro-commercial.webp
         homepage_url: https://scale.com/leaderboard/swe_bench_pro_commercial
+        logo: swe-bench-pro-commercial.webp
         description: "Scale AI's rigorous real-world software engineering benchmark using a commercial dataset"
       - name: SWE-Bench Pro Public
-        logo: swe-bench-pro-public.webp
         homepage_url: https://scale.com/leaderboard/swe_bench_pro_public
+        logo: swe-bench-pro-public.webp
         description: "Public version of Scale AI's SWE-Bench Pro evaluating AI agents on real-world software engineering tasks"
       - name: SWE-DEV
-        logo: gh-DorothyDUUU.png
         homepage_url: https://github.com/DorothyDUUU/SWE-Dev
         repo_url: https://github.com/DorothyDUUU/SWE-Dev
+        logo: gh-DorothyDUUU.png
         description: "Evaluating and training autonomous feature-driven software development agents"
       - name: SWE-rebench
-        logo: swe-rebench.webp
         homepage_url: https://swe-rebench.com/
+        logo: swe-rebench.webp
         description: "A continuously evolving and decontaminated benchmark for software engineering LLMs"
   - name: Agent & General Benchmarks
     items:
       - name: APEX-Agents
-        logo: apex-agents.webp
         homepage_url: https://www.mercor.com/apex/apex-agents-leaderboard/
+        logo: apex-agents.webp
         description: "The AI Productivity Index for Agents — measures whether frontier AI agents can execute long-horizon tasks"
       - name: ARC-AGI-2
-        logo: arc-agi-2.webp
         homepage_url: https://arcprize.org/leaderboard
+        logo: arc-agi-2.webp
         description: "Stress tests the efficiency and capability of state-of-the-art AI reasoning systems"
       - name: Context-Bench
-        logo: context-bench.webp
         homepage_url: https://leaderboard.letta.com/
+        logo: context-bench.webp
         description: "A benchmark for agentic context engineering"
       - name: MCP Atlas
-        logo: mcp-atlas.webp
         homepage_url: https://scale.com/leaderboard/mcp_atlas
+        logo: mcp-atlas.webp
         description: "Evaluates how well language models handle real-world tool use through MCP"
       - name: Modu Merge Rate Leaderboard
-        logo: modu-merge-rate-leaderboard.webp
         homepage_url: https://www.askmodu.com/rankings
+        logo: modu-merge-rate-leaderboard.webp
         description: "Real-world success rates: ranking top coding agents by their pull request merge performance"
       - name: OSWorld
         homepage_url: https://os-world.github.io/
@@ -83,28 +83,28 @@ subcategories:
         homepage_url: https://prarena.ai/
         description: "Software engineering agents head-to-head on real pull request tasks"
       - name: Repo Bench
-        logo: repo-bench.webp
         homepage_url: https://repoprompt.com/bench
+        logo: repo-bench.webp
         description: "Measuring large context reasoning, file editing precision, and instruction adherence"
       - name: Terminal-Bench
-        logo: terminal-bench.webp
         homepage_url: https://www.tbench.ai/leaderboard
+        logo: terminal-bench.webp
         description: "Benchmark measuring AI agent capabilities in a terminal environment (v1)"
       - name: Terminal-Bench 2.0
-        logo: terminal-bench-2-0.webp
         homepage_url: https://www.tbench.ai/leaderboard/terminal-bench/2.0
+        logo: terminal-bench-2-0.webp
         description: "Benchmark measuring AI agent capabilities in a terminal environment (v2)"
       - name: Vending-Bench 2
-        logo: vending-bench-2.webp
         homepage_url: https://andonlabs.com/evals/vending-bench-2
+        logo: vending-bench-2.webp
         description: "Measuring AI model performance on running a business over long time horizons"
       - name: τ-bench
-        logo: bench.webp
         homepage_url: https://taubench.com
+        logo: bench.webp
         description: "Benchmarking AI agents in collaborative real-world scenarios"
   - name: Model Rankings
     items:
       - name: OpenRouter Rankings
-        logo: openrouter-rankings.webp
         homepage_url: https://openrouter.ai/rankings
+        logo: openrouter-rankings.webp
         description: "Model market share, use case categories, and app rankings across the OpenRouter platform"

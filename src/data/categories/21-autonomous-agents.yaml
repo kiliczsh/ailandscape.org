@@ -14,50 +14,50 @@ subcategories:
         repo_url: https://github.com/yoheinakajima/babyagi
         description: "Minimal task-driven autonomous agent using GPT-4 and vector databases to iteratively complete goals"
       - name: GPT Engineer
-        logo: gpt-engineer.webp
         homepage_url: https://gptengineer.app
         repo_url: https://github.com/AntonOsika/gpt-engineer
+        logo: gpt-engineer.webp
         description: "Specify what you want to build; the AI asks clarifying questions and generates the full codebase"
       - name: LoopGPT
-        logo: gh-farizrahman4u.png
         homepage_url: https://github.com/farizrahman4u/loopgpt
         repo_url: https://github.com/farizrahman4u/loopgpt
+        logo: gh-farizrahman4u.png
         description: "Re-implementation of AutoGPT with modular architecture and better memory management"
       - name: nullclaw
         homepage_url: https://nullclaw.io
         repo_url: https://github.com/nullclaw/nullclaw
         description: "Fastest, smallest, fully autonomous AI assistant infrastructure"
       - name: ralph-claude-code
-        logo: gh-frankbria.png
         homepage_url: https://github.com/frankbria/ralph-claude-code
         repo_url: https://github.com/frankbria/ralph-claude-code
+        logo: gh-frankbria.png
         description: "Autonomous AI development loop for Claude Code with intelligent exit detection"
       - name: ralph-orchestrator
-        logo: gh-mikeyobrien.png
         homepage_url: https://github.com/mikeyobrien/ralph-orchestrator
         repo_url: https://github.com/mikeyobrien/ralph-orchestrator
+        logo: gh-mikeyobrien.png
         description: "Hat-based orchestration that keeps agents in a loop until the task is done"
       - name: ralph-tui
-        logo: ralph-tui.webp
         homepage_url: https://ralph-tui.com
         repo_url: https://github.com/subsy/ralph-tui
+        logo: ralph-tui.webp
         description: "Orchestrate AI coding agents to work through task lists autonomously"
       - name: ralphy
         homepage_url: https://ralphy.goshen.fyi
         repo_url: https://github.com/michaelshimeles/ralphy
         description: "Runs AI agents on tasks until done"
       - name: symphony
-        logo: gh-openai.png
         homepage_url: https://github.com/openai/symphony
         repo_url: https://github.com/openai/symphony
+        logo: gh-openai.png
         description: "Turns project work into isolated, autonomous implementation runs"
       - name: wreckit
-        logo: wreckit.webp
         homepage_url: https://npmjs.com/package/wreckit
         repo_url: https://github.com/mikehostetler/wreckit
+        logo: wreckit.webp
         description: "Run the Ralph Wiggum Loop over your roadmap"
       - name: zeroclaw
-        logo: zeroclaw.webp
         homepage_url: https://www.zeroclawlabs.ai/
         repo_url: https://github.com/zeroclaw-labs/zeroclaw
+        logo: zeroclaw.webp
         description: "Fast, small, fully autonomous AI assistant infrastructure"

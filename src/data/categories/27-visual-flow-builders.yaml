@@ -6,22 +6,22 @@ subcategories:
   - name: Node & Canvas Editors
     items:
       - name: AgentPilot
-        logo: agentpilot.webp
         homepage_url: https://agentpilot.ai
         repo_url: https://github.com/jbexta/AgentPilot
+        logo: agentpilot.webp
         description: "Open-source desktop app to create, manage, and chat with AI agent workflows"
       - name: Flowise
-        logo: flowise.webp
         homepage_url: https://flowiseai.com
         repo_url: https://github.com/FlowiseAI/Flowise
+        logo: flowise.webp
         description: "Drag & drop UI to build customized LLM flows and AI agents visually"
       - name: IX
-        logo: gh-kreneskyp.png
         homepage_url: https://github.com/kreneskyp/ix
         repo_url: https://github.com/kreneskyp/ix
+        logo: gh-kreneskyp.png
         description: "Autonomous GPT-4 agent platform with a visual graph editor for designing chains and agents"
       - name: Magick
-        logo: magick.webp
         homepage_url: https://www.magickml.com/
         repo_url: https://github.com/Oneirocom/Magick
+        logo: magick.webp
         description: "Visual AI agent development platform with a node-based editor for building complex AI workflows"
