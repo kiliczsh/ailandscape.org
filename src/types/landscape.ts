@@ -3,8 +3,9 @@ export interface LandscapeItem {
   homepage_url?: string;
   repo_url?: string;
   logo?: string;
-  description?: string;
   crunchbase?: string;
+  project?: string;
+  description?: string;
   tags?: string[];
 }
 
