@@ -21,7 +21,8 @@ export type CategoryGroup =
   | "infrastructure"
   | "protocols"
   | "security"
-  | "product";
+  | "product"
+  | "ecosystem";
 
 export interface Category {
   name: string;

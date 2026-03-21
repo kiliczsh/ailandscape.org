@@ -23,6 +23,7 @@ const VALID_GROUPS = new Set([
   "protocols",
   "security",
   "product",
+  "ecosystem",
 ]);
 
 const VALID_ICONS = new Set([

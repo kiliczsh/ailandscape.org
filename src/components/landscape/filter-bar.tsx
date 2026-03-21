@@ -22,6 +22,7 @@ const FILTER_OPTIONS: [GroupFilter, string][] = [
   ["protocols", "Protocols"],
   ["security", "Security"],
   ["product", "Product"],
+  ["ecosystem", "Ecosystem"],
 ];
 
 const GROUP_ACTIVE_COLORS: Partial<Record<GroupFilter, string>> = {
@@ -31,6 +32,7 @@ const GROUP_ACTIVE_COLORS: Partial<Record<GroupFilter, string>> = {
   protocols: "var(--group-protocols)",
   security: "var(--group-security)",
   product: "var(--group-product)",
+  ecosystem: "var(--group-ecosystem)",
 };
 
 interface FilterBarProps {

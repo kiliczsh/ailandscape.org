@@ -1,0 +1,130 @@
+name: Agent Skills
+group: ecosystem
+color: "oklch(0.62 0.18 80)"
+icon: Plug
+subcategories:
+  - name: Document & Office
+    items:
+      - name: Doc Co-Authoring
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring
+        repo_url: https://github.com/anthropics/skills
+        description: "Collaborative writing skill for human-Claude back-and-forth"
+        tags: [skills, claude-code, document-processing]
+      - name: DOCX
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/docx
+        repo_url: https://github.com/anthropics/skills
+        description: "Create and edit Word docs with tracked changes and formatting"
+        tags: [skills, claude-code, office, document-processing]
+      - name: PDF Processing
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/pdf
+        repo_url: https://github.com/anthropics/skills
+        description: "Read, extract tables, fill forms, merge and split PDFs"
+        tags: [skills, claude-code, document-processing]
+      - name: PPTX
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/pptx
+        repo_url: https://github.com/anthropics/skills
+        description: "Generate slide decks with layouts, charts, and speaker notes"
+        tags: [skills, claude-code, office]
+      - name: XLSX
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/xlsx
+        repo_url: https://github.com/anthropics/skills
+        description: "Excel formulas, analysis, and charts via plain English"
+        tags: [skills, claude-code, office]
+  - name: Design & Creative
+    items:
+      - name: Algorithmic Art
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/algorithmic-art
+        repo_url: https://github.com/anthropics/skills
+        description: "Fractal patterns and geometric compositions via p5.js"
+        tags: [skills, claude-code, creative]
+      - name: Canvas Design
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/canvas-design
+        repo_url: https://github.com/anthropics/skills
+        description: "Social graphics, posters, and covers as PNG or PDF output"
+        tags: [skills, claude-code, design, creative]
+      - name: Frontend Design
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/frontend-design
+        repo_url: https://github.com/anthropics/skills
+        description: "Real design systems with bold typography, 277k+ installs"
+        tags: [skills, claude-code, design, frontend]
+      - name: Impeccable
+        homepage_url: https://impeccable.style
+        repo_url: https://github.com/pbakaus/impeccable
+        description: "20+ design skills for audit, polish, animate, and harden"
+        tags: [skills, design, frontend]
+      - name: Theme Factory
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/theme-factory
+        repo_url: https://github.com/anthropics/skills
+        description: "Batch-generate color schemes from a single prompt"
+        tags: [skills, claude-code, design]
+      - name: Web Artifacts Builder
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder
+        repo_url: https://github.com/anthropics/skills
+        description: "Calculators and dashboards via natural language prompts"
+        tags: [skills, claude-code, frontend]
+  - name: Dev & Engineering
+    items:
+      - name: Context Optimization
+        homepage_url: https://github.com/muratcankoylan/agent-skills-for-context-engineering
+        repo_url: https://github.com/muratcankoylan/agent-skills-for-context-engineering
+        description: "Reduce token costs with KV-cache tricks, 13.9k stars"
+        tags: [skills, llm, optimization]
+      - name: File Search
+        homepage_url: https://github.com/massgen/massgen
+        repo_url: https://github.com/massgen/massgen
+        description: "Ripgrep and ast-grep mastery skill, S9.0 rated on SkillHub"
+        tags: [skills, search, developer-tools]
+      - name: Remotion Best Practices
+        homepage_url: https://github.com/remotion-dev/remotion
+        repo_url: https://github.com/remotion-dev/remotion
+        description: "AI video generation skill, 117k weekly installs"
+        tags: [skills, video, creative]
+      - name: Skill Creator
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/skill-creator
+        repo_url: https://github.com/anthropics/skills
+        description: "Meta-skill to describe a workflow and get a SKILL.md"
+        tags: [skills, claude-code]
+      - name: Superpowers
+        homepage_url: https://github.com/obra/superpowers
+        repo_url: https://github.com/obra/superpowers
+        description: "20+ battle-tested skills for TDD, debugging, planning"
+        tags: [skills, debugging, testing]
+      - name: Systematic Debugging
+        homepage_url: https://github.com/obra/superpowers
+        repo_url: https://github.com/obra/superpowers
+        description: "Root cause analysis first, fix second, 4-phase method"
+        tags: [skills, debugging]
+  - name: Marketing & SEO
+    items:
+      - name: Brand Guidelines
+        homepage_url: https://github.com/anthropics/skills/tree/main/skills/brand-guidelines
+        repo_url: https://github.com/anthropics/skills
+        description: "Encode your brand identity into a skill for auto-apply"
+        tags: [skills, claude-code, brand, marketing]
+      - name: Claude SEO
+        homepage_url: https://github.com/AgriciDaniel/claude-seo
+        repo_url: https://github.com/AgriciDaniel/claude-seo
+        description: "Full-site SEO audits and schema validation, 12 sub-skills"
+        tags: [skills, seo, marketing]
+      - name: Marketing Skills
+        homepage_url: https://github.com/coreyhaines31/marketingskills
+        repo_url: https://github.com/coreyhaines31/marketingskills
+        description: "20+ skills for CRO, copywriting, SEO, email, and growth"
+        tags: [skills, marketing, seo]
+  - name: Knowledge & Learning
+    items:
+      - name: Excel MCP Server
+        homepage_url: https://github.com/haris-musa/excel-mcp-server
+        repo_url: https://github.com/haris-musa/excel-mcp-server
+        description: "Manipulate Excel files without Microsoft Excel installed"
+        tags: [skills, office, document-processing]
+      - name: NotebookLM Integration
+        homepage_url: https://github.com/PleasePrompto/notebooklm-skill
+        repo_url: https://github.com/PleasePrompto/notebooklm-skill
+        description: "Claude-NotebookLM bridge for summaries and flashcards"
+        tags: [skills, knowledge, research]
+      - name: Obsidian Skills
+        homepage_url: https://github.com/kepano/obsidian-skills
+        repo_url: https://github.com/kepano/obsidian-skills
+        description: "Auto-tagging, auto-linking, vault-native by Obsidian CEO"
+        tags: [skills, obsidian, knowledge]

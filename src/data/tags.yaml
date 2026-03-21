@@ -634,3 +634,41 @@ lab:
 analytics:
   label: Analytics
   color: "oklch(0.68 0.14 60)"
+
+# --- Skills & Ecosystem ---
+skills:
+  label: Skills
+  color: "oklch(0.62 0.18 80)"
+claude-code:
+  label: Claude Code
+  color: "oklch(0.55 0.20 30)"
+design:
+  label: Design
+  color: "oklch(0.62 0.18 330)"
+marketing:
+  label: Marketing
+  color: "oklch(0.62 0.14 160)"
+seo:
+  label: SEO
+  color: "oklch(0.62 0.14 160)"
+knowledge:
+  label: Knowledge
+  color: "oklch(0.62 0.14 270)"
+obsidian:
+  label: Obsidian
+  color: "oklch(0.55 0.18 280)"
+office:
+  label: Office
+  color: "oklch(0.62 0.12 230)"
+debugging:
+  label: Debugging
+  color: "oklch(0.58 0.18 25)"
+brand:
+  label: Brand
+  color: "oklch(0.62 0.14 50)"
+frontend:
+  label: Frontend
+  color: "oklch(0.62 0.18 200)"
+developer-tools:
+  label: Developer Tools
+  color: "oklch(0.62 0.14 250)"
