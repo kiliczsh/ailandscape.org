@@ -1,6 +1,10 @@
 "use client";
 
-import { ArrowSquareOutIcon, GithubLogoIcon } from "@phosphor-icons/react";
+import {
+  ArrowSquareOutIcon,
+  GithubLogoIcon,
+  XLogoIcon,
+} from "@phosphor-icons/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
@@ -173,7 +177,7 @@ export function ItemModal({
         </div>
       )}
 
-      {(item.homepage_url || item.repo_url) && (
+      {(item.homepage_url || item.repo_url || item.twitter_url) && (
         <DialogFooter className="flex-row gap-2 sm:justify-start">
           {item.homepage_url && (
             <Button asChild size="sm" className="gap-1.5">
@@ -208,6 +212,23 @@ export function ItemModal({
               >
                 <GithubLogoIcon className="h-3.5 w-3.5" />
                 GitHub / Repo
+              </a>
+            </Button>
+          )}
+          {item.twitter_url && (
+            <Button asChild variant="outline" size="sm" className="gap-1.5">
+              <a
+                href={appendUtm(item.twitter_url, "x")}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent("external_link_clicked", {
+                    item_name: item.name,
+                    link_type: "twitter",
+                  })
+                }
+              >
+                <XLogoIcon className="h-3.5 w-3.5" />X / Twitter
               </a>
             </Button>
           )}

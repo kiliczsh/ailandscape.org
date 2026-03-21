@@ -8,6 +8,7 @@ subcategories:
       - name: Thinking Machines Lab
         homepage_url: https://thinkingmachines.ai
         logo: thinking-machines-lab.webp
+        twitter_url: https://x.com/thinkymachines
         description: "Building more understandable and customizable AI systems"
         tags: [lab, llm, proprietary]
       - name: Anthropic

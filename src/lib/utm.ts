@@ -3,9 +3,10 @@
  * Skips URLs that already contain utm_ params.
  */
 export function appendUtm(
-  url: string,
-  medium: "website" | "repo" = "website",
+  url: string | undefined,
+  medium: "website" | "repo" | "x" = "website",
 ): string {
+  if (!url) return "";
   try {
     const u = new URL(url);
     if (u.searchParams.has("utm_source")) return url;
