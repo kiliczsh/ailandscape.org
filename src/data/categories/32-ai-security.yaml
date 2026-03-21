@@ -28,7 +28,7 @@ subcategories:
       - name: CleverHans
         homepage_url: https://github.com/cleverhans-lab/cleverhans
         repo_url: https://github.com/cleverhans-lab/cleverhans
-        logo: github.webp
+        logo: gh-cleverhans-lab.png
         description: "Library for benchmarking adversarial ML attacks"
         tags: [adversarial, defense, python]
       - name: ART

@@ -39,7 +39,7 @@ subcategories:
       - name: LIME
         homepage_url: https://github.com/marcotcr/lime
         repo_url: https://github.com/marcotcr/lime
-        logo: github.webp
+        logo: gh-marcotcr.png
         description: "Local interpretable model-agnostic explanations"
         tags: [explainability, xai]
       - name: InterpretML
@@ -121,7 +121,7 @@ subcategories:
       - name: MMLU
         homepage_url: https://github.com/hendrycks/test
         repo_url: https://github.com/hendrycks/test
-        logo: github.webp
+        logo: gh-hendrycks.png
         description: "Massive Multitask Language Understanding benchmark"
         tags: [evaluation, benchmarks, llm]
       - name: HumanEval

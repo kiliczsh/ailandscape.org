@@ -57,13 +57,13 @@ subcategories:
       - name: Alink
         homepage_url: https://github.com/alibaba/Alink
         repo_url: https://github.com/alibaba/alink
-        logo: github.webp
+        logo: gh-alibaba.png
         description: "Algorithm platform based on Flink by Alibaba"
         tags: [classical-ml, flink]
       - name: Angel-ML
         homepage_url: https://github.com/Angel-ML/angel
         repo_url: https://github.com/Angel-ML/angel
-        logo: github.webp
+        logo: gh-Angel-ML.png
         project: incubating
         description: "High-performance distributed machine learning platform"
         tags: [classical-ml, distributed]

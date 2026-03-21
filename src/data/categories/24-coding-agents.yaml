@@ -89,12 +89,12 @@ subcategories:
         repo_url: https://github.com/cline/cline
         description: "Autonomous coding agent for VS Code with human-in-the-loop approval gates"
       - name: DeepCode
-        logo: github.webp
+        logo: gh-HKUDS.png
         homepage_url: https://github.com/HKUDS/DeepCode
         repo_url: https://github.com/HKUDS/DeepCode
         description: "Transforms research papers and natural language into production-ready code"
       - name: Gemini CLI
-        logo: github.webp
+        logo: gh-google-gemini.png
         homepage_url: https://github.com/google-gemini/gemini-cli
         repo_url: https://github.com/google-gemini/gemini-cli
         description: "Google's open-source terminal agent powered by Gemini models"
@@ -103,7 +103,7 @@ subcategories:
         homepage_url: https://kilocode.ai/
         description: "AI coding agent for VS Code and JetBrains with multi-provider model support"
       - name: Mistral Vibe CLI
-        logo: github.webp
+        logo: gh-mistralai.png
         homepage_url: https://github.com/mistralai/mistral-vibe
         repo_url: https://github.com/mistralai/mistral-vibe
         description: "Command-line coding assistant powered by Mistral's open-weight models"
@@ -118,7 +118,7 @@ subcategories:
         repo_url: https://github.com/openai/codex
         description: "OpenAI's open-source command-line agent; the CLI counterpart to the cloud Codex agent"
       - name: OpenCode
-        logo: github.webp
+        logo: gh-opencode-ai.png
         homepage_url: https://github.com/opencode-ai/opencode
         repo_url: https://github.com/opencode-ai/opencode
         description: "Open-source terminal coding assistant with multi-provider model support and TUI interface"
@@ -128,12 +128,12 @@ subcategories:
         repo_url: https://github.com/potpie-ai/potpie
         description: "Open-source AI agents for your codebase — Q&A, testing, debugging, and system design agents"
       - name: Qwen Code
-        logo: github.webp
+        logo: gh-QwenLM.png
         homepage_url: https://github.com/QwenLM/qwen-code
         repo_url: https://github.com/QwenLM/qwen-code
         description: "Alibaba's CLI coding agent powered by Qwen3-Coder"
       - name: Roo Code
-        logo: github.webp
+        logo: gh-RooCodeInc.png
         homepage_url: https://github.com/RooCodeInc/Roo-Code
         repo_url: https://github.com/RooCodeInc/Roo-Code
         description: "Cline fork for VS Code with enhanced multi-model support and boomerang task orchestration"

@@ -124,7 +124,7 @@ subcategories:
   - name: Open Source Builders
     items:
       - name: Adorable
-        logo: github.webp
+        logo: gh-freestyle-sh.png
         homepage_url: https://github.com/freestyle-sh/Adorable
         repo_url: https://github.com/freestyle-sh/Adorable
         description: "Open-source Lovable alternative built on Freestyle"
@@ -133,7 +133,7 @@ subcategories:
         homepage_url: https://www.app.build/
         description: "Open-source AI agent that builds full-stack apps"
       - name: bolt.diy
-        logo: github.webp
+        logo: gh-stackblitz-labs.png
         homepage_url: https://github.com/stackblitz-labs/bolt.diy
         repo_url: https://github.com/stackblitz-labs/bolt.diy
         description: "Open-source Bolt — AI-powered full-stack web development with support for any LLM"
@@ -142,7 +142,7 @@ subcategories:
         homepage_url: https://build.cloudflare.dev/
         description: "Run an entire vibe coding platform end-to-end with one click on Cloudflare"
       - name: Dyad
-        logo: github.webp
+        logo: gh-dyad-sh.png
         homepage_url: https://github.com/dyad-sh/dyad
         repo_url: https://github.com/dyad-sh/dyad
         description: "Local, open-source AI app builder that runs entirely on your machine — no cloud required"
@@ -151,7 +151,7 @@ subcategories:
         homepage_url: https://huggingface.co/deepsite
         description: "Simple and powerful AI Vibe Code Editor hosted on Hugging Face"
       - name: Open Lovable
-        logo: github.webp
+        logo: gh-firecrawl.png
         homepage_url: https://github.com/firecrawl/open-lovable
         repo_url: https://github.com/firecrawl/open-lovable
         description: "Clone and recreate any website as a modern React app in seconds"

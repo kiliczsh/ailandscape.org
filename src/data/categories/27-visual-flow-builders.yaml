@@ -16,7 +16,7 @@ subcategories:
         repo_url: https://github.com/FlowiseAI/Flowise
         description: "Drag & drop UI to build customized LLM flows and AI agents visually"
       - name: IX
-        logo: github.webp
+        logo: gh-kreneskyp.png
         homepage_url: https://github.com/kreneskyp/ix
         repo_url: https://github.com/kreneskyp/ix
         description: "Autonomous GPT-4 agent platform with a visual graph editor for designing chains and agents"

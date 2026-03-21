@@ -46,7 +46,7 @@ subcategories:
         homepage_url: https://scale.com/leaderboard/swe_bench_pro_public
         description: "Public version of Scale AI's SWE-Bench Pro evaluating AI agents on real-world software engineering tasks"
       - name: SWE-DEV
-        logo: github.webp
+        logo: gh-DorothyDUUU.png
         homepage_url: https://github.com/DorothyDUUU/SWE-Dev
         repo_url: https://github.com/DorothyDUUU/SWE-Dev
         description: "Evaluating and training autonomous feature-driven software development agents"

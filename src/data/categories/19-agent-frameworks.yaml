@@ -11,7 +11,7 @@ subcategories:
         repo_url: https://github.com/ComposioHQ/agent-orchestrator
         description: "Per-agent worktree and branch isolation; auto-fixes CI failures and opens PRs"
       - name: AgentForge
-        logo: github.webp
+        logo: gh-DataBassGit.png
         homepage_url: https://github.com/DataBassGit/AgentForge
         repo_url: https://github.com/DataBassGit/AgentForge
         description: "Low-code framework for building, testing, and iterating on AI agents and cognitive architectures"
@@ -55,7 +55,7 @@ subcategories:
         repo_url: https://github.com/airtai/fastagency
         description: "Rapid development framework for multi-agent AI applications"
       - name: gastown
-        logo: github.webp
+        logo: gh-steveyegge.png
         homepage_url: https://github.com/steveyegge/gastown
         repo_url: https://github.com/steveyegge/gastown
         description: "Multi-agent orchestration system with persistent work tracking across sessions"
@@ -69,7 +69,7 @@ subcategories:
         repo_url: https://github.com/samholt/l2mac
         description: "LLM Automatic Computer framework for generating extensive codebases and complex artifacts"
       - name: lalph
-        logo: github.webp
+        logo: gh-tim-smart.png
         homepage_url: https://github.com/tim-smart/lalph
         repo_url: https://github.com/tim-smart/lalph
         description: "LLM agent orchestrator that connects to your issue source and spawns agents from tickets"
@@ -78,7 +78,7 @@ subcategories:
         repo_url: https://github.com/langroid/langroid
         description: "Harness LLMs with Multi-Agent Programming; a lightweight, extensible Python framework"
       - name: loom
-        logo: github.webp
+        logo: gh-ghuntley.png
         homepage_url: https://github.com/ghuntley/loom
         repo_url: https://github.com/ghuntley/loom
         description: "Infrastructure for evolutionary software development where autonomous loops iteratively evolve a product"

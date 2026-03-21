@@ -51,7 +51,7 @@ subcategories:
       - name: FlashRank
         homepage_url: https://github.com/PrithivirajDamodaran/FlashRank
         repo_url: https://github.com/PrithivirajDamodaran/FlashRank
-        logo: github.webp
+        logo: gh-PrithivirajDamodaran.png
         description: "Ultra-lite cross-encoder reranking for RAG"
         tags: [rag, reranking, oss]
       - name: Jina Reranker
@@ -82,7 +82,7 @@ subcategories:
       - name: Docling
         homepage_url: https://github.com/DS4SD/docling
         repo_url: https://github.com/DS4SD/docling
-        logo: github.webp
+        logo: gh-DS4SD.png
         description: "IBM's fast document conversion and parsing toolkit"
         tags: [document-processing, pdf, oss]
       - name: LlamaParse
@@ -98,6 +98,6 @@ subcategories:
       - name: Marker
         homepage_url: https://github.com/VikParuchuri/marker
         repo_url: https://github.com/VikParuchuri/marker
-        logo: github.webp
+        logo: gh-VikParuchuri.png
         description: "Convert PDFs to markdown quickly and accurately"
         tags: [document-processing, pdf, oss]

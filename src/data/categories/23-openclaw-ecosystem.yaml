@@ -26,7 +26,7 @@ subcategories:
         repo_url: https://github.com/openclaw/openclaw
         description: "Your own personal AI assistant — the core framework"
       - name: piclaw
-        logo: github.webp
+        logo: gh-rcarmo.png
         homepage_url: https://github.com/rcarmo/piclaw
         repo_url: https://github.com/rcarmo/piclaw
         description: "Raspberry Pi-based general-purpose agent"

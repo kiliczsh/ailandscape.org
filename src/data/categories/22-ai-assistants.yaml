@@ -11,7 +11,7 @@ subcategories:
         repo_url: https://github.com/accomplish-ai/accomplish
         description: "Open-source AI coworker that lives on your desktop"
       - name: assistant
-        logo: github.webp
+        logo: gh-kcosr.png
         homepage_url: https://github.com/kcosr/assistant
         repo_url: https://github.com/kcosr/assistant
         description: "Panel-based personal assistant with a plugin architecture for productivity workflows"
@@ -25,7 +25,7 @@ subcategories:
         repo_url: https://github.com/NousResearch/hermes-agent
         description: "The agent that grows with you"
       - name: lemon
-        logo: github.webp
+        logo: gh-z80dev.png
         homepage_url: https://github.com/z80dev/lemon
         repo_url: https://github.com/z80dev/lemon
         description: "Local-first assistant and coding agent system"
@@ -49,7 +49,7 @@ subcategories:
         repo_url: https://github.com/cpacker/MemGPT
         description: "Teaching LLMs memory management for unbounded context; OS-inspired virtual context management"
       - name: mercury
-        logo: github.webp
+        logo: gh-Michaelliv.png
         homepage_url: https://github.com/Michaelliv/mercury
         repo_url: https://github.com/Michaelliv/mercury
         description: "Personal AI assistant that lives where you chat"
@@ -76,7 +76,7 @@ subcategories:
         repo_url: https://github.com/moltlaunch/cashclaw
         description: "An autonomous agent that takes work, does work, gets paid, and gets better at it"
       - name: ClawWork
-        logo: github.webp
+        logo: gh-HKUDS.png
         homepage_url: https://github.com/HKUDS/ClawWork
         repo_url: https://github.com/HKUDS/ClawWork
         description: "AI coworker built on the OpenClaw ecosystem"
@@ -96,12 +96,12 @@ subcategories:
         repo_url: https://github.com/b1rdmania/ghostclaw
         description: "An AI agent that lives on your computer and works for you"
       - name: MetaClaw
-        logo: github.webp
+        logo: gh-aiming-lab.png
         homepage_url: https://github.com/aiming-lab/MetaClaw
         repo_url: https://github.com/aiming-lab/MetaClaw
         description: "Just talk to your agent — it learns and evolves"
       - name: nanobot
-        logo: github.webp
+        logo: gh-HKUDS.png
         homepage_url: https://github.com/HKUDS/nanobot
         repo_url: https://github.com/HKUDS/nanobot
         description: "Ultra-lightweight personal AI assistant"

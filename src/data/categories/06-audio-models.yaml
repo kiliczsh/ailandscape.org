@@ -41,7 +41,7 @@ subcategories:
       - name: Bark
         homepage_url: https://github.com/suno-ai/bark
         repo_url: https://github.com/suno-ai/bark
-        logo: github.webp
+        logo: gh-suno-ai.png
         description: "Open-source text-to-audio model by Suno AI"
         tags: [tts, voice, oss]
       - name: OpenAI TTS
@@ -62,7 +62,7 @@ subcategories:
       - name: XTTS v2
         homepage_url: https://github.com/coqui-ai/TTS
         repo_url: https://github.com/coqui-ai/TTS
-        logo: github.webp
+        logo: gh-coqui-ai.png
         description: "Coqui's multilingual voice cloning TTS model"
         tags: [tts, voice, multilingual, oss]
   - name: Music Generation

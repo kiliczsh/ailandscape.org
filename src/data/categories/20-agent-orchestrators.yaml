@@ -90,12 +90,12 @@ subcategories:
         repo_url: https://github.com/BloopAI/vibe-kanban
         description: "Kanban board for managing AI coding agents; Tauri desktop app and self-hostable web"
       - name: vibe-tree
-        logo: github.webp
+        logo: gh-sahithvibudhi.png
         homepage_url: https://github.com/sahithvibudhi/vibe-tree
         repo_url: https://github.com/sahithvibudhi/vibe-tree
         description: "Vibe code with Claude in parallel git worktrees"
       - name: vibecraft
-        logo: github.webp
+        logo: gh-rayzhudev.png
         homepage_url: https://github.com/rayzhudev/vibecraft
         repo_url: https://github.com/rayzhudev/vibecraft
         description: "RTS-style workspace for managing AI coding agents"
@@ -107,17 +107,17 @@ subcategories:
         repo_url: https://github.com/asheshgoplani/agent-deck
         description: "Terminal session manager for AI coding agents"
       - name: amux
-        logo: github.webp
+        logo: gh-andyrewlee.png
         homepage_url: https://github.com/andyrewlee/amux
         repo_url: https://github.com/andyrewlee/amux
         description: "TUI for easily running parallel coding agents"
       - name: claude_code_bridge
-        logo: github.webp
+        logo: gh-bfly123.png
         homepage_url: https://github.com/bfly123/claude_code_bridge
         repo_url: https://github.com/bfly123/claude_code_bridge
         description: "Real-time multi-AI collaboration bridge"
       - name: claude-code-router
-        logo: github.webp
+        logo: gh-musistudio.png
         homepage_url: https://github.com/musistudio/claude-code-router
         repo_url: https://github.com/musistudio/claude-code-router
         description: "Route Claude Code requests to different models with multi-provider support and dynamic switching"
@@ -136,17 +136,17 @@ subcategories:
         repo_url: https://github.com/standardagents/dmux
         description: "Parallel agents with tmux and worktrees"
       - name: Kagan
-        logo: github.webp
+        logo: gh-aorumbayev.png
         homepage_url: https://github.com/aorumbayev/kagan
         repo_url: https://github.com/aorumbayev/kagan
         description: "AI-powered Kanban TUI for autonomous development workflows with Claude Code integration"
       - name: openkanban
-        logo: github.webp
+        logo: gh-TechDufus.png
         homepage_url: https://github.com/TechDufus/openkanban
         repo_url: https://github.com/techdufus/openkanban
         description: "TUI kanban board for orchestrating AI coding agents"
       - name: subtask
-        logo: github.webp
+        logo: gh-zippoxer.png
         homepage_url: https://github.com/zippoxer/subtask
         repo_url: https://github.com/zippoxer/subtask
         description: "Claude skill for running subagents across Git worktrees"

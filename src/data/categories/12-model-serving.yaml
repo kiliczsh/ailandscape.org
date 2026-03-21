@@ -6,12 +6,12 @@ subcategories:
   - name: Inference Engines
     items:
       - name: FastChat
-        logo: github.webp
+        logo: gh-lm-sys.png
         homepage_url: https://github.com/lm-sys/FastChat
         repo_url: https://github.com/lm-sys/FastChat
         description: "Distributed multi-model LLM serving system with OpenAI-compatible API and web UI"
       - name: Harbor
-        logo: github.webp
+        logo: gh-av.png
         homepage_url: https://github.com/av/harbor
         repo_url: https://github.com/av/harbor
         description: "Effortlessly run LLM backends, APIs, frontends, and services with one command"

@@ -19,7 +19,7 @@ subcategories:
       - name: Guidance
         homepage_url: https://github.com/guidance-ai/guidance
         repo_url: https://github.com/guidance-ai/guidance
-        logo: github.webp
+        logo: gh-guidance-ai.png
         description: "Constrained generation and prompt control by Microsoft"
         tags: [prompt-engineering, constrained-generation, oss]
       - name: Promptfoo
@@ -50,7 +50,7 @@ subcategories:
     items:
       - name: GitHub Copilot
         homepage_url: https://github.com/features/copilot
-        logo: github.webp
+        logo: gh-features.png
         description: "AI pair programmer for code completion"
         tags: [coding, ide, copilot]
       - name: Cursor

@@ -60,7 +60,7 @@ subcategories:
       - name: llama.cpp
         homepage_url: https://github.com/ggerganov/llama.cpp
         repo_url: https://github.com/ggerganov/llama.cpp
-        logo: github.webp
+        logo: gh-ggerganov.png
         description: "LLM inference in C/C++ for local deployment"
         tags: [inference, llm, cpp]
   - name: Training Infrastructure

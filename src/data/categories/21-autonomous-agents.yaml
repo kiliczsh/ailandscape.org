@@ -19,7 +19,7 @@ subcategories:
         repo_url: https://github.com/AntonOsika/gpt-engineer
         description: "Specify what you want to build; the AI asks clarifying questions and generates the full codebase"
       - name: LoopGPT
-        logo: github.webp
+        logo: gh-farizrahman4u.png
         homepage_url: https://github.com/farizrahman4u/loopgpt
         repo_url: https://github.com/farizrahman4u/loopgpt
         description: "Re-implementation of AutoGPT with modular architecture and better memory management"
@@ -28,12 +28,12 @@ subcategories:
         repo_url: https://github.com/nullclaw/nullclaw
         description: "Fastest, smallest, fully autonomous AI assistant infrastructure"
       - name: ralph-claude-code
-        logo: github.webp
+        logo: gh-frankbria.png
         homepage_url: https://github.com/frankbria/ralph-claude-code
         repo_url: https://github.com/frankbria/ralph-claude-code
         description: "Autonomous AI development loop for Claude Code with intelligent exit detection"
       - name: ralph-orchestrator
-        logo: github.webp
+        logo: gh-mikeyobrien.png
         homepage_url: https://github.com/mikeyobrien/ralph-orchestrator
         repo_url: https://github.com/mikeyobrien/ralph-orchestrator
         description: "Hat-based orchestration that keeps agents in a loop until the task is done"
@@ -47,7 +47,7 @@ subcategories:
         repo_url: https://github.com/michaelshimeles/ralphy
         description: "Runs AI agents on tasks until done"
       - name: symphony
-        logo: github.webp
+        logo: gh-openai.png
         homepage_url: https://github.com/openai/symphony
         repo_url: https://github.com/openai/symphony
         description: "Turns project work into isolated, autonomous implementation runs"

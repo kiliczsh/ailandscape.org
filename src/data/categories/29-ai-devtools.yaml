@@ -18,7 +18,7 @@ subcategories:
         homepage_url: https://www.coderabbit.ai
         description: "AI-powered code reviews — cut code review time and bugs in half"
       - name: Fabric
-        logo: github.webp
+        logo: gh-danielmiessler.png
         homepage_url: https://github.com/danielmiessler/Fabric
         repo_url: https://github.com/danielmiessler/Fabric
         description: "Open-source modular framework for solving specific problems using crowdsourced AI prompts"

@@ -109,7 +109,7 @@ subcategories:
         tags: [cicd, github-actions]
       - name: GitHub Actions
         homepage_url: https://github.com/features/actions
-        logo: github.webp
+        logo: gh-features.png
         description: "Automate ML workflows with GitHub's CI/CD platform"
         tags: [cicd, automation]
       - name: GitLab CI

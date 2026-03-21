@@ -39,7 +39,7 @@ subcategories:
       - name: pgvector
         homepage_url: https://github.com/pgvector/pgvector
         repo_url: https://github.com/pgvector/pgvector
-        logo: github.webp
+        logo: gh-pgvector.png
         description: "Vector similarity search for PostgreSQL"
         tags: [vector-db, postgresql, oss]
   - name: Semantic Search
@@ -74,12 +74,12 @@ subcategories:
       - name: Annoy
         homepage_url: https://github.com/spotify/annoy
         repo_url: https://github.com/spotify/annoy
-        logo: github.webp
+        logo: gh-spotify.png
         description: "Approximate nearest neighbors by Spotify"
         tags: [similarity, indexing]
       - name: ScaNN
         homepage_url: https://github.com/google-research/google-research/tree/master/scann
         repo_url: https://github.com/google-research/google-research
-        logo: github.webp
+        logo: gh-google-research.png
         description: "Scalable nearest neighbors library by Google"
         tags: [similarity, indexing]

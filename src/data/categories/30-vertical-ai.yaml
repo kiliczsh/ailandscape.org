@@ -74,7 +74,7 @@ subcategories:
       - name: FinGPT
         homepage_url: https://github.com/AI4Finance-Foundation/FinGPT
         repo_url: https://github.com/AI4Finance-Foundation/FinGPT
-        logo: github.webp
+        logo: gh-AI4Finance-Foundation.png
         description: "Open-source financial LLM framework"
         tags: [finance, llm, oss]
       - name: Kensho
