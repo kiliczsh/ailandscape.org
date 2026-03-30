@@ -1,9 +1,10 @@
 name: Frontier Labs
-group: labs
-color: "oklch(0.62 0.22 230)"
+group: core-ai
+color: oklch(0.62 0.20 274)
 icon: Buildings
 subcategories:
   - name: Proprietary Labs
+    row: 0
     items:
       - name: AI21 Labs
         homepage_url: https://www.ai21.com
@@ -117,6 +118,7 @@ subcategories:
         description: "Zhipu AI — creator of the GLM model family, dedicated to AGI development"
         tags: [lab, llm, proprietary]
   - name: Academic & Non-Profit Labs
+    row: 0
     items:
       - name: Alibaba DAMO Academy
         homepage_url: https://damo.alibaba.com

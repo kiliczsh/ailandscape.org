@@ -1,9 +1,10 @@
 name: Benchmarks & Leaderboards
-group: models
-color: "oklch(0.62 0.20 340)"
+group: core-ai
+color: oklch(0.62 0.20 115)
 icon: ChartLine
 subcategories:
   - name: Software Engineering Benchmarks
+    row: 0
     items:
       - name: Aider Leaderboard
         homepage_url: https://aider.chat/docs/leaderboards/
@@ -55,6 +56,7 @@ subcategories:
         logo: swe-rebench.webp
         description: "Continuously evolving and decontaminated benchmark for software engineering LLMs"
   - name: Agent & General Benchmarks
+    row: 0
     items:
       - name: APEX-Agents
         homepage_url: https://www.mercor.com/apex/apex-agents-leaderboard/
@@ -98,11 +100,12 @@ subcategories:
         homepage_url: https://andonlabs.com/evals/vending-bench-2
         logo: vending-bench-2.webp
         description: "Measuring AI model performance on running a business over long time horizons"
-      - name: τ-bench
+      - name: "\u03C4-bench"
         homepage_url: https://taubench.com
         logo: bench.webp
         description: "Benchmarking AI agents in collaborative real-world scenarios"
   - name: Model Rankings
+    row: 0
     items:
       - name: OpenRouter Rankings
         homepage_url: https://openrouter.ai/rankings

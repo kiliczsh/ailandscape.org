@@ -1,0 +1,204 @@
+name: AI Security & Safety
+group: governance
+color: oklch(0.62 0.20 346)
+icon: ShieldCheck
+subcategories:
+  - name: Offensive Testing & Red Teaming
+    row: 0
+    items:
+      - name: ART
+        homepage_url: https://adversarial-robustness-toolbox.readthedocs.io
+        repo_url: https://github.com/Trusted-AI/adversarial-robustness-toolbox
+        logo: github.webp
+        description: Adversarial Robustness Toolbox by IBM
+        tags:
+          - adversarial
+          - defense
+          - ibm
+      - name: CleverHans
+        homepage_url: https://github.com/cleverhans-lab/cleverhans
+        repo_url: https://github.com/cleverhans-lab/cleverhans
+        logo: gh-cleverhans-lab.png
+        description: Library for benchmarking adversarial ML attacks
+        tags:
+          - adversarial
+          - defense
+          - python
+      - name: Foolbox
+        homepage_url: https://foolbox.readthedocs.io
+        repo_url: https://github.com/bethgelab/foolbox
+        description: Fast adversarial attacks for deep neural networks
+        tags:
+          - adversarial
+          - attacks
+          - python
+      - name: Garak
+        homepage_url: https://garak.ai
+        repo_url: https://github.com/leondz/garak
+        logo: garak.webp
+        description: LLM vulnerability scanner and red-teaming framework
+        tags:
+          - red-teaming
+          - llm
+          - security
+      - name: HarmBench
+        homepage_url: https://harmbench.org
+        repo_url: https://github.com/centerforaisafety/HarmBench
+        logo: harmbench.webp
+        description: Standardized evaluation framework for LLM robustness
+        tags:
+          - red-teaming
+          - benchmarks
+          - safety
+      - name: PyRIT
+        homepage_url: https://github.com/Azure/PyRIT
+        repo_url: https://github.com/Azure/PyRIT
+        logo: microsoft.webp
+        description: Python Risk Identification Toolkit for GenAI by Microsoft
+        tags:
+          - red-teaming
+          - llm
+          - microsoft
+      - name: TextAttack
+        homepage_url: https://textattack.readthedocs.io
+        repo_url: https://github.com/QData/TextAttack
+        description: NLP adversarial attacks, augmentation, and training
+        tags:
+          - adversarial
+          - nlp
+          - python
+  - name: Guardrails & Defense
+    row: 0
+    items:
+      - name: Guardrails AI
+        homepage_url: https://guardrailsai.com
+        repo_url: https://github.com/guardrails-ai/guardrails
+        logo: guardrails-ai.webp
+        description: Framework for adding guardrails to LLM outputs
+        tags:
+          - guardrails
+          - llm
+          - safety
+      - name: Lakera Guard
+        homepage_url: https://lakera.ai
+        logo: lakera.webp
+        description: Real-time prompt injection and jailbreak protection
+        tags:
+          - prompt-injection
+          - defense
+          - api
+      - name: LlamaGuard
+        homepage_url: https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations
+        repo_url: https://github.com/meta-llama/llama-recipes
+        logo: meta.webp
+        description: Meta's LLM-based input/output safeguard
+        tags:
+          - guardrails
+          - safety
+          - open-weights
+      - name: NeMo Guardrails
+        homepage_url: https://docs.nvidia.com/nemo-guardrails
+        repo_url: https://github.com/NVIDIA/NeMo-Guardrails
+        logo: nvidia.webp
+        description: NVIDIA's toolkit for adding safety guardrails to LLMs
+        tags:
+          - guardrails
+          - llm
+          - nvidia
+      - name: Patronus AI
+        homepage_url: https://patronus.ai
+        logo: patronus.webp
+        description: Enterprise LLM evaluation and safety platform
+        tags:
+          - guardrails
+          - evaluation
+          - enterprise
+      - name: Prompt Shield
+        homepage_url: https://azure.microsoft.com/products/ai-services/prompt-shield
+        logo: microsoft.webp
+        description: Microsoft Azure's prompt injection detection service
+        tags:
+          - prompt-injection
+          - defense
+          - microsoft
+  - name: Privacy & Compliance
+    row: 0
+    items:
+      - name: EU AI Act
+        homepage_url: https://artificialintelligenceact.eu
+        logo: eu.webp
+        description: EU's comprehensive regulatory framework for AI
+        tags:
+          - compliance
+          - regulation
+          - governance
+      - name: Microsoft Presidio
+        homepage_url: https://microsoft.github.io/presidio
+        repo_url: https://github.com/microsoft/presidio
+        logo: microsoft.webp
+        description: PII detection and anonymization for text and images
+        tags:
+          - privacy
+          - pii
+          - anonymization
+      - name: NIST AI RMF
+        homepage_url: https://airc.nist.gov/home
+        logo: nist.webp
+        description: NIST AI Risk Management Framework
+        tags:
+          - compliance
+          - risk-management
+          - governance
+      - name: OpenDP
+        homepage_url: https://opendp.org
+        repo_url: https://github.com/opendp/opendp
+        logo: opendp.webp
+        description: Differential privacy library for data analysis
+        tags:
+          - privacy
+          - differential-privacy
+      - name: OWASP Top 10 for LLMs
+        homepage_url: https://owasp.org/www-project-top-10-for-large-language-model-applications
+        logo: owasp.webp
+        description: Top 10 security risks for LLM applications
+        tags:
+          - compliance
+          - security
+          - owasp
+      - name: PySyft
+        homepage_url: https://openmined.org
+        repo_url: https://github.com/OpenMined/PySyft
+        logo: openmined.webp
+        description: Federated learning and privacy-preserving ML
+        tags:
+          - privacy
+          - federated-learning
+      - name: TensorFlow Privacy
+        homepage_url: https://tensorflow.org/responsible_ai/privacy
+        repo_url: https://github.com/tensorflow/privacy
+        logo: tensorflow.webp
+        description: Training ML models with differential privacy
+        tags:
+          - privacy
+          - differential-privacy
+          - tensorflow
+  - name: Interpretability & Authenticity
+    row: 0
+    items:
+      - name: Mechanistic Interpretability
+        homepage_url: https://transformer-circuits.pub
+        logo: anthropic.webp
+        description: Research into understanding neural network circuits
+        tags:
+          - interpretability
+          - research
+          - circuits
+      - name: Sparse Autoencoders
+        homepage_url: https://github.com/EleutherAI/sae
+        repo_url: https://github.com/EleutherAI/sae
+        logo: eleutherai.webp
+        description: Tools for sparse autoencoder-based interpretability
+        tags:
+          - interpretability
+          - sae
+          - research

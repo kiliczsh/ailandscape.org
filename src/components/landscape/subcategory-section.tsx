@@ -58,6 +58,9 @@ export function SubcategorySection({
         >
           {subcategory.name}
         </h3>
+        <span className="shrink-0 text-[10px] tabular-nums opacity-70">
+          {subcategory.items.length}
+        </span>
         <button
           type="button"
           onClick={() => {

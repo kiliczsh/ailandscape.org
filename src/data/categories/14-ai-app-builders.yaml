@@ -1,9 +1,10 @@
 name: AI App Builders
-group: product
-color: "oklch(0.62 0.20 175)"
+group: products
+color: oklch(0.62 0.20 58)
 icon: Cube
 subcategories:
   - name: Chat & Browser Builders
+    row: 0
     items:
       - name: 21st.dev
         homepage_url: https://21st.dev/
@@ -92,6 +93,7 @@ subcategories:
         logo: vybe.webp
         description: "Build internal apps 10x faster with AI"
   - name: Mobile App Builders
+    row: 0
     items:
       - name: bitrig
         homepage_url: https://www.bitrig.app/
@@ -122,6 +124,7 @@ subcategories:
         logo: vibecode.webp
         description: "Create native apps in seconds with AI"
   - name: Open Source Builders
+    row: 0
     items:
       - name: Adorable
         homepage_url: https://github.com/freestyle-sh/Adorable
@@ -160,3 +163,26 @@ subcategories:
         repo_url: https://github.com/ToolJet/ToolJet
         logo: tooljet.webp
         description: "Open-source low-code platform for internal tools with 50+ data source connectors"
+  - name: Visual Flow Editors
+    row: 0
+    items:
+      - name: AgentPilot
+        homepage_url: https://agentpilot.ai
+        repo_url: https://github.com/jbexta/AgentPilot
+        logo: agentpilot.webp
+        description: "Open-source desktop app to create, manage, and chat with AI agent workflows"
+      - name: Flowise
+        homepage_url: https://flowiseai.com
+        repo_url: https://github.com/FlowiseAI/Flowise
+        logo: flowise.webp
+        description: "Drag & drop UI to build customized LLM flows and AI agents visually"
+      - name: IX
+        homepage_url: https://github.com/kreneskyp/ix
+        repo_url: https://github.com/kreneskyp/ix
+        logo: gh-kreneskyp.png
+        description: "Autonomous GPT-4 agent platform with a visual graph editor for chains and agents"
+      - name: Magick
+        homepage_url: https://www.magickml.com/
+        repo_url: https://github.com/Oneirocom/Magick
+        logo: magick.webp
+        description: "Visual AI agent platform with a node-based editor for complex AI workflows"

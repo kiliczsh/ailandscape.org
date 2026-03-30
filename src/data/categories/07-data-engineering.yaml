@@ -1,0 +1,223 @@
+name: Data Engineering
+group: infrastructure
+color: oklch(0.62 0.20 331)
+icon: Database
+subcategories:
+  - name: Data Processing
+    row: 0
+    items:
+      - name: Apache Flink
+        homepage_url: https://flink.apache.org
+        repo_url: https://github.com/apache/flink
+        project: graduated
+        description: Stateful stream processing framework
+        tags:
+          - streaming
+          - distributed
+          - java
+      - name: Apache Hadoop
+        homepage_url: https://hadoop.apache.org
+        repo_url: https://github.com/apache/hadoop
+        project: graduated
+        description: Distributed storage and processing framework
+        tags:
+          - batch
+          - distributed
+          - hdfs
+      - name: Apache Kafka
+        homepage_url: https://kafka.apache.org
+        repo_url: https://github.com/apache/kafka
+        project: graduated
+        description: Distributed event streaming platform
+        tags:
+          - streaming
+          - messaging
+      - name: Apache Pulsar
+        homepage_url: https://pulsar.apache.org
+        repo_url: https://github.com/apache/pulsar
+        project: graduated
+        description: Cloud-native distributed messaging and streaming
+        tags:
+          - streaming
+          - messaging
+      - name: Apache Spark
+        homepage_url: https://spark.apache.org
+        repo_url: https://github.com/apache/spark
+        crunchbase: https://www.crunchbase.com/organization/apache
+        project: graduated
+        description: Unified analytics engine for large-scale data
+        tags:
+          - batch
+          - distributed
+          - python
+          - scala
+      - name: dbt
+        homepage_url: https://getdbt.com
+        repo_url: https://github.com/dbt-labs/dbt-core
+        logo: dbt.webp
+        description: Data transformation tool for analytics engineers
+        tags:
+          - batch
+          - sql
+          - transformation
+      - name: Redpanda
+        homepage_url: https://redpanda.com
+        repo_url: https://github.com/redpanda-data/redpanda
+        logo: redpanda.webp
+        description: Kafka-compatible streaming platform without ZooKeeper
+        tags:
+          - streaming
+          - messaging
+          - kafka
+  - name: Ingestion & Integration
+    row: 0
+    items:
+      - name: Airbyte
+        homepage_url: https://airbyte.com
+        repo_url: https://github.com/airbytehq/airbyte
+        logo: airbyte.webp
+        crunchbase: https://www.crunchbase.com/organization/airbyte
+        description: Open-source data integration platform
+        tags:
+          - ingestion
+          - etl
+          - connectors
+      - name: dltHub
+        homepage_url: https://dlthub.com
+        repo_url: https://github.com/dlt-hub/dlt
+        logo: dlthub.webp
+        description: Open-source data load tool for Python-first pipelines
+        tags:
+          - ingestion
+          - etl
+          - python
+      - name: Fivetran
+        homepage_url: https://fivetran.com
+        logo: fivetran.webp
+        description: Automated data movement platform
+        tags:
+          - ingestion
+          - etl
+          - saas
+      - name: Meltano
+        homepage_url: https://meltano.com
+        repo_url: https://github.com/meltano/meltano
+        logo: meltano.webp
+        description: Open-source ELT platform for Singer taps and targets
+        tags:
+          - ingestion
+          - etl
+          - oss
+      - name: Stitch
+        homepage_url: https://stitchdata.com
+        logo: stitch.webp
+        description: Simple, extensible ETL platform
+        tags:
+          - ingestion
+          - etl
+  - name: Data Lakehouse
+    row: 0
+    items:
+      - name: Apache Hudi
+        homepage_url: https://hudi.apache.org
+        repo_url: https://github.com/apache/hudi
+        project: incubating
+        description: Transactional data lake platform
+        tags:
+          - lakehouse
+          - streaming
+      - name: Apache Iceberg
+        homepage_url: https://iceberg.apache.org
+        repo_url: https://github.com/apache/iceberg
+        project: incubating
+        description: Open table format for large analytic datasets
+        tags:
+          - lakehouse
+          - table-format
+      - name: Delta Lake
+        homepage_url: https://delta.io
+        repo_url: https://github.com/delta-io/delta
+        logo: delta-lake.webp
+        project: sandbox
+        description: Open-source storage framework for data lakehouses
+        tags:
+          - lakehouse
+          - acid
+  - name: Data Catalog
+    row: 1
+    items:
+      - name: Alation
+        homepage_url: https://alation.com
+        logo: alation.webp
+        description: Enterprise data intelligence platform
+        tags:
+          - catalog
+          - enterprise
+      - name: Amundsen
+        homepage_url: https://www.amundsen.io
+        repo_url: https://github.com/amundsen-io/amundsen
+        logo: amundsen.webp
+        description: Data discovery and metadata engine by Lyft
+        tags:
+          - catalog
+          - discovery
+          - oss
+      - name: Apache Atlas
+        homepage_url: https://atlas.apache.org
+        repo_url: https://github.com/apache/atlas
+        project: graduated
+        description: Data governance and metadata management
+        tags:
+          - catalog
+          - governance
+      - name: DataHub
+        homepage_url: https://datahubproject.io
+        repo_url: https://github.com/datahub-project/datahub
+        logo: datahub.webp
+        description: Metadata platform for data ecosystem
+        tags:
+          - catalog
+          - metadata
+      - name: OpenMetadata
+        homepage_url: https://open-metadata.org
+        repo_url: https://github.com/open-metadata/OpenMetadata
+        logo: openmetadata.webp
+        description: Open standard for metadata and data discovery
+        tags:
+          - catalog
+          - metadata
+          - oss
+  - name: Synthetic Data
+    row: 1
+    items:
+      - name: Gretel AI
+        homepage_url: https://gretel.ai
+        logo: gretel.webp
+        description: Synthetic data platform for privacy-preserving ML
+        tags:
+          - synthetic-data
+          - privacy
+      - name: Mostly AI
+        homepage_url: https://mostly.ai
+        logo: mostly-ai.webp
+        description: Enterprise synthetic data generation platform
+        tags:
+          - synthetic-data
+          - enterprise
+      - name: SDV
+        homepage_url: https://sdv.dev
+        repo_url: https://github.com/sdv-dev/SDV
+        logo: sdv.webp
+        description: Synthetic Data Vault for tabular and relational data
+        tags:
+          - synthetic-data
+          - tabular
+          - oss
+      - name: YData
+        homepage_url: https://ydata.ai
+        repo_url: https://github.com/ydataai/ydata-synthetic
+        logo: ydata.webp
+        description: Synthetic data generation for ML and testing
+        tags:
+          - synthetic-data
+          - oss

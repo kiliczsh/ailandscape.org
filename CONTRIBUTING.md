@@ -53,7 +53,7 @@ Create `src/data/categories/NN-name.yaml`:
 
 ```yaml
 name: Category Name
-group: infrastructure    # labs | models | infrastructure | protocols | security | product
+group: infrastructure    # core-ai | infrastructure | engineering | products | governance | ecosystem
 color: "oklch(0.60 0.20 180)"
 icon: IconName           # Phosphor icon — https://phosphoricons.com
 subcategories:

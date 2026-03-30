@@ -1,0 +1,354 @@
+name: MLOps & Training
+group: engineering
+color: oklch(0.62 0.20 14)
+icon: GitBranch
+subcategories:
+  - name: Experiment Tracking & CI/CD
+    row: 0
+    items:
+      - name: CML
+        homepage_url: https://cml.dev
+        repo_url: https://github.com/iterative/cml
+        logo: cml.webp
+        description: Continuous machine learning CI/CD tool
+        tags:
+          - cicd
+          - github-actions
+      - name: Comet ML
+        homepage_url: https://comet.com
+        logo: comet-ml.webp
+        description: ML experiment management platform
+        tags:
+          - experiment-tracking
+      - name: DVC
+        homepage_url: https://dvc.org
+        repo_url: https://github.com/iterative/dvc
+        logo: dvc.webp
+        description: Data version control for ML projects
+        tags:
+          - version-control
+          - cicd
+      - name: GitHub Actions
+        homepage_url: https://github.com/features/actions
+        logo: gh-features.png
+        description: Automate ML workflows with GitHub's CI/CD platform
+        tags:
+          - cicd
+          - automation
+      - name: GitLab CI
+        homepage_url: https://docs.gitlab.com/ee/ci
+        logo: gitlab.webp
+        description: Integrated CI/CD for ML pipelines in GitLab
+        tags:
+          - cicd
+          - automation
+      - name: MLflow
+        homepage_url: https://mlflow.org
+        repo_url: https://github.com/mlflow/mlflow
+        logo: mlflow.webp
+        project: graduated
+        description: Open source platform for ML lifecycle
+        tags:
+          - experiment-tracking
+          - model-registry
+      - name: Neptune
+        homepage_url: https://neptune.ai
+        logo: neptune.webp
+        description: Experiment tracking for ML teams
+        tags:
+          - experiment-tracking
+      - name: Weights & Biases
+        homepage_url: https://wandb.ai
+        logo: wandb.webp
+        crunchbase: https://www.crunchbase.com/organization/weights-biases
+        description: Developer tools for ML experiment tracking
+        tags:
+          - experiment-tracking
+          - visualization
+  - name: Fine-tuning & RLHF
+    row: 0
+    items:
+      - name: Axolotl
+        homepage_url: https://docs.axolotl.ai
+        repo_url: https://github.com/axolotl-ai-cloud/axolotl
+        logo: axolotl.webp
+        description: Fine-tuning framework for LLMs supporting LoRA, QLoRA, DeepSpeed, and multi-GPU
+      - name: OpenRLHF
+        homepage_url: https://openrlhf.readthedocs.io/
+        repo_url: https://github.com/OpenRLHF/OpenRLHF
+        description: Scalable RLHF framework supporting 70B+ PPO full tuning, iterative DPO, and LoRA
+      - name: TRL
+        homepage_url: http://hf.co/docs/trl
+        repo_url: https://github.com/huggingface/trl
+        logo: trl.webp
+        description: Library for training transformer LMs with RLHF, SFT, reward modeling, and PPO
+      - name: unsloth
+        homepage_url: https://unsloth.ai/docs
+        repo_url: https://github.com/unslothai/unsloth
+        logo: unsloth.webp
+        description: 2-5x faster LLM fine-tuning with 70% less memory
+  - name: Pipeline Orchestration
+    row: 0
+    items:
+      - name: Apache Airflow
+        homepage_url: https://airflow.apache.org
+        repo_url: https://github.com/apache/airflow
+        project: graduated
+        description: Workflow automation and scheduling platform
+        tags:
+          - orchestration
+          - scheduling
+      - name: Kubeflow
+        homepage_url: https://kubeflow.org
+        repo_url: https://github.com/kubeflow/kubeflow
+        logo: kubeflow.webp
+        project: graduated
+        description: Kubernetes-native ML pipeline orchestration
+        tags:
+          - orchestration
+          - kubernetes
+      - name: Prefect
+        homepage_url: https://prefect.io
+        repo_url: https://github.com/PrefectHQ/prefect
+        logo: prefect.webp
+        description: Modern workflow orchestration
+        tags:
+          - orchestration
+          - python
+      - name: ZenML
+        homepage_url: https://zenml.io
+        repo_url: https://github.com/zenml-io/zenml
+        logo: zenml.webp
+        description: MLOps framework for reproducible pipelines
+        tags:
+          - orchestration
+          - mlops
+  - name: Model Registry & Feature Store
+    row: 1
+    items:
+      - name: Feast
+        homepage_url: https://feast.dev
+        repo_url: https://github.com/feast-dev/feast
+        logo: feast.webp
+        description: Open source feature store for ML
+        tags:
+          - feature-store
+      - name: Hopsworks
+        homepage_url: https://hopsworks.ai
+        repo_url: https://github.com/logicalclocks/hopsworks
+        logo: hopsworks.webp
+        description: Feature store and MLOps platform
+        tags:
+          - feature-store
+          - mlops
+      - name: Hugging Face Hub
+        homepage_url: https://huggingface.co/models
+        logo: hugging-face.webp
+        description: Community model repository and registry
+        tags:
+          - model-registry
+          - community
+      - name: MLflow Model Registry
+        homepage_url: https://mlflow.org/docs/latest/model-registry.html
+        repo_url: https://github.com/mlflow/mlflow
+        logo: mlflow.webp
+        project: graduated
+        description: Centralized model store for lifecycle management
+        tags:
+          - model-registry
+      - name: Tecton
+        homepage_url: https://tecton.ai
+        logo: tecton.webp
+        description: Enterprise feature platform for ML
+        tags:
+          - feature-store
+          - enterprise
+      - name: Vertex Feature Store
+        homepage_url: https://cloud.google.com/vertex-ai/docs/featurestore
+        logo: google-cloud.webp
+        description: Google Cloud's managed feature store for ML
+        tags:
+          - feature-store
+          - cloud
+          - google
+  - name: ML Frameworks
+    row: 1
+    items:
+      - name: Accord.NET
+        homepage_url: http://accord-framework.net
+        repo_url: https://github.com/accord-net/framework
+        logo: accord-net.webp
+        description: .NET machine learning framework
+        tags:
+          - classical-ml
+          - dotnet
+      - name: Alink
+        homepage_url: https://github.com/alibaba/Alink
+        repo_url: https://github.com/alibaba/alink
+        logo: gh-alibaba.png
+        description: Algorithm platform based on Flink by Alibaba
+        tags:
+          - classical-ml
+          - flink
+      - name: Angel-ML
+        homepage_url: https://github.com/Angel-ML/angel
+        repo_url: https://github.com/Angel-ML/angel
+        logo: gh-Angel-ML.png
+        project: incubating
+        description: High-performance distributed machine learning platform
+        tags:
+          - classical-ml
+          - distributed
+      - name: Auto-sklearn
+        homepage_url: https://automl.github.io/auto-sklearn
+        repo_url: https://github.com/automl/auto-sklearn
+        description: Automated machine learning toolkit
+        tags:
+          - automl
+          - python
+      - name: AutoGluon
+        homepage_url: https://auto.gluon.ai
+        repo_url: https://github.com/autogluon/autogluon
+        logo: autogluon.webp
+        description: AutoML toolkit by Amazon for text, image, and tabular data
+        tags:
+          - automl
+          - python
+      - name: Diffusers
+        homepage_url: https://huggingface.co/docs/diffusers
+        repo_url: https://github.com/huggingface/diffusers
+        logo: hugging-face.webp
+        description: State-of-the-art diffusion models library
+        tags:
+          - sdk
+          - diffusion
+          - image-generation
+      - name: FLAML
+        homepage_url: https://microsoft.github.io/FLAML
+        repo_url: https://github.com/microsoft/FLAML
+        logo: microsoft.webp
+        description: Fast and Lightweight AutoML by Microsoft
+        tags:
+          - automl
+          - python
+          - fast
+      - name: Google AutoML
+        homepage_url: https://cloud.google.com/automl
+        logo: google-cloud.webp
+        description: Google Cloud's automated ML service
+        tags:
+          - automl
+          - cloud
+      - name: H2O AutoML
+        homepage_url: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html
+        repo_url: https://github.com/h2oai/h2o-3
+        logo: h2o.webp
+        description: Automatic machine learning from H2O.ai
+        tags:
+          - automl
+      - name: Hugging Face Transformers
+        homepage_url: https://huggingface.co/docs/transformers
+        repo_url: https://github.com/huggingface/transformers
+        logo: hugging-face.webp
+        description: State-of-the-art ML for PyTorch, TF, and JAX
+        tags:
+          - sdk
+          - transformers
+          - nlp
+      - name: JAX
+        homepage_url: https://jax.readthedocs.io
+        repo_url: https://github.com/google/jax
+        description: Google's composable function transformations for ML
+        tags:
+          - deep-learning
+          - python
+          - autodiff
+      - name: Keras
+        homepage_url: https://keras.io
+        repo_url: https://github.com/keras-team/keras
+        logo: keras.webp
+        description: High-level neural networks API
+        tags:
+          - deep-learning
+          - python
+      - name: LightGBM
+        homepage_url: https://lightgbm.readthedocs.io
+        repo_url: https://github.com/microsoft/LightGBM
+        description: Fast gradient boosting framework by Microsoft
+        tags:
+          - classical-ml
+          - gradient-boosting
+      - name: OpenAI Gym
+        homepage_url: https://gymnasium.farama.org
+        repo_url: https://github.com/Farama-Foundation/Gymnasium
+        logo: gymnasium.webp
+        description: Standard API for RL environments
+        tags:
+          - reinforcement-learning
+          - environments
+      - name: OpenAI Python SDK
+        homepage_url: https://github.com/openai/openai-python
+        repo_url: https://github.com/openai/openai-python
+        logo: openai.webp
+        description: Official Python library for OpenAI API
+        tags:
+          - sdk
+          - python
+          - openai
+      - name: PettingZoo
+        homepage_url: https://pettingzoo.farama.org
+        repo_url: https://github.com/Farama-Foundation/PettingZoo
+        logo: pettingzoo.webp
+        description: Multi-agent RL environment API
+        tags:
+          - reinforcement-learning
+          - multi-agent
+          - environments
+      - name: PyTorch
+        homepage_url: https://pytorch.org
+        repo_url: https://github.com/pytorch/pytorch
+        logo: pytorch.webp
+        project: graduated
+        description: Open source deep learning framework by Meta
+        tags:
+          - deep-learning
+          - python
+      - name: Ray RLlib
+        homepage_url: https://docs.ray.io/en/latest/rllib/index.html
+        repo_url: https://github.com/ray-project/ray
+        logo: ray.webp
+        description: Scalable reinforcement learning library
+        tags:
+          - reinforcement-learning
+          - distributed
+      - name: scikit-learn
+        homepage_url: https://scikit-learn.org
+        repo_url: https://github.com/scikit-learn/scikit-learn
+        logo: scikit-learn.webp
+        description: Machine learning in Python
+        tags:
+          - classical-ml
+          - python
+      - name: Stable Baselines3
+        homepage_url: https://stable-baselines3.readthedocs.io
+        repo_url: https://github.com/DLR-RM/stable-baselines3
+        description: Reliable RL algorithm implementations
+        tags:
+          - reinforcement-learning
+          - python
+      - name: TensorFlow
+        homepage_url: https://tensorflow.org
+        repo_url: https://github.com/tensorflow/tensorflow
+        logo: tensorflow.webp
+        project: graduated
+        description: Google's end-to-end open source ML platform
+        tags:
+          - deep-learning
+          - python
+      - name: XGBoost
+        homepage_url: https://xgboost.readthedocs.io
+        repo_url: https://github.com/dmlc/xgboost
+        description: Optimized gradient boosting library
+        tags:
+          - classical-ml
+          - gradient-boosting

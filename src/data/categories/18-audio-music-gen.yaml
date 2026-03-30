@@ -1,0 +1,123 @@
+name: Audio & Music Gen
+group: products
+color: oklch(0.62 0.20 317)
+icon: MusicNotes
+subcategories:
+  - name: Text-to-Speech (High Fidelity)
+    row: 0
+    items:
+      - name: Coqui TTS
+        homepage_url: https://github.com/coqui-ai/TTS
+        repo_url: https://github.com/coqui-ai/TTS
+        logo: gh-coqui-ai.png
+        description: Open-source deep learning text-to-speech toolkit with voice cloning support
+        tags:
+          - tts
+          - voice
+          - oss
+      - name: ElevenLabs
+        homepage_url: https://elevenlabs.io
+        logo: elevenlabs.webp
+        description: AI voice synthesis and cloning platform with industry-leading naturalness
+        tags:
+          - tts
+          - voice
+          - api
+      - name: OpenAI TTS
+        homepage_url: https://platform.openai.com/docs/guides/text-to-speech
+        logo: openai.webp
+        description: OpenAI's text-to-speech API with multiple voice options
+        tags:
+          - tts
+          - voice
+          - api
+      - name: PlayHT
+        homepage_url: https://play.ht
+        logo: playht.webp
+        description: AI voice generator with ultra-realistic text-to-speech and voice cloning
+        tags:
+          - tts
+          - voice
+          - api
+  - name: Voice Cloning & Dubbing
+    row: 0
+    items:
+      - name: Descript
+        homepage_url: https://www.descript.com
+        logo: descript.webp
+        description: AI-powered audio and video editing with Overdub voice cloning
+        tags:
+          - voice-cloning
+          - editing
+          - proprietary
+      - name: ElevenLabs Voice Clone
+        homepage_url: https://elevenlabs.io/voice-cloning
+        logo: elevenlabs.webp
+        description: Clone any voice from audio samples for personalized AI speech generation
+        tags:
+          - voice-cloning
+          - tts
+          - proprietary
+      - name: Resemble AI
+        homepage_url: https://www.resemble.ai
+        logo: resemble-ai.webp
+        description: AI voice generator with real-time voice cloning and speech-to-speech
+        tags:
+          - voice-cloning
+          - tts
+          - proprietary
+  - name: Music Composition
+    row: 0
+    items:
+      - name: AIVA
+        homepage_url: https://www.aiva.ai
+        logo: aiva.webp
+        description: AI music composition assistant for soundtracks, games, and commercials
+        tags:
+          - music
+          - composition
+          - proprietary
+      - name: Soundraw
+        homepage_url: https://soundraw.io
+        logo: soundraw.webp
+        description: AI music generator for creators — customize length, mood, and instruments
+        tags:
+          - music
+          - generation
+          - proprietary
+      - name: Suno
+        homepage_url: https://suno.com
+        logo: suno.webp
+        description: AI music generation from text prompts — create full songs in seconds
+        tags:
+          - music
+          - generation
+          - proprietary
+      - name: Udio
+        homepage_url: https://udio.com
+        logo: udio.webp
+        description: High-fidelity AI music creation platform with genre versatility
+        tags:
+          - music
+          - generation
+          - proprietary
+  - name: Sound Effects (SFX) Gen
+    row: 0
+    items:
+      - name: ElevenLabs SFX
+        homepage_url: https://elevenlabs.io/sound-effects
+        logo: elevenlabs.webp
+        description: Generate realistic sound effects from text descriptions using AI
+        tags:
+          - sfx
+          - audio
+          - proprietary
+      - name: Stability Audio
+        homepage_url: https://www.stableaudio.com
+        logo: stability-ai.webp
+        description: Generate music and sound effects with Stability AI's audio generation model
+        tags:
+          - sfx
+          - audio
+          - music
+          - proprietary

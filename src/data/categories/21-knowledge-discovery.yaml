@@ -1,0 +1,40 @@
+name: Knowledge Discovery
+group: products
+color: oklch(0.62 0.20 158)
+icon: MagnifyingGlass
+subcategories:
+  - name: AI Search Engines
+    row: 0
+    items:
+      - name: Exa AI
+        homepage_url: https://exa.ai
+        logo: exa.webp
+        description: Neural search engine for AI applications
+        tags:
+          - search
+          - api
+          - neural
+      - name: Kagi
+        homepage_url: https://help.kagi.com/kagi/
+        logo: kagi.webp
+        description: Privacy-focused AI-enhanced search engine
+        tags:
+          - search
+          - privacy
+          - proprietary
+      - name: Perplexity AI
+        homepage_url: https://perplexity.ai
+        logo: perplexity.webp
+        description: AI-powered answer engine with real-time search
+        tags:
+          - search
+          - ai
+          - proprietary
+      - name: You.com
+        homepage_url: https://you.com
+        logo: you-com.webp
+        description: AI search engine with personalized results
+        tags:
+          - search
+          - ai
+          - proprietary

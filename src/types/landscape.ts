@@ -12,16 +12,16 @@ export interface LandscapeItem {
 
 export interface Subcategory {
   name: string;
+  row: number;
   items: LandscapeItem[];
 }
 
 export type CategoryGroup =
-  | "labs"
-  | "models"
+  | "core-ai"
   | "infrastructure"
-  | "protocols"
-  | "security"
-  | "product"
+  | "engineering"
+  | "products"
+  | "governance"
   | "ecosystem";
 
 export interface Category {

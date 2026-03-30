@@ -1,9 +1,10 @@
-name: RAG & Data
-group: infrastructure
-color: "oklch(0.62 0.20 73)"
+name: RAG & Memory
+group: engineering
+color: oklch(0.62 0.20 302)
 icon: Database
 subcategories:
   - name: LLM Frameworks & RAG
+    row: 0
     items:
       - name: DSPy
         homepage_url: https://dspy.ai
@@ -42,6 +43,7 @@ subcategories:
         description: "Spring framework for Java AI application development"
         tags: [llm, framework, java]
   - name: Retrieval & Reranking
+    row: 0
     items:
       - name: BGE Reranker
         homepage_url: https://huggingface.co/BAAI/bge-reranker-v2-m3
@@ -72,6 +74,7 @@ subcategories:
         description: "Multilingual reranker for improving RAG precision"
         tags: [rag, reranking, multilingual]
   - name: Document Parsing
+    row: 0
     items:
       - name: Docling
         homepage_url: https://github.com/DS4SD/docling
@@ -101,3 +104,11 @@ subcategories:
         logo: unstructured.webp
         description: "Document processing for RAG pipelines"
         tags: [rag, document-processing, oss]
+  - name: Memory Layer
+    row: 0
+    items:
+      - name: MemGPT
+        homepage_url: https://docs.letta.com/
+        repo_url: https://github.com/cpacker/MemGPT
+        logo: memgpt.webp
+        description: "OS-inspired memory management for LLMs enabling unbounded virtual context"

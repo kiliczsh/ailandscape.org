@@ -1,0 +1,405 @@
+categories:
+  - id: frontier-labs
+    name: Frontier Labs
+    group: core-ai
+    description: >
+      Organizations that train and publish foundation models — from well-funded proprietary labs to academic and
+      non-profit research groups. The source of the models everything else is built on.
+    subcategories:
+      - name: Proprietary Labs
+        description: >-
+          Commercially funded labs that train and deploy closed or semi-open models (Anthropic, OpenAI, Google DeepMind,
+          xAI…)
+      - name: Academic & Non-Profit Labs
+        description: >-
+          University and non-profit research groups that publish open research and open-weight models (EleutherAI, Allen
+          AI, Meta AI, Hugging Face…)
+  - id: foundation-models
+    name: Foundation Models
+    group: core-ai
+    description: >
+      The model families themselves — organized by capability and access type. Covers language, reasoning, coding,
+      multimodal, and embedding models. Generative media models (image, video, audio) live in the Products group because
+      they are primarily consumed as products, not APIs.
+    subcategories:
+      - name: Language Models
+        description: ""
+      - name: Reasoning & CoT Models
+        description: Models optimized for multi-step reasoning and chain-of-thought (o1, DeepSeek-R1, QwQ, Gemini Thinking…)
+      - name: Coding Models
+        description: Models fine-tuned or purpose-built for code generation and software tasks (Codex, Devstral, Qwen-Coder…)
+      - name: Embedding Models
+        description: >-
+          Models that convert text or mixed content into dense vectors for retrieval and similarity (text-embedding-ada,
+          BGE, Cohere Embed, Voyage AI…)
+  - id: multimodal-perception
+    name: Multimodal & Perception
+    group: core-ai
+    description: ""
+    subcategories:
+      - name: Vision-Language Models
+        description: ""
+      - name: Image Generation Models
+        description: ""
+      - name: Computer Vision
+        description: ""
+      - name: Speech Recognition
+        description: ""
+      - name: Voice & Audio Synthesis
+        description: ""
+  - id: benchmarks
+    name: Benchmarks & Leaderboards
+    group: core-ai
+    description: >
+      Standardized evaluations and public leaderboards used to compare models. Distinct from internal eval tooling
+      (which lives in Observability & Evals) — these are the shared, community-wide scoring systems.
+    subcategories:
+      - name: Software Engineering Benchmarks
+        description: Code and SWE task benchmarks with objective pass/fail scoring (SWE-bench, LiveCodeBench, HumanEval…)
+      - name: Agent & General Benchmarks
+        description: Benchmarks that evaluate reasoning, tool use, and autonomous task completion (ARC-AGI, τ-bench, OSWorld…)
+      - name: Model Rankings
+        description: >-
+          Aggregated leaderboards and ranking platforms driven by human preference or automated scoring (LMSYS Chatbot
+          Arena, OpenRouter Rankings…)
+  - id: inference-compute
+    name: Inference & Compute
+    group: infrastructure
+    description: >
+      The hardware and software layer that runs AI workloads. Covers GPU cloud providers, inference optimization
+      libraries, training clusters, and local / edge runtimes.
+    subcategories:
+      - name: Cloud & GPU Providers
+        description: Managed GPU clouds and serverless inference platforms (CoreWeave, Together AI, Fireworks AI, Replicate…)
+      - name: Inference Optimization
+        description: Libraries and techniques that make inference faster and cheaper (vLLM, TensorRT, ONNX Runtime, SGLang…)
+      - name: Training Infrastructure
+        description: Distributed training frameworks and tooling (DeepSpeed, FSDP, Megatron-LM, Horovod…)
+      - name: Compute & Hardware
+        description: Purpose-built AI chips and accelerators (NVIDIA CUDA, Groq LPU, Cerebras WSE, Apple MLX, Tenstorrent…)
+      - name: Local & Edge Inference
+        description: ""
+  - id: llm-gateways
+    name: LLM Gateways & APIs
+    group: infrastructure
+    description: >
+      The connectivity layer between applications and models. Hosted APIs give direct access to proprietary models;
+      gateways and proxies add routing, caching, cost control, and observability across multiple providers.
+    subcategories:
+      - name: Hosted Model APIs
+        description: Direct API access to proprietary models (Anthropic API, OpenAI API, Together AI, Replicate…)
+      - name: AI Gateway & Proxy
+        description: Multi-provider routers, load balancers, and observability proxies (LiteLLM, OpenRouter, Portkey, Martian…)
+  - id: vector-search
+    name: Vector & Search
+    group: infrastructure
+    description: >
+      Storage and retrieval systems optimized for embedding vectors. Foundational to RAG pipelines and semantic search
+      products.
+    subcategories:
+      - name: Vector Databases
+        description: >-
+          Purpose-built or extended databases for storing and querying embedding vectors (Pinecone, Qdrant, Weaviate,
+          Chroma, pgvector…)
+      - name: Semantic Search
+        description: Search engines that rank by meaning rather than keyword (Elasticsearch, OpenSearch, Vespa…)
+      - name: Similarity & Indexing
+        description: Libraries for approximate nearest-neighbor search (FAISS, Annoy, ScaNN…)
+  - id: data-engineering
+    name: Data Engineering
+    group: infrastructure
+    description: >
+      Pipelines and platforms that move, transform, and govern data at scale. Feeds training datasets, fine-tuning
+      corpora, and RAG knowledge bases.
+    subcategories:
+      - name: Data Processing
+        description: ""
+      - name: Ingestion & Integration
+        description: Connectors and ETL/ELT tools for moving data between systems (Airbyte, Fivetran, dltHub…)
+      - name: Data Lakehouse
+        description: >-
+          Open table formats combining data lake flexibility with warehouse structure (Apache Iceberg, Delta Lake,
+          Hudi…)
+      - name: Data Catalog
+        description: Metadata management and data discovery platforms (DataHub, OpenMetadata, Alation…)
+      - name: Synthetic Data
+        description: ""
+  - id: mlops-training
+    name: MLOps & Training
+    group: engineering
+    description: >
+      The engineering discipline around training, fine-tuning, and deploying models reliably. Covers the full lifecycle
+      from experiment to production.
+    subcategories:
+      - name: Experiment Tracking & CI/CD
+        description: ""
+      - name: Fine-tuning & RLHF
+        description: >-
+          Tools for supervised fine-tuning and reinforcement learning from human feedback (Axolotl, TRL, unsloth,
+          OpenRLHF…)
+      - name: Pipeline Orchestration
+        description: Schedule and manage ML workflows and DAGs (Kubeflow, Prefect, ZenML, Apache Airflow…)
+      - name: Model Registry & Feature Store
+        description: ""
+      - name: ML Frameworks
+        description: Core libraries for building and training neural networks (PyTorch, JAX, TensorFlow, Keras…)
+  - id: observability-evals
+    name: Observability & Evals
+    group: engineering
+    description: >
+      Tooling for understanding what models are doing in production and whether they are doing it well. Covers runtime
+      tracing, safety monitoring, internal evaluations, and prompt lifecycle management. (Public leaderboards and shared
+      benchmarks live in Benchmarks & Leaderboards.)
+    subcategories:
+      - name: LLM Observability
+        description: Trace, log, and debug LLM calls in production (Langfuse, Helicone, Traceloop, Opik, Phoenix…)
+      - name: Model Monitoring
+        description: Detect data drift, performance degradation, and anomalies post-deployment (Arize AI, Evidently, WhyLabs…)
+      - name: LLM Evaluation & Benchmarking
+        description: >-
+          Frameworks for scoring model outputs against ground truth or preferences (DeepEval, Ragas, Braintrust,
+          LangSmith…)
+      - name: Explainability & Alignment
+        description: ""
+      - name: Prompt Management
+        description: Version, test, and optimize prompts across model versions (PromptLayer, Promptfoo, DSPy, Humanloop…)
+  - id: agent-frameworks
+    name: Agent Frameworks
+    group: engineering
+    description: >
+      SDKs and libraries for building agents — systems where a model decides what to do next, calls tools, and produces
+      outcomes over multiple steps. Covers single-agent and multi-agent architectures.
+    subcategories:
+      - name: Orchestration SDKs
+        description: >-
+          Code-first libraries for defining agent logic and tool use (LangGraph, OpenAI Agents SDK, LlamaIndex
+          Workflows…)
+      - name: Multi-Agent Frameworks
+        description: Frameworks designed for teams of collaborating agents (CrewAI, AutoGen, MetaGPT, CAMEL…)
+      - name: Agent Protocols
+        description: Open standards for agent interoperability and communication (MCP, A2A, ACP, ANP…)
+      - name: LLM Application Frameworks
+        description: Higher-level frameworks for building LLM-powered apps with less boilerplate (LangChain, Dify, Mastra, n8n AI…)
+  - id: ai-protocols
+    name: AI Protocols
+    group: engineering
+    description: >
+      The ecosystem around the Model Context Protocol — servers that expose tools, data, and services to AI agents, plus
+      registries and interoperability standards.
+    subcategories:
+      - name: MCP Servers & Registries
+        description: Pre-built MCP servers and discovery registries (Composio, Toolhouse, Smithery, Arcade AI, Glama…)
+      - name: Agent Communication Protocols
+        description: Open standards for agent-to-agent and agent-to-tool communication (MCP, A2A, ACP, ANP…)
+  - id: rag-memory
+    name: RAG & Memory
+    group: engineering
+    description: >
+      Tooling for grounding model outputs in external knowledge. Covers the full retrieval pipeline — from chunking and
+      parsing documents to reranking results and persisting long-term memory.
+    subcategories:
+      - name: LLM Frameworks & RAG
+        description: >-
+          High-level frameworks that wire together retrieval and generation (LlamaIndex, LangChain, Haystack, DSPy,
+          Semantic Kernel…)
+      - name: Retrieval & Reranking
+        description: Libraries and services that improve retrieval precision (Cohere Rerank, ColBERT, FlashRank, BGE Reranker…)
+      - name: Document Parsing
+        description: >-
+          Extract clean text and structure from PDFs, HTML, and office docs (Unstructured, LlamaParse, Docling, Reducto,
+          Marker…)
+      - name: Memory Layer
+        description: Systems that give agents persistent, searchable memory across sessions (Letta, Zep, MemO, LangMem, Graphiti…)
+  - id: coding-agents
+    name: Coding Agents
+    group: products
+    description: >
+      AI systems that write, review, and ship code. Ranges from autocomplete extensions inside existing IDEs to fully
+      autonomous agents that open PRs without human input.
+    subcategories:
+      - name: Commercial Agents
+        description: Hosted, product-grade coding agents (GitHub Copilot, Cursor, Devin, Amazon Q Developer, Gemini Code Assist…)
+      - name: Code-Writing Agents
+        description: CLI and open-source agents that autonomously write and run code (Claude Code, Aider, Cline, OpenHands, Goose…)
+      - name: AI-Powered IDEs
+        description: Full IDEs rebuilt around AI-first editing (Cursor, Windsurf, Kiro, Google Antigravity, Warp…)
+      - name: AI Extensions & Platforms
+        description: AI plugins and assistants for existing editors (GitHub Copilot, Continue, Tabnine, Augment Code, Trae…)
+  - id: ai-app-builders
+    name: AI App Builders
+    group: products
+    description: >
+      Platforms for building and shipping AI-powered applications without writing a full backend. Ranges from
+      prompt-to-app tools to open-source frameworks and visual node editors.
+    subcategories:
+      - name: Chat & Browser Builders
+        description: Build and deploy chat apps and web products from a prompt (Bolt.new, v0, Lovable, Base44, Replit Agent…)
+      - name: Mobile App Builders
+        description: Generate native or cross-platform mobile apps with AI (Rork, Vibecode, Bloom…)
+      - name: Open Source Builders
+        description: Self-hostable app builder frameworks (bolt.diy, Dyad, ToolJet, Open Lovable…)
+      - name: Visual Flow Editors
+        description: Node-canvas editors for wiring together AI logic visually (Flowise, Langflow, AgentPilot, Rivet…)
+  - id: dev-tools
+    name: Dev Tools
+    group: products
+    description: >
+      Developer-facing tools that improve quality and productivity around AI. Covers code review automation, testing,
+      and the integrations that connect AI into existing engineering workflows.
+    subcategories:
+      - name: Code Review & Quality
+        description: AI-assisted code review, static analysis, and PR summarization (CodeRabbit, Greptile, Graphite, Ellipsis…)
+      - name: Developer Integrations
+        description: >-
+          Connectors, SDKs, and utilities that embed AI into existing developer toolchains (Vercel AI SDK, Agents.md,
+          Fabric…)
+  - id: generative-content
+    name: Generative Content
+    group: products
+    description: >
+      AI tools for producing written content — from short marketing copy to long-form editorial. These are end-user
+      products, not raw APIs; they wrap language models in workflows tuned for specific content types.
+    subcategories:
+      - name: AI Copywriting & Marketing
+        description: Short-form copy, ads, landing pages, and brand voice tools (Jasper, Copy.ai, Writesonic…)
+      - name: Long-form Writing & Editorial
+        description: Tools for articles, reports, books, and structured documents (Sudowrite, Lex, Notion AI…)
+      - name: Email & Communication Gen
+        description: Drafting and personalizing emails, replies, and async comms at scale (Lavender, Superhuman AI…)
+      - name: Presentation & Slide Gen
+        description: AI that turns prompts or documents into slide decks (Gamma, Beautiful.ai, Tome…)
+  - id: visual-generation
+    name: Visual Generation
+    group: products
+    description: >
+      AI products for generating and editing images and video. Covers both frontier consumer tools (Midjourney, Sora)
+      and developer-facing APIs. Underlying model weights (Flux, Stable Diffusion) belong in Foundation Models; products
+      and platforms go here.
+    subcategories:
+      - name: Text-to-Image
+        description: Generate images from natural language prompts (Midjourney, DALL-E 3, Flux, Adobe Firefly…)
+      - name: Image Editing & Inpainting
+        description: >-
+          Modify, extend, or composite existing images with AI guidance (Adobe Generative Fill, Stable Diffusion
+          inpainting…)
+      - name: Text-to-Video
+        description: Generate video clips from text prompts (Sora, Runway Gen-3, Kling, Pika…)
+      - name: Video-to-Video & Stylization
+        description: Re-style, animate, or transform existing video footage (Runway, Topaz Video AI…)
+      - name: Avatar & Lip-sync Video
+        description: Talking-head generation, digital avatars, and lip-synced video (HeyGen, D-ID, Synthesia…)
+  - id: audio-music-gen
+    name: Audio & Music Gen
+    group: products
+    description: >
+      AI products for speech synthesis, voice cloning, and music creation. Consumer and developer-facing tools;
+      underlying models (Whisper, Bark) belong in Foundation Models.
+    subcategories:
+      - name: Text-to-Speech (High Fidelity)
+        description: Natural-sounding speech synthesis from text (ElevenLabs, OpenAI TTS, Kokoro…)
+      - name: Voice Cloning & Dubbing
+        description: >-
+          Clone a voice from samples or dub video content into another language (ElevenLabs Voice Clone, HeyGen
+          dubbing…)
+      - name: Music Composition
+        description: Generate original music from prompts or style references (Suno, Udio, MusicGen…)
+      - name: Sound Effects (SFX) Gen
+        description: Generate environmental and foley sounds for games, video, and media (ElevenLabs SFX, AudioLDM…)
+  - id: browser-computer-use
+    name: Browser & Computer Use
+    group: products
+    description: >
+      Agents that operate software interfaces — browsers, desktops, and GUIs — rather than calling structured APIs.
+      Includes web scraping as a lightweight form of browser automation.
+    subcategories:
+      - name: Browser Automation
+        description: Agents that navigate, click, and interact with websites (Browser Use, Stagehand, Skyvern, Multion…)
+      - name: Computer Use (OS-Level)
+        description: >-
+          Agents with full desktop control — mouse, keyboard, screen (Anthropic Computer Use, OpenAI Operator, Google
+          Project Mariner…)
+      - name: Web Scraping & Crawling
+        description: Tools for extracting structured data from websites at scale (Firecrawl, Apify, Bright Data, Crawl4AI, Jina…)
+  - id: workflow-automation
+    name: Workflow Automation
+    group: products
+    description: >
+      Low-code and no-code platforms for automating multi-step processes by connecting apps and APIs. Complements agent
+      frameworks with a more operations-oriented, trigger-based model.
+    subcategories:
+      - name: Visual Workflow Builders
+        description: Drag-and-drop canvas for building integrations and automations (n8n, Make, Zapier, Gumloop…)
+      - name: Event-Driven Automation
+        description: Platforms triggered by events, webhooks, or schedules (Trigger.dev, Inngest, Temporal, Prefect…)
+      - name: Task Schedulers
+        description: Infrastructure-level job scheduling and queue management (DBOS, Temporal, Relay.app…)
+  - id: knowledge-discovery
+    name: Knowledge Discovery
+    group: products
+    description: >
+      AI-powered search and research tools that help users find, synthesize, and understand information. Distinct from
+      vertical AI (no specific domain compliance required) and from vector search infrastructure (these are end-user
+      products, not databases).
+    subcategories:
+      - name: AI Search Engines
+        description: Search products that return synthesized answers rather than blue links (Perplexity, Exa, Kagi, You.com…)
+  - id: vertical-ai
+    name: Vertical AI
+    group: products
+    description: >
+      AI products purpose-built for specific regulated or knowledge-intensive industries. These go beyond generic LLM
+      wrapping — they handle domain compliance, specialized data formats, and professional workflows.
+    subcategories:
+      - name: Healthcare
+        description: Clinical documentation, diagnostic support, and medical knowledge tools (Abridge, Med-PaLM 2, Nabla…)
+      - name: Legal
+        description: Contract analysis, legal research, and case management (Harvey AI, Casetext, Lexis+ AI…)
+      - name: Finance
+        description: Financial analysis, market intelligence, and compliance tooling (BloombergGPT, Kensho, FinGPT…)
+      - name: Education
+        description: Personalized tutoring and learning tools (Khanmigo, Duolingo Max, Synthesis Tutor…)
+  - id: personal-assistants
+    name: Personal Assistants
+    group: products
+    description: >
+      AI agents designed to act as a general-purpose personal or home assistant. Includes the OpenClaw ecosystem —
+      open-source, self-hosted assistant frameworks running on everything from servers to microcontrollers.
+    subcategories:
+      - name: General Assistants
+        description: Hosted and open-source personal AI assistants (Leon, MemGPT, Rowboat, Letta…)
+      - name: OpenClaw Ecosystem
+        description: >-
+          Open-source OpenClaw implementations and hardware variants — from cloud to Raspberry Pi to ESP32 (openclaw,
+          ironclaw, nanoclaw, piclaw, zclaw…)
+  - id: ai-security
+    name: AI Security & Safety
+    group: governance
+    description: >
+      Tools and frameworks for securing AI systems against adversarial attacks, data leakage, and misuse — and for
+      keeping model behavior within safe and compliant boundaries.
+    subcategories:
+      - name: Offensive Testing & Red Teaming
+        description: ""
+      - name: Guardrails & Defense
+        description: ""
+      - name: Privacy & Compliance
+        description: ""
+      - name: Interpretability & Authenticity
+        description: ""
+  - id: agent-skills
+    name: Agent Skills
+    group: ecosystem
+    description: >
+      Reusable skill packages that extend coding agents with domain-specific capabilities — from document
+      processing and design to engineering workflows and marketing automation.
+    subcategories:
+      - name: Document & Office
+        description: Skills for reading, writing, and manipulating Office documents and PDFs
+      - name: Design & Creative
+        description: Skills for generating visual assets, design systems, and creative artifacts
+      - name: Dev & Engineering
+        description: Skills for debugging, testing, context optimization, and developer workflows
+      - name: Marketing & SEO
+        description: Skills for brand guidelines, SEO audits, and marketing automation
+      - name: Knowledge & Learning
+        description: Skills for note-taking, research, and knowledge management integrations

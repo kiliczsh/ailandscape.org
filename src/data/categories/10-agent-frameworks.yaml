@@ -1,0 +1,190 @@
+name: Agent Frameworks
+group: engineering
+color: oklch(0.62 0.20 230)
+icon: Robot
+subcategories:
+  - name: Orchestration SDKs
+    row: 0
+    items:
+      - name: agent-orchestrator
+        homepage_url: https://composio.dev
+        repo_url: https://github.com/ComposioHQ/agent-orchestrator
+        logo: agent-orchestrator.webp
+        description: Per-agent worktree and branch isolation; auto-fixes CI failures and opens PRs
+      - name: AgentForge
+        homepage_url: https://github.com/DataBassGit/AgentForge
+        repo_url: https://github.com/DataBassGit/AgentForge
+        logo: gh-DataBassGit.png
+        description: Low-code framework for building, testing, and iterating on AI agents
+      - name: agentscope
+        homepage_url: https://agentscope.io
+        repo_url: https://github.com/agentscope-ai/agentscope
+        logo: agentscope.webp
+        description: Alibaba's agent-oriented programming framework for building LLM applications
+      - name: antfarm
+        homepage_url: https://antfarm.cool
+        repo_url: https://github.com/snarktank/antfarm
+        description: Build your agent team with one command
+      - name: ChatDev
+        homepage_url: https://arxiv.org/abs/2307.07924
+        repo_url: https://github.com/OpenBMB/ChatDev
+        logo: chatdev.webp
+        description: Communicative LLM agents simulating a virtual software development company
+      - name: claude-flow
+        homepage_url: https://Cognitum.One
+        repo_url: https://github.com/ruvnet/claude-flow
+        logo: claude-flow.webp
+        description: Deploy multi-agent swarms with coordinated, programmable workflows
+      - name: clawe
+        homepage_url: https://clawe.ai
+        repo_url: https://github.com/getclawe/clawe
+        logo: clawe.webp
+        description: Trello-style multi-agent coordination system
+      - name: Daydreams
+        homepage_url: https://www.daydreams.systems/
+        repo_url: https://github.com/daydreamsai/daydreams
+        logo: daydreams.webp
+        description: Open-source framework for building and orchestrating autonomous AI agents
+      - name: FastAgency
+        homepage_url: https://fastagency.ai/latest
+        repo_url: https://github.com/airtai/fastagency
+        logo: fastagency.webp
+        description: Rapid development framework for multi-agent AI applications
+      - name: gastown
+        homepage_url: https://github.com/steveyegge/gastown
+        repo_url: https://github.com/steveyegge/gastown
+        logo: gh-steveyegge.png
+        description: Multi-agent orchestration system with persistent work tracking across sessions
+      - name: humanlayer
+        homepage_url: https://humanlayer.dev/code
+        repo_url: https://github.com/humanlayer/humanlayer
+        logo: humanlayer.webp
+        description: SDK for injecting human approval gates into agent loops
+      - name: L2MAC
+        homepage_url: https://samholt.github.io/L2MAC/
+        repo_url: https://github.com/samholt/l2mac
+        description: LLM Automatic Computer for generating extensive codebases and complex artifacts
+      - name: lalph
+        homepage_url: https://github.com/tim-smart/lalph
+        repo_url: https://github.com/tim-smart/lalph
+        logo: gh-tim-smart.png
+        description: LLM agent orchestrator that connects to your issue tracker and spawns agents
+      - name: LangGraph
+        homepage_url: https://langchain-ai.github.io/langgraph
+        repo_url: https://github.com/langchain-ai/langgraph
+        description: Graph-based agent workflow orchestration
+        tags:
+          - agents
+          - workflows
+          - python
+      - name: Langroid
+        homepage_url: https://langroid.github.io/langroid/
+        repo_url: https://github.com/langroid/langroid
+        description: Lightweight, extensible Python framework for multi-agent LLM programming
+      - name: loom
+        homepage_url: https://github.com/ghuntley/loom
+        repo_url: https://github.com/ghuntley/loom
+        logo: gh-ghuntley.png
+        description: Autonomous development loops that iteratively evolve a software product
+      - name: OpenAI Agents SDK
+        homepage_url: https://openai.github.io/openai-agents-python/
+        repo_url: https://github.com/openai/openai-agents-python
+        description: OpenAI's official Python SDK for orchestrated multi-agent systems with handoffs
+      - name: openfang
+        homepage_url: https://www.openfang.sh/
+        repo_url: https://github.com/RightNow-AI/openfang
+        logo: openfang.webp
+        description: Open-source Agent Operating System
+      - name: opengoat
+        homepage_url: https://opengoat.ai
+        repo_url: https://github.com/marian2js/opengoat
+        logo: opengoat.webp
+        description: Build autonomous organizations of AI agents
+      - name: paperclip
+        homepage_url: https://paperclip.ing
+        repo_url: https://github.com/paperclipai/paperclip
+        logo: paperclip.webp
+        description: Orchestration infrastructure for zero-human-intervention companies
+      - name: Questflow
+        homepage_url: https://questflow.ai/
+        repo_url: https://github.com/questflow
+        logo: questflow.webp
+        description: Decentralized multi-agent orchestration with a marketplace for deploying agents
+  - name: Multi-Agent Frameworks
+    row: 0
+    items:
+      - name: AutoGen
+        homepage_url: https://microsoft.github.io/autogen
+        repo_url: https://github.com/microsoft/autogen
+        project: sandbox
+        description: Multi-agent conversation framework by Microsoft
+        tags:
+          - agents
+          - multi-agent
+      - name: AutoGPT
+        homepage_url: https://agpt.co
+        repo_url: https://github.com/Significant-Gravitas/AutoGPT
+        logo: autogpt.webp
+        description: Autonomous AI agent platform
+        tags:
+          - agents
+          - autonomous
+      - name: BabyAGI
+        homepage_url: https://babyagi.org/
+        repo_url: https://github.com/yoheinakajima/babyagi
+        description: Minimal task-driven autonomous agent using GPT-4 and vector databases
+      - name: CAMEL
+        homepage_url: https://docs.camel-ai.org/
+        repo_url: https://github.com/camel-ai/camel
+        logo: camel.webp
+        description: First LLM multi-agent framework and community dedicated to agent scaling laws
+      - name: CrewAI
+        homepage_url: https://crewai.com
+        repo_url: https://github.com/crewAIInc/crewAI
+        logo: crewai.webp
+        description: Framework for orchestrating role-playing AI agents
+        tags:
+          - agents
+          - multi-agent
+          - python
+      - name: GPT Engineer
+        homepage_url: https://gptengineer.app
+        repo_url: https://github.com/AntonOsika/gpt-engineer
+        logo: gpt-engineer.webp
+        description: Describe what to build; AI asks clarifying questions and generates the codebase
+      - name: LoopGPT
+        homepage_url: https://github.com/farizrahman4u/loopgpt
+        repo_url: https://github.com/farizrahman4u/loopgpt
+        logo: gh-farizrahman4u.png
+        description: AutoGPT re-implementation with modular architecture and better memory handling
+      - name: Mastra
+        homepage_url: https://mastra.ai
+        repo_url: https://github.com/mastra-ai/mastra
+        logo: mastra.webp
+        description: TypeScript AI framework with workflows, agents, RAG, integrations, and evals
+      - name: MetaGPT
+        homepage_url: https://mgx.dev/
+        repo_url: https://github.com/geekan/MetaGPT
+        logo: metagpt.webp
+        description: Assigns roles to LLMs to form a collaborative multi-agent software entity
+  - name: Agent Protocols
+    row: 0
+    items:
+      - name: AP2
+        homepage_url: https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol
+        repo_url: https://github.com/google-agentic-commerce/AP2
+        logo: ap2.webp
+        description: Google Cloud's open-source Agent Payments Protocol for AI agent transactions
+  - name: LLM Application Frameworks
+    row: 0
+    items:
+      - name: Dify
+        homepage_url: https://dify.ai
+        repo_url: https://github.com/langgenius/dify
+        logo: dify.webp
+        description: Open-source LLM app platform with visual workflow editor, RAG, and agent builder
+      - name: n8n
+        homepage_url: https://n8n.io/
+        repo_url: https://github.com/n8n-io/n8n
+        logo: n8n.webp
+        description: AI workflow automation for technical teams — connect LLMs, APIs, and databases

@@ -1,0 +1,173 @@
+name: Visual Generation
+group: products
+color: oklch(0.62 0.20 245)
+icon: ImageSquare
+subcategories:
+  - name: Text-to-Image
+    row: 0
+    items:
+      - name: Adobe Firefly
+        homepage_url: https://firefly.adobe.com
+        logo: adobe.webp
+        description: Adobe's generative AI for creative workflows and commercial-safe imagery
+        tags:
+          - image-generation
+          - creative
+          - proprietary
+      - name: DALL-E 3
+        homepage_url: https://openai.com/dall-e-3
+        logo: openai.webp
+        description: OpenAI's latest text-to-image generation model with improved prompt following
+        tags:
+          - image-generation
+          - api
+          - proprietary
+      - name: Ideogram
+        homepage_url: https://ideogram.ai
+        logo: ideogram.webp
+        description: AI image generator with best-in-class text rendering in images
+        tags:
+          - image-generation
+          - text-rendering
+          - proprietary
+      - name: Leonardo AI
+        homepage_url: https://leonardo.ai
+        logo: leonardo-ai.webp
+        description: AI image generation platform for game assets, concept art, and design
+        tags:
+          - image-generation
+          - creative
+          - proprietary
+      - name: Midjourney
+        homepage_url: https://midjourney.com
+        logo: midjourney.webp
+        description: AI image generation service with stunning artistic output
+        tags:
+          - image-generation
+          - proprietary
+  - name: Image Editing & Inpainting
+    row: 0
+    items:
+      - name: Adobe Generative Fill
+        homepage_url: https://www.adobe.com/products/photoshop/generative-fill.html
+        logo: adobe.webp
+        description: AI-powered content-aware fill and expansion in Adobe Photoshop
+        tags:
+          - image-editing
+          - inpainting
+          - proprietary
+      - name: Canva Magic Edit
+        homepage_url: https://www.canva.com/magic-edit/
+        logo: canva.webp
+        description: AI image editing tools built into the Canva design platform
+        tags:
+          - image-editing
+          - design
+          - proprietary
+      - name: Krea AI
+        homepage_url: https://www.krea.ai
+        logo: krea-ai.webp
+        description: Real-time AI image generation and enhancement platform
+        tags:
+          - image-editing
+          - real-time
+          - proprietary
+  - name: Text-to-Video
+    row: 0
+    items:
+      - name: Kling
+        homepage_url: https://klingai.com
+        logo: kling.webp
+        description: Kuaishou's advanced video generation model with physics-aware motion
+        tags:
+          - video-generation
+          - proprietary
+      - name: Luma Dream Machine
+        homepage_url: https://lumalabs.ai/dream-machine
+        logo: luma.webp
+        description: High-quality, realistic video generation from text and images
+        tags:
+          - video-generation
+          - proprietary
+      - name: Pika
+        homepage_url: https://pika.art
+        logo: pika.webp
+        description: Pika's creative AI video generation platform for everyone
+        tags:
+          - video-generation
+          - proprietary
+      - name: Runway Gen-3
+        homepage_url: https://runwayml.com
+        logo: runway.webp
+        description: Runway's high-quality video generation model for creative professionals
+        tags:
+          - video-generation
+          - proprietary
+      - name: Sora
+        homepage_url: https://openai.com/sora
+        logo: openai.webp
+        description: OpenAI's text-to-video generation model creating realistic scenes
+        tags:
+          - video-generation
+          - proprietary
+  - name: Video-to-Video & Stylization
+    row: 1
+    items:
+      - name: Domo AI
+        homepage_url: https://www.domo.ai
+        logo: domo-ai.webp
+        description: AI video stylization and animation from video input
+        tags:
+          - video-editing
+          - animation
+          - proprietary
+      - name: Runway
+        homepage_url: https://runwayml.com
+        logo: runway.webp
+        description: AI-powered creative suite for video editing, generation, and stylization
+        tags:
+          - video-editing
+          - stylization
+          - proprietary
+      - name: Topaz Video AI
+        homepage_url: https://www.topazlabs.com/topaz-video-ai
+        logo: topaz.webp
+        description: AI video upscaling, deinterlacing, and motion interpolation
+        tags:
+          - video-editing
+          - upscaling
+          - proprietary
+  - name: Avatar & Lip-sync Video
+    row: 1
+    items:
+      - name: D-ID
+        homepage_url: https://www.d-id.com
+        logo: d-id.webp
+        description: AI-powered digital people creation and talking head video generation
+        tags:
+          - avatar
+          - lip-sync
+          - proprietary
+      - name: HeyGen
+        homepage_url: https://www.heygen.com
+        logo: heygen.webp
+        description: AI video generation platform for talking avatars and video translation
+        tags:
+          - avatar
+          - lip-sync
+          - proprietary
+      - name: Lumiere
+        homepage_url: https://lumiere-video.github.io
+        logo: google-cloud.webp
+        description: Google's space-time diffusion model for video synthesis
+        tags:
+          - video-generation
+          - research
+      - name: Synthesia
+        homepage_url: https://www.synthesia.io
+        logo: synthesia.webp
+        description: AI video generation with digital avatars for enterprise communications
+        tags:
+          - avatar
+          - enterprise
+          - proprietary

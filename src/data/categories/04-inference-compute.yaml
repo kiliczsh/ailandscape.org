@@ -1,0 +1,293 @@
+name: Inference & Compute
+group: infrastructure
+color: oklch(0.62 0.20 101)
+icon: HardDrives
+subcategories:
+  - name: Cloud & GPU Providers
+    row: 0
+    items:
+      - name: Akash Network
+        homepage_url: https://akash.network
+        repo_url: https://github.com/akash-network/provider
+        logo: akash-network.webp
+        description: Decentralized cloud compute marketplace for AI workloads on GPU nodes
+      - name: AWS Bedrock
+        homepage_url: https://aws.amazon.com/bedrock/
+        logo: aws-bedrock.webp
+        description: AWS managed service for foundation models from Anthropic, Meta, and Mistral
+      - name: AWS SageMaker
+        homepage_url: https://aws.amazon.com/sagemaker
+        logo: aws.webp
+        description: Amazon's fully managed ML platform
+        tags:
+          - cloud
+          - mlops
+          - aws
+      - name: Azure ML
+        homepage_url: https://azure.microsoft.com/products/machine-learning
+        logo: microsoft.webp
+        description: Microsoft Azure's cloud ML service
+        tags:
+          - cloud
+          - mlops
+          - azure
+      - name: BentoML
+        homepage_url: https://bentoml.com
+        repo_url: https://github.com/bentoml/BentoML
+        logo: bentoml.webp
+        crunchbase: https://www.crunchbase.com/organization/bentoml
+        description: Framework for building ML-powered services
+        tags:
+          - serving
+          - python
+      - name: Cloudflare AI
+        homepage_url: https://ai.cloudflare.com
+        repo_url: https://github.com/cloudflare/workers-ai-provider
+        logo: cloudflare-ai.webp
+        description: AI inference at the edge via Cloudflare Workers AI with zero cold starts
+      - name: CoreWeave
+        homepage_url: https://coreweave.com
+        logo: coreweave.webp
+        description: GPU-accelerated cloud for AI/ML workloads
+        tags:
+          - cloud
+          - gpu
+          - infrastructure
+      - name: Databricks
+        homepage_url: https://databricks.com
+        logo: databricks.webp
+        description: Unified data analytics and AI platform
+        tags:
+          - cloud
+          - data
+          - mlops
+      - name: Fireworks AI
+        homepage_url: https://fireworks.ai
+        description: Fast, affordable inference API for open-source models with sub-100ms latency
+      - name: Google Vertex AI
+        homepage_url: https://cloud.google.com/vertex-ai
+        logo: google-cloud.webp
+        description: Google Cloud's unified ML platform
+        tags:
+          - cloud
+          - mlops
+          - google
+      - name: Heurist
+        homepage_url: https://www.heurist.ai/
+        repo_url: https://github.com/heurist-network/heurist-agent-framework
+        logo: heurist.webp
+        description: Decentralized GPU network for low-latency, verifiable AI model inference
+      - name: Ray Serve
+        homepage_url: https://docs.ray.io/en/latest/serve
+        repo_url: https://github.com/ray-project/ray
+        logo: ray.webp
+        project: sandbox
+        description: Scalable model serving with Ray
+        tags:
+          - serving
+          - distributed
+      - name: Seldon Core
+        homepage_url: https://seldon.io
+        repo_url: https://github.com/SeldonIO/seldon-core
+        logo: seldon.webp
+        description: Kubernetes-native ML deployment platform
+        tags:
+          - serving
+          - kubernetes
+      - name: TorchServe
+        homepage_url: https://pytorch.org/serve
+        repo_url: https://github.com/pytorch/serve
+        logo: pytorch.webp
+        description: PyTorch model serving framework
+        tags:
+          - serving
+          - pytorch
+      - name: Triton
+        homepage_url: https://developer.nvidia.com/triton-inference-server
+        repo_url: https://github.com/triton-inference-server/server
+        logo: triton.webp
+        crunchbase: https://www.crunchbase.com/organization/nvidia
+        description: NVIDIA's open-source inference serving software
+        tags:
+          - serving
+          - nvidia
+          - inference
+  - name: Inference Optimization
+    row: 0
+    items:
+      - name: llama.cpp
+        homepage_url: https://github.com/ggerganov/llama.cpp
+        repo_url: https://github.com/ggerganov/llama.cpp
+        logo: gh-ggerganov.png
+        description: LLM inference in C/C++ for local deployment
+        tags:
+          - inference
+          - llm
+          - cpp
+      - name: ONNX Runtime
+        homepage_url: https://onnxruntime.ai
+        repo_url: https://github.com/microsoft/onnxruntime
+        logo: onnx.webp
+        description: Cross-platform ML model accelerator
+        tags:
+          - inference
+          - optimization
+          - cross-platform
+      - name: SGLang
+        homepage_url: https://sglang.io
+        repo_url: https://github.com/sgl-project/sglang
+        logo: sglang.webp
+        description: Fast serving framework for LLMs and VLMs with structured generation support
+      - name: TensorRT
+        homepage_url: https://developer.nvidia.com/tensorrt
+        logo: nvidia.webp
+        description: NVIDIA's SDK for high-performance inference
+        tags:
+          - inference
+          - nvidia
+          - optimization
+      - name: TensorRT-LLM
+        homepage_url: https://nvidia.github.io/TensorRT-LLM/
+        repo_url: https://github.com/NVIDIA/TensorRT-LLM
+        description: NVIDIA's LLM inference framework for NVIDIA GPUs with TensorRT acceleration
+      - name: vLLM
+        homepage_url: https://vllm.ai
+        repo_url: https://github.com/vllm-project/vllm
+        logo: vllm.webp
+        description: High-throughput and memory-efficient LLM serving
+        tags:
+          - inference
+          - llm
+          - optimization
+  - name: Training Infrastructure
+    row: 0
+    items:
+      - name: DeepSpeed
+        homepage_url: https://deepspeed.ai
+        repo_url: https://github.com/microsoft/DeepSpeed
+        logo: deepspeed.webp
+        description: Deep learning optimization library by Microsoft
+        tags:
+          - training
+          - distributed
+          - optimization
+      - name: FSDP
+        homepage_url: https://pytorch.org/docs/stable/fsdp.html
+        logo: pytorch.webp
+        description: Fully Sharded Data Parallel training in PyTorch
+        tags:
+          - training
+          - distributed
+          - pytorch
+      - name: Horovod
+        homepage_url: https://horovod.ai
+        repo_url: https://github.com/horovod/horovod
+        logo: horovod.webp
+        project: graduated
+        description: Distributed deep learning training framework
+        tags:
+          - training
+          - distributed
+      - name: Megatron-LM
+        homepage_url: https://github.com/NVIDIA/Megatron-LM
+        repo_url: https://github.com/NVIDIA/Megatron-LM
+        logo: nvidia.webp
+        description: NVIDIA's large-scale transformer training
+        tags:
+          - training
+          - distributed
+          - llm
+      - name: Nanotron
+        homepage_url: https://github.com/huggingface/nanotron
+        repo_url: https://github.com/huggingface/nanotron
+        logo: hugging-face.webp
+        description: Minimalist large language model training by Hugging Face
+        tags:
+          - training
+          - llm
+          - oss
+  - name: Compute & Hardware
+    row: 1
+    items:
+      - name: Apple MLX
+        homepage_url: https://ml-explore.github.io/mlx
+        repo_url: https://github.com/ml-explore/mlx
+        description: Array framework for Apple Silicon ML research
+        tags:
+          - hardware
+          - apple-silicon
+          - oss
+      - name: Cerebras WSE
+        homepage_url: https://cerebras.ai
+        logo: cerebras.webp
+        description: Wafer-scale engine for fastest LLM training and inference
+        tags:
+          - hardware
+          - accelerator
+          - ai-chip
+      - name: CUDA
+        homepage_url: https://developer.nvidia.com/cuda-toolkit
+        logo: nvidia.webp
+        description: NVIDIA's parallel computing platform
+        tags:
+          - gpu
+          - compute
+          - nvidia
+      - name: Groq LPU
+        homepage_url: https://groq.com
+        logo: groq.webp
+        description: Language Processing Unit for ultra-fast LLM inference
+        tags:
+          - hardware
+          - accelerator
+          - ai-chip
+          - fast-inference
+      - name: ROCm
+        homepage_url: https://rocm.docs.amd.com
+        repo_url: https://github.com/ROCm/ROCm
+        logo: amd.webp
+        description: AMD's open software platform for GPU computing
+        tags:
+          - gpu
+          - compute
+          - amd
+      - name: Tenstorrent
+        homepage_url: https://tenstorrent.com
+        logo: tenstorrent.webp
+        description: AI hardware with open-source software stack
+        tags:
+          - hardware
+          - accelerator
+          - ai-chip
+  - name: Local & Edge Inference
+    row: 1
+    items:
+      - name: FastChat
+        homepage_url: https://github.com/lm-sys/FastChat
+        repo_url: https://github.com/lm-sys/FastChat
+        logo: gh-lm-sys.png
+        description: Distributed multi-model LLM serving system with OpenAI-compatible API and web UI
+      - name: Harbor
+        homepage_url: https://github.com/av/harbor
+        repo_url: https://github.com/av/harbor
+        logo: gh-av.png
+        description: Effortlessly run LLM backends, APIs, frontends, and services with one command
+      - name: LM Studio
+        homepage_url: https://lmstudio.ai/
+        logo: lm-studio.webp
+        description: Desktop app for discovering, downloading, and running open-weight LLMs locally
+      - name: ollama
+        homepage_url: https://ollama.com
+        repo_url: https://github.com/ollama/ollama
+        logo: ollama.webp
+        description: Run local LLMs (Llama, Qwen, Gemma, and more) with a single command
+      - name: Open WebUI
+        homepage_url: https://openwebui.com/
+        repo_url: https://github.com/open-webui/open-webui
+        logo: open-webui.webp
+        description: Self-hosted chat UI for local and cloud LLMs; Ollama, OpenAI-compatible API, RAG
+      - name: SillyTavern
+        homepage_url: https://sillytavern.app/
+        repo_url: https://github.com/SillyTavern/SillyTavern
+        logo: sillytavern.webp
+        description: Locally installed UI for text, image, and voice LLMs with deep customization

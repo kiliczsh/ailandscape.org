@@ -1,6 +1,13 @@
 "use client";
 
-import { Cards, SquaresFour, Tag, X } from "@phosphor-icons/react";
+import {
+  ArrowsIn,
+  ArrowsOut,
+  Cards,
+  SquaresFour,
+  Tag,
+  X,
+} from "@phosphor-icons/react";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -16,22 +23,20 @@ type ViewMode = "grid" | "card";
 
 const FILTER_OPTIONS: [GroupFilter, string][] = [
   ["all", "All"],
-  ["labs", "Labs"],
-  ["models", "Models"],
+  ["core-ai", "Core AI"],
   ["infrastructure", "Infrastructure"],
-  ["protocols", "Protocols"],
-  ["security", "Security"],
-  ["product", "Product"],
+  ["engineering", "Engineering"],
+  ["products", "Products"],
+  ["governance", "Governance"],
   ["ecosystem", "Ecosystem"],
 ];
 
 const GROUP_ACTIVE_COLORS: Partial<Record<GroupFilter, string>> = {
-  labs: "var(--group-labs)",
-  models: "var(--group-models)",
+  "core-ai": "var(--group-core-ai)",
   infrastructure: "var(--group-infrastructure)",
-  protocols: "var(--group-protocols)",
-  security: "var(--group-security)",
-  product: "var(--group-product)",
+  engineering: "var(--group-engineering)",
+  products: "var(--group-products)",
+  governance: "var(--group-governance)",
   ecosystem: "var(--group-ecosystem)",
 };
 
@@ -44,9 +49,11 @@ interface FilterBarProps {
   totalCategories: number;
   visibleItems: number;
   visibleCategories: number;
+  allCollapsed: boolean;
   onGroupChange: (g: GroupFilter) => void;
   onViewChange: (v: ViewMode) => void;
   onTagClear: () => void;
+  onCollapseToggle: () => void;
 }
 
 export function FilterBar({
@@ -58,9 +65,11 @@ export function FilterBar({
   totalCategories,
   visibleItems,
   visibleCategories: _visibleCategories,
+  allCollapsed,
   onGroupChange,
   onViewChange,
   onTagClear,
+  onCollapseToggle,
 }: FilterBarProps) {
   const isFiltered = query !== "" || groupFilter !== "all" || activeTag !== "";
 
@@ -159,6 +168,30 @@ export function FilterBar({
           <span className="hidden text-xs tabular-nums text-muted-foreground sm:inline">
             {statsText}
           </span>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <button
+                type="button"
+                onClick={onCollapseToggle}
+                className={cn(
+                  buttonVariants({ variant: "outline", size: "sm" }),
+                  "h-11 w-11 sm:h-7 sm:w-7 p-0",
+                )}
+              >
+                {allCollapsed ? (
+                  <ArrowsOut size={13} aria-hidden="true" />
+                ) : (
+                  <ArrowsIn size={13} aria-hidden="true" />
+                )}
+                <span className="sr-only">
+                  {allCollapsed ? "Expand all" : "Collapse all"}
+                </span>
+              </button>
+            </TooltipTrigger>
+            <TooltipContent side="bottom">
+              {allCollapsed ? "Expand all" : "Collapse all"}
+            </TooltipContent>
+          </Tooltip>
           <div role="radiogroup" aria-label="View mode" className="flex gap-1">
             {(
               [

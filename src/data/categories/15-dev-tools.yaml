@@ -1,0 +1,40 @@
+name: Dev Tools
+group: products
+color: oklch(0.62 0.20 130)
+icon: Code
+subcategories:
+  - name: Code Review & Quality
+    row: 0
+    items:
+      - name: CodeRabbit
+        homepage_url: https://www.coderabbit.ai
+        logo: coderabbit.webp
+        description: AI-powered code reviews — cut code review time and bugs in half
+  - name: Developer Integrations
+    row: 0
+    items:
+      - name: Agents.md
+        homepage_url: https://agents.md/
+        logo: agents-md.webp
+        description: Simple, open format for guiding coding agents; used by 20k+ open-source projects
+      - name: Anannas
+        homepage_url: https://anannas.ai/
+        logo: anannas.webp
+        description: Single API to access any LLM with seamless multi-model gateway and cost control
+      - name: Fabric
+        homepage_url: https://github.com/danielmiessler/Fabric
+        repo_url: https://github.com/danielmiessler/Fabric
+        logo: gh-danielmiessler.png
+        description: Open-source modular framework for solving problems using crowdsourced AI prompts
+      - name: Giga AI
+        homepage_url: https://gigamind.dev/context
+        logo: giga-ai.webp
+        description: Context engineering that improves AI quality and understanding
+      - name: Vercel AI Gateway
+        homepage_url: https://vercel.com/blog/ai-gateway-is-now-generally-available
+        logo: vercel-ai-gateway.webp
+        description: Gateway to access hundreds of models with zero token markup, including BYOK
+      - name: Vibetunnel
+        homepage_url: https://vibetunnel.sh/
+        logo: vibetunnel.webp
+        description: Proxies your terminals right into the browser so you can vibe-code from anywhere

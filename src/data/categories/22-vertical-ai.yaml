@@ -1,31 +1,10 @@
 name: Vertical AI
-group: product
-color: "oklch(0.62 0.20 205)"
+group: products
+color: oklch(0.62 0.20 216)
 icon: Buildings
 subcategories:
-  - name: Search
-    items:
-      - name: Exa AI
-        homepage_url: https://exa.ai
-        logo: exa.webp
-        description: "Neural search engine for AI applications"
-        tags: [search, api, neural]
-      - name: Kagi
-        homepage_url: https://help.kagi.com/kagi/
-        logo: kagi.webp
-        description: "Privacy-focused AI-enhanced search engine"
-        tags: [search, privacy, proprietary]
-      - name: Perplexity AI
-        homepage_url: https://perplexity.ai
-        logo: perplexity.webp
-        description: "AI-powered answer engine with real-time search"
-        tags: [search, ai, proprietary]
-      - name: You.com
-        homepage_url: https://you.com
-        logo: you-com.webp
-        description: "AI search engine with personalized results"
-        tags: [search, ai, proprietary]
   - name: Healthcare
+    row: 0
     items:
       - name: Abridge
         homepage_url: https://abridge.com
@@ -48,6 +27,7 @@ subcategories:
         description: "AI-powered ambient documentation for clinicians"
         tags: [healthcare, documentation, proprietary]
   - name: Legal
+    row: 0
     items:
       - name: Casetext
         homepage_url: https://casetext.com
@@ -65,6 +45,7 @@ subcategories:
         description: "LexisNexis AI-powered legal research platform"
         tags: [legal, research, proprietary]
   - name: Finance
+    row: 0
     items:
       - name: BloombergGPT
         homepage_url: https://bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance
@@ -83,6 +64,7 @@ subcategories:
         description: "S&P Global's AI analytics for financial intelligence"
         tags: [finance, analytics, proprietary]
   - name: Education
+    row: 0
     items:
       - name: Duolingo Max
         homepage_url: https://duolingo.com/max

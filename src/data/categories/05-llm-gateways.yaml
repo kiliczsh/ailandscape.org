@@ -1,9 +1,10 @@
-name: Model APIs
-group: models
-color: "oklch(0.62 0.20 330)"
+name: LLM Gateways & APIs
+group: infrastructure
+color: oklch(0.62 0.20 259)
 icon: Plug
 subcategories:
   - name: Hosted Model APIs
+    row: 0
     items:
       - name: Anthropic API
         homepage_url: https://anthropic.com/api
@@ -31,6 +32,7 @@ subcategories:
         description: "Cloud platform for running open-source models"
         tags: [api, open-models, cloud]
   - name: AI Gateway & Proxy
+    row: 0
     items:
       - name: LiteLLM
         homepage_url: https://litellm.ai

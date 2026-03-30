@@ -1,9 +1,10 @@
 name: Agent Skills
 group: ecosystem
-color: "oklch(0.62 0.18 80)"
+color: oklch(0.62 0.18 80)
 icon: Plug
 subcategories:
   - name: Document & Office
+    row: 0
     items:
       - name: Doc Co-Authoring
         homepage_url: https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring
@@ -31,6 +32,7 @@ subcategories:
         description: "Excel formulas, analysis, and charts via plain English"
         tags: [skills, claude-code, office]
   - name: Design & Creative
+    row: 0
     items:
       - name: Algorithmic Art
         homepage_url: https://github.com/anthropics/skills/tree/main/skills/algorithmic-art
@@ -63,6 +65,7 @@ subcategories:
         description: "Calculators and dashboards via natural language prompts"
         tags: [skills, claude-code, frontend]
   - name: Dev & Engineering
+    row: 0
     items:
       - name: Context Optimization
         homepage_url: https://github.com/muratcankoylan/agent-skills-for-context-engineering
@@ -95,6 +98,7 @@ subcategories:
         description: "Root cause analysis first, fix second, 4-phase method"
         tags: [skills, debugging]
   - name: Marketing & SEO
+    row: 1
     items:
       - name: Brand Guidelines
         homepage_url: https://github.com/anthropics/skills/tree/main/skills/brand-guidelines
@@ -112,6 +116,7 @@ subcategories:
         description: "20+ skills for CRO, copywriting, SEO, email, and growth"
         tags: [skills, marketing, seo]
   - name: Knowledge & Learning
+    row: 1
     items:
       - name: Excel MCP Server
         homepage_url: https://github.com/haris-musa/excel-mcp-server

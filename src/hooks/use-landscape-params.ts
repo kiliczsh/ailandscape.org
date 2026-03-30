@@ -9,12 +9,11 @@ type ViewMode = "grid" | "card";
 
 const VALID_GROUPS: GroupFilter[] = [
   "all",
-  "labs",
-  "models",
+  "core-ai",
   "infrastructure",
-  "protocols",
-  "security",
-  "product",
+  "engineering",
+  "products",
+  "governance",
   "ecosystem",
 ];
 const VALID_VIEWS: ViewMode[] = ["grid", "card"];

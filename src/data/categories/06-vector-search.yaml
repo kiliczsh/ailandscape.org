@@ -1,9 +1,10 @@
 name: Vector & Search
 group: infrastructure
-color: "oklch(0.62 0.20 68)"
+color: oklch(0.62 0.20 173)
 icon: MagnifyingGlass
 subcategories:
   - name: Vector Databases
+    row: 0
     items:
       - name: Chroma
         homepage_url: https://trychroma.com
@@ -43,6 +44,7 @@ subcategories:
         description: "Open-source vector database with ML integrations"
         tags: [vector-db, oss]
   - name: Semantic Search
+    row: 0
     items:
       - name: Elasticsearch
         homepage_url: https://elastic.co/elasticsearch
@@ -64,6 +66,7 @@ subcategories:
         description: "Big data serving engine with ML integration"
         tags: [search, serving]
   - name: Similarity & Indexing
+    row: 0
     items:
       - name: Annoy
         homepage_url: https://github.com/spotify/annoy

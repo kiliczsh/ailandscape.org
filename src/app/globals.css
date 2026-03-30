@@ -45,14 +45,13 @@
      so this contrast text must stay dark in both themes. */
   --category-header-text-dark: oklch(0.145 0.008 326);
 
-  /* Group filter active pill colors — intentionally theme-invariant (vivid identifiers) */
-  --group-labs: oklch(0.45 0.22 230);
-  --group-models: oklch(0.45 0.25 283);
+  /* Group filter active pill colors — value chain layers, theme-invariant */
+  --group-core-ai: oklch(0.45 0.25 283);
   --group-infrastructure: oklch(0.45 0.2 58);
-  --group-protocols: oklch(0.45 0.22 250);
-  --group-security: oklch(0.42 0.26 18);
-  --group-product: oklch(0.45 0.22 160);
-  --group-ecosystem: oklch(0.45 0.22 80);
+  --group-engineering: oklch(0.45 0.22 230);
+  --group-products: oklch(0.45 0.22 160);
+  --group-governance: oklch(0.42 0.26 18);
+  --group-ecosystem: oklch(0.45 0.18 80);
 
   /* Marquee banner — intentionally theme-invariant accent strip */
   --marquee-bg: oklch(0.55 0.22 35);
@@ -91,13 +90,12 @@
   --highlight-mark-bg: oklch(0.36 0.09 80 / 50%);
 
   /* Group/marquee tokens: same values as :root — intentionally theme-invariant */
-  --group-labs: oklch(0.45 0.22 230);
-  --group-models: oklch(0.45 0.25 283);
+  --group-core-ai: oklch(0.45 0.25 283);
   --group-infrastructure: oklch(0.45 0.2 58);
-  --group-protocols: oklch(0.45 0.22 250);
-  --group-security: oklch(0.42 0.26 18);
-  --group-product: oklch(0.45 0.22 160);
-  --group-ecosystem: oklch(0.45 0.22 80);
+  --group-engineering: oklch(0.45 0.22 230);
+  --group-products: oklch(0.45 0.22 160);
+  --group-governance: oklch(0.42 0.26 18);
+  --group-ecosystem: oklch(0.45 0.18 80);
   --marquee-bg: oklch(0.55 0.22 35);
 
   --background: oklch(0.145 0.008 326);

@@ -1,0 +1,296 @@
+total_items: 647
+total_categories: 26
+total_subcategories: 94
+categories:
+  - name: Frontier Labs
+    group: core-ai
+    total: 41
+    subcategories:
+      - name: Proprietary Labs
+        count: 22
+      - name: Academic & Non-Profit Labs
+        count: 19
+  - name: Foundation Models
+    group: core-ai
+    total: 54
+    subcategories:
+      - name: Language Models
+        count: 18
+      - name: Reasoning & CoT Models
+        count: 5
+      - name: Coding Models
+        count: 20
+      - name: Embedding Models
+        count: 11
+  - name: Multimodal & Perception
+    group: core-ai
+    total: 32
+    subcategories:
+      - name: Vision-Language Models
+        count: 10
+      - name: Image Generation Models
+        count: 3
+      - name: Computer Vision
+        count: 8
+      - name: Speech Recognition
+        count: 5
+      - name: Voice & Audio Synthesis
+        count: 6
+  - name: Benchmarks & Leaderboards
+    group: core-ai
+    total: 26
+    subcategories:
+      - name: Software Engineering Benchmarks
+        count: 13
+      - name: Agent & General Benchmarks
+        count: 12
+      - name: Model Rankings
+        count: 1
+  - name: Inference & Compute
+    group: infrastructure
+    total: 38
+    subcategories:
+      - name: Cloud & GPU Providers
+        count: 15
+      - name: Inference Optimization
+        count: 6
+      - name: Training Infrastructure
+        count: 5
+      - name: Compute & Hardware
+        count: 6
+      - name: Local & Edge Inference
+        count: 6
+  - name: LLM Gateways & APIs
+    group: infrastructure
+    total: 9
+    subcategories:
+      - name: Hosted Model APIs
+        count: 5
+      - name: AI Gateway & Proxy
+        count: 4
+  - name: Vector & Search
+    group: infrastructure
+    total: 12
+    subcategories:
+      - name: Vector Databases
+        count: 6
+      - name: Semantic Search
+        count: 3
+      - name: Similarity & Indexing
+        count: 3
+  - name: Data Engineering
+    group: infrastructure
+    total: 24
+    subcategories:
+      - name: Data Processing
+        count: 7
+      - name: Ingestion & Integration
+        count: 5
+      - name: Data Lakehouse
+        count: 3
+      - name: Data Catalog
+        count: 5
+      - name: Synthetic Data
+        count: 4
+  - name: MLOps & Training
+    group: engineering
+    total: 44
+    subcategories:
+      - name: Experiment Tracking & CI/CD
+        count: 8
+      - name: Fine-tuning & RLHF
+        count: 4
+      - name: Pipeline Orchestration
+        count: 4
+      - name: Model Registry & Feature Store
+        count: 6
+      - name: ML Frameworks
+        count: 22
+  - name: Observability & Evals
+    group: engineering
+    total: 28
+    subcategories:
+      - name: LLM Observability
+        count: 5
+      - name: Model Monitoring
+        count: 4
+      - name: LLM Evaluation & Benchmarking
+        count: 9
+      - name: Explainability & Alignment
+        count: 6
+      - name: Prompt Management
+        count: 4
+  - name: Agent Frameworks
+    group: engineering
+    total: 33
+    subcategories:
+      - name: Orchestration SDKs
+        count: 21
+      - name: Multi-Agent Frameworks
+        count: 9
+      - name: Agent Protocols
+        count: 1
+      - name: LLM Application Frameworks
+        count: 2
+  - name: AI Protocols
+    group: engineering
+    total: 4
+    subcategories:
+      - name: MCP Servers & Registries
+        count: 1
+      - name: Agent Communication Protocols
+        count: 3
+  - name: RAG & Memory
+    group: engineering
+    total: 17
+    subcategories:
+      - name: LLM Frameworks & RAG
+        count: 6
+      - name: Retrieval & Reranking
+        count: 5
+      - name: Document Parsing
+        count: 5
+      - name: Memory Layer
+        count: 1
+  - name: Coding Agents
+    group: products
+    total: 55
+    subcategories:
+      - name: Commercial Agents
+        count: 18
+      - name: Code-Writing Agents
+        count: 18
+      - name: AI-Powered IDEs
+        count: 12
+      - name: AI Extensions & Platforms
+        count: 7
+  - name: AI App Builders
+    group: products
+    total: 40
+    subcategories:
+      - name: Chat & Browser Builders
+        count: 21
+      - name: Mobile App Builders
+        count: 7
+      - name: Open Source Builders
+        count: 8
+      - name: Visual Flow Editors
+        count: 4
+  - name: Dev Tools
+    group: products
+    total: 7
+    subcategories:
+      - name: Code Review & Quality
+        count: 1
+      - name: Developer Integrations
+        count: 6
+  - name: Generative Content
+    group: products
+    total: 15
+    subcategories:
+      - name: AI Copywriting & Marketing
+        count: 4
+      - name: Long-form Writing & Editorial
+        count: 4
+      - name: Email & Communication Gen
+        count: 3
+      - name: Presentation & Slide Gen
+        count: 4
+  - name: Visual Generation
+    group: products
+    total: 20
+    subcategories:
+      - name: Text-to-Image
+        count: 5
+      - name: Image Editing & Inpainting
+        count: 3
+      - name: Text-to-Video
+        count: 5
+      - name: Video-to-Video & Stylization
+        count: 3
+      - name: Avatar & Lip-sync Video
+        count: 4
+  - name: Audio & Music Gen
+    group: products
+    total: 13
+    subcategories:
+      - name: Text-to-Speech (High Fidelity)
+        count: 4
+      - name: Voice Cloning & Dubbing
+        count: 3
+      - name: Music Composition
+        count: 4
+      - name: Sound Effects (SFX) Gen
+        count: 2
+  - name: Browser & Computer Use
+    group: products
+    total: 4
+    subcategories:
+      - name: Browser Automation
+        count: 2
+      - name: Computer Use (OS-Level)
+        count: 1
+      - name: Web Scraping & Crawling
+        count: 1
+  - name: Workflow Automation
+    group: products
+    total: 39
+    subcategories:
+      - name: Visual Workflow Builders
+        count: 19
+      - name: Event-Driven Automation
+        count: 11
+      - name: Task Schedulers
+        count: 9
+  - name: Knowledge Discovery
+    group: products
+    total: 4
+    subcategories:
+      - name: AI Search Engines
+        count: 4
+  - name: Vertical AI
+    group: products
+    total: 13
+    subcategories:
+      - name: Healthcare
+        count: 4
+      - name: Legal
+        count: 3
+      - name: Finance
+        count: 3
+      - name: Education
+        count: 3
+  - name: Personal Assistants
+    group: products
+    total: 30
+    subcategories:
+      - name: General Assistants
+        count: 16
+      - name: OpenClaw Ecosystem
+        count: 14
+  - name: AI Security & Safety
+    group: governance
+    total: 22
+    subcategories:
+      - name: Offensive Testing & Red Teaming
+        count: 7
+      - name: Guardrails & Defense
+        count: 6
+      - name: Privacy & Compliance
+        count: 7
+      - name: Interpretability & Authenticity
+        count: 2
+  - name: Agent Skills
+    group: ecosystem
+    total: 23
+    subcategories:
+      - name: Document & Office
+        count: 5
+      - name: Design & Creative
+        count: 6
+      - name: Dev & Engineering
+        count: 6
+      - name: Marketing & SEO
+        count: 3
+      - name: Knowledge & Learning
+        count: 3

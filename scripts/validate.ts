@@ -17,12 +17,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // ── Constants mirrored from category-row.tsx ──────────────────────────────────
 
 const VALID_GROUPS = new Set([
-  "labs",
-  "models",
+  "core-ai",
   "infrastructure",
-  "protocols",
-  "security",
-  "product",
+  "engineering",
+  "products",
+  "governance",
   "ecosystem",
 ]);
 
@@ -35,12 +34,17 @@ const VALID_ICONS = new Set([
   "Code",
   "Cube",
   "Database",
+  "Desktop",
+  "Eye",
   "GitBranch",
   "Graph",
   "HardDrives",
   "Image",
+  "ImageSquare",
   "Intersect",
   "MagnifyingGlass",
+  "MusicNotes",
+  "PencilLine",
   "Plug",
   "Robot",
   "ShieldCheck",
@@ -106,6 +110,10 @@ for (const { file, data } of categories) {
 
   for (const sub of data.subcategories ?? []) {
     if (!sub.name) err(`${file}: subcategory missing name`);
+    if (sub.row == null)
+      err(`${file} › ${sub.name}: missing required field "row"`);
+    else if (!Number.isInteger(sub.row) || sub.row < 0)
+      err(`${file} › ${sub.name}: "row" must be a non-negative integer`);
 
     for (const item of sub.items ?? []) {
       if (!item.name) err(`${file} › ${sub.name}: item missing name`);
@@ -357,6 +365,167 @@ for (const { file, data } of categories) {
 }
 
 if (urlIssues === 0) ok("URL field formats valid");
+
+// ── 12. categories.yaml consistency ──────────────────────────────────────────
+
+section("12. categories.yaml consistency");
+
+const CATEGORIES_YAML = join(ROOT, "src", "data", "categories.yaml");
+
+if (existsSync(CATEGORIES_YAML)) {
+  try {
+    const catYaml = parse(readFileSync(CATEGORIES_YAML, "utf8")) as {
+      categories: Array<{
+        id: string;
+        name: string;
+        group: string;
+        subcategories: Array<{ name: string }>;
+      }>;
+    };
+    const yamlNames = new Set(catYaml.categories.map((c) => c.name));
+    const realNames = new Set(categories.map((c) => c.data.name));
+
+    for (const name of yamlNames) {
+      if (!realNames.has(name)) {
+        err(`categories.yaml lists "${name}" but no matching YAML file exists`);
+      }
+    }
+    for (const name of realNames) {
+      if (!yamlNames.has(name)) {
+        err(
+          `Category "${name}" exists as YAML file but missing from categories.yaml`,
+        );
+      }
+    }
+
+    for (const entry of catYaml.categories) {
+      const match = categories.find((c) => c.data.name === entry.name);
+      if (match && match.data.group !== entry.group) {
+        err(
+          `categories.yaml "${entry.name}" group="${entry.group}" but YAML file has group="${match.data.group}"`,
+        );
+      }
+    }
+
+    for (const entry of catYaml.categories) {
+      const match = categories.find((c) => c.data.name === entry.name);
+      if (!match || !entry.subcategories) continue;
+      const yamlSubs = entry.subcategories.map((s) => s.name);
+      const realSubs = (match.data.subcategories ?? []).map((s) => s.name);
+      for (const sub of yamlSubs) {
+        if (!realSubs.includes(sub)) {
+          warn(
+            `categories.yaml › "${entry.name}" lists subcategory "${sub}" not in YAML file`,
+          );
+        }
+      }
+      for (const sub of realSubs) {
+        if (!yamlSubs.includes(sub)) {
+          warn(
+            `YAML "${entry.name}" has subcategory "${sub}" not in categories.yaml`,
+          );
+        }
+      }
+    }
+
+    ok("categories.yaml consistency check complete");
+  } catch (e) {
+    err(`Failed to parse categories.yaml: ${e}`);
+  }
+} else {
+  warn("src/data/categories.yaml not found — skipping");
+}
+
+// ── 13. count.yaml consistency ──────────────────────────────────────────────
+
+section("13. count.yaml consistency");
+
+const COUNT_YAML = join(ROOT, "src", "data", "count.yaml");
+
+if (existsSync(COUNT_YAML)) {
+  try {
+    const countData = parse(readFileSync(COUNT_YAML, "utf8")) as {
+      total_items: number;
+      total_categories: number;
+      total_subcategories: number;
+      categories: Array<{
+        name: string;
+        total: number;
+        subcategories: Array<{ name: string; count: number }>;
+      }>;
+    };
+
+    const realTotalItems = categories.reduce(
+      (sum, { data }) =>
+        sum +
+        (data.subcategories ?? []).reduce(
+          (s, sub) => s + (sub.items ?? []).length,
+          0,
+        ),
+      0,
+    );
+    const realTotalCats = categories.length;
+    const realTotalSubs = categories.reduce(
+      (sum, { data }) => sum + (data.subcategories ?? []).length,
+      0,
+    );
+
+    if (countData.total_items !== realTotalItems) {
+      err(
+        `count.yaml total_items=${countData.total_items} but actual=${realTotalItems}`,
+      );
+    }
+    if (countData.total_categories !== realTotalCats) {
+      err(
+        `count.yaml total_categories=${countData.total_categories} but actual=${realTotalCats}`,
+      );
+    }
+    if (countData.total_subcategories !== realTotalSubs) {
+      err(
+        `count.yaml total_subcategories=${countData.total_subcategories} but actual=${realTotalSubs}`,
+      );
+    }
+
+    for (const catCount of countData.categories) {
+      const match = categories.find((c) => c.data.name === catCount.name);
+      if (!match) {
+        err(`count.yaml lists "${catCount.name}" but no YAML file exists`);
+        continue;
+      }
+      const realTotal = (match.data.subcategories ?? []).reduce(
+        (s, sub) => s + (sub.items ?? []).length,
+        0,
+      );
+      if (catCount.total !== realTotal) {
+        err(
+          `count.yaml "${catCount.name}" total=${catCount.total} but actual=${realTotal}`,
+        );
+      }
+      for (const subCount of catCount.subcategories ?? []) {
+        const realSub = (match.data.subcategories ?? []).find(
+          (s) => s.name === subCount.name,
+        );
+        if (!realSub) {
+          err(
+            `count.yaml "${catCount.name}" › "${subCount.name}" not in YAML file`,
+          );
+          continue;
+        }
+        if (subCount.count !== (realSub.items ?? []).length) {
+          err(
+            `count.yaml "${catCount.name}" › "${subCount.name}" count=${subCount.count} actual=${(realSub.items ?? []).length}`,
+          );
+        }
+      }
+    }
+
+    ok("count.yaml consistency check complete");
+  } catch (e) {
+    err(`Failed to parse count.yaml: ${e}`);
+  }
+} else {
+  warn("src/data/count.yaml not found — skipping");
+}
 
 // ── Summary ───────────────────────────────────────────────────────────────────
 

@@ -1,9 +1,10 @@
 name: Coding Agents
-group: product
-color: "oklch(0.62 0.20 160)"
+group: products
+color: oklch(0.62 0.20 0)
 icon: Code
 subcategories:
   - name: Commercial Agents
+    row: 0
     items:
       - name: Amazon Q Developer
         homepage_url: https://aws.amazon.com/q/developer/
@@ -30,6 +31,11 @@ subcategories:
         homepage_url: https://cto.new
         logo: cto-new.webp
         description: "Completely free AI code agent"
+      - name: Devin
+        homepage_url: https://devin.ai
+        logo: devin.webp
+        description: "Fully autonomous AI software engineer by Cognition"
+        tags: [agents, coding, autonomous]
       - name: Factory
         homepage_url: https://www.factory.ai/
         logo: factory.webp
@@ -78,11 +84,22 @@ subcategories:
         logo: slate.webp
         description: "Purpose-built agent for long and complex coding tasks"
   - name: Code-Writing Agents
+    row: 0
     items:
+      - name: Aider
+        homepage_url: https://aider.chat
+        repo_url: https://github.com/paul-gauthier/aider
+        description: "AI pair programming in your terminal"
+        tags: [agents, coding, cli, oss]
       - name: Charm
         homepage_url: https://charm.land/
         logo: charm.webp
         description: "A charming terminal coding agent built on Charm's TUI framework"
+      - name: Claude Code
+        homepage_url: https://claude.ai/code
+        logo: anthropic.webp
+        description: "Anthropic's agentic coding tool for terminal use"
+        tags: [agents, coding, cli]
       - name: Cline
         homepage_url: https://cline.bot/
         repo_url: https://github.com/cline/cline
@@ -122,6 +139,12 @@ subcategories:
         repo_url: https://github.com/opencode-ai/opencode
         logo: gh-opencode-ai.png
         description: "Open-source terminal coding assistant with multi-provider support and a TUI"
+      - name: OpenHands
+        homepage_url: https://www.all-hands.dev
+        repo_url: https://github.com/All-Hands-AI/OpenHands
+        logo: openhands.webp
+        description: "Open-source platform for software development agents"
+        tags: [agents, coding, autonomous, oss]
       - name: potpie
         homepage_url: https://potpie.ai
         repo_url: https://github.com/potpie-ai/potpie
@@ -147,3 +170,102 @@ subcategories:
         repo_url: https://github.com/steel-dev/steel-browser
         logo: steel-browser.webp
         description: "Open-source browser sandbox and automation infrastructure for AI agents"
+      - name: SWE-agent
+        homepage_url: https://swe-agent.com
+        repo_url: https://github.com/princeton-nlp/SWE-agent
+        logo: swe-agent.webp
+        description: "Autonomous GitHub issue-fixing agent by Princeton"
+        tags: [agents, coding, autonomous, oss]
+  - name: AI-Powered IDEs
+    row: 0
+    items:
+      - name: Atom
+        homepage_url: https://atom-editor.cc/
+        logo: atom.webp
+        description: "Atom community fork — hackable Electron text editor with AI plugin support"
+      - name: Cursor
+        homepage_url: https://cursor.sh
+        logo: cursor.webp
+        description: "AI-native code editor"
+        tags: [coding, ide]
+      - name: Eclipse
+        homepage_url: https://www.eclipse.org/eclipseide/
+        logo: eclipse.webp
+        description: "Open-source IDE supporting Java, C/C++, PHP, and more with a rich plugin system"
+      - name: Google Antigravity
+        homepage_url: https://antigravity.google/
+        logo: google-antigravity.webp
+        description: "Google's agentic development platform evolving the IDE into the agent-first era"
+      - name: IntelliJ IDEA
+        homepage_url: https://www.jetbrains.com/idea/
+        logo: intellij-idea.webp
+        description: "JetBrains' flagship IDE with deep language support and AI assistance via Junie"
+      - name: Kiro
+        homepage_url: https://kiro.dev/
+        logo: kiro.webp
+        description: "Amazon's AI IDE with spec-driven development — agents write and execute specs"
+      - name: PyCharm
+        homepage_url: https://www.jetbrains.com/pycharm/
+        logo: pycharm.webp
+        description: "JetBrains' Python IDE with smart code assistance and AI-powered completions"
+      - name: Visual Studio Code
+        homepage_url: https://code.visualstudio.com/
+        logo: visual-studio-code.webp
+        description: "Microsoft's free open-source code editor with AI assistance via GitHub Copilot"
+      - name: Warp
+        homepage_url: https://www.warp.dev/
+        repo_url: https://github.com/warpdotdev/Warp
+        logo: warp.webp
+        description: "AI-native terminal with inline AI, agentic workflows, and team collaboration"
+      - name: WebStorm
+        homepage_url: https://www.jetbrains.com/webstorm/
+        logo: webstorm.webp
+        description: "JetBrains' JavaScript/TypeScript IDE with intelligent coding assistance"
+      - name: Windsurf
+        homepage_url: https://codeium.com/windsurf
+        logo: windsurf.webp
+        description: "Agentic IDE by Codeium with deep codebase awareness"
+        tags: [coding, ide, agentic]
+      - name: Xcode
+        homepage_url: https://developer.apple.com/xcode/
+        logo: xcode.webp
+        description: "Apple's IDE for macOS, iOS, watchOS, and tvOS app development"
+  - name: AI Extensions & Platforms
+    row: 0
+    items:
+      - name: Augment Code
+        homepage_url: https://www.augmentcode.com/
+        repo_url: https://github.com/augmentcode/auggie
+        logo: augment-code.webp
+        description: "Developer AI platform with deep codebase understanding and persistent context"
+      - name: Codeium
+        homepage_url: https://codeium.com
+        logo: codeium.webp
+        description: "Free AI code acceleration toolkit"
+        tags: [coding, ide, free]
+      - name: Continue
+        homepage_url: https://continue.dev
+        repo_url: https://github.com/continuedev/continue
+        logo: continue.webp
+        description: "Open-source AI code assistant for VS Code and JetBrains"
+        tags: [coding, ide, oss]
+      - name: GitHub Copilot
+        homepage_url: https://github.com/features/copilot
+        logo: gh-features.png
+        description: "AI pair programmer for code completion"
+        tags: [coding, ide, copilot]
+      - name: Tabnine
+        homepage_url: https://tabnine.com
+        logo: tabnine.webp
+        description: "AI code completion assistant"
+        tags: [coding, ide]
+      - name: Trae
+        homepage_url: https://www.trae.ai/
+        repo_url: https://github.com/Trae-AI/TRAE
+        logo: trae.webp
+        description: "ByteDance's AI IDE with Builder mode, MCP support, and free frontier models"
+      - name: Zed
+        homepage_url: https://zed.dev/
+        repo_url: https://github.com/zed-industries/zed
+        logo: zed.webp
+        description: "High-performance Rust code editor with native AI chat and multi-model support"

@@ -621,6 +621,80 @@ tutor:
   label: Tutor
   color: "oklch(0.65 0.12 160)"
 
+# --- Generative Content ---
+copywriting:
+  label: Copywriting
+  color: "oklch(0.62 0.18 340)"
+writing:
+  label: Writing
+  color: "oklch(0.62 0.16 340)"
+fiction:
+  label: Fiction
+  color: "oklch(0.62 0.14 340)"
+editorial:
+  label: Editorial
+  color: "oklch(0.62 0.14 340)"
+productivity:
+  label: Productivity
+  color: "oklch(0.62 0.14 340)"
+email:
+  label: Email
+  color: "oklch(0.62 0.14 340)"
+sales:
+  label: Sales
+  color: "oklch(0.62 0.12 340)"
+presentations:
+  label: Presentations
+  color: "oklch(0.62 0.16 340)"
+storytelling:
+  label: Storytelling
+  color: "oklch(0.62 0.14 340)"
+google-slides:
+  label: Google Slides
+  color: "oklch(0.62 0.12 340)"
+text-rendering:
+  label: Text Rendering
+  color: "oklch(0.62 0.14 320)"
+image-editing:
+  label: Image Editing
+  color: "oklch(0.62 0.16 320)"
+inpainting:
+  label: Inpainting
+  color: "oklch(0.62 0.14 320)"
+real-time:
+  label: Real-Time
+  color: "oklch(0.62 0.14 320)"
+video-editing:
+  label: Video Editing
+  color: "oklch(0.62 0.16 320)"
+stylization:
+  label: Stylization
+  color: "oklch(0.62 0.14 320)"
+upscaling:
+  label: Upscaling
+  color: "oklch(0.62 0.12 320)"
+animation:
+  label: Animation
+  color: "oklch(0.62 0.14 320)"
+avatar:
+  label: Avatar
+  color: "oklch(0.62 0.16 320)"
+lip-sync:
+  label: Lip-Sync
+  color: "oklch(0.62 0.14 320)"
+voice-cloning:
+  label: Voice Cloning
+  color: "oklch(0.62 0.16 300)"
+editing:
+  label: Editing
+  color: "oklch(0.62 0.14 300)"
+composition:
+  label: Composition
+  color: "oklch(0.62 0.14 300)"
+sfx:
+  label: SFX
+  color: "oklch(0.62 0.14 300)"
+
 # --- Misc ---
 ai:
   label: AI

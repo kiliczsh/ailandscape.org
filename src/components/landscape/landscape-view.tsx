@@ -143,6 +143,10 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     [data],
   );
 
+  // Collapse all state — null = no override, true/false = force
+  const [forceCollapse, setForceCollapse] = useState<boolean | null>(null);
+  const allCollapsed = forceCollapse === true;
+
   // Tier list modal state
   const [tierListData, setTierListData] = useState<{
     categoryName: string;
@@ -290,8 +294,16 @@ export function LandscapeView({ data }: LandscapeViewProps) {
               trackEvent("group_filter_applied", { group: g });
             setGroupFilter(g);
           }}
+          allCollapsed={allCollapsed}
           onViewChange={setViewMode}
           onTagClear={() => setActiveTag("")}
+          onCollapseToggle={() =>
+            setForceCollapse((prev) => {
+              const next = prev !== true;
+              if (next) window.scrollTo({ top: 0, behavior: "smooth" });
+              return next;
+            })
+          }
         />
         <output aria-atomic="true" className="sr-only">
           {visibleItems === 0
@@ -331,6 +343,7 @@ export function LandscapeView({ data }: LandscapeViewProps) {
                     category={category}
                     viewMode={viewMode}
                     isFirstCategory={index === 0}
+                    forceCollapse={forceCollapse}
                     totalItemCount={categoryTotalCounts[category.name] ?? 0}
                     filteredItemCount={
                       categoryFilteredCounts[category.name] ?? 0

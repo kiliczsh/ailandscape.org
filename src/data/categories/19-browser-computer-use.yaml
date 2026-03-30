@@ -1,0 +1,36 @@
+name: Browser & Computer Use
+group: products
+color: oklch(0.62 0.20 29)
+icon: Desktop
+subcategories:
+  - name: Browser Automation
+    row: 0
+    items:
+      - name: Browser Use
+        homepage_url: https://browser-use.com
+        repo_url: https://github.com/browser-use/browser-use
+        logo: browser-use.webp
+        description: "Enable AI agents to control web browsers"
+        tags: [agents, browser, automation, oss]
+      - name: Playwright Agent
+        homepage_url: https://playwright.dev
+        repo_url: https://github.com/microsoft/playwright
+        logo: playwright.webp
+        description: "Browser automation framework used by AI agents"
+        tags: [agents, browser, automation, oss]
+  - name: Computer Use (OS-Level)
+    row: 0
+    items:
+      - name: Computer Use (Anthropic)
+        homepage_url: https://www.anthropic.com/news/3-5-models-and-computer-use
+        logo: anthropic.webp
+        description: "Claude's ability to control computers like a human"
+        tags: [agents, computer-use, automation]
+  - name: Web Scraping & Crawling
+    row: 0
+    items:
+      - name: Firecrawl
+        homepage_url: https://firecrawl.dev/
+        repo_url: https://github.com/mendableai/firecrawl
+        logo: firecrawl.webp
+        description: "Turn any website into clean, LLM-ready markdown for RAG pipelines and agents"

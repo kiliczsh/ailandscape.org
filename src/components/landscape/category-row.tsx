@@ -10,13 +10,18 @@ import {
   Code,
   Cube,
   Database,
+  Desktop,
+  Eye,
   GitBranch,
   Graph,
   HardDrives,
   Image,
+  ImageSquare,
   Intersect,
   MagnifyingGlass,
   Medal,
+  MusicNotes,
+  PencilLine,
   Plug,
   Robot,
   Shapes,
@@ -51,12 +56,17 @@ const ICONS: Record<string, PhosphorIcon> = {
   Code,
   Cube,
   Database,
+  Desktop,
+  Eye,
   GitBranch,
   Graph,
   HardDrives,
   Image,
+  ImageSquare,
   Intersect,
   MagnifyingGlass,
+  MusicNotes,
+  PencilLine,
   Plug,
   Robot,
   ShieldCheck,
@@ -115,6 +125,7 @@ interface CategoryRowProps {
   totalItemCount: number;
   filteredItemCount: number;
   isFirstCategory?: boolean;
+  forceCollapse?: boolean | null;
 }
 
 export function CategoryRow({
@@ -124,8 +135,13 @@ export function CategoryRow({
   style,
   totalItemCount,
   filteredItemCount,
+  forceCollapse = null,
 }: CategoryRowProps) {
   const [collapsed, setCollapsed] = useState(false);
+
+  useEffect(() => {
+    if (forceCollapse !== null) setCollapsed(forceCollapse);
+  }, [forceCollapse]);
   const expandButtonRef = useRef<HTMLButtonElement>(null);
   const baseColor = category.color ?? DEFAULT_COLOR;
   const slug = category.name
@@ -161,7 +177,7 @@ export function CategoryRow({
       e.stopPropagation();
       onTierListOpen(
         category.name,
-        { name: category.name, items: allItems },
+        { name: category.name, row: 0, items: allItems },
         baseColor,
       );
     },
@@ -170,7 +186,7 @@ export function CategoryRow({
 
   useEffect(() => {
     if (collapsed) {
-      expandButtonRef.current?.focus();
+      expandButtonRef.current?.focus({ preventScroll: true });
     }
   }, [collapsed]);
 
@@ -311,18 +327,40 @@ export function CategoryRow({
                   : `${totalItemCount}`}
               </span>
             </button>
-            <div className="flex flex-1 flex-wrap">
-              {category.subcategories.map((sub, subIndex) => (
-                <SubcategorySection
-                  key={`${category.name}-${sub.name}`}
-                  subcategory={sub}
-                  categoryName={category.name}
-                  subheaderColor={baseColor}
-                  categoryColor={baseColor}
-                  viewMode={viewMode}
-                  isFirstSubcategory={isFirstCategory && subIndex === 0}
-                />
-              ))}
+            <div className="flex flex-1 flex-col">
+              {(() => {
+                const rows = new Map<number, typeof category.subcategories>();
+                for (const sub of category.subcategories) {
+                  const r = sub.row ?? 0;
+                  if (!rows.has(r)) rows.set(r, []);
+                  rows.get(r)?.push(sub);
+                }
+                const sortedRows = [...rows.entries()].sort(
+                  ([a], [b]) => a - b,
+                );
+                let globalIndex = 0;
+                return sortedRows.map(([rowNum, subs]) => (
+                  <div
+                    key={rowNum}
+                    className="flex flex-1 flex-wrap border-b border-border last:border-b-0"
+                  >
+                    {subs.map((sub) => {
+                      const idx = globalIndex++;
+                      return (
+                        <SubcategorySection
+                          key={`${category.name}-${rowNum}-${sub.name}`}
+                          subcategory={sub}
+                          categoryName={category.name}
+                          subheaderColor={baseColor}
+                          categoryColor={baseColor}
+                          viewMode={viewMode}
+                          isFirstSubcategory={isFirstCategory && idx === 0}
+                        />
+                      );
+                    })}
+                  </div>
+                ));
+              })()}
             </div>
           </div>
         </div>

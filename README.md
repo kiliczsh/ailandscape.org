@@ -50,7 +50,7 @@ Each category is a YAML file in `src/data/categories/`. Files are loaded alphabe
 
 ```yaml
 name: Frontier Labs
-group: labs                        # labs | models | infrastructure | protocols | security | product
+group: core-ai                     # core-ai | infrastructure | engineering | products | governance | ecosystem
 color: "oklch(0.62 0.22 230)"      # OKLCH color token for category accent
 icon: Buildings                    # Phosphor icon name
 subcategories:

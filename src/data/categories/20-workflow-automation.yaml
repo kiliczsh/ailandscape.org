@@ -1,9 +1,10 @@
-name: Agent Orchestrators
-group: product
-color: "oklch(0.62 0.20 130)"
+name: Workflow Automation
+group: products
+color: oklch(0.62 0.20 86)
 icon: GitBranch
 subcategories:
-  - name: Multi-Agent Runners
+  - name: Visual Workflow Builders
+    row: 0
     items:
       - name: 1code
         homepage_url: https://1code.dev
@@ -99,7 +100,8 @@ subcategories:
         repo_url: https://github.com/rayzhudev/vibecraft
         logo: gh-rayzhudev.png
         description: "RTS-style workspace for managing AI coding agents"
-  - name: Terminal & CLI
+  - name: Event-Driven Automation
+    row: 0
     items:
       - name: agent-deck
         homepage_url: https://discord.gg/e4xSs6NBN8
@@ -155,3 +157,48 @@ subcategories:
         repo_url: https://github.com/superset-sh/superset
         logo: superset.webp
         description: "A terminal environment built for coding agents"
+  - name: Task Schedulers
+    row: 0
+    items:
+      - name: Aperant
+        homepage_url: https://aperant.com
+        repo_url: https://github.com/AndyMik90/Aperant
+        description: "Autonomous multi-session AI coding"
+      - name: nullclaw
+        homepage_url: https://nullclaw.io
+        repo_url: https://github.com/nullclaw/nullclaw
+        description: "Fastest, smallest, fully autonomous AI assistant infrastructure"
+      - name: ralph-claude-code
+        homepage_url: https://github.com/frankbria/ralph-claude-code
+        repo_url: https://github.com/frankbria/ralph-claude-code
+        logo: gh-frankbria.png
+        description: "Autonomous AI development loop for Claude Code with intelligent exit detection"
+      - name: ralph-orchestrator
+        homepage_url: https://github.com/mikeyobrien/ralph-orchestrator
+        repo_url: https://github.com/mikeyobrien/ralph-orchestrator
+        logo: gh-mikeyobrien.png
+        description: "Hat-based orchestration that keeps agents in a loop until the task is done"
+      - name: ralph-tui
+        homepage_url: https://ralph-tui.com
+        repo_url: https://github.com/subsy/ralph-tui
+        logo: ralph-tui.webp
+        description: "Orchestrate AI coding agents to work through task lists autonomously"
+      - name: ralphy
+        homepage_url: https://ralphy.goshen.fyi
+        repo_url: https://github.com/michaelshimeles/ralphy
+        description: "Runs AI agents on tasks until done"
+      - name: symphony
+        homepage_url: https://github.com/openai/symphony
+        repo_url: https://github.com/openai/symphony
+        logo: gh-openai.png
+        description: "Turns project work into isolated, autonomous implementation runs"
+      - name: wreckit
+        homepage_url: https://npmjs.com/package/wreckit
+        repo_url: https://github.com/mikehostetler/wreckit
+        logo: wreckit.webp
+        description: "Run the Ralph Wiggum Loop over your roadmap"
+      - name: zeroclaw
+        homepage_url: https://www.zeroclawlabs.ai/
+        repo_url: https://github.com/zeroclaw-labs/zeroclaw
+        logo: zeroclaw.webp
+        description: "Fast, small, fully autonomous AI assistant infrastructure"
