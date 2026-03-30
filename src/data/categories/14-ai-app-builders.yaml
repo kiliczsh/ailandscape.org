@@ -93,7 +93,7 @@ subcategories:
         logo: vybe.webp
         description: "Build internal apps 10x faster with AI"
   - name: Mobile App Builders
-    row: 0
+    row: 1
     items:
       - name: bitrig
         homepage_url: https://www.bitrig.app/
@@ -124,7 +124,7 @@ subcategories:
         logo: vibecode.webp
         description: "Create native apps in seconds with AI"
   - name: Open Source Builders
-    row: 0
+    row: 1
     items:
       - name: Adorable
         homepage_url: https://github.com/freestyle-sh/Adorable
@@ -164,7 +164,7 @@ subcategories:
         logo: tooljet.webp
         description: "Open-source low-code platform for internal tools with 50+ data source connectors"
   - name: Visual Flow Editors
-    row: 0
+    row: 1
     items:
       - name: AgentPilot
         homepage_url: https://agentpilot.ai

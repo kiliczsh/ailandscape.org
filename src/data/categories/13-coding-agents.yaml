@@ -84,7 +84,7 @@ subcategories:
         logo: slate.webp
         description: "Purpose-built agent for long and complex coding tasks"
   - name: Code-Writing Agents
-    row: 0
+    row: 1
     items:
       - name: Aider
         homepage_url: https://aider.chat
@@ -177,7 +177,7 @@ subcategories:
         description: "Autonomous GitHub issue-fixing agent by Princeton"
         tags: [agents, coding, autonomous, oss]
   - name: AI-Powered IDEs
-    row: 0
+    row: 1
     items:
       - name: Atom
         homepage_url: https://atom-editor.cc/
@@ -231,7 +231,7 @@ subcategories:
         logo: xcode.webp
         description: "Apple's IDE for macOS, iOS, watchOS, and tvOS app development"
   - name: AI Extensions & Platforms
-    row: 0
+    row: 1
     items:
       - name: Augment Code
         homepage_url: https://www.augmentcode.com/

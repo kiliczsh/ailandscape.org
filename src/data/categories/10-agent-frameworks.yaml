@@ -111,7 +111,7 @@ subcategories:
         logo: questflow.webp
         description: Decentralized multi-agent orchestration with a marketplace for deploying agents
   - name: Multi-Agent Frameworks
-    row: 0
+    row: 1
     items:
       - name: AutoGen
         homepage_url: https://microsoft.github.io/autogen
@@ -168,7 +168,7 @@ subcategories:
         logo: metagpt.webp
         description: Assigns roles to LLMs to form a collaborative multi-agent software entity
   - name: Agent Protocols
-    row: 0
+    row: 1
     items:
       - name: AP2
         homepage_url: https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol
@@ -176,7 +176,7 @@ subcategories:
         logo: ap2.webp
         description: Google Cloud's open-source Agent Payments Protocol for AI agent transactions
   - name: LLM Application Frameworks
-    row: 0
+    row: 1
     items:
       - name: Dify
         homepage_url: https://dify.ai
