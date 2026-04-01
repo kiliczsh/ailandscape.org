@@ -22,6 +22,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ailandscape.org"),
+  verification: {
+    google: "kkgUYOfGT0s-Qf25fo18UEK-a_zkjPUy3ISJc8aTuSw",
+  },
   title: "AI Landscape",
   description:
     "A comprehensive landscape of AI tools, frameworks, and services — browse by category, filter by Infrastructure or Product group, and discover the ecosystem.",
