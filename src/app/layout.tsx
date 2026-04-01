@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ailandscape.org"),
   verification: {
     google: "kkgUYOfGT0s-Qf25fo18UEK-a_zkjPUy3ISJc8aTuSw",
+    other: {
+      "google-adsense-account": "ca-pub-8397851036658136",
+    },
   },
   title: "AI Landscape — The Complete Map of the AI Ecosystem",
   description:
@@ -83,6 +86,11 @@ export default function RootLayout({
             },
           }),
         }}
+      />
+      <Script
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8397851036658136"
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
       />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-8CGGHC6P4F"
