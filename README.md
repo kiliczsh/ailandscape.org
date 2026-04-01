@@ -2,7 +2,7 @@
 
 A comprehensive, interactive map of the AI tools ecosystem. Browse tools across models, infrastructure, protocols, security, and product categories — inspired by the [CNCF Landscape](https://landscape.cncf.io).
 
-Live at [ailandscape.org](https://ailandscape.org).
+Live at [ailandscape.org](https://ailandscape.org/?utm_source=github&utm_medium=readme&utm_campaign=organic).
 
 ## Features
 
