@@ -8,7 +8,6 @@ subcategories:
     items:
       - name: Anyword
         homepage_url: https://anyword.com
-        logo: anyword.webp
         description: AI copywriting platform with predictive performance scoring for marketing teams
         tags:
           - copywriting
@@ -16,7 +15,6 @@ subcategories:
           - proprietary
       - name: Copy.ai
         homepage_url: https://www.copy.ai
-        logo: copy-ai.webp
         description: AI-powered marketing copy and sales content generation platform
         tags:
           - copywriting
@@ -24,7 +22,6 @@ subcategories:
           - proprietary
       - name: Jasper
         homepage_url: https://www.jasper.ai
-        logo: jasper.webp
         description: AI marketing copilot for brand-consistent content at scale
         tags:
           - copywriting
@@ -32,7 +29,6 @@ subcategories:
           - proprietary
       - name: Writesonic
         homepage_url: https://writesonic.com
-        logo: writesonic.webp
         description: AI writing assistant for SEO-optimized blog posts, ads, and marketing copy
         tags:
           - copywriting
@@ -43,7 +39,6 @@ subcategories:
     items:
       - name: Lex
         homepage_url: https://lex.page
-        logo: lex.webp
         description: AI-powered writing editor designed for long-form articles and essays
         tags:
           - writing
@@ -51,7 +46,6 @@ subcategories:
           - proprietary
       - name: Notion AI
         homepage_url: https://www.notion.so/product/ai
-        logo: notion-ai.webp
         description: AI writing and knowledge assistant built into the Notion workspace
         tags:
           - writing
@@ -59,7 +53,6 @@ subcategories:
           - proprietary
       - name: Sudowrite
         homepage_url: https://www.sudowrite.com
-        logo: sudowrite.webp
         description: AI writing partner for fiction authors — brainstorm, expand, and rewrite stories
         tags:
           - writing
@@ -67,7 +60,6 @@ subcategories:
           - proprietary
       - name: Writer
         homepage_url: https://writer.com
-        logo: writer.webp
         description: Enterprise AI writing platform with brand voice and compliance controls
         tags:
           - writing
@@ -78,7 +70,6 @@ subcategories:
     items:
       - name: Flowrite
         homepage_url: https://www.flowrite.com
-        logo: flowrite.webp
         description: Turn brief instructions into ready-to-send emails and messages
         tags:
           - email
@@ -86,7 +77,6 @@ subcategories:
           - proprietary
       - name: Lavender
         homepage_url: https://www.lavender.ai
-        logo: lavender.webp
         description: AI email coaching and writing assistant for sales teams
         tags:
           - email
@@ -94,7 +84,6 @@ subcategories:
           - proprietary
       - name: Superhuman AI
         homepage_url: https://superhuman.com
-        logo: superhuman.webp
         description: AI-powered email client with instant reply drafting and summarization
         tags:
           - email
@@ -105,7 +94,6 @@ subcategories:
     items:
       - name: Beautiful.ai
         homepage_url: https://www.beautiful.ai
-        logo: beautiful-ai.webp
         description: Smart presentation software with AI-driven design and formatting
         tags:
           - presentations
@@ -113,7 +101,6 @@ subcategories:
           - proprietary
       - name: Gamma
         homepage_url: https://gamma.app
-        logo: gamma.webp
         description: AI-powered presentation and document builder from text prompts
         tags:
           - presentations
@@ -121,7 +108,6 @@ subcategories:
           - proprietary
       - name: SlidesAI
         homepage_url: https://www.slidesai.io
-        logo: slidesai.webp
         description: Generate professional Google Slides presentations from text with AI
         tags:
           - presentations
@@ -129,7 +115,6 @@ subcategories:
           - proprietary
       - name: Tome
         homepage_url: https://tome.app
-        logo: tome.webp
         description: AI-native storytelling and presentation format for ideas and proposals
         tags:
           - presentations

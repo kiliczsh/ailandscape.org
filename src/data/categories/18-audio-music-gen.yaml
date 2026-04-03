@@ -33,7 +33,6 @@ subcategories:
           - api
       - name: PlayHT
         homepage_url: https://play.ht
-        logo: playht.webp
         description: AI voice generator with ultra-realistic text-to-speech and voice cloning
         tags:
           - tts
@@ -44,7 +43,6 @@ subcategories:
     items:
       - name: Descript
         homepage_url: https://www.descript.com
-        logo: descript.webp
         description: AI-powered audio and video editing with Overdub voice cloning
         tags:
           - voice-cloning
@@ -60,7 +58,6 @@ subcategories:
           - proprietary
       - name: Resemble AI
         homepage_url: https://www.resemble.ai
-        logo: resemble-ai.webp
         description: AI voice generator with real-time voice cloning and speech-to-speech
         tags:
           - voice-cloning
@@ -71,7 +68,6 @@ subcategories:
     items:
       - name: AIVA
         homepage_url: https://www.aiva.ai
-        logo: aiva.webp
         description: AI music composition assistant for soundtracks, games, and commercials
         tags:
           - music
@@ -79,7 +75,6 @@ subcategories:
           - proprietary
       - name: Soundraw
         homepage_url: https://soundraw.io
-        logo: soundraw.webp
         description: AI music generator for creators — customize length, mood, and instruments
         tags:
           - music

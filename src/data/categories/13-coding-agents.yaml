@@ -127,7 +127,6 @@ subcategories:
       - name: Open Interpreter
         homepage_url: http://openinterpreter.com/
         repo_url: https://github.com/openinterpreter/open-interpreter
-        logo: openinterpreter.webp
         description: "Natural language interface for computers; lets LLMs run code and manage files"
       - name: OpenAI Codex CLI
         homepage_url: https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started
