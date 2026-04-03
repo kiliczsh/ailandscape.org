@@ -12,6 +12,12 @@ subcategories:
         logo: browser-use.webp
         description: "Enable AI agents to control web browsers"
         tags: [agents, browser, automation, oss]
+      - name: Magine
+        homepage_url: https://magine.cloud
+        repo_url: https://github.com/S4nfs/Magine
+        logo: magine.webp
+        description: "Vision-enabled AI agents (SDAs) that autonomously browse the web using real-time screen capture and MoE planning"
+        tags: [agents, browser, automation, vision]
       - name: Playwright Agent
         homepage_url: https://playwright.dev
         repo_url: https://github.com/microsoft/playwright

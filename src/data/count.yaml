@@ -1,4 +1,4 @@
-total_items: 647
+total_items: 648
 total_categories: 26
 total_subcategories: 94
 categories:
@@ -224,10 +224,10 @@ categories:
         count: 2
   - name: Browser & Computer Use
     group: products
-    total: 4
+    total: 5
     subcategories:
       - name: Browser Automation
-        count: 2
+        count: 3
       - name: Computer Use (OS-Level)
         count: 1
       - name: Web Scraping & Crawling
