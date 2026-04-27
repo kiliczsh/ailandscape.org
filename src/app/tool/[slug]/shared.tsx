@@ -27,8 +27,10 @@ export interface ToolDetailProps {
 // Mirrors the helper in components/landscape/item-card.tsx.
 export function getTagTextColor(color: string): string {
   const m = color.match(/oklch\(\s*([\d.]+)/);
-  if (!m) return "#fff";
-  return parseFloat(m[1]) > 0.5 ? "oklch(0.145 0.008 326)" : "#fff";
+  if (!m) return "oklch(0.965 0.009 325)";
+  return parseFloat(m[1]) > 0.5
+    ? "oklch(0.145 0.008 326)"
+    : "oklch(0.965 0.009 325)";
 }
 
 const STATUS_META: Record<
