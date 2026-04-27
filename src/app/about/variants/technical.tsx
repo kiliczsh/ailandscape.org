@@ -1,8 +1,8 @@
 import { GithubLogo } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import type { CategoryGroup } from "@/types/landscape";
 import type { AboutStats } from "../shared";
 import { GROUP_META } from "../shared";
-import type { CategoryGroup } from "@/types/landscape";
 
 export function TechnicalAbout({ stats }: { stats: AboutStats }) {
   const {
