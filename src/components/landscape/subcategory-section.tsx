@@ -1,9 +1,10 @@
 "use client";
 
-import { Medal, ShareNetwork } from "@phosphor-icons/react";
+import { useCallback } from "react";
 import { toast } from "sonner";
 import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import type { Subcategory } from "@/types/landscape";
+import { ActionPills } from "./category-row";
 import { ItemCard } from "./item-card";
 
 function slugify(text: string): string {
@@ -46,6 +47,23 @@ export function SubcategorySection({
   const textClass = getTextClass(subheaderColor);
   const { onTierListOpen } = useLandscapeFilter();
 
+  const handleShare = useCallback(() => {
+    const url = new URL(window.location.origin);
+    const params = new URLSearchParams();
+    params.set("category", slugify(categoryName));
+    params.set("utm_source", "ailandscape");
+    params.set("utm_medium", "share");
+    params.set("utm_campaign", "subcategory");
+    url.search = params.toString();
+    url.hash = slugify(subcategory.name);
+    navigator.clipboard.writeText(url.toString());
+    toast.success("Link copied!");
+  }, [categoryName, subcategory.name]);
+
+  const handleTierList = useCallback(() => {
+    onTierListOpen(categoryName, subcategory, categoryColor);
+  }, [categoryName, subcategory, categoryColor, onTierListOpen]);
+
   return (
     <section className="flex w-full flex-col border-b border-border last:border-b-0 sm:min-w-[192px] sm:w-auto sm:flex-1 sm:border-b-0 sm:border-r sm:last:border-r-0">
       <div
@@ -61,35 +79,11 @@ export function SubcategorySection({
         <span className="shrink-0 text-[10px] tabular-nums opacity-70">
           {subcategory.items.length}
         </span>
-        <button
-          type="button"
-          onClick={() => {
-            const url = new URL(window.location.origin);
-            const params = new URLSearchParams();
-            params.set("category", slugify(categoryName));
-            params.set("utm_source", "ailandscape");
-            params.set("utm_medium", "share");
-            params.set("utm_campaign", "subcategory");
-            url.search = params.toString();
-            url.hash = slugify(subcategory.name);
-            navigator.clipboard.writeText(url.toString());
-            toast.success("Link copied!");
-          }}
-          title={`Share ${subcategory.name}`}
-          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-category-bar-text/50 hover:text-category-bar-text hover:bg-category-bar-text/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          <ShareNetwork size={11} />
-        </button>
-        <button
-          type="button"
-          onClick={() =>
-            onTierListOpen(categoryName, subcategory, categoryColor)
-          }
-          title={`Tier List — ${subcategory.name}`}
-          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-category-bar-text/50 hover:text-amber-200 hover:bg-category-bar-text/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          <Medal size={11} />
-        </button>
+        <ActionPills
+          onShare={handleShare}
+          onTierList={handleTierList}
+          categoryName={subcategory.name}
+        />
       </div>
       <div
         className={

@@ -122,15 +122,41 @@ function ToggleBarContent({
   );
 }
 
-function ActionPills({
+export function ActionPills({
   onShare,
   onTierList,
   categoryName,
+  orientation = "horizontal",
 }: {
   onShare: (e: React.MouseEvent) => void;
   onTierList: (e: React.MouseEvent) => void;
   categoryName: string;
+  orientation?: "horizontal" | "vertical";
 }) {
+  if (orientation === "vertical") {
+    return (
+      <>
+        <button
+          type="button"
+          onClick={onShare}
+          title={`Share ${categoryName}`}
+          className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <ShareNetwork size={12} aria-hidden="true" />
+          <span className="text-[8px] font-medium leading-none">Share</span>
+        </button>
+        <button
+          type="button"
+          onClick={onTierList}
+          title={`Tier List — ${categoryName}`}
+          className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <Medal size={12} aria-hidden="true" />
+          <span className="text-[8px] font-medium leading-none">Tier</span>
+        </button>
+      </>
+    );
+  }
   return (
     <>
       <button
@@ -346,28 +372,12 @@ export function CategoryRow({
                 </span>
               </button>
               <div className="flex flex-col items-center gap-1.5 pb-3">
-                <button
-                  type="button"
-                  onClick={handleShareCategory}
-                  title={`Share ${category.name}`}
-                  className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  <ShareNetwork size={12} aria-hidden="true" />
-                  <span className="text-[8px] font-medium leading-none">
-                    Share
-                  </span>
-                </button>
-                <button
-                  type="button"
-                  onClick={handleTierListClick}
-                  title={`Tier List — ${category.name}`}
-                  className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  <Medal size={12} aria-hidden="true" />
-                  <span className="text-[8px] font-medium leading-none">
-                    Tier
-                  </span>
-                </button>
+                <ActionPills
+                  onShare={handleShareCategory}
+                  onTierList={handleTierListClick}
+                  categoryName={category.name}
+                  orientation="vertical"
+                />
               </div>
             </div>
             <div className="flex flex-1 flex-col">
