@@ -20,7 +20,6 @@ export interface ToolDetailProps {
   subcategory: Subcategory;
   tags: TagsMap;
   related: LandscapeItem[];
-  categoryTotal: number;
 }
 
 // Adaptive text color for tag pills based on OKLCH lightness.

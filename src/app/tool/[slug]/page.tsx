@@ -55,10 +55,6 @@ export default async function ToolPage({ params }: ToolPageProps) {
   if (!found) notFound();
   const { item, category, subcategory } = found;
   const related = getRelatedItems(data, item.name, subcategory.name);
-  const categoryTotal = category.subcategories.reduce(
-    (sum, sub) => sum + sub.items.length,
-    0,
-  );
 
   return (
     <ToolDetail
@@ -67,7 +63,6 @@ export default async function ToolPage({ params }: ToolPageProps) {
       subcategory={subcategory}
       related={related}
       tags={data.tags}
-      categoryTotal={categoryTotal}
     />
   );
 }

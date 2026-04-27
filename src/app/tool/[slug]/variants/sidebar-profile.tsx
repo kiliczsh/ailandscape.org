@@ -27,10 +27,8 @@ export function SidebarProfile({
   subcategory,
   tags,
   related,
-  categoryTotal,
 }: ToolDetailProps) {
   const accent = category.color ?? "var(--category-default-color)";
-  const groupLabel = category.group?.replace(/-/g, " ") ?? "";
   const catSlug = categorySlug(category.name);
 
   return (
@@ -155,33 +153,6 @@ export function SidebarProfile({
                 </Button>
               )}
             </div>
-
-            <dl className="mt-5 divide-y divide-border border-t border-border">
-              <div className="flex justify-between py-2.5 text-sm">
-                <dt className="font-medium text-foreground">Group</dt>
-                <dd className="capitalize text-muted-foreground">
-                  {groupLabel || "—"}
-                </dd>
-              </div>
-              <div className="flex justify-between py-2.5 text-sm">
-                <dt className="font-medium text-foreground">In subcategory</dt>
-                <dd className="tabular-nums text-muted-foreground">
-                  {subcategory.items.length}
-                </dd>
-              </div>
-              <div className="flex justify-between py-2.5 text-sm">
-                <dt className="font-medium text-foreground">In category</dt>
-                <dd className="tabular-nums text-muted-foreground">
-                  {categoryTotal}
-                </dd>
-              </div>
-              <div className="flex justify-between py-2.5 text-sm">
-                <dt className="font-medium text-foreground">Tags</dt>
-                <dd className="tabular-nums text-muted-foreground">
-                  {item.tags?.length ?? 0}
-                </dd>
-              </div>
-            </dl>
           </div>
         </aside>
 
