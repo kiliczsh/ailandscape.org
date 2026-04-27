@@ -57,7 +57,7 @@
   --group-ecosystem: oklch(0.45 0.18 80);
 
   /* Marquee banner — intentionally theme-invariant accent strip */
-  --marquee-bg: oklch(0.55 0.22 35);
+  --marquee-bg: oklch(0.58 0.15 35);
 
   /* Search highlight mark */
   --highlight-mark-bg: oklch(0.93 0.12 95 / 70%);
@@ -100,7 +100,7 @@
   --group-products: oklch(0.45 0.22 160);
   --group-governance: oklch(0.42 0.26 18);
   --group-ecosystem: oklch(0.45 0.18 80);
-  --marquee-bg: oklch(0.55 0.22 35);
+  --marquee-bg: oklch(0.58 0.15 35);
 
   --background: oklch(0.145 0.008 326);
   --foreground: oklch(0.975 0.008 325);
