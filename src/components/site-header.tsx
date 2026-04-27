@@ -21,7 +21,7 @@ export function SiteHeader() {
             type="button"
             onClick={() => setSearchOpen(false)}
             aria-label="Close search"
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="flex size-11 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <X size={15} aria-hidden="true" />
           </button>
@@ -53,7 +53,7 @@ export function SiteHeader() {
             type="button"
             onClick={() => setSearchOpen(true)}
             aria-label="Search tools"
-            className="flex h-11 w-11 items-center justify-center rounded-full text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:hidden"
+            className="flex size-11 items-center justify-center rounded-full text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:hidden"
           >
             <MagnifyingGlass size={16} aria-hidden="true" />
           </button>
@@ -74,7 +74,7 @@ export function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground ring-1 ring-border hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="flex size-8 items-center justify-center rounded-full text-muted-foreground ring-1 ring-border hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <GithubLogo size={15} aria-hidden="true" />
           </a>

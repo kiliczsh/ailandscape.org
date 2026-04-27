@@ -175,7 +175,7 @@ export function FilterBar({
                 onClick={onCollapseToggle}
                 className={cn(
                   buttonVariants({ variant: "outline", size: "sm" }),
-                  "h-11 w-11 rounded-full p-0 sm:h-7 sm:w-7",
+                  "size-8 rounded-full p-0 sm:size-7",
                 )}
               >
                 {allCollapsed ? (
@@ -211,7 +211,7 @@ export function FilterBar({
                         variant: viewMode === mode ? "default" : "outline",
                         size: "sm",
                       }),
-                      "h-11 w-11 cursor-pointer rounded-full p-0 focus-within:ring-2 focus-within:ring-ring/30 sm:h-7 sm:w-7",
+                      "size-8 cursor-pointer rounded-full p-0 focus-within:ring-2 focus-within:ring-ring/30 sm:size-7",
                     )}
                   >
                     <input
