@@ -118,6 +118,39 @@ function ToggleBarContent({
   );
 }
 
+function ActionPills({
+  onShare,
+  onTierList,
+  categoryName,
+}: {
+  onShare: (e: React.MouseEvent) => void;
+  onTierList: (e: React.MouseEvent) => void;
+  categoryName: string;
+}) {
+  return (
+    <>
+      <button
+        type="button"
+        onClick={onShare}
+        title={`Share ${categoryName}`}
+        className="flex shrink-0 items-center gap-1 rounded-full bg-white/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-white/70 hover:bg-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        <ShareNetwork size={11} aria-hidden="true" />
+        Share
+      </button>
+      <button
+        type="button"
+        onClick={onTierList}
+        title={`Tier List — ${categoryName}`}
+        className="flex shrink-0 items-center gap-1 rounded-full bg-white/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-white/70 hover:bg-white/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        <Medal size={11} aria-hidden="true" />
+        Tier
+      </button>
+    </>
+  );
+}
+
 interface CategoryRowProps {
   category: Category;
   viewMode?: "grid" | "card";
@@ -232,22 +265,11 @@ export function CategoryRow({
             filteredItemCount={filteredItemCount}
           />
         </button>
-        <button
-          type="button"
-          onClick={handleShareCategory}
-          title={`Share ${category.name}`}
-          className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          <ShareNetwork size={13} />
-        </button>
-        <button
-          type="button"
-          onClick={handleTierListClick}
-          title={`Tier List — ${category.name}`}
-          className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          <Medal size={13} />
-        </button>
+        <ActionPills
+          onShare={handleShareCategory}
+          onTierList={handleTierListClick}
+          categoryName={category.name}
+        />
       </div>
 
       {/* Desktop: horizontal bar — only when collapsed */}
@@ -273,22 +295,11 @@ export function CategoryRow({
               filteredItemCount={filteredItemCount}
             />
           </button>
-          <button
-            type="button"
-            onClick={handleShareCategory}
-            title={`Share ${category.name}`}
-            className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            <ShareNetwork size={13} />
-          </button>
-          <button
-            type="button"
-            onClick={handleTierListClick}
-            title={`Tier List — ${category.name}`}
-            className="flex h-6 w-6 shrink-0 items-center justify-center rounded text-white/60 hover:text-amber-200 hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            <Medal size={13} />
-          </button>
+          <ActionPills
+            onShare={handleShareCategory}
+            onTierList={handleTierListClick}
+            categoryName={category.name}
+          />
         </div>
       )}
 
@@ -302,31 +313,59 @@ export function CategoryRow({
       >
         <div className="overflow-hidden">
           <div className="flex flex-col sm:flex-row">
-            {/* Desktop: vertical sidebar — click to collapse */}
-            <button
-              type="button"
-              onClick={() => setCollapsed(true)}
-              className="hidden min-w-[44px] shrink-0 cursor-pointer flex-col items-center justify-center gap-2 overflow-hidden py-3 sm:flex"
+            {/* Desktop: vertical sidebar */}
+            <div
+              className="hidden min-w-[44px] shrink-0 flex-col items-center overflow-hidden sm:flex"
               style={{ backgroundColor: sidebarColor }}
-              aria-expanded={!collapsed}
-              aria-controls={contentId}
-              aria-label={`Collapse ${category.name}`}
             >
-              <span
-                className="text-sm font-bold tracking-wide text-white"
-                style={{
-                  writingMode: "vertical-rl",
-                  transform: "rotate(180deg)",
-                }}
+              <button
+                type="button"
+                onClick={() => setCollapsed(true)}
+                className="flex flex-1 w-full cursor-pointer flex-col items-center justify-center gap-2 py-3"
+                aria-expanded={!collapsed}
+                aria-controls={contentId}
+                aria-label={`Collapse ${category.name}`}
               >
-                {category.name}
-              </span>
-              <span className="mt-1 text-[10px] tabular-nums text-white/80">
-                {filteredItemCount !== totalItemCount
-                  ? `${filteredItemCount} / ${totalItemCount}`
-                  : `${totalItemCount}`}
-              </span>
-            </button>
+                <span
+                  className="text-sm font-bold tracking-wide text-white"
+                  style={{
+                    writingMode: "vertical-rl",
+                    transform: "rotate(180deg)",
+                  }}
+                >
+                  {category.name}
+                </span>
+                <span className="text-[10px] tabular-nums text-white/80">
+                  {filteredItemCount !== totalItemCount
+                    ? `${filteredItemCount} / ${totalItemCount}`
+                    : `${totalItemCount}`}
+                </span>
+              </button>
+              <div className="flex flex-col items-center gap-1.5 pb-3">
+                <button
+                  type="button"
+                  onClick={handleShareCategory}
+                  title={`Share ${category.name}`}
+                  className="flex flex-col items-center gap-0.5 rounded-lg bg-white/10 px-1.5 py-1.5 text-white/70 hover:bg-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <ShareNetwork size={12} aria-hidden="true" />
+                  <span className="text-[8px] font-medium leading-none">
+                    Share
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleTierListClick}
+                  title={`Tier List — ${category.name}`}
+                  className="flex flex-col items-center gap-0.5 rounded-lg bg-white/10 px-1.5 py-1.5 text-white/70 hover:bg-white/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <Medal size={12} aria-hidden="true" />
+                  <span className="text-[8px] font-medium leading-none">
+                    Tier
+                  </span>
+                </button>
+              </div>
+            </div>
             <div className="flex flex-1 flex-col">
               {(() => {
                 const rows = new Map<number, typeof category.subcategories>();
