@@ -33,7 +33,6 @@ export function useLandscapeParams() {
   const groupFilter = validGroup(searchParams.get("group"));
   const viewMode = validView(searchParams.get("view"));
   const activeTag = searchParams.get("tag") ?? "";
-  const activeItem = searchParams.get("item") ?? "";
   const activeCategory = searchParams.get("category") ?? "";
 
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -88,22 +87,7 @@ export function useLandscapeParams() {
       } else {
         params.delete("tag");
       }
-      // Clear activeItem when changing tag
-      params.delete("item");
       router.replace(`?${params.toString()}`);
-    },
-    [router, searchParams],
-  );
-
-  const setActiveItem = useCallback(
-    (item: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      if (item) {
-        params.set("item", item);
-      } else {
-        params.delete("item");
-      }
-      router.push(`?${params.toString()}`, { scroll: false });
     },
     [router, searchParams],
   );
@@ -126,13 +110,11 @@ export function useLandscapeParams() {
     groupFilter,
     viewMode,
     activeTag,
-    activeItem,
     activeCategory,
     setQuery,
     setGroupFilter,
     setViewMode,
     setActiveTag,
-    setActiveItem,
     setActiveCategory,
   };
 }

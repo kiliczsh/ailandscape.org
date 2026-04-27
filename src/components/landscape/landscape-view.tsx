@@ -1,21 +1,15 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Dialog } from "@/components/ui/dialog";
 import { Empty, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
 import { LandscapeFilterProvider } from "@/contexts/landscape-filter-context";
 import { useLandscapeParams } from "@/hooks/use-landscape-params";
 import { trackEvent } from "@/lib/analytics";
-import type {
-  LandscapeData,
-  LandscapeItem,
-  Subcategory,
-} from "@/types/landscape";
+import type { LandscapeData, Subcategory } from "@/types/landscape";
 import { CategoryRow } from "./category-row";
 import { CommandPalette } from "./command-palette";
 import { FilterBar } from "./filter-bar";
-import { ItemModal } from "./item-card";
 import { TierListModal } from "./tier-list-modal";
 
 interface LandscapeViewProps {
@@ -28,18 +22,15 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     groupFilter,
     viewMode: urlViewMode,
     activeTag,
-    activeItem,
     activeCategory,
     setQuery,
     setGroupFilter,
     setViewMode,
     setActiveTag,
-    setActiveItem,
     setActiveCategory,
   } = useLandscapeParams();
 
   const viewMode = urlViewMode;
-
   const lowerQuery = query.trim().toLowerCase();
 
   const filteredData = useMemo(() => {
@@ -89,7 +80,6 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     [filteredData],
   );
 
-  // Per-category item counts for badges
   const categoryTotalCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     for (const cat of data.landscape) {
@@ -112,98 +102,23 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     return counts;
   }, [filteredData]);
 
-  // Look up active item data across the full (unfiltered) dataset so the
-  // dialog works even when the item's category is currently filtered out.
-  const activeItemData = useMemo(() => {
-    if (!activeItem) return null;
-    for (const cat of data.landscape) {
-      for (const sub of cat.subcategories) {
-        const found = sub.items.find((i) => i.name === activeItem);
-        if (found) return found;
-      }
-    }
-    return null;
-  }, [data, activeItem]);
-
-  // Keep last known item in a ref so dialog content stays rendered during
-  // the exit animation (after activeItemData becomes null).
-  const lastItemRef = useRef(activeItemData);
-  if (activeItemData) lastItemRef.current = activeItemData;
-
-  const findItem = useCallback(
-    (name: string): LandscapeItem | null => {
-      for (const cat of data.landscape) {
-        for (const sub of cat.subcategories) {
-          const found = sub.items.find((i) => i.name === name);
-          if (found) return found;
-        }
-      }
-      return null;
-    },
-    [data],
-  );
-
-  // Collapse all state — null = no override, true/false = force
   const [forceCollapse, setForceCollapse] = useState<boolean | null>(null);
   const allCollapsed = forceCollapse === true;
 
-  // Tier list modal state
   const [tierListData, setTierListData] = useState<{
     categoryName: string;
     subcategory: Subcategory;
     categoryColor?: string;
   } | null>(null);
 
-  // Separate boolean drives the Radix open prop — lets exit animation play
-  // before we clear the URL state.
-  const [dialogOpen, setDialogOpen] = useState(false);
-  const [dialogItem, setDialogItem] = useState<LandscapeItem | null>(null);
-  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    if (activeItemData) {
-      if (closeTimerRef.current) {
-        clearTimeout(closeTimerRef.current);
-        closeTimerRef.current = null;
-      }
-      setDialogOpen(true);
-    }
-  }, [activeItemData]);
-
-  // Cleanup timer on unmount
-  useEffect(
-    () => () => {
-      if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-    },
-    [],
-  );
-
-  const handleItemClose = useCallback(() => {
-    setDialogOpen(false);
-    // Wait for exit animation (duration-100 in DialogContent) then clear URL
-    closeTimerRef.current = setTimeout(() => {
-      setActiveItem("");
-      setDialogItem(null);
-      closeTimerRef.current = null;
-    }, 150);
-  }, [setActiveItem]);
-
   const contextValue = useMemo(
     () => ({
       query,
       activeTag,
-      activeItem,
       tags: data.tags,
       onTagClick: (tag: string) => {
         if (activeTag !== tag) trackEvent("tag_filter_applied", { tag });
         setActiveTag(activeTag === tag ? "" : tag);
-      },
-      onItemClick: (name: string) => {
-        trackEvent("item_viewed", { item_name: name });
-        const item = findItem(name);
-        setDialogItem(item);
-        setDialogOpen(true);
-        setActiveItem(name);
       },
       onTierListOpen: (
         categoryName: string,
@@ -213,15 +128,7 @@ export function LandscapeView({ data }: LandscapeViewProps) {
         setTierListData({ categoryName, subcategory, categoryColor });
       },
     }),
-    [
-      query,
-      activeTag,
-      activeItem,
-      data.tags,
-      setActiveTag,
-      setActiveItem,
-      findItem,
-    ],
+    [query, activeTag, data.tags, setActiveTag],
   );
 
   // Auto-scroll to category when ?category= param is present
@@ -233,17 +140,13 @@ export function LandscapeView({ data }: LandscapeViewProps) {
       .replace(/^-|-$/g, "");
     const el = document.getElementById(`category-${slug}`);
     if (el) {
-      // Small delay to let layout settle
       setTimeout(() => {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 100);
-      // Clear param after scroll so it doesn't re-trigger
       setActiveCategory("");
     }
   }, [activeCategory, setActiveCategory]);
 
-  // Track which categories have already animated so filter changes don't
-  // re-trigger the entry animation for previously-seen categories.
   const everShownRef = useRef(new Set<string>());
   useEffect(() => {
     for (const cat of filteredData.landscape) {
@@ -251,13 +154,9 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     }
   }, [filteredData.landscape]);
 
-  const modalItem = dialogItem ?? lastItemRef.current;
-
   return (
     <LandscapeFilterProvider value={contextValue}>
       <CommandPalette data={data} />
-      {/* Single Dialog for URL-driven item detail — kept mounted during exit
-          animation so data-closed classes can play before unmount */}
       {tierListData && (
         <TierListModal
           open={!!tierListData}
@@ -268,16 +167,6 @@ export function LandscapeView({ data }: LandscapeViewProps) {
           subcategory={tierListData.subcategory}
           categoryColor={tierListData.categoryColor}
         />
-      )}
-      {modalItem && (
-        <Dialog
-          open={dialogOpen}
-          onOpenChange={(isOpen) => {
-            if (!isOpen) handleItemClose();
-          }}
-        >
-          <ItemModal item={modalItem} onClose={handleItemClose} />
-        </Dialog>
       )}
       <div className="flex flex-col flex-1">
         <FilterBar

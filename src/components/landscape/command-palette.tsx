@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   CommandDialog,
@@ -9,8 +10,8 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
 import { trackEvent } from "@/lib/analytics";
+import { toSlug } from "@/lib/slug";
 import type { LandscapeData, LandscapeItem } from "@/types/landscape";
 
 const MAX_VISIBLE = 50;
@@ -110,7 +111,7 @@ interface CommandPaletteProps {
 export function CommandPalette({ data }: CommandPaletteProps) {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
-  const { onItemClick } = useLandscapeFilter();
+  const router = useRouter();
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
@@ -193,7 +194,7 @@ export function CommandPalette({ data }: CommandPaletteProps) {
       search_term: search.trim(),
     });
     setOpen(false);
-    onItemClick(item.name);
+    router.push(`/tool/${toSlug(item.name)}`);
   }
 
   // Disable cmdk's built-in filter — we handle it ourselves

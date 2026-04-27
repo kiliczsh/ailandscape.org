@@ -6,10 +6,8 @@ import type { Subcategory, TagsMap } from "@/types/landscape";
 interface LandscapeFilterContextValue {
   query: string;
   activeTag: string;
-  activeItem: string;
   tags: TagsMap;
   onTagClick: (tag: string) => void;
-  onItemClick: (item: string) => void;
   onTierListOpen: (
     categoryName: string,
     subcategory: Subcategory,
@@ -20,10 +18,8 @@ interface LandscapeFilterContextValue {
 const LandscapeFilterContext = createContext<LandscapeFilterContextValue>({
   query: "",
   activeTag: "",
-  activeItem: "",
   tags: {},
   onTagClick: () => {},
-  onItemClick: () => {},
   onTierListOpen: () => {},
 });
 
