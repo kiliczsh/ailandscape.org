@@ -65,28 +65,31 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("font-sans", geistSans.variable, geistMono.variable)}
     >
-      <script
-        type="application/ld+json"
-        // biome-ignore lint/security/noDangerouslySetInnerHtml: static JSON-LD, no user input
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "AI Landscape",
-            url: "https://ailandscape.org",
-            description:
-              "Explore AI tools, frameworks, and services organized by category.",
-            potentialAction: {
-              "@type": "SearchAction",
-              target: {
-                "@type": "EntryPoint",
-                urlTemplate: "https://ailandscape.org/?q={search_term_string}",
+      <head>
+        <script
+          type="application/ld+json"
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: static JSON-LD, no user input
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "AI Landscape",
+              url: "https://ailandscape.org",
+              description:
+                "Explore AI tools, frameworks, and services organized by category.",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate:
+                    "https://ailandscape.org/?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
               },
-              "query-input": "required name=search_term_string",
-            },
-          }),
-        }}
-      />
+            }),
+          }}
+        />
+      </head>
       <Script
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8397851036658136"
         strategy="afterInteractive"
