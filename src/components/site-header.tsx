@@ -2,6 +2,7 @@
 
 import { MagnifyingGlass, X } from "@phosphor-icons/react";
 import { GithubLogo, PlusCircle } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 import { Suspense, useState } from "react";
 import { HeaderSearch } from "@/components/landscape/header-search";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -10,8 +11,7 @@ export function SiteHeader() {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-10 flex items-center gap-3 border-b bg-background px-4 py-2">
-      {/* Mobile: full-width search overlay */}
+    <header className="sticky top-0 z-10 bg-background/80 px-4 py-2.5 shadow-sm backdrop-blur-md dark:shadow-none dark:ring-1 dark:ring-white/5">
       {searchOpen && (
         <div className="flex w-full items-center gap-2 sm:hidden">
           <Suspense>
@@ -21,43 +21,39 @@ export function SiteHeader() {
             type="button"
             onClick={() => setSearchOpen(false)}
             aria-label="Close search"
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            <X size={16} aria-hidden="true" />
+            <X size={15} aria-hidden="true" />
           </button>
         </div>
       )}
 
-      {/* Normal header — hidden on mobile when search overlay is open */}
       <div
-        className={`flex w-full items-center gap-3 ${searchOpen ? "hidden sm:flex" : "flex"}`}
+        className={`flex w-full items-center gap-4 ${searchOpen ? "hidden sm:flex" : "flex"}`}
       >
-        <a
+        <Link
           href="/"
-          className="flex shrink-0 items-center gap-2 rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           aria-label="AI Landscape — home"
+          className="flex shrink-0 items-center gap-1.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <h1 className="text-sm font-semibold tracking-tight">
-            <span className="text-foreground">AI</span>
-            <span className="mx-1 text-muted-foreground">{"///"}</span>
-            <span className="text-foreground">Landscape</span>
+            <span className="text-primary">AI</span>
+            <span className="text-foreground"> Landscape</span>
           </h1>
-        </a>
+        </Link>
 
-        {/* Desktop search — always visible on sm+ */}
-        <div className="hidden sm:flex flex-1 justify-center">
+        <div className="hidden flex-1 justify-center sm:flex">
           <Suspense>
-            <HeaderSearch />
+            <HeaderSearch className="w-full max-w-sm [&_input]:rounded-full [&_input]:bg-muted/60" />
           </Suspense>
         </div>
 
         <div className="ml-auto flex shrink-0 items-center gap-2">
-          {/* Mobile search icon */}
           <button
             type="button"
             onClick={() => setSearchOpen(true)}
             aria-label="Search tools"
-            className="flex h-11 w-11 items-center justify-center rounded text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring sm:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:hidden"
           >
             <MagnifyingGlass size={16} aria-hidden="true" />
           </button>
@@ -66,22 +62,21 @@ export function SiteHeader() {
             href="https://github.com/kiliczsh/ailandscape.org/issues/new/choose"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Submit a tool via GitHub issue (opens in new tab)"
-            className="flex h-11 w-11 items-center justify-center gap-1 rounded text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring sm:h-auto sm:w-auto"
+            aria-label="Submit a tool"
+            className="hidden items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium text-muted-foreground ring-1 ring-border hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:flex"
           >
-            <PlusCircle size={16} aria-hidden="true" />
-            <span className="hidden sm:inline">Submit</span>
+            <PlusCircle size={14} aria-hidden="true" />
+            Submit
           </a>
 
           <a
             href="https://github.com/kiliczsh/ailandscape.org"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub (opens in new tab)"
-            className="flex h-11 w-11 items-center justify-center gap-1 rounded text-xs text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring sm:h-auto sm:w-auto"
+            aria-label="GitHub"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground ring-1 ring-border hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            <GithubLogo size={16} aria-hidden="true" />
-            <span className="hidden sm:inline">GitHub</span>
+            <GithubLogo size={15} aria-hidden="true" />
           </a>
 
           <ModeToggle />

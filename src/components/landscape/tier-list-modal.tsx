@@ -284,7 +284,7 @@ export function TierListModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-2xl max-h-[85vh] overflow-y-auto p-0">
+      <DialogContent className="max-h-[85vh] overflow-y-auto bg-background/90 p-0 backdrop-blur-md sm:max-w-2xl">
         <DialogHeader className="px-4 pt-4 pb-2">
           <DialogTitle className="flex items-center gap-2 text-sm font-bold">
             <Rows size={16} style={{ color }} />
@@ -301,7 +301,7 @@ export function TierListModal({
               onClick={canShare ? handleShareImage : handleCopyImage}
               disabled={exporting}
               title={canShare ? "Share image" : "Copy image"}
-              className="flex items-center justify-center gap-1.5 border border-border bg-card font-medium text-foreground hover:bg-accent transition-colors disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring flex-1 sm:flex-none px-4 py-2.5 sm:px-2.5 sm:py-1 text-xs sm:text-[11px] rounded-lg sm:rounded-md"
+              className="flex items-center justify-center gap-1.5 border border-border bg-card font-medium text-foreground hover:bg-accent transition-colors disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring flex-1 sm:flex-none px-4 py-2.5 sm:px-2.5 sm:py-1 text-xs sm:text-[11px] rounded-full"
             >
               {canShare ? (
                 <ShareNetwork size={14} />
@@ -315,7 +315,7 @@ export function TierListModal({
               onClick={handleExportPng}
               disabled={exporting}
               title="Save as PNG"
-              className="flex items-center justify-center gap-1.5 border border-border bg-card font-medium text-foreground hover:bg-accent transition-colors disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring flex-1 sm:flex-none px-4 py-2.5 sm:px-2.5 sm:py-1 text-xs sm:text-[11px] rounded-lg sm:rounded-md"
+              className="flex items-center justify-center gap-1.5 border border-border bg-card font-medium text-foreground hover:bg-accent transition-colors disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring flex-1 sm:flex-none px-4 py-2.5 sm:px-2.5 sm:py-1 text-xs sm:text-[11px] rounded-full"
             >
               <DownloadSimple size={14} />
               Save PNG

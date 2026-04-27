@@ -52,12 +52,14 @@ function CommandDialog({
       </DialogHeader>
       <DialogContent
         className={cn(
-          "top-1/3 translate-y-0 overflow-hidden rounded-xl! p-0",
+          "top-1/3 translate-y-0 overflow-hidden rounded-xl! bg-background/90 p-0 backdrop-blur-md ring-1 ring-foreground/8",
           className,
         )}
         showCloseButton={showCloseButton}
       >
-        <Command filter={filter}>{children}</Command>
+        <Command filter={filter} className="bg-transparent">
+          {children}
+        </Command>
       </DialogContent>
     </Dialog>
   );
