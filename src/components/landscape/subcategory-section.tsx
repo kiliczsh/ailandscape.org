@@ -27,12 +27,12 @@ interface SubcategorySectionProps {
 // fall back to white: the default category color is oklch(0.4 ...) which is dark,
 // so white text is correct. Dark text on a dark background would fail contrast.
 function getTextClass(subheaderColor?: string): string {
-  if (!subheaderColor) return "text-white";
+  if (!subheaderColor) return "text-category-bar-text";
   const m = subheaderColor.match(/oklch\(\s*([\d.]+)/);
-  if (!m) return "text-white";
+  if (!m) return "text-category-bar-text";
   return parseFloat(m[1]) > 0.5
     ? "text-category-header-text-dark"
-    : "text-white";
+    : "text-category-bar-text";
 }
 
 export function SubcategorySection({
@@ -76,7 +76,7 @@ export function SubcategorySection({
             toast.success("Link copied!");
           }}
           title={`Share ${subcategory.name}`}
-          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-white/50 hover:text-white hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-category-bar-text/50 hover:text-category-bar-text hover:bg-category-bar-text/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <ShareNetwork size={11} />
         </button>
@@ -86,7 +86,7 @@ export function SubcategorySection({
             onTierListOpen(categoryName, subcategory, categoryColor)
           }
           title={`Tier List — ${subcategory.name}`}
-          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-white/50 hover:text-amber-200 hover:bg-white/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-category-bar-text/50 hover:text-amber-200 hover:bg-category-bar-text/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <Medal size={11} />
         </button>

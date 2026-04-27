@@ -30,13 +30,13 @@ export function IntroBanner() {
         {items.map((item, i) => (
           // biome-ignore lint/suspicious/noArrayIndexKey: static marquee list never reorders
           <span key={i} className="flex items-center">
-            <span className="px-5 text-xs font-semibold text-white">
+            <span className="px-5 text-xs font-semibold text-category-bar-text">
               {item}
             </span>
             <Asterisk
               size={10}
               weight="bold"
-              className="text-white/60 shrink-0"
+              className="text-category-bar-text/60 shrink-0"
             />
           </span>
         ))}

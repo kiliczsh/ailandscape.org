@@ -103,14 +103,18 @@ function ToggleBarContent({
         size={11}
         weight="bold"
         aria-hidden="true"
-        className={`shrink-0 text-white/80 transition-transform duration-200 ${caretClass}`}
+        className={`shrink-0 text-category-bar-text/80 transition-transform duration-200 ${caretClass}`}
       />
-      <Icon size={13} aria-hidden="true" className="shrink-0 text-white/80" />
-      <span className="min-w-0 truncate text-sm font-bold tracking-wide text-white">
+      <Icon
+        size={13}
+        aria-hidden="true"
+        className="shrink-0 text-category-bar-text/80"
+      />
+      <span className="min-w-0 truncate text-sm font-bold tracking-wide text-category-bar-text">
         {name}
       </span>
       {countText && (
-        <span className="ml-auto shrink-0 text-[10px] tabular-nums text-white/80">
+        <span className="ml-auto shrink-0 text-[10px] tabular-nums text-category-bar-text/80">
           {countText}
         </span>
       )}
@@ -133,7 +137,7 @@ function ActionPills({
         type="button"
         onClick={onShare}
         title={`Share ${categoryName}`}
-        className="flex shrink-0 items-center gap-1 rounded-full bg-white/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-white/70 hover:bg-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="flex shrink-0 items-center gap-1 rounded-full bg-category-bar-text/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         <ShareNetwork size={11} aria-hidden="true" />
         Share
@@ -142,7 +146,7 @@ function ActionPills({
         type="button"
         onClick={onTierList}
         title={`Tier List — ${categoryName}`}
-        className="flex shrink-0 items-center gap-1 rounded-full bg-white/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-white/70 hover:bg-white/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="flex shrink-0 items-center gap-1 rounded-full bg-category-bar-text/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         <Medal size={11} aria-hidden="true" />
         Tier
@@ -327,7 +331,7 @@ export function CategoryRow({
                 aria-label={`Collapse ${category.name}`}
               >
                 <span
-                  className="text-sm font-bold tracking-wide text-white"
+                  className="text-sm font-bold tracking-wide text-category-bar-text"
                   style={{
                     writingMode: "vertical-rl",
                     transform: "rotate(180deg)",
@@ -335,7 +339,7 @@ export function CategoryRow({
                 >
                   {category.name}
                 </span>
-                <span className="text-[10px] tabular-nums text-white/80">
+                <span className="text-[10px] tabular-nums text-category-bar-text/80">
                   {filteredItemCount !== totalItemCount
                     ? `${filteredItemCount} / ${totalItemCount}`
                     : `${totalItemCount}`}
@@ -346,7 +350,7 @@ export function CategoryRow({
                   type="button"
                   onClick={handleShareCategory}
                   title={`Share ${category.name}`}
-                  className="flex flex-col items-center gap-0.5 rounded-lg bg-white/10 px-1.5 py-1.5 text-white/70 hover:bg-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <ShareNetwork size={12} aria-hidden="true" />
                   <span className="text-[8px] font-medium leading-none">
@@ -357,7 +361,7 @@ export function CategoryRow({
                   type="button"
                   onClick={handleTierListClick}
                   title={`Tier List — ${category.name}`}
-                  className="flex flex-col items-center gap-0.5 rounded-lg bg-white/10 px-1.5 py-1.5 text-white/70 hover:bg-white/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <Medal size={12} aria-hidden="true" />
                   <span className="text-[8px] font-medium leading-none">
