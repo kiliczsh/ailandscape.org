@@ -78,7 +78,7 @@ export function FilterBar({
     : `${totalItems} tools · ${totalCategories} categories`;
 
   return (
-    <div className="sticky top-12 z-[9] bg-background/80 px-4 py-2 backdrop-blur-sm shadow-sm dark:shadow-none dark:ring-1 dark:ring-white/5">
+    <div className="sticky top-12 z-[9] bg-background/95 px-4 py-2 backdrop-blur-sm border-b border-border">
       {/* Single row: scrollable group pills (with fade) + tag chip + stats + view toggle */}
       <div className="flex items-center gap-2">
         {/* Mobile: native select dropdown */}
