@@ -3,17 +3,25 @@ categories:
     name: Frontier Labs
     group: core-ai
     description: >
-      Organizations that train and publish foundation models — from well-funded proprietary labs to academic and
-      non-profit research groups. The source of the models everything else is built on.
+      Organizations building frontier foundation models, large-scale multimodal systems,
+      and core AI research infrastructure. Includes commercial labs, open-weight ecosystems,
+      and academic or non-profit research institutions shaping the modern AI landscape.
     subcategories:
-      - name: Proprietary Labs
+      - name: Proprietary Frontier Labs
         description: >-
-          Commercially funded labs that train and deploy closed or semi-open models (Anthropic, OpenAI, Google DeepMind,
-          xAI…)
-      - name: Academic & Non-Profit Labs
+          Commercial AI labs and companies training and deploying proprietary or partially-open
+          frontier foundation models, reasoning systems, and multimodal AI platforms
+          (OpenAI, Anthropic, Google DeepMind, xAI, Mistral, DeepSeek…)
+      - name: Open-Weight & Research Labs
         description: >-
-          University and non-profit research groups that publish open research and open-weight models (EleutherAI, Allen
-          AI, Meta AI, Hugging Face…)
+          Organizations focused on open-weight models, collaborative AI research, community-driven
+          ecosystems, or publicly accessible foundation model development
+          (Meta AI, Hugging Face, EleutherAI, Stability AI, Nous Research, TII…)
+      - name: Academic & Non-Profit Institutes
+        description: >-
+          Universities, independent institutes, and non-profit research organizations advancing
+          AI science, safety, alignment, language technologies, and open research
+          (Allen Institute for AI, Stanford HAI, Berkeley BAIR, CMU LTI, LAION…)
   - id: foundation-models
     name: Foundation Models
     group: core-ai

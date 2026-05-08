@@ -1,15 +1,17 @@
-total_items: 648
+total_items: 657
 total_categories: 26
-total_subcategories: 94
+total_subcategories: 95
 categories:
   - name: Frontier Labs
     group: core-ai
-    total: 41
+    total: 51
     subcategories:
-      - name: Proprietary Labs
-        count: 22
-      - name: Academic & Non-Profit Labs
-        count: 19
+      - name: Proprietary Frontier Labs
+        count: 23
+      - name: Open-Weight & Research Labs
+        count: 20
+      - name: Academic & Non-Profit Institutes
+        count: 8
   - name: Foundation Models
     group: core-ai
     total: 54
@@ -244,10 +246,10 @@ categories:
         count: 9
   - name: Knowledge Discovery
     group: products
-    total: 4
+    total: 3
     subcategories:
       - name: AI Search Engines
-        count: 4
+        count: 3
   - name: Vertical AI
     group: products
     total: 13

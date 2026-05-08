@@ -188,6 +188,9 @@ circuits:
   color: "oklch(0.62 0.14 225)"
 
 # --- Data & Storage ---
+datasets:
+  label: Datasets
+  color: "oklch(0.68 0.16 55)"
 data:
   label: Data
   color: "oklch(0.68 0.16 55)"
@@ -597,6 +600,9 @@ free:
 community:
   label: Community
   color: "oklch(0.65 0.12 100)"
+open-science:
+  label: Open Science
+  color: "oklch(0.65 0.14 100)"
 proprietary:
   label: Proprietary
   color: "oklch(0.65 0.10 250)"
@@ -622,6 +628,9 @@ tutor:
   color: "oklch(0.65 0.12 160)"
 
 # --- Generative Content ---
+chatbots:
+  label: Chatbots
+  color: "oklch(0.62 0.16 340)"
 copywriting:
   label: Copywriting
   color: "oklch(0.62 0.18 340)"

@@ -22,13 +22,6 @@ subcategories:
           - search
           - privacy
           - proprietary
-      - name: Perplexity AI
-        homepage_url: https://perplexity.ai
-        logo: perplexity.webp
-        description: AI-powered answer engine with real-time search
-        tags:
-          - search
-          - ai
           - proprietary
       - name: You.com
         homepage_url: https://you.com

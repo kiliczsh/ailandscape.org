@@ -3,7 +3,7 @@ group: core-ai
 color: oklch(0.62 0.20 274)
 icon: Buildings
 subcategories:
-  - name: Proprietary Labs
+  - name: Proprietary Frontier Labs
     row: 0
     items:
       - name: AI21 Labs
@@ -11,207 +11,300 @@ subcategories:
         logo: ai21-labs.webp
         description: "Developer of large language models and long-context NLP tooling"
         tags: [lab, llm, proprietary]
+
       - name: Anthropic
         homepage_url: https://anthropic.com
         logo: anthropic.webp
         description: "AI safety company behind the Claude model family"
         tags: [lab, llm, safety, proprietary]
+
       - name: Baidu Research
         homepage_url: https://research.baidu.com
         logo: baidu-research.webp
         description: "Baidu's research arm developing ERNIE and large-scale multimodal models"
         tags: [lab, llm, multimodal, proprietary]
-      - name: Black Forest Labs
-        homepage_url: https://bfl.ai
-        logo: black-forest-labs.webp
-        description: "Frontier AI research lab building the visual infrastructure for tomorrow"
-        tags: [lab, image-generation, research]
+
       - name: Cohere
         homepage_url: https://cohere.com
         logo: cohere.webp
         description: "Enterprise NLP and embedding model provider"
         tags: [lab, llm, enterprise, proprietary]
-      - name: Databricks Mosaic
-        homepage_url: https://www.databricks.com/research/mosaic
-        logo: databricks-mosaic.webp
-        description: "Efficient training tooling, open-model research, and large model infrastructure"
-        tags: [lab, llm, research]
-      - name: Deep Cogito
-        homepage_url: https://www.deepcogito.com
-        logo: deep-cogito.webp
-        description: "AI lab building open-source general superintelligence"
-        tags: [lab, llm, proprietary]
+
       - name: DeepSeek
         homepage_url: https://deepseek.com
         logo: deepseek.webp
-        description: "Chinese lab behind DeepSeek-V3 and R1 — high-performance open-weight models"
-        tags: [lab, llm, proprietary]
+        description: "Chinese lab behind high-performance reasoning and open-weight language models"
+        tags: [lab, llm, reasoning, open-weights]
+
       - name: Google DeepMind
         homepage_url: https://deepmind.google
         logo: deepmind.webp
         description: "Google's AI research lab behind Gemini and AlphaFold"
         tags: [lab, llm, multimodal, proprietary]
+
       - name: Huawei Noah's Ark Lab
         homepage_url: http://dev3.noahlab.com.hk/
         logo: huawei-noahs-ark-lab.webp
-        description: "Huawei's foundational AI research group on NLP, vision, and multimodal"
+        description: "Huawei's foundational AI research group on NLP, vision, and multimodal systems"
         tags: [lab, research, multimodal]
-      - name: IBM Research
-        homepage_url: https://research.ibm.com/artificial-intelligence
-        logo: ibm-research.webp
-        description: "Open-source data tools, multimodal models, and enterprise AI research"
-        tags: [lab, research, multimodal]
+
       - name: Inception Labs
         homepage_url: https://inceptionlabs.ai
         logo: inception-labs.webp
-        description: "Creator of Mercury Code — a diffusion LLM optimized for coding workflows"
-        tags: [lab, llm, proprietary]
+        description: "AI lab building Mercury, a diffusion-based language model family for fast reasoning and coding"
+        tags: [lab, llm, reasoning, proprietary]
+
       - name: Microsoft Research
         homepage_url: https://www.microsoft.com/en-us/research/
         logo: microsoft-research.webp
-        description: "Corporate research powering Copilot, Azure AI, and foundational research"
+        description: "Corporate research organization powering Copilot, Azure AI, and foundational AI research"
         tags: [lab, llm, research, proprietary]
+
+      - name: MiniMax
+        homepage_url: https://www.minimax.io
+        description: "Global foundation model company developing text, speech, video, image, and music models"
+        tags: [lab, llm, multimodal, proprietary]
+
       - name: Mistral AI
         homepage_url: https://mistral.ai
         logo: mistral.webp
-        description: "European AI lab known for efficient open and closed models"
+        description: "European AI lab known for efficient open and closed language models"
+        tags: [lab, llm, open-weights, proprietary]
+
+      - name: Moonshot AI
+        homepage_url: https://moonshot.ai
+        logo: moonshot-ai.webp
+        description: "Chinese AI startup behind Kimi, focused on long-context assistants and frontier model development"
         tags: [lab, llm, proprietary]
-      - name: NVIDIA Research
-        homepage_url: https://research.nvidia.com
-        logo: nvidia-research.webp
-        description: "Advancing GPU-driven systems, model architectures, and scale innovations"
-        tags: [lab, research, multimodal]
+
       - name: OpenAI
         homepage_url: https://openai.com
         logo: openai.webp
-        description: "AI research and deployment company building safe AGI"
+        description: "AI research and deployment company building frontier reasoning and multimodal systems"
         tags: [lab, llm, proprietary, reasoning]
+
+      - name: Perplexity AI
+        homepage_url: https://research.perplexity.ai
+        description: "AI research lab and answer engine company publishing frontier research and language models"
+        tags: [lab, llm, search, research, proprietary]
+
+      - name: Safe Superintelligence Inc. (SSI)
+        homepage_url: https://ssi.inc
+        logo: ssi.webp
+        description: "Safety-focused AI lab dedicated to building safe superintelligence"
+        tags: [lab, safety, proprietary]
+
       - name: Samsung Research
         homepage_url: https://research.samsung.com
         logo: samsung-research.webp
-        description: "Samsung's research hubs focused on generative AI and on-device models"
+        description: "Samsung's research hubs focused on generative AI, multimodal systems, and on-device models"
         tags: [lab, research, multimodal]
+
+      - name: StepFun
+        homepage_url: https://stepfun.ai
+        description: "Chinese AI company developing Step-series language and reasoning models"
+        tags: [lab, llm, reasoning, proprietary]
+
       - name: Tencent AI Lab
         homepage_url: https://ailab.tencent.com/ailab/en/index/
         logo: tencent-ai-lab.webp
-        description: "Tencent's AI research developing large models and multimodal AI"
+        description: "Tencent's AI research lab developing large models, multimodal AI, and applied AI systems"
         tags: [lab, llm, multimodal, proprietary]
+
       - name: Thinking Machines Lab
         homepage_url: https://thinkingmachines.ai
         logo: thinking-machines-lab.webp
         twitter_url: https://x.com/thinkymachines
-        description: "Building more understandable and customizable AI systems"
+        description: "AI research and product company building more understandable and customizable AI systems"
         tags: [lab, llm, proprietary]
+
       - name: xAI
         homepage_url: https://x.ai
         logo: xai.webp
-        description: "Elon Musk's AI company, creator of Grok"
-        tags: [lab, llm, proprietary]
+        description: "AI company building Grok and frontier reasoning systems"
+        tags: [lab, llm, proprietary, reasoning]
+
       - name: Yandex Research
         homepage_url: https://research.yandex.com
         logo: yandex-research.webp
-        description: "Yandex's research teams working on large models and search AI"
+        description: "Yandex's research teams working on large models, search AI, and machine learning systems"
         tags: [lab, llm, proprietary]
+
       - name: Z.ai
         homepage_url: https://z.ai
         logo: z-ai-glm.webp
-        description: "Zhipu AI — creator of the GLM model family, dedicated to AGI development"
+        description: "Zhipu AI — creator of the GLM model family and large-scale Chinese foundation models"
         tags: [lab, llm, proprietary]
-  - name: Academic & Non-Profit Labs
+
+      - name: 01.AI
+        homepage_url: https://www.01.ai
+        description: "Chinese AI company behind the Yi model family and AI-first applications"
+        tags: [lab, llm, open-weights, proprietary]
+
+  - name: Open-Weight & Research Labs
     row: 0
     items:
       - name: Alibaba DAMO Academy
         homepage_url: https://damo.alibaba.com
         logo: alibaba-damo-academy.webp
-        description: "Alibaba's advanced R&D institute focused on large models and cloud AI"
+        description: "Alibaba's advanced R&D institute focused on large models, cloud AI, and applied research"
         tags: [lab, research, multimodal]
+
       - name: Alibaba Tongyi
         homepage_url: https://tongyi.aliyun.com
         logo: alibaba.webp
-        description: "Alibaba's AI research division behind Qwen open-weight models"
+        description: "Alibaba's AI model division behind the Qwen and Tongyi model families"
         tags: [lab, llm, open-weights]
+
+      - name: Black Forest Labs
+        homepage_url: https://bfl.ai
+        logo: black-forest-labs.webp
+        description: "Frontier AI lab building image generation models and visual AI infrastructure"
+        tags: [lab, image-generation, research]
+
+      - name: Databricks Mosaic
+        homepage_url: https://www.databricks.com/research/mosaic
+        logo: databricks-mosaic.webp
+        description: "Databricks research group focused on efficient training, open models, and large model infrastructure"
+        tags: [lab, llm, research, open-weights]
+
+      - name: Deep Cogito
+        homepage_url: https://www.deepcogito.com
+        logo: deep-cogito.webp
+        description: "AI lab building open-source systems for advanced reasoning and general intelligence research"
+        tags: [lab, llm, reasoning, open-weights]
+
+      - name: EleutherAI
+        homepage_url: https://www.eleuther.ai
+        logo: eleutherai.webp
+        description: "Decentralized AI research collective focused on open models, datasets, and interpretability"
+        tags: [lab, llm, open-weights, oss]
+
+      - name: Essential AI
+        homepage_url: https://www.essential.ai
+        logo: essential-ai.webp
+        description: "AI lab building open-source models and tools to make frontier AI more accessible"
+        tags: [lab, llm, open-weights, oss]
+
+      - name: Hugging Face
+        homepage_url: https://huggingface.co
+        logo: hugging-face.webp
+        description: "Community AI platform and open model hub for models, datasets, and machine learning tooling"
+        tags: [lab, platform, open-weights, community]
+
+      - name: IBM Research
+        homepage_url: https://research.ibm.com/artificial-intelligence
+        logo: ibm-research.webp
+        description: "Enterprise AI research organization working on open models, data tools, and trustworthy AI systems"
+        tags: [lab, research, enterprise, open-weights]
+
+      - name: Kyutai
+        homepage_url: https://kyutai.org
+        description: "Paris-based open-science AI lab building and democratizing advanced AI systems"
+        tags: [lab, research, open-science, open-weights]
+
+      - name: Meta AI
+        homepage_url: https://ai.meta.com
+        logo: meta.webp
+        description: "Meta's AI division — FAIR and Superintelligence Labs; creators of the Llama model family"
+        tags: [lab, llm, open-weights, research]
+
+      - name: Nous Research
+        homepage_url: https://nousresearch.com
+        logo: nous-research.webp
+        description: "Open-source AI research collective behind the Hermes and NousCoder model families"
+        tags: [lab, llm, open-weights, oss]
+
+      - name: NVIDIA Research
+        homepage_url: https://research.nvidia.com
+        logo: nvidia-research.webp
+        description: "Research organization advancing GPU-driven systems, model architectures, and large-scale AI infrastructure"
+        tags: [lab, research, multimodal, infrastructure]
+
+      - name: OpenMMLab
+        homepage_url: https://openmmlab.com
+        description: "Open-source AI research ecosystem for computer vision, multimodal learning, and model toolkits"
+        tags: [lab, vision, multimodal, oss]
+
+      - name: PleIAs
+        homepage_url: https://pleias.fr
+        logo: pleias.webp
+        description: "AI lab building energy-efficient open-data foundation models for regulated industries"
+        tags: [lab, llm, open-weights, oss]
+
+      - name: Prime Intellect
+        homepage_url: https://www.primeintellect.ai
+        logo: prime-intellect.webp
+        description: "Open stack for training, deploying, and improving agentic AI models"
+        tags: [lab, llm, agents, open-weights]
+
+      - name: Reflection AI
+        homepage_url: https://reflection.ai
+        logo: reflection-ai.webp
+        description: "AI lab building frontier open intelligence and open-weight models accessible to all"
+        tags: [lab, llm, open-weights]
+
+      - name: Sakana AI
+        homepage_url: https://sakana.ai
+        logo: sakana-ai.webp
+        description: "Japan-based AI lab building nature-inspired and frontier AI systems"
+        tags: [lab, llm, research]
+
+      - name: Stability AI
+        homepage_url: https://stability.ai
+        logo: stability-ai.webp
+        description: "Open AI company behind Stable Diffusion, SDXL, and generative media models"
+        tags: [lab, image-generation, open-weights]
+
+      - name: TII
+        homepage_url: https://tii.ae
+        logo: tii.webp
+        description: "Technology Innovation Institute, creators of the Falcon language model family"
+        tags: [lab, llm, open-weights]
+
+  - name: Academic & Non-Profit Institutes
+    row: 0
+    items:
       - name: Allen Institute for AI
         homepage_url: https://allenai.org
         logo: allenai.webp
         description: "Non-profit AI research institute, creators of OLMo and Dolma"
         tags: [lab, research, oss]
+
       - name: Berkeley BAIR
         homepage_url: https://bair.berkeley.edu
         logo: berkeley.webp
         description: "Berkeley Artificial Intelligence Research Lab"
         tags: [lab, academic, research]
+
+      - name: BigScience
+        homepage_url: https://bigscience.huggingface.co
+        description: "Open collaborative research initiative focused on large language models and responsible AI"
+        tags: [lab, research, open-science, oss]
+
       - name: CMU LTI
         homepage_url: https://www.lti.cs.cmu.edu
         logo: cmu.webp
         description: "Carnegie Mellon's Language Technologies Institute"
         tags: [lab, academic, nlp]
-      - name: EleutherAI
-        homepage_url: https://www.eleuther.ai
-        logo: eleutherai.webp
-        description: "Decentralized AI research collective focused on open models"
-        tags: [lab, llm, open-weights, oss]
-      - name: Essential AI
-        homepage_url: https://www.essential.ai
-        logo: essential-ai.webp
-        description: "Open platform to democratize frontier AI through collaborative science"
-        tags: [lab, llm, open-weights]
-      - name: Hugging Face
-        homepage_url: https://huggingface.co
-        logo: hugging-face.webp
-        description: "Community AI platform and open model hub"
-        tags: [lab, platform, open-weights, community]
-      - name: Meta AI
-        homepage_url: https://ai.meta.com
-        logo: meta.webp
-        description: "Meta's AI division — FAIR and Superintelligence Labs; creators of Llama"
-        tags: [lab, llm, open-weights, research]
-      - name: Moonshot AI
-        homepage_url: https://moonshot.ai
-        logo: moonshot-ai.webp
-        description: "Chinese AI startup behind Kimi — focused on AGI and energy efficiency"
-        tags: [lab, llm]
-      - name: Nous Research
-        homepage_url: https://nousresearch.com
-        logo: nous-research.webp
-        description: "Open-source AI research collective behind the Hermes and NousCoder families"
-        tags: [lab, llm, open-weights, oss]
-      - name: PleIAs
-        homepage_url: https://pleias.fr
-        logo: pleias.webp
-        description: "Energy-efficient open-data foundation LLMs for regulated industries"
-        tags: [lab, llm, open-weights, oss]
-      - name: Prime Intellect
-        homepage_url: https://www.primeintellect.ai
-        logo: prime-intellect.webp
-        description: "Open superintelligence stack for training and deploying agentic models"
-        tags: [lab, llm, open-weights]
-      - name: Reflection AI
-        homepage_url: https://reflection.ai
-        logo: reflection-ai.webp
-        description: "Building frontier open intelligence with open-weight models accessible to all"
-        tags: [lab, llm, open-weights]
-      - name: Safe Superintelligence Inc. (SSI)
-        homepage_url: https://ssi.inc
-        logo: ssi.webp
-        description: "Ilya Sutskever's safety-focused superintelligence lab"
-        tags: [lab, safety]
-      - name: Sakana AI
-        homepage_url: https://sakana.ai
-        logo: sakana-ai.webp
-        description: "Japan-based lab building frontier AI solutions"
-        tags: [lab, llm, open-weights]
-      - name: Stability AI
-        homepage_url: https://stability.ai
-        logo: stability-ai.webp
-        description: "Open AI lab behind Stable Diffusion and SDXL"
-        tags: [lab, image-generation, open-weights]
+
+      - name: LAION
+        homepage_url: https://laion.ai
+        description: "Non-profit organization building open datasets, tools, and models for machine learning research"
+        tags: [lab, datasets, open-science, oss]
+
+      - name: MILA
+        homepage_url: https://mila.quebec
+        description: "Quebec AI Institute focused on machine learning research and scientific AI advancement"
+        tags: [lab, academic, research]
+
       - name: Stanford HAI
         homepage_url: https://hai.stanford.edu
         logo: stanford.webp
         description: "Stanford's Human-Centered AI Institute"
         tags: [lab, academic, research]
-      - name: TII
-        homepage_url: https://tii.ae
-        logo: tii.webp
-        description: "Technology Innovation Institute, creators of Falcon LLM"
-        tags: [lab, llm, open-weights]
+
+      - name: Vector Institute
+        homepage_url: https://vectorinstitute.ai
+        description: "Canadian AI research institute advancing machine learning research and AI adoption"
+        tags: [lab, research, academic]
