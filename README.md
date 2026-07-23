@@ -1,18 +1,32 @@
 # ailandscape.org — AI Ecosystem Landscape
 
-A comprehensive, interactive map of the AI tools ecosystem. Browse tools across models, infrastructure, protocols, security, and product categories — inspired by the [CNCF Landscape](https://landscape.cncf.io).
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Tools tracked](https://img.shields.io/endpoint?url=https%3A%2F%2Failandscape.org%2Fcount.json&color=2a54d4)](https://ailandscape.org)
+[![Built with Next.js](https://img.shields.io/badge/Next.js-16-000?logo=next.js)](https://nextjs.org)
+[![Deployed on Cloudflare](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=fff)](https://workers.cloudflare.com)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-Live at [ailandscape.org](https://ailandscape.org/?utm_source=github&utm_medium=readme&utm_campaign=organic).
+A comprehensive, interactive map of the AI tools ecosystem — categorized, validated, and updated continuously. Inspired by the [CNCF Landscape](https://landscape.cncf.io).
+
+🔗 **Live:** [ailandscape.org](https://ailandscape.org/?utm_source=github&utm_medium=readme&utm_campaign=organic) · 📡 **RSS:** [feed.xml](https://ailandscape.org/feed.xml) · ➕ **Submit a tool:** [/submit](https://ailandscape.org/submit)
+
+---
+
+## Why star this?
+
+If the AI tooling space moves fast enough that a static catalog isn't enough — **star to follow**. We curate, validate, and add new tools every week. Recently added tools land on the home page and the [RSS feed](https://ailandscape.org/feed.xml).
 
 ## Features
 
-- **Hundreds of tools** across multiple categories and groups
+- **Hundreds of tools** across 26 categories and 6 groups
+- **Per-category landing pages** at `/category/[slug]` for focused browsing
+- **Per-tool detail pages** at `/tool/[slug]` with related items
 - **Full-text search** with fuzzy matching and ⌘K command palette
-- **Tag-based filtering** — click any badge to filter by technology
-- **Category navigation** — collapse/expand, group-level filtering
+- **Tag-based filtering** — click any badge to filter
 - **Dark mode** — full light/dark theme support
 - **Shareable URLs** — every filter state is reflected in the URL
-- **Keyboard accessible** — full keyboard navigation, ARIA labels, screen reader friendly
+- **Recently Added** strip + RSS feed for keeping up with new entries
+- **Keyboard accessible** — full keyboard navigation, ARIA, screen reader friendly
 
 ## Tech Stack
 
@@ -23,6 +37,7 @@ Live at [ailandscape.org](https://ailandscape.org/?utm_source=github&utm_medium=
 - [Phosphor Icons](https://phosphoricons.com)
 - [Biome](https://biomejs.dev) for linting and formatting
 - Data stored as YAML files in `src/data/categories/`
+- Deployed on Cloudflare Workers
 
 ## Getting Started
 
@@ -65,13 +80,19 @@ subcategories:
         project: graduated                           # optional: graduated | incubating | sandbox
         description: "Open-weights research lab known for Hermes and Nous-Capybara models"
         tags: [lab, llm, open-weights, research]
+        added_at: 2026-05-08                         # optional — powers Recently Added + RSS
 ```
 
 Tags are defined in `src/data/tags.yaml`. Every tag used in a category file must have an entry there.
 
-## Adding a Tool
+## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+We have **two ways** to contribute:
+
+1. **Submit form** — [ailandscape.org/submit](https://ailandscape.org/submit) opens a pre-filled GitHub issue you can review and submit. No coding required.
+2. **Pull request** — see [CONTRIBUTING.md](CONTRIBUTING.md) for the YAML schema, validation rules, and PR checklist.
+
+Both routes are equally welcome.
 
 ## License
 
