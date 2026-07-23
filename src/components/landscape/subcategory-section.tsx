@@ -98,7 +98,7 @@ export function SubcategorySection({
             item={item}
             viewMode={viewMode}
             categoryColor={categoryColor}
-            priority={isFirstSubcategory || index < 4}
+            priority={isFirstSubcategory && index < 4}
           />
         ))}
       </div>

@@ -101,6 +101,7 @@ export function ItemCard({
     return (
       <Link
         href={href}
+        prefetch={false}
         aria-label={item.name}
         onClick={handleClick}
         className="flex w-full min-h-[44px] items-center gap-2 rounded border-2 border-border bg-card px-2 py-1.5 cursor-pointer transition-[transform,box-shadow] duration-150 hover:scale-[1.02] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
@@ -125,6 +126,7 @@ export function ItemCard({
   return (
     <Link
       href={href}
+      prefetch={false}
       aria-label={item.name}
       onClick={handleClick}
       className="flex cursor-pointer flex-col items-center gap-1 rounded transition-[transform,box-shadow] duration-150 hover:scale-[1.03] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
