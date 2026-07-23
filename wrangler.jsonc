@@ -4,6 +4,16 @@
   "name": "ailandscapeorg",
   "compatibility_date": "2025-09-27",
   "compatibility_flags": ["nodejs_compat"],
+  "find_additional_modules": true,
+  "base_dir": "src/data",
+  "preserve_file_names": true,
+  "rules": [
+    {
+      "type": "Text",
+      "globs": ["categories/**/*.yaml", "tags.yaml"],
+      "fallthrough": true
+    }
+  ],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
