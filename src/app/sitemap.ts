@@ -1,17 +1,58 @@
 import type { MetadataRoute } from "next";
+import { getLandscapeData } from "@/data/landscape";
+import { toSlug } from "@/lib/slug";
 
 export const dynamic = "force-static";
 
-// Update this date whenever categories.yaml or significant content changes.
-const LAST_MODIFIED = new Date("2026-03-30");
+const BASE_URL = "https://ailandscape.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const data = getLandscapeData();
+  const now = new Date();
+
+  const entries: MetadataRoute.Sitemap = [
     {
-      url: "https://ailandscape.org",
-      lastModified: LAST_MODIFIED,
+      url: BASE_URL,
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/submit`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
   ];
+
+  for (const category of data.landscape) {
+    entries.push({
+      url: `${BASE_URL}/category/${toSlug(category.name)}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+  }
+
+  for (const category of data.landscape) {
+    for (const subcategory of category.subcategories) {
+      for (const item of subcategory.items) {
+        const lastModified = item.added_at ? new Date(item.added_at) : now;
+        entries.push({
+          url: `${BASE_URL}/tool/${toSlug(item.name)}`,
+          lastModified,
+          changeFrequency: "monthly",
+          priority: 0.6,
+        });
+      }
+    }
+  }
+
+  return entries;
 }
