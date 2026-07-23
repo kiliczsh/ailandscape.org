@@ -1,4 +1,4 @@
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse } from "yaml";
 import { toSlug } from "@/lib/slug";
@@ -14,13 +14,6 @@ export interface FoundItem {
   item: LandscapeItem;
   category: Category;
   subcategory: Subcategory;
-}
-
-function getDataPath(...segments: string[]): string {
-  const projectPath = join(process.cwd(), "src", "data", ...segments);
-  if (existsSync(projectPath)) return projectPath;
-
-  return join("/bundle", ...segments);
 }
 
 export function findCategoryBySlug(
@@ -84,7 +77,7 @@ export function getRelatedItems(
 }
 
 export function getLandscapeData(): LandscapeData {
-  const dir = getDataPath("categories");
+  const dir = join(process.cwd(), "src/data/categories");
   const files = readdirSync(dir)
     .filter((f) => f.endsWith(".yaml"))
     .sort();
@@ -104,7 +97,7 @@ export function getLandscapeData(): LandscapeData {
     }
   });
 
-  const tagsPath = getDataPath("tags.yaml");
+  const tagsPath = join(process.cwd(), "src/data/tags.yaml");
   let tags: TagsMap = {};
   try {
     tags = parse(readFileSync(tagsPath, "utf8")) as TagsMap;
