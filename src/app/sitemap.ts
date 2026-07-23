@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getLandscapeData } from "@/data/landscape";
+import { getLandscapeData, getTagsWithItems } from "@/data/landscape";
 import { toSlug } from "@/lib/slug";
 
 export const dynamic = "force-static";
@@ -37,6 +37,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
+    });
+  }
+
+  for (const tag of getTagsWithItems(data)) {
+    entries.push({
+      url: `${BASE_URL}/tag/${tag}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.7,
     });
   }
 
