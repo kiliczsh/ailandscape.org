@@ -89,6 +89,10 @@ export function getItemsByTag(data: LandscapeData, tag: string): FoundItem[] {
   return items;
 }
 
+// Tag pages with fewer tools than this are thin content — noindexed and
+// kept out of the sitemap until they have enough tools to be worth indexing.
+export const MIN_INDEXABLE_TAG_ITEMS = 5;
+
 export function getTagsWithItems(data: LandscapeData): string[] {
   const used = new Set<string>();
   for (const category of data.landscape) {

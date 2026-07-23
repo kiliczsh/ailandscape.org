@@ -1,5 +1,10 @@
 import type { MetadataRoute } from "next";
-import { getLandscapeData, getTagsWithItems } from "@/data/landscape";
+import {
+  getItemsByTag,
+  getLandscapeData,
+  getTagsWithItems,
+  MIN_INDEXABLE_TAG_ITEMS,
+} from "@/data/landscape";
 import { toSlug } from "@/lib/slug";
 
 export const dynamic = "force-static";
@@ -38,6 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const tag of getTagsWithItems(data)) {
+    // Thin tag pages are noindexed — keep them out of the sitemap too
+    if (getItemsByTag(data, tag).length < MIN_INDEXABLE_TAG_ITEMS) continue;
     entries.push({
       url: `${BASE_URL}/tag/${tag}`,
       changeFrequency: "weekly",

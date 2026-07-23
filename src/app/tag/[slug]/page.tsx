@@ -7,6 +7,7 @@ import {
   getItemsByTag,
   getLandscapeData,
   getTagsWithItems,
+  MIN_INDEXABLE_TAG_ITEMS,
 } from "@/data/landscape";
 import { toSlug } from "@/lib/slug";
 import { safeJsonLd } from "@/lib/utils";
@@ -41,6 +42,11 @@ export async function generateMetadata({
   return {
     title,
     description,
+    // Thin tag pages stay crawlable but out of the index until they
+    // have enough tools to offer real value.
+    ...(items.length < MIN_INDEXABLE_TAG_ITEMS
+      ? { robots: { index: false, follow: true } }
+      : {}),
     alternates: { canonical: `https://ailandscape.org/tag/${slug}` },
     openGraph: {
       title,
