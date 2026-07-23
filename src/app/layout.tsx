@@ -33,6 +33,11 @@ export const metadata: Metadata = {
     "Explore AI tools, frameworks, and services in one place. Browse models, infrastructure, developer tools, and products — organized by category and filterable by tag.",
   alternates: {
     canonical: "https://ailandscape.org",
+    types: {
+      "application/rss+xml": [
+        { url: "/feed.xml", title: "AI Landscape — Recently Added" },
+      ],
+    },
   },
   icons: {
     icon: "/favicon.svg",

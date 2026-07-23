@@ -1,7 +1,37 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import { LandscapeView } from "@/components/landscape/landscape-view";
+import { RecentlyAdded } from "@/components/landscape/recently-added";
 import { Skeleton } from "@/components/ui/skeleton";
-import { getLandscapeData } from "@/data/landscape";
+import { getLandscapeData, getRecentlyAdded } from "@/data/landscape";
+import type { LandscapeData } from "@/types/landscape";
+
+function countTools(data: LandscapeData): number {
+  return data.landscape.reduce(
+    (sum, cat) =>
+      sum + cat.subcategories.reduce((s, sub) => s + sub.items.length, 0),
+    0,
+  );
+}
+
+export function generateMetadata(): Metadata {
+  const total = countTools(getLandscapeData());
+  const rounded = Math.floor(total / 50) * 50;
+  const title = `AI Landscape — Browse ${rounded}+ AI Tools by Category & Tag`;
+  const description = `Explore ${total} AI tools across models, infrastructure, developer tools, and products. Browse by category, filter by tag, and navigate the full AI ecosystem.`;
+  return {
+    title,
+    description,
+    alternates: { canonical: "https://ailandscape.org" },
+    openGraph: {
+      title,
+      description,
+      url: "https://ailandscape.org",
+      type: "website",
+    },
+    twitter: { card: "summary_large_image", title, description },
+  };
+}
 
 // Widths approximate the actual FilterBar group pill labels (unique values = stable keys)
 const PILL_WIDTHS = [36, 44, 62, 104, 77, 68, 66];
@@ -56,9 +86,19 @@ function LandscapeSkeleton() {
 }
 
 export default function Home() {
+  const data = getLandscapeData();
+  const total = countTools(data);
+  const recent = getRecentlyAdded(data, 6);
   return (
-    <Suspense fallback={<LandscapeSkeleton />}>
-      <LandscapeView data={getLandscapeData()} />
-    </Suspense>
+    <>
+      <h1 className="sr-only">
+        AI Landscape — browse {total} AI tools across {data.landscape.length}{" "}
+        categories
+      </h1>
+      <RecentlyAdded items={recent} />
+      <Suspense fallback={<LandscapeSkeleton />}>
+        <LandscapeView data={data} />
+      </Suspense>
+    </>
   );
 }
