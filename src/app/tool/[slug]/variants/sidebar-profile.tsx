@@ -185,7 +185,11 @@ export function SidebarProfile({
                   return (
                     <li key={tag}>
                       <Link
-                        href={`/?tag=${encodeURIComponent(tag)}`}
+                        href={
+                          meta
+                            ? `/tag/${tag}`
+                            : `/?tag=${encodeURIComponent(tag)}`
+                        }
                         className="rounded transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                       >
                         <Badge
