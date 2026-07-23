@@ -8,6 +8,7 @@ export interface LandscapeItem {
   project?: string;
   description?: string;
   tags?: string[];
+  added_at?: string;
 }
 
 export interface Subcategory {
@@ -29,6 +30,7 @@ export interface Category {
   group?: CategoryGroup;
   color?: string;
   icon?: string;
+  intro?: string;
   subcategories: Subcategory[];
 }
 

@@ -285,6 +285,7 @@ const CANONICAL_KEY_ORDER = [
   "project",
   "description",
   "tags",
+  "added_at",
 ];
 
 let keyOrderIssues = 0;

@@ -27,9 +27,12 @@ twitter_url: https://x.com/example               # optional
 project: graduated                                # optional — graduated | incubating | sandbox
 description: "One sentence describing what it does"  # recommended, ≤80 chars
 tags: [tag-a, tag-b]                             # recommended
+added_at: 2026-05-08                             # recommended for new entries — ISO date
 ```
 
 **Description:** one sentence, ≤80 chars, no trailing period. Describe what it *does*, not what it *is*.
+
+**`added_at`:** ISO date (`YYYY-MM-DD`) the entry was added. Powers the "Recently Added" strip on the home page and `/feed.xml` RSS feed. Recommended for new entries; existing items without `added_at` are simply skipped from the recent list.
 
 **Item order:** entries within a subcategory must be sorted **alphabetically (A–Z, case-insensitive)** by name.
 
