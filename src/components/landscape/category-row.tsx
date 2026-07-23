@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  ArrowSquareOut,
   ArrowsLeftRight,
   Brain,
   Buildings,
@@ -29,6 +30,7 @@ import {
   ShieldCheck,
   Waveform,
 } from "@phosphor-icons/react";
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { toast } from "sonner";
 
@@ -126,16 +128,28 @@ export function ActionPills({
   onShare,
   onTierList,
   categoryName,
+  categorySlug,
   orientation = "horizontal",
 }: {
   onShare: (e: React.MouseEvent) => void;
   onTierList: (e: React.MouseEvent) => void;
   categoryName: string;
+  categorySlug?: string;
   orientation?: "horizontal" | "vertical";
 }) {
   if (orientation === "vertical") {
     return (
       <>
+        {categorySlug && (
+          <Link
+            href={`/category/${categorySlug}`}
+            title={`Open ${categoryName} page`}
+            className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <ArrowSquareOut size={12} aria-hidden="true" />
+            <span className="text-[8px] font-medium leading-none">Open</span>
+          </Link>
+        )}
         <button
           type="button"
           onClick={onShare}
@@ -159,6 +173,16 @@ export function ActionPills({
   }
   return (
     <>
+      {categorySlug && (
+        <Link
+          href={`/category/${categorySlug}`}
+          title={`Open ${categoryName} page`}
+          className="flex shrink-0 items-center gap-1 rounded-full bg-category-bar-text/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <ArrowSquareOut size={11} aria-hidden="true" />
+          Open
+        </Link>
+      )}
       <button
         type="button"
         onClick={onShare}
@@ -299,6 +323,7 @@ export function CategoryRow({
           onShare={handleShareCategory}
           onTierList={handleTierListClick}
           categoryName={category.name}
+          categorySlug={slug}
         />
       </div>
 
@@ -376,6 +401,7 @@ export function CategoryRow({
                   onShare={handleShareCategory}
                   onTierList={handleTierListClick}
                   categoryName={category.name}
+                  categorySlug={slug}
                   orientation="vertical"
                 />
               </div>
