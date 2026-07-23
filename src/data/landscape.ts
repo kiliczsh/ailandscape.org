@@ -16,6 +16,32 @@ export interface FoundItem {
   subcategory: Subcategory;
 }
 
+export function findCategoryBySlug(
+  data: LandscapeData,
+  slug: string,
+): Category | null {
+  for (const category of data.landscape) {
+    if (toSlug(category.name) === slug) return category;
+  }
+  return null;
+}
+
+export function getRecentlyAdded(data: LandscapeData, limit = 6): FoundItem[] {
+  const items: FoundItem[] = [];
+  for (const category of data.landscape) {
+    for (const subcategory of category.subcategories) {
+      for (const item of subcategory.items) {
+        if (item.added_at) items.push({ item, category, subcategory });
+      }
+    }
+  }
+  return items
+    .sort((a, b) =>
+      (b.item.added_at ?? "").localeCompare(a.item.added_at ?? ""),
+    )
+    .slice(0, limit);
+}
+
 export function findItemBySlug(
   data: LandscapeData,
   slug: string,
