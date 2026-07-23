@@ -103,7 +103,12 @@ export function getTagsWithItems(data: LandscapeData): string[] {
     .sort();
 }
 
+// Cache parsed YAML across calls in production builds only —
+// in dev, re-reading keeps YAML edits visible without a restart.
+let cachedData: LandscapeData | null = null;
+
 export function getLandscapeData(): LandscapeData {
+  if (cachedData && process.env.NODE_ENV === "production") return cachedData;
   const dir = join(process.cwd(), "src/data/categories");
   const files = readdirSync(dir)
     .filter((f) => f.endsWith(".yaml"))
@@ -132,5 +137,6 @@ export function getLandscapeData(): LandscapeData {
     throw new Error(`Failed to load tags.yaml: ${err}`);
   }
 
-  return { landscape, tags };
+  cachedData = { landscape, tags };
+  return cachedData;
 }
