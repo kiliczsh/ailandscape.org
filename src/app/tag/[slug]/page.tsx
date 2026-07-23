@@ -16,6 +16,8 @@ interface TagPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const data = getLandscapeData();
   return getTagsWithItems(data).map((tag) => ({ slug: tag }));

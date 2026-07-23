@@ -11,6 +11,8 @@ interface CategoryPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamicParams = false;
+
 function countItems(category: Category): number {
   return category.subcategories.reduce((sum, sub) => sum + sub.items.length, 0);
 }
