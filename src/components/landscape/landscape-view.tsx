@@ -131,6 +131,19 @@ export function LandscapeView({ data }: LandscapeViewProps) {
     [query, activeTag, data.tags, setActiveTag],
   );
 
+  // Track search_query after debounce settle (URL already debounced ~150ms)
+  const lastTrackedQueryRef = useRef("");
+  useEffect(() => {
+    const trimmed = query.trim().toLowerCase();
+    if (trimmed.length < 2) return;
+    if (trimmed === lastTrackedQueryRef.current) return;
+    lastTrackedQueryRef.current = trimmed;
+    trackEvent("search_query", {
+      query: trimmed,
+      result_count: visibleItems,
+    });
+  }, [query, visibleItems]);
+
   // Auto-scroll to category when ?category= param is present
   useEffect(() => {
     if (!activeCategory) return;

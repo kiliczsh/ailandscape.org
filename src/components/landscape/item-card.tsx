@@ -90,10 +90,11 @@ export function ItemCard({
   priority = false,
 }: ItemCardProps) {
   const { query } = useLandscapeFilter();
-  const href = `/tool/${toSlug(item.name)}`;
+  const slug = toSlug(item.name);
+  const href = `/tool/${slug}`;
 
   function handleClick() {
-    trackEvent("item_viewed", { item_name: item.name });
+    trackEvent("item_viewed", { item_name: item.name, item_slug: slug });
   }
 
   if (viewMode === "card") {
