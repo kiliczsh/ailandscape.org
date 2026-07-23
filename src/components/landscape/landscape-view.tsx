@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Empty, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
@@ -8,9 +9,17 @@ import { useLandscapeParams } from "@/hooks/use-landscape-params";
 import { trackEvent } from "@/lib/analytics";
 import type { LandscapeData, Subcategory } from "@/types/landscape";
 import { CategoryRow } from "./category-row";
-import { CommandPalette } from "./command-palette";
 import { FilterBar } from "./filter-bar";
-import { TierListModal } from "./tier-list-modal";
+
+// Loaded on demand — keeps html2canvas-pro and cmdk out of the initial bundle
+const CommandPalette = dynamic(
+  () => import("./command-palette").then((m) => m.CommandPalette),
+  { ssr: false },
+);
+const TierListModal = dynamic(
+  () => import("./tier-list-modal").then((m) => m.TierListModal),
+  { ssr: false },
+);
 
 interface LandscapeViewProps {
   data: LandscapeData;
