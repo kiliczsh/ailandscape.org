@@ -51,6 +51,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
+      url: `https://ailandscape.org/tag/${slug}`,
       type: "website",
       images: ["/opengraph-image"],
     },
