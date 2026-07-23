@@ -1,7 +1,7 @@
 # ailandscape.org — AI Ecosystem Landscape
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tools tracked](https://img.shields.io/endpoint?url=https%3A%2F%2Failandscape.org%2Fcount.json&color=2a54d4)](https://ailandscape.org)
+[![Tools tracked](https://img.shields.io/endpoint?url=https://ailandscape.org/count.json&color=2a54d4)](https://ailandscape.org)
 [![Built with Next.js](https://img.shields.io/badge/Next.js-16-000?logo=next.js)](https://nextjs.org)
 [![Deployed on Cloudflare](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=fff)](https://workers.cloudflare.com)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
