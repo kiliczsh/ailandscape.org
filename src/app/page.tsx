@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { CategoryDirectory } from "@/components/landscape/category-directory";
 import { LandscapeView } from "@/components/landscape/landscape-view";
 import { RecentlyAdded } from "@/components/landscape/recently-added";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -96,6 +97,7 @@ export default function Home() {
         categories
       </h1>
       <RecentlyAdded items={recent} />
+      <CategoryDirectory data={data} />
       <Suspense fallback={<LandscapeSkeleton />}>
         <LandscapeView data={data} />
       </Suspense>
