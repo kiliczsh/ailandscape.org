@@ -210,6 +210,22 @@ export function SidebarProfile({
             </section>
           )}
 
+          <div className="mt-8 border-t border-border pt-4 text-xs text-muted-foreground">
+            See something off?{" "}
+            <a
+              href={`https://github.com/kiliczsh/ailandscape.org/issues/new?template=fix_data.md&title=${encodeURIComponent(
+                `Fix data: ${item.name}`,
+              )}&body=${encodeURIComponent(
+                `**Tool:** ${item.name}\n**URL:** https://ailandscape.org/tool/${toSlug(item.name)}\n\n**What's wrong:**\n\n**Suggested fix:**\n`,
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-foreground"
+            >
+              Suggest an edit
+            </a>
+          </div>
+
           {related.length > 0 && (
             <section className="mt-10">
               <h2 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">

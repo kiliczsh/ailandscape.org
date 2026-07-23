@@ -6,6 +6,7 @@ import {
   getRelatedItems,
 } from "@/data/landscape";
 import { toSlug } from "@/lib/slug";
+import { safeJsonLd } from "@/lib/utils";
 import { ToolDetail } from "./tool-detail";
 
 interface ToolPageProps {
@@ -55,14 +56,75 @@ export default async function ToolPage({ params }: ToolPageProps) {
   if (!found) notFound();
   const { item, category, subcategory } = found;
   const related = getRelatedItems(data, item.name, subcategory.name);
+  const categorySlug = toSlug(category.name);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: item.name,
+    description:
+      item.description ??
+      `${item.name} in ${subcategory.name}, part of ${category.name} on the AI Landscape.`,
+    url: `https://ailandscape.org/tool/${slug}`,
+    applicationCategory: category.name,
+    ...(item.homepage_url ? { sameAs: [item.homepage_url] } : {}),
+    ...(item.logo
+      ? { image: `https://ailandscape.org/logos/${item.logo}` }
+      : {}),
+    ...(item.tags && item.tags.length > 0
+      ? { keywords: item.tags.join(", ") }
+      : {}),
+    isPartOf: {
+      "@type": "CollectionPage",
+      name: `${category.name} — AI Landscape`,
+      url: `https://ailandscape.org/category/${categorySlug}`,
+    },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "AI Landscape",
+        item: "https://ailandscape.org",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: category.name,
+        item: `https://ailandscape.org/category/${categorySlug}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: item.name,
+        item: `https://ailandscape.org/tool/${slug}`,
+      },
+    ],
+  };
 
   return (
-    <ToolDetail
-      item={item}
-      category={category}
-      subcategory={subcategory}
-      related={related}
-      tags={data.tags}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: safeJsonLd escapes </script>
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: safeJsonLd escapes </script>
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbLd) }}
+      />
+      <ToolDetail
+        item={item}
+        category={category}
+        subcategory={subcategory}
+        related={related}
+        tags={data.tags}
+      />
+    </>
   );
 }
