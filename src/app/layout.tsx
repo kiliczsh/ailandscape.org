@@ -95,9 +95,10 @@ export default function RootLayout({
           }}
         />
       </head>
+      {/* No ad units render yet — lazyOnload keeps AdSense off the critical path */}
       <Script
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8397851036658136"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         crossOrigin="anonymous"
       />
       <Script
