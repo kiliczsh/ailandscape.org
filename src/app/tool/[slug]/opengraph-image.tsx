@@ -4,6 +4,7 @@ import { findItemBySlug, getLandscapeData } from "@/data/landscape";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt = "AI Landscape tool";
+export const dynamic = "force-dynamic";
 
 export default async function ToolOgImage({
   params,

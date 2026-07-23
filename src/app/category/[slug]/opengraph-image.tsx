@@ -4,6 +4,7 @@ import { findCategoryBySlug, getLandscapeData } from "@/data/landscape";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt = "AI Landscape category";
+export const dynamic = "force-dynamic";
 
 export default async function CategoryOgImage({
   params,
@@ -75,6 +76,7 @@ export default async function CategoryOgImage({
 
       <div
         style={{
+          display: "flex",
           marginTop: 22,
           fontSize: 32,
           color: "#3a2f44",
