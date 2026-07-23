@@ -6,26 +6,24 @@ export const dynamic = "force-static";
 
 const BASE_URL = "https://ailandscape.org";
 
+// lastModified is intentionally omitted when we don't know the real date —
+// a fake build-time lastmod on every URL teaches crawlers to ignore it.
 export default function sitemap(): MetadataRoute.Sitemap {
   const data = getLandscapeData();
-  const now = new Date();
 
   const entries: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${BASE_URL}/about`,
-      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
       url: `${BASE_URL}/submit`,
-      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.4,
     },
@@ -34,7 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const category of data.landscape) {
     entries.push({
       url: `${BASE_URL}/category/${toSlug(category.name)}`,
-      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     });
@@ -43,7 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const tag of getTagsWithItems(data)) {
     entries.push({
       url: `${BASE_URL}/tag/${tag}`,
-      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.7,
     });
@@ -52,10 +48,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const category of data.landscape) {
     for (const subcategory of category.subcategories) {
       for (const item of subcategory.items) {
-        const lastModified = item.added_at ? new Date(item.added_at) : now;
         entries.push({
           url: `${BASE_URL}/tool/${toSlug(item.name)}`,
-          lastModified,
+          ...(item.added_at ? { lastModified: new Date(item.added_at) } : {}),
           changeFrequency: "monthly",
           priority: 0.6,
         });
