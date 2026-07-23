@@ -76,6 +76,33 @@ export function getRelatedItems(
   return [];
 }
 
+export function getItemsByTag(data: LandscapeData, tag: string): FoundItem[] {
+  const items: FoundItem[] = [];
+  for (const category of data.landscape) {
+    for (const subcategory of category.subcategories) {
+      for (const item of subcategory.items) {
+        if (item.tags?.includes(tag))
+          items.push({ item, category, subcategory });
+      }
+    }
+  }
+  return items;
+}
+
+export function getTagsWithItems(data: LandscapeData): string[] {
+  const used = new Set<string>();
+  for (const category of data.landscape) {
+    for (const subcategory of category.subcategories) {
+      for (const item of subcategory.items) {
+        for (const tag of item.tags ?? []) used.add(tag);
+      }
+    }
+  }
+  return Object.keys(data.tags)
+    .filter((tag) => used.has(tag))
+    .sort();
+}
+
 export function getLandscapeData(): LandscapeData {
   const dir = join(process.cwd(), "src/data/categories");
   const files = readdirSync(dir)
