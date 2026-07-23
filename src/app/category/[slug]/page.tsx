@@ -203,7 +203,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-sm">
         <Link
-          href={`/?category=${slug}`}
+          href={`/#category-${slug}`}
           className="text-foreground hover:underline"
         >
           ← Back to the full landscape

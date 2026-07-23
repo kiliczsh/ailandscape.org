@@ -68,7 +68,7 @@ export function SidebarProfile({
 
             <p className="mt-1 text-center text-xs text-muted-foreground">
               <Link
-                href={`/?category=${catSlug}`}
+                href={`/#category-${catSlug}`}
                 className="transition-colors hover:text-foreground"
                 style={{ color: accent }}
               >
