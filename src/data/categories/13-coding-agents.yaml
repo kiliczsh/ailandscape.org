@@ -164,11 +164,6 @@ subcategories:
         repo_url: https://github.com/intellectronica/ruler
         logo: ruler.webp
         description: "Central AI agent rule registry for consistent agent behavior across projects"
-      - name: Steel Browser
-        homepage_url: https://steel.dev
-        repo_url: https://github.com/steel-dev/steel-browser
-        logo: steel-browser.webp
-        description: "Open-source browser sandbox and automation infrastructure for AI agents"
       - name: SWE-agent
         homepage_url: https://swe-agent.com
         repo_url: https://github.com/princeton-nlp/SWE-agent
@@ -178,57 +173,29 @@ subcategories:
   - name: AI-Powered IDEs
     row: 1
     items:
-      - name: Atom
-        homepage_url: https://atom-editor.cc/
-        logo: atom.webp
-        description: "Atom community fork — hackable Electron text editor with AI plugin support"
       - name: Cursor
         homepage_url: https://cursor.sh
         logo: cursor.webp
         description: "AI-native code editor"
         tags: [coding, ide]
-      - name: Eclipse
-        homepage_url: https://www.eclipse.org/eclipseide/
-        logo: eclipse.webp
-        description: "Open-source IDE supporting Java, C/C++, PHP, and more with a rich plugin system"
       - name: Google Antigravity
         homepage_url: https://antigravity.google/
         logo: google-antigravity.webp
         description: "Google's agentic development platform evolving the IDE into the agent-first era"
-      - name: IntelliJ IDEA
-        homepage_url: https://www.jetbrains.com/idea/
-        logo: intellij-idea.webp
-        description: "JetBrains' flagship IDE with deep language support and AI assistance via Junie"
       - name: Kiro
         homepage_url: https://kiro.dev/
         logo: kiro.webp
         description: "Amazon's AI IDE with spec-driven development — agents write and execute specs"
-      - name: PyCharm
-        homepage_url: https://www.jetbrains.com/pycharm/
-        logo: pycharm.webp
-        description: "JetBrains' Python IDE with smart code assistance and AI-powered completions"
-      - name: Visual Studio Code
-        homepage_url: https://code.visualstudio.com/
-        logo: visual-studio-code.webp
-        description: "Microsoft's free open-source code editor with AI assistance via GitHub Copilot"
       - name: Warp
         homepage_url: https://www.warp.dev/
         repo_url: https://github.com/warpdotdev/Warp
         logo: warp.webp
         description: "AI-native terminal with inline AI, agentic workflows, and team collaboration"
-      - name: WebStorm
-        homepage_url: https://www.jetbrains.com/webstorm/
-        logo: webstorm.webp
-        description: "JetBrains' JavaScript/TypeScript IDE with intelligent coding assistance"
       - name: Windsurf
         homepage_url: https://codeium.com/windsurf
         logo: windsurf.webp
         description: "Agentic IDE by Codeium with deep codebase awareness"
         tags: [coding, ide, agentic]
-      - name: Xcode
-        homepage_url: https://developer.apple.com/xcode/
-        logo: xcode.webp
-        description: "Apple's IDE for macOS, iOS, watchOS, and tvOS app development"
   - name: AI Extensions & Platforms
     row: 1
     items:

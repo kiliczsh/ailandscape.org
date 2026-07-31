@@ -30,10 +30,6 @@ subcategories:
         homepage_url: https://gigamind.dev/context
         logo: giga-ai.webp
         description: Context engineering that improves AI quality and understanding
-      - name: Vercel AI Gateway
-        homepage_url: https://vercel.com/blog/ai-gateway-is-now-generally-available
-        logo: vercel-ai-gateway.webp
-        description: Gateway to access hundreds of models with zero token markup, including BYOK
       - name: Vibetunnel
         homepage_url: https://vibetunnel.sh/
         logo: vibetunnel.webp

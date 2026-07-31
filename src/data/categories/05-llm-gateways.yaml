@@ -55,3 +55,8 @@ subcategories:
         logo: portkey.webp
         description: "AI gateway with observability and fallback routing"
         tags: [gateway, proxy, llm, observability]
+      - name: Vercel AI Gateway
+        homepage_url: https://vercel.com/blog/ai-gateway-is-now-generally-available
+        logo: vercel-ai-gateway.webp
+        description: Gateway to access hundreds of models with zero token markup, including BYOK
+        tags: [gateway, proxy, llm]

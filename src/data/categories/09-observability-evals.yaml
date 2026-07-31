@@ -100,12 +100,6 @@ subcategories:
         logo: langchain.webp
         description: "Platform for debugging and evaluating LLM apps"
         tags: [evaluation, testing, llm]
-      - name: LMSYS Chatbot Arena
-        homepage_url: https://lmarena.ai
-        repo_url: https://github.com/lm-sys/FastChat
-        logo: lmsys.webp
-        description: "Human-preference LLM ranking via pairwise comparisons"
-        tags: [evaluation, benchmarks, human-eval]
       - name: MMLU
         homepage_url: https://github.com/hendrycks/test
         repo_url: https://github.com/hendrycks/test

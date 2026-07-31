@@ -167,14 +167,6 @@ subcategories:
         repo_url: https://github.com/geekan/MetaGPT
         logo: metagpt.webp
         description: Assigns roles to LLMs to form a collaborative multi-agent software entity
-  - name: Agent Protocols
-    row: 1
-    items:
-      - name: AP2
-        homepage_url: https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol
-        repo_url: https://github.com/google-agentic-commerce/AP2
-        logo: ap2.webp
-        description: Google Cloud's open-source Agent Payments Protocol for AI agent transactions
   - name: LLM Application Frameworks
     row: 1
     items:
@@ -183,8 +175,3 @@ subcategories:
         repo_url: https://github.com/langgenius/dify
         logo: dify.webp
         description: Open-source LLM app platform with visual workflow editor, RAG, and agent builder
-      - name: n8n
-        homepage_url: https://n8n.io/
-        repo_url: https://github.com/n8n-io/n8n
-        logo: n8n.webp
-        description: AI workflow automation for technical teams — connect LLMs, APIs, and databases

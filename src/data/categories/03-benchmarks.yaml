@@ -107,6 +107,12 @@ subcategories:
   - name: Model Rankings
     row: 0
     items:
+      - name: LMSYS Chatbot Arena
+        homepage_url: https://lmarena.ai
+        repo_url: https://github.com/lm-sys/FastChat
+        logo: lmsys.webp
+        description: "Human-preference LLM ranking via pairwise comparisons"
+        tags: [evaluation, benchmarks, human-eval]
       - name: OpenRouter Rankings
         homepage_url: https://openrouter.ai/rankings
         logo: openrouter-rankings.webp

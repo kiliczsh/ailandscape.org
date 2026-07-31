@@ -31,3 +31,9 @@ subcategories:
         logo: anp.webp
         description: "Agent Network Protocol for decentralized agent communication"
         tags: [protocol, agents, decentralized]
+      - name: AP2
+        homepage_url: https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol
+        repo_url: https://github.com/google-agentic-commerce/AP2
+        logo: ap2.webp
+        description: Google Cloud's open-source Agent Payments Protocol for AI agent transactions
+        tags: [protocol, agents]

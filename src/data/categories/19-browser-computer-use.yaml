@@ -24,6 +24,12 @@ subcategories:
         logo: playwright.webp
         description: "Browser automation framework used by AI agents"
         tags: [agents, browser, automation, oss]
+      - name: Steel Browser
+        homepage_url: https://steel.dev
+        repo_url: https://github.com/steel-dev/steel-browser
+        logo: steel-browser.webp
+        description: "Open-source browser sandbox and automation infrastructure for AI agents"
+        tags: [agents, browser, automation, oss]
   - name: Computer Use (OS-Level)
     row: 0
     items:
