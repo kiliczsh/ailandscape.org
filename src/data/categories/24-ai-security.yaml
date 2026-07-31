@@ -124,14 +124,6 @@ subcategories:
   - name: Privacy & Compliance
     row: 0
     items:
-      - name: EU AI Act
-        homepage_url: https://artificialintelligenceact.eu
-        logo: eu.webp
-        description: EU's comprehensive regulatory framework for AI
-        tags:
-          - compliance
-          - regulation
-          - governance
       - name: Microsoft Presidio
         homepage_url: https://microsoft.github.io/presidio
         repo_url: https://github.com/microsoft/presidio
@@ -141,14 +133,6 @@ subcategories:
           - privacy
           - pii
           - anonymization
-      - name: NIST AI RMF
-        homepage_url: https://airc.nist.gov/home
-        logo: nist.webp
-        description: NIST AI Risk Management Framework
-        tags:
-          - compliance
-          - risk-management
-          - governance
       - name: OpenDP
         homepage_url: https://opendp.org
         repo_url: https://github.com/opendp/opendp
@@ -157,14 +141,6 @@ subcategories:
         tags:
           - privacy
           - differential-privacy
-      - name: OWASP Top 10 for LLMs
-        homepage_url: https://owasp.org/www-project-top-10-for-large-language-model-applications
-        logo: owasp.webp
-        description: Top 10 security risks for LLM applications
-        tags:
-          - compliance
-          - security
-          - owasp
       - name: PySyft
         homepage_url: https://openmined.org
         repo_url: https://github.com/OpenMined/PySyft
@@ -182,23 +158,30 @@ subcategories:
           - privacy
           - differential-privacy
           - tensorflow
-  - name: Interpretability & Authenticity
+  - name: Standards & Frameworks
     row: 0
     items:
-      - name: Mechanistic Interpretability
-        homepage_url: https://transformer-circuits.pub
-        logo: anthropic.webp
-        description: Research into understanding neural network circuits
+      - name: EU AI Act
+        homepage_url: https://artificialintelligenceact.eu
+        logo: eu.webp
+        description: EU's comprehensive regulatory framework for AI
         tags:
-          - interpretability
-          - research
-          - circuits
-      - name: Sparse Autoencoders
-        homepage_url: https://github.com/EleutherAI/sae
-        repo_url: https://github.com/EleutherAI/sae
-        logo: eleutherai.webp
-        description: Tools for sparse autoencoder-based interpretability
+          - compliance
+          - regulation
+          - governance
+      - name: NIST AI RMF
+        homepage_url: https://airc.nist.gov/home
+        logo: nist.webp
+        description: NIST AI Risk Management Framework
         tags:
-          - interpretability
-          - sae
-          - research
+          - compliance
+          - risk-management
+          - governance
+      - name: OWASP Top 10 for LLMs
+        homepage_url: https://owasp.org/www-project-top-10-for-large-language-model-applications
+        logo: owasp.webp
+        description: Top 10 security risks for LLM applications
+        tags:
+          - compliance
+          - security
+          - owasp
