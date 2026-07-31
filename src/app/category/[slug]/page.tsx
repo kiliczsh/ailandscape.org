@@ -37,10 +37,8 @@ export async function generateMetadata({
   if (!category) {
     return { title: "Category not found — AI Landscape" };
   }
-  const title = `${category.name} — AI Landscape`;
-  const description =
-    category.intro ??
-    `Browse ${countItems(category)} ${category.name.toLowerCase()} on AI Landscape — categorized, tagged, and curated.`;
+  const title = `${category.name} — ${countItems(category)} AI Tools | AI Landscape`;
+  const description = categoryIntro(category);
   return {
     title,
     description,

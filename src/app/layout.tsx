@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   title: "AI Landscape — The Complete Map of the AI Ecosystem",
   description:
-    "Explore AI tools, frameworks, and services in one place. Browse models, infrastructure, developer tools, and products — organized by category and filterable by tag.",
+    "An interactive map of 650+ AI tools across 26 categories — foundation models, agents, infrastructure, dev tools, and more. Browse by category, filter by tag.",
   alternates: {
     canonical: "https://ailandscape.org",
     types: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Landscape — The Complete Map of the AI Ecosystem",
     description:
-      "Explore every AI tool, framework, and service in one place. Browse by category, filter by tag, and navigate the full AI ecosystem with ease.",
+      "An interactive map of 650+ AI tools across 26 categories — foundation models, agents, infrastructure, dev tools, and more.",
     type: "website",
     url: "https://ailandscape.org",
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI Landscape — The Complete Map of the AI Ecosystem",
     description:
-      "Explore every AI tool, framework, and service in one place. Browse by category, filter by tag, and navigate the full AI ecosystem with ease.",
+      "An interactive map of 650+ AI tools across 26 categories — foundation models, agents, infrastructure, dev tools, and more.",
     site: "@ailandscape",
   },
 };
