@@ -184,8 +184,6 @@ categories:
           Workflows…)
       - name: Multi-Agent Frameworks
         description: Frameworks designed for teams of collaborating agents (CrewAI, AutoGen, MetaGPT, CAMEL…)
-      - name: Agent Protocols
-        description: Open standards for agent interoperability and communication (MCP, A2A, ACP, ANP…)
       - name: LLM Application Frameworks
         description: Higher-level frameworks for building LLM-powered apps with less boilerplate (LangChain, Dify, Mastra, n8n AI…)
   - id: ai-protocols
@@ -328,6 +326,28 @@ categories:
           Project Mariner…)
       - name: Web Scraping & Crawling
         description: Tools for extracting structured data from websites at scale (Firecrawl, Apify, Bright Data, Crawl4AI, Jina…)
+  - id: coding-agent-orchestration
+    name: Coding Agent Orchestration
+    group: products
+    description: >
+      Tools for running, monitoring, and coordinating coding-agent sessions — kanban UIs, session multiplexers,
+      routers, and autonomous loop runners built around Claude Code and similar agents.
+    subcategories:
+      - name: Visual Workflow Builders
+        description: Kanban boards and visual UIs for managing parallel coding-agent sessions (vibe-kanban, crystal, emdash…)
+      - name: Event-Driven Automation
+        description: Session multiplexers, routers, and bridges for coding agents (claude-squad, claude-code-router, cmux…)
+      - name: Task Schedulers
+        description: Autonomous loop runners and schedulers for long-running agent tasks (ralph-orchestrator, symphony…)
+  - id: voice-agents
+    name: Voice Agents
+    group: products
+    description: >
+      Platforms and frameworks for building real-time voice AI agents — phone call automation, conversational
+      voice APIs, and open-source voice agent infrastructure.
+    subcategories:
+      - name: Voice Agent Platforms
+        description: Real-time voice and phone agent platforms and frameworks (Vapi, Retell AI, Bland AI, LiveKit Agents…)
   - id: workflow-automation
     name: Workflow Automation
     group: products
@@ -335,12 +355,8 @@ categories:
       Low-code and no-code platforms for automating multi-step processes by connecting apps and APIs. Complements agent
       frameworks with a more operations-oriented, trigger-based model.
     subcategories:
-      - name: Visual Workflow Builders
-        description: Drag-and-drop canvas for building integrations and automations (n8n, Make, Zapier, Gumloop…)
-      - name: Event-Driven Automation
-        description: Platforms triggered by events, webhooks, or schedules (Trigger.dev, Inngest, Temporal, Prefect…)
-      - name: Task Schedulers
-        description: Infrastructure-level job scheduling and queue management (DBOS, Temporal, Relay.app…)
+      - name: AI Workflow Platforms
+        description: Workflow automation platforms with first-class AI/LLM steps (n8n, Zapier, Make…)
   - id: knowledge-discovery
     name: Knowledge Discovery
     group: products
@@ -392,8 +408,10 @@ categories:
         description: ""
       - name: Privacy & Compliance
         description: ""
-      - name: Interpretability & Authenticity
-        description: ""
+      - name: Standards & Frameworks
+        description: >-
+          Regulations, risk frameworks, and security standards for AI systems — not tools, but the
+          reference documents practitioners build against (EU AI Act, NIST AI RMF, OWASP Top 10 for LLMs)
   - id: agent-skills
     name: Agent Skills
     group: ecosystem

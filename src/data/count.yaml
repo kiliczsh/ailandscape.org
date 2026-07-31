@@ -1,6 +1,6 @@
-total_items: 657
-total_categories: 26
-total_subcategories: 95
+total_items: 656
+total_categories: 28
+total_subcategories: 96
 categories:
   - name: Frontier Labs
     group: core-ai
@@ -40,14 +40,14 @@ categories:
         count: 6
   - name: Benchmarks & Leaderboards
     group: core-ai
-    total: 26
+    total: 27
     subcategories:
       - name: Software Engineering Benchmarks
         count: 13
       - name: Agent & General Benchmarks
         count: 12
       - name: Model Rankings
-        count: 1
+        count: 2
   - name: Inference & Compute
     group: infrastructure
     total: 38
@@ -64,12 +64,12 @@ categories:
         count: 6
   - name: LLM Gateways & APIs
     group: infrastructure
-    total: 9
+    total: 10
     subcategories:
       - name: Hosted Model APIs
         count: 5
       - name: AI Gateway & Proxy
-        count: 4
+        count: 5
   - name: Vector & Search
     group: infrastructure
     total: 12
@@ -110,38 +110,36 @@ categories:
         count: 22
   - name: Observability & Evals
     group: engineering
-    total: 28
+    total: 27
     subcategories:
       - name: LLM Observability
         count: 5
       - name: Model Monitoring
         count: 4
       - name: LLM Evaluation & Benchmarking
-        count: 9
+        count: 8
       - name: Explainability & Alignment
         count: 6
       - name: Prompt Management
         count: 4
   - name: Agent Frameworks
     group: engineering
-    total: 33
+    total: 31
     subcategories:
       - name: Orchestration SDKs
         count: 21
       - name: Multi-Agent Frameworks
         count: 9
-      - name: Agent Protocols
-        count: 1
       - name: LLM Application Frameworks
-        count: 2
+        count: 1
   - name: AI Protocols
     group: engineering
-    total: 4
+    total: 5
     subcategories:
       - name: MCP Servers & Registries
         count: 1
       - name: Agent Communication Protocols
-        count: 3
+        count: 4
   - name: RAG & Memory
     group: engineering
     total: 17
@@ -156,14 +154,14 @@ categories:
         count: 1
   - name: Coding Agents
     group: products
-    total: 55
+    total: 47
     subcategories:
       - name: Commercial Agents
         count: 18
       - name: Code-Writing Agents
-        count: 18
+        count: 17
       - name: AI-Powered IDEs
-        count: 12
+        count: 5
       - name: AI Extensions & Platforms
         count: 7
   - name: AI App Builders
@@ -180,12 +178,12 @@ categories:
         count: 4
   - name: Dev Tools
     group: products
-    total: 7
+    total: 6
     subcategories:
       - name: Code Review & Quality
         count: 1
       - name: Developer Integrations
-        count: 6
+        count: 5
   - name: Generative Content
     group: products
     total: 15
@@ -226,15 +224,15 @@ categories:
         count: 2
   - name: Browser & Computer Use
     group: products
-    total: 5
+    total: 6
     subcategories:
       - name: Browser Automation
-        count: 3
+        count: 4
       - name: Computer Use (OS-Level)
         count: 1
       - name: Web Scraping & Crawling
         count: 1
-  - name: Workflow Automation
+  - name: Coding Agent Orchestration
     group: products
     total: 39
     subcategories:
@@ -264,24 +262,24 @@ categories:
         count: 3
   - name: Personal Assistants
     group: products
-    total: 30
+    total: 26
     subcategories:
       - name: General Assistants
-        count: 16
+        count: 12
       - name: OpenClaw Ecosystem
         count: 14
   - name: AI Security & Safety
     group: governance
-    total: 22
+    total: 20
     subcategories:
       - name: Offensive Testing & Red Teaming
         count: 7
       - name: Guardrails & Defense
         count: 6
       - name: Privacy & Compliance
-        count: 7
-      - name: Interpretability & Authenticity
-        count: 2
+        count: 4
+      - name: Standards & Frameworks
+        count: 3
   - name: Agent Skills
     group: ecosystem
     total: 23
@@ -296,3 +294,15 @@ categories:
         count: 3
       - name: Knowledge & Learning
         count: 3
+  - name: Voice Agents
+    group: products
+    total: 7
+    subcategories:
+      - name: Voice Agent Platforms
+        count: 7
+  - name: Workflow Automation
+    group: products
+    total: 6
+    subcategories:
+      - name: AI Workflow Platforms
+        count: 6
