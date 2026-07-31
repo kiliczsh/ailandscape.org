@@ -20,14 +20,6 @@ subcategories:
         homepage_url: https://babyagi.org/
         repo_url: https://github.com/yoheinakajima/babyagi3
         description: A minimal AI agent you configure once, then drive through natural language
-      - name: Bland AI
-        homepage_url: https://bland.ai
-        logo: bland.webp
-        description: AI phone call automation platform
-        tags:
-          - agents
-          - voice
-          - phone
       - name: hermes-agent
         homepage_url: https://hermes-agent.nousresearch.com
         repo_url: https://github.com/NousResearch/hermes-agent
@@ -47,16 +39,6 @@ subcategories:
         homepage_url: https://letta.bot
         repo_url: https://github.com/letta-ai/lettabot
         description: Personal AI assistant that remembers everything across sessions
-      - name: LiveKit Agents
-        homepage_url: https://livekit.io/agents
-        repo_url: https://github.com/livekit/agents
-        logo: livekit.webp
-        description: Open-source framework for real-time voice AI agents
-        tags:
-          - agents
-          - voice
-          - realtime
-          - oss
       - name: lobsterai
         homepage_url: https://lobsterai.youdao.com
         repo_url: https://github.com/netease-youdao/lobsterai
@@ -67,14 +49,6 @@ subcategories:
         repo_url: https://github.com/Michaelliv/mercury
         logo: gh-Michaelliv.png
         description: Personal AI assistant that lives where you chat
-      - name: Retell AI
-        homepage_url: https://retellai.com
-        logo: retell.webp
-        description: Platform for building conversational voice AI agents
-        tags:
-          - agents
-          - voice
-          - api
       - name: rho
         homepage_url: https://rhobot.dev
         repo_url: https://github.com/mikeyobrien/rho
@@ -90,14 +64,6 @@ subcategories:
         repo_url: https://github.com/banteg/takopi
         logo: takopi.webp
         description: Telegram bridge for Codex, Claude Code, OpenCode, and Pi
-      - name: Vapi
-        homepage_url: https://vapi.ai
-        logo: vapi.webp
-        description: Voice AI infrastructure for building voice agents
-        tags:
-          - agents
-          - voice
-          - api
   - name: OpenClaw Ecosystem
     row: 0
     items:

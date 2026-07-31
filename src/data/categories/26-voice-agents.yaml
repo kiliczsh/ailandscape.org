@@ -1,0 +1,65 @@
+name: Voice Agents
+group: products
+color: oklch(0.62 0.20 195)
+icon: Waveform
+subcategories:
+  - name: Voice Agent Platforms
+    row: 0
+    items:
+      - name: Bland AI
+        homepage_url: https://bland.ai
+        logo: bland.webp
+        description: AI phone call automation platform
+        tags:
+          - agents
+          - voice
+          - phone
+      - name: ElevenLabs Agents
+        homepage_url: https://elevenlabs.io/agents
+        description: Platform for building conversational voice agents with ElevenLabs voices
+        tags:
+          - agents
+          - voice
+          - api
+      - name: Hume AI
+        homepage_url: https://hume.ai
+        description: Empathic voice interface (EVI) for emotionally aware voice agents
+        tags:
+          - agents
+          - voice
+          - api
+      - name: LiveKit Agents
+        homepage_url: https://livekit.io/agents
+        repo_url: https://github.com/livekit/agents
+        logo: livekit.webp
+        description: Open-source framework for real-time voice AI agents
+        tags:
+          - agents
+          - voice
+          - realtime
+          - oss
+      - name: Pipecat
+        homepage_url: https://pipecat.ai
+        repo_url: https://github.com/pipecat-ai/pipecat
+        description: Open-source Python framework for real-time voice and multimodal agents
+        tags:
+          - agents
+          - voice
+          - realtime
+          - oss
+      - name: Retell AI
+        homepage_url: https://retellai.com
+        logo: retell.webp
+        description: Platform for building conversational voice AI agents
+        tags:
+          - agents
+          - voice
+          - api
+      - name: Vapi
+        homepage_url: https://vapi.ai
+        logo: vapi.webp
+        description: Voice AI infrastructure for building voice agents
+        tags:
+          - agents
+          - voice
+          - api
