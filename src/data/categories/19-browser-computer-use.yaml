@@ -1,7 +1,9 @@
 name: Browser & Computer Use
-group: products
+group: applications
 color: oklch(0.62 0.20 29)
 icon: Desktop
+intro: >-
+  Agents that operate software the way humans do — driving browsers, desktops, and GUIs instead of calling structured APIs — plus the scraping and crawling layer that feeds them.
 subcategories:
   - name: Browser Automation
     row: 0
@@ -12,6 +14,21 @@ subcategories:
         logo: browser-use.webp
         description: "Enable AI agents to control web browsers"
         tags: [agents, browser, automation, oss]
+      - name: Browserbase
+        homepage_url: https://www.browserbase.com
+        repo_url: https://github.com/browserbase/stagehand
+        description: Headless browser infrastructure and Stagehand framework for AI agents
+        tags:
+          - agents
+          - browser
+          - api
+      - name: Hyperbrowser
+        homepage_url: https://hyperbrowser.ai
+        description: Scalable headless browser platform for AI agents
+        tags:
+          - agents
+          - browser
+          - api
       - name: Magine
         homepage_url: https://magine.cloud
         repo_url: https://github.com/S4nfs/Magine
@@ -24,6 +41,15 @@ subcategories:
         logo: playwright.webp
         description: "Browser automation framework used by AI agents"
         tags: [agents, browser, automation, oss]
+      - name: Skyvern
+        homepage_url: https://www.skyvern.com
+        repo_url: https://github.com/Skyvern-AI/skyvern
+        description: Automate browser workflows with LLMs and computer vision
+        tags:
+          - agents
+          - browser
+          - automation
+          - oss
       - name: Steel Browser
         homepage_url: https://steel.dev
         repo_url: https://github.com/steel-dev/steel-browser
@@ -38,9 +64,31 @@ subcategories:
         logo: anthropic.webp
         description: "Claude's ability to control computers like a human"
         tags: [agents, computer-use, automation]
+      - name: OpenAI Operator
+        homepage_url: https://openai.com/index/introducing-operator/
+        description: OpenAI's agent that uses its own browser to perform tasks
+        tags:
+          - agents
+          - computer-use
+          - automation
   - name: Web Scraping & Crawling
     row: 0
     items:
+      - name: Apify
+        homepage_url: https://apify.com
+        repo_url: https://github.com/apify/crawlee
+        description: Full-stack web scraping and browser automation platform
+        tags:
+          - browser
+          - automation
+          - api
+      - name: Crawl4AI
+        homepage_url: https://crawl4ai.com
+        repo_url: https://github.com/unclecode/crawl4ai
+        description: Open-source LLM-friendly web crawler and scraper
+        tags:
+          - automation
+          - oss
       - name: Firecrawl
         homepage_url: https://firecrawl.dev/
         repo_url: https://github.com/mendableai/firecrawl

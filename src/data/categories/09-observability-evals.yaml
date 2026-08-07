@@ -2,6 +2,8 @@ name: Observability & Evals
 group: engineering
 color: oklch(0.62 0.20 144)
 icon: ChartLine
+intro: >-
+  Tools for understanding what your models do in production and whether they do it well — tracing, monitoring, evaluation frameworks, explainability, and prompt lifecycle management.
 subcategories:
   - name: LLM Observability
     row: 0
@@ -115,11 +117,6 @@ subcategories:
   - name: Explainability & Alignment
     row: 1
     items:
-      - name: Anthropic Constitutional AI
-        homepage_url: https://anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback
-        logo: anthropic.webp
-        description: "AI alignment technique for helpful, harmless models"
-        tags: [safety, alignment, research]
       - name: Captum
         homepage_url: https://captum.ai
         repo_url: https://github.com/pytorch/captum

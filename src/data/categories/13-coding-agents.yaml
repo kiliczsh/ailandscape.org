@@ -1,7 +1,9 @@
 name: Coding Agents
-group: products
+group: coding
 color: oklch(0.62 0.20 0)
 icon: Code
+intro: >-
+  AI systems that write, review, and ship code — from hosted autonomous engineers to open-source CLI agents, AI-first IDEs, and editor extensions. The most active corner of the landscape.
 subcategories:
   - name: Commercial Agents
     row: 0
@@ -70,6 +72,12 @@ subcategories:
         homepage_url: https://www.kimi.com/code
         logo: kimi-cli.webp
         description: "CLI agent for software development and terminal operations powered by Kimi"
+      - name: Meta Muse Code
+        homepage_url: https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2
+        description: Meta's terminal coding agent for large-repo engineering tasks
+        tags:
+          - coding
+          - agents
       - name: OpenAI Codex
         homepage_url: https://openai.com/codex/
         repo_url: https://github.com/openai/codex
@@ -149,6 +157,14 @@ subcategories:
         repo_url: https://github.com/potpie-ai/potpie
         logo: potpie.webp
         description: "Open-source AI agents for your codebase — Q&A, testing, debugging, and design"
+      - name: Prime Agent
+        homepage_url: https://www.primeintellect.ai/blog/prime-agent
+        repo_url: https://github.com/primeintellect-ai/prime-agent
+        description: Self-improving open-source agent harness from Prime Intellect
+        tags:
+          - coding
+          - agents
+          - oss
       - name: Qwen Code
         homepage_url: https://github.com/QwenLM/qwen-code
         repo_url: https://github.com/QwenLM/qwen-code

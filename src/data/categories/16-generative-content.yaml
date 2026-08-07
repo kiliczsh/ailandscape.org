@@ -1,7 +1,9 @@
 name: Generative Content
-group: products
+group: applications
 color: oklch(0.62 0.20 187)
 icon: PencilLine
+intro: >-
+  AI products for producing written content — marketing copy, long-form editorial, email, and slide decks. End-user products with workflows tuned per content type, not raw APIs.
 subcategories:
   - name: AI Copywriting & Marketing
     row: 0

@@ -1,7 +1,9 @@
 name: Vertical AI
-group: products
+group: applications
 color: oklch(0.62 0.20 216)
 icon: Buildings
+intro: >-
+  AI purpose-built for regulated, knowledge-intensive industries — healthcare, legal, finance, and education. These handle domain compliance and professional workflows, not generic LLM wrapping.
 subcategories:
   - name: Healthcare
     row: 0

@@ -2,6 +2,8 @@ name: MLOps & Training
 group: engineering
 color: oklch(0.62 0.20 14)
 icon: GitBranch
+intro: >-
+  The engineering discipline around the model lifecycle — experiment tracking, fine-tuning and RLHF, pipeline orchestration, registries, and the core ML frameworks everything is built on.
 subcategories:
   - name: Experiment Tracking & CI/CD
     row: 0
@@ -278,6 +280,14 @@ subcategories:
         tags:
           - classical-ml
           - gradient-boosting
+      - name: Mixture of Kittens
+        homepage_url: https://cursor.com/blog/mixture-of-kittens
+        repo_url: https://github.com/cursor/mixture-of-kittens
+        description: Cursor's open-source MoE training megakernel for NVIDIA GB300 racks
+        tags:
+          - training
+          - optimization
+          - oss
       - name: OpenAI Gym
         homepage_url: https://gymnasium.farama.org
         repo_url: https://github.com/Farama-Foundation/Gymnasium

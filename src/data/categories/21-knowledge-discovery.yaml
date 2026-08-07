@@ -1,7 +1,9 @@
 name: Knowledge Discovery
-group: products
+group: applications
 color: oklch(0.62 0.20 158)
 icon: MagnifyingGlass
+intro: >-
+  AI-powered search and research — answer engines with citations, academic literature tools, and enterprise knowledge assistants that synthesize rather than return links.
 subcategories:
   - name: AI Search Engines
     row: 0
@@ -22,6 +24,12 @@ subcategories:
           - search
           - privacy
           - proprietary
+      - name: Perplexity
+        homepage_url: https://www.perplexity.ai
+        description: Conversational answer engine with cited web search
+        tags:
+          - search
+          - proprietary
       - name: You.com
         homepage_url: https://you.com
         logo: you-com.webp
@@ -29,4 +37,44 @@ subcategories:
         tags:
           - search
           - ai
+          - proprietary
+  - name: Academic Research
+    row: 0
+    items:
+      - name: Consensus
+        homepage_url: https://consensus.app
+        description: AI search engine over peer-reviewed scientific papers
+        tags:
+          - search
+          - academic
+          - proprietary
+      - name: Elicit
+        homepage_url: https://elicit.com
+        description: AI research assistant for literature review and paper analysis
+        tags:
+          - search
+          - academic
+          - proprietary
+      - name: Semantic Scholar
+        homepage_url: https://www.semanticscholar.org
+        description: Free AI-powered research tool from the Allen Institute for AI
+        tags:
+          - search
+          - academic
+  - name: Enterprise Search & Knowledge
+    row: 0
+    items:
+      - name: Glean
+        homepage_url: https://www.glean.com
+        description: Enterprise AI search and knowledge assistant across work apps
+        tags:
+          - search
+          - enterprise
+          - proprietary
+      - name: Hebbia
+        homepage_url: https://www.hebbia.ai
+        description: AI document analysis platform for knowledge-intensive industries
+        tags:
+          - search
+          - enterprise
           - proprietary

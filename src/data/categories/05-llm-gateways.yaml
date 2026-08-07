@@ -2,6 +2,8 @@ name: LLM Gateways & APIs
 group: infrastructure
 color: oklch(0.62 0.20 259)
 icon: Plug
+intro: >-
+  The connectivity layer between applications and models. Hosted APIs give direct access to frontier models; gateways and proxies add multi-provider routing, caching, cost control, and fallbacks on top.
 subcategories:
   - name: Hosted Model APIs
     row: 0
@@ -16,6 +18,26 @@ subcategories:
         logo: cerebras.webp
         description: "Ultra-fast LLM inference API powered by Cerebras hardware"
         tags: [api, llm, fast-inference]
+      - name: Google Gemini API
+        homepage_url: https://ai.google.dev
+        description: Direct API access to Gemini models via AI Studio
+        tags:
+          - api
+          - llm
+          - proprietary
+      - name: GroqCloud
+        homepage_url: https://groq.com
+        description: Ultra-low-latency LPU inference API for open models
+        tags:
+          - api
+          - llm
+          - inference
+      - name: Mistral API
+        homepage_url: https://docs.mistral.ai
+        description: La Plateforme — API access to Mistral models
+        tags:
+          - api
+          - llm
       - name: OpenAI API
         homepage_url: https://platform.openai.com
         logo: openai.webp
@@ -34,6 +56,13 @@ subcategories:
   - name: AI Gateway & Proxy
     row: 0
     items:
+      - name: Cloudflare AI Gateway
+        homepage_url: https://developers.cloudflare.com/ai-gateway/
+        description: Caching, rate limiting, retries, and fallback across AI providers
+        tags:
+          - gateway
+          - proxy
+          - llm
       - name: LiteLLM
         homepage_url: https://litellm.ai
         repo_url: https://github.com/BerriAI/litellm

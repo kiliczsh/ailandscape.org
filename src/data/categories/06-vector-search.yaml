@@ -2,6 +2,8 @@ name: Vector & Search
 group: infrastructure
 color: oklch(0.62 0.20 173)
 icon: MagnifyingGlass
+intro: >-
+  Storage and retrieval optimized for embeddings — vector databases, semantic search engines, and approximate nearest-neighbor libraries. The foundation under every RAG pipeline and semantic search product.
 subcategories:
   - name: Vector Databases
     row: 0

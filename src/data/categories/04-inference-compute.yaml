@@ -2,6 +2,8 @@ name: Inference & Compute
 group: infrastructure
 color: oklch(0.62 0.20 101)
 icon: HardDrives
+intro: >-
+  The hardware and software layer that runs AI — GPU clouds, inference optimization libraries, distributed training infrastructure, purpose-built chips, and local runtimes. If it makes models run faster or cheaper, it's here.
 subcategories:
   - name: Cloud & GPU Providers
     row: 0
@@ -138,6 +140,14 @@ subcategories:
         repo_url: https://github.com/sgl-project/sglang
         logo: sglang.webp
         description: Fast serving framework for LLMs and VLMs with structured generation support
+      - name: Sol Engine
+        homepage_url: https://nvlabs.github.io/Sana/Sol-Engine/
+        repo_url: https://github.com/NVlabs/Sana/tree/sol-engine
+        description: NVIDIA's training-free acceleration framework for video diffusion inference
+        tags:
+          - inference
+          - video
+          - optimization
       - name: TensorRT
         homepage_url: https://developer.nvidia.com/tensorrt
         logo: nvidia.webp

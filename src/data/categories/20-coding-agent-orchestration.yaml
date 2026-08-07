@@ -1,7 +1,9 @@
 name: Coding Agent Orchestration
-group: products
+group: coding
 color: oklch(0.62 0.20 86)
 icon: GitBranch
+intro: >-
+  Tools for running fleets of coding agents — kanban UIs and session managers, terminal multiplexers and routers, and autonomous loop runners built around Claude Code and its peers.
 subcategories:
   - name: Visual Workflow Builders
     row: 0
@@ -137,6 +139,14 @@ subcategories:
         repo_url: https://github.com/standardagents/dmux
         logo: dmux.webp
         description: "Parallel agents with tmux and worktrees"
+      - name: Herdr
+        homepage_url: https://herdr.dev
+        repo_url: https://github.com/herdrdev/herdr
+        description: Rust terminal multiplexer for running multiple AI coding agents in parallel
+        tags:
+          - agents
+          - automation
+          - oss
       - name: Kagan
         homepage_url: https://github.com/aorumbayev/kagan
         repo_url: https://github.com/aorumbayev/kagan

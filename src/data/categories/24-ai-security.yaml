@@ -2,6 +2,8 @@ name: AI Security & Safety
 group: governance
 color: oklch(0.62 0.20 346)
 icon: ShieldCheck
+intro: >-
+  Securing AI systems and keeping them within safe boundaries — red-teaming tools, guardrails, privacy tooling, and the standards and regulations practitioners build against.
 subcategories:
   - name: Offensive Testing & Red Teaming
     row: 0
@@ -121,6 +123,13 @@ subcategories:
           - prompt-injection
           - defense
           - microsoft
+      - name: Shieldstral
+        homepage_url: https://mistral.ai/news/shieldstral/
+        description: Mistral's open-weights multimodal safety classifier for text and images
+        tags:
+          - safety
+          - guardrails
+          - open-weights
   - name: Privacy & Compliance
     row: 0
     items:

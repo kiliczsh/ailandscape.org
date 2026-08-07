@@ -2,16 +2,38 @@ name: AI Protocols
 group: engineering
 color: oklch(0.62 0.20 72)
 icon: ArrowsLeftRight
+intro: >-
+  The open standards making AI agents interoperable — the Model Context Protocol and its server ecosystem, agent-to-agent communication protocols, and agent-facing conventions like AGENTS.md.
 subcategories:
   - name: MCP Servers & Registries
     row: 0
     items:
+      - name: Composio
+        homepage_url: https://composio.dev
+        repo_url: https://github.com/ComposioHQ/composio
+        description: Managed toolset and integrations platform for AI agents via MCP
+        tags:
+          - protocol
+          - agents
+          - api
+      - name: Glama
+        homepage_url: https://glama.ai/mcp/servers
+        description: Directory and gateway for MCP servers
+        tags:
+          - protocol
+          - agents
       - name: MCP
         homepage_url: https://modelcontextprotocol.io
         repo_url: https://github.com/modelcontextprotocol/specification
         logo: anthropic.webp
         description: "Model Context Protocol by Anthropic for tool and data access"
         tags: [protocol, context, anthropic]
+      - name: Smithery
+        homepage_url: https://smithery.ai
+        description: Registry for discovering and deploying MCP servers
+        tags:
+          - protocol
+          - agents
   - name: Agent Communication Protocols
     row: 0
     items:
@@ -26,6 +48,15 @@ subcategories:
         logo: github.webp
         description: "Agent Communication Protocol by IBM/BeeAI"
         tags: [protocol, agents, ibm]
+      - name: AGENTS.md
+        homepage_url: https://agents.md
+        repo_url: https://github.com/agentsmd/agents.md
+        logo: agents-md.webp
+        description: Open convention for giving coding agents build, test, and style instructions
+        tags:
+          - protocol
+          - coding
+          - oss
       - name: ANP
         homepage_url: https://agent-network-protocol.com
         logo: anp.webp

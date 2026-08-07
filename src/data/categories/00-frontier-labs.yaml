@@ -2,6 +2,8 @@ name: Frontier Labs
 group: core-ai
 color: oklch(0.62 0.20 274)
 icon: Buildings
+intro: >-
+  The organizations building frontier AI — commercial labs training proprietary models, open-weight ecosystems, and the academic institutes advancing the science. Companies live here; their models and products live in their own categories.
 subcategories:
   - name: Proprietary Frontier Labs
     row: 0

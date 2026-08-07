@@ -1,7 +1,9 @@
 name: Agent Skills
-group: ecosystem
+group: coding
 color: oklch(0.62 0.18 80)
 icon: Plug
+intro: >-
+  Reusable skill packages that extend coding agents with domain capabilities — document processing, design, engineering workflows, marketing, and knowledge management.
 subcategories:
   - name: Document & Office
     row: 0

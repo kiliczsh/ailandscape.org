@@ -40,6 +40,10 @@ categories:
         description: >-
           Models that convert text or mixed content into dense vectors for retrieval and similarity (text-embedding-ada,
           BGE, Cohere Embed, Voyage AI…)
+      - name: Image & Video Models
+        description: Image and video generation model weights and families (Flux, Stable Diffusion, DALL-E…)
+      - name: Speech & Audio Models
+        description: Speech, voice, and music model weights (Bark, Kokoro, MusicGen, XTTS…)
   - id: multimodal-perception
     name: Multimodal & Perception
     group: core-ai
@@ -47,13 +51,9 @@ categories:
     subcategories:
       - name: Vision-Language Models
         description: ""
-      - name: Image Generation Models
-        description: ""
       - name: Computer Vision
         description: ""
       - name: Speech Recognition
-        description: ""
-      - name: Voice & Audio Synthesis
         description: ""
   - id: benchmarks
     name: Benchmarks & Leaderboards
@@ -78,7 +78,7 @@ categories:
       libraries, training clusters, and local / edge runtimes.
     subcategories:
       - name: Cloud & GPU Providers
-        description: Managed GPU clouds and serverless inference platforms (CoreWeave, Together AI, Fireworks AI, Replicate…)
+        description: Managed GPU clouds and serverless inference platforms (CoreWeave, Lambda, Fireworks AI…) — hosted model APIs live in LLM Gateways
       - name: Inference Optimization
         description: Libraries and techniques that make inference faster and cheaper (vLLM, TensorRT, ONNX Runtime, SGLang…)
       - name: Training Infrastructure
@@ -185,13 +185,13 @@ categories:
       - name: Multi-Agent Frameworks
         description: Frameworks designed for teams of collaborating agents (CrewAI, AutoGen, MetaGPT, CAMEL…)
       - name: LLM Application Frameworks
-        description: Higher-level frameworks for building LLM-powered apps with less boilerplate (LangChain, Dify, Mastra, n8n AI…)
+        description: Higher-level frameworks for building LLM-powered apps with less boilerplate (Dify, Mastra, Haystack…)
   - id: ai-protocols
     name: AI Protocols
     group: engineering
     description: >
-      The ecosystem around the Model Context Protocol — servers that expose tools, data, and services to AI agents, plus
-      registries and interoperability standards.
+      Open standards and specifications that make AI agents interoperable — context protocols (MCP), agent-to-agent
+      communication, payments, and agent-facing conventions like AGENTS.md.
     subcategories:
       - name: MCP Servers & Registries
         description: Pre-built MCP servers and discovery registries (Composio, Toolhouse, Smithery, Arcade AI, Glama…)
@@ -218,22 +218,22 @@ categories:
         description: Systems that give agents persistent, searchable memory across sessions (Letta, Zep, MemO, LangMem, Graphiti…)
   - id: coding-agents
     name: Coding Agents
-    group: products
+    group: coding
     description: >
       AI systems that write, review, and ship code. Ranges from autocomplete extensions inside existing IDEs to fully
       autonomous agents that open PRs without human input.
     subcategories:
       - name: Commercial Agents
-        description: Hosted, product-grade coding agents (GitHub Copilot, Cursor, Devin, Amazon Q Developer, Gemini Code Assist…)
+        description: Hosted, product-grade coding agents (Devin, Amazon Q Developer, Gemini Code Assist, Factory…)
       - name: Code-Writing Agents
         description: CLI and open-source agents that autonomously write and run code (Claude Code, Aider, Cline, OpenHands, Goose…)
       - name: AI-Powered IDEs
         description: Full IDEs rebuilt around AI-first editing (Cursor, Windsurf, Kiro, Google Antigravity, Warp…)
       - name: AI Extensions & Platforms
-        description: AI plugins and assistants for existing editors (GitHub Copilot, Continue, Tabnine, Augment Code, Trae…)
+        description: AI plugins and assistants for existing editors (GitHub Copilot, Continue, Tabnine, Trae…)
   - id: ai-app-builders
     name: AI App Builders
-    group: products
+    group: coding
     description: >
       Platforms for building and shipping AI-powered applications without writing a full backend. Ranges from
       prompt-to-app tools to open-source frameworks and visual node editors.
@@ -248,7 +248,7 @@ categories:
         description: Node-canvas editors for wiring together AI logic visually (Flowise, Langflow, AgentPilot, Rivet…)
   - id: dev-tools
     name: Dev Tools
-    group: products
+    group: coding
     description: >
       Developer-facing tools that improve quality and productivity around AI. Covers code review automation, testing,
       and the integrations that connect AI into existing engineering workflows.
@@ -261,7 +261,7 @@ categories:
           Fabric…)
   - id: generative-content
     name: Generative Content
-    group: products
+    group: applications
     description: >
       AI tools for producing written content — from short marketing copy to long-form editorial. These are end-user
       products, not raw APIs; they wrap language models in workflows tuned for specific content types.
@@ -276,7 +276,7 @@ categories:
         description: AI that turns prompts or documents into slide decks (Gamma, Beautiful.ai, Tome…)
   - id: visual-generation
     name: Visual Generation
-    group: products
+    group: applications
     description: >
       AI products for generating and editing images and video. Covers both frontier consumer tools (Midjourney, Sora)
       and developer-facing APIs. Underlying model weights (Flux, Stable Diffusion) belong in Foundation Models; products
@@ -296,7 +296,7 @@ categories:
         description: Talking-head generation, digital avatars, and lip-synced video (HeyGen, D-ID, Synthesia…)
   - id: audio-music-gen
     name: Audio & Music Gen
-    group: products
+    group: applications
     description: >
       AI products for speech synthesis, voice cloning, and music creation. Consumer and developer-facing tools;
       underlying models (Whisper, Bark) belong in Foundation Models.
@@ -313,7 +313,7 @@ categories:
         description: Generate environmental and foley sounds for games, video, and media (ElevenLabs SFX, AudioLDM…)
   - id: browser-computer-use
     name: Browser & Computer Use
-    group: products
+    group: applications
     description: >
       Agents that operate software interfaces — browsers, desktops, and GUIs — rather than calling structured APIs.
       Includes web scraping as a lightweight form of browser automation.
@@ -328,7 +328,7 @@ categories:
         description: Tools for extracting structured data from websites at scale (Firecrawl, Apify, Bright Data, Crawl4AI, Jina…)
   - id: coding-agent-orchestration
     name: Coding Agent Orchestration
-    group: products
+    group: coding
     description: >
       Tools for running, monitoring, and coordinating coding-agent sessions — kanban UIs, session multiplexers,
       routers, and autonomous loop runners built around Claude Code and similar agents.
@@ -341,7 +341,7 @@ categories:
         description: Autonomous loop runners and schedulers for long-running agent tasks (ralph-orchestrator, symphony…)
   - id: voice-agents
     name: Voice Agents
-    group: products
+    group: applications
     description: >
       Platforms and frameworks for building real-time voice AI agents — phone call automation, conversational
       voice APIs, and open-source voice agent infrastructure.
@@ -350,7 +350,7 @@ categories:
         description: Real-time voice and phone agent platforms and frameworks (Vapi, Retell AI, Bland AI, LiveKit Agents…)
   - id: workflow-automation
     name: Workflow Automation
-    group: products
+    group: applications
     description: >
       Low-code and no-code platforms for automating multi-step processes by connecting apps and APIs. Complements agent
       frameworks with a more operations-oriented, trigger-based model.
@@ -359,7 +359,7 @@ categories:
         description: Workflow automation platforms with first-class AI/LLM steps (n8n, Zapier, Make…)
   - id: knowledge-discovery
     name: Knowledge Discovery
-    group: products
+    group: applications
     description: >
       AI-powered search and research tools that help users find, synthesize, and understand information. Distinct from
       vertical AI (no specific domain compliance required) and from vector search infrastructure (these are end-user
@@ -369,7 +369,7 @@ categories:
         description: Search products that return synthesized answers rather than blue links (Perplexity, Exa, Kagi, You.com…)
   - id: vertical-ai
     name: Vertical AI
-    group: products
+    group: applications
     description: >
       AI products purpose-built for specific regulated or knowledge-intensive industries. These go beyond generic LLM
       wrapping — they handle domain compliance, specialized data formats, and professional workflows.
@@ -384,7 +384,7 @@ categories:
         description: Personalized tutoring and learning tools (Khanmigo, Duolingo Max, Synthesis Tutor…)
   - id: personal-assistants
     name: Personal Assistants
-    group: products
+    group: applications
     description: >
       AI agents designed to act as a general-purpose personal or home assistant. Includes the OpenClaw ecosystem —
       open-source, self-hosted assistant frameworks running on everything from servers to microcontrollers.
@@ -414,7 +414,7 @@ categories:
           reference documents practitioners build against (EU AI Act, NIST AI RMF, OWASP Top 10 for LLMs)
   - id: agent-skills
     name: Agent Skills
-    group: ecosystem
+    group: coding
     description: >
       Reusable skill packages that extend coding agents with domain-specific capabilities — from document
       processing and design to engineering workflows and marketing automation.
@@ -429,3 +429,42 @@ categories:
         description: Skills for brand guidelines, SEO audits, and marketing automation
       - name: Knowledge & Learning
         description: Skills for note-taking, research, and knowledge management integrations
+  - id: embodied-ai-robotics
+    name: Embodied AI & Robotics
+    group: applications
+    description: >
+      Physical AI — robot foundation models, simulation environments, and the middleware that connects
+      learning systems to real hardware.
+    subcategories:
+      - name: Robot Foundation Models
+        description: Vision-language-action and world models for robots (LeRobot, π0, Cosmos, XR-1…)
+      - name: Simulation & Training
+        description: Physics engines and robot learning environments (Isaac Sim, Isaac Lab, MuJoCo…)
+      - name: Robot Middleware
+        description: Operating systems and communication layers for robots (ROS 2…)
+  - id: agent-runtime-sandboxes
+    name: Agent Runtime & Sandboxes
+    group: infrastructure
+    description: >
+      Where agent-generated code actually runs — isolated execution sandboxes and durable runtimes that make
+      long-running agent work safe and fault-tolerant. Distinct from model serving (Inference & Compute).
+    subcategories:
+      - name: Code Execution Sandboxes
+        description: Isolated environments for running untrusted AI-generated code (E2B, Daytona, Modal Sandboxes…)
+      - name: Durable Execution
+        description: Fault-tolerant runtimes for long-running agent workflows (Temporal, Inngest…)
+  - id: ai-data-human-feedback
+    name: AI Data & Human Feedback
+    group: engineering
+    description: >
+      The data layer of AI development — labeling, preference and RLHF data, quality checks, and dataset
+      management. Distinct from general data infrastructure (Data Engineering).
+    subcategories:
+      - name: Data Labeling & Annotation
+        description: Platforms for annotating training data (Label Studio, Labelbox, Scale AI…)
+      - name: Human Feedback & Preference Data
+        description: Collecting and curating human feedback and preference signals (Argilla, Snorkel…)
+      - name: Data Quality & Curation
+        description: Finding and fixing dataset issues (Cleanlab…)
+      - name: Dataset Management
+        description: Sharing, versioning, and processing datasets (Hugging Face Datasets…)

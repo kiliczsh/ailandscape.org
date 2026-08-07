@@ -1,757 +1,702 @@
-# Canonical tag definitions
-# Each key matches the tag strings used in category YAML files.
-# label: human-readable display name
-# color: OKLCH color token for badge styling
-
-# --- Agents & Automation ---
 agents:
   label: Agents
-  color: "oklch(0.62 0.18 140)"
+  color: oklch(0.62 0.18 140)
 agentic:
   label: Agentic
-  color: "oklch(0.62 0.18 140)"
+  color: oklch(0.62 0.18 140)
 multi-agent:
   label: Multi-Agent
-  color: "oklch(0.62 0.18 140)"
+  color: oklch(0.62 0.18 140)
 autonomous:
   label: Autonomous
-  color: "oklch(0.65 0.16 145)"
+  color: oklch(0.65 0.16 145)
 automation:
   label: Automation
-  color: "oklch(0.65 0.16 145)"
+  color: oklch(0.65 0.16 145)
 computer-use:
   label: Computer Use
-  color: "oklch(0.65 0.16 145)"
+  color: oklch(0.65 0.16 145)
 copilot:
   label: Copilot
-  color: "oklch(0.65 0.16 145)"
+  color: oklch(0.65 0.16 145)
 workflows:
   label: Workflows
-  color: "oklch(0.65 0.16 150)"
+  color: oklch(0.65 0.16 150)
 scheduling:
   label: Scheduling
-  color: "oklch(0.65 0.14 150)"
-
-# --- Models & LLM ---
+  color: oklch(0.65 0.14 150)
 llm:
   label: LLM
-  color: "oklch(0.62 0.20 290)"
+  color: oklch(0.62 0.20 290)
 moe:
   label: MoE
-  color: "oklch(0.62 0.18 290)"
+  color: oklch(0.62 0.18 290)
 long-context:
   label: Long Context
-  color: "oklch(0.65 0.18 285)"
+  color: oklch(0.65 0.18 285)
 reasoning:
   label: Reasoning
-  color: "oklch(0.65 0.18 285)"
+  color: oklch(0.65 0.18 285)
 cot:
   label: Chain-of-Thought
-  color: "oklch(0.65 0.16 285)"
+  color: oklch(0.65 0.16 285)
 transformers:
   label: Transformers
-  color: "oklch(0.65 0.18 295)"
+  color: oklch(0.65 0.18 295)
 neural:
   label: Neural
-  color: "oklch(0.65 0.16 295)"
+  color: oklch(0.65 0.16 295)
 diffusion:
   label: Diffusion
-  color: "oklch(0.65 0.18 300)"
-sae:
-  label: SAE
-  color: "oklch(0.65 0.16 295)"
+  color: oklch(0.65 0.18 300)
 small:
   label: Small Model
-  color: "oklch(0.65 0.14 285)"
+  color: oklch(0.65 0.14 285)
 open-models:
   label: Open Models
-  color: "oklch(0.65 0.16 280)"
+  color: oklch(0.65 0.16 280)
 open-weights:
   label: Open Weights
-  color: "oklch(0.65 0.16 280)"
+  color: oklch(0.65 0.16 280)
 multilingual:
   label: Multilingual
-  color: "oklch(0.65 0.14 285)"
+  color: oklch(0.65 0.14 285)
 math:
   label: Math
-  color: "oklch(0.65 0.14 285)"
+  color: oklch(0.65 0.14 285)
 fast:
   label: Fast
-  color: "oklch(0.65 0.16 290)"
+  color: oklch(0.65 0.16 290)
 fast-inference:
   label: Fast Inference
-  color: "oklch(0.65 0.16 290)"
+  color: oklch(0.65 0.16 290)
 constrained-generation:
   label: Constrained Gen
-  color: "oklch(0.65 0.14 290)"
+  color: oklch(0.65 0.14 290)
 generation:
   label: Generation
-  color: "oklch(0.65 0.14 290)"
-
-# --- Vision & Multimodal ---
+  color: oklch(0.65 0.14 290)
 vision:
   label: Vision
-  color: "oklch(0.65 0.18 330)"
+  color: oklch(0.65 0.18 330)
 image-generation:
   label: Image Generation
-  color: "oklch(0.65 0.18 330)"
+  color: oklch(0.65 0.18 330)
 video-generation:
   label: Video Generation
-  color: "oklch(0.65 0.18 335)"
+  color: oklch(0.65 0.18 335)
 video:
   label: Video
-  color: "oklch(0.65 0.16 335)"
+  color: oklch(0.65 0.16 335)
 segmentation:
   label: Segmentation
-  color: "oklch(0.65 0.16 330)"
+  color: oklch(0.65 0.16 330)
 multimodal:
   label: Multimodal
-  color: "oklch(0.65 0.18 325)"
+  color: oklch(0.65 0.18 325)
 ocr:
   label: OCR
-  color: "oklch(0.65 0.16 330)"
+  color: oklch(0.65 0.16 330)
 object-detection:
   label: Object Detection
-  color: "oklch(0.65 0.16 330)"
+  color: oklch(0.65 0.16 330)
 creative:
   label: Creative
-  color: "oklch(0.65 0.16 340)"
-
-# --- Audio & Speech ---
+  color: oklch(0.65 0.16 340)
 audio:
   label: Audio
-  color: "oklch(0.65 0.18 350)"
+  color: oklch(0.65 0.18 350)
 speech:
   label: Speech
-  color: "oklch(0.65 0.18 350)"
+  color: oklch(0.65 0.18 350)
 tts:
   label: TTS
-  color: "oklch(0.65 0.16 350)"
+  color: oklch(0.65 0.16 350)
 asr:
   label: ASR
-  color: "oklch(0.65 0.16 350)"
+  color: oklch(0.65 0.16 350)
 music:
   label: Music
-  color: "oklch(0.65 0.16 355)"
+  color: oklch(0.65 0.16 355)
 voice:
   label: Voice
-  color: "oklch(0.65 0.16 350)"
-
-# --- Infrastructure & Cloud ---
+  color: oklch(0.65 0.16 350)
 infrastructure:
   label: Infrastructure
-  color: "oklch(0.62 0.16 230)"
+  color: oklch(0.62 0.16 230)
 cloud:
   label: Cloud
-  color: "oklch(0.62 0.16 230)"
+  color: oklch(0.62 0.16 230)
 gpu:
   label: GPU
-  color: "oklch(0.62 0.18 225)"
+  color: oklch(0.62 0.18 225)
 compute:
   label: Compute
-  color: "oklch(0.62 0.16 230)"
+  color: oklch(0.62 0.16 230)
 hardware:
   label: Hardware
-  color: "oklch(0.62 0.16 225)"
+  color: oklch(0.62 0.16 225)
 ai-chip:
   label: AI Chip
-  color: "oklch(0.62 0.16 225)"
+  color: oklch(0.62 0.16 225)
 apple-silicon:
   label: Apple Silicon
-  color: "oklch(0.62 0.14 225)"
+  color: oklch(0.62 0.14 225)
 serving:
   label: Serving
-  color: "oklch(0.62 0.16 235)"
+  color: oklch(0.62 0.16 235)
 training:
   label: Training
-  color: "oklch(0.62 0.16 235)"
+  color: oklch(0.62 0.16 235)
 inference:
   label: Inference
-  color: "oklch(0.62 0.16 235)"
+  color: oklch(0.62 0.16 235)
 distributed:
   label: Distributed
-  color: "oklch(0.62 0.16 235)"
+  color: oklch(0.62 0.16 235)
 edge:
   label: Edge
-  color: "oklch(0.62 0.14 230)"
+  color: oklch(0.62 0.14 230)
 kubernetes:
   label: Kubernetes
-  color: "oklch(0.62 0.16 230)"
+  color: oklch(0.62 0.16 230)
 decentralized:
   label: Decentralized
-  color: "oklch(0.62 0.14 230)"
+  color: oklch(0.62 0.14 230)
 accelerator:
   label: Accelerator
-  color: "oklch(0.62 0.14 225)"
-circuits:
-  label: Circuits
-  color: "oklch(0.62 0.14 225)"
-
-# --- Data & Storage ---
+  color: oklch(0.62 0.14 225)
 datasets:
   label: Datasets
-  color: "oklch(0.68 0.16 55)"
+  color: oklch(0.68 0.16 55)
 data:
   label: Data
-  color: "oklch(0.68 0.16 55)"
+  color: oklch(0.68 0.16 55)
 rag:
   label: RAG
-  color: "oklch(0.68 0.18 55)"
+  color: oklch(0.68 0.18 55)
 embeddings:
   label: Embeddings
-  color: "oklch(0.68 0.16 55)"
+  color: oklch(0.68 0.16 55)
 retrieval:
   label: Retrieval
-  color: "oklch(0.68 0.16 55)"
+  color: oklch(0.68 0.16 55)
 reranking:
   label: Reranking
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.14 55)
 indexing:
   label: Indexing
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.14 55)
 vector-db:
   label: Vector DB
-  color: "oklch(0.68 0.18 50)"
+  color: oklch(0.68 0.18 50)
 search:
   label: Search
-  color: "oklch(0.68 0.16 50)"
+  color: oklch(0.68 0.16 50)
 similarity:
   label: Similarity
-  color: "oklch(0.68 0.14 50)"
+  color: oklch(0.68 0.14 50)
 streaming:
   label: Streaming
-  color: "oklch(0.68 0.16 60)"
+  color: oklch(0.68 0.16 60)
 etl:
   label: ETL
-  color: "oklch(0.68 0.14 60)"
+  color: oklch(0.68 0.14 60)
 batch:
   label: Batch
-  color: "oklch(0.68 0.14 60)"
+  color: oklch(0.68 0.14 60)
 ingestion:
   label: Ingestion
-  color: "oklch(0.68 0.14 60)"
+  color: oklch(0.68 0.14 60)
 catalog:
   label: Catalog
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.14 55)
 lakehouse:
   label: Lakehouse
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.14 55)
 synthetic-data:
   label: Synthetic Data
-  color: "oklch(0.68 0.16 55)"
+  color: oklch(0.68 0.16 55)
 document-processing:
   label: Document Processing
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.14 55)
 pdf:
   label: PDF
-  color: "oklch(0.68 0.12 55)"
+  color: oklch(0.68 0.12 55)
 connectors:
   label: Connectors
-  color: "oklch(0.68 0.12 55)"
+  color: oklch(0.68 0.12 55)
 metadata:
   label: Metadata
-  color: "oklch(0.68 0.12 55)"
+  color: oklch(0.68 0.12 55)
 transformation:
   label: Transformation
-  color: "oklch(0.68 0.12 60)"
-query:
-  label: Query
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.12 60)
 sql:
   label: SQL
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.14 55)
 postgresql:
   label: PostgreSQL
-  color: "oklch(0.68 0.14 55)"
+  color: oklch(0.68 0.14 55)
 table-format:
   label: Table Format
-  color: "oklch(0.68 0.12 55)"
+  color: oklch(0.68 0.12 55)
 tabular:
   label: Tabular
-  color: "oklch(0.68 0.12 55)"
+  color: oklch(0.68 0.12 55)
 hdfs:
   label: HDFS
-  color: "oklch(0.68 0.12 55)"
+  color: oklch(0.68 0.12 55)
 kafka:
   label: Kafka
-  color: "oklch(0.68 0.12 60)"
+  color: oklch(0.68 0.12 60)
 flink:
   label: Flink
-  color: "oklch(0.68 0.12 60)"
+  color: oklch(0.68 0.12 60)
 messaging:
   label: Messaging
-  color: "oklch(0.68 0.12 60)"
+  color: oklch(0.68 0.12 60)
 acid:
   label: ACID
-  color: "oklch(0.68 0.12 55)"
+  color: oklch(0.68 0.12 55)
 context:
   label: Context
-  color: "oklch(0.68 0.12 55)"
-
-# --- Security & Privacy ---
+  color: oklch(0.68 0.12 55)
 security:
   label: Security
-  color: "oklch(0.62 0.20 20)"
+  color: oklch(0.62 0.20 20)
 safety:
   label: Safety
-  color: "oklch(0.62 0.18 20)"
+  color: oklch(0.62 0.18 20)
 privacy:
   label: Privacy
-  color: "oklch(0.62 0.18 20)"
+  color: oklch(0.62 0.18 20)
 prompt-injection:
   label: Prompt Injection
-  color: "oklch(0.62 0.20 15)"
+  color: oklch(0.62 0.20 15)
 attacks:
   label: Attacks
-  color: "oklch(0.62 0.18 15)"
+  color: oklch(0.62 0.18 15)
 defense:
   label: Defense
-  color: "oklch(0.62 0.18 20)"
+  color: oklch(0.62 0.18 20)
 red-teaming:
   label: Red Teaming
-  color: "oklch(0.62 0.18 15)"
+  color: oklch(0.62 0.18 15)
 guardrails:
   label: Guardrails
-  color: "oklch(0.62 0.16 20)"
+  color: oklch(0.62 0.16 20)
 owasp:
   label: OWASP
-  color: "oklch(0.62 0.16 15)"
+  color: oklch(0.62 0.16 15)
 compliance:
   label: Compliance
-  color: "oklch(0.62 0.16 20)"
+  color: oklch(0.62 0.16 20)
 anonymization:
   label: Anonymization
-  color: "oklch(0.62 0.16 20)"
+  color: oklch(0.62 0.16 20)
 pii:
   label: PII
-  color: "oklch(0.62 0.16 15)"
+  color: oklch(0.62 0.16 15)
 differential-privacy:
   label: Differential Privacy
-  color: "oklch(0.62 0.14 20)"
+  color: oklch(0.62 0.14 20)
 federated-learning:
   label: Federated Learning
-  color: "oklch(0.62 0.14 20)"
+  color: oklch(0.62 0.14 20)
 adversarial:
   label: Adversarial
-  color: "oklch(0.62 0.18 15)"
-interpretability:
-  label: Interpretability
-  color: "oklch(0.62 0.16 20)"
-alignment:
-  label: Alignment
-  color: "oklch(0.62 0.16 20)"
+  color: oklch(0.62 0.18 15)
 regulation:
   label: Regulation
-  color: "oklch(0.62 0.14 20)"
+  color: oklch(0.62 0.14 20)
 governance:
   label: Governance
-  color: "oklch(0.62 0.14 20)"
+  color: oklch(0.62 0.14 20)
 risk-management:
   label: Risk Management
-  color: "oklch(0.62 0.14 20)"
-
-# --- MLOps & Observability ---
+  color: oklch(0.62 0.14 20)
 mlops:
   label: MLOps
-  color: "oklch(0.65 0.16 190)"
+  color: oklch(0.65 0.16 190)
 observability:
   label: Observability
-  color: "oklch(0.65 0.16 190)"
+  color: oklch(0.65 0.16 190)
 monitoring:
   label: Monitoring
-  color: "oklch(0.65 0.16 190)"
+  color: oklch(0.65 0.16 190)
 tracing:
   label: Tracing
-  color: "oklch(0.65 0.14 190)"
+  color: oklch(0.65 0.14 190)
 evaluation:
   label: Evaluation
-  color: "oklch(0.65 0.16 195)"
+  color: oklch(0.65 0.16 195)
 benchmarks:
   label: Benchmarks
-  color: "oklch(0.65 0.14 195)"
+  color: oklch(0.65 0.14 195)
 human-eval:
   label: Human Eval
-  color: "oklch(0.65 0.14 195)"
+  color: oklch(0.65 0.14 195)
 testing:
   label: Testing
-  color: "oklch(0.65 0.14 190)"
+  color: oklch(0.65 0.14 190)
 experiment-tracking:
   label: Experiment Tracking
-  color: "oklch(0.65 0.16 190)"
+  color: oklch(0.65 0.16 190)
 feature-store:
   label: Feature Store
-  color: "oklch(0.65 0.14 190)"
+  color: oklch(0.65 0.14 190)
 model-registry:
   label: Model Registry
-  color: "oklch(0.65 0.14 190)"
+  color: oklch(0.65 0.14 190)
 version-control:
   label: Version Control
-  color: "oklch(0.65 0.14 185)"
+  color: oklch(0.65 0.14 185)
 cicd:
   label: CI/CD
-  color: "oklch(0.65 0.14 185)"
+  color: oklch(0.65 0.14 185)
 github-actions:
   label: GitHub Actions
-  color: "oklch(0.65 0.12 185)"
+  color: oklch(0.65 0.12 185)
 data-drift:
   label: Data Drift
-  color: "oklch(0.65 0.14 190)"
+  color: oklch(0.65 0.14 190)
 data-logging:
   label: Data Logging
-  color: "oklch(0.65 0.12 190)"
+  color: oklch(0.65 0.12 190)
 opentelemetry:
   label: OpenTelemetry
-  color: "oklch(0.65 0.14 190)"
+  color: oklch(0.65 0.14 190)
 visualization:
   label: Visualization
-  color: "oklch(0.65 0.14 195)"
+  color: oklch(0.65 0.14 195)
 explainability:
   label: Explainability
-  color: "oklch(0.65 0.14 195)"
+  color: oklch(0.65 0.14 195)
 xai:
   label: XAI
-  color: "oklch(0.65 0.14 195)"
-
-# --- ML Frameworks ---
+  color: oklch(0.65 0.14 195)
 framework:
   label: Framework
-  color: "oklch(0.65 0.16 200)"
+  color: oklch(0.65 0.16 200)
 pytorch:
   label: PyTorch
-  color: "oklch(0.65 0.18 200)"
+  color: oklch(0.65 0.18 200)
 tensorflow:
   label: TensorFlow
-  color: "oklch(0.65 0.16 200)"
+  color: oklch(0.65 0.16 200)
 autodiff:
   label: AutoDiff
-  color: "oklch(0.65 0.14 200)"
+  color: oklch(0.65 0.14 200)
 automl:
   label: AutoML
-  color: "oklch(0.65 0.14 200)"
+  color: oklch(0.65 0.14 200)
 classical-ml:
   label: Classical ML
-  color: "oklch(0.65 0.14 200)"
+  color: oklch(0.65 0.14 200)
 deep-learning:
   label: Deep Learning
-  color: "oklch(0.65 0.16 200)"
+  color: oklch(0.65 0.16 200)
 reinforcement-learning:
   label: RL
-  color: "oklch(0.65 0.16 205)"
+  color: oklch(0.65 0.16 205)
 gradient-boosting:
   label: Gradient Boosting
-  color: "oklch(0.65 0.14 200)"
+  color: oklch(0.65 0.14 200)
 optimization:
   label: Optimization
-  color: "oklch(0.65 0.14 200)"
+  color: oklch(0.65 0.14 200)
 nlp:
   label: NLP
-  color: "oklch(0.65 0.14 200)"
-
-# --- Languages & SDKs ---
+  color: oklch(0.65 0.14 200)
 python:
   label: Python
-  color: "oklch(0.65 0.14 210)"
+  color: oklch(0.65 0.14 210)
 rust:
   label: Rust
-  color: "oklch(0.65 0.14 210)"
+  color: oklch(0.65 0.14 210)
 java:
   label: Java
-  color: "oklch(0.65 0.14 210)"
+  color: oklch(0.65 0.14 210)
 cpp:
   label: C++
-  color: "oklch(0.65 0.14 210)"
+  color: oklch(0.65 0.14 210)
 dotnet:
   label: .NET
-  color: "oklch(0.65 0.14 210)"
+  color: oklch(0.65 0.14 210)
 scala:
   label: Scala
-  color: "oklch(0.65 0.12 210)"
+  color: oklch(0.65 0.12 210)
 sdk:
   label: SDK
-  color: "oklch(0.65 0.14 210)"
+  color: oklch(0.65 0.14 210)
 cross-platform:
   label: Cross-Platform
-  color: "oklch(0.65 0.12 210)"
-
-# --- Platform & API ---
+  color: oklch(0.65 0.12 210)
 platform:
   label: Platform
-  color: "oklch(0.65 0.16 260)"
+  color: oklch(0.65 0.16 260)
 saas:
   label: SaaS
-  color: "oklch(0.65 0.16 260)"
+  color: oklch(0.65 0.16 260)
 api:
   label: API
-  color: "oklch(0.65 0.18 260)"
-rest:
-  label: REST
-  color: "oklch(0.65 0.14 260)"
-rpc:
-  label: RPC
-  color: "oklch(0.65 0.14 260)"
+  color: oklch(0.65 0.18 260)
 protocol:
   label: Protocol
-  color: "oklch(0.65 0.16 265)"
-json:
-  label: JSON
-  color: "oklch(0.65 0.12 260)"
-schema:
-  label: Schema
-  color: "oklch(0.65 0.12 260)"
-async:
-  label: Async
-  color: "oklch(0.65 0.12 260)"
+  color: oklch(0.65 0.16 265)
 realtime:
   label: Realtime
-  color: "oklch(0.65 0.14 260)"
+  color: oklch(0.65 0.14 260)
 proxy:
   label: Proxy
-  color: "oklch(0.65 0.12 260)"
+  color: oklch(0.65 0.12 260)
 routing:
   label: Routing
-  color: "oklch(0.65 0.12 260)"
+  color: oklch(0.65 0.12 260)
 gateway:
   label: Gateway
-  color: "oklch(0.65 0.14 260)"
+  color: oklch(0.65 0.14 260)
 managed:
   label: Managed
-  color: "oklch(0.65 0.12 260)"
+  color: oklch(0.65 0.12 260)
 enterprise:
   label: Enterprise
-  color: "oklch(0.65 0.12 260)"
-
-# --- Dev Tools ---
+  color: oklch(0.65 0.12 260)
 ide:
   label: IDE
-  color: "oklch(0.65 0.16 170)"
+  color: oklch(0.65 0.16 170)
 cli:
   label: CLI
-  color: "oklch(0.65 0.14 170)"
+  color: oklch(0.65 0.14 170)
 coding:
   label: Coding
-  color: "oklch(0.65 0.16 170)"
+  color: oklch(0.65 0.16 170)
 browser:
   label: Browser
-  color: "oklch(0.65 0.14 170)"
+  color: oklch(0.65 0.14 170)
 mobile:
   label: Mobile
-  color: "oklch(0.65 0.14 170)"
+  color: oklch(0.65 0.14 170)
 phone:
   label: Phone
-  color: "oklch(0.65 0.12 170)"
+  color: oklch(0.65 0.12 170)
 documentation:
   label: Documentation
-  color: "oklch(0.65 0.12 170)"
+  color: oklch(0.65 0.12 170)
 prompt-engineering:
   label: Prompt Engineering
-  color: "oklch(0.65 0.14 175)"
+  color: oklch(0.65 0.14 175)
 orchestration:
   label: Orchestration
-  color: "oklch(0.65 0.14 170)"
+  color: oklch(0.65 0.14 170)
 environments:
   label: Environments
-  color: "oklch(0.65 0.12 170)"
+  color: oklch(0.65 0.12 170)
 discovery:
   label: Discovery
-  color: "oklch(0.65 0.12 170)"
-
-# --- Vendors ---
+  color: oklch(0.65 0.12 170)
 openai:
   label: OpenAI
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 anthropic:
   label: Anthropic
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 google:
   label: Google
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 microsoft:
   label: Microsoft
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 aws:
   label: AWS
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 azure:
   label: Azure
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 nvidia:
   label: NVIDIA
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 amd:
   label: AMD
-  color: "oklch(0.60 0.06 250)"
+  color: oklch(0.60 0.06 250)
 ibm:
   label: IBM
-  color: "oklch(0.60 0.06 250)"
-
-# --- Research & Community ---
+  color: oklch(0.60 0.06 250)
 research:
   label: Research
-  color: "oklch(0.65 0.14 100)"
+  color: oklch(0.65 0.14 100)
 academic:
   label: Academic
-  color: "oklch(0.65 0.14 100)"
+  color: oklch(0.65 0.14 100)
 oss:
   label: Open Source
-  color: "oklch(0.65 0.16 100)"
+  color: oklch(0.65 0.16 100)
 free:
   label: Free
-  color: "oklch(0.65 0.14 100)"
+  color: oklch(0.65 0.14 100)
 community:
   label: Community
-  color: "oklch(0.65 0.12 100)"
+  color: oklch(0.65 0.12 100)
 open-science:
   label: Open Science
-  color: "oklch(0.65 0.14 100)"
+  color: oklch(0.65 0.14 100)
 proprietary:
   label: Proprietary
-  color: "oklch(0.65 0.10 250)"
-
-# --- Vertical AI ---
+  color: oklch(0.65 0.10 250)
 healthcare:
   label: Healthcare
-  color: "oklch(0.65 0.16 160)"
+  color: oklch(0.65 0.16 160)
 finance:
   label: Finance
-  color: "oklch(0.65 0.16 160)"
+  color: oklch(0.65 0.16 160)
 legal:
   label: Legal
-  color: "oklch(0.65 0.14 160)"
+  color: oklch(0.65 0.14 160)
 education:
   label: Education
-  color: "oklch(0.65 0.16 160)"
+  color: oklch(0.65 0.16 160)
 language-learning:
   label: Language Learning
-  color: "oklch(0.65 0.14 160)"
+  color: oklch(0.65 0.14 160)
 tutor:
   label: Tutor
-  color: "oklch(0.65 0.12 160)"
-
-# --- Generative Content ---
-chatbots:
-  label: Chatbots
-  color: "oklch(0.62 0.16 340)"
+  color: oklch(0.65 0.12 160)
 copywriting:
   label: Copywriting
-  color: "oklch(0.62 0.18 340)"
+  color: oklch(0.62 0.18 340)
 writing:
   label: Writing
-  color: "oklch(0.62 0.16 340)"
+  color: oklch(0.62 0.16 340)
 fiction:
   label: Fiction
-  color: "oklch(0.62 0.14 340)"
+  color: oklch(0.62 0.14 340)
 editorial:
   label: Editorial
-  color: "oklch(0.62 0.14 340)"
+  color: oklch(0.62 0.14 340)
 productivity:
   label: Productivity
-  color: "oklch(0.62 0.14 340)"
+  color: oklch(0.62 0.14 340)
 email:
   label: Email
-  color: "oklch(0.62 0.14 340)"
+  color: oklch(0.62 0.14 340)
 sales:
   label: Sales
-  color: "oklch(0.62 0.12 340)"
+  color: oklch(0.62 0.12 340)
 presentations:
   label: Presentations
-  color: "oklch(0.62 0.16 340)"
+  color: oklch(0.62 0.16 340)
 storytelling:
   label: Storytelling
-  color: "oklch(0.62 0.14 340)"
+  color: oklch(0.62 0.14 340)
 google-slides:
   label: Google Slides
-  color: "oklch(0.62 0.12 340)"
+  color: oklch(0.62 0.12 340)
 text-rendering:
   label: Text Rendering
-  color: "oklch(0.62 0.14 320)"
+  color: oklch(0.62 0.14 320)
 image-editing:
   label: Image Editing
-  color: "oklch(0.62 0.16 320)"
+  color: oklch(0.62 0.16 320)
 inpainting:
   label: Inpainting
-  color: "oklch(0.62 0.14 320)"
+  color: oklch(0.62 0.14 320)
 real-time:
   label: Real-Time
-  color: "oklch(0.62 0.14 320)"
+  color: oklch(0.62 0.14 320)
 video-editing:
   label: Video Editing
-  color: "oklch(0.62 0.16 320)"
+  color: oklch(0.62 0.16 320)
 stylization:
   label: Stylization
-  color: "oklch(0.62 0.14 320)"
+  color: oklch(0.62 0.14 320)
 upscaling:
   label: Upscaling
-  color: "oklch(0.62 0.12 320)"
+  color: oklch(0.62 0.12 320)
 animation:
   label: Animation
-  color: "oklch(0.62 0.14 320)"
+  color: oklch(0.62 0.14 320)
 avatar:
   label: Avatar
-  color: "oklch(0.62 0.16 320)"
+  color: oklch(0.62 0.16 320)
 lip-sync:
   label: Lip-Sync
-  color: "oklch(0.62 0.14 320)"
+  color: oklch(0.62 0.14 320)
 voice-cloning:
   label: Voice Cloning
-  color: "oklch(0.62 0.16 300)"
+  color: oklch(0.62 0.16 300)
 editing:
   label: Editing
-  color: "oklch(0.62 0.14 300)"
+  color: oklch(0.62 0.14 300)
 composition:
   label: Composition
-  color: "oklch(0.62 0.14 300)"
+  color: oklch(0.62 0.14 300)
 sfx:
   label: SFX
-  color: "oklch(0.62 0.14 300)"
-
-# --- Misc ---
+  color: oklch(0.62 0.14 300)
 ai:
   label: AI
-  color: "oklch(0.65 0.14 270)"
+  color: oklch(0.65 0.14 270)
 management:
   label: Management
-  color: "oklch(0.65 0.10 250)"
+  color: oklch(0.65 0.10 250)
 lab:
   label: Lab
-  color: "oklch(0.65 0.14 270)"
+  color: oklch(0.65 0.14 270)
 analytics:
   label: Analytics
-  color: "oklch(0.68 0.14 60)"
-
-# --- Skills & Ecosystem ---
+  color: oklch(0.68 0.14 60)
 skills:
   label: Skills
-  color: "oklch(0.62 0.18 80)"
+  color: oklch(0.62 0.18 80)
 claude-code:
   label: Claude Code
-  color: "oklch(0.55 0.20 30)"
+  color: oklch(0.55 0.20 30)
 design:
   label: Design
-  color: "oklch(0.62 0.18 330)"
+  color: oklch(0.62 0.18 330)
 marketing:
   label: Marketing
-  color: "oklch(0.62 0.14 160)"
+  color: oklch(0.62 0.14 160)
 seo:
   label: SEO
-  color: "oklch(0.62 0.14 160)"
+  color: oklch(0.62 0.14 160)
 knowledge:
   label: Knowledge
-  color: "oklch(0.62 0.14 270)"
+  color: oklch(0.62 0.14 270)
 obsidian:
   label: Obsidian
-  color: "oklch(0.55 0.18 280)"
+  color: oklch(0.55 0.18 280)
 office:
   label: Office
-  color: "oklch(0.62 0.12 230)"
+  color: oklch(0.62 0.12 230)
 debugging:
   label: Debugging
-  color: "oklch(0.58 0.18 25)"
+  color: oklch(0.58 0.18 25)
 brand:
   label: Brand
-  color: "oklch(0.62 0.14 50)"
+  color: oklch(0.62 0.14 50)
 frontend:
   label: Frontend
-  color: "oklch(0.62 0.18 200)"
+  color: oklch(0.62 0.18 200)
 developer-tools:
   label: Developer Tools
-  color: "oklch(0.62 0.14 250)"
+  color: oklch(0.62 0.14 250)
+robotics:
+  label: Robotics
+  color: oklch(0.62 0.18 122)
+simulation:
+  label: Simulation
+  color: oklch(0.62 0.18 122)
+sandbox:
+  label: Sandbox
+  color: oklch(0.62 0.18 252)
+labeling:
+  label: Labeling
+  color: oklch(0.62 0.18 65)
+human-feedback:
+  label: Human Feedback
+  color: oklch(0.62 0.18 65)
+memory:
+  label: Memory
+  color: oklch(0.62 0.18 302)

@@ -1,7 +1,9 @@
 name: Visual Generation
-group: products
+group: applications
 color: oklch(0.62 0.20 245)
 icon: ImageSquare
+intro: >-
+  Products for generating and editing images and video — text-to-image, inpainting, text-to-video, stylization, and avatar generation. The underlying model weights live in Foundation Models.
 subcategories:
   - name: Text-to-Image
     row: 0

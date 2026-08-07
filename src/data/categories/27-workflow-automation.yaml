@@ -1,7 +1,9 @@
 name: Workflow Automation
-group: products
+group: applications
 color: oklch(0.62 0.20 108)
 icon: GitBranch
+intro: >-
+  Low-code and no-code platforms that automate multi-step processes by connecting apps, APIs, and LLM steps — the operations-oriented, trigger-based complement to agent frameworks.
 subcategories:
   - name: AI Workflow Platforms
     row: 0

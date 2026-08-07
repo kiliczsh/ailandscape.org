@@ -1,7 +1,9 @@
 name: Voice Agents
-group: products
+group: applications
 color: oklch(0.62 0.20 195)
 icon: Waveform
+intro: >-
+  Platforms and frameworks for building AI that talks in real time — phone call automation, conversational voice APIs, and open-source speech-to-speech agent infrastructure.
 subcategories:
   - name: Voice Agent Platforms
     row: 0

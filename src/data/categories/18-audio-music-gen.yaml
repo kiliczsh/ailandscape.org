@@ -1,7 +1,9 @@
 name: Audio & Music Gen
-group: products
+group: applications
 color: oklch(0.62 0.20 317)
 icon: MusicNotes
+intro: >-
+  Products for speech synthesis, voice cloning, dubbing, music composition, and sound effects. Consumer and developer-facing tools; raw audio model weights live in Foundation Models.
 subcategories:
   - name: Text-to-Speech (High Fidelity)
     row: 0

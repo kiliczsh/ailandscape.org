@@ -1,7 +1,9 @@
 name: AI App Builders
-group: products
+group: coding
 color: oklch(0.62 0.20 58)
 icon: Cube
+intro: >-
+  Platforms that turn prompts into working software — chat and web app builders, mobile app generators, self-hostable open-source builders, and visual node editors for wiring AI logic.
 subcategories:
   - name: Chat & Browser Builders
     row: 0
