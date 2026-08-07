@@ -1,0 +1,78 @@
+name: AI Data & Human Feedback
+group: engineering
+color: oklch(0.62 0.20 65)
+icon: Database
+intro: >-
+  The data layer of AI development — labeling and annotation platforms, human feedback and preference data, dataset quality checks, and dataset management.
+subcategories:
+  - name: Data Labeling & Annotation
+    row: 0
+    items:
+      - name: Label Studio
+        homepage_url: https://labelstud.io
+        repo_url: https://github.com/HumanSignal/label-studio
+        description: Open-source data labeling platform for all data types
+        tags:
+          - labeling
+          - data
+          - oss
+      - name: Labelbox
+        homepage_url: https://labelbox.com
+        description: Data factory for labeling, RL environments, and preference signals
+        tags:
+          - labeling
+          - data
+          - proprietary
+      - name: Prodigy
+        homepage_url: https://prodi.gy
+        description: Scriptable annotation tool by the makers of spaCy
+        tags:
+          - labeling
+          - data
+          - proprietary
+      - name: Scale AI
+        homepage_url: https://scale.com
+        description: Data labeling and human feedback platform for frontier AI training
+        tags:
+          - labeling
+          - human-feedback
+          - proprietary
+  - name: Human Feedback & Preference Data
+    row: 0
+    items:
+      - name: Argilla
+        homepage_url: https://argilla.io
+        repo_url: https://github.com/argilla-io/argilla
+        description: Open-source platform for AI feedback, preference data, and curation
+        tags:
+          - human-feedback
+          - data
+          - oss
+      - name: Snorkel
+        homepage_url: https://snorkel.ai
+        description: Programmatic data labeling and AI data development platform
+        tags:
+          - labeling
+          - human-feedback
+          - proprietary
+  - name: Data Quality & Curation
+    row: 0
+    items:
+      - name: Cleanlab
+        homepage_url: https://cleanlab.ai
+        repo_url: https://github.com/cleanlab/cleanlab
+        description: Detect and fix label errors and data issues in ML datasets
+        tags:
+          - data
+          - oss
+  - name: Dataset Management
+    row: 0
+    items:
+      - name: Hugging Face Datasets
+        homepage_url: https://huggingface.co/docs/datasets
+        repo_url: https://github.com/huggingface/datasets
+        description: Library and hub for sharing and processing ML datasets
+        tags:
+          - datasets
+          - data
+          - oss

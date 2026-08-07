@@ -1,0 +1,76 @@
+name: Embodied AI & Robotics
+group: applications
+color: oklch(0.62 0.20 122)
+icon: Robot
+intro: >-
+  AI that acts in the physical world — robot foundation models, physics simulation and robot learning environments, and the middleware connecting learning systems to real hardware.
+subcategories:
+  - name: Robot Foundation Models
+    row: 0
+    items:
+      - name: Hugging Face LeRobot
+        homepage_url: https://huggingface.co/lerobot
+        repo_url: https://github.com/huggingface/lerobot
+        description: Open-source robot learning models, datasets, and real-robot tooling
+        tags:
+          - robotics
+          - oss
+          - open-weights
+      - name: NVIDIA Cosmos
+        homepage_url: https://www.nvidia.com/en-us/ai/cosmos/
+        description: World foundation models for physical AI development
+        tags:
+          - robotics
+          - simulation
+          - open-weights
+      - name: Physical Intelligence π0
+        homepage_url: https://www.physicalintelligence.company
+        repo_url: https://github.com/Physical-Intelligence/openpi
+        description: Vision-language-action robot foundation model with open weights
+        tags:
+          - robotics
+          - open-weights
+      - name: Xiaomi Robotics XR-1
+        homepage_url: https://robotics.xiaomi.com/xiaomi-robotics-1.html
+        repo_url: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1
+        description: Xiaomi's open-source vision-language-action foundation model for robots
+        tags:
+          - robotics
+          - multimodal
+          - open-weights
+  - name: Simulation & Training
+    row: 0
+    items:
+      - name: MuJoCo
+        homepage_url: https://mujoco.org
+        repo_url: https://github.com/google-deepmind/mujoco
+        description: Physics engine for robotics, biomechanics, and RL research
+        tags:
+          - robotics
+          - simulation
+          - oss
+      - name: NVIDIA Isaac Lab
+        homepage_url: https://developer.nvidia.com/isaac/lab
+        repo_url: https://github.com/isaac-sim/IsaacLab
+        description: Open-source framework for robot learning built on Isaac Sim
+        tags:
+          - robotics
+          - simulation
+          - oss
+      - name: NVIDIA Isaac Sim
+        homepage_url: https://developer.nvidia.com/isaac/sim
+        description: Robotics simulation and synthetic data generation platform
+        tags:
+          - robotics
+          - simulation
+          - proprietary
+  - name: Robot Middleware
+    row: 0
+    items:
+      - name: ROS 2
+        homepage_url: https://www.ros.org
+        repo_url: https://github.com/ros2/ros2
+        description: Open-source robot operating system and middleware ecosystem
+        tags:
+          - robotics
+          - oss

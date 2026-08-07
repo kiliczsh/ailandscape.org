@@ -1,0 +1,50 @@
+name: Agent Runtime & Sandboxes
+group: infrastructure
+color: oklch(0.62 0.20 252)
+icon: Cube
+intro: >-
+  Where agent-generated code actually runs — isolated execution sandboxes for untrusted code and durable runtimes that keep long-running agent workflows fault-tolerant.
+subcategories:
+  - name: Code Execution Sandboxes
+    row: 0
+    items:
+      - name: Daytona
+        homepage_url: https://www.daytona.io
+        repo_url: https://github.com/daytonaio/daytona
+        description: Secure and elastic infrastructure for running AI-generated code
+        tags:
+          - sandbox
+          - agents
+          - oss
+      - name: E2B
+        homepage_url: https://e2b.dev
+        repo_url: https://github.com/e2b-dev/e2b
+        description: Isolated cloud sandboxes for running AI-generated code
+        tags:
+          - sandbox
+          - agents
+          - oss
+      - name: Modal Sandboxes
+        homepage_url: https://modal.com/use-cases/sandboxes
+        description: Serverless sandboxed code execution for AI agents
+        tags:
+          - sandbox
+          - agents
+          - api
+  - name: Durable Execution
+    row: 0
+    items:
+      - name: Inngest
+        homepage_url: https://www.inngest.com
+        repo_url: https://github.com/inngest/inngest
+        description: Event-driven durable execution engine for AI and background workflows
+        tags:
+          - automation
+          - oss
+      - name: Temporal
+        homepage_url: https://temporal.io
+        repo_url: https://github.com/temporalio/temporal
+        description: Durable execution platform for long-running, fault-tolerant workflows
+        tags:
+          - automation
+          - oss
