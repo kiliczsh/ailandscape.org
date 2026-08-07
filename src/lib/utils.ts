@@ -18,9 +18,9 @@ const GROUP_LABELS: Record<string, string> = {
   "core-ai": "Core AI",
   infrastructure: "Infrastructure",
   engineering: "Engineering",
-  products: "Products",
+  coding: "Coding",
+  applications: "Applications",
   governance: "Governance",
-  ecosystem: "Ecosystem",
 };
 
 export function humanizeGroup(group?: string): string {

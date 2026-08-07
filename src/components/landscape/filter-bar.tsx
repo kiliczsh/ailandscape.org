@@ -26,18 +26,18 @@ const FILTER_OPTIONS: [GroupFilter, string][] = [
   ["core-ai", "Core AI"],
   ["infrastructure", "Infrastructure"],
   ["engineering", "Engineering"],
-  ["products", "Products"],
+  ["coding", "Coding"],
+  ["applications", "Applications"],
   ["governance", "Governance"],
-  ["ecosystem", "Ecosystem"],
 ];
 
 const GROUP_ACTIVE_COLORS: Partial<Record<GroupFilter, string>> = {
   "core-ai": "var(--group-core-ai)",
   infrastructure: "var(--group-infrastructure)",
   engineering: "var(--group-engineering)",
-  products: "var(--group-products)",
+  coding: "var(--group-coding)",
+  applications: "var(--group-applications)",
   governance: "var(--group-governance)",
-  ecosystem: "var(--group-ecosystem)",
 };
 
 interface FilterBarProps {

@@ -52,9 +52,9 @@
   --group-core-ai: oklch(0.45 0.25 283);
   --group-infrastructure: oklch(0.45 0.2 58);
   --group-engineering: oklch(0.45 0.22 230);
-  --group-products: oklch(0.45 0.22 160);
+  --group-coding: oklch(0.45 0.22 320);
+  --group-applications: oklch(0.45 0.22 160);
   --group-governance: oklch(0.42 0.26 18);
-  --group-ecosystem: oklch(0.45 0.18 80);
 
   /* Marquee banner — intentionally theme-invariant accent strip */
   --marquee-bg: oklch(0.58 0.15 35);
@@ -97,9 +97,9 @@
   --group-core-ai: oklch(0.45 0.25 283);
   --group-infrastructure: oklch(0.45 0.2 58);
   --group-engineering: oklch(0.45 0.22 230);
-  --group-products: oklch(0.45 0.22 160);
+  --group-coding: oklch(0.45 0.22 320);
+  --group-applications: oklch(0.45 0.22 160);
   --group-governance: oklch(0.42 0.26 18);
-  --group-ecosystem: oklch(0.45 0.18 80);
   --marquee-bg: oklch(0.58 0.15 35);
 
   --background: oklch(0.145 0.008 326);

@@ -18,7 +18,7 @@ export const GROUP_META: Record<
     color: "var(--group-infrastructure)",
   },
   engineering: { label: "Engineering", color: "var(--group-engineering)" },
-  products: { label: "Products", color: "var(--group-products)" },
+  coding: { label: "Coding", color: "var(--group-coding)" },
+  applications: { label: "Applications", color: "var(--group-applications)" },
   governance: { label: "Governance", color: "var(--group-governance)" },
-  ecosystem: { label: "Ecosystem", color: "var(--group-ecosystem)" },
 };

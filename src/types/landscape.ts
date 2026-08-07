@@ -1,3 +1,24 @@
+export type EntityType =
+  | "company"
+  | "lab"
+  | "model_family"
+  | "product"
+  | "framework"
+  | "protocol"
+  | "benchmark"
+  | "dataset"
+  | "hardware"
+  | "standard";
+
+export type AccessType = "open_source" | "open_weights" | "proprietary";
+
+export type EntityStatus =
+  | "active"
+  | "maintenance"
+  | "archived"
+  | "acquired"
+  | "rebranded";
+
 export interface LandscapeItem {
   name: string;
   homepage_url?: string;
@@ -8,7 +29,12 @@ export interface LandscapeItem {
   project?: string;
   description?: string;
   tags?: string[];
+  entity_type?: EntityType;
+  access?: AccessType;
+  status?: EntityStatus;
+  aliases?: string[];
   added_at?: string;
+  last_verified_at?: string;
 }
 
 export interface Subcategory {
@@ -21,9 +47,9 @@ export type CategoryGroup =
   | "core-ai"
   | "infrastructure"
   | "engineering"
-  | "products"
-  | "governance"
-  | "ecosystem";
+  | "coding"
+  | "applications"
+  | "governance";
 
 export interface Category {
   name: string;

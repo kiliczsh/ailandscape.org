@@ -12,9 +12,9 @@ const VALID_GROUPS: GroupFilter[] = [
   "core-ai",
   "infrastructure",
   "engineering",
-  "products",
+  "coding",
+  "applications",
   "governance",
-  "ecosystem",
 ];
 const VALID_VIEWS: ViewMode[] = ["grid", "card"];
 
