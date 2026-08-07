@@ -117,6 +117,7 @@ subcategories:
       - name: PydanticAI
         homepage_url: https://ai.pydantic.dev
         repo_url: https://github.com/pydantic/pydantic-ai
+        twitter_url: https://x.com/pydantic
         description: Production-grade, type-safe Python agent framework by Pydantic
         tags:
           - agents
@@ -174,6 +175,7 @@ subcategories:
         homepage_url: https://crewai.com
         repo_url: https://github.com/crewAIInc/crewAI
         logo: crewai.webp
+        twitter_url: https://x.com/crewAIInc
         description: Framework for orchestrating role-playing AI agents
         tags:
           - agents

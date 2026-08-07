@@ -182,6 +182,7 @@ subcategories:
         homepage_url: https://vllm.ai
         repo_url: https://github.com/vllm-project/vllm
         logo: vllm.webp
+        twitter_url: https://x.com/vllm_project
         description: High-throughput and memory-efficient LLM serving
         tags:
           - inference
@@ -310,6 +311,7 @@ subcategories:
       - name: LM Studio
         homepage_url: https://lmstudio.ai/
         logo: lm-studio.webp
+        twitter_url: https://x.com/lmstudio
         description: Desktop app for discovering, downloading, and running open-weight LLMs locally
       - name: ollama
         homepage_url: https://ollama.com
@@ -320,6 +322,7 @@ subcategories:
         homepage_url: https://openwebui.com/
         repo_url: https://github.com/open-webui/open-webui
         logo: open-webui.webp
+        twitter_url: https://x.com/OpenWebUI
         description: Self-hosted chat UI for local and cloud LLMs; Ollama, OpenAI-compatible API, RAG
       - name: SillyTavern
         homepage_url: https://sillytavern.app/

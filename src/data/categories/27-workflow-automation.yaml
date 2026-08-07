@@ -10,6 +10,7 @@ subcategories:
     items:
       - name: Gumloop
         homepage_url: https://gumloop.com
+        twitter_url: https://x.com/gumloop
         description: AI-native workflow automation platform with drag-and-drop builder
         tags:
           - automation

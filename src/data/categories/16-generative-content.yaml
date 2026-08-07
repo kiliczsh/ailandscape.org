@@ -31,6 +31,7 @@ subcategories:
           - proprietary
       - name: Writesonic
         homepage_url: https://writesonic.com
+        twitter_url: https://x.com/WriteSonic
         description: AI writing assistant for SEO-optimized blog posts, ads, and marketing copy
         tags:
           - copywriting
@@ -55,6 +56,7 @@ subcategories:
           - proprietary
       - name: Sudowrite
         homepage_url: https://www.sudowrite.com
+        twitter_url: https://x.com/sudowrite
         description: AI writing partner for fiction authors — brainstorm, expand, and rewrite stories
         tags:
           - writing

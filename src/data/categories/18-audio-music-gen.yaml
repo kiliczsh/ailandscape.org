@@ -20,6 +20,7 @@ subcategories:
       - name: ElevenLabs
         homepage_url: https://elevenlabs.io
         logo: elevenlabs.webp
+        twitter_url: https://x.com/ElevenLabs
         description: AI voice synthesis and cloning platform with industry-leading naturalness
         tags:
           - tts
@@ -67,6 +68,7 @@ subcategories:
           - proprietary
       - name: Resemble AI
         homepage_url: https://www.resemble.ai
+        twitter_url: https://x.com/resembleai
         description: AI voice generator with real-time voice cloning and speech-to-speech
         tags:
           - voice-cloning

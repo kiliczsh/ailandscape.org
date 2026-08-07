@@ -12,6 +12,7 @@ subcategories:
         homepage_url: https://trychroma.com
         repo_url: https://github.com/chroma-core/chroma
         logo: chroma.webp
+        twitter_url: https://x.com/trychroma
         description: "AI-native open-source embedding database"
         tags: [vector-db, embeddings, oss]
       - name: Milvus

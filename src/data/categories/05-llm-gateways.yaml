@@ -16,6 +16,7 @@ subcategories:
       - name: Cerebras Inference
         homepage_url: https://cerebras.ai/inference
         logo: cerebras.webp
+        twitter_url: https://x.com/cerebras
         description: "Ultra-fast LLM inference API powered by Cerebras hardware"
         tags: [api, llm, fast-inference]
       - name: Google Gemini API
@@ -46,11 +47,13 @@ subcategories:
       - name: Replicate
         homepage_url: https://replicate.com
         logo: replicate.webp
+        twitter_url: https://x.com/replicate
         description: "Run open-source ML models via API"
         tags: [api, open-models, cloud]
       - name: Together AI
         homepage_url: https://together.ai
         logo: together-ai.webp
+        twitter_url: https://x.com/togethercompute
         description: "Cloud platform for running open-source models"
         tags: [api, open-models, cloud]
   - name: AI Gateway & Proxy
@@ -77,11 +80,13 @@ subcategories:
       - name: OpenRouter
         homepage_url: https://openrouter.ai
         logo: openrouter.webp
+        twitter_url: https://x.com/OpenRouter
         description: "Unified interface for frontier AI models"
         tags: [gateway, proxy, llm]
       - name: PortKey
         homepage_url: https://portkey.ai
         logo: portkey.webp
+        twitter_url: https://x.com/PortkeyAI
         description: "AI gateway with observability and fallback routing"
         tags: [gateway, proxy, llm, observability]
       - name: Vercel AI Gateway

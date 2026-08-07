@@ -11,6 +11,7 @@ subcategories:
       - name: Composio
         homepage_url: https://composio.dev
         repo_url: https://github.com/ComposioHQ/composio
+        twitter_url: https://x.com/composio
         description: Managed toolset and integrations platform for AI agents via MCP
         tags:
           - protocol

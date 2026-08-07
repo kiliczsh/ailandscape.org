@@ -17,6 +17,7 @@ subcategories:
       - name: Anthropic
         homepage_url: https://anthropic.com
         logo: anthropic.webp
+        twitter_url: https://x.com/AnthropicAI
         description: "AI safety company behind the Claude model family"
         tags: [lab, llm, safety, proprietary]
 
@@ -29,6 +30,7 @@ subcategories:
       - name: Cohere
         homepage_url: https://cohere.com
         logo: cohere.webp
+        twitter_url: https://x.com/cohere
         description: "Enterprise NLP and embedding model provider"
         tags: [lab, llm, enterprise, proprietary]
 
@@ -41,6 +43,7 @@ subcategories:
       - name: Google DeepMind
         homepage_url: https://deepmind.google
         logo: deepmind.webp
+        twitter_url: https://x.com/GoogleDeepMind
         description: "Google's AI research lab behind Gemini and AlphaFold"
         tags: [lab, llm, multimodal, proprietary]
 
@@ -82,12 +85,14 @@ subcategories:
       - name: Mistral AI
         homepage_url: https://mistral.ai
         logo: mistral.webp
+        twitter_url: https://x.com/MistralAI
         description: "European AI lab known for efficient open and closed language models"
         tags: [lab, llm, open-weights, proprietary]
 
       - name: Moonshot AI
         homepage_url: https://moonshot.ai
         logo: moonshot-ai.webp
+        twitter_url: https://x.com/Kimi_Moonshot
         description: "Chinese AI startup behind Kimi, focused on long-context assistants and frontier model development"
         tags: [lab, llm, proprietary]
 
@@ -122,6 +127,7 @@ subcategories:
 
       - name: StepFun
         homepage_url: https://stepfun.ai
+        twitter_url: https://x.com/StepFun_ai
         description: "Chinese AI company developing Step-series language and reasoning models"
         tags: [lab, llm, reasoning, proprietary]
 
@@ -179,6 +185,7 @@ subcategories:
       - name: Black Forest Labs
         homepage_url: https://bfl.ai
         logo: black-forest-labs.webp
+        twitter_url: https://x.com/bfl_ai
         description: "Frontier AI lab building image generation models and visual AI infrastructure"
         tags: [lab, image-generation, research]
 
@@ -209,6 +216,7 @@ subcategories:
       - name: Hugging Face
         homepage_url: https://huggingface.co
         logo: hugging-face.webp
+        twitter_url: https://x.com/huggingface
         description: "Community AI platform and open model hub for models, datasets, and machine learning tooling"
         tags: [lab, platform, open-weights, community]
 
@@ -232,6 +240,7 @@ subcategories:
       - name: Meta AI
         homepage_url: https://ai.meta.com
         logo: meta.webp
+        twitter_url: https://x.com/AIatMeta
         description: "Meta's AI division — FAIR and Superintelligence Labs; creators of the Llama model family"
         tags: [lab, llm, open-weights, research]
 
@@ -251,6 +260,7 @@ subcategories:
       - name: NVIDIA Research
         homepage_url: https://research.nvidia.com
         logo: nvidia-research.webp
+        twitter_url: https://x.com/NVIDIAAI
         description: "Research organization advancing GPU-driven systems, model architectures, and large-scale AI infrastructure"
         tags: [lab, research, multimodal, infrastructure]
 
@@ -280,6 +290,7 @@ subcategories:
       - name: Sakana AI
         homepage_url: https://sakana.ai
         logo: sakana-ai.webp
+        twitter_url: https://x.com/SakanaAILabs
         description: "Japan-based AI lab building nature-inspired and frontier AI systems"
         tags: [lab, llm, research]
 
@@ -301,6 +312,7 @@ subcategories:
       - name: Allen Institute for AI
         homepage_url: https://allenai.org
         logo: allenai.webp
+        twitter_url: https://x.com/allen_ai
         description: "Non-profit AI research institute, creators of OLMo and Dolma"
         tags: [lab, research, oss]
 

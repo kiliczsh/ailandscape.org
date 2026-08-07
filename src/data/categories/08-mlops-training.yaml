@@ -63,6 +63,7 @@ subcategories:
         homepage_url: https://wandb.ai
         logo: wandb.webp
         crunchbase: https://www.crunchbase.com/organization/weights-biases
+        twitter_url: https://x.com/wandb
         description: Developer tools for ML experiment tracking
         tags:
           - experiment-tracking
@@ -88,6 +89,7 @@ subcategories:
         homepage_url: https://unsloth.ai/docs
         repo_url: https://github.com/unslothai/unsloth
         logo: unsloth.webp
+        twitter_url: https://x.com/UnslothAI
         description: 2-5x faster LLM fine-tuning with 70% less memory
   - name: Pipeline Orchestration
     row: 0
@@ -350,6 +352,7 @@ subcategories:
         homepage_url: https://tensorflow.org
         repo_url: https://github.com/tensorflow/tensorflow
         logo: tensorflow.webp
+        twitter_url: https://x.com/TensorFlow
         project: graduated
         description: Google's end-to-end open source ML platform
         tags:

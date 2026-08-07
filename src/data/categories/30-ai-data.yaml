@@ -32,6 +32,7 @@ subcategories:
           - proprietary
       - name: Scale AI
         homepage_url: https://scale.com
+        twitter_url: https://x.com/scale_AI
         description: Data labeling and human feedback platform for frontier AI training
         tags:
           - labeling
@@ -61,6 +62,7 @@ subcategories:
       - name: Cleanlab
         homepage_url: https://cleanlab.ai
         repo_url: https://github.com/cleanlab/cleanlab
+        twitter_url: https://x.com/CleanlabAI
         description: Detect and fix label errors and data issues in ML datasets
         tags:
           - data

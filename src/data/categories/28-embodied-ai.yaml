@@ -26,6 +26,7 @@ subcategories:
       - name: Physical Intelligence π0
         homepage_url: https://www.physicalintelligence.company
         repo_url: https://github.com/Physical-Intelligence/openpi
+        twitter_url: https://x.com/physical_int
         description: Vision-language-action robot foundation model with open weights
         tags:
           - robotics

@@ -16,14 +16,17 @@ subcategories:
       - name: Amp
         homepage_url: https://ampcode.com/
         logo: amp.webp
+        twitter_url: https://x.com/AmpCode
         description: "Sourcegraph's coding agent for CLI and VS Code with multi-repo codebase context"
       - name: Blackbox AI
         homepage_url: https://www.blackbox.ai/
         logo: blackbox-ai.webp
+        twitter_url: https://x.com/blackboxai
         description: "Autonomous AI Coding Agent with integrated IDE"
       - name: Codebuff
         homepage_url: https://www.codebuff.com/
         logo: codebuff.webp
+        twitter_url: https://x.com/CodebuffAI
         description: "Works in your terminal to help you write and deeply understand your code"
       - name: Conductor
         homepage_url: https://conductor.build/
@@ -32,15 +35,18 @@ subcategories:
       - name: CTO.new
         homepage_url: https://cto.new
         logo: cto-new.webp
+        twitter_url: https://x.com/ctodotnew
         description: "Completely free AI code agent"
       - name: Devin
         homepage_url: https://devin.ai
         logo: devin.webp
+        twitter_url: https://x.com/cognition
         description: "Fully autonomous AI software engineer by Cognition"
         tags: [agents, coding, autonomous]
       - name: Factory
         homepage_url: https://www.factory.ai/
         logo: factory.webp
+        twitter_url: https://x.com/FactoryAI
         description: "Delegate engineering tasks to AI Droids — from ticket to merged PR autonomously"
       - name: Forge Code
         homepage_url: https://forgecode.dev
@@ -67,6 +73,7 @@ subcategories:
       - name: Jules
         homepage_url: https://jules.google/
         logo: jules.webp
+        twitter_url: https://x.com/julesagent
         description: "Google's async AI coding agent that works independently on GitHub issues and PRs"
       - name: Kimi-CLI
         homepage_url: https://www.kimi.com/code
@@ -112,6 +119,7 @@ subcategories:
         homepage_url: https://cline.bot/
         repo_url: https://github.com/cline/cline
         logo: cline.webp
+        twitter_url: https://x.com/cline
         description: "Autonomous coding agent for VS Code with human-in-the-loop approval gates"
       - name: DeepCode
         homepage_url: https://github.com/HKUDS/DeepCode
@@ -135,6 +143,7 @@ subcategories:
       - name: Open Interpreter
         homepage_url: http://openinterpreter.com/
         repo_url: https://github.com/openinterpreter/open-interpreter
+        twitter_url: https://x.com/OpenInterpreter
         description: "Natural language interface for computers; lets LLMs run code and manage files"
       - name: OpenAI Codex CLI
         homepage_url: https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started
@@ -145,17 +154,20 @@ subcategories:
         homepage_url: https://github.com/opencode-ai/opencode
         repo_url: https://github.com/opencode-ai/opencode
         logo: gh-opencode-ai.png
+        twitter_url: https://x.com/opencode
         description: "Open-source terminal coding assistant with multi-provider support and a TUI"
       - name: OpenHands
         homepage_url: https://www.all-hands.dev
         repo_url: https://github.com/All-Hands-AI/OpenHands
         logo: openhands.webp
+        twitter_url: https://x.com/OpenHandsDev
         description: "Open-source platform for software development agents"
         tags: [agents, coding, autonomous, oss]
       - name: potpie
         homepage_url: https://potpie.ai
         repo_url: https://github.com/potpie-ai/potpie
         logo: potpie.webp
+        twitter_url: https://x.com/potpiedotai
         description: "Open-source AI agents for your codebase — Q&A, testing, debugging, and design"
       - name: Prime Agent
         homepage_url: https://www.primeintellect.ai/blog/prime-agent
@@ -192,11 +204,13 @@ subcategories:
       - name: Cursor
         homepage_url: https://cursor.sh
         logo: cursor.webp
+        twitter_url: https://x.com/cursor_ai
         description: "AI-native code editor"
         tags: [coding, ide]
       - name: Google Antigravity
         homepage_url: https://antigravity.google/
         logo: google-antigravity.webp
+        twitter_url: https://x.com/antigravity
         description: "Google's agentic development platform evolving the IDE into the agent-first era"
       - name: Kiro
         homepage_url: https://kiro.dev/
@@ -229,6 +243,7 @@ subcategories:
         homepage_url: https://continue.dev
         repo_url: https://github.com/continuedev/continue
         logo: continue.webp
+        twitter_url: https://x.com/continuedev
         description: "Open-source AI code assistant for VS Code and JetBrains"
         tags: [coding, ide, oss]
       - name: GitHub Copilot
@@ -256,4 +271,5 @@ subcategories:
         homepage_url: https://zed.dev/
         repo_url: https://github.com/zed-industries/zed
         logo: zed.webp
+        twitter_url: https://x.com/zeddotdev
         description: "High-performance Rust code editor with native AI chat and multi-model support"

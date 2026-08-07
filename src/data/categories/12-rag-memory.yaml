@@ -24,12 +24,14 @@ subcategories:
         homepage_url: https://langchain.com
         repo_url: https://github.com/langchain-ai/langchain
         logo: langchain.webp
+        twitter_url: https://x.com/LangChain
         description: "Framework for developing LLM-powered applications"
         tags: [llm, framework, python]
       - name: LlamaIndex
         homepage_url: https://llamaindex.ai
         repo_url: https://github.com/run-llama/llama_index
         logo: llamaindex.webp
+        twitter_url: https://x.com/llama_index
         description: "Data framework for LLM applications"
         tags: [llm, framework, rag]
       - name: Semantic Kernel
@@ -141,6 +143,7 @@ subcategories:
       - name: Zep
         homepage_url: https://www.getzep.com
         repo_url: https://github.com/getzep/graphiti
+        twitter_url: https://x.com/zep_ai
         description: Temporal knowledge graph memory for agents (Graphiti)
         tags:
           - memory

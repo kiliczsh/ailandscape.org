@@ -11,6 +11,7 @@ subcategories:
       - name: Exa AI
         homepage_url: https://exa.ai
         logo: exa.webp
+        twitter_url: https://x.com/ExaAILabs
         description: Neural search engine for AI applications
         tags:
           - search
@@ -56,6 +57,7 @@ subcategories:
           - proprietary
       - name: Elicit
         homepage_url: https://elicit.com
+        twitter_url: https://x.com/elicitorg
         description: AI research assistant for literature review and paper analysis
         tags:
           - search

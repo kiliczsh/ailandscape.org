@@ -77,6 +77,7 @@ subcategories:
           - proprietary
       - name: Krea AI
         homepage_url: https://www.krea.ai
+        twitter_url: https://x.com/krea_ai
         description: Real-time AI image generation and enhancement platform
         tags:
           - image-editing
@@ -100,12 +101,14 @@ subcategories:
       - name: Kling
         homepage_url: https://klingai.com
         logo: kling.webp
+        twitter_url: https://x.com/Kling_ai
         description: Kuaishou's advanced video generation model with physics-aware motion
         tags:
           - video-generation
           - proprietary
       - name: Luma Dream Machine
         homepage_url: https://lumalabs.ai/dream-machine
+        twitter_url: https://x.com/LumaLabsAI
         description: High-quality, realistic video generation from text and images
         tags:
           - video-generation
@@ -113,6 +116,7 @@ subcategories:
       - name: Pika
         homepage_url: https://pika.art
         logo: pika.webp
+        twitter_url: https://x.com/pika_labs
         description: Pika's creative AI video generation platform for everyone
         tags:
           - video-generation
@@ -144,6 +148,7 @@ subcategories:
       - name: Runway
         homepage_url: https://runwayml.com
         logo: runway.webp
+        twitter_url: https://x.com/runwayml
         description: AI-powered creative suite for video editing, generation, and stylization
         tags:
           - video-editing
@@ -151,6 +156,7 @@ subcategories:
           - proprietary
       - name: Topaz Video AI
         homepage_url: https://www.topazlabs.com/topaz-video-ai
+        twitter_url: https://x.com/topazlabs
         description: AI video upscaling, deinterlacing, and motion interpolation
         tags:
           - video-editing
@@ -168,6 +174,7 @@ subcategories:
           - proprietary
       - name: HeyGen
         homepage_url: https://www.heygen.com
+        twitter_url: https://x.com/HeyGen
         description: AI video generation platform for talking avatars and video translation
         tags:
           - avatar

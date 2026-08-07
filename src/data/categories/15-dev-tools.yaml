@@ -11,6 +11,7 @@ subcategories:
       - name: CodeRabbit
         homepage_url: https://www.coderabbit.ai
         logo: coderabbit.webp
+        twitter_url: https://x.com/coderabbitai
         description: AI-powered code reviews — cut code review time and bugs in half
       - name: Ellipsis
         homepage_url: https://www.ellipsis.dev
@@ -20,6 +21,7 @@ subcategories:
           - proprietary
       - name: Greptile
         homepage_url: https://www.greptile.com
+        twitter_url: https://x.com/greptile
         description: AI codebase-aware code review bot for PRs
         tags:
           - coding

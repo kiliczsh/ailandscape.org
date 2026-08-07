@@ -11,6 +11,7 @@ subcategories:
       - name: Claude
         homepage_url: https://anthropic.com
         logo: anthropic.webp
+        twitter_url: https://x.com/claudeai
         description: Anthropic's family of AI assistants
         tags:
           - llm
@@ -44,6 +45,7 @@ subcategories:
       - name: Gemini
         homepage_url: https://deepmind.google/technologies/gemini
         logo: gemini.webp
+        twitter_url: https://x.com/GeminiApp
         description: Google DeepMind's multimodal AI model
         tags:
           - llm
@@ -116,6 +118,7 @@ subcategories:
           - small
       - name: Pokee Isaac
         homepage_url: https://console.pokee.ai/model
+        twitter_url: https://x.com/Pokee_AI
         description: Agentic 28B model with a 10M-token context window, deployable on one GPU
         tags:
           - llm

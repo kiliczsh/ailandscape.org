@@ -113,6 +113,7 @@ subcategories:
         homepage_url: https://lmarena.ai
         repo_url: https://github.com/lm-sys/FastChat
         logo: lmsys.webp
+        twitter_url: https://x.com/arena
         description: "Human-preference LLM ranking via pairwise comparisons"
         tags: [evaluation, benchmarks, human-eval]
       - name: OpenRouter Rankings

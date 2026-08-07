@@ -19,12 +19,14 @@ subcategories:
         homepage_url: https://helicone.ai
         repo_url: https://github.com/Helicone/helicone
         logo: helicone.webp
+        twitter_url: https://x.com/helicone_ai
         description: "Open-source LLM observability and proxy"
         tags: [observability, llm, proxy, oss]
       - name: Langfuse
         homepage_url: https://langfuse.com
         repo_url: https://github.com/langfuse/langfuse
         logo: langfuse.webp
+        twitter_url: https://x.com/langfuse
         description: "Open-source LLM engineering platform for tracing and evals"
         tags: [observability, llm, tracing, oss]
       - name: Opik
@@ -119,6 +121,7 @@ subcategories:
         homepage_url: https://ragas.io
         repo_url: https://github.com/explodinggradients/ragas
         logo: ragas.webp
+        twitter_url: https://x.com/ragas_io
         description: "Evaluation framework for RAG pipelines"
         tags: [evaluation, rag]
   - name: Explainability & Alignment

@@ -39,6 +39,7 @@ subcategories:
       - name: Harvey AI
         homepage_url: https://harvey.ai
         logo: harvey.webp
+        twitter_url: https://x.com/harvey
         description: "AI platform for legal research and document drafting"
         tags: [legal, llm, proprietary]
       - name: Lexis+ AI

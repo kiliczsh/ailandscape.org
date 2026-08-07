@@ -36,6 +36,7 @@ subcategories:
         homepage_url: https://bolt.new/
         repo_url: https://github.com/stackblitz/bolt.new
         logo: bolt-new.webp
+        twitter_url: https://x.com/boltdotnew
         description: "StackBlitz's AI app builder — prompt to full-stack with live preview and deploy"
       - name: Emergent
         homepage_url: https://app.emergent.sh/register
@@ -48,6 +49,7 @@ subcategories:
       - name: Lovable
         homepage_url: https://lovable.dev/
         logo: lovable.webp
+        twitter_url: https://x.com/Lovable
         description: "Chat-to-app builder that turns natural language into production-ready web apps"
       - name: Mocha
         homepage_url: https://getmocha.com/
@@ -69,6 +71,7 @@ subcategories:
       - name: Replit Agent
         homepage_url: https://replit.com/
         logo: replit-agent.webp
+        twitter_url: https://x.com/Replit
         description: "Replit's cloud IDE with an integrated AI agent that writes and deploys full apps"
       - name: Rocket
         homepage_url: https://www.rocket.new/
@@ -116,6 +119,7 @@ subcategories:
       - name: Variant
         homepage_url: https://variant.ai/
         logo: variant.webp
+        twitter_url: https://x.com/variantui
         description: "Gives your ideas room to grow — branch, remix, and build"
       - name: Vibe Code Go
         homepage_url: https://vibecodego.com/
@@ -184,6 +188,7 @@ subcategories:
         homepage_url: https://flowiseai.com
         repo_url: https://github.com/FlowiseAI/Flowise
         logo: flowise.webp
+        twitter_url: https://x.com/FlowiseAI
         description: "Drag & drop UI to build customized LLM flows and AI agents visually"
       - name: IX
         homepage_url: https://github.com/kreneskyp/ix

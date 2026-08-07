@@ -11,6 +11,7 @@ subcategories:
       - name: Bland AI
         homepage_url: https://bland.ai
         logo: bland.webp
+        twitter_url: https://x.com/usebland
         description: AI phone call automation platform
         tags:
           - agents
@@ -25,6 +26,7 @@ subcategories:
           - api
       - name: Hume AI
         homepage_url: https://hume.ai
+        twitter_url: https://x.com/hume_ai
         description: Empathic voice interface (EVI) for emotionally aware voice agents
         tags:
           - agents

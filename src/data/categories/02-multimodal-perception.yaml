@@ -149,6 +149,7 @@ subcategories:
       - name: AssemblyAI
         homepage_url: https://assemblyai.com
         logo: assemblyai.webp
+        twitter_url: https://x.com/AssemblyAI
         description: Speech AI models for transcription and understanding
         tags:
           - speech
