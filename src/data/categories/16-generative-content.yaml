@@ -108,6 +108,12 @@ subcategories:
           - presentations
           - design
           - proprietary
+      - name: Napkin AI
+        homepage_url: https://napkin.ai
+        twitter_url: https://x.com/napkin_ai
+        description: "Turns text into diagrams and visuals for docs and presentations"
+        tags: [visualization, presentations, generation]
+
       - name: SlidesAI
         homepage_url: https://www.slidesai.io
         description: Generate professional Google Slides presentations from text with AI

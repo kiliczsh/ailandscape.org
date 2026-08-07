@@ -56,6 +56,18 @@ subcategories:
         description: "AI lab building Mercury, a diffusion-based language model family for fast reasoning and coding"
         tags: [lab, llm, reasoning, proprietary]
 
+      - name: Inflection AI
+        homepage_url: https://inflection.ai
+        twitter_url: https://x.com/inflectionAI
+        description: "AI studio behind Pi, a personal and empathetic conversational assistant"
+        tags: [lab, llm, proprietary]
+
+      - name: Magic
+        homepage_url: https://magic.dev
+        twitter_url: https://x.com/magicailabs
+        description: "AI lab building long-context models and a superhuman coding agent"
+        tags: [lab, coding, long-context, proprietary]
+
       - name: Microsoft Research
         homepage_url: https://www.microsoft.com/en-us/research/
         logo: microsoft-research.webp
@@ -89,6 +101,12 @@ subcategories:
         homepage_url: https://research.perplexity.ai
         description: "AI research lab and answer engine company publishing frontier research and language models"
         tags: [lab, llm, search, research, proprietary]
+
+      - name: Poolside
+        homepage_url: https://poolside.ai
+        twitter_url: https://x.com/poolsideai
+        description: "AI lab building foundation models for agentic coding and long-horizon tasks"
+        tags: [lab, coding, proprietary]
 
       - name: Safe Superintelligence Inc. (SSI)
         homepage_url: https://ssi.inc
@@ -205,11 +223,24 @@ subcategories:
         description: "Paris-based open-science AI lab building and democratizing advanced AI systems"
         tags: [lab, research, open-science, open-weights]
 
+      - name: Liquid AI
+        homepage_url: https://liquid.ai
+        twitter_url: https://x.com/liquidai
+        description: "MIT spin-off building efficient Liquid Foundation Models for every scale"
+        tags: [lab, open-weights, edge, llm]
+
       - name: Meta AI
         homepage_url: https://ai.meta.com
         logo: meta.webp
         description: "Meta's AI division — FAIR and Superintelligence Labs; creators of the Llama model family"
         tags: [lab, llm, open-weights, research]
+
+      - name: moondream
+        homepage_url: https://moondream.ai
+        repo_url: https://github.com/vikhyat/moondream
+        twitter_url: https://x.com/moondreamai
+        description: "Open vision-language models small enough to run anywhere in production"
+        tags: [vision, open-models, small, edge]
 
       - name: Nous Research
         homepage_url: https://nousresearch.com

@@ -64,6 +64,12 @@ subcategories:
         logo: anthropic.webp
         description: "Claude's ability to control computers like a human"
         tags: [agents, computer-use, automation]
+      - name: Manus
+        homepage_url: https://manus.im
+        twitter_url: https://x.com/ManusAI
+        description: "General AI agent that plans and executes real-world tasks end to end"
+        tags: [agents, autonomous, computer-use, proprietary]
+
       - name: OpenAI Operator
         homepage_url: https://openai.com/index/introducing-operator/
         description: OpenAI's agent that uses its own browser to perform tasks

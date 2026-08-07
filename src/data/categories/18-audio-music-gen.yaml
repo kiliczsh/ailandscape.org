@@ -25,6 +25,13 @@ subcategories:
           - tts
           - voice
           - api
+      - name: Fish Audio
+        homepage_url: https://fish.audio
+        repo_url: https://github.com/fishaudio/fish-speech
+        twitter_url: https://x.com/FishAudio
+        description: "Expressive multilingual speech models and voice APIs, open and hosted"
+        tags: [tts, voice-cloning, open-models]
+
       - name: OpenAI TTS
         homepage_url: https://platform.openai.com/docs/guides/text-to-speech
         logo: openai.webp

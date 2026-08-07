@@ -1,15 +1,15 @@
-total_items: 706
+total_items: 730
 total_categories: 31
 total_subcategories: 107
 categories:
   - name: Frontier Labs
     group: core-ai
-    total: 51
+    total: 56
     subcategories:
       - name: Proprietary Frontier Labs
-        count: 23
+        count: 26
       - name: Open-Weight & Research Labs
-        count: 20
+        count: 22
       - name: Academic & Non-Profit Institutes
         count: 8
   - name: Foundation Models
@@ -30,14 +30,14 @@ categories:
         count: 6
   - name: Multimodal & Perception
     group: core-ai
-    total: 21
+    total: 22
     subcategories:
       - name: Vision-Language Models
         count: 8
       - name: Computer Vision
         count: 8
       - name: Speech Recognition
-        count: 5
+        count: 6
   - name: Benchmarks & Leaderboards
     group: core-ai
     total: 27
@@ -50,10 +50,10 @@ categories:
         count: 2
   - name: Inference & Compute
     group: infrastructure
-    total: 39
+    total: 43
     subcategories:
       - name: Cloud & GPU Providers
-        count: 15
+        count: 18
       - name: Inference Optimization
         count: 7
       - name: Training Infrastructure
@@ -61,7 +61,7 @@ categories:
       - name: Compute & Hardware
         count: 6
       - name: Local & Edge Inference
-        count: 6
+        count: 7
   - name: LLM Gateways & APIs
     group: infrastructure
     total: 14
@@ -110,10 +110,10 @@ categories:
         count: 23
   - name: Observability & Evals
     group: engineering
-    total: 26
+    total: 27
     subcategories:
       - name: LLM Observability
-        count: 5
+        count: 6
       - name: Model Monitoring
         count: 4
       - name: LLM Evaluation & Benchmarking
@@ -142,7 +142,7 @@ categories:
         count: 5
   - name: RAG & Memory
     group: engineering
-    total: 20
+    total: 21
     subcategories:
       - name: LLM Frameworks & RAG
         count: 6
@@ -151,10 +151,10 @@ categories:
       - name: Document Parsing
         count: 5
       - name: Memory Layer
-        count: 4
+        count: 5
   - name: Coding Agents
     group: coding
-    total: 49
+    total: 50
     subcategories:
       - name: Commercial Agents
         count: 19
@@ -163,10 +163,10 @@ categories:
       - name: AI-Powered IDEs
         count: 5
       - name: AI Extensions & Platforms
-        count: 7
+        count: 8
   - name: AI App Builders
     group: coding
-    total: 40
+    total: 41
     subcategories:
       - name: Chat & Browser Builders
         count: 21
@@ -175,18 +175,18 @@ categories:
       - name: Open Source Builders
         count: 8
       - name: Visual Flow Editors
-        count: 4
+        count: 5
   - name: Dev Tools
     group: coding
-    total: 7
+    total: 8
     subcategories:
       - name: Code Review & Quality
-        count: 3
+        count: 4
       - name: Developer Integrations
         count: 4
   - name: Generative Content
     group: applications
-    total: 15
+    total: 16
     subcategories:
       - name: AI Copywriting & Marketing
         count: 4
@@ -195,27 +195,27 @@ categories:
       - name: Email & Communication Gen
         count: 3
       - name: Presentation & Slide Gen
-        count: 4
+        count: 5
   - name: Visual Generation
     group: applications
-    total: 20
+    total: 24
     subcategories:
       - name: Text-to-Image
-        count: 5
+        count: 7
       - name: Image Editing & Inpainting
-        count: 3
+        count: 4
       - name: Text-to-Video
-        count: 5
+        count: 6
       - name: Video-to-Video & Stylization
         count: 3
       - name: Avatar & Lip-sync Video
         count: 4
   - name: Audio & Music Gen
     group: applications
-    total: 13
+    total: 14
     subcategories:
       - name: Text-to-Speech (High Fidelity)
-        count: 4
+        count: 5
       - name: Voice Cloning & Dubbing
         count: 3
       - name: Music Composition
@@ -224,12 +224,12 @@ categories:
         count: 2
   - name: Browser & Computer Use
     group: applications
-    total: 12
+    total: 13
     subcategories:
       - name: Browser Automation
         count: 7
       - name: Computer Use (OS-Level)
-        count: 2
+        count: 3
       - name: Web Scraping & Crawling
         count: 3
   - name: Coding Agent Orchestration
@@ -244,14 +244,14 @@ categories:
         count: 9
   - name: Knowledge Discovery
     group: applications
-    total: 9
+    total: 11
     subcategories:
       - name: AI Search Engines
-        count: 4
+        count: 5
       - name: Academic Research
         count: 3
       - name: Enterprise Search & Knowledge
-        count: 2
+        count: 3
   - name: Vertical AI
     group: applications
     total: 13

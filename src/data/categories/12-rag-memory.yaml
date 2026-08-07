@@ -131,6 +131,13 @@ subcategories:
         logo: memgpt.webp
         description: "OS-inspired memory management for LLMs enabling unbounded virtual context"
 
+      - name: supermemory
+        homepage_url: https://supermemory.ai
+        repo_url: https://github.com/supermemoryai/supermemory
+        twitter_url: https://x.com/supermemory
+        description: "Memory and context API that gives AI agents long-term recall"
+        tags: [memory, agents, api]
+
       - name: Zep
         homepage_url: https://www.getzep.com
         repo_url: https://github.com/getzep/graphiti

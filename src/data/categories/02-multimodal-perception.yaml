@@ -180,6 +180,12 @@ subcategories:
           - asr
           - nvidia
           - oss
+      - name: superwhisper
+        homepage_url: https://superwhisper.com
+        twitter_url: https://x.com/superwhisper
+        description: "Offline AI voice-to-text dictation for macOS, Windows, and iOS"
+        tags: [asr, speech, productivity]
+
       - name: Whisper
         homepage_url: https://openai.com/research/whisper
         repo_url: https://github.com/openai/whisper

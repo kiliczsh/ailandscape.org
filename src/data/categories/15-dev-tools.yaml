@@ -25,6 +25,12 @@ subcategories:
           - coding
           - api
           - proprietary
+      - name: Qodo
+        homepage_url: https://qodo.ai
+        twitter_url: https://x.com/QodoAI
+        description: "AI code quality platform for reviews, testing, and governance"
+        tags: [coding, testing, enterprise]
+
   - name: Developer Integrations
     row: 0
     items:

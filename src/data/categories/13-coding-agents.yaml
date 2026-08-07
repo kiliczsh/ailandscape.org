@@ -236,6 +236,12 @@ subcategories:
         logo: gh-features.png
         description: "AI pair programmer for code completion"
         tags: [coding, ide, copilot]
+      - name: Sourcegraph Cody
+        homepage_url: https://sourcegraph.com/cody
+        twitter_url: https://x.com/SourcegraphCody
+        description: "Enterprise AI code assistant with deep codebase context by Sourcegraph"
+        tags: [copilot, ide, enterprise]
+
       - name: Tabnine
         homepage_url: https://tabnine.com
         logo: tabnine.webp

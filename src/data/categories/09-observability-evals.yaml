@@ -8,6 +8,13 @@ subcategories:
   - name: LLM Observability
     row: 0
     items:
+      - name: AgentOps
+        homepage_url: https://agentops.ai
+        repo_url: https://github.com/AgentOps-AI/agentops
+        twitter_url: https://x.com/AgentOpsAI
+        description: "Observability and debugging platform purpose-built for AI agents"
+        tags: [agents, observability, tracing, monitoring]
+
       - name: Helicone
         homepage_url: https://helicone.ai
         repo_url: https://github.com/Helicone/helicone

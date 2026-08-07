@@ -16,6 +16,12 @@ subcategories:
           - search
           - api
           - neural
+      - name: Genspark
+        homepage_url: https://genspark.ai
+        twitter_url: https://x.com/genspark_ai
+        description: "All-in-one agentic AI workspace for search, research, and busywork"
+        tags: [agents, search, productivity, proprietary]
+
       - name: Kagi
         homepage_url: https://help.kagi.com/kagi/
         logo: kagi.webp
@@ -78,3 +84,9 @@ subcategories:
           - search
           - enterprise
           - proprietary
+
+      - name: Julius AI
+        homepage_url: https://julius.ai
+        twitter_url: https://x.com/juliusai
+        description: "AI data analyst for analysis, dashboards, and reports via chat"
+        tags: [analytics, agents, proprietary]

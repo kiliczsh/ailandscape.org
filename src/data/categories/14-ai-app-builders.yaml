@@ -173,6 +173,13 @@ subcategories:
         repo_url: https://github.com/jbexta/AgentPilot
         logo: agentpilot.webp
         description: "Open-source desktop app to create, manage, and chat with AI agent workflows"
+      - name: ComfyUI
+        homepage_url: https://www.comfy.org
+        repo_url: https://github.com/comfyanonymous/ComfyUI
+        twitter_url: https://x.com/ComfyUI
+        description: "Node-based open-source workflow engine for visual generative AI"
+        tags: [image-generation, workflows, diffusion, oss]
+
       - name: Flowise
         homepage_url: https://flowiseai.com
         repo_url: https://github.com/FlowiseAI/Flowise
