@@ -2,6 +2,8 @@ name: Foundation Models
 group: core-ai
 color: oklch(0.62 0.20 202)
 icon: Brain
+intro: >-
+  The model families themselves, organized by capability: language, reasoning, coding, embeddings, and generative media weights. One card per family — versions and tiers live inside each card, and the products built on these models live in their own categories.
 subcategories:
   - name: Language Models
     row: 0
@@ -13,6 +15,7 @@ subcategories:
         tags:
           - llm
           - api
+          - proprietary
       - name: Command R+
         homepage_url: https://cohere.com/command
         logo: cohere.webp
@@ -21,6 +24,7 @@ subcategories:
           - llm
           - api
           - rag
+          - open-weights
       - name: DeepSeek-V2
         homepage_url: https://deepseek.com
         repo_url: https://github.com/deepseek-ai/DeepSeek-V2
@@ -45,29 +49,22 @@ subcategories:
           - llm
           - api
           - multimodal
-      - name: Gemma 2
+          - proprietary
+      - name: Gemma
         homepage_url: https://ai.google.dev/gemma
         logo: gemini.webp
         description: Google's lightweight open-weights language model
         tags:
           - llm
           - open-weights
-      - name: Gemma 2B
-        homepage_url: https://ai.google.dev/gemma
-        logo: gemini.webp
-        description: Google's 2B open-weights model for on-device use
-        tags:
-          - llm
-          - open-weights
-          - edge
-          - small
-      - name: GPT-4
+      - name: GPT
         homepage_url: https://openai.com/gpt-4
         logo: openai.webp
         description: OpenAI's flagship large language model
         tags:
           - llm
           - api
+          - proprietary
       - name: Grok-2
         homepage_url: https://x.ai/grok
         logo: xai.webp
@@ -75,6 +72,7 @@ subcategories:
         tags:
           - llm
           - api
+          - proprietary
       - name: Llama
         homepage_url: https://llama.meta.com
         repo_url: https://github.com/meta-llama/llama
@@ -83,16 +81,6 @@ subcategories:
         tags:
           - llm
           - open-weights
-      - name: Llama 3.2 1B/3B
-        homepage_url: https://llama.meta.com
-        repo_url: https://github.com/meta-llama/llama
-        logo: meta.webp
-        description: Meta's compact Llama models for edge and mobile
-        tags:
-          - llm
-          - open-weights
-          - edge
-          - small
       - name: Mistral
         homepage_url: https://mistral.ai
         logo: mistral.webp
@@ -107,6 +95,7 @@ subcategories:
         tags:
           - llm
           - api
+          - proprietary
       - name: MobileLLM
         homepage_url: https://github.com/facebookresearch/MobileLLM
         repo_url: https://github.com/facebookresearch/MobileLLM
@@ -125,16 +114,14 @@ subcategories:
           - llm
           - open-weights
           - small
-      - name: Phi-3 Mini
-        homepage_url: https://ollama.com/library/phi3
-        logo: microsoft.webp
-        description: Microsoft's 3.8B parameter model for edge deployment
+      - name: Pokee Isaac
+        homepage_url: https://console.pokee.ai/model
+        description: Agentic 28B model with a 10M-token context window, deployable on one GPU
         tags:
           - llm
+          - agents
           - open-weights
-          - edge
-          - small
-      - name: Qwen 2.5
+      - name: Qwen
         homepage_url: https://qwenlm.github.io
         repo_url: https://github.com/QwenLM/Qwen2.5
         description: Alibaba's high-performance open-weights language model
@@ -151,6 +138,13 @@ subcategories:
           - open-weights
           - edge
           - small
+      - name: TranslateGemma
+        homepage_url: https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/
+        description: Google's open translation model family built on Gemma 3, covering 55 languages
+        tags:
+          - llm
+          - multilingual
+          - open-weights
   - name: Reasoning & CoT Models
     row: 0
     items:
@@ -205,83 +199,111 @@ subcategories:
         repo_url: https://github.com/QwenLM/Qwen3
         logo: qwen.webp
         description: Alibaba's Qwen family — Qwen3-Coder and Qwen3-Max lead open-weight coding models
+        tags:
+          - open-weights
       - name: ByteDance
         homepage_url: https://www.volcengine.com/
         logo: bytedance.webp
         description: ByteDance's Volcengine AI — Doubao-Seed-Code model integrated into the Trae IDE
-      - name: Claude Opus 4.6
-        homepage_url: https://www.anthropic.com/news/claude-opus-4-6
-        logo: claude-opus-4-6.webp
-        description: Anthropic (Feb 2026) — smartest model, 1M context (beta), SOTA on Terminal-Bench
+        tags:
+          - proprietary
       - name: Code World Model
         homepage_url: https://huggingface.co/facebook/cwm
         logo: hugging-face.webp
         description: Meta (Sep 2025) — LLM trained to reason about how code affects program state
+        tags:
+          - open-weights
       - name: Cognition (SWE-1)
         homepage_url: https://cognition.ai
         logo: cognition-swe-1.webp
         description: Creator of SWE-1.5 — a fast-agent frontier model with near-SOTA code performance
+        tags:
+          - proprietary
       - name: Composer
         homepage_url: https://cursor.com/blog/2-0
         logo: composer.webp
         description: Cursor (Oct 2025) — 4x faster than similarly capable models; built for agents
+        tags:
+          - proprietary
       - name: Devstral 2
         homepage_url: https://mistral.ai/news/devstral-2-vibe-cli
         logo: devstral-2.webp
         description: Mistral AI (Dec 2025) — open-source SOTA for code agents; 123B and 24B sizes
+        tags:
+          - open-weights
       - name: Gemini 3
         homepage_url: https://blog.google/technology/developers/gemini-3-developers/
         logo: gemini-3.webp
         description: Google (Nov 2025) — beats Gemini 2.5 Pro at coding; masters agentic workflows
-      - name: GLM-4.7-Flash
+        tags:
+          - proprietary
+      - name: GLM
         homepage_url: https://huggingface.co/zai-org/GLM-4.7-Flash
         logo: hugging-face.webp
         description: Z.ai (Jan 2026) — local coding and agentic assistant; the new 30B class standard
-      - name: GPT-5.3-Codex
+        tags:
+          - open-weights
+      - name: Codex
         homepage_url: https://openai.com/index/introducing-gpt-5-3-codex
         logo: gpt-5-3-codex.webp
         description: OpenAI (Feb 2026) — top agentic coding model; 25% faster, helped create itself
+        tags:
+          - proprietary
       - name: Grok Code Fast 1
         homepage_url: https://x.ai/news/grok-code-fast-1
         logo: grok-code-fast-1.webp
         description: xAI (Aug 2025) — economical reasoning model that excels at agentic coding
+        tags:
+          - proprietary
       - name: JetBrains AI
         homepage_url: https://www.jetbrains.com/
         repo_url: https://huggingface.co/JetBrains/Mellum-4b-base
         logo: jetbrains-ai.webp
         description: JetBrains' Mellum — a 4B parameter open-source model for code completion
+        tags:
+          - proprietary
       - name: KAT-Dev-72B-Exp
         homepage_url: https://huggingface.co/Kwaipilot/KAT-Dev-72B-Exp
         logo: hugging-face.webp
         description: Kwaipilot (Oct 2025) — open-source 72B SE model; 74.6% on SWE-Bench Verified
-      - name: Kimi K2.5
+        tags:
+          - open-weights
+      - name: Kimi K2
         homepage_url: https://huggingface.co/moonshotai/Kimi-K2.5
         logo: hugging-face.webp
         description: Moonshot AI (Jan 2026) — agentic SOTA; HLE 50.2%, SWE-bench Verified 76.8%
+        tags:
+          - open-weights
       - name: Llama 4 Maverick
         homepage_url: https://llama.meta.com/get-started/
         logo: llama-4-maverick.webp
         description: Meta (Apr 2025) — code-tuned open-weight model
+        tags:
+          - open-weights
       - name: Mercury Code
         homepage_url: https://docs.inceptionlabs.ai/get-started/models
         logo: mercury-code.webp
         description: Inception Labs (Nov 2025) — diffusion LLM for coding with 128K context
+        tags:
+          - proprietary
       - name: Qwen3-Coder
         homepage_url: https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct
         logo: hugging-face.webp
         description: Alibaba Cloud (Jul 2025) — agentic code model; 480B parameters with A35B active
+        tags:
+          - open-weights
       - name: rnj-1-instruct
         homepage_url: https://huggingface.co/EssentialAI/rnj-1-instruct
         logo: hugging-face.webp
         description: Essential AI (Dec 2025) — built from scratch for code and STEM; agentic-ready
+        tags:
+          - open-weights
       - name: Salesforce AI Research
         homepage_url: https://www.salesforceairesearch.com/
         logo: salesforce-ai-research.webp
         description: Creator of CoDA — a diffusion-based language model for code generation
-      - name: SWE-1.5
-        homepage_url: https://cognition.ai/blog/swe-1-5
-        logo: swe-1-5.webp
-        description: Windsurf (Oct 2025) — fast-agent frontier model; 6x faster than Claude Haiku 4.5
+        tags:
+          - proprietary
   - name: Embedding Models
     row: 1
     items:
@@ -294,6 +316,7 @@ subcategories:
           - vision
           - multimodal
           - research
+          - proprietary
       - name: BGE-M3
         homepage_url: https://huggingface.co/BAAI/bge-m3
         repo_url: https://github.com/FlagOpen/FlagEmbedding
@@ -321,6 +344,7 @@ subcategories:
           - embeddings
           - api
           - multilingual
+          - proprietary
       - name: E5-Mistral
         homepage_url: https://huggingface.co/intfloat/e5-mistral-7b-instruct
         logo: hugging-face.webp
@@ -345,6 +369,7 @@ subcategories:
           - embeddings
           - long-context
           - api
+          - open-weights
       - name: sentence-transformers
         homepage_url: https://sbert.net
         repo_url: https://github.com/UKPLab/sentence-transformers
@@ -370,6 +395,7 @@ subcategories:
         tags:
           - embeddings
           - api
+          - proprietary
       - name: Voyage AI
         homepage_url: https://voyageai.com
         logo: voyage-ai.webp
@@ -378,3 +404,87 @@ subcategories:
           - embeddings
           - api
           - retrieval
+          - proprietary
+  - name: Image & Video Models
+    row: 1
+    items:
+      - name: DALL-E
+        homepage_url: https://openai.com/dall-e-3
+        logo: openai.webp
+        description: OpenAI's image generation model
+        tags:
+          - image-generation
+          - api
+          - proprietary
+      - name: Flux
+        homepage_url: https://blackforestlabs.ai
+        logo: black-forest-labs.webp
+        description: Black Forest Labs' state-of-the-art image generation model
+        tags:
+          - image-generation
+          - open-weights
+      - name: Stable Diffusion
+        homepage_url: https://stability.ai
+        repo_url: https://github.com/Stability-AI/generative-models
+        logo: stability-ai.webp
+        description: Open-weights image generation model
+        tags:
+          - image-generation
+          - open-weights
+  - name: Speech & Audio Models
+    row: 1
+    items:
+      - name: AudioLDM 2
+        homepage_url: https://audioldm.github.io/audioldm2
+        repo_url: https://github.com/haoheliu/AudioLDM2
+        description: Latent diffusion model for audio and music generation
+        tags:
+          - music
+          - audio
+          - generation
+          - oss
+      - name: Bark
+        homepage_url: https://github.com/suno-ai/bark
+        repo_url: https://github.com/suno-ai/bark
+        logo: gh-suno-ai.png
+        description: Open-source text-to-audio model by Suno AI
+        tags:
+          - tts
+          - voice
+          - oss
+      - name: Kokoro
+        homepage_url: https://huggingface.co/hexgrad/Kokoro-82M
+        logo: hugging-face.webp
+        description: Lightweight, high-quality open TTS model
+        tags:
+          - tts
+          - voice
+          - oss
+          - small
+      - name: MusicGen
+        homepage_url: https://audiocraft.metademolab.com
+        repo_url: https://github.com/facebookresearch/audiocraft
+        logo: meta.webp
+        description: Meta's controllable text-to-music generation model
+        tags:
+          - music
+          - generation
+          - oss
+      - name: StyleTTS2
+        homepage_url: https://styletts2.github.io
+        repo_url: https://github.com/yl4579/StyleTTS2
+        description: Human-level TTS via style diffusion and adversarial training
+        tags:
+          - tts
+          - voice
+          - oss
+      - name: XTTS
+        homepage_url: https://github.com/coqui-ai/TTS
+        repo_url: https://github.com/coqui-ai/TTS
+        logo: gh-coqui-ai.png
+        description: Coqui's multilingual voice cloning TTS model
+        tags:
+          - tts
+          - voice
+          - multilingual
+          - oss
