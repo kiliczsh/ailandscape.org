@@ -18,8 +18,8 @@ function countTools(data: LandscapeData): number {
 export function generateMetadata(): Metadata {
   const total = countTools(getLandscapeData());
   const rounded = Math.floor(total / 50) * 50;
-  const title = `AI Landscape — Browse ${rounded}+ AI Tools by Category & Tag`;
-  const description = `Explore ${total} AI tools across models, infrastructure, developer tools, and products. Browse by category, filter by tag, and navigate the full AI ecosystem.`;
+  const title = `AI Landscape — The Interactive Map of ${rounded}+ AI Tools`;
+  const description = `Explore ${total} AI tools on one interactive map of the AI ecosystem — models, agents, infrastructure, and applications. Browse by category, filter by tag.`;
   return {
     title,
     description,

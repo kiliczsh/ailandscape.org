@@ -18,7 +18,7 @@ If the AI tooling space moves fast enough that a static catalog isn't enough —
 
 ## Features
 
-- **Hundreds of tools** across 26 categories and 6 groups
+- **700+ tools** across 31 categories and 6 groups
 - **Per-category landing pages** at `/category/[slug]` for focused browsing
 - **Per-tool detail pages** at `/tool/[slug]` with related items
 - **Full-text search** with fuzzy matching and ⌘K command palette
@@ -65,7 +65,7 @@ Each category is a YAML file in `src/data/categories/`. Files are loaded alphabe
 
 ```yaml
 name: Frontier Labs
-group: core-ai                     # core-ai | infrastructure | engineering | products | governance | ecosystem
+group: core-ai                     # core-ai | infrastructure | engineering | coding | applications | governance
 color: "oklch(0.62 0.22 230)"      # OKLCH color token for category accent
 icon: Buildings                    # Phosphor icon name
 subcategories:
