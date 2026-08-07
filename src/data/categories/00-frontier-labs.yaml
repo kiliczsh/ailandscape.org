@@ -64,12 +64,14 @@ subcategories:
         twitter_url: https://x.com/inflectionAI
         description: "AI studio behind Pi, a personal and empathetic conversational assistant"
         tags: [lab, llm, proprietary]
+        added_at: 2026-08-07
 
       - name: Magic
         homepage_url: https://magic.dev
         twitter_url: https://x.com/magicailabs
         description: "AI lab building long-context models and a superhuman coding agent"
         tags: [lab, coding, long-context, proprietary]
+        added_at: 2026-08-07
 
       - name: Microsoft Research
         homepage_url: https://www.microsoft.com/en-us/research/
@@ -112,6 +114,7 @@ subcategories:
         twitter_url: https://x.com/poolsideai
         description: "AI lab building foundation models for agentic coding and long-horizon tasks"
         tags: [lab, coding, proprietary]
+        added_at: 2026-08-07
 
       - name: Safe Superintelligence Inc. (SSI)
         homepage_url: https://ssi.inc
@@ -236,6 +239,7 @@ subcategories:
         twitter_url: https://x.com/liquidai
         description: "MIT spin-off building efficient Liquid Foundation Models for every scale"
         tags: [lab, open-weights, edge, llm]
+        added_at: 2026-08-07
 
       - name: Meta AI
         homepage_url: https://ai.meta.com
@@ -250,6 +254,7 @@ subcategories:
         twitter_url: https://x.com/moondreamai
         description: "Open vision-language models small enough to run anywhere in production"
         tags: [vision, open-models, small, edge]
+        added_at: 2026-08-07
 
       - name: Nous Research
         homepage_url: https://nousresearch.com

@@ -21,6 +21,7 @@ subcategories:
         twitter_url: https://x.com/HelloCivitai
         description: "Community hub for sharing generative AI models, LoRAs, and art"
         tags: [community, image-generation, open-models]
+        added_at: 2026-08-07
 
       - name: DALL-E 3
         homepage_url: https://openai.com/dall-e-3
@@ -56,6 +57,7 @@ subcategories:
         twitter_url: https://x.com/recraftai
         description: "Image generation and editing built for professional design teams"
         tags: [image-generation, design, proprietary]
+        added_at: 2026-08-07
 
   - name: Image Editing & Inpainting
     row: 0
@@ -88,6 +90,7 @@ subcategories:
         twitter_url: https://x.com/Magnific_AI
         description: "AI image upscaler and enhancer adding detail with creative control"
         tags: [upscaling, image-editing, proprietary]
+        added_at: 2026-08-07
 
   - name: Text-to-Video
     row: 0
@@ -97,6 +100,7 @@ subcategories:
         twitter_url: https://x.com/higgsfield_ai
         description: "AI-native creative suite for cinematic video generation and effects"
         tags: [video-generation, creative, proprietary]
+        added_at: 2026-08-07
 
       - name: Kling
         homepage_url: https://klingai.com

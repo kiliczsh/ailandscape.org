@@ -14,6 +14,7 @@ subcategories:
         twitter_url: https://x.com/AgentOpsAI
         description: "Observability and debugging platform purpose-built for AI agents"
         tags: [agents, observability, tracing, monitoring]
+        added_at: 2026-08-07
 
       - name: Helicone
         homepage_url: https://helicone.ai

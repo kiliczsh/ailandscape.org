@@ -22,6 +22,7 @@ subcategories:
         twitter_url: https://x.com/genspark_ai
         description: "All-in-one agentic AI workspace for search, research, and busywork"
         tags: [agents, search, productivity, proprietary]
+        added_at: 2026-08-07
 
       - name: Kagi
         homepage_url: https://help.kagi.com/kagi/
@@ -92,3 +93,4 @@ subcategories:
         twitter_url: https://x.com/juliusai
         description: "AI data analyst for analysis, dashboards, and reports via chat"
         tags: [analytics, agents, proprietary]
+        added_at: 2026-08-07

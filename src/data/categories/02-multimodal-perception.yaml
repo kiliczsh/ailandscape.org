@@ -186,6 +186,7 @@ subcategories:
         twitter_url: https://x.com/superwhisper
         description: "Offline AI voice-to-text dictation for macOS, Windows, and iOS"
         tags: [asr, speech, productivity]
+        added_at: 2026-08-07
 
       - name: Whisper
         homepage_url: https://openai.com/research/whisper

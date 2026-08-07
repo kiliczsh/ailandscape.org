@@ -84,6 +84,7 @@ subcategories:
         twitter_url: https://x.com/nebiustf
         description: "AI cloud with GPU clusters and Token Factory managed inference"
         tags: [cloud, gpu, inference, enterprise]
+        added_at: 2026-08-07
 
       - name: Ray Serve
         homepage_url: https://docs.ray.io/en/latest/serve
@@ -99,12 +100,14 @@ subcategories:
         twitter_url: https://x.com/runpod
         description: "Developer-focused GPU cloud for training, inference, and serverless AI"
         tags: [cloud, gpu, serving, inference]
+        added_at: 2026-08-07
 
       - name: SambaNova
         homepage_url: https://sambanova.ai
         twitter_url: https://x.com/SambaNovaAI
         description: "Full-stack AI platform with custom RDU chips for fast inference at scale"
         tags: [inference, hardware, ai-chip, enterprise]
+        added_at: 2026-08-07
 
       - name: Seldon Core
         homepage_url: https://seldon.io
@@ -297,6 +300,7 @@ subcategories:
         twitter_url: https://x.com/exolabs
         description: "Run frontier AI on your own devices by clustering everyday hardware"
         tags: [distributed, edge, inference, oss]
+        added_at: 2026-08-07
 
       - name: FastChat
         homepage_url: https://github.com/lm-sys/FastChat

@@ -32,6 +32,7 @@ subcategories:
         twitter_url: https://x.com/FishAudio
         description: "Expressive multilingual speech models and voice APIs, open and hosted"
         tags: [tts, voice-cloning, open-models]
+        added_at: 2026-08-07
 
       - name: OpenAI TTS
         homepage_url: https://platform.openai.com/docs/guides/text-to-speech

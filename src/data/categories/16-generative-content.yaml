@@ -115,6 +115,7 @@ subcategories:
         twitter_url: https://x.com/napkin_ai
         description: "Turns text into diagrams and visuals for docs and presentations"
         tags: [visualization, presentations, generation]
+        added_at: 2026-08-07
 
       - name: SlidesAI
         homepage_url: https://www.slidesai.io

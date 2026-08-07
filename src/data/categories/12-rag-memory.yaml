@@ -139,6 +139,7 @@ subcategories:
         twitter_url: https://x.com/supermemory
         description: "Memory and context API that gives AI agents long-term recall"
         tags: [memory, agents, api]
+        added_at: 2026-08-07
 
       - name: Zep
         homepage_url: https://www.getzep.com

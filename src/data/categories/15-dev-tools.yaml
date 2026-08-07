@@ -32,6 +32,7 @@ subcategories:
         twitter_url: https://x.com/QodoAI
         description: "AI code quality platform for reviews, testing, and governance"
         tags: [coding, testing, enterprise]
+        added_at: 2026-08-07
 
   - name: Developer Integrations
     row: 0

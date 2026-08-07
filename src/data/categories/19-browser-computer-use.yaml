@@ -69,6 +69,7 @@ subcategories:
         twitter_url: https://x.com/ManusAI
         description: "General AI agent that plans and executes real-world tasks end to end"
         tags: [agents, autonomous, computer-use, proprietary]
+        added_at: 2026-08-07
 
       - name: OpenAI Operator
         homepage_url: https://openai.com/index/introducing-operator/

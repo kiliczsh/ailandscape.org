@@ -183,6 +183,7 @@ subcategories:
         twitter_url: https://x.com/ComfyUI
         description: "Node-based open-source workflow engine for visual generative AI"
         tags: [image-generation, workflows, diffusion, oss]
+        added_at: 2026-08-07
 
       - name: Flowise
         homepage_url: https://flowiseai.com

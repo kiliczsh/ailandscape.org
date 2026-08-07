@@ -256,6 +256,7 @@ subcategories:
         twitter_url: https://x.com/SourcegraphCody
         description: "Enterprise AI code assistant with deep codebase context by Sourcegraph"
         tags: [copilot, ide, enterprise]
+        added_at: 2026-08-07
 
       - name: Tabnine
         homepage_url: https://tabnine.com
