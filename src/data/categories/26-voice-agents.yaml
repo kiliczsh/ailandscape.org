@@ -17,6 +17,7 @@ subcategories:
           - agents
           - voice
           - phone
+        added_at: 2026-03-18
       - name: ElevenLabs Agents
         homepage_url: https://elevenlabs.io/agents
         description: Platform for building conversational voice agents with ElevenLabs voices
@@ -24,6 +25,7 @@ subcategories:
           - agents
           - voice
           - api
+        added_at: 2026-07-31
       - name: Hume AI
         homepage_url: https://hume.ai
         twitter_url: https://x.com/hume_ai
@@ -32,6 +34,7 @@ subcategories:
           - agents
           - voice
           - api
+        added_at: 2026-07-31
       - name: LiveKit Agents
         homepage_url: https://livekit.io/agents
         repo_url: https://github.com/livekit/agents
@@ -42,6 +45,7 @@ subcategories:
           - voice
           - realtime
           - oss
+        added_at: 2026-03-18
       - name: Pipecat
         homepage_url: https://pipecat.ai
         repo_url: https://github.com/pipecat-ai/pipecat
@@ -51,6 +55,7 @@ subcategories:
           - voice
           - realtime
           - oss
+        added_at: 2026-07-31
       - name: Retell AI
         homepage_url: https://retellai.com
         logo: retell.webp
@@ -59,6 +64,7 @@ subcategories:
           - agents
           - voice
           - api
+        added_at: 2026-03-18
       - name: Vapi
         homepage_url: https://vapi.ai
         logo: vapi.webp
@@ -67,3 +73,4 @@ subcategories:
           - agents
           - voice
           - api
+        added_at: 2026-03-18

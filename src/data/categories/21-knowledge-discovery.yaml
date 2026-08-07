@@ -17,6 +17,7 @@ subcategories:
           - search
           - api
           - neural
+        added_at: 2026-03-18
       - name: Genspark
         homepage_url: https://genspark.ai
         twitter_url: https://x.com/genspark_ai
@@ -32,12 +33,14 @@ subcategories:
           - search
           - privacy
           - proprietary
+        added_at: 2026-03-18
       - name: Perplexity
         homepage_url: https://www.perplexity.ai
         description: Conversational answer engine with cited web search
         tags:
           - search
           - proprietary
+        added_at: 2026-03-18
       - name: You.com
         homepage_url: https://you.com
         logo: you-com.webp
@@ -46,6 +49,7 @@ subcategories:
           - search
           - ai
           - proprietary
+        added_at: 2026-03-18
   - name: Academic Research
     row: 0
     items:
@@ -56,6 +60,7 @@ subcategories:
           - search
           - academic
           - proprietary
+        added_at: 2026-08-07
       - name: Elicit
         homepage_url: https://elicit.com
         twitter_url: https://x.com/elicitorg
@@ -64,12 +69,14 @@ subcategories:
           - search
           - academic
           - proprietary
+        added_at: 2026-08-07
       - name: Semantic Scholar
         homepage_url: https://www.semanticscholar.org
         description: Free AI-powered research tool from the Allen Institute for AI
         tags:
           - search
           - academic
+        added_at: 2026-08-07
   - name: Enterprise Search & Knowledge
     row: 0
     items:
@@ -80,6 +87,7 @@ subcategories:
           - search
           - enterprise
           - proprietary
+        added_at: 2026-08-07
       - name: Hebbia
         homepage_url: https://www.hebbia.ai
         description: AI document analysis platform for knowledge-intensive industries
@@ -87,6 +95,7 @@ subcategories:
           - search
           - enterprise
           - proprietary
+        added_at: 2026-08-07
 
       - name: Julius AI
         homepage_url: https://julius.ai

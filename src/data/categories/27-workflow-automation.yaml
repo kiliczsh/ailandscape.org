@@ -16,17 +16,20 @@ subcategories:
           - automation
           - llm
           - proprietary
+        added_at: 2026-07-31
       - name: Make
         homepage_url: https://make.com
         description: Visual automation platform connecting apps with AI-powered scenarios
         tags:
           - automation
           - proprietary
+        added_at: 2026-07-31
       - name: n8n
         homepage_url: https://n8n.io/
         repo_url: https://github.com/n8n-io/n8n
         logo: n8n.webp
         description: AI workflow automation for technical teams — connect LLMs, APIs, and databases
+        added_at: 2026-03-18
       - name: Pipedream
         homepage_url: https://pipedream.com
         repo_url: https://github.com/PipedreamHQ/pipedream
@@ -35,6 +38,7 @@ subcategories:
           - automation
           - api
           - oss
+        added_at: 2026-07-31
       - name: Trigger.dev
         homepage_url: https://trigger.dev
         repo_url: https://github.com/triggerdotdev/trigger.dev
@@ -42,9 +46,11 @@ subcategories:
         tags:
           - automation
           - oss
+        added_at: 2026-07-31
       - name: Zapier
         homepage_url: https://zapier.com
         description: Connect 8,000+ apps with AI-powered workflow automation
         tags:
           - automation
           - proprietary
+        added_at: 2026-07-31

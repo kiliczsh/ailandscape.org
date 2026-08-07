@@ -16,6 +16,7 @@ subcategories:
           - multimodal
           - vision
           - open-weights
+        added_at: 2026-03-18
       - name: Gemini Pro Vision
         homepage_url: https://deepmind.google/technologies/gemini
         logo: gemini.webp
@@ -24,6 +25,7 @@ subcategories:
           - multimodal
           - vision
           - llm
+        added_at: 2026-03-18
       - name: GPT-4o
         homepage_url: https://openai.com/index/hello-gpt-4o/
         logo: openai.webp
@@ -33,6 +35,7 @@ subcategories:
           - audio
           - vision
           - proprietary
+        added_at: 2026-03-18
       - name: GPT-4V
         homepage_url: https://openai.com/research/gpt-4v-system-card
         logo: openai.webp
@@ -41,6 +44,7 @@ subcategories:
           - multimodal
           - vision
           - llm
+        added_at: 2026-03-18
       - name: InternVL 2
         homepage_url: https://internvl.github.io
         repo_url: https://github.com/OpenGVLab/InternVL
@@ -49,6 +53,7 @@ subcategories:
           - multimodal
           - vision
           - open-weights
+        added_at: 2026-03-18
       - name: LLaVA
         homepage_url: https://llava-vl.github.io
         repo_url: https://github.com/haotian-liu/LLaVA
@@ -57,6 +62,7 @@ subcategories:
           - multimodal
           - vision
           - oss
+        added_at: 2026-03-18
       - name: Qwen-VL
         homepage_url: https://qwenlm.github.io/blog/qwen-vl
         repo_url: https://github.com/QwenLM/Qwen-VL
@@ -65,6 +71,7 @@ subcategories:
           - multimodal
           - vision
           - open-weights
+        added_at: 2026-03-18
       - name: Reka Core
         homepage_url: https://reka.ai
         logo: reka.webp
@@ -74,6 +81,7 @@ subcategories:
           - audio
           - vision
           - proprietary
+        added_at: 2026-03-18
   - name: Computer Vision
     row: 0
     items:
@@ -86,6 +94,7 @@ subcategories:
           - object-detection
           - segmentation
           - oss
+        added_at: 2026-03-18
       - name: DETR
         homepage_url: https://github.com/facebookresearch/detr
         repo_url: https://github.com/facebookresearch/detr
@@ -95,6 +104,7 @@ subcategories:
           - object-detection
           - transformers
           - oss
+        added_at: 2026-03-18
       - name: Google Vision AI
         homepage_url: https://cloud.google.com/vision
         logo: google-cloud.webp
@@ -103,6 +113,7 @@ subcategories:
           - ocr
           - vision
           - api
+        added_at: 2026-03-18
       - name: PaddleOCR
         homepage_url: https://paddlepaddle.github.io/PaddleOCR
         repo_url: https://github.com/PaddlePaddle/PaddleOCR
@@ -111,6 +122,7 @@ subcategories:
           - ocr
           - multilingual
           - oss
+        added_at: 2026-03-18
       - name: SAM
         homepage_url: https://ai.meta.com/research/sam2/
         repo_url: https://github.com/facebookresearch/sam2
@@ -119,6 +131,7 @@ subcategories:
         tags:
           - segmentation
           - oss
+        added_at: 2026-03-18
       - name: SAM 2
         homepage_url: https://ai.meta.com/sam2
         repo_url: https://github.com/facebookresearch/segment-anything-2
@@ -128,6 +141,7 @@ subcategories:
           - segmentation
           - video
           - oss
+        added_at: 2026-03-18
       - name: Tesseract
         homepage_url: https://tesseract-ocr.github.io
         repo_url: https://github.com/tesseract-ocr/tesseract
@@ -135,6 +149,7 @@ subcategories:
         tags:
           - ocr
           - oss
+        added_at: 2026-03-18
       - name: YOLO
         homepage_url: https://ultralytics.com/yolo
         repo_url: https://github.com/ultralytics/ultralytics
@@ -143,6 +158,7 @@ subcategories:
         tags:
           - object-detection
           - oss
+        added_at: 2026-03-18
   - name: Speech Recognition
     row: 1
     items:
@@ -155,6 +171,7 @@ subcategories:
           - speech
           - asr
           - api
+        added_at: 2026-03-18
       - name: Azure Speech
         homepage_url: https://azure.microsoft.com/products/cognitive-services/speech-services
         logo: microsoft.webp
@@ -164,6 +181,7 @@ subcategories:
           - asr
           - api
           - cloud
+        added_at: 2026-03-18
       - name: Deepgram
         homepage_url: https://deepgram.com
         logo: deepgram.webp
@@ -172,6 +190,7 @@ subcategories:
           - speech
           - asr
           - api
+        added_at: 2026-03-18
       - name: Parakeet
         homepage_url: https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html
         logo: nvidia.webp
@@ -181,6 +200,7 @@ subcategories:
           - asr
           - nvidia
           - oss
+        added_at: 2026-03-18
       - name: superwhisper
         homepage_url: https://superwhisper.com
         twitter_url: https://x.com/superwhisper
@@ -197,3 +217,4 @@ subcategories:
           - speech
           - asr
           - oss
+        added_at: 2026-03-18

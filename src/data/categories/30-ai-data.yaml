@@ -16,6 +16,7 @@ subcategories:
           - labeling
           - data
           - oss
+        added_at: 2026-08-07
       - name: Labelbox
         homepage_url: https://labelbox.com
         description: Data factory for labeling, RL environments, and preference signals
@@ -23,6 +24,7 @@ subcategories:
           - labeling
           - data
           - proprietary
+        added_at: 2026-08-07
       - name: Prodigy
         homepage_url: https://prodi.gy
         description: Scriptable annotation tool by the makers of spaCy
@@ -30,6 +32,7 @@ subcategories:
           - labeling
           - data
           - proprietary
+        added_at: 2026-08-07
       - name: Scale AI
         homepage_url: https://scale.com
         twitter_url: https://x.com/scale_AI
@@ -38,6 +41,7 @@ subcategories:
           - labeling
           - human-feedback
           - proprietary
+        added_at: 2026-08-07
   - name: Human Feedback & Preference Data
     row: 0
     items:
@@ -49,6 +53,7 @@ subcategories:
           - human-feedback
           - data
           - oss
+        added_at: 2026-08-07
       - name: Snorkel
         homepage_url: https://snorkel.ai
         description: Programmatic data labeling and AI data development platform
@@ -56,6 +61,7 @@ subcategories:
           - labeling
           - human-feedback
           - proprietary
+        added_at: 2026-08-07
   - name: Data Quality & Curation
     row: 0
     items:
@@ -67,6 +73,7 @@ subcategories:
         tags:
           - data
           - oss
+        added_at: 2026-08-07
   - name: Dataset Management
     row: 0
     items:
@@ -78,3 +85,4 @@ subcategories:
           - datasets
           - data
           - oss
+        added_at: 2026-08-07

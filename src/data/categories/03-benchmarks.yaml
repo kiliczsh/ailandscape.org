@@ -11,52 +11,65 @@ subcategories:
       - name: Aider Leaderboard
         homepage_url: https://aider.chat/docs/leaderboards/
         description: "Aider's polyglot coding leaderboard measuring LLM performance across languages"
+        added_at: 2026-03-18
       - name: BigCodeArena
         homepage_url: https://huggingface.co/spaces/bigcode/arena
         logo: hugging-face.webp
         description: "A human-in-the-loop platform for evaluating code generation through execution"
+        added_at: 2026-03-18
       - name: CORE-Bench Hard
         homepage_url: https://hal.cs.princeton.edu/corebench_hard
         logo: core-bench-hard.webp
         description: "Agent installs deps, runs published scientific code, and answers questions"
+        added_at: 2026-03-18
       - name: Live-SWE-agent
         homepage_url: https://live-swe-agent.github.io/
         description: "Can software engineering agents self-evolve on the fly? A living benchmark"
+        added_at: 2026-03-18
       - name: LiveCodeBench
         homepage_url: https://livecodebench.github.io/leaderboard.html
         description: "Holistic and contamination-free evaluation of large language models for code"
+        added_at: 2026-03-18
       - name: LiveCodeBench Pro
         homepage_url: https://livecodebenchpro.com/
         logo: livecodebench-pro.webp
         description: "Codeforces, ICPC, and IOI problems; regularly updated to prevent contamination"
+        added_at: 2026-03-18
       - name: Multi-SWE-bench
         homepage_url: https://multi-swe-bench.github.io/
         description: "Multilingual benchmark for issue resolving across multiple programming languages"
+        added_at: 2026-03-18
       - name: SWE-bench
         homepage_url: https://www.swebench.com/
         logo: swe-bench.webp
         description: "Evaluates LLM performance on real-world software issues collected from GitHub"
+        added_at: 2026-03-18
       - name: SWE-bench Multilingual
         homepage_url: https://swe-bench.com/
         logo: swe-bench-multilingual.webp
         description: "300 curated SWE-bench tasks from 42 repositories across 9 programming languages"
+        added_at: 2026-03-18
       - name: SWE-Bench Pro Commercial
         homepage_url: https://scale.com/leaderboard/swe_bench_pro_commercial
         logo: swe-bench-pro-commercial.webp
         description: "Scale AI's real-world software engineering benchmark using a commercial dataset"
+        added_at: 2026-03-18
       - name: SWE-Bench Pro Public
         homepage_url: https://scale.com/leaderboard/swe_bench_pro_public
         logo: swe-bench-pro-public.webp
         description: "Public version of Scale AI's SWE-Bench Pro for real-world software engineering"
+        added_at: 2026-03-18
       - name: SWE-DEV
         homepage_url: https://github.com/DorothyDUUU/SWE-Dev
         repo_url: https://github.com/DorothyDUUU/SWE-Dev
         logo: gh-DorothyDUUU.png
         description: "Evaluating and training autonomous feature-driven software development agents"
+        added_at: 2026-03-18
       - name: SWE-rebench
         homepage_url: https://swe-rebench.com/
         logo: swe-rebench.webp
         description: "Continuously evolving and decontaminated benchmark for software engineering LLMs"
+        added_at: 2026-03-18
   - name: Agent & General Benchmarks
     row: 0
     items:
@@ -64,48 +77,60 @@ subcategories:
         homepage_url: https://www.mercor.com/apex/apex-agents-leaderboard/
         logo: apex-agents.webp
         description: "Measures whether frontier AI agents can execute real long-horizon tasks"
+        added_at: 2026-03-18
       - name: ARC-AGI-2
         homepage_url: https://arcprize.org/leaderboard
         logo: arc-agi-2.webp
         description: "Stress-tests efficiency and capability of state-of-the-art AI reasoning systems"
+        added_at: 2026-03-18
       - name: Context-Bench
         homepage_url: https://leaderboard.letta.com/
         logo: context-bench.webp
         description: "A benchmark for agentic context engineering"
+        added_at: 2026-03-18
       - name: MCP Atlas
         homepage_url: https://scale.com/leaderboard/mcp_atlas
         logo: mcp-atlas.webp
         description: "Evaluates how well language models handle real-world tool use through MCP"
+        added_at: 2026-03-18
       - name: Modu Merge Rate Leaderboard
         homepage_url: https://www.askmodu.com/rankings
         logo: modu-merge-rate-leaderboard.webp
         description: "Ranking top coding agents by real-world pull request merge success rates"
+        added_at: 2026-03-18
       - name: OSWorld
         homepage_url: https://os-world.github.io/
         description: "Benchmarks multimodal agents on open-ended tasks in real computer environments"
+        added_at: 2026-03-18
       - name: PR Arena
         homepage_url: https://prarena.ai/
         description: "Software engineering agents head-to-head on real pull request tasks"
+        added_at: 2026-03-18
       - name: Repo Bench
         homepage_url: https://repoprompt.com/bench
         logo: repo-bench.webp
         description: "Measures large-context reasoning, edit precision, and instruction adherence"
+        added_at: 2026-03-18
       - name: Terminal-Bench
         homepage_url: https://www.tbench.ai/leaderboard
         logo: terminal-bench.webp
         description: "Benchmark measuring AI agent capabilities in a terminal environment (v1)"
+        added_at: 2026-03-18
       - name: Terminal-Bench 2.0
         homepage_url: https://www.tbench.ai/leaderboard/terminal-bench/2.0
         logo: terminal-bench-2-0.webp
         description: "Benchmark measuring AI agent capabilities in a terminal environment (v2)"
+        added_at: 2026-03-18
       - name: Vending-Bench 2
         homepage_url: https://andonlabs.com/evals/vending-bench-2
         logo: vending-bench-2.webp
         description: "Measuring AI model performance on running a business over long time horizons"
+        added_at: 2026-03-18
       - name: "\u03C4-bench"
         homepage_url: https://taubench.com
         logo: bench.webp
         description: "Benchmarking AI agents in collaborative real-world scenarios"
+        added_at: 2026-03-18
   - name: Model Rankings
     row: 0
     items:
@@ -116,7 +141,9 @@ subcategories:
         twitter_url: https://x.com/arena
         description: "Human-preference LLM ranking via pairwise comparisons"
         tags: [evaluation, benchmarks, human-eval]
+        added_at: 2026-03-18
       - name: OpenRouter Rankings
         homepage_url: https://openrouter.ai/rankings
         logo: openrouter-rankings.webp
         description: "Model market share, use-case categories, and app rankings on OpenRouter"
+        added_at: 2026-03-18

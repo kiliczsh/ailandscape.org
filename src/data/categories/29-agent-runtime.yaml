@@ -17,6 +17,7 @@ subcategories:
           - sandbox
           - agents
           - oss
+        added_at: 2026-08-07
       - name: E2B
         homepage_url: https://e2b.dev
         repo_url: https://github.com/e2b-dev/e2b
@@ -26,6 +27,7 @@ subcategories:
           - sandbox
           - agents
           - oss
+        added_at: 2026-08-07
       - name: Modal Sandboxes
         homepage_url: https://modal.com/use-cases/sandboxes
         twitter_url: https://x.com/modal
@@ -34,6 +36,7 @@ subcategories:
           - sandbox
           - agents
           - api
+        added_at: 2026-08-07
   - name: Durable Execution
     row: 0
     items:
@@ -45,6 +48,7 @@ subcategories:
         tags:
           - automation
           - oss
+        added_at: 2026-08-07
       - name: Temporal
         homepage_url: https://temporal.io
         repo_url: https://github.com/temporalio/temporal
@@ -52,3 +56,4 @@ subcategories:
         tags:
           - automation
           - oss
+        added_at: 2026-08-07

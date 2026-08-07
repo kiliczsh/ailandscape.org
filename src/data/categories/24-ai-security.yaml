@@ -17,6 +17,7 @@ subcategories:
           - adversarial
           - defense
           - ibm
+        added_at: 2026-03-18
       - name: CleverHans
         homepage_url: https://github.com/cleverhans-lab/cleverhans
         repo_url: https://github.com/cleverhans-lab/cleverhans
@@ -26,6 +27,7 @@ subcategories:
           - adversarial
           - defense
           - python
+        added_at: 2026-03-18
       - name: Foolbox
         homepage_url: https://foolbox.readthedocs.io
         repo_url: https://github.com/bethgelab/foolbox
@@ -34,6 +36,7 @@ subcategories:
           - adversarial
           - attacks
           - python
+        added_at: 2026-03-18
       - name: Garak
         homepage_url: https://garak.ai
         repo_url: https://github.com/leondz/garak
@@ -43,6 +46,7 @@ subcategories:
           - red-teaming
           - llm
           - security
+        added_at: 2026-03-18
       - name: HarmBench
         homepage_url: https://harmbench.org
         repo_url: https://github.com/centerforaisafety/HarmBench
@@ -52,6 +56,7 @@ subcategories:
           - red-teaming
           - benchmarks
           - safety
+        added_at: 2026-03-18
       - name: PyRIT
         homepage_url: https://github.com/Azure/PyRIT
         repo_url: https://github.com/Azure/PyRIT
@@ -61,6 +66,7 @@ subcategories:
           - red-teaming
           - llm
           - microsoft
+        added_at: 2026-03-18
       - name: TextAttack
         homepage_url: https://textattack.readthedocs.io
         repo_url: https://github.com/QData/TextAttack
@@ -69,6 +75,7 @@ subcategories:
           - adversarial
           - nlp
           - python
+        added_at: 2026-03-18
   - name: Guardrails & Defense
     row: 0
     items:
@@ -81,6 +88,7 @@ subcategories:
           - guardrails
           - llm
           - safety
+        added_at: 2026-03-18
       - name: Lakera Guard
         homepage_url: https://lakera.ai
         logo: lakera.webp
@@ -89,6 +97,7 @@ subcategories:
           - prompt-injection
           - defense
           - api
+        added_at: 2026-03-18
       - name: LlamaGuard
         homepage_url: https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations
         repo_url: https://github.com/meta-llama/llama-recipes
@@ -98,6 +107,7 @@ subcategories:
           - guardrails
           - safety
           - open-weights
+        added_at: 2026-03-18
       - name: NeMo Guardrails
         homepage_url: https://docs.nvidia.com/nemo-guardrails
         repo_url: https://github.com/NVIDIA/NeMo-Guardrails
@@ -107,6 +117,7 @@ subcategories:
           - guardrails
           - llm
           - nvidia
+        added_at: 2026-03-18
       - name: Patronus AI
         homepage_url: https://patronus.ai
         logo: patronus.webp
@@ -115,6 +126,7 @@ subcategories:
           - guardrails
           - evaluation
           - enterprise
+        added_at: 2026-03-18
       - name: Prompt Shield
         homepage_url: https://azure.microsoft.com/products/ai-services/prompt-shield
         logo: microsoft.webp
@@ -123,6 +135,7 @@ subcategories:
           - prompt-injection
           - defense
           - microsoft
+        added_at: 2026-03-18
       - name: Shieldstral
         homepage_url: https://mistral.ai/news/shieldstral/
         description: Mistral's open-weights multimodal safety classifier for text and images
@@ -130,6 +143,7 @@ subcategories:
           - safety
           - guardrails
           - open-weights
+        added_at: 2026-08-07
   - name: Privacy & Compliance
     row: 0
     items:
@@ -142,6 +156,7 @@ subcategories:
           - privacy
           - pii
           - anonymization
+        added_at: 2026-03-18
       - name: OpenDP
         homepage_url: https://opendp.org
         repo_url: https://github.com/opendp/opendp
@@ -150,6 +165,7 @@ subcategories:
         tags:
           - privacy
           - differential-privacy
+        added_at: 2026-03-18
       - name: PySyft
         homepage_url: https://openmined.org
         repo_url: https://github.com/OpenMined/PySyft
@@ -158,6 +174,7 @@ subcategories:
         tags:
           - privacy
           - federated-learning
+        added_at: 2026-03-18
       - name: TensorFlow Privacy
         homepage_url: https://tensorflow.org/responsible_ai/privacy
         repo_url: https://github.com/tensorflow/privacy
@@ -167,6 +184,7 @@ subcategories:
           - privacy
           - differential-privacy
           - tensorflow
+        added_at: 2026-03-18
   - name: Standards & Frameworks
     row: 0
     items:
@@ -178,6 +196,7 @@ subcategories:
           - compliance
           - regulation
           - governance
+        added_at: 2026-03-18
       - name: NIST AI RMF
         homepage_url: https://airc.nist.gov/home
         logo: nist.webp
@@ -186,6 +205,7 @@ subcategories:
           - compliance
           - risk-management
           - governance
+        added_at: 2026-03-18
       - name: OWASP Top 10 for LLMs
         homepage_url: https://owasp.org/www-project-top-10-for-large-language-model-applications
         logo: owasp.webp
@@ -194,3 +214,4 @@ subcategories:
           - compliance
           - security
           - owasp
+        added_at: 2026-03-18

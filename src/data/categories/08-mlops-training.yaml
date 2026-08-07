@@ -16,12 +16,14 @@ subcategories:
         tags:
           - cicd
           - github-actions
+        added_at: 2026-03-18
       - name: Comet ML
         homepage_url: https://comet.com
         logo: comet-ml.webp
         description: ML experiment management platform
         tags:
           - experiment-tracking
+        added_at: 2026-03-18
       - name: DVC
         homepage_url: https://dvc.org
         repo_url: https://github.com/iterative/dvc
@@ -30,6 +32,7 @@ subcategories:
         tags:
           - version-control
           - cicd
+        added_at: 2026-03-18
       - name: GitHub Actions
         homepage_url: https://github.com/features/actions
         logo: gh-features.png
@@ -37,6 +40,7 @@ subcategories:
         tags:
           - cicd
           - automation
+        added_at: 2026-03-18
       - name: GitLab CI
         homepage_url: https://docs.gitlab.com/ee/ci
         logo: gitlab.webp
@@ -44,6 +48,7 @@ subcategories:
         tags:
           - cicd
           - automation
+        added_at: 2026-03-18
       - name: MLflow
         homepage_url: https://mlflow.org
         repo_url: https://github.com/mlflow/mlflow
@@ -53,12 +58,14 @@ subcategories:
         tags:
           - experiment-tracking
           - model-registry
+        added_at: 2026-03-18
       - name: Neptune
         homepage_url: https://neptune.ai
         logo: neptune.webp
         description: Experiment tracking for ML teams
         tags:
           - experiment-tracking
+        added_at: 2026-03-18
       - name: Weights & Biases
         homepage_url: https://wandb.ai
         logo: wandb.webp
@@ -68,6 +75,7 @@ subcategories:
         tags:
           - experiment-tracking
           - visualization
+        added_at: 2026-03-18
   - name: Fine-tuning & RLHF
     row: 0
     items:
@@ -76,21 +84,25 @@ subcategories:
         repo_url: https://github.com/axolotl-ai-cloud/axolotl
         logo: axolotl.webp
         description: Fine-tuning framework for LLMs supporting LoRA, QLoRA, DeepSpeed, and multi-GPU
+        added_at: 2026-03-18
       - name: OpenRLHF
         homepage_url: https://openrlhf.readthedocs.io/
         repo_url: https://github.com/OpenRLHF/OpenRLHF
         description: Scalable RLHF framework supporting 70B+ PPO full tuning, iterative DPO, and LoRA
+        added_at: 2026-03-18
       - name: TRL
         homepage_url: http://hf.co/docs/trl
         repo_url: https://github.com/huggingface/trl
         logo: trl.webp
         description: Library for training transformer LMs with RLHF, SFT, reward modeling, and PPO
+        added_at: 2026-03-18
       - name: unsloth
         homepage_url: https://unsloth.ai/docs
         repo_url: https://github.com/unslothai/unsloth
         logo: unsloth.webp
         twitter_url: https://x.com/UnslothAI
         description: 2-5x faster LLM fine-tuning with 70% less memory
+        added_at: 2026-03-18
   - name: Pipeline Orchestration
     row: 0
     items:
@@ -102,6 +114,7 @@ subcategories:
         tags:
           - orchestration
           - scheduling
+        added_at: 2026-03-18
       - name: Kubeflow
         homepage_url: https://kubeflow.org
         repo_url: https://github.com/kubeflow/kubeflow
@@ -111,6 +124,7 @@ subcategories:
         tags:
           - orchestration
           - kubernetes
+        added_at: 2026-03-18
       - name: Prefect
         homepage_url: https://prefect.io
         repo_url: https://github.com/PrefectHQ/prefect
@@ -119,6 +133,7 @@ subcategories:
         tags:
           - orchestration
           - python
+        added_at: 2026-03-18
       - name: ZenML
         homepage_url: https://zenml.io
         repo_url: https://github.com/zenml-io/zenml
@@ -127,6 +142,7 @@ subcategories:
         tags:
           - orchestration
           - mlops
+        added_at: 2026-03-18
   - name: Model Registry & Feature Store
     row: 1
     items:
@@ -137,6 +153,7 @@ subcategories:
         description: Open source feature store for ML
         tags:
           - feature-store
+        added_at: 2026-03-18
       - name: Hopsworks
         homepage_url: https://hopsworks.ai
         repo_url: https://github.com/logicalclocks/hopsworks
@@ -145,6 +162,7 @@ subcategories:
         tags:
           - feature-store
           - mlops
+        added_at: 2026-03-18
       - name: Hugging Face Hub
         homepage_url: https://huggingface.co/models
         logo: hugging-face.webp
@@ -152,6 +170,7 @@ subcategories:
         tags:
           - model-registry
           - community
+        added_at: 2026-03-18
       - name: MLflow Model Registry
         homepage_url: https://mlflow.org/docs/latest/model-registry.html
         repo_url: https://github.com/mlflow/mlflow
@@ -160,6 +179,7 @@ subcategories:
         description: Centralized model store for lifecycle management
         tags:
           - model-registry
+        added_at: 2026-03-18
       - name: Tecton
         homepage_url: https://tecton.ai
         logo: tecton.webp
@@ -167,6 +187,7 @@ subcategories:
         tags:
           - feature-store
           - enterprise
+        added_at: 2026-03-18
       - name: Vertex Feature Store
         homepage_url: https://cloud.google.com/vertex-ai/docs/featurestore
         logo: google-cloud.webp
@@ -175,6 +196,7 @@ subcategories:
           - feature-store
           - cloud
           - google
+        added_at: 2026-03-18
   - name: ML Frameworks
     row: 1
     items:
@@ -186,6 +208,7 @@ subcategories:
         tags:
           - classical-ml
           - dotnet
+        added_at: 2026-03-18
       - name: Alink
         homepage_url: https://github.com/alibaba/Alink
         repo_url: https://github.com/alibaba/alink
@@ -194,6 +217,7 @@ subcategories:
         tags:
           - classical-ml
           - flink
+        added_at: 2026-03-18
       - name: Angel-ML
         homepage_url: https://github.com/Angel-ML/angel
         repo_url: https://github.com/Angel-ML/angel
@@ -203,6 +227,7 @@ subcategories:
         tags:
           - classical-ml
           - distributed
+        added_at: 2026-03-18
       - name: Auto-sklearn
         homepage_url: https://automl.github.io/auto-sklearn
         repo_url: https://github.com/automl/auto-sklearn
@@ -210,6 +235,7 @@ subcategories:
         tags:
           - automl
           - python
+        added_at: 2026-03-18
       - name: AutoGluon
         homepage_url: https://auto.gluon.ai
         repo_url: https://github.com/autogluon/autogluon
@@ -218,6 +244,7 @@ subcategories:
         tags:
           - automl
           - python
+        added_at: 2026-03-18
       - name: Diffusers
         homepage_url: https://huggingface.co/docs/diffusers
         repo_url: https://github.com/huggingface/diffusers
@@ -227,6 +254,7 @@ subcategories:
           - sdk
           - diffusion
           - image-generation
+        added_at: 2026-03-18
       - name: FLAML
         homepage_url: https://microsoft.github.io/FLAML
         repo_url: https://github.com/microsoft/FLAML
@@ -236,6 +264,7 @@ subcategories:
           - automl
           - python
           - fast
+        added_at: 2026-03-18
       - name: Google AutoML
         homepage_url: https://cloud.google.com/automl
         logo: google-cloud.webp
@@ -243,6 +272,7 @@ subcategories:
         tags:
           - automl
           - cloud
+        added_at: 2026-03-18
       - name: H2O AutoML
         homepage_url: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html
         repo_url: https://github.com/h2oai/h2o-3
@@ -250,6 +280,7 @@ subcategories:
         description: Automatic machine learning from H2O.ai
         tags:
           - automl
+        added_at: 2026-03-18
       - name: Hugging Face Transformers
         homepage_url: https://huggingface.co/docs/transformers
         repo_url: https://github.com/huggingface/transformers
@@ -259,6 +290,7 @@ subcategories:
           - sdk
           - transformers
           - nlp
+        added_at: 2026-03-18
       - name: JAX
         homepage_url: https://jax.readthedocs.io
         repo_url: https://github.com/google/jax
@@ -267,6 +299,7 @@ subcategories:
           - deep-learning
           - python
           - autodiff
+        added_at: 2026-03-18
       - name: Keras
         homepage_url: https://keras.io
         repo_url: https://github.com/keras-team/keras
@@ -275,6 +308,7 @@ subcategories:
         tags:
           - deep-learning
           - python
+        added_at: 2026-03-18
       - name: LightGBM
         homepage_url: https://lightgbm.readthedocs.io
         repo_url: https://github.com/microsoft/LightGBM
@@ -282,6 +316,7 @@ subcategories:
         tags:
           - classical-ml
           - gradient-boosting
+        added_at: 2026-03-18
       - name: Mixture of Kittens
         homepage_url: https://cursor.com/blog/mixture-of-kittens
         repo_url: https://github.com/cursor/mixture-of-kittens
@@ -290,6 +325,7 @@ subcategories:
           - training
           - optimization
           - oss
+        added_at: 2026-08-07
       - name: OpenAI Gym
         homepage_url: https://gymnasium.farama.org
         repo_url: https://github.com/Farama-Foundation/Gymnasium
@@ -298,6 +334,7 @@ subcategories:
         tags:
           - reinforcement-learning
           - environments
+        added_at: 2026-03-18
       - name: OpenAI Python SDK
         homepage_url: https://github.com/openai/openai-python
         repo_url: https://github.com/openai/openai-python
@@ -307,6 +344,7 @@ subcategories:
           - sdk
           - python
           - openai
+        added_at: 2026-03-18
       - name: PettingZoo
         homepage_url: https://pettingzoo.farama.org
         repo_url: https://github.com/Farama-Foundation/PettingZoo
@@ -316,6 +354,7 @@ subcategories:
           - reinforcement-learning
           - multi-agent
           - environments
+        added_at: 2026-03-18
       - name: PyTorch
         homepage_url: https://pytorch.org
         repo_url: https://github.com/pytorch/pytorch
@@ -325,6 +364,7 @@ subcategories:
         tags:
           - deep-learning
           - python
+        added_at: 2026-03-18
       - name: Ray RLlib
         homepage_url: https://docs.ray.io/en/latest/rllib/index.html
         repo_url: https://github.com/ray-project/ray
@@ -333,6 +373,7 @@ subcategories:
         tags:
           - reinforcement-learning
           - distributed
+        added_at: 2026-03-18
       - name: scikit-learn
         homepage_url: https://scikit-learn.org
         repo_url: https://github.com/scikit-learn/scikit-learn
@@ -341,6 +382,7 @@ subcategories:
         tags:
           - classical-ml
           - python
+        added_at: 2026-03-18
       - name: Stable Baselines3
         homepage_url: https://stable-baselines3.readthedocs.io
         repo_url: https://github.com/DLR-RM/stable-baselines3
@@ -348,6 +390,7 @@ subcategories:
         tags:
           - reinforcement-learning
           - python
+        added_at: 2026-03-18
       - name: TensorFlow
         homepage_url: https://tensorflow.org
         repo_url: https://github.com/tensorflow/tensorflow
@@ -358,6 +401,7 @@ subcategories:
         tags:
           - deep-learning
           - python
+        added_at: 2026-03-18
       - name: XGBoost
         homepage_url: https://xgboost.readthedocs.io
         repo_url: https://github.com/dmlc/xgboost
@@ -365,3 +409,4 @@ subcategories:
         tags:
           - classical-ml
           - gradient-boosting
+        added_at: 2026-03-18

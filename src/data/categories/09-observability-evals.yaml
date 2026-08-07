@@ -23,6 +23,7 @@ subcategories:
         twitter_url: https://x.com/helicone_ai
         description: "Open-source LLM observability and proxy"
         tags: [observability, llm, proxy, oss]
+        added_at: 2026-03-18
       - name: Langfuse
         homepage_url: https://langfuse.com
         repo_url: https://github.com/langfuse/langfuse
@@ -30,24 +31,28 @@ subcategories:
         twitter_url: https://x.com/langfuse
         description: "Open-source LLM engineering platform for tracing and evals"
         tags: [observability, llm, tracing, oss]
+        added_at: 2026-03-18
       - name: Opik
         homepage_url: https://comet.com/site/products/opik
         repo_url: https://github.com/comet-ml/opik
         logo: comet-ml.webp
         description: "Open-source LLM evaluation and tracing by Comet"
         tags: [observability, llm, evaluation, oss]
+        added_at: 2026-03-18
       - name: Phoenix (Arize)
         homepage_url: https://phoenix.arize.com
         repo_url: https://github.com/Arize-ai/phoenix
         logo: arize.webp
         description: "Open-source AI observability and evaluation platform"
         tags: [observability, llm, tracing, oss]
+        added_at: 2026-03-18
       - name: Traceloop
         homepage_url: https://traceloop.com
         repo_url: https://github.com/traceloop/openllmetry
         logo: traceloop.webp
         description: "OpenTelemetry-based LLM observability"
         tags: [observability, llm, opentelemetry]
+        added_at: 2026-03-18
   - name: Model Monitoring
     row: 0
     items:
@@ -57,6 +62,7 @@ subcategories:
         crunchbase: https://www.crunchbase.com/organization/arize-ai
         description: "ML observability and monitoring platform"
         tags: [monitoring, observability]
+        added_at: 2026-03-18
       - name: Evidently
         homepage_url: https://evidentlyai.com
         repo_url: https://github.com/evidentlyai/evidently
@@ -64,17 +70,20 @@ subcategories:
         crunchbase: https://www.crunchbase.com/organization/evidently-ai
         description: "ML model monitoring and data quality checks"
         tags: [monitoring, data-drift]
+        added_at: 2026-03-18
       - name: Fiddler AI
         homepage_url: https://fiddler.ai
         logo: fiddler.webp
         description: "ML model performance management"
         tags: [monitoring, explainability]
+        added_at: 2026-03-18
       - name: WhyLabs
         homepage_url: https://whylabs.ai
         repo_url: https://github.com/whylabs/whylogs
         logo: whylabs.webp
         description: "AI observability and data monitoring"
         tags: [monitoring, data-logging]
+        added_at: 2026-03-18
   - name: LLM Evaluation & Benchmarking
     row: 0
     items:
@@ -83,41 +92,48 @@ subcategories:
         logo: braintrust.webp
         description: "LLM evaluation and prompt management platform"
         tags: [evaluation, testing, llm]
+        added_at: 2026-03-18
       - name: DeepEval
         homepage_url: https://deepeval.com
         repo_url: https://github.com/confident-ai/deepeval
         logo: deepeval.webp
         description: "Open-source LLM evaluation framework"
         tags: [evaluation, testing, llm]
+        added_at: 2026-03-18
       - name: EleutherAI LM Evaluation Harness
         homepage_url: https://github.com/EleutherAI/lm-evaluation-harness
         repo_url: https://github.com/EleutherAI/lm-evaluation-harness
         logo: eleutherai.webp
         description: "Framework for few-shot language model evaluation"
         tags: [evaluation, benchmarks, llm]
+        added_at: 2026-03-18
       - name: HELM
         homepage_url: https://crfm.stanford.edu/helm
         repo_url: https://github.com/stanford-crfm/helm
         logo: stanford.webp
         description: "Holistic evaluation of language models"
         tags: [evaluation, benchmarks, llm]
+        added_at: 2026-03-18
       - name: HumanEval
         homepage_url: https://github.com/openai/human-eval
         repo_url: https://github.com/openai/human-eval
         logo: openai.webp
         description: "OpenAI's benchmark for evaluating code generation"
         tags: [evaluation, benchmarks, coding]
+        added_at: 2026-03-18
       - name: LangSmith
         homepage_url: https://smith.langchain.com
         logo: langchain.webp
         description: "Platform for debugging and evaluating LLM apps"
         tags: [evaluation, testing, llm]
+        added_at: 2026-03-18
       - name: MMLU
         homepage_url: https://github.com/hendrycks/test
         repo_url: https://github.com/hendrycks/test
         logo: gh-hendrycks.png
         description: "Massive Multitask Language Understanding benchmark"
         tags: [evaluation, benchmarks, llm]
+        added_at: 2026-03-18
       - name: Ragas
         homepage_url: https://ragas.io
         repo_url: https://github.com/explodinggradients/ragas
@@ -125,6 +141,7 @@ subcategories:
         twitter_url: https://x.com/ragas_io
         description: "Evaluation framework for RAG pipelines"
         tags: [evaluation, rag]
+        added_at: 2026-03-18
   - name: Explainability & Alignment
     row: 1
     items:
@@ -134,28 +151,33 @@ subcategories:
         logo: pytorch.webp
         description: "Model interpretability library for PyTorch"
         tags: [explainability, xai, pytorch]
+        added_at: 2026-03-18
       - name: ELI5
         homepage_url: https://eli5.readthedocs.io
         repo_url: https://github.com/eli5-org/eli5
         description: "Debug and explain ML classifiers and regressors"
         tags: [explainability, xai, python]
+        added_at: 2026-03-18
       - name: InterpretML
         homepage_url: https://interpret.ml
         repo_url: https://github.com/interpretml/interpret
         logo: interpret-ml.webp
         description: "Microsoft's toolkit for model interpretability"
         tags: [explainability, xai]
+        added_at: 2026-03-18
       - name: LIME
         homepage_url: https://github.com/marcotcr/lime
         repo_url: https://github.com/marcotcr/lime
         logo: gh-marcotcr.png
         description: "Local interpretable model-agnostic explanations"
         tags: [explainability, xai]
+        added_at: 2026-03-18
       - name: SHAP
         homepage_url: https://shap.readthedocs.io
         repo_url: https://github.com/shap/shap
         description: "Game theoretic approach to explain ML model outputs"
         tags: [explainability, xai]
+        added_at: 2026-03-18
   - name: Prompt Management
     row: 1
     items:
@@ -165,20 +187,24 @@ subcategories:
         logo: gh-guidance-ai.png
         description: "Constrained generation and prompt control by Microsoft"
         tags: [prompt-engineering, constrained-generation, oss]
+        added_at: 2026-03-18
       - name: PromptFlow
         homepage_url: https://microsoft.github.io/promptflow
         repo_url: https://github.com/microsoft/promptflow
         logo: microsoft.webp
         description: "Suite of development tools for LLM apps"
         tags: [prompt-engineering, workflows]
+        added_at: 2026-03-18
       - name: Promptfoo
         homepage_url: https://promptfoo.dev
         repo_url: https://github.com/promptfoo/promptfoo
         logo: promptfoo.webp
         description: "Test, evaluate, and red-team LLM prompts"
         tags: [prompt-engineering, evaluation, oss]
+        added_at: 2026-03-18
       - name: PromptLayer
         homepage_url: https://promptlayer.com
         logo: promptlayer.webp
         description: "Prompt versioning and management platform"
         tags: [prompt-engineering, management]
+        added_at: 2026-03-18

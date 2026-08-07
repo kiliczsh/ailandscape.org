@@ -13,59 +13,71 @@ subcategories:
         repo_url: https://github.com/accomplish-ai/accomplish
         logo: accomplish.webp
         description: Open-source AI coworker that lives on your desktop
+        added_at: 2026-03-18
       - name: assistant
         homepage_url: https://github.com/kcosr/assistant
         repo_url: https://github.com/kcosr/assistant
         logo: gh-kcosr.png
         description: Panel-based personal assistant with a plugin architecture for productivity
+        added_at: 2026-03-18
       - name: babyagi3
         homepage_url: https://babyagi.org/
         repo_url: https://github.com/yoheinakajima/babyagi3
         description: A minimal AI agent you configure once, then drive through natural language
+        added_at: 2026-03-18
       - name: hermes-agent
         homepage_url: https://hermes-agent.nousresearch.com
         repo_url: https://github.com/NousResearch/hermes-agent
         logo: hermes-agent.webp
         description: The agent that grows with you
+        added_at: 2026-03-18
       - name: lemon
         homepage_url: https://github.com/z80dev/lemon
         repo_url: https://github.com/z80dev/lemon
         logo: gh-z80dev.png
         description: Local-first assistant and coding agent system
+        added_at: 2026-03-18
       - name: leon
         homepage_url: https://getleon.ai
         repo_url: https://github.com/leon-ai/leon
         logo: leon.webp
         description: Open-source personal assistant with voice and text interfaces
+        added_at: 2026-03-18
       - name: lettabot
         homepage_url: https://letta.bot
         repo_url: https://github.com/letta-ai/lettabot
         description: Personal AI assistant that remembers everything across sessions
+        added_at: 2026-03-18
       - name: lobsterai
         homepage_url: https://lobsterai.youdao.com
         repo_url: https://github.com/netease-youdao/lobsterai
         logo: lobsterai.webp
         description: 24/7 all-scenario AI agent that gets work done for you
+        added_at: 2026-03-18
       - name: mercury
         homepage_url: https://github.com/Michaelliv/mercury
         repo_url: https://github.com/Michaelliv/mercury
         logo: gh-Michaelliv.png
         description: Personal AI assistant that lives where you chat
+        added_at: 2026-03-18
       - name: rho
         homepage_url: https://rhobot.dev
         repo_url: https://github.com/mikeyobrien/rho
         logo: rho.webp
         description: Stays running, remembers across sessions, and checks in on its own
+        added_at: 2026-03-18
       - name: rowboat
         homepage_url: https://www.rowboatlabs.com
         repo_url: https://github.com/rowboatlabs/rowboat
         logo: rowboat.webp
         description: Open-source AI coworker with persistent memory
+        added_at: 2026-03-18
       - name: takopi
         homepage_url: https://takopi.dev
         repo_url: https://github.com/banteg/takopi
         logo: takopi.webp
         description: Telegram bridge for Codex, Claude Code, OpenCode, and Pi
+        added_at: 2026-03-18
   - name: OpenClaw Ecosystem
     row: 0
     items:
@@ -74,68 +86,82 @@ subcategories:
         repo_url: https://github.com/moltlaunch/cashclaw
         logo: cashclaw.webp
         description: An autonomous agent that takes work, does work, gets paid, and gets better at it
+        added_at: 2026-03-18
       - name: ClawWork
         homepage_url: https://github.com/HKUDS/ClawWork
         repo_url: https://github.com/HKUDS/ClawWork
         logo: gh-HKUDS.png
         description: AI coworker built on the OpenClaw ecosystem
+        added_at: 2026-03-18
       - name: CoPaw
         homepage_url: http://copaw.agentscope.io/
         repo_url: https://github.com/agentscope-ai/CoPaw
         logo: copaw.webp
         description: Personal AI assistant built on the OpenClaw ecosystem
+        added_at: 2026-03-18
       - name: denchclaw
         homepage_url: https://denchclaw.com
         repo_url: https://github.com/DenchHQ/denchclaw
         logo: denchclaw.webp
         description: Managed framework for CRM, sales automation, and outreach agents
+        added_at: 2026-03-18
       - name: ghostclaw
         homepage_url: https://ghostclaw.io
         repo_url: https://github.com/b1rdmania/ghostclaw
         logo: ghostclaw.webp
         description: An AI agent that lives on your computer and works for you
+        added_at: 2026-03-18
       - name: ironclaw
         homepage_url: https://www.ironclaw.com
         repo_url: https://github.com/nearai/ironclaw
         logo: ironclaw.webp
         description: OpenClaw-inspired implementation in Rust, focused on privacy and security
+        added_at: 2026-03-18
       - name: MetaClaw
         homepage_url: https://github.com/aiming-lab/MetaClaw
         repo_url: https://github.com/aiming-lab/MetaClaw
         logo: gh-aiming-lab.png
         description: Just talk to your agent — it learns and evolves
+        added_at: 2026-03-18
       - name: nanobot
         homepage_url: https://github.com/HKUDS/nanobot
         repo_url: https://github.com/HKUDS/nanobot
         logo: gh-HKUDS.png
         description: Ultra-lightweight personal AI assistant
+        added_at: 2026-03-18
       - name: nanoclaw
         homepage_url: https://nanoclaw.dev
         repo_url: https://github.com/gavrielc/nanoclaw
         logo: nanoclaw.webp
         description: Lightweight OpenClaw alternative running inside Apple containers for sandboxing
+        added_at: 2026-03-18
       - name: NemoClaw
         homepage_url: https://docs.nvidia.com/nemoclaw/latest/
         repo_url: https://github.com/NVIDIA/NemoClaw
         logo: nemoclaw.webp
         description: NVIDIA plugin for secure OpenClaw installation
+        added_at: 2026-03-18
       - name: openclaw
         homepage_url: https://openclaw.ai
         repo_url: https://github.com/openclaw/openclaw
         logo: openclaw.webp
         description: Your own personal AI assistant — the core framework
+        added_at: 2026-03-18
       - name: piclaw
         homepage_url: https://github.com/rcarmo/piclaw
         repo_url: https://github.com/rcarmo/piclaw
         logo: gh-rcarmo.png
         description: Raspberry Pi-based general-purpose agent
+        added_at: 2026-03-18
       - name: picoclaw
         homepage_url: https://picoclaw.io
         repo_url: https://github.com/sipeed/picoclaw
         logo: picoclaw.webp
         description: Ultra-efficient AI assistant for microcontrollers
+        added_at: 2026-03-18
       - name: zclaw
         homepage_url: https://zclaw.dev
         repo_url: https://github.com/tnm/zclaw
         logo: zclaw.webp
         description: The smallest possible AI personal assistant for ESP32
+        added_at: 2026-03-18

@@ -13,10 +13,12 @@ subcategories:
         repo_url: https://github.com/akash-network/provider
         logo: akash-network.webp
         description: Decentralized cloud compute marketplace for AI workloads on GPU nodes
+        added_at: 2026-03-18
       - name: AWS Bedrock
         homepage_url: https://aws.amazon.com/bedrock/
         logo: aws-bedrock.webp
         description: AWS managed service for foundation models from Anthropic, Meta, and Mistral
+        added_at: 2026-03-18
       - name: AWS SageMaker
         homepage_url: https://aws.amazon.com/sagemaker
         logo: aws.webp
@@ -25,6 +27,7 @@ subcategories:
           - cloud
           - mlops
           - aws
+        added_at: 2026-03-18
       - name: Azure ML
         homepage_url: https://azure.microsoft.com/products/machine-learning
         logo: microsoft.webp
@@ -33,6 +36,7 @@ subcategories:
           - cloud
           - mlops
           - azure
+        added_at: 2026-03-18
       - name: BentoML
         homepage_url: https://bentoml.com
         repo_url: https://github.com/bentoml/BentoML
@@ -42,11 +46,13 @@ subcategories:
         tags:
           - serving
           - python
+        added_at: 2026-03-18
       - name: Cloudflare AI
         homepage_url: https://ai.cloudflare.com
         repo_url: https://github.com/cloudflare/workers-ai-provider
         logo: cloudflare-ai.webp
         description: AI inference at the edge via Cloudflare Workers AI with zero cold starts
+        added_at: 2026-03-18
       - name: CoreWeave
         homepage_url: https://coreweave.com
         logo: coreweave.webp
@@ -55,6 +61,7 @@ subcategories:
           - cloud
           - gpu
           - infrastructure
+        added_at: 2026-03-18
       - name: Databricks
         homepage_url: https://databricks.com
         logo: databricks.webp
@@ -63,9 +70,11 @@ subcategories:
           - cloud
           - data
           - mlops
+        added_at: 2026-03-18
       - name: Fireworks AI
         homepage_url: https://fireworks.ai
         description: Fast, affordable inference API for open-source models with sub-100ms latency
+        added_at: 2026-03-18
       - name: Google Vertex AI
         homepage_url: https://cloud.google.com/vertex-ai
         logo: google-cloud.webp
@@ -74,11 +83,13 @@ subcategories:
           - cloud
           - mlops
           - google
+        added_at: 2026-03-18
       - name: Heurist
         homepage_url: https://www.heurist.ai/
         repo_url: https://github.com/heurist-network/heurist-agent-framework
         logo: heurist.webp
         description: Decentralized GPU network for low-latency, verifiable AI model inference
+        added_at: 2026-03-18
       - name: Nebius
         homepage_url: https://nebius.com
         twitter_url: https://x.com/nebiustf
@@ -95,6 +106,7 @@ subcategories:
         tags:
           - serving
           - distributed
+        added_at: 2026-03-18
       - name: RunPod
         homepage_url: https://runpod.io
         twitter_url: https://x.com/runpod
@@ -117,6 +129,7 @@ subcategories:
         tags:
           - serving
           - kubernetes
+        added_at: 2026-03-18
       - name: TorchServe
         homepage_url: https://pytorch.org/serve
         repo_url: https://github.com/pytorch/serve
@@ -125,6 +138,7 @@ subcategories:
         tags:
           - serving
           - pytorch
+        added_at: 2026-03-18
       - name: Triton
         homepage_url: https://developer.nvidia.com/triton-inference-server
         repo_url: https://github.com/triton-inference-server/server
@@ -135,6 +149,7 @@ subcategories:
           - serving
           - nvidia
           - inference
+        added_at: 2026-03-18
   - name: Inference Optimization
     row: 0
     items:
@@ -147,6 +162,7 @@ subcategories:
           - inference
           - llm
           - cpp
+        added_at: 2026-03-18
       - name: ONNX Runtime
         homepage_url: https://onnxruntime.ai
         repo_url: https://github.com/microsoft/onnxruntime
@@ -156,11 +172,13 @@ subcategories:
           - inference
           - optimization
           - cross-platform
+        added_at: 2026-03-18
       - name: SGLang
         homepage_url: https://sglang.io
         repo_url: https://github.com/sgl-project/sglang
         logo: sglang.webp
         description: Fast serving framework for LLMs and VLMs with structured generation support
+        added_at: 2026-03-18
       - name: Sol Engine
         homepage_url: https://nvlabs.github.io/Sana/Sol-Engine/
         repo_url: https://github.com/NVlabs/Sana/tree/sol-engine
@@ -169,6 +187,7 @@ subcategories:
           - inference
           - video
           - optimization
+        added_at: 2026-08-07
       - name: TensorRT
         homepage_url: https://developer.nvidia.com/tensorrt
         logo: nvidia.webp
@@ -177,10 +196,12 @@ subcategories:
           - inference
           - nvidia
           - optimization
+        added_at: 2026-03-18
       - name: TensorRT-LLM
         homepage_url: https://nvidia.github.io/TensorRT-LLM/
         repo_url: https://github.com/NVIDIA/TensorRT-LLM
         description: NVIDIA's LLM inference framework for NVIDIA GPUs with TensorRT acceleration
+        added_at: 2026-03-18
       - name: vLLM
         homepage_url: https://vllm.ai
         repo_url: https://github.com/vllm-project/vllm
@@ -191,6 +212,7 @@ subcategories:
           - inference
           - llm
           - optimization
+        added_at: 2026-03-18
   - name: Training Infrastructure
     row: 0
     items:
@@ -203,6 +225,7 @@ subcategories:
           - training
           - distributed
           - optimization
+        added_at: 2026-03-18
       - name: FSDP
         homepage_url: https://pytorch.org/docs/stable/fsdp.html
         logo: pytorch.webp
@@ -211,6 +234,7 @@ subcategories:
           - training
           - distributed
           - pytorch
+        added_at: 2026-03-18
       - name: Horovod
         homepage_url: https://horovod.ai
         repo_url: https://github.com/horovod/horovod
@@ -220,6 +244,7 @@ subcategories:
         tags:
           - training
           - distributed
+        added_at: 2026-03-18
       - name: Megatron-LM
         homepage_url: https://github.com/NVIDIA/Megatron-LM
         repo_url: https://github.com/NVIDIA/Megatron-LM
@@ -229,6 +254,7 @@ subcategories:
           - training
           - distributed
           - llm
+        added_at: 2026-03-18
       - name: Nanotron
         homepage_url: https://github.com/huggingface/nanotron
         repo_url: https://github.com/huggingface/nanotron
@@ -238,6 +264,7 @@ subcategories:
           - training
           - llm
           - oss
+        added_at: 2026-03-18
   - name: Compute & Hardware
     row: 1
     items:
@@ -249,6 +276,7 @@ subcategories:
           - hardware
           - apple-silicon
           - oss
+        added_at: 2026-03-18
       - name: Cerebras WSE
         homepage_url: https://cerebras.ai
         logo: cerebras.webp
@@ -257,6 +285,7 @@ subcategories:
           - hardware
           - accelerator
           - ai-chip
+        added_at: 2026-03-18
       - name: CUDA
         homepage_url: https://developer.nvidia.com/cuda-toolkit
         logo: nvidia.webp
@@ -265,6 +294,7 @@ subcategories:
           - gpu
           - compute
           - nvidia
+        added_at: 2026-03-18
       - name: Groq LPU
         homepage_url: https://groq.com
         logo: groq.webp
@@ -274,6 +304,7 @@ subcategories:
           - accelerator
           - ai-chip
           - fast-inference
+        added_at: 2026-03-18
       - name: ROCm
         homepage_url: https://rocm.docs.amd.com
         repo_url: https://github.com/ROCm/ROCm
@@ -283,6 +314,7 @@ subcategories:
           - gpu
           - compute
           - amd
+        added_at: 2026-03-18
       - name: Tenstorrent
         homepage_url: https://tenstorrent.com
         logo: tenstorrent.webp
@@ -291,6 +323,7 @@ subcategories:
           - hardware
           - accelerator
           - ai-chip
+        added_at: 2026-03-18
   - name: Local & Edge Inference
     row: 1
     items:
@@ -307,29 +340,35 @@ subcategories:
         repo_url: https://github.com/lm-sys/FastChat
         logo: gh-lm-sys.png
         description: Distributed multi-model LLM serving system with OpenAI-compatible API and web UI
+        added_at: 2026-03-18
       - name: Harbor
         homepage_url: https://github.com/av/harbor
         repo_url: https://github.com/av/harbor
         logo: gh-av.png
         description: Effortlessly run LLM backends, APIs, frontends, and services with one command
+        added_at: 2026-03-18
       - name: LM Studio
         homepage_url: https://lmstudio.ai/
         logo: lm-studio.webp
         twitter_url: https://x.com/lmstudio
         description: Desktop app for discovering, downloading, and running open-weight LLMs locally
+        added_at: 2026-03-18
       - name: ollama
         homepage_url: https://ollama.com
         repo_url: https://github.com/ollama/ollama
         logo: ollama.webp
         description: Run local LLMs (Llama, Qwen, Gemma, and more) with a single command
+        added_at: 2026-03-18
       - name: Open WebUI
         homepage_url: https://openwebui.com/
         repo_url: https://github.com/open-webui/open-webui
         logo: open-webui.webp
         twitter_url: https://x.com/OpenWebUI
         description: Self-hosted chat UI for local and cloud LLMs; Ollama, OpenAI-compatible API, RAG
+        added_at: 2026-03-18
       - name: SillyTavern
         homepage_url: https://sillytavern.app/
         repo_url: https://github.com/SillyTavern/SillyTavern
         logo: sillytavern.webp
         description: Locally installed UI for text, image, and voice LLMs with deep customization
+        added_at: 2026-03-18

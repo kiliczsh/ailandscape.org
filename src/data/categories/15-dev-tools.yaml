@@ -13,12 +13,14 @@ subcategories:
         logo: coderabbit.webp
         twitter_url: https://x.com/coderabbitai
         description: AI-powered code reviews — cut code review time and bugs in half
+        added_at: 2026-03-18
       - name: Ellipsis
         homepage_url: https://www.ellipsis.dev
         description: AI code reviews and bug fixes for pull requests
         tags:
           - coding
           - proprietary
+        added_at: 2026-08-07
       - name: Greptile
         homepage_url: https://www.greptile.com
         twitter_url: https://x.com/greptile
@@ -27,6 +29,7 @@ subcategories:
           - coding
           - api
           - proprietary
+        added_at: 2026-08-07
       - name: Qodo
         homepage_url: https://qodo.ai
         twitter_url: https://x.com/QodoAI
@@ -41,16 +44,20 @@ subcategories:
         homepage_url: https://anannas.ai/
         logo: anannas.webp
         description: Single API to access any LLM with seamless multi-model gateway and cost control
+        added_at: 2026-03-18
       - name: Fabric
         homepage_url: https://github.com/danielmiessler/Fabric
         repo_url: https://github.com/danielmiessler/Fabric
         logo: gh-danielmiessler.png
         description: Open-source modular framework for solving problems using crowdsourced AI prompts
+        added_at: 2026-03-18
       - name: Giga AI
         homepage_url: https://gigamind.dev/context
         logo: giga-ai.webp
         description: Context engineering that improves AI quality and understanding
+        added_at: 2026-03-18
       - name: Vibetunnel
         homepage_url: https://vibetunnel.sh/
         logo: vibetunnel.webp
         description: Proxies your terminals right into the browser so you can vibe-code from anywhere
+        added_at: 2026-03-18

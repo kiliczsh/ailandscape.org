@@ -16,6 +16,7 @@ subcategories:
           - image-generation
           - creative
           - proprietary
+        added_at: 2026-03-18
       - name: Civitai
         homepage_url: https://civitai.com
         twitter_url: https://x.com/HelloCivitai
@@ -31,6 +32,7 @@ subcategories:
           - image-generation
           - api
           - proprietary
+        added_at: 2026-03-30
       - name: Ideogram
         homepage_url: https://ideogram.ai
         description: AI image generator with best-in-class text rendering in images
@@ -38,6 +40,7 @@ subcategories:
           - image-generation
           - text-rendering
           - proprietary
+        added_at: 2026-03-30
       - name: Leonardo AI
         homepage_url: https://leonardo.ai
         description: AI image generation platform for game assets, concept art, and design
@@ -45,6 +48,7 @@ subcategories:
           - image-generation
           - creative
           - proprietary
+        added_at: 2026-03-30
       - name: Midjourney
         homepage_url: https://midjourney.com
         logo: midjourney.webp
@@ -52,6 +56,7 @@ subcategories:
         tags:
           - image-generation
           - proprietary
+        added_at: 2026-03-18
       - name: Recraft
         homepage_url: https://recraft.ai
         twitter_url: https://x.com/recraftai
@@ -70,6 +75,7 @@ subcategories:
           - image-editing
           - inpainting
           - proprietary
+        added_at: 2026-03-30
       - name: Canva Magic Edit
         homepage_url: https://www.canva.com/magic-edit/
         description: AI image editing tools built into the Canva design platform
@@ -77,6 +83,7 @@ subcategories:
           - image-editing
           - design
           - proprietary
+        added_at: 2026-03-30
       - name: Krea AI
         homepage_url: https://www.krea.ai
         twitter_url: https://x.com/krea_ai
@@ -85,6 +92,7 @@ subcategories:
           - image-editing
           - real-time
           - proprietary
+        added_at: 2026-03-30
       - name: Magnific
         homepage_url: https://magnific.ai
         twitter_url: https://x.com/Magnific_AI
@@ -110,6 +118,7 @@ subcategories:
         tags:
           - video-generation
           - proprietary
+        added_at: 2026-03-18
       - name: Luma Dream Machine
         homepage_url: https://lumalabs.ai/dream-machine
         twitter_url: https://x.com/LumaLabsAI
@@ -117,6 +126,7 @@ subcategories:
         tags:
           - video-generation
           - proprietary
+        added_at: 2026-03-30
       - name: Pika
         homepage_url: https://pika.art
         logo: pika.webp
@@ -125,6 +135,7 @@ subcategories:
         tags:
           - video-generation
           - proprietary
+        added_at: 2026-03-18
       - name: Runway Gen-3
         homepage_url: https://runwayml.com
         logo: runway.webp
@@ -132,6 +143,7 @@ subcategories:
         tags:
           - video-generation
           - proprietary
+        added_at: 2026-03-18
       - name: Sora
         homepage_url: https://openai.com/sora
         logo: openai.webp
@@ -139,6 +151,7 @@ subcategories:
         tags:
           - video-generation
           - proprietary
+        added_at: 2026-03-18
   - name: Video-to-Video & Stylization
     row: 1
     items:
@@ -149,6 +162,7 @@ subcategories:
           - video-editing
           - animation
           - proprietary
+        added_at: 2026-03-30
       - name: Runway
         homepage_url: https://runwayml.com
         logo: runway.webp
@@ -158,6 +172,7 @@ subcategories:
           - video-editing
           - stylization
           - proprietary
+        added_at: 2026-03-18
       - name: Topaz Video AI
         homepage_url: https://www.topazlabs.com/topaz-video-ai
         twitter_url: https://x.com/topazlabs
@@ -166,6 +181,7 @@ subcategories:
           - video-editing
           - upscaling
           - proprietary
+        added_at: 2026-03-30
   - name: Avatar & Lip-sync Video
     row: 1
     items:
@@ -176,6 +192,7 @@ subcategories:
           - avatar
           - lip-sync
           - proprietary
+        added_at: 2026-03-30
       - name: HeyGen
         homepage_url: https://www.heygen.com
         twitter_url: https://x.com/HeyGen
@@ -184,6 +201,7 @@ subcategories:
           - avatar
           - lip-sync
           - proprietary
+        added_at: 2026-03-30
       - name: Lumiere
         homepage_url: https://lumiere-video.github.io
         logo: google-cloud.webp
@@ -191,6 +209,7 @@ subcategories:
         tags:
           - video-generation
           - research
+        added_at: 2026-03-18
       - name: Synthesia
         homepage_url: https://www.synthesia.io
         description: AI video generation with digital avatars for enterprise communications
@@ -198,3 +217,4 @@ subcategories:
           - avatar
           - enterprise
           - proprietary
+        added_at: 2026-03-30

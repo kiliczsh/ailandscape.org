@@ -13,95 +13,114 @@ subcategories:
         repo_url: https://github.com/21st-dev/1code
         logo: 1code.webp
         description: "UI for Claude Code with local and remote agent execution"
+        added_at: 2026-03-18
       - name: ai-maestro
         homepage_url: https://ai-maestro.23blocks.com
         repo_url: https://github.com/23blocks-OS/ai-maestro
         logo: ai-maestro.webp
         description: "Dashboard for orchestrating Claude, Aider, and Cursor agents across machines"
+        added_at: 2026-03-18
       - name: aizen
         homepage_url: https://aizen.win
         repo_url: https://github.com/vivy-company/aizen
         logo: aizen.webp
         description: "macOS workspace giving each git worktree its own terminal, browser, and agent"
+        added_at: 2026-03-18
       - name: ariana
         homepage_url: https://ariana.dev
         repo_url: https://github.com/ariana-dot-dev/ariana
         logo: ariana.webp
         description: "The IDE of the future"
+        added_at: 2026-03-18
       - name: automaker
         homepage_url: https://automaker.app/
         repo_url: https://github.com/AutoMaker-Org/automaker
         logo: automaker.webp
         description: "Kanban-driven autonomous AI development studio; Electron desktop and web mode"
+        added_at: 2026-03-18
       - name: CodexMonitor
         homepage_url: https://www.codexmonitor.app
         repo_url: https://github.com/Dimillian/CodexMonitor
         logo: codexmonitor.webp
         description: "Orchestrate multiple Codex agents across local workspaces"
+        added_at: 2026-03-18
       - name: constellagent
         homepage_url: https://constellagent.vercel.app/
         repo_url: https://github.com/owengretzinger/constellagent
         description: "macOS app where each agent gets its own terminal, editor, and git worktree"
+        added_at: 2026-03-18
       - name: crystal
         homepage_url: https://nimbalyst.com/
         repo_url: https://github.com/stravu/crystal
         logo: crystal.webp
         description: "Run multiple Codex and Claude Code sessions in parallel git worktrees"
+        added_at: 2026-03-18
       - name: dorothy
         homepage_url: https://dorothyai.app
         repo_url: https://github.com/Charlie85270/Dorothy
         logo: dorothy.webp
         description: "Desktop app for orchestrating multiple AI CLI agents with automations and Kanban"
+        added_at: 2026-03-18
       - name: emdash
         homepage_url: https://emdash.sh
         repo_url: https://github.com/generalaction/emdash
         logo: emdash.webp
         description: "Agentic Development Environment; 22+ agents, SSH remote support (YC W26)"
+        added_at: 2026-03-18
       - name: Happy Coder
         homepage_url: https://happy.engineering
         repo_url: https://github.com/slopus/happy
         logo: happy-coder.webp
         description: "Mobile and web client for Claude Code and Codex with realtime voice"
+        added_at: 2026-03-18
       - name: jat
         homepage_url: https://jat.tools
         repo_url: https://github.com/joewinke/jat
         logo: jat.webp
         description: "Agentic IDE"
+        added_at: 2026-03-18
       - name: jean
         homepage_url: https://jean.build
         repo_url: https://github.com/coollabsio/jean
         logo: jean.webp
         description: "Orchestrate Claude, Codex, and OpenCode agents across projects and git worktrees"
+        added_at: 2026-03-18
       - name: mux
         homepage_url: https://mux.coder.com
         repo_url: https://github.com/coder/mux
         logo: mux.webp
         description: "Desktop app for isolated, parallel agentic development"
+        added_at: 2026-03-18
       - name: supacode
         homepage_url: https://supacode.sh
         repo_url: https://github.com/supabitapp/supacode
         logo: supacode.webp
         description: "Native macOS coding agent orchestrator"
+        added_at: 2026-03-18
       - name: t3code
         homepage_url: https://t3.codes
         repo_url: https://github.com/pingdotgg/t3code
         logo: t3code.webp
         description: "Minimal web GUI for coding agents"
+        added_at: 2026-03-18
       - name: vibe-kanban
         homepage_url: https://www.vibekanban.com/
         repo_url: https://github.com/BloopAI/vibe-kanban
         logo: vibe-kanban.webp
         description: "Kanban board for managing AI coding agents; Tauri desktop and self-hostable web"
+        added_at: 2026-03-18
       - name: vibe-tree
         homepage_url: https://github.com/sahithvibudhi/vibe-tree
         repo_url: https://github.com/sahithvibudhi/vibe-tree
         logo: gh-sahithvibudhi.png
         description: "Vibe code with Claude in parallel git worktrees"
+        added_at: 2026-03-18
       - name: vibecraft
         homepage_url: https://github.com/rayzhudev/vibecraft
         repo_url: https://github.com/rayzhudev/vibecraft
         logo: gh-rayzhudev.png
         description: "RTS-style workspace for managing AI coding agents"
+        added_at: 2026-03-18
   - name: Event-Driven Automation
     row: 0
     items:
@@ -110,35 +129,42 @@ subcategories:
         repo_url: https://github.com/asheshgoplani/agent-deck
         logo: agent-deck.webp
         description: "Terminal session manager for AI coding agents"
+        added_at: 2026-03-18
       - name: amux
         homepage_url: https://github.com/andyrewlee/amux
         repo_url: https://github.com/andyrewlee/amux
         logo: gh-andyrewlee.png
         description: "TUI for easily running parallel coding agents"
+        added_at: 2026-03-18
       - name: claude_code_bridge
         homepage_url: https://github.com/bfly123/claude_code_bridge
         repo_url: https://github.com/bfly123/claude_code_bridge
         logo: gh-bfly123.png
         description: "Real-time multi-AI collaboration bridge"
+        added_at: 2026-03-18
       - name: claude-code-router
         homepage_url: https://github.com/musistudio/claude-code-router
         repo_url: https://github.com/musistudio/claude-code-router
         logo: gh-musistudio.png
         description: "Route Claude Code requests to different models with multi-provider support"
+        added_at: 2026-03-18
       - name: claude-squad
         homepage_url: https://smtg-ai.github.io/claude-squad/
         repo_url: https://github.com/smtg-ai/claude-squad
         description: "Manage multiple AI terminal agents in the background"
+        added_at: 2026-03-18
       - name: cmux
         homepage_url: https://cmux.dev
         repo_url: https://github.com/manaflow-ai/cmux
         logo: cmux.webp
         description: "Open-source platform for running multiple coding agents in parallel"
+        added_at: 2026-03-18
       - name: dmux
         homepage_url: https://dmux.ai
         repo_url: https://github.com/standardagents/dmux
         logo: dmux.webp
         description: "Parallel agents with tmux and worktrees"
+        added_at: 2026-03-18
       - name: Herdr
         homepage_url: https://herdr.dev
         repo_url: https://github.com/herdrdev/herdr
@@ -147,26 +173,31 @@ subcategories:
           - agents
           - automation
           - oss
+        added_at: 2026-08-07
       - name: Kagan
         homepage_url: https://github.com/aorumbayev/kagan
         repo_url: https://github.com/aorumbayev/kagan
         logo: gh-aorumbayev.png
         description: "AI Kanban TUI for autonomous development workflows with Claude Code integration"
+        added_at: 2026-03-18
       - name: openkanban
         homepage_url: https://github.com/TechDufus/openkanban
         repo_url: https://github.com/techdufus/openkanban
         logo: gh-TechDufus.png
         description: "TUI kanban board for orchestrating AI coding agents"
+        added_at: 2026-03-18
       - name: subtask
         homepage_url: https://github.com/zippoxer/subtask
         repo_url: https://github.com/zippoxer/subtask
         logo: gh-zippoxer.png
         description: "Claude skill for running subagents across Git worktrees"
+        added_at: 2026-03-18
       - name: superset
         homepage_url: https://superset.sh
         repo_url: https://github.com/superset-sh/superset
         logo: superset.webp
         description: "A terminal environment built for coding agents"
+        added_at: 2026-03-18
   - name: Task Schedulers
     row: 0
     items:
@@ -174,41 +205,50 @@ subcategories:
         homepage_url: https://aperant.com
         repo_url: https://github.com/AndyMik90/Aperant
         description: "Autonomous multi-session AI coding"
+        added_at: 2026-03-18
       - name: nullclaw
         homepage_url: https://nullclaw.io
         repo_url: https://github.com/nullclaw/nullclaw
         description: "Fastest, smallest, fully autonomous AI assistant infrastructure"
+        added_at: 2026-03-18
       - name: ralph-claude-code
         homepage_url: https://github.com/frankbria/ralph-claude-code
         repo_url: https://github.com/frankbria/ralph-claude-code
         logo: gh-frankbria.png
         description: "Autonomous AI development loop for Claude Code with intelligent exit detection"
+        added_at: 2026-03-18
       - name: ralph-orchestrator
         homepage_url: https://github.com/mikeyobrien/ralph-orchestrator
         repo_url: https://github.com/mikeyobrien/ralph-orchestrator
         logo: gh-mikeyobrien.png
         description: "Hat-based orchestration that keeps agents in a loop until the task is done"
+        added_at: 2026-03-18
       - name: ralph-tui
         homepage_url: https://ralph-tui.com
         repo_url: https://github.com/subsy/ralph-tui
         logo: ralph-tui.webp
         description: "Orchestrate AI coding agents to work through task lists autonomously"
+        added_at: 2026-03-18
       - name: ralphy
         homepage_url: https://ralphy.goshen.fyi
         repo_url: https://github.com/michaelshimeles/ralphy
         description: "Runs AI agents on tasks until done"
+        added_at: 2026-03-18
       - name: symphony
         homepage_url: https://github.com/openai/symphony
         repo_url: https://github.com/openai/symphony
         logo: gh-openai.png
         description: "Turns project work into isolated, autonomous implementation runs"
+        added_at: 2026-03-18
       - name: wreckit
         homepage_url: https://npmjs.com/package/wreckit
         repo_url: https://github.com/mikehostetler/wreckit
         logo: wreckit.webp
         description: "Run the Ralph Wiggum Loop over your roadmap"
+        added_at: 2026-03-18
       - name: zeroclaw
         homepage_url: https://www.zeroclawlabs.ai/
         repo_url: https://github.com/zeroclaw-labs/zeroclaw
         logo: zeroclaw.webp
         description: "Fast, small, fully autonomous AI assistant infrastructure"
+        added_at: 2026-03-18

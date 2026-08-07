@@ -13,21 +13,25 @@ subcategories:
         logo: abridge.webp
         description: "AI for automated clinical note generation"
         tags: [healthcare, documentation, proprietary]
+        added_at: 2026-03-18
       - name: BioMedLM
         homepage_url: https://crfm.stanford.edu/2022/12/15/biomedlm.html
         logo: stanford.webp
         description: "Stanford's biomedical language model"
         tags: [healthcare, llm, open-weights]
+        added_at: 2026-03-18
       - name: Med-PaLM 2
         homepage_url: https://sites.research.google/med-palm
         logo: google-cloud.webp
         description: "Google's medical question-answering AI model"
         tags: [healthcare, llm, research]
+        added_at: 2026-03-18
       - name: Nabla
         homepage_url: https://nabla.com
         logo: nabla.webp
         description: "AI-powered ambient documentation for clinicians"
         tags: [healthcare, documentation, proprietary]
+        added_at: 2026-03-18
   - name: Legal
     row: 0
     items:
@@ -36,17 +40,20 @@ subcategories:
         logo: casetext.webp
         description: "AI legal research assistant acquired by Thomson Reuters"
         tags: [legal, research, proprietary]
+        added_at: 2026-03-18
       - name: Harvey AI
         homepage_url: https://harvey.ai
         logo: harvey.webp
         twitter_url: https://x.com/harvey
         description: "AI platform for legal research and document drafting"
         tags: [legal, llm, proprietary]
+        added_at: 2026-03-18
       - name: Lexis+ AI
         homepage_url: https://lexisnexis.com/en-us/products/lexis-plus-ai.page
         logo: lexisnexis.webp
         description: "LexisNexis AI-powered legal research platform"
         tags: [legal, research, proprietary]
+        added_at: 2026-03-18
   - name: Finance
     row: 0
     items:
@@ -55,17 +62,20 @@ subcategories:
         logo: bloomberg.webp
         description: "Bloomberg's LLM trained on financial data"
         tags: [finance, llm, proprietary]
+        added_at: 2026-03-18
       - name: FinGPT
         homepage_url: https://github.com/AI4Finance-Foundation/FinGPT
         repo_url: https://github.com/AI4Finance-Foundation/FinGPT
         logo: gh-AI4Finance-Foundation.png
         description: "Open-source financial LLM framework"
         tags: [finance, llm, oss]
+        added_at: 2026-03-18
       - name: Kensho
         homepage_url: https://www.spglobal.com/en/research-insights/market-insights/kensho
         logo: kensho.webp
         description: "S&P Global's AI analytics for financial intelligence"
         tags: [finance, analytics, proprietary]
+        added_at: 2026-03-18
   - name: Education
     row: 0
     items:
@@ -74,13 +84,16 @@ subcategories:
         logo: duolingo.webp
         description: "Duolingo's AI-powered language learning features"
         tags: [education, language-learning, proprietary]
+        added_at: 2026-03-18
       - name: Khanmigo
         homepage_url: https://khanacademy.org/khan-labs
         logo: khanacademy.webp
         description: "Khan Academy's AI tutor and teaching assistant"
         tags: [education, tutor, proprietary]
+        added_at: 2026-03-18
       - name: Synthesis Tutor
         homepage_url: https://synthesis.com
         logo: synthesis.webp
         description: "Adaptive AI math tutor for K-12 students"
         tags: [education, math, proprietary]
+        added_at: 2026-03-18

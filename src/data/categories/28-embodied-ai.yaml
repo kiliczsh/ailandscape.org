@@ -16,6 +16,7 @@ subcategories:
           - robotics
           - oss
           - open-weights
+        added_at: 2026-08-07
       - name: NVIDIA Cosmos
         homepage_url: https://www.nvidia.com/en-us/ai/cosmos/
         description: World foundation models for physical AI development
@@ -23,6 +24,7 @@ subcategories:
           - robotics
           - simulation
           - open-weights
+        added_at: 2026-08-07
       - name: Physical Intelligence π0
         homepage_url: https://www.physicalintelligence.company
         repo_url: https://github.com/Physical-Intelligence/openpi
@@ -31,6 +33,7 @@ subcategories:
         tags:
           - robotics
           - open-weights
+        added_at: 2026-08-07
       - name: Xiaomi Robotics XR-1
         homepage_url: https://robotics.xiaomi.com/xiaomi-robotics-1.html
         repo_url: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1
@@ -39,6 +42,7 @@ subcategories:
           - robotics
           - multimodal
           - open-weights
+        added_at: 2026-08-07
   - name: Simulation & Training
     row: 0
     items:
@@ -50,6 +54,7 @@ subcategories:
           - robotics
           - simulation
           - oss
+        added_at: 2026-08-07
       - name: NVIDIA Isaac Lab
         homepage_url: https://developer.nvidia.com/isaac/lab
         repo_url: https://github.com/isaac-sim/IsaacLab
@@ -58,6 +63,7 @@ subcategories:
           - robotics
           - simulation
           - oss
+        added_at: 2026-08-07
       - name: NVIDIA Isaac Sim
         homepage_url: https://developer.nvidia.com/isaac/sim
         description: Robotics simulation and synthetic data generation platform
@@ -65,6 +71,7 @@ subcategories:
           - robotics
           - simulation
           - proprietary
+        added_at: 2026-08-07
   - name: Robot Middleware
     row: 0
     items:
@@ -75,3 +82,4 @@ subcategories:
         tags:
           - robotics
           - oss
+        added_at: 2026-08-07

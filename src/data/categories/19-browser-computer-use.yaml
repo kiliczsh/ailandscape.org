@@ -14,6 +14,7 @@ subcategories:
         logo: browser-use.webp
         description: "Enable AI agents to control web browsers"
         tags: [agents, browser, automation, oss]
+        added_at: 2026-03-18
       - name: Browserbase
         homepage_url: https://www.browserbase.com
         repo_url: https://github.com/browserbase/stagehand
@@ -22,6 +23,7 @@ subcategories:
           - agents
           - browser
           - api
+        added_at: 2026-08-07
       - name: Hyperbrowser
         homepage_url: https://hyperbrowser.ai
         description: Scalable headless browser platform for AI agents
@@ -29,18 +31,21 @@ subcategories:
           - agents
           - browser
           - api
+        added_at: 2026-08-07
       - name: Magine
         homepage_url: https://magine.cloud
         repo_url: https://github.com/S4nfs/Magine
         logo: magine.webp
         description: "Vision-enabled AI agents (SDAs) that autonomously browse the web using real-time screen capture and MoE planning"
         tags: [agents, browser, automation, vision]
+        added_at: 2026-04-03
       - name: Playwright Agent
         homepage_url: https://playwright.dev
         repo_url: https://github.com/microsoft/playwright
         logo: playwright.webp
         description: "Browser automation framework used by AI agents"
         tags: [agents, browser, automation, oss]
+        added_at: 2026-03-18
       - name: Skyvern
         homepage_url: https://www.skyvern.com
         repo_url: https://github.com/Skyvern-AI/skyvern
@@ -50,12 +55,14 @@ subcategories:
           - browser
           - automation
           - oss
+        added_at: 2026-08-07
       - name: Steel Browser
         homepage_url: https://steel.dev
         repo_url: https://github.com/steel-dev/steel-browser
         logo: steel-browser.webp
         description: "Open-source browser sandbox and automation infrastructure for AI agents"
         tags: [agents, browser, automation, oss]
+        added_at: 2026-03-18
   - name: Computer Use (OS-Level)
     row: 0
     items:
@@ -64,6 +71,7 @@ subcategories:
         logo: anthropic.webp
         description: "Claude's ability to control computers like a human"
         tags: [agents, computer-use, automation]
+        added_at: 2026-03-18
       - name: Manus
         homepage_url: https://manus.im
         twitter_url: https://x.com/ManusAI
@@ -78,6 +86,7 @@ subcategories:
           - agents
           - computer-use
           - automation
+        added_at: 2026-08-07
   - name: Web Scraping & Crawling
     row: 0
     items:
@@ -89,6 +98,7 @@ subcategories:
           - browser
           - automation
           - api
+        added_at: 2026-08-07
       - name: Crawl4AI
         homepage_url: https://crawl4ai.com
         repo_url: https://github.com/unclecode/crawl4ai
@@ -96,8 +106,10 @@ subcategories:
         tags:
           - automation
           - oss
+        added_at: 2026-08-07
       - name: Firecrawl
         homepage_url: https://firecrawl.dev/
         repo_url: https://github.com/mendableai/firecrawl
         logo: firecrawl.webp
         description: "Turn any website into clean, LLM-ready markdown for RAG pipelines and agents"
+        added_at: 2026-03-18

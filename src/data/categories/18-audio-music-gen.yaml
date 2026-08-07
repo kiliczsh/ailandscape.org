@@ -17,6 +17,7 @@ subcategories:
           - tts
           - voice
           - oss
+        added_at: 2026-03-30
       - name: ElevenLabs
         homepage_url: https://elevenlabs.io
         logo: elevenlabs.webp
@@ -26,6 +27,7 @@ subcategories:
           - tts
           - voice
           - api
+        added_at: 2026-03-18
       - name: Fish Audio
         homepage_url: https://fish.audio
         repo_url: https://github.com/fishaudio/fish-speech
@@ -42,6 +44,7 @@ subcategories:
           - tts
           - voice
           - api
+        added_at: 2026-03-18
       - name: PlayHT
         homepage_url: https://play.ht
         description: AI voice generator with ultra-realistic text-to-speech and voice cloning
@@ -49,6 +52,7 @@ subcategories:
           - tts
           - voice
           - api
+        added_at: 2026-03-30
   - name: Voice Cloning & Dubbing
     row: 0
     items:
@@ -59,6 +63,7 @@ subcategories:
           - voice-cloning
           - editing
           - proprietary
+        added_at: 2026-03-30
       - name: ElevenLabs Voice Clone
         homepage_url: https://elevenlabs.io/voice-cloning
         logo: elevenlabs.webp
@@ -67,6 +72,7 @@ subcategories:
           - voice-cloning
           - tts
           - proprietary
+        added_at: 2026-03-30
       - name: Resemble AI
         homepage_url: https://www.resemble.ai
         twitter_url: https://x.com/resembleai
@@ -75,6 +81,7 @@ subcategories:
           - voice-cloning
           - tts
           - proprietary
+        added_at: 2026-03-30
   - name: Music Composition
     row: 0
     items:
@@ -85,6 +92,7 @@ subcategories:
           - music
           - composition
           - proprietary
+        added_at: 2026-03-30
       - name: Soundraw
         homepage_url: https://soundraw.io
         description: AI music generator for creators — customize length, mood, and instruments
@@ -92,6 +100,7 @@ subcategories:
           - music
           - generation
           - proprietary
+        added_at: 2026-03-30
       - name: Suno
         homepage_url: https://suno.com
         logo: suno.webp
@@ -100,6 +109,7 @@ subcategories:
           - music
           - generation
           - proprietary
+        added_at: 2026-03-18
       - name: Udio
         homepage_url: https://udio.com
         logo: udio.webp
@@ -108,6 +118,7 @@ subcategories:
           - music
           - generation
           - proprietary
+        added_at: 2026-03-18
   - name: Sound Effects (SFX) Gen
     row: 0
     items:
@@ -119,6 +130,7 @@ subcategories:
           - sfx
           - audio
           - proprietary
+        added_at: 2026-03-30
       - name: Stability Audio
         homepage_url: https://www.stableaudio.com
         logo: stability-ai.webp
@@ -128,3 +140,4 @@ subcategories:
           - audio
           - music
           - proprietary
+        added_at: 2026-03-30

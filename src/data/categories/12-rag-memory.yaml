@@ -14,12 +14,14 @@ subcategories:
         logo: dspy.webp
         description: "Framework for algorithmically optimizing LM prompts and pipelines"
         tags: [llm, framework, optimization]
+        added_at: 2026-03-18
       - name: Haystack
         homepage_url: https://haystack.deepset.ai
         repo_url: https://github.com/deepset-ai/haystack
         logo: haystack.webp
         description: "End-to-end NLP framework for LLM apps"
         tags: [llm, framework, search]
+        added_at: 2026-03-18
       - name: LangChain
         homepage_url: https://langchain.com
         repo_url: https://github.com/langchain-ai/langchain
@@ -27,6 +29,7 @@ subcategories:
         twitter_url: https://x.com/LangChain
         description: "Framework for developing LLM-powered applications"
         tags: [llm, framework, python]
+        added_at: 2026-03-18
       - name: LlamaIndex
         homepage_url: https://llamaindex.ai
         repo_url: https://github.com/run-llama/llama_index
@@ -34,18 +37,21 @@ subcategories:
         twitter_url: https://x.com/llama_index
         description: "Data framework for LLM applications"
         tags: [llm, framework, rag]
+        added_at: 2026-03-18
       - name: Semantic Kernel
         homepage_url: https://learn.microsoft.com/semantic-kernel
         repo_url: https://github.com/microsoft/semantic-kernel
         logo: microsoft.webp
         description: "Microsoft's SDK for AI orchestration"
         tags: [llm, framework, dotnet, python]
+        added_at: 2026-03-18
       - name: Spring AI
         homepage_url: https://spring.io/projects/spring-ai
         repo_url: https://github.com/spring-projects/spring-ai
         logo: spring.webp
         description: "Spring framework for Java AI application development"
         tags: [llm, framework, java]
+        added_at: 2026-03-18
   - name: Retrieval & Reranking
     row: 0
     items:
@@ -55,28 +61,33 @@ subcategories:
         logo: hugging-face.webp
         description: "BAAI's high-performance multilingual reranker"
         tags: [rag, reranking, multilingual, oss]
+        added_at: 2026-03-18
       - name: Cohere Rerank 3
         homepage_url: https://cohere.com/rerank
         logo: cohere.webp
         description: "State-of-the-art reranking model for RAG relevance"
         tags: [rag, reranking, api]
+        added_at: 2026-03-18
       - name: ColBERT
         homepage_url: https://github.com/stanford-futuredata/ColBERT
         repo_url: https://github.com/stanford-futuredata/ColBERT
         logo: stanford.webp
         description: "Late interaction retrieval model with token-level embeddings"
         tags: [rag, retrieval, reranking, oss]
+        added_at: 2026-03-18
       - name: FlashRank
         homepage_url: https://github.com/PrithivirajDamodaran/FlashRank
         repo_url: https://github.com/PrithivirajDamodaran/FlashRank
         logo: gh-PrithivirajDamodaran.png
         description: "Ultra-lite cross-encoder reranking for RAG"
         tags: [rag, reranking, oss]
+        added_at: 2026-03-18
       - name: Jina Reranker
         homepage_url: https://jina.ai/reranker
         logo: jina.webp
         description: "Multilingual reranker for improving RAG precision"
         tags: [rag, reranking, multilingual]
+        added_at: 2026-03-18
   - name: Document Parsing
     row: 0
     items:
@@ -86,28 +97,33 @@ subcategories:
         logo: gh-DS4SD.png
         description: "IBM's fast document conversion and parsing toolkit"
         tags: [document-processing, pdf, oss]
+        added_at: 2026-03-18
       - name: LlamaParse
         homepage_url: https://llamaindex.ai/llamaparse
         logo: llamaindex.webp
         description: "Optimized document parsing for RAG by LlamaIndex"
         tags: [document-processing, pdf, api]
+        added_at: 2026-03-18
       - name: Marker
         homepage_url: https://github.com/VikParuchuri/marker
         repo_url: https://github.com/VikParuchuri/marker
         logo: gh-VikParuchuri.png
         description: "Convert PDFs to markdown quickly and accurately"
         tags: [document-processing, pdf, oss]
+        added_at: 2026-03-18
       - name: Reducto
         homepage_url: https://reducto.ai
         logo: reducto.webp
         description: "High-accuracy document extraction for complex PDFs"
         tags: [document-processing, pdf, api]
+        added_at: 2026-03-18
       - name: Unstructured
         homepage_url: https://unstructured.io
         repo_url: https://github.com/Unstructured-IO/unstructured
         logo: unstructured.webp
         description: "Document processing for RAG pipelines"
         tags: [rag, document-processing, oss]
+        added_at: 2026-03-18
   - name: Memory Layer
     row: 0
     items:
@@ -119,6 +135,7 @@ subcategories:
           - memory
           - agents
           - oss
+        added_at: 2026-08-07
       - name: Mem0
         homepage_url: https://mem0.ai
         repo_url: https://github.com/mem0ai/mem0
@@ -127,11 +144,13 @@ subcategories:
           - memory
           - agents
           - oss
+        added_at: 2026-08-07
       - name: Letta (MemGPT)
         homepage_url: https://docs.letta.com/
         repo_url: https://github.com/cpacker/MemGPT
         logo: memgpt.webp
         description: "OS-inspired memory management for LLMs enabling unbounded virtual context"
+        added_at: 2026-08-07
 
       - name: supermemory
         homepage_url: https://supermemory.ai
@@ -150,3 +169,4 @@ subcategories:
           - memory
           - agents
           - oss
+        added_at: 2026-08-07

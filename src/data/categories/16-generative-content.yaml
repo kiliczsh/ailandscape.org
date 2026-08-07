@@ -15,6 +15,7 @@ subcategories:
           - copywriting
           - marketing
           - proprietary
+        added_at: 2026-03-30
       - name: Copy.ai
         homepage_url: https://www.copy.ai
         description: AI-powered marketing copy and sales content generation platform
@@ -22,6 +23,7 @@ subcategories:
           - copywriting
           - marketing
           - proprietary
+        added_at: 2026-03-30
       - name: Jasper
         homepage_url: https://www.jasper.ai
         description: AI marketing copilot for brand-consistent content at scale
@@ -29,6 +31,7 @@ subcategories:
           - copywriting
           - marketing
           - proprietary
+        added_at: 2026-03-30
       - name: Writesonic
         homepage_url: https://writesonic.com
         twitter_url: https://x.com/WriteSonic
@@ -37,6 +40,7 @@ subcategories:
           - copywriting
           - seo
           - proprietary
+        added_at: 2026-03-30
   - name: Long-form Writing & Editorial
     row: 0
     items:
@@ -47,6 +51,7 @@ subcategories:
           - writing
           - editorial
           - proprietary
+        added_at: 2026-03-18
       - name: Notion AI
         homepage_url: https://www.notion.so/product/ai
         description: AI writing and knowledge assistant built into the Notion workspace
@@ -54,6 +59,7 @@ subcategories:
           - writing
           - productivity
           - proprietary
+        added_at: 2026-03-30
       - name: Sudowrite
         homepage_url: https://www.sudowrite.com
         twitter_url: https://x.com/sudowrite
@@ -62,6 +68,7 @@ subcategories:
           - writing
           - fiction
           - proprietary
+        added_at: 2026-03-30
       - name: Writer
         homepage_url: https://writer.com
         description: Enterprise AI writing platform with brand voice and compliance controls
@@ -69,6 +76,7 @@ subcategories:
           - writing
           - enterprise
           - proprietary
+        added_at: 2026-03-30
   - name: Email & Communication Gen
     row: 0
     items:
@@ -79,6 +87,7 @@ subcategories:
           - email
           - productivity
           - proprietary
+        added_at: 2026-03-30
       - name: Lavender
         homepage_url: https://www.lavender.ai
         description: AI email coaching and writing assistant for sales teams
@@ -86,6 +95,7 @@ subcategories:
           - email
           - sales
           - proprietary
+        added_at: 2026-03-30
       - name: Superhuman AI
         homepage_url: https://superhuman.com
         description: AI-powered email client with instant reply drafting and summarization
@@ -93,6 +103,7 @@ subcategories:
           - email
           - productivity
           - proprietary
+        added_at: 2026-03-30
   - name: Presentation & Slide Gen
     row: 0
     items:
@@ -103,6 +114,7 @@ subcategories:
           - presentations
           - design
           - proprietary
+        added_at: 2026-03-30
       - name: Gamma
         homepage_url: https://gamma.app
         description: AI-powered presentation and document builder from text prompts
@@ -110,6 +122,7 @@ subcategories:
           - presentations
           - design
           - proprietary
+        added_at: 2026-03-30
       - name: Napkin AI
         homepage_url: https://napkin.ai
         twitter_url: https://x.com/napkin_ai
@@ -124,6 +137,7 @@ subcategories:
           - presentations
           - google-slides
           - proprietary
+        added_at: 2026-03-30
       - name: Tome
         homepage_url: https://tome.app
         description: AI-native storytelling and presentation format for ideas and proposals
@@ -131,3 +145,4 @@ subcategories:
           - presentations
           - storytelling
           - proprietary
+        added_at: 2026-03-30

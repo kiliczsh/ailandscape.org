@@ -17,6 +17,7 @@ subcategories:
           - streaming
           - distributed
           - java
+        added_at: 2026-03-18
       - name: Apache Hadoop
         homepage_url: https://hadoop.apache.org
         repo_url: https://github.com/apache/hadoop
@@ -26,6 +27,7 @@ subcategories:
           - batch
           - distributed
           - hdfs
+        added_at: 2026-03-18
       - name: Apache Kafka
         homepage_url: https://kafka.apache.org
         repo_url: https://github.com/apache/kafka
@@ -34,6 +36,7 @@ subcategories:
         tags:
           - streaming
           - messaging
+        added_at: 2026-03-18
       - name: Apache Pulsar
         homepage_url: https://pulsar.apache.org
         repo_url: https://github.com/apache/pulsar
@@ -42,6 +45,7 @@ subcategories:
         tags:
           - streaming
           - messaging
+        added_at: 2026-03-18
       - name: Apache Spark
         homepage_url: https://spark.apache.org
         repo_url: https://github.com/apache/spark
@@ -53,6 +57,7 @@ subcategories:
           - distributed
           - python
           - scala
+        added_at: 2026-03-18
       - name: dbt
         homepage_url: https://getdbt.com
         repo_url: https://github.com/dbt-labs/dbt-core
@@ -62,6 +67,7 @@ subcategories:
           - batch
           - sql
           - transformation
+        added_at: 2026-03-18
       - name: Redpanda
         homepage_url: https://redpanda.com
         repo_url: https://github.com/redpanda-data/redpanda
@@ -71,6 +77,7 @@ subcategories:
           - streaming
           - messaging
           - kafka
+        added_at: 2026-03-18
   - name: Ingestion & Integration
     row: 0
     items:
@@ -84,6 +91,7 @@ subcategories:
           - ingestion
           - etl
           - connectors
+        added_at: 2026-03-18
       - name: dltHub
         homepage_url: https://dlthub.com
         repo_url: https://github.com/dlt-hub/dlt
@@ -93,6 +101,7 @@ subcategories:
           - ingestion
           - etl
           - python
+        added_at: 2026-03-18
       - name: Fivetran
         homepage_url: https://fivetran.com
         logo: fivetran.webp
@@ -101,6 +110,7 @@ subcategories:
           - ingestion
           - etl
           - saas
+        added_at: 2026-03-18
       - name: Meltano
         homepage_url: https://meltano.com
         repo_url: https://github.com/meltano/meltano
@@ -110,6 +120,7 @@ subcategories:
           - ingestion
           - etl
           - oss
+        added_at: 2026-03-18
       - name: Stitch
         homepage_url: https://stitchdata.com
         logo: stitch.webp
@@ -117,6 +128,7 @@ subcategories:
         tags:
           - ingestion
           - etl
+        added_at: 2026-03-18
   - name: Data Lakehouse
     row: 0
     items:
@@ -128,6 +140,7 @@ subcategories:
         tags:
           - lakehouse
           - streaming
+        added_at: 2026-03-18
       - name: Apache Iceberg
         homepage_url: https://iceberg.apache.org
         repo_url: https://github.com/apache/iceberg
@@ -136,6 +149,7 @@ subcategories:
         tags:
           - lakehouse
           - table-format
+        added_at: 2026-03-18
       - name: Delta Lake
         homepage_url: https://delta.io
         repo_url: https://github.com/delta-io/delta
@@ -145,6 +159,7 @@ subcategories:
         tags:
           - lakehouse
           - acid
+        added_at: 2026-03-18
   - name: Data Catalog
     row: 1
     items:
@@ -155,6 +170,7 @@ subcategories:
         tags:
           - catalog
           - enterprise
+        added_at: 2026-03-18
       - name: Amundsen
         homepage_url: https://www.amundsen.io
         repo_url: https://github.com/amundsen-io/amundsen
@@ -164,6 +180,7 @@ subcategories:
           - catalog
           - discovery
           - oss
+        added_at: 2026-03-18
       - name: Apache Atlas
         homepage_url: https://atlas.apache.org
         repo_url: https://github.com/apache/atlas
@@ -172,6 +189,7 @@ subcategories:
         tags:
           - catalog
           - governance
+        added_at: 2026-03-18
       - name: DataHub
         homepage_url: https://datahubproject.io
         repo_url: https://github.com/datahub-project/datahub
@@ -180,6 +198,7 @@ subcategories:
         tags:
           - catalog
           - metadata
+        added_at: 2026-03-18
       - name: OpenMetadata
         homepage_url: https://open-metadata.org
         repo_url: https://github.com/open-metadata/OpenMetadata
@@ -189,6 +208,7 @@ subcategories:
           - catalog
           - metadata
           - oss
+        added_at: 2026-03-18
   - name: Synthetic Data
     row: 1
     items:
@@ -199,6 +219,7 @@ subcategories:
         tags:
           - synthetic-data
           - privacy
+        added_at: 2026-03-18
       - name: Mostly AI
         homepage_url: https://mostly.ai
         logo: mostly-ai.webp
@@ -206,6 +227,7 @@ subcategories:
         tags:
           - synthetic-data
           - enterprise
+        added_at: 2026-03-18
       - name: SDV
         homepage_url: https://sdv.dev
         repo_url: https://github.com/sdv-dev/SDV
@@ -215,6 +237,7 @@ subcategories:
           - synthetic-data
           - tabular
           - oss
+        added_at: 2026-03-18
       - name: YData
         homepage_url: https://ydata.ai
         repo_url: https://github.com/ydataai/ydata-synthetic
@@ -223,3 +246,4 @@ subcategories:
         tags:
           - synthetic-data
           - oss
+        added_at: 2026-03-18
