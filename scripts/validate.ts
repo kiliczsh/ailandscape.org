@@ -20,9 +20,9 @@ const VALID_GROUPS = new Set([
   "core-ai",
   "infrastructure",
   "engineering",
-  "products",
+  "coding",
+  "applications",
   "governance",
-  "ecosystem",
 ]);
 
 const VALID_ICONS = new Set([
@@ -285,8 +285,34 @@ const CANONICAL_KEY_ORDER = [
   "project",
   "description",
   "tags",
+  "entity_type",
+  "access",
+  "status",
+  "aliases",
   "added_at",
+  "last_verified_at",
 ];
+
+const VALID_ENTITY_TYPES = new Set([
+  "company",
+  "lab",
+  "model_family",
+  "product",
+  "framework",
+  "protocol",
+  "benchmark",
+  "dataset",
+  "hardware",
+  "standard",
+]);
+const VALID_ACCESS = new Set(["open_source", "open_weights", "proprietary"]);
+const VALID_STATUS = new Set([
+  "active",
+  "maintenance",
+  "archived",
+  "acquired",
+  "rebranded",
+]);
 
 let keyOrderIssues = 0;
 
@@ -527,6 +553,47 @@ if (existsSync(COUNT_YAML)) {
 } else {
   warn("src/data/count.yaml not found — skipping");
 }
+
+// ── 14. Entity model rules ────────────────────────────────────────────────────
+
+section("14. Entity model rules");
+
+// Version-like names suggest a model_release card — those merge into family cards.
+const VERSION_NAME_RE =
+  /(\s\d+\.\d+)|(\s\d+(\.\d+)?[BbMm]\b)|(-\d+\.\d+)|(\sv\d+\b)/;
+// Benchmarks legitimately version their names (different test sets).
+const VERSION_EXEMPT_FILES = new Set(["03-benchmarks.yaml"]);
+let entityIssues = 0;
+
+for (const { file, data } of categories) {
+  for (const sub of data.subcategories ?? []) {
+    for (const item of sub.items ?? []) {
+      if (!VERSION_EXEMPT_FILES.has(file) && VERSION_NAME_RE.test(item.name)) {
+        warn(
+          `${file} › "${item.name}": version-like name — merge into its family card?`,
+        );
+        entityIssues++;
+      }
+      const it = item as Record<string, unknown>;
+      if (it.entity_type && !VALID_ENTITY_TYPES.has(it.entity_type as string)) {
+        err(
+          `${file} › "${item.name}": invalid entity_type "${it.entity_type}"`,
+        );
+      }
+      if (it.access && !VALID_ACCESS.has(it.access as string)) {
+        err(`${file} › "${item.name}": invalid access "${it.access}"`);
+      }
+      if (it.status && !VALID_STATUS.has(it.status as string)) {
+        err(`${file} › "${item.name}": invalid status "${it.status}"`);
+      }
+      if (it.aliases && !Array.isArray(it.aliases)) {
+        err(`${file} › "${item.name}": aliases must be a list`);
+      }
+    }
+  }
+}
+
+if (entityIssues === 0) ok("No version-like card names");
 
 // ── Summary ───────────────────────────────────────────────────────────────────
 
