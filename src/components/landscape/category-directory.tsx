@@ -4,11 +4,18 @@ import type { LandscapeData } from "@/types/landscape";
 
 interface CategoryDirectoryProps {
   data: LandscapeData;
+  // Locale support: override displayed names and link prefix (e.g. /zh)
+  labels?: Record<string, string>;
+  basePath?: string;
 }
 
 // Server-rendered so crawlers see links to every category page in the
 // initial HTML — the interactive landscape below only exists after hydration.
-export function CategoryDirectory({ data }: CategoryDirectoryProps) {
+export function CategoryDirectory({
+  data,
+  labels,
+  basePath = "",
+}: CategoryDirectoryProps) {
   return (
     <nav
       aria-label="Browse categories"
@@ -23,7 +30,7 @@ export function CategoryDirectory({ data }: CategoryDirectoryProps) {
         return (
           <Link
             key={category.name}
-            href={`/category/${toSlug(category.name)}`}
+            href={`${basePath}/category/${toSlug(category.name)}`}
             prefetch={false}
             className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
           >
@@ -32,7 +39,7 @@ export function CategoryDirectory({ data }: CategoryDirectoryProps) {
               className="size-2 shrink-0 rounded-full"
               style={{ backgroundColor: accent }}
             />
-            {category.name}
+            {labels?.[category.name] ?? category.name}
             <span className="tabular-nums opacity-60">{count}</span>
           </Link>
         );

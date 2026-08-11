@@ -3,24 +3,21 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ItemCard } from "@/components/landscape/item-card";
 import { findCategoryBySlug, getLandscapeData } from "@/data/landscape";
+import { ZH_CATEGORIES, ZH_GROUPS, ZH_UI } from "@/lib/i18n/zh";
 import { toSlug } from "@/lib/slug";
-import { humanizeGroup, safeJsonLd } from "@/lib/utils";
+import { safeJsonLd } from "@/lib/utils";
 import type { Category } from "@/types/landscape";
 
-interface CategoryPageProps {
+interface ZhCategoryPageProps {
   params: Promise<{ slug: string }>;
 }
 
 export const dynamicParams = false;
 
+const BASE_URL = "https://ailandscape.org";
+
 function countItems(category: Category): number {
   return category.subcategories.reduce((sum, sub) => sum + sub.items.length, 0);
-}
-
-function categoryIntro(category: Category): string {
-  if (category.intro) return category.intro;
-  const subs = category.subcategories.map((s) => s.name).join(", ");
-  return `${category.name} on AI Landscape covers ${countItems(category)} tools across ${category.subcategories.length} subcategories: ${subs}. Browse, compare, and discover what fits your stack.`;
 }
 
 export async function generateStaticParams() {
@@ -30,31 +27,34 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({
   params,
-}: CategoryPageProps): Promise<Metadata> {
+}: ZhCategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
   const data = getLandscapeData();
   const category = findCategoryBySlug(data, slug);
   if (!category) {
-    return { title: "Category not found — AI Landscape" };
+    return { title: "未找到该类别 — AI 全景图" };
   }
-  const title = `${category.name} — ${countItems(category)} AI Tools | AI Landscape`;
-  const description = categoryIntro(category);
+  const zh = ZH_CATEGORIES[category.name];
+  const zhName = zh?.name ?? category.name;
+  const title = `${zhName}（${category.name}）— ${countItems(category)} 个 AI 工具 | AI 全景图`;
+  const description = zh?.intro ?? category.intro ?? "";
   return {
     title,
     description,
     alternates: {
-      canonical: `https://ailandscape.org/category/${slug}`,
+      canonical: `${BASE_URL}/zh/category/${slug}`,
       languages: {
-        en: `https://ailandscape.org/category/${slug}`,
-        zh: `https://ailandscape.org/zh/category/${slug}`,
-        "x-default": `https://ailandscape.org/category/${slug}`,
+        en: `${BASE_URL}/category/${slug}`,
+        zh: `${BASE_URL}/zh/category/${slug}`,
+        "x-default": `${BASE_URL}/category/${slug}`,
       },
     },
     openGraph: {
       title,
       description,
-      url: `https://ailandscape.org/category/${slug}`,
+      url: `${BASE_URL}/zh/category/${slug}`,
       type: "website",
+      locale: "zh_CN",
       images: ["/opengraph-image"],
     },
     twitter: {
@@ -66,59 +66,49 @@ export async function generateMetadata({
   };
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
+export default async function ZhCategoryPage({ params }: ZhCategoryPageProps) {
   const { slug } = await params;
   const data = getLandscapeData();
   const category = findCategoryBySlug(data, slug);
   if (!category) notFound();
 
+  const zh = ZH_CATEGORIES[category.name];
+  const zhName = zh?.name ?? category.name;
+  const intro = zh?.intro ?? category.intro ?? "";
   const itemCount = countItems(category);
-  const intro = categoryIntro(category);
   const accent = category.color ?? "var(--category-default-color)";
-
-  const itemList = category.subcategories.flatMap((sub) =>
-    sub.items.map((item) => ({
-      "@type": "ListItem" as const,
-      name: item.name,
-      url: `https://ailandscape.org/tool/${toSlug(item.name)}`,
-    })),
-  );
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: `${category.name} — AI Landscape`,
+    name: `${zhName} — AI 全景图`,
     description: intro,
-    url: `https://ailandscape.org/category/${slug}`,
+    url: `${BASE_URL}/zh/category/${slug}`,
+    inLanguage: "zh-CN",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
-          name: "AI Landscape",
-          item: "https://ailandscape.org",
+          name: ZH_UI.breadcrumbHome,
+          item: `${BASE_URL}/zh`,
         },
         {
           "@type": "ListItem",
           position: 2,
-          name: category.name,
-          item: `https://ailandscape.org/category/${slug}`,
+          name: zhName,
+          item: `${BASE_URL}/zh/category/${slug}`,
         },
       ],
-    },
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: itemList.length,
-      itemListElement: itemList.map((entry, idx) => ({
-        ...entry,
-        position: idx + 1,
-      })),
     },
   };
 
   return (
-    <div className="mx-auto w-full max-w-5xl flex-1 px-4 py-6 sm:py-10">
+    <div
+      lang="zh-CN"
+      className="mx-auto w-full max-w-5xl flex-1 px-4 py-6 sm:py-10"
+    >
       <script
         type="application/ld+json"
         // biome-ignore lint/security/noDangerouslySetInnerHtml: safeJsonLd escapes </script>
@@ -131,65 +121,47 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       >
         <ol className="flex flex-wrap items-center gap-1.5">
           <li>
-            <Link href="/" className="hover:text-foreground hover:underline">
-              AI Landscape
+            <Link href="/zh" className="hover:text-foreground hover:underline">
+              {ZH_UI.breadcrumbHome}
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="text-foreground">{category.name}</li>
+          <li className="text-foreground">{zhName}</li>
         </ol>
       </nav>
 
       <header className="mb-8 border-l-4 pl-4" style={{ borderColor: accent }}>
         <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          {humanizeGroup(category.group)}
+          {category.group ? (ZH_GROUPS[category.group] ?? category.group) : ""}
         </p>
         <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
-          {category.name}
+          {zhName}
+          <span className="ml-2 text-lg font-normal text-muted-foreground">
+            {category.name}
+          </span>
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          {itemCount} {itemCount === 1 ? "tool" : "tools"} ·{" "}
-          {category.subcategories.length}{" "}
-          {category.subcategories.length === 1
-            ? "subcategory"
-            : "subcategories"}
+          {itemCount}
+          {ZH_UI.tools} · {category.subcategories.length}
+          {ZH_UI.subcategories}
         </p>
         <p className="mt-4 max-w-3xl text-sm leading-relaxed text-foreground/90 sm:text-base">
           {intro}
         </p>
+        <p className="mt-2 text-xs text-muted-foreground">
+          <Link
+            href={`/category/${slug}`}
+            className="hover:text-foreground hover:underline"
+          >
+            {ZH_UI.viewEnglish} →
+          </Link>
+        </p>
       </header>
-
-      {category.subcategories.length > 1 && (
-        <nav
-          aria-label="Jump to subcategory"
-          className="mb-6 flex flex-wrap gap-1.5"
-        >
-          {category.subcategories.map((sub) => (
-            <a
-              key={sub.name}
-              href={`#${toSlug(sub.name)}`}
-              className="rounded-md border border-border bg-card px-2 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
-            >
-              {sub.name}
-              <span className="ml-1.5 tabular-nums opacity-60">
-                {sub.items.length}
-              </span>
-            </a>
-          ))}
-        </nav>
-      )}
 
       <div className="space-y-10">
         {category.subcategories.map((sub) => (
-          <section
-            key={sub.name}
-            id={toSlug(sub.name)}
-            aria-labelledby={`sub-${toSlug(sub.name)}-h`}
-          >
-            <h2
-              id={`sub-${toSlug(sub.name)}-h`}
-              className="mb-3 flex items-baseline gap-2 text-xl font-semibold"
-            >
+          <section key={sub.name} id={toSlug(sub.name)}>
+            <h2 className="mb-3 flex items-baseline gap-2 text-xl font-semibold">
               {sub.name}
               <span className="text-xs font-normal tabular-nums text-muted-foreground">
                 {sub.items.length}
@@ -210,17 +182,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </div>
 
       <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-sm">
-        <Link
-          href={`/#category-${slug}`}
-          className="text-foreground hover:underline"
-        >
-          ← Back to the full landscape
+        <Link href="/zh" className="text-foreground hover:underline">
+          {ZH_UI.backToLandscape}
         </Link>
         <Link
           href="/submit"
           className="text-muted-foreground hover:text-foreground hover:underline"
         >
-          Suggest a tool for {category.name} →
+          {ZH_UI.suggestTool} →
         </Link>
       </div>
     </div>

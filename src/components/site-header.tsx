@@ -5,6 +5,7 @@ import { GithubLogo, PlusCircle } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Suspense, useState } from "react";
 import { HeaderSearch } from "@/components/landscape/header-search";
+import { LanguageToggle } from "@/components/language-toggle";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export function SiteHeader() {
@@ -76,6 +77,10 @@ export function SiteHeader() {
           >
             <GithubLogo size={15} aria-hidden="true" />
           </a>
+
+          <Suspense>
+            <LanguageToggle />
+          </Suspense>
 
           <ModeToggle />
         </div>

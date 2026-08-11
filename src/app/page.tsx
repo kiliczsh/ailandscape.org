@@ -23,7 +23,14 @@ export function generateMetadata(): Metadata {
   return {
     title,
     description,
-    alternates: { canonical: "https://ailandscape.org" },
+    alternates: {
+      canonical: "https://ailandscape.org",
+      languages: {
+        en: "https://ailandscape.org",
+        zh: "https://ailandscape.org/zh",
+        "x-default": "https://ailandscape.org",
+      },
+    },
     openGraph: {
       title,
       description,
