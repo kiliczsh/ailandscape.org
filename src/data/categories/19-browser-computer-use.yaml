@@ -8,6 +8,12 @@ subcategories:
   - name: Browser Automation
     row: 0
     items:
+      - name: Agent QA
+        homepage_url: https://github.com/vostride/agent-qa
+        repo_url: https://github.com/vostride/agent-qa
+        description: Natural-language QA for web and mobile apps through CLI and MCP
+        tags: [agents, browser, automation, testing, mobile]
+        added_at: 2026-08-17
       - name: Browser Use
         homepage_url: https://browser-use.com
         repo_url: https://github.com/browser-use/browser-use
