@@ -3,7 +3,7 @@ group: governance
 color: oklch(0.62 0.20 346)
 icon: ShieldCheck
 intro: >-
-  Securing AI systems and keeping them within safe boundaries — red-teaming tools, guardrails, privacy tooling, and the standards and regulations practitioners build against.
+  AI security and safety tooling: red-teaming frameworks like Garak and PyRIT, guardrails like NeMo Guardrails and Lakera Guard, privacy tooling like Microsoft Presidio, and the standards practitioners build against, from the EU AI Act to the OWASP Top 10 for LLMs.
 subcategories:
   - name: Offensive Testing & Red Teaming
     row: 0

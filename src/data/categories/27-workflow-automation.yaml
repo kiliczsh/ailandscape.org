@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 108)
 icon: GitBranch
 intro: >-
-  Low-code and no-code platforms that automate multi-step processes by connecting apps, APIs, and LLM steps — the operations-oriented, trigger-based complement to agent frameworks.
+  AI workflow automation platforms like Zapier, Make, n8n, and Gumloop: low-code and no-code tools that connect apps, APIs, and LLM steps into trigger-based processes. Reach for these when the process is known and repeatable; reach for agent frameworks when it is not.
 subcategories:
   - name: AI Workflow Platforms
     row: 0

@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 29)
 icon: Desktop
 intro: >-
-  Agents that operate software the way humans do — driving browsers, desktops, and GUIs instead of calling structured APIs — plus the scraping and crawling layer that feeds them.
+  AI agents that operate software the way humans do: browser automation with Browser Use and Browserbase, OS-level computer use with Anthropic's Computer Use, Manus, and OpenAI Operator, plus the scraping and crawling layer that feeds them, from Firecrawl to Crawl4AI.
 subcategories:
   - name: Browser Automation
     row: 0

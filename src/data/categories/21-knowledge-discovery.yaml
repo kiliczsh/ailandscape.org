@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 158)
 icon: MagnifyingGlass
 intro: >-
-  AI-powered search and research — answer engines with citations, academic literature tools, and enterprise knowledge assistants that synthesize rather than return links.
+  AI search engines and research assistants: answer engines with citations like Perplexity, Exa AI, and Kagi, academic literature tools like Elicit and Consensus, and enterprise knowledge assistants like Glean. They synthesize rather than return links.
 subcategories:
   - name: AI Search Engines
     row: 0

@@ -3,7 +3,7 @@ group: infrastructure
 color: oklch(0.62 0.20 173)
 icon: MagnifyingGlass
 intro: >-
-  Storage and retrieval optimized for embeddings — vector databases, semantic search engines, and approximate nearest-neighbor libraries. The foundation under every RAG pipeline and semantic search product.
+  Vector databases and semantic search: dedicated stores like Pinecone, Qdrant, and Weaviate, Postgres-native pgvector, search engines like Elasticsearch and Vespa, and similarity libraries like FAISS. The retrieval foundation under every RAG pipeline. Already on Postgres? Start with pgvector; reach for a dedicated vector database when scale or hybrid search demands it.
 subcategories:
   - name: Vector Databases
     row: 0

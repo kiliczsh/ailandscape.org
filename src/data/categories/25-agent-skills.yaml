@@ -3,7 +3,7 @@ group: coding
 color: oklch(0.62 0.18 80)
 icon: Plug
 intro: >-
-  Reusable skill packages that extend coding agents with domain capabilities — document processing, design, engineering workflows, marketing, and knowledge management.
+  Reusable skill packages that extend coding agents with domain capabilities: document processing, design, engineering workflows, marketing, and knowledge management. Install a skill instead of re-prompting the same expertise every session.
 subcategories:
   - name: Document & Office
     row: 0

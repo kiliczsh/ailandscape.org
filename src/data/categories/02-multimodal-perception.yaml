@@ -3,7 +3,7 @@ group: core-ai
 color: oklch(0.62 0.20 43)
 icon: Eye
 intro: >-
-  Models that see and hear — vision-language models, computer vision systems, and speech recognition. Pure perception lives here; generative image and audio model weights belong to Foundation Models.
+  Models that see and hear: vision-language models like GPT-4o and LLaVA, computer vision systems like SAM and Detectron2, and speech recognition engines like Whisper and Deepgram. Pure perception lives here; generative image and audio model weights belong to Foundation Models.
 subcategories:
   - name: Vision-Language Models
     row: 0

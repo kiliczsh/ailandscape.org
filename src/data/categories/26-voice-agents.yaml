@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 195)
 icon: Waveform
 intro: >-
-  Platforms and frameworks for building AI that talks in real time — phone call automation, conversational voice APIs, and open-source speech-to-speech agent infrastructure.
+  Platforms for building AI voice agents that talk in real time: phone call automation with Bland AI and Retell AI, conversational voice APIs like ElevenLabs Agents and Hume AI, and open-source speech-to-speech infrastructure like Pipecat and LiveKit Agents.
 subcategories:
   - name: Voice Agent Platforms
     row: 0

@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 245)
 icon: ImageSquare
 intro: >-
-  Products for generating and editing images and video — text-to-image, inpainting, text-to-video, stylization, and avatar generation. The underlying model weights live in Foundation Models.
+  AI image and video generators: text-to-image products like Midjourney, DALL-E 3, and Ideogram, editing and inpainting with Krea and Magnific, text-to-video like Sora, Runway, and Kling, and avatar generation with HeyGen and Synthesia. The underlying model weights live in Foundation Models.
 subcategories:
   - name: Text-to-Image
     row: 0

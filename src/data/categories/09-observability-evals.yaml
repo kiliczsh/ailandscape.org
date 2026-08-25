@@ -3,7 +3,7 @@ group: engineering
 color: oklch(0.62 0.20 144)
 icon: ChartLine
 intro: >-
-  Tools for understanding what your models do in production and whether they do it well — tracing, monitoring, evaluation frameworks, explainability, and prompt lifecycle management.
+  LLM observability and evaluation: tracing and monitoring with Langfuse, Helicone, and Arize, eval frameworks like Braintrust, DeepEval, and LangSmith, plus explainability tools and prompt management. Tracing shows what your models do in production; evals tell you whether they do it well. Community model rankings live in Benchmarks & Leaderboards.
 subcategories:
   - name: LLM Observability
     row: 0

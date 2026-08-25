@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 288)
 icon: ChatText
 intro: >-
-  General-purpose personal AI — hosted and self-hosted assistants with persistent memory, including the OpenClaw ecosystem running on everything from servers to microcontrollers.
+  General-purpose personal AI: hosted and self-hosted assistants with persistent memory, including the OpenClaw ecosystem running on everything from servers to microcontrollers.
 subcategories:
   - name: General Assistants
     row: 0

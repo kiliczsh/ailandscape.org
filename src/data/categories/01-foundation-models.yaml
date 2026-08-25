@@ -3,7 +3,7 @@ group: core-ai
 color: oklch(0.62 0.20 202)
 icon: Brain
 intro: >-
-  The model families themselves, organized by capability: language, reasoning, coding, embeddings, and generative media weights. One card per family — versions and tiers live inside each card, and the products built on these models live in their own categories.
+  The AI model families themselves: language models like Claude, Gemini, and Gemma, reasoning models like DeepSeek-R1 and o1, plus coding, embedding, speech, and image model weights. One card per family; versions and tiers live inside each card, and the products built on these models live in their own categories.
 subcategories:
   - name: Language Models
     row: 0

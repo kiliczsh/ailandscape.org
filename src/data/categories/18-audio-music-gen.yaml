@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 317)
 icon: MusicNotes
 intro: >-
-  Products for speech synthesis, voice cloning, dubbing, music composition, and sound effects. Consumer and developer-facing tools; raw audio model weights live in Foundation Models.
+  AI voice and music generation: text to speech with ElevenLabs and OpenAI TTS, voice cloning and dubbing with Descript and Resemble AI, music composition with Suno and Udio, and sound effects. Raw audio model weights live in Foundation Models.
 subcategories:
   - name: Text-to-Speech (High Fidelity)
     row: 0

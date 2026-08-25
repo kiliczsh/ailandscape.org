@@ -3,7 +3,7 @@ group: engineering
 color: oklch(0.62 0.20 230)
 icon: Robot
 intro: >-
-  SDKs and libraries for building agents — systems where a model plans, calls tools, and works across multiple steps. Code-first orchestration SDKs, multi-agent frameworks, and higher-level application frameworks.
+  AI agent frameworks for building systems where a model plans, calls tools, and works across multiple steps: multi-agent frameworks like AutoGen and CrewAI, code-first orchestration SDKs, and higher-level application frameworks like Dify. Building your first agent? Start with an application framework; reach for an orchestration SDK when you need control over every step.
 subcategories:
   - name: Orchestration SDKs
     row: 0

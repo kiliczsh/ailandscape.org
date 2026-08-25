@@ -3,7 +3,7 @@ group: infrastructure
 color: oklch(0.62 0.20 331)
 icon: Database
 intro: >-
-  The pipelines and platforms that move, transform, and govern data at scale — feeding training corpora, fine-tuning sets, and RAG knowledge bases. AI-specific labeling and feedback data lives in AI Data & Human Feedback.
+  The pipelines and platforms that move, transform, and govern data at scale: processing engines like Apache Spark, Kafka, and dbt, ingestion tools like Airbyte and Fivetran, lakehouse formats like Iceberg and Delta Lake, data catalogs, and synthetic data generators like Gretel AI. They feed the training corpora, fine-tuning sets, and RAG knowledge bases everything else depends on. AI-specific labeling lives in AI Data & Human Feedback.
 subcategories:
   - name: Data Processing
     row: 0

@@ -3,7 +3,7 @@ group: infrastructure
 color: oklch(0.62 0.20 101)
 icon: HardDrives
 intro: >-
-  The hardware and software layer that runs AI — GPU clouds, inference optimization libraries, distributed training infrastructure, purpose-built chips, and local runtimes. If it makes models run faster or cheaper, it's here.
+  The infrastructure layer that runs AI: GPU cloud providers, inference optimization libraries, distributed training infrastructure, purpose-built chips, and local LLM runtimes like llama.cpp and LM Studio. Renting compute? Compare the GPU clouds. Serving models in production? Start with vLLM and the inference optimizers. Running LLMs locally or at the edge? The local inference section covers runtimes and on-device tools. If it makes models run faster or cheaper, it's here.
 subcategories:
   - name: Cloud & GPU Providers
     row: 0

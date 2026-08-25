@@ -3,7 +3,7 @@ group: coding
 color: oklch(0.62 0.20 86)
 icon: GitBranch
 intro: >-
-  Tools for running fleets of coding agents — kanban UIs and session managers, terminal multiplexers and routers, and autonomous loop runners built around Claude Code and its peers.
+  Tools for running fleets of coding agents: kanban UIs and session managers, terminal multiplexers and routers like claude-code-router, and autonomous loop runners like the Ralph family, built around Claude Code and its peers. One agent is a tool; a fleet needs scheduling, routing, and a place to watch it all.
 subcategories:
   - name: Visual Workflow Builders
     row: 0

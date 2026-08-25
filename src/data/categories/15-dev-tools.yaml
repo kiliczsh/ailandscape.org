@@ -3,7 +3,7 @@ group: coding
 color: oklch(0.62 0.20 130)
 icon: Code
 intro: >-
-  Developer tooling around AI-assisted engineering — automated code review, quality gates, and the SDKs and utilities that embed AI into existing toolchains.
+  AI code review and developer tooling: automated review agents like CodeRabbit, Greptile, and Qodo that gate quality on every pull request, plus the SDKs and utilities that embed AI into existing toolchains.
 subcategories:
   - name: Code Review & Quality
     row: 0

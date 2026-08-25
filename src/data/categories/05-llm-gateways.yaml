@@ -3,7 +3,7 @@ group: infrastructure
 color: oklch(0.62 0.20 259)
 icon: Plug
 intro: >-
-  The connectivity layer between applications and models. Hosted APIs give direct access to frontier models; gateways and proxies add multi-provider routing, caching, cost control, and fallbacks on top.
+  The connectivity layer between applications and models. Hosted APIs like the OpenAI, Anthropic, and Gemini APIs give direct access to frontier models; LLM gateways and proxies like OpenRouter, LiteLLM, and PortKey add multi-provider routing, caching, cost control, and fallbacks on top. Pick a gateway when you want one bill and easy model switching; go direct when you need day-one access to provider features.
 subcategories:
   - name: Hosted Model APIs
     row: 0

@@ -3,7 +3,7 @@ group: infrastructure
 color: oklch(0.62 0.20 252)
 icon: Cube
 intro: >-
-  Where agent-generated code actually runs — isolated execution sandboxes for untrusted code and durable runtimes that keep long-running agent workflows fault-tolerant.
+  Where agent-generated code actually runs: isolated execution sandboxes like E2B, Daytona, and Modal Sandboxes for untrusted code, and durable execution runtimes like Temporal and Inngest that keep long-running agent workflows fault-tolerant.
 subcategories:
   - name: Code Execution Sandboxes
     row: 0

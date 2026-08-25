@@ -3,7 +3,7 @@ group: engineering
 color: oklch(0.62 0.20 14)
 icon: GitBranch
 intro: >-
-  The engineering discipline around the model lifecycle — experiment tracking, fine-tuning and RLHF, pipeline orchestration, registries, and the core ML frameworks everything is built on.
+  The engineering discipline around the model lifecycle: experiment tracking with MLflow and DVC, fine-tuning and RLHF with Axolotl, TRL, and unsloth, pipeline orchestration with Airflow and Kubeflow, model registries and feature stores, and core ML frameworks like PyTorch underneath it all.
 subcategories:
   - name: Experiment Tracking & CI/CD
     row: 0

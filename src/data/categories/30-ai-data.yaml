@@ -3,7 +3,7 @@ group: engineering
 color: oklch(0.62 0.20 65)
 icon: Database
 intro: >-
-  The data layer of AI development — labeling and annotation platforms, human feedback and preference data, dataset quality checks, and dataset management.
+  The data layer of AI development: labeling and annotation platforms like Label Studio and Scale AI, human feedback and preference tooling like Argilla and Snorkel, dataset quality checks with Cleanlab, and dataset management.
 subcategories:
   - name: Data Labeling & Annotation
     row: 0

@@ -3,7 +3,7 @@ group: engineering
 color: oklch(0.62 0.20 302)
 icon: Database
 intro: >-
-  Grounding model outputs in external knowledge — the full retrieval pipeline from document parsing and chunking to reranking, plus the memory layers that give agents persistence across sessions.
+  RAG pipelines and agent memory: frameworks like LangChain, LlamaIndex, and DSPy, rerankers like Cohere Rerank and ColBERT, document parsers like Unstructured and Docling, and memory layers like Mem0 and Letta that give agents persistence across sessions. Retrieval quality is won in parsing and reranking, so start there before switching frameworks.
 subcategories:
   - name: LLM Frameworks & RAG
     row: 0

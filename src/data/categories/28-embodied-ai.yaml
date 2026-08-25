@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 122)
 icon: Robot
 intro: >-
-  AI that acts in the physical world — robot foundation models, physics simulation and robot learning environments, and the middleware connecting learning systems to real hardware.
+  AI that acts in the physical world: robot foundation models like Physical Intelligence π0 and NVIDIA Cosmos, simulation and robot learning environments like NVIDIA Isaac Sim and MuJoCo, and middleware like ROS 2 connecting learning systems to real hardware.
 subcategories:
   - name: Robot Foundation Models
     row: 0

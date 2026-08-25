@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 216)
 icon: Buildings
 intro: >-
-  AI purpose-built for regulated, knowledge-intensive industries — healthcare, legal, finance, and education. These handle domain compliance and professional workflows, not generic LLM wrapping.
+  AI purpose-built for regulated, knowledge-intensive industries: healthcare scribes like Abridge and Nabla, legal AI like Harvey AI and Casetext, finance models like BloombergGPT, and education tutors like Khanmigo. These handle domain compliance and professional workflows, not generic LLM wrapping.
 subcategories:
   - name: Healthcare
     row: 0
