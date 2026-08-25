@@ -19,7 +19,7 @@ export function generateMetadata(): Metadata {
   const total = countTools(getLandscapeData());
   const rounded = Math.floor(total / 50) * 50;
   const title = `AI Landscape — The Interactive Map of ${rounded}+ AI Tools`;
-  const description = `Explore ${total} AI tools on one interactive map — the full LLM landscape and AI agent landscape: models, agents, infrastructure, and applications. Browse by category, filter by tag.`;
+  const description = `Explore ${total} AI tools on one interactive map of the LLM landscape and AI agent landscape: models, agents, infrastructure, and applications. Browse by category, filter by tag.`;
   return {
     title,
     description,
@@ -100,9 +100,8 @@ export default function Home() {
   return (
     <>
       <h1 className="sr-only">
-        AI Landscape — the LLM landscape and AI agent landscape in one
-        interactive map: {total} AI tools across {data.landscape.length}{" "}
-        categories
+        AI Landscape is an interactive map of the LLM landscape and AI agent
+        landscape: {total} AI tools across {data.landscape.length} categories
       </h1>
       <RecentlyAdded items={recent} />
       <CategoryDirectory data={data} />

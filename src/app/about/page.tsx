@@ -6,7 +6,7 @@ import { TechnicalAbout } from "./variants/technical";
 export const metadata: Metadata = {
   title: "About — AI Landscape",
   description:
-    "AI Landscape is an open source map of the LLM landscape and AI agent landscape — every significant AI tool, framework, model, and service, organized by category and freely browsable.",
+    "AI Landscape is an open source map of the LLM landscape and AI agent landscape. Every significant AI tool, framework, model, and service, organized by category and freely browsable.",
   alternates: { canonical: "https://ailandscape.org/about" },
 };
 
