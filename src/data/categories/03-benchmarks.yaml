@@ -3,7 +3,7 @@ group: core-ai
 color: oklch(0.62 0.20 115)
 icon: ChartLine
 intro: >-
-  The shared scoring systems the community uses to compare models — software engineering benchmarks, agent evaluations, and human-preference leaderboards. Internal eval tooling for your own apps lives in Observability & Evals.
+  The shared scoring systems the community uses to compare models — LLM leaderboards, software engineering benchmarks, agent evaluations, and human-preference arenas with live model rankings. Internal eval tooling for your own apps lives in Observability & Evals.
 subcategories:
   - name: Software Engineering Benchmarks
     row: 0
