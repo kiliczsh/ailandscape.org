@@ -88,8 +88,10 @@ export function TechnicalAbout({ stats }: { stats: AboutStats }) {
               <p className="text-base text-pretty text-muted-foreground">
                 The AI space moves faster than any single person can track. This
                 project exists to give developers, researchers, and
-                decision-makers a single structured view of the entire
-                ecosystem.
+                decision-makers a single structured view of the entire ecosystem
+                — from the LLM landscape of models and inference infrastructure
+                to the AI agent landscape of coding agents, orchestration, and
+                evals.
               </p>
             </div>
           </div>
