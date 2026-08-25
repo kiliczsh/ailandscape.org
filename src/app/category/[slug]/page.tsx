@@ -49,6 +49,9 @@ export async function generateMetadata({
         zh: `https://ailandscape.org/zh/category/${slug}`,
         "x-default": `https://ailandscape.org/category/${slug}`,
       },
+      types: {
+        "text/markdown": `https://ailandscape.org/category/${slug}.md`,
+      },
     },
     openGraph: {
       title,

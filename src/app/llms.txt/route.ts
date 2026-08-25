@@ -37,7 +37,7 @@ export function GET(): Response {
 
 > An open, community-curated map of the AI ecosystem: ${totalItems} tools, models, labs, and platforms organized into ${data.landscape.length} categories with tags. Every tool has its own page with description, links, and related tools. Content is free to browse, cite, and reference; the data is maintained as YAML on GitHub.
 
-Site structure: the landscape overview is on the homepage, each category has a page at /category/{slug}, each tool at /tool/{slug}, and each tag at /tag/{slug}. All pages are static HTML.
+Site structure: the landscape overview is on the homepage, each category has a page at /category/{slug}, each tool at /tool/{slug}, and each tag at /tag/{slug}. All pages are static HTML. Markdown versions built for AI assistants: append .md to any tool or category URL (/tool/{slug}.md, /category/{slug}.md).
 
 ## Resources
 

@@ -46,7 +46,12 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: `https://ailandscape.org/tool/${slug}` },
+    alternates: {
+      canonical: `https://ailandscape.org/tool/${slug}`,
+      types: {
+        "text/markdown": `https://ailandscape.org/tool/${slug}.md`,
+      },
+    },
     openGraph: {
       title,
       description,
