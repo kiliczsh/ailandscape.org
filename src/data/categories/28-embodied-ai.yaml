@@ -66,11 +66,15 @@ subcategories:
         added_at: 2026-08-07
       - name: NVIDIA Isaac Sim
         homepage_url: https://developer.nvidia.com/isaac/sim
-        description: Robotics simulation and synthetic data generation platform
+        description: NVIDIA's Omniverse robot simulator for testing, training, and synthetic data
         tags:
           - robotics
           - simulation
           - proprietary
+        aliases:
+          - Isaac Sim
+          - IsaacSim
+          - Omniverse Isaac Sim
         added_at: 2026-08-07
   - name: Robot Middleware
     row: 0

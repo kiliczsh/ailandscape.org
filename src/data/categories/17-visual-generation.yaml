@@ -108,6 +108,8 @@ subcategories:
         twitter_url: https://x.com/higgsfield_ai
         description: "AI-native creative suite for cinematic video generation and effects"
         tags: [video-generation, creative, proprietary]
+        aliases:
+          - Higgsfield AI
         added_at: 2026-08-07
 
       - name: Kling
