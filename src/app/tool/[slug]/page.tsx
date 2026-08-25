@@ -38,10 +38,11 @@ export async function generateMetadata({
     return { title: "Tool not found — AI Landscape" };
   }
   const { item, category, subcategory } = found;
-  const title = `${item.name} — ${category.name} | AI Landscape`;
-  const description =
+  const title = `${item.name} — Alternatives & Similar Tools | AI Landscape`;
+  const description = `${
     item.description ??
-    `${item.name} in ${subcategory.name}, part of ${category.name} on the AI Landscape.`;
+    `${item.name} in ${subcategory.name}, part of ${category.name}`
+  }. Compare ${item.name} alternatives and similar ${subcategory.name} tools on AI Landscape, the interactive map of the AI ecosystem.`;
   return {
     title,
     description,
@@ -80,6 +81,9 @@ export default async function ToolPage({ params }: ToolPageProps) {
       `${item.name} in ${subcategory.name}, part of ${category.name} on the AI Landscape.`,
     url: `https://ailandscape.org/tool/${slug}`,
     applicationCategory: category.name,
+    ...(item.aliases && item.aliases.length > 0
+      ? { alternateName: item.aliases }
+      : {}),
     ...(item.homepage_url ? { sameAs: [item.homepage_url] } : {}),
     ...(item.logo
       ? { image: `https://ailandscape.org/logos/${item.logo}` }

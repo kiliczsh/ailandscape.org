@@ -165,6 +165,11 @@ export function SidebarProfile({
               {item.description ??
                 `${item.name} is part of the ${subcategory.name} ecosystem.`}
             </p>
+            {item.aliases && item.aliases.length > 0 && (
+              <p className="mt-2 text-sm text-muted-foreground">
+                Also known as {item.aliases.join(", ")}
+              </p>
+            )}
           </section>
 
           {item.tags && item.tags.length > 0 && (
