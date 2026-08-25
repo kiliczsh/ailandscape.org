@@ -101,18 +101,26 @@ export default function RootLayout({
         strategy="lazyOnload"
         crossOrigin="anonymous"
       />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-8CGGHC6P4F"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-8CGGHC6P4F');
-        `}
-      </Script>
+      {/* GA only in production builds; hostname check keeps wrangler preview
+          (localhost:8787 serves the production build) out of the property */}
+      {process.env.NODE_ENV === "production" && (
+        <>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-8CGGHC6P4F"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              if (location.hostname === 'ailandscape.org') {
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function(){dataLayer.push(arguments);};
+                gtag('js', new Date());
+                gtag('config', 'G-8CGGHC6P4F');
+              }
+            `}
+          </Script>
+        </>
+      )}
       <body className="flex min-h-screen flex-col antialiased">
         {/* noscript colors are static hex — CSS variables don't work without JS */}
         <noscript>
