@@ -198,6 +198,12 @@ subcategories:
         logo: superset.webp
         description: "A terminal environment built for coding agents"
         added_at: 2026-03-18
+      - name: YYLO
+        homepage_url: https://github.com/yylo-dev/yylo
+        repo_url: https://github.com/yylo-dev/yylo
+        description: "Command-line orchestrator for coding agents: typed tasks in dedicated worktrees"
+        tags: [agents, automation, oss, cli, orchestration]
+        added_at: 2026-09-08
   - name: Task Schedulers
     row: 0
     items:
