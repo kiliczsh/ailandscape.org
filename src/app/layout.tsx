@@ -28,9 +28,9 @@ export const metadata: Metadata = {
       "google-adsense-account": "ca-pub-8397851036658136",
     },
   },
-  title: "AI Landscape — The Complete Map of the AI Ecosystem",
+  title: "AI Tools Landscape — 700+ Models, Agents & AI Tools",
   description:
-    "An interactive map of 700+ AI tools across 31 categories — foundation models, agents, infrastructure, dev tools, and more. Browse by category, filter by tag.",
+    "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories. Compare options, filter by tags, and discover the AI ecosystem.",
   alternates: {
     canonical: "https://ailandscape.org",
     types: {
@@ -44,17 +44,17 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "AI Landscape — The Complete Map of the AI Ecosystem",
+    title: "AI Tools Landscape — 700+ Models, Agents & AI Tools",
     description:
-      "An interactive map of 700+ AI tools across 31 categories — foundation models, agents, infrastructure, dev tools, and more.",
+      "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories. Compare options, filter by tags, and discover the AI ecosystem.",
     type: "website",
     url: "https://ailandscape.org",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Landscape — The Complete Map of the AI Ecosystem",
+    title: "AI Tools Landscape — 700+ Models, Agents & AI Tools",
     description:
-      "An interactive map of 700+ AI tools across 31 categories — foundation models, agents, infrastructure, dev tools, and more.",
+      "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories. Compare options, filter by tags, and discover the AI ecosystem.",
     site: "@ailandscape",
   },
 };
@@ -81,7 +81,7 @@ export default function RootLayout({
               name: "AI Landscape",
               url: "https://ailandscape.org",
               description:
-                "Explore AI tools, frameworks, and services organized by category.",
+                "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories.",
               potentialAction: {
                 "@type": "SearchAction",
                 target: {
