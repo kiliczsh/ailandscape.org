@@ -142,6 +142,12 @@ subcategories:
         description: "Evaluation framework for RAG pipelines"
         tags: [evaluation, rag]
         added_at: 2026-03-18
+      - name: YYLO Benchmark
+        homepage_url: https://github.com/yylo-dev/yylo-benchmark
+        repo_url: https://github.com/yylo-dev/yylo-benchmark
+        description: "Flexible, isolated evaluation layer for task prompts and coding-agent workflows"
+        tags: [evaluation, benchmarks, coding, agents]
+        added_at: 2026-09-08
   - name: Explainability & Alignment
     row: 1
     items:
