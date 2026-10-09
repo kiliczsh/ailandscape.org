@@ -9,10 +9,10 @@ subcategories:
     row: 0
     items:
       - name: agent-orchestrator
-        homepage_url: https://composio.dev
-        repo_url: https://github.com/ComposioHQ/agent-orchestrator
+        homepage_url: https://orchestrator.inc
+        repo_url: https://github.com/OrchestratorInc/agent-orchestrator
         logo: agent-orchestrator.webp
-        description: Per-agent worktree and branch isolation; auto-fixes CI failures and opens PRs
+        description: Open-source orchestrator for running and supervising parallel coding agents
         added_at: 2026-03-18
       - name: AgentForge
         homepage_url: https://github.com/DataBassGit/AgentForge
@@ -37,14 +37,8 @@ subcategories:
         logo: chatdev.webp
         description: Communicative LLM agents simulating a virtual software development company
         added_at: 2026-03-18
-      - name: claude-flow
-        homepage_url: https://Cognitum.One
-        repo_url: https://github.com/ruvnet/claude-flow
-        logo: claude-flow.webp
-        description: Deploy multi-agent swarms with coordinated, programmable workflows
-        added_at: 2026-03-18
       - name: clawe
-        homepage_url: https://clawe.ai
+        homepage_url: https://github.com/getclawe/clawe
         repo_url: https://github.com/getclawe/clawe
         logo: clawe.webp
         description: Trello-style multi-agent coordination system
@@ -57,18 +51,18 @@ subcategories:
         added_at: 2026-03-18
       - name: FastAgency
         homepage_url: https://fastagency.ai/latest
-        repo_url: https://github.com/airtai/fastagency
+        repo_url: https://github.com/ag2ai/fastagency
         logo: fastagency.webp
         description: Rapid development framework for multi-agent AI applications
         added_at: 2026-03-18
       - name: gastown
-        homepage_url: https://github.com/steveyegge/gastown
-        repo_url: https://github.com/steveyegge/gastown
+        homepage_url: https://github.com/gastownhall/gastown
+        repo_url: https://github.com/gastownhall/gastown
         logo: gh-steveyegge.png
         description: Multi-agent orchestration system with persistent work tracking across sessions
         added_at: 2026-03-18
       - name: Google ADK
-        homepage_url: https://google.github.io/adk-docs/
+        homepage_url: https://adk.dev/
         repo_url: https://github.com/google/adk-python
         description: Google's open-source Agent Development Kit
         tags:
@@ -76,10 +70,9 @@ subcategories:
           - oss
         added_at: 2026-08-07
       - name: humanlayer
-        homepage_url: https://humanlayer.dev/code
-        repo_url: https://github.com/humanlayer/humanlayer
+        homepage_url: https://www.humanlayer.com
         logo: humanlayer.webp
-        description: SDK for injecting human approval gates into agent loops
+        description: Multiplayer workspace for coding agent sessions, plans, and diffs
         added_at: 2026-03-18
       - name: L2MAC
         homepage_url: https://samholt.github.io/L2MAC/
@@ -95,6 +88,7 @@ subcategories:
       - name: LangGraph
         homepage_url: https://langchain-ai.github.io/langgraph
         repo_url: https://github.com/langchain-ai/langgraph
+        logo: langchain.webp
         description: Graph-based agent workflow orchestration
         tags:
           - agents
@@ -104,6 +98,7 @@ subcategories:
       - name: Langroid
         homepage_url: https://langroid.github.io/langroid/
         repo_url: https://github.com/langroid/langroid
+        logo: langroid.webp
         description: Lightweight, extensible Python framework for multi-agent LLM programming
         added_at: 2026-03-18
       - name: loom
@@ -112,9 +107,22 @@ subcategories:
         logo: gh-ghuntley.png
         description: Autonomous development loops that iteratively evolve a software product
         added_at: 2026-03-18
+      - name: Microsoft Agent Framework
+        homepage_url: https://learn.microsoft.com/en-us/agent-framework/
+        repo_url: https://github.com/microsoft/agent-framework
+        logo: microsoft.webp
+        description: Microsoft's framework for building and orchestrating agents in Python and .NET
+        tags:
+          - agents
+          - multi-agent
+          - oss
+        entity_type: framework
+        access: open_source
+        added_at: 2026-10-09
       - name: OpenAI Agents SDK
         homepage_url: https://openai.github.io/openai-agents-python/
         repo_url: https://github.com/openai/openai-agents-python
+        logo: openai.webp
         description: OpenAI's official Python SDK for orchestrated multi-agent systems with handoffs
         added_at: 2026-03-18
       - name: openfang
@@ -138,8 +146,9 @@ subcategories:
       - name: PydanticAI
         homepage_url: https://ai.pydantic.dev
         repo_url: https://github.com/pydantic/pydantic-ai
+        logo: pydantic-ai.webp
         twitter_url: https://x.com/pydantic
-        description: Production-grade, type-safe Python agent framework by Pydantic
+        description: Type-safe Python agent framework by Pydantic
         tags:
           - agents
           - python
@@ -147,13 +156,20 @@ subcategories:
         added_at: 2026-08-07
       - name: Questflow
         homepage_url: https://questflow.ai/
-        repo_url: https://github.com/questflow
         logo: questflow.webp
-        description: Decentralized multi-agent orchestration with a marketplace for deploying agents
+        description: AI finance agent platform (formerly multi-agent orchestration marketplace)
+        added_at: 2026-03-18
+      - name: Ruflo
+        homepage_url: https://Cognitum.One
+        repo_url: https://github.com/ruvnet/ruflo
+        logo: claude-flow.webp
+        description: Agent meta-harness for Claude Code and Codex with multi-agent swarms
+        aliases: [claude-flow]
         added_at: 2026-03-18
       - name: smolagents
         homepage_url: https://huggingface.co/docs/smolagents
         repo_url: https://github.com/huggingface/smolagents
+        logo: hugging-face.webp
         description: Hugging Face's minimal library for code-first agents
         tags:
           - agents
@@ -162,7 +178,8 @@ subcategories:
         added_at: 2026-08-07
       - name: Strands Agents
         homepage_url: https://strandsagents.com
-        repo_url: https://github.com/strands-agents/sdk-python
+        repo_url: https://github.com/strands-agents/harness-sdk
+        logo: strands-agents.webp
         description: AWS-backed model-driven agent SDK for production
         tags:
           - agents
@@ -174,11 +191,13 @@ subcategories:
       - name: AutoGen
         homepage_url: https://microsoft.github.io/autogen
         repo_url: https://github.com/microsoft/autogen
+        logo: microsoft.webp
         project: sandbox
-        description: Multi-agent conversation framework by Microsoft
+        description: Multi-agent framework by Microsoft; successor is Microsoft Agent Framework
         tags:
           - agents
           - multi-agent
+        status: maintenance
         added_at: 2026-03-18
       - name: AutoGPT
         homepage_url: https://agpt.co
@@ -198,7 +217,7 @@ subcategories:
         homepage_url: https://docs.camel-ai.org/
         repo_url: https://github.com/camel-ai/camel
         logo: camel.webp
-        description: First LLM multi-agent framework and community dedicated to agent scaling laws
+        description: Multi-agent framework and research community for agent scaling
         added_at: 2026-03-18
       - name: CrewAI
         homepage_url: https://crewai.com
@@ -212,14 +231,14 @@ subcategories:
           - python
         added_at: 2026-03-18
       - name: GPT Engineer
-        homepage_url: https://gptengineer.app
+        homepage_url: https://github.com/AntonOsika/gpt-engineer
         repo_url: https://github.com/AntonOsika/gpt-engineer
         logo: gpt-engineer.webp
-        description: Describe what to build; AI asks clarifying questions and generates the codebase
+        description: Archived CLI that generates codebases from prompts; precursor to Lovable
+        status: archived
         added_at: 2026-03-18
       - name: LoopGPT
-        homepage_url: https://github.com/farizrahman4u/loopgpt
-        repo_url: https://github.com/farizrahman4u/loopgpt
+        homepage_url: https://pypi.org/project/loopgpt/
         logo: gh-farizrahman4u.png
         description: AutoGPT re-implementation with modular architecture and better memory handling
         added_at: 2026-03-18
@@ -230,8 +249,8 @@ subcategories:
         description: TypeScript AI framework with workflows, agents, RAG, integrations, and evals
         added_at: 2026-03-18
       - name: MetaGPT
-        homepage_url: https://mgx.dev/
-        repo_url: https://github.com/geekan/MetaGPT
+        homepage_url: https://github.com/FoundationAgents/MetaGPT
+        repo_url: https://github.com/FoundationAgents/MetaGPT
         logo: metagpt.webp
         description: Assigns roles to LLMs to form a collaborative multi-agent software entity
         added_at: 2026-03-18
@@ -241,6 +260,7 @@ subcategories:
       - name: Agno
         homepage_url: https://www.agno.com
         repo_url: https://github.com/agno-agi/agno
+        logo: agno.webp
         description: Full-stack framework for building multi-agent systems with memory
         tags:
           - agents

@@ -18,7 +18,7 @@ If the AI tooling space moves fast enough that a static catalog isn't enough —
 
 ## Features
 
-- **700+ tools** across 31 categories and 6 groups
+- **800+ tools** across 31 categories and 6 groups
 - **Per-category landing pages** at `/category/[slug]` for focused browsing
 - **Per-tool detail pages** at `/tool/[slug]` with related items
 - **Full-text search** with fuzzy matching and ⌘K command palette

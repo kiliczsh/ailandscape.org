@@ -28,15 +28,18 @@ subcategories:
         added_at: 2026-03-18
       - name: LiveCodeBench
         homepage_url: https://livecodebench.github.io/leaderboard.html
+        logo: livecodebench.webp
         description: "Holistic and contamination-free evaluation of large language models for code"
         added_at: 2026-03-18
       - name: LiveCodeBench Pro
-        homepage_url: https://livecodebenchpro.com/
+        homepage_url: https://github.com/GavinZhengOI/LiveCodeBench-Pro
+        repo_url: https://github.com/GavinZhengOI/LiveCodeBench-Pro
         logo: livecodebench-pro.webp
         description: "Codeforces, ICPC, and IOI problems; regularly updated to prevent contamination"
         added_at: 2026-03-18
       - name: Multi-SWE-bench
         homepage_url: https://multi-swe-bench.github.io/
+        logo: multi-swe-bench.webp
         description: "Multilingual benchmark for issue resolving across multiple programming languages"
         added_at: 2026-03-18
       - name: SWE-bench
@@ -45,17 +48,17 @@ subcategories:
         description: "Evaluates LLM performance on real-world software issues collected from GitHub"
         added_at: 2026-03-18
       - name: SWE-bench Multilingual
-        homepage_url: https://swe-bench.com/
+        homepage_url: https://www.swebench.com/multilingual.html
         logo: swe-bench-multilingual.webp
         description: "300 curated SWE-bench tasks from 42 repositories across 9 programming languages"
         added_at: 2026-03-18
       - name: SWE-Bench Pro Commercial
-        homepage_url: https://scale.com/leaderboard/swe_bench_pro_commercial
+        homepage_url: https://labs.scale.com/leaderboard/swe_bench_pro
         logo: swe-bench-pro-commercial.webp
-        description: "Scale AI's real-world software engineering benchmark using a commercial dataset"
+        description: "Scale AI's SWE-Bench Pro private set of proprietary startup codebases"
         added_at: 2026-03-18
       - name: SWE-Bench Pro Public
-        homepage_url: https://scale.com/leaderboard/swe_bench_pro_public
+        homepage_url: https://labs.scale.com/leaderboard/swe_bench_pro
         logo: swe-bench-pro-public.webp
         description: "Public version of Scale AI's SWE-Bench Pro for real-world software engineering"
         added_at: 2026-03-18
@@ -89,7 +92,7 @@ subcategories:
         description: "A benchmark for agentic context engineering"
         added_at: 2026-03-18
       - name: MCP Atlas
-        homepage_url: https://scale.com/leaderboard/mcp_atlas
+        homepage_url: https://labs.scale.com/leaderboard/mcp_atlas
         logo: mcp-atlas.webp
         description: "Evaluates how well language models handle real-world tool use through MCP"
         added_at: 2026-03-18
@@ -112,14 +115,14 @@ subcategories:
         description: "Measures large-context reasoning, edit precision, and instruction adherence"
         added_at: 2026-03-18
       - name: Terminal-Bench
-        homepage_url: https://www.tbench.ai/leaderboard
+        homepage_url: https://www.tbench.ai/benchmarks
         logo: terminal-bench.webp
-        description: "Benchmark measuring AI agent capabilities in a terminal environment (v1)"
+        description: "Original Terminal-Bench task set for terminal agents"
         added_at: 2026-03-18
       - name: Terminal-Bench 2.0
-        homepage_url: https://www.tbench.ai/leaderboard/terminal-bench/2.0
+        homepage_url: https://www.tbench.ai/benchmarks
         logo: terminal-bench-2-0.webp
-        description: "Benchmark measuring AI agent capabilities in a terminal environment (v2)"
+        description: "Second Terminal-Bench task set for terminal agents"
         added_at: 2026-03-18
       - name: Vending-Bench 2
         homepage_url: https://andonlabs.com/evals/vending-bench-2
@@ -135,7 +138,7 @@ subcategories:
     row: 0
     items:
       - name: LMSYS Chatbot Arena
-        homepage_url: https://lmarena.ai
+        homepage_url: https://arena.ai
         repo_url: https://github.com/lm-sys/FastChat
         logo: lmsys.webp
         twitter_url: https://x.com/arena

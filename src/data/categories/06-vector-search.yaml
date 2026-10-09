@@ -16,6 +16,12 @@ subcategories:
         description: "AI-native open-source embedding database"
         tags: [vector-db, embeddings, oss]
         added_at: 2026-03-18
+      - name: LanceDB
+        homepage_url: https://www.lancedb.com
+        repo_url: https://github.com/lancedb/lancedb
+        description: "Open-source multimodal lakehouse and vector database for AI"
+        tags: [vector-db, embeddings, oss]
+        added_at: 2026-10-09
       - name: Milvus
         homepage_url: https://milvus.io
         repo_url: https://github.com/milvus-io/milvus
@@ -45,6 +51,11 @@ subcategories:
         description: "Vector similarity search engine"
         tags: [vector-db, rust, oss]
         added_at: 2026-03-18
+      - name: turbopuffer
+        homepage_url: https://turbopuffer.com
+        description: "Vector and full-text search built on object storage"
+        tags: [vector-db, search, managed]
+        added_at: 2026-10-09
       - name: Weaviate
         homepage_url: https://weaviate.io
         repo_url: https://github.com/weaviate/weaviate
@@ -67,7 +78,7 @@ subcategories:
         repo_url: https://github.com/opensearch-project/OpenSearch
         logo: opensearch.webp
         project: sandbox
-        description: "Community-driven fork of Elasticsearch"
+        description: "Open-source search and analytics suite for vector and keyword search"
         tags: [search, distributed]
         added_at: 2026-03-18
       - name: Vespa

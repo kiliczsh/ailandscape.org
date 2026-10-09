@@ -42,8 +42,9 @@ subcategories:
         homepage_url: https://learn.microsoft.com/semantic-kernel
         repo_url: https://github.com/microsoft/semantic-kernel
         logo: microsoft.webp
-        description: "Microsoft's SDK for AI orchestration"
+        description: "Microsoft's AI orchestration SDK; successor is Microsoft Agent Framework"
         tags: [llm, framework, dotnet, python]
+        status: maintenance
         added_at: 2026-03-18
       - name: Spring AI
         homepage_url: https://spring.io/projects/spring-ai
@@ -62,11 +63,12 @@ subcategories:
         description: "BAAI's high-performance multilingual reranker"
         tags: [rag, reranking, multilingual, oss]
         added_at: 2026-03-18
-      - name: Cohere Rerank 3
+      - name: Cohere Rerank
         homepage_url: https://cohere.com/rerank
         logo: cohere.webp
-        description: "State-of-the-art reranking model for RAG relevance"
+        description: "Reranking models from Cohere for improving RAG relevance"
         tags: [rag, reranking, api]
+        aliases: [Cohere Rerank 3]
         added_at: 2026-03-18
       - name: ColBERT
         homepage_url: https://github.com/stanford-futuredata/ColBERT
@@ -88,14 +90,24 @@ subcategories:
         description: "Multilingual reranker for improving RAG precision"
         tags: [rag, reranking, multilingual]
         added_at: 2026-03-18
+      - name: sentence-transformers
+        homepage_url: https://sbert.net
+        repo_url: https://github.com/huggingface/sentence-transformers
+        logo: sentence-transformers.webp
+        description: Python framework for training and running embedding models
+        tags:
+          - embeddings
+          - oss
+          - python
+        added_at: 2026-03-18
   - name: Document Parsing
     row: 0
     items:
       - name: Docling
-        homepage_url: https://github.com/DS4SD/docling
-        repo_url: https://github.com/DS4SD/docling
+        homepage_url: https://github.com/docling-project/docling
+        repo_url: https://github.com/docling-project/docling
         logo: gh-DS4SD.png
-        description: "IBM's fast document conversion and parsing toolkit"
+        description: "Document conversion and parsing toolkit for gen AI pipelines"
         tags: [document-processing, pdf, oss]
         added_at: 2026-03-18
       - name: LlamaParse
@@ -105,8 +117,8 @@ subcategories:
         tags: [document-processing, pdf, api]
         added_at: 2026-03-18
       - name: Marker
-        homepage_url: https://github.com/VikParuchuri/marker
-        repo_url: https://github.com/VikParuchuri/marker
+        homepage_url: https://github.com/datalab-to/marker
+        repo_url: https://github.com/datalab-to/marker
         logo: gh-VikParuchuri.png
         description: "Convert PDFs to markdown quickly and accurately"
         tags: [document-processing, pdf, oss]
@@ -130,16 +142,8 @@ subcategories:
       - name: Cognee
         homepage_url: https://www.cognee.ai
         repo_url: https://github.com/topoteretes/cognee
+        logo: cognee.webp
         description: Semantic memory layer building knowledge graphs for AI agents
-        tags:
-          - memory
-          - agents
-          - oss
-        added_at: 2026-08-07
-      - name: Mem0
-        homepage_url: https://mem0.ai
-        repo_url: https://github.com/mem0ai/mem0
-        description: Universal persistent memory layer for AI agents and assistants
         tags:
           - memory
           - agents
@@ -147,22 +151,32 @@ subcategories:
         added_at: 2026-08-07
       - name: Letta (MemGPT)
         homepage_url: https://docs.letta.com/
-        repo_url: https://github.com/cpacker/MemGPT
+        repo_url: https://github.com/letta-ai/letta
         logo: memgpt.webp
-        description: "OS-inspired memory management for LLMs enabling unbounded virtual context"
+        description: "Platform for stateful agents with advanced memory that learns over time"
         added_at: 2026-08-07
-
+      - name: Mem0
+        homepage_url: https://mem0.ai
+        repo_url: https://github.com/mem0ai/mem0
+        logo: mem0.webp
+        description: Universal persistent memory layer for AI agents and assistants
+        tags:
+          - memory
+          - agents
+          - oss
+        added_at: 2026-08-07
       - name: supermemory
         homepage_url: https://supermemory.ai
         repo_url: https://github.com/supermemoryai/supermemory
+        logo: supermemory.webp
         twitter_url: https://x.com/supermemory
         description: "Memory and context API that gives AI agents long-term recall"
         tags: [memory, agents, api]
         added_at: 2026-08-07
-
       - name: Zep
         homepage_url: https://www.getzep.com
         repo_url: https://github.com/getzep/graphiti
+        logo: zep.webp
         twitter_url: https://x.com/zep_ai
         description: Temporal knowledge graph memory for agents (Graphiti)
         tags:

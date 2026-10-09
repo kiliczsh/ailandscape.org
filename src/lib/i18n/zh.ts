@@ -8,12 +8,7 @@ export interface ZhCategory {
 
 export const ZH_UI = {
   siteName: "AI 全景图",
-  homeTitle: "AI 全景图 — 700+ AI 工具的交互式地图",
-  homeDescription:
-    "在一张交互式地图上探索 700 多个 AI 工具——大模型、智能体、基础设施与应用，按类别浏览、按标签筛选。",
   homeH1: "AI 全景图 — 按类别浏览 AI 工具生态",
-  homeIntro:
-    "AI Landscape 是一张覆盖整个 AI 生态的开源全景图：前沿实验室、基础模型、推理与算力、智能体框架、编程助手等 31 个类别、700 多个工具。点击任意类别查看详情。",
   tools: "个工具",
   subcategories: "个子类别",
   backToLandscape: "← 返回完整全景图",
@@ -22,6 +17,16 @@ export const ZH_UI = {
   browseAll: "浏览全部类别",
   viewEnglish: "View in English",
 } as const;
+
+/** Home SEO copy; counts come from the data (see getSiteStats) so they never go stale. */
+export function zhHomeCopy(stats: { rounded: number; categories: number }) {
+  const count = `${stats.rounded} 多个`;
+  return {
+    title: `AI 全景图 — ${stats.rounded}+ AI 工具的交互式地图`,
+    description: `在一张交互式地图上探索 ${count} AI 工具——大模型、智能体、基础设施与应用，按类别浏览、按标签筛选。`,
+    intro: `AI Landscape 是一张覆盖整个 AI 生态的开源全景图：前沿实验室、基础模型、推理与算力、智能体框架、编程助手等 ${stats.categories} 个类别、${count}工具。点击任意类别查看详情。`,
+  };
+}
 
 export const ZH_GROUPS: Record<string, string> = {
   "core-ai": "核心 AI",
@@ -146,7 +151,7 @@ export const ZH_CATEGORIES: Record<string, ZhCategory> = {
   "Vertical AI": {
     name: "垂直行业 AI",
     intro:
-      "为强监管、知识密集型行业专门构建的 AI——医疗、法律、金融与教育。它们处理行业合规与专业工作流，而非简单包装 LLM。",
+      "为特定行业与业务职能专门构建的 AI——医疗、法律、金融与教育等强监管、知识密集型领域，以及销售与客户支持等职能场景。它们处理行业合规与专业工作流，而非简单包装 LLM。",
   },
   "Personal Assistants": {
     name: "个人助理",

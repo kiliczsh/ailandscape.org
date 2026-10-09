@@ -1,7 +1,7 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   CommandDialog,
   CommandEmpty,
@@ -11,17 +11,54 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import { trackEvent } from "@/lib/analytics";
+import {
+  closeSearch,
+  openSearch,
+  setSearchQuery,
+  useSearchState,
+} from "@/lib/search-store";
 import { toSlug } from "@/lib/slug";
-import type { LandscapeData, LandscapeItem } from "@/types/landscape";
 
 const MAX_VISIBLE = 50;
 
+interface SearchIndex {
+  categories: string[];
+  items: [
+    name: string,
+    subcategory: string,
+    categoryIndex: number,
+    aliases?: string[],
+  ][];
+}
+
+let indexPromise: Promise<SearchIndex> | null = null;
+
+/** Fetches the compact search index once per page load. */
+export function loadSearchIndex(): Promise<SearchIndex> {
+  if (!indexPromise) {
+    // no-cache: always revalidate so data edits (e.g. new aliases) show up
+    indexPromise = fetch("/search-index.json", { cache: "no-cache" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`search index ${r.status}`);
+        return r.json() as Promise<SearchIndex>;
+      })
+      .catch((err) => {
+        indexPromise = null;
+        throw err;
+      });
+  }
+  return indexPromise;
+}
+
 interface FlatItem {
-  item: LandscapeItem;
+  name: string;
+  aliases: string[];
   category: string;
   subcategory: string;
   /** Pre-lowered item name — primary match target */
   nameLower: string;
+  /** Pre-lowered alternate names (e.g. native-script names like 阶跃星辰) */
+  aliasesLower: string[];
   /** Pre-lowered full search value (name + subcategory + category) */
   searchValue: string;
 }
@@ -36,6 +73,7 @@ interface FlatItem {
  */
 function fuzzyScore(
   nameLower: string,
+  aliasesLower: string[],
   fullValue: string,
   search: string,
 ): number {
@@ -49,6 +87,13 @@ function fuzzyScore(
     if (nameSubIdx > 0 && /[\s\-_./]/.test(nameLower.charAt(nameSubIdx - 1)))
       return 95;
     return 90;
+  }
+
+  // 1b. Exact substring on an alias (works for CJK: plain indexOf, no ASCII folding)
+  for (const alias of aliasesLower) {
+    const idx = alias.indexOf(search);
+    if (idx === 0) return 92;
+    if (idx > 0) return 85;
   }
 
   // 2. Fuzzy match on item name only
@@ -104,53 +149,50 @@ function fuzzyWalk(target: string, search: string): number {
   return Math.round(40 + consecutiveScore + boundaryScore + coverageScore);
 }
 
-interface CommandPaletteProps {
-  data: LandscapeData;
-}
+const MAX_CATEGORIES = 5;
 
-export function CommandPalette({ data }: CommandPaletteProps) {
-  const [open, setOpen] = useState(false);
-  const [search, setSearch] = useState("");
+export function CommandPalette() {
+  const { open, query: search } = useSearchState();
   const router = useRouter();
+  const pathname = usePathname();
+  const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
+  const [index, setIndex] = useState<SearchIndex | null>(null);
 
   useEffect(() => {
-    function onKeyDown(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault();
-        setOpen((v) => !v);
-      }
-    }
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, []);
-
-  // Reset search when dialog closes
-  useEffect(() => {
-    if (!open) setSearch("");
-  }, [open]);
+    if (!open || index) return;
+    let cancelled = false;
+    loadSearchIndex()
+      .then((idx) => {
+        if (!cancelled) setIndex(idx);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [open, index]);
 
   // Flatten all items once
   const flatItems = useMemo<FlatItem[]>(() => {
-    const items: FlatItem[] = [];
-    for (const cat of data.landscape) {
-      for (const sub of cat.subcategories) {
-        for (const item of sub.items) {
-          items.push({
-            item,
-            category: cat.name,
-            subcategory: sub.name,
-            nameLower: item.name.toLowerCase(),
-            searchValue: `${item.name} ${sub.name} ${cat.name}`.toLowerCase(),
-          });
-        }
-      }
-    }
-    return items;
-  }, [data]);
+    if (!index) return [];
+    return index.items.map(([name, subcategory, ci, aliases = []]) => {
+      const category = index.categories[ci] ?? "";
+      return {
+        name,
+        category,
+        subcategory,
+        aliases,
+        nameLower: name.toLowerCase(),
+        aliasesLower: aliases.map((a) => a.toLowerCase()),
+        searchValue:
+          `${name} ${aliases.join(" ")} ${subcategory} ${category}`.toLowerCase(),
+      };
+    });
+  }, [index]);
+
+  const lowerSearch = search.trim().toLowerCase();
 
   // Compute scored + capped results
   const results = useMemo(() => {
-    const lowerSearch = search.trim().toLowerCase();
     if (!lowerSearch) {
       // No query: show first MAX_VISIBLE items grouped by category
       return flatItems.slice(0, MAX_VISIBLE);
@@ -159,7 +201,12 @@ export function CommandPalette({ data }: CommandPaletteProps) {
     // Score all items
     const scored: { entry: FlatItem; score: number }[] = [];
     for (const entry of flatItems) {
-      const score = fuzzyScore(entry.nameLower, entry.searchValue, lowerSearch);
+      const score = fuzzyScore(
+        entry.nameLower,
+        entry.aliasesLower,
+        entry.searchValue,
+        lowerSearch,
+      );
       if (score > 0) {
         scored.push({ entry, score });
       }
@@ -167,12 +214,19 @@ export function CommandPalette({ data }: CommandPaletteProps) {
 
     // Sort by score descending, then alphabetically
     scored.sort(
-      (a, b) =>
-        b.score - a.score || a.entry.item.name.localeCompare(b.entry.item.name),
+      (a, b) => b.score - a.score || a.entry.name.localeCompare(b.entry.name),
     );
 
     return scored.slice(0, MAX_VISIBLE).map((s) => s.entry);
-  }, [flatItems, search]);
+  }, [flatItems, lowerSearch]);
+
+  // Category pages matching the query (only when searching)
+  const categoryMatches = useMemo(() => {
+    if (!index || lowerSearch.length < 2) return [];
+    return index.categories
+      .filter((name) => name.toLowerCase().includes(lowerSearch))
+      .slice(0, MAX_CATEGORIES);
+  }, [index, lowerSearch]);
 
   // Group results by category for display
   const grouped = useMemo(() => {
@@ -188,13 +242,39 @@ export function CommandPalette({ data }: CommandPaletteProps) {
     return map;
   }, [results]);
 
-  function handleSelect(item: LandscapeItem) {
+  // Track settled palette queries (grid search tracks its own, without source)
+  const lastTrackedRef = useRef("");
+  useEffect(() => {
+    if (!open || !index || lowerSearch.length < 2) return;
+    if (lowerSearch === lastTrackedRef.current) return;
+    const t = setTimeout(() => {
+      lastTrackedRef.current = lowerSearch;
+      trackEvent("search_query", {
+        query: lowerSearch,
+        result_count: results.length,
+        source: "palette",
+      });
+    }, 800);
+    return () => clearTimeout(t);
+  }, [open, index, lowerSearch, results.length]);
+
+  function handleSelect(name: string) {
     trackEvent("search_item_selected", {
-      item_name: item.name,
+      item_name: name,
       search_term: search.trim(),
     });
-    setOpen(false);
-    router.push(`/tool/${toSlug(item.name)}`);
+    closeSearch();
+    router.push(`/tool/${toSlug(name)}`);
+  }
+
+  function handleCategorySelect(name: string) {
+    trackEvent("search_item_selected", {
+      item_name: name,
+      item_type: "category",
+      search_term: search.trim(),
+    });
+    closeSearch();
+    router.push(`${isZh ? "/zh" : ""}/category/${toSlug(name)}`);
   }
 
   // Disable cmdk's built-in filter — we handle it ourselves
@@ -203,7 +283,7 @@ export function CommandPalette({ data }: CommandPaletteProps) {
   return (
     <CommandDialog
       open={open}
-      onOpenChange={setOpen}
+      onOpenChange={(next) => (next ? openSearch(search) : closeSearch())}
       title="Search tools"
       description="Search across all AI tools and categories"
       filter={noFilter}
@@ -212,20 +292,25 @@ export function CommandPalette({ data }: CommandPaletteProps) {
         placeholder="Search tools..."
         aria-label="Search tools"
         value={search}
-        onValueChange={setSearch}
+        onValueChange={setSearchQuery}
       />
       <CommandList>
-        <CommandEmpty>No results found.</CommandEmpty>
+        <CommandEmpty>{index ? "No results found." : "Loading…"}</CommandEmpty>
         {[...grouped.entries()].map(([category, items]) => (
           <CommandGroup key={category} heading={category}>
             {items.map((entry) => (
               <CommandItem
-                key={`${entry.category}-${entry.subcategory}-${entry.item.name}`}
+                key={`${entry.category}-${entry.subcategory}-${entry.name}`}
                 value={entry.searchValue}
-                onSelect={() => handleSelect(entry.item)}
+                onSelect={() => handleSelect(entry.name)}
                 className="cursor-pointer"
               >
-                <span className="font-medium">{entry.item.name}</span>
+                <span className="font-medium">{entry.name}</span>
+                {entry.aliases.length > 0 && (
+                  <span className="truncate text-muted-foreground">
+                    {entry.aliases.join(", ")}
+                  </span>
+                )}
                 <span className="ml-auto text-muted-foreground">
                   {entry.subcategory}
                 </span>
@@ -233,6 +318,21 @@ export function CommandPalette({ data }: CommandPaletteProps) {
             ))}
           </CommandGroup>
         ))}
+        {categoryMatches.length > 0 && (
+          <CommandGroup heading="Categories">
+            {categoryMatches.map((name) => (
+              <CommandItem
+                key={`category-${name}`}
+                value={`category ${name.toLowerCase()}`}
+                onSelect={() => handleCategorySelect(name)}
+                className="cursor-pointer"
+              >
+                <span className="font-medium">{name}</span>
+                <span className="ml-auto text-muted-foreground">Category</span>
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        )}
       </CommandList>
     </CommandDialog>
   );

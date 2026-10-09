@@ -26,24 +26,24 @@ categories:
     name: Foundation Models
     group: core-ai
     description: >
-      The model families themselves — organized by capability and access type. Covers language, reasoning, coding,
-      multimodal, and embedding models. Generative media models (image, video, audio) live in the Products group because
-      they are primarily consumed as products, not APIs.
+      The model families themselves, organized by capability with access type (open source, open weights, proprietary)
+      as a tag. Covers language, coding, embedding, image, video, speech, and scientific (biology and molecules) model weights. Reasoning is a mode inside
+      each family, not a separate category. Products built on these models live in their own categories.
     subcategories:
       - name: Language Models
-        description: ""
-      - name: Reasoning & CoT Models
-        description: Models optimized for multi-step reasoning and chain-of-thought (o1, DeepSeek-R1, QwQ, Gemini Thinking…)
+        description: General-purpose LLM families, proprietary and open-weights (Claude, GPT, Gemini, Qwen, DeepSeek…)
       - name: Coding Models
-        description: Models fine-tuned or purpose-built for code generation and software tasks (Codex, Devstral, Qwen-Coder…)
+        description: Models fine-tuned or purpose-built for code generation and software tasks (Codex, Devstral, Qwen Coder…)
       - name: Embedding Models
         description: >-
-          Models that convert text or mixed content into dense vectors for retrieval and similarity (text-embedding-ada,
-          BGE, Cohere Embed, Voyage AI…)
+          Models that convert text or mixed content into dense vectors for retrieval and similarity (OpenAI Embeddings,
+          Gemini Embedding, Qwen Embedding, BGE, Voyage AI…)
       - name: Image & Video Models
-        description: Image and video generation model weights and families (Flux, Stable Diffusion, DALL-E…)
+        description: Image and video generation model weights and families (Flux, GPT Image, Veo, Wan, Seedream…)
       - name: Speech & Audio Models
-        description: Speech, voice, and music model weights (Bark, Kokoro, MusicGen, XTTS…)
+        description: Speech, voice, and music model weights (Kokoro, Chatterbox, CosyVoice, OpenAI TTS, MusicGen…)
+      - name: Science & Biology Models
+        description: Model families for proteins, molecules, and other scientific data (AlphaFold 3, ESM, Chai-1…)
   - id: multimodal-perception
     name: Multimodal & Perception
     group: core-ai
@@ -197,6 +197,8 @@ categories:
         description: Pre-built MCP servers and discovery registries (Composio, Toolhouse, Smithery, Arcade AI, Glama…)
       - name: Agent Communication Protocols
         description: Open standards for agent-to-agent and agent-to-tool communication (MCP, A2A, ACP, ANP…)
+      - name: Agentic Payments
+        description: Payment, identity, and settlement infrastructure that lets AI agents pay and sell on behalf of users (Skyfire, Nevermined…)
   - id: rag-memory
     name: RAG & Memory
     group: engineering
@@ -367,12 +369,18 @@ categories:
     subcategories:
       - name: AI Search Engines
         description: Search products that return synthesized answers rather than blue links (Perplexity, Exa, Kagi, You.com…)
+      - name: Academic Research
+        description: AI tools for finding, reading, and synthesizing scientific literature
+      - name: Enterprise Search & Knowledge
+        description: Assistants and platforms that search, analyze, and govern internal company knowledge (Glean, Guru, Hebbia…)
   - id: vertical-ai
     name: Vertical AI
     group: applications
     description: >
-      AI products purpose-built for specific regulated or knowledge-intensive industries. These go beyond generic LLM
-      wrapping — they handle domain compliance, specialized data formats, and professional workflows.
+      AI products purpose-built for specific industries and business functions: regulated, knowledge-intensive fields
+      like healthcare, legal, finance, and education, plus function-specific workflows like sales and customer
+      support. These go beyond generic LLM wrapping — they handle domain compliance, specialized data formats, and
+      professional workflows.
     subcategories:
       - name: Healthcare
         description: Clinical documentation, diagnostic support, and medical knowledge tools (Abridge, Med-PaLM 2, Nabla…)
@@ -382,6 +390,12 @@ categories:
         description: Financial analysis, market intelligence, and compliance tooling (BloombergGPT, Kensho, FinGPT…)
       - name: Education
         description: Personalized tutoring and learning tools (Khanmigo, Duolingo Max, Synthesis Tutor…)
+      - name: Sales & GTM
+        description: AI agents and platforms for prospecting, outbound sales, and revenue intelligence (Clay, Gong, 11x, Artisan…)
+      - name: Customer Support
+        description: AI agents that resolve customer service requests across chat, email, and voice (Sierra, Decagon, Fin, Ada…)
+      - name: Life Sciences & Drug Discovery
+        description: AI-native platforms for drug discovery and biological research (Pharma.AI…)
   - id: personal-assistants
     name: Personal Assistants
     group: applications
@@ -395,6 +409,8 @@ categories:
         description: >-
           Open-source OpenClaw implementations and hardware variants — from cloud to Raspberry Pi to ESP32 (openclaw,
           ironclaw, nanoclaw, piclaw, zclaw…)
+      - name: Voice Dictation
+        description: Voice-to-text dictation apps that type what you say into any app (superwhisper…)
   - id: ai-security
     name: AI Security & Safety
     group: governance
@@ -437,7 +453,7 @@ categories:
       learning systems to real hardware.
     subcategories:
       - name: Robot Foundation Models
-        description: Vision-language-action and world models for robots (LeRobot, π0, Cosmos, XR-1…)
+        description: Vision-language-action and world models for robots and autonomous vehicles (LeRobot, π0, Cosmos, Wayve AI Driver…)
       - name: Simulation & Training
         description: Physics engines and robot learning environments (Isaac Sim, Isaac Lab, MuJoCo…)
       - name: Robot Middleware

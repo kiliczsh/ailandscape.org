@@ -11,11 +11,7 @@ import type { LandscapeData, Subcategory } from "@/types/landscape";
 import { CategoryRow } from "./category-row";
 import { FilterBar } from "./filter-bar";
 
-// Loaded on demand — keeps html2canvas-pro and cmdk out of the initial bundle
-const CommandPalette = dynamic(
-  () => import("./command-palette").then((m) => m.CommandPalette),
-  { ssr: false },
-);
+// Loaded on demand — keeps html2canvas-pro out of the initial bundle
 const TierListModal = dynamic(
   () => import("./tier-list-modal").then((m) => m.TierListModal),
   { ssr: false },
@@ -54,7 +50,11 @@ export function LandscapeView({ data }: LandscapeViewProps) {
           .map((sub) => {
             const filteredItems = sub.items.filter((item) => {
               const matchesQuery =
-                !lowerQuery || item.name.toLowerCase().includes(lowerQuery);
+                !lowerQuery ||
+                item.name.toLowerCase().includes(lowerQuery) ||
+                (item.aliases ?? []).some((alias) =>
+                  alias.toLowerCase().includes(lowerQuery),
+                );
               const matchesTag =
                 !activeTag || (item.tags ?? []).includes(activeTag);
               return matchesQuery && matchesTag;
@@ -178,7 +178,6 @@ export function LandscapeView({ data }: LandscapeViewProps) {
 
   return (
     <LandscapeFilterProvider value={contextValue}>
-      <CommandPalette data={data} />
       {tierListData && (
         <TierListModal
           open={!!tierListData}

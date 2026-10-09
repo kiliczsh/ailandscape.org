@@ -1,7 +1,7 @@
 import { Rss } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import { FooterCategoryLinks } from "@/components/footer-category-links";
 import { getLandscapeData } from "@/data/landscape";
-import { toSlug } from "@/lib/slug";
 
 export function SiteFooter() {
   const data = getLandscapeData();
@@ -11,16 +11,7 @@ export function SiteFooter() {
         aria-label="Categories"
         className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-3 gap-y-1 px-4 pt-3"
       >
-        {data.landscape.map((category) => (
-          <Link
-            key={category.name}
-            href={`/category/${toSlug(category.name)}`}
-            prefetch={false}
-            className="transition-colors hover:text-foreground"
-          >
-            {category.name}
-          </Link>
-        ))}
+        <FooterCategoryLinks names={data.landscape.map((c) => c.name)} />
       </nav>
       <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 px-4 py-3">
         <span>© 2026 AI Landscape</span>

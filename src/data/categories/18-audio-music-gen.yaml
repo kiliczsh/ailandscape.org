@@ -22,7 +22,7 @@ subcategories:
         homepage_url: https://elevenlabs.io
         logo: elevenlabs.webp
         twitter_url: https://x.com/ElevenLabs
-        description: AI voice synthesis and cloning platform with industry-leading naturalness
+        description: AI voice synthesis and cloning platform
         tags:
           - tts
           - voice
@@ -31,13 +31,14 @@ subcategories:
       - name: Fish Audio
         homepage_url: https://fish.audio
         repo_url: https://github.com/fishaudio/fish-speech
+        logo: fish-audio.webp
         twitter_url: https://x.com/FishAudio
         description: "Expressive multilingual speech models and voice APIs, open and hosted"
         tags: [tts, voice-cloning, open-models]
         added_at: 2026-08-07
 
       - name: OpenAI TTS
-        homepage_url: https://platform.openai.com/docs/guides/text-to-speech
+        homepage_url: https://developers.openai.com/api/docs/guides/text-to-speech
         logo: openai.webp
         description: OpenAI's text-to-speech API with multiple voice options
         tags:
@@ -58,6 +59,7 @@ subcategories:
     items:
       - name: Descript
         homepage_url: https://www.descript.com
+        logo: descript.webp
         description: AI-powered audio and video editing with Overdub voice cloning
         tags:
           - voice-cloning
@@ -75,6 +77,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Resemble AI
         homepage_url: https://www.resemble.ai
+        logo: resemble-ai.webp
         twitter_url: https://x.com/resembleai
         description: AI voice generator with real-time voice cloning and speech-to-speech
         tags:
@@ -95,7 +98,8 @@ subcategories:
         added_at: 2026-03-30
       - name: Soundraw
         homepage_url: https://soundraw.io
-        description: AI music generator for creators — customize length, mood, and instruments
+        logo: soundraw.webp
+        description: AI music generator for creators with adjustable length, mood and instruments
         tags:
           - music
           - generation
@@ -104,14 +108,14 @@ subcategories:
       - name: Suno
         homepage_url: https://suno.com
         logo: suno.webp
-        description: AI music generation from text prompts — create full songs in seconds
+        description: AI music generation from text prompts
         tags:
           - music
           - generation
           - proprietary
         added_at: 2026-03-18
       - name: Udio
-        homepage_url: https://udio.com
+        homepage_url: https://www.udio.com/
         logo: udio.webp
         description: High-fidelity AI music creation platform with genre versatility
         tags:
@@ -132,7 +136,7 @@ subcategories:
           - proprietary
         added_at: 2026-03-30
       - name: Stability Audio
-        homepage_url: https://www.stableaudio.com
+        homepage_url: https://stableaudio.com/
         logo: stability-ai.webp
         description: Generate music and sound effects with Stability AI's audio generation model
         tags:

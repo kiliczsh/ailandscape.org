@@ -8,6 +8,14 @@ subcategories:
   - name: Proprietary Frontier Labs
     row: 0
     items:
+      - name: 01.AI
+        homepage_url: https://www.01.ai
+        logo: 01-ai.webp
+        description: "Chinese AI company behind the Yi models, now focused on enterprise AI agents"
+        tags: [lab, llm, open-weights, proprietary]
+        aliases: [零一万物]
+        added_at: 2026-05-08
+
       - name: AI21 Labs
         homepage_url: https://www.ai21.com
         logo: ai21-labs.webp
@@ -41,8 +49,10 @@ subcategories:
       - name: DeepSeek
         homepage_url: https://deepseek.com
         logo: deepseek.webp
+        twitter_url: https://x.com/deepseek_ai
         description: "Chinese lab behind high-performance reasoning and open-weight language models"
         tags: [lab, llm, reasoning, open-weights]
+        aliases: [深度求索]
         added_at: 2026-03-18
 
       - name: Google DeepMind
@@ -63,34 +73,37 @@ subcategories:
       - name: Inception Labs
         homepage_url: https://inceptionlabs.ai
         logo: inception-labs.webp
-        description: "AI lab building Mercury, a diffusion-based language model family for fast reasoning and coding"
+        description: "AI lab building Mercury, diffusion-based language models for fast inference"
         tags: [lab, llm, reasoning, proprietary]
         added_at: 2026-03-18
 
       - name: Inflection AI
         homepage_url: https://inflection.ai
+        logo: inflection-ai.webp
         twitter_url: https://x.com/inflectionAI
-        description: "AI studio behind Pi, a personal and empathetic conversational assistant"
+        description: "Personal intelligence company behind Pi, built on its own foundation models"
         tags: [lab, llm, proprietary]
         added_at: 2026-08-07
 
       - name: Magic
         homepage_url: https://magic.dev
+        logo: magic.webp
         twitter_url: https://x.com/magicailabs
-        description: "AI lab building long-context models and a superhuman coding agent"
+        description: "AI lab building frontier code models to automate software engineering"
         tags: [lab, coding, long-context, proprietary]
         added_at: 2026-08-07
 
       - name: Microsoft Research
         homepage_url: https://www.microsoft.com/en-us/research/
         logo: microsoft-research.webp
-        description: "Corporate research organization powering Copilot, Azure AI, and foundational AI research"
+        description: "Microsoft's research organization spanning foundational AI and computing"
         tags: [lab, llm, research, proprietary]
         added_at: 2026-03-20
 
       - name: MiniMax
         homepage_url: https://www.minimax.io
-        description: "Global foundation model company developing text, speech, video, image, and music models"
+        logo: minimax.webp
+        description: "Foundation model company building language, video, speech, and music models"
         tags: [lab, llm, multimodal, proprietary]
         added_at: 2026-05-08
 
@@ -106,28 +119,31 @@ subcategories:
         homepage_url: https://moonshot.ai
         logo: moonshot-ai.webp
         twitter_url: https://x.com/Kimi_Moonshot
-        description: "Chinese AI startup behind Kimi, focused on long-context assistants and frontier model development"
-        tags: [lab, llm, proprietary]
+        description: "Chinese AI company behind the Kimi assistant and Kimi model family"
+        tags: [lab, llm, open-weights, proprietary]
+        aliases: [月之暗面]
         added_at: 2026-03-18
 
       - name: OpenAI
         homepage_url: https://openai.com
         logo: openai.webp
-        description: "AI research and deployment company building frontier reasoning and multimodal systems"
+        description: "AI research and deployment company behind ChatGPT and the GPT models"
         tags: [lab, llm, proprietary, reasoning]
         added_at: 2026-03-18
 
       - name: Perplexity AI
         homepage_url: https://research.perplexity.ai
-        description: "AI research lab and answer engine company publishing frontier research and language models"
+        logo: perplexity-ai.webp
+        description: "AI search company researching search, reasoning, agents, and AI systems"
         tags: [lab, llm, search, research, proprietary]
         added_at: 2026-03-18
 
       - name: Poolside
         homepage_url: https://poolside.ai
+        logo: poolside.webp
         twitter_url: https://x.com/poolsideai
-        description: "AI lab building foundation models for agentic coding and long-horizon tasks"
-        tags: [lab, coding, proprietary]
+        description: "Foundation model company building open-weight agentic coding models"
+        tags: [lab, coding, open-weights]
         added_at: 2026-08-07
 
       - name: Safe Superintelligence Inc. (SSI)
@@ -140,21 +156,23 @@ subcategories:
       - name: Samsung Research
         homepage_url: https://research.samsung.com
         logo: samsung-research.webp
-        description: "Samsung's research hubs focused on generative AI, multimodal systems, and on-device models"
+        description: "Samsung's global R&D hub, with AI centers for generative and on-device AI"
         tags: [lab, research, multimodal]
         added_at: 2026-03-20
 
       - name: StepFun
-        homepage_url: https://stepfun.ai
+        homepage_url: https://www.stepfun.com
+        logo: stepfun.webp
         twitter_url: https://x.com/StepFun_ai
-        description: "Chinese AI company developing Step-series language and reasoning models"
+        description: "AI company building Step language models and StepAudio speech and music models"
         tags: [lab, llm, reasoning, proprietary]
+        aliases: [阶跃星辰]
         added_at: 2026-05-08
 
       - name: Tencent AI Lab
         homepage_url: https://ailab.tencent.com/ailab/en/index/
         logo: tencent-ai-lab.webp
-        description: "Tencent's AI research lab developing large models, multimodal AI, and applied AI systems"
+        description: "Tencent's AI research lab working on large models, multimodal and applied AI"
         tags: [lab, llm, multimodal, proprietary]
         added_at: 2026-03-20
 
@@ -162,7 +180,7 @@ subcategories:
         homepage_url: https://thinkingmachines.ai
         logo: thinking-machines-lab.webp
         twitter_url: https://x.com/thinkymachines
-        description: "AI research and product company building more understandable and customizable AI systems"
+        description: "AI research and product company building customizable AI systems"
         tags: [lab, llm, proprietary]
         added_at: 2026-03-20
 
@@ -176,22 +194,18 @@ subcategories:
       - name: Yandex Research
         homepage_url: https://research.yandex.com
         logo: yandex-research.webp
-        description: "Yandex's research teams working on large models, search AI, and machine learning systems"
+        description: "Yandex's research group working on large models, search AI, and ML systems"
         tags: [lab, llm, proprietary]
         added_at: 2026-03-20
 
       - name: Z.ai
         homepage_url: https://z.ai
         logo: z-ai-glm.webp
-        description: "Zhipu AI — creator of the GLM model family and large-scale Chinese foundation models"
-        tags: [lab, llm, proprietary]
-        added_at: 2026-03-18
-
-      - name: 01.AI
-        homepage_url: https://www.01.ai
-        description: "Chinese AI company behind the Yi model family and AI-first applications"
+        twitter_url: https://x.com/Zai_org
+        description: "Zhipu AI, creator of the GLM model family and the Z.ai assistant"
         tags: [lab, llm, open-weights, proprietary]
-        added_at: 2026-05-08
+        aliases: [智谱]
+        added_at: 2026-03-18
 
   - name: Open-Weight & Research Labs
     row: 0
@@ -199,15 +213,16 @@ subcategories:
       - name: Alibaba DAMO Academy
         homepage_url: https://damo.alibaba.com
         logo: alibaba-damo-academy.webp
-        description: "Alibaba's advanced R&D institute focused on large models, cloud AI, and applied research"
+        description: "Alibaba's R&D institute working on large models, cloud AI, and applied research"
         tags: [lab, research, multimodal]
         added_at: 2026-03-20
 
       - name: Alibaba Tongyi
         homepage_url: https://tongyi.aliyun.com
         logo: alibaba.webp
-        description: "Alibaba's AI model division behind the Qwen and Tongyi model families"
+        description: "Alibaba's Tongyi Lab, developer of the Qwen and Wan model families"
         tags: [lab, llm, open-weights]
+        aliases: [通义实验室]
         added_at: 2026-03-20
 
       - name: Black Forest Labs
@@ -221,21 +236,21 @@ subcategories:
       - name: Databricks Mosaic
         homepage_url: https://www.databricks.com/research/mosaic
         logo: databricks-mosaic.webp
-        description: "Databricks research group focused on efficient training, open models, and large model infrastructure"
+        description: "Databricks research group working on efficient training and open models"
         tags: [lab, llm, research, open-weights]
         added_at: 2026-03-20
 
       - name: Deep Cogito
         homepage_url: https://www.deepcogito.com
         logo: deep-cogito.webp
-        description: "AI lab building open-source systems for advanced reasoning and general intelligence research"
+        description: "AI lab building open reasoning models toward general superintelligence"
         tags: [lab, llm, reasoning, open-weights]
         added_at: 2026-03-20
 
       - name: EleutherAI
         homepage_url: https://www.eleuther.ai
         logo: eleutherai.webp
-        description: "Decentralized AI research collective focused on open models, datasets, and interpretability"
+        description: "Non-profit AI research lab advancing open science through models and datasets"
         tags: [lab, llm, open-weights, oss]
         added_at: 2026-03-18
 
@@ -250,27 +265,29 @@ subcategories:
         homepage_url: https://huggingface.co
         logo: hugging-face.webp
         twitter_url: https://x.com/huggingface
-        description: "Community AI platform and open model hub for models, datasets, and machine learning tooling"
+        description: "Open-source AI community hub for models, datasets, and ML tooling"
         tags: [lab, platform, open-weights, community]
         added_at: 2026-03-18
 
       - name: IBM Research
         homepage_url: https://research.ibm.com/artificial-intelligence
         logo: ibm-research.webp
-        description: "Enterprise AI research organization working on open models, data tools, and trustworthy AI systems"
+        description: "IBM's research arm working on open models, data tools, and trustworthy AI"
         tags: [lab, research, enterprise, open-weights]
         added_at: 2026-03-20
 
       - name: Kyutai
         homepage_url: https://kyutai.org
+        logo: kyutai.webp
         description: "Paris-based open-science AI lab building and democratizing advanced AI systems"
         tags: [lab, research, open-science, open-weights]
         added_at: 2026-05-08
 
       - name: Liquid AI
         homepage_url: https://liquid.ai
+        logo: liquid-ai.webp
         twitter_url: https://x.com/liquidai
-        description: "MIT spin-off building efficient Liquid Foundation Models for every scale"
+        description: "Builds efficient Liquid Foundation Models for on-device, edge, and cloud AI"
         tags: [lab, open-weights, edge, llm]
         added_at: 2026-08-07
 
@@ -278,22 +295,14 @@ subcategories:
         homepage_url: https://ai.meta.com
         logo: meta.webp
         twitter_url: https://x.com/AIatMeta
-        description: "Meta's AI division — FAIR and Superintelligence Labs; creators of the Llama model family"
+        description: "Meta's AI division, including FAIR and Superintelligence Labs, behind Llama"
         tags: [lab, llm, open-weights, research]
         added_at: 2026-03-18
-
-      - name: moondream
-        homepage_url: https://moondream.ai
-        repo_url: https://github.com/vikhyat/moondream
-        twitter_url: https://x.com/moondreamai
-        description: "Open vision-language models small enough to run anywhere in production"
-        tags: [vision, open-models, small, edge]
-        added_at: 2026-08-07
 
       - name: Nous Research
         homepage_url: https://nousresearch.com
         logo: nous-research.webp
-        description: "Open-source AI research collective behind the Hermes and NousCoder model families"
+        description: "Open AI research collective behind the Hermes models and Hermes Agent"
         tags: [lab, llm, open-weights, oss]
         added_at: 2026-03-18
 
@@ -301,20 +310,21 @@ subcategories:
         homepage_url: https://research.nvidia.com
         logo: nvidia-research.webp
         twitter_url: https://x.com/NVIDIAAI
-        description: "Research organization advancing GPU-driven systems, model architectures, and large-scale AI infrastructure"
+        description: "NVIDIA's research organization for generative AI, graphics, and AI systems"
         tags: [lab, research, multimodal, infrastructure]
         added_at: 2026-03-20
 
       - name: OpenMMLab
         homepage_url: https://openmmlab.com
-        description: "Open-source AI research ecosystem for computer vision, multimodal learning, and model toolkits"
+        logo: openmmlab.webp
+        description: "Open-source computer vision libraries, toolchains, and pretrained models"
         tags: [lab, vision, multimodal, oss]
         added_at: 2026-05-08
 
       - name: PleIAs
         homepage_url: https://pleias.fr
         logo: pleias.webp
-        description: "AI lab building energy-efficient open-data foundation models for regulated industries"
+        description: "AI lab building open training data, synthetic data tools, and small open models"
         tags: [lab, llm, open-weights, oss]
         added_at: 2026-03-20
 
@@ -328,7 +338,7 @@ subcategories:
       - name: Reflection AI
         homepage_url: https://reflection.ai
         logo: reflection-ai.webp
-        description: "AI lab building frontier open intelligence and open-weight models accessible to all"
+        description: "AI lab building frontier open-weight models accessible to all"
         tags: [lab, llm, open-weights]
         added_at: 2026-03-18
 
@@ -373,8 +383,10 @@ subcategories:
         added_at: 2026-03-18
 
       - name: BigScience
-        homepage_url: https://bigscience.huggingface.co
-        description: "Open collaborative research initiative focused on large language models and responsible AI"
+        homepage_url: https://huggingface.co/bigscience
+        repo_url: https://github.com/bigscience-workshop
+        logo: bigscience.webp
+        description: "Year-long open research workshop on large language models that produced BLOOM"
         tags: [lab, research, open-science, oss]
         added_at: 2026-05-08
 
@@ -387,14 +399,17 @@ subcategories:
 
       - name: LAION
         homepage_url: https://laion.ai
-        description: "Non-profit organization building open datasets, tools, and models for machine learning research"
+        logo: laion.webp
+        description: "Non-profit releasing open large-scale datasets, tools, and models for ML"
         tags: [lab, datasets, open-science, oss]
         added_at: 2026-05-08
 
-      - name: MILA
+      - name: Mila
         homepage_url: https://mila.quebec
-        description: "Quebec AI Institute focused on machine learning research and scientific AI advancement"
+        logo: mila.webp
+        description: "Montreal-based AI research institute uniting Quebec university researchers"
         tags: [lab, academic, research]
+        aliases: [Institut québécois d’intelligence artificielle]
         added_at: 2026-05-08
 
       - name: Stanford HAI
@@ -406,6 +421,8 @@ subcategories:
 
       - name: Vector Institute
         homepage_url: https://vectorinstitute.ai
-        description: "Canadian AI research institute advancing machine learning research and AI adoption"
+        logo: vector-institute.webp
+        description: "Canadian AI institute advancing breakthrough research and AI adoption"
         tags: [lab, research, academic]
+        aliases: [Institut Vecteur]
         added_at: 2026-05-08

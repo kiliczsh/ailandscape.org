@@ -10,6 +10,7 @@ subcategories:
     items:
       - name: Gumloop
         homepage_url: https://gumloop.com
+        logo: gumloop.webp
         twitter_url: https://x.com/gumloop
         description: AI-native workflow automation platform with drag-and-drop builder
         tags:
@@ -19,6 +20,7 @@ subcategories:
         added_at: 2026-07-31
       - name: Make
         homepage_url: https://make.com
+        logo: make.webp
         description: Visual automation platform connecting apps with AI-powered scenarios
         tags:
           - automation
@@ -28,11 +30,12 @@ subcategories:
         homepage_url: https://n8n.io/
         repo_url: https://github.com/n8n-io/n8n
         logo: n8n.webp
-        description: AI workflow automation for technical teams — connect LLMs, APIs, and databases
+        description: AI workflow automation for technical teams, connecting LLMs, APIs, and databases
         added_at: 2026-03-18
       - name: Pipedream
         homepage_url: https://pipedream.com
         repo_url: https://github.com/PipedreamHQ/pipedream
+        logo: pipedream.webp
         description: Developer-first workflow automation connecting APIs with code steps
         tags:
           - automation
@@ -42,6 +45,7 @@ subcategories:
       - name: Trigger.dev
         homepage_url: https://trigger.dev
         repo_url: https://github.com/triggerdotdev/trigger.dev
+        logo: trigger-dev.webp
         description: Open-source background jobs and AI workflow automation for developers
         tags:
           - automation
@@ -49,7 +53,8 @@ subcategories:
         added_at: 2026-07-31
       - name: Zapier
         homepage_url: https://zapier.com
-        description: Connect 8,000+ apps with AI-powered workflow automation
+        logo: zapier.webp
+        description: Connect thousands of apps with AI-powered workflow automation
         tags:
           - automation
           - proprietary

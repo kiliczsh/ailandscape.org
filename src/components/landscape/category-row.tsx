@@ -35,6 +35,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { toast } from "sonner";
 
 import { useLandscapeFilter } from "@/contexts/landscape-filter-context";
+import { useLocale } from "@/lib/i18n/use-locale";
 import type { Category } from "@/types/landscape";
 import { SubcategorySection } from "./subcategory-section";
 
@@ -137,12 +138,13 @@ export function ActionPills({
   categorySlug?: string;
   orientation?: "horizontal" | "vertical";
 }) {
+  const { prefix } = useLocale();
   if (orientation === "vertical") {
     return (
       <>
         {categorySlug && (
           <Link
-            href={`/category/${categorySlug}`}
+            href={`${prefix}/category/${categorySlug}`}
             title={`Open ${categoryName} page`}
             className="flex flex-col items-center gap-0.5 rounded-lg bg-category-bar-text/10 px-1.5 py-1.5 text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
@@ -175,7 +177,7 @@ export function ActionPills({
     <>
       {categorySlug && (
         <Link
-          href={`/category/${categorySlug}`}
+          href={`${prefix}/category/${categorySlug}`}
           title={`Open ${categoryName} page`}
           className="flex shrink-0 items-center gap-1 rounded-full bg-category-bar-text/10 py-1 pl-1.5 pr-2 text-[10px] font-medium text-category-bar-text/70 hover:bg-category-bar-text/20 hover:text-category-bar-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
@@ -236,6 +238,8 @@ export function CategoryRow({
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
   const { onTierListOpen } = useLandscapeFilter();
+  const { categoryLabel } = useLocale();
+  const displayName = categoryLabel(category.name);
 
   const allItems = useMemo(
     () => category.subcategories.flatMap((sub) => sub.items),
@@ -294,7 +298,7 @@ export function CategoryRow({
       style={style}
     >
       <h2 id={headingId} className="sr-only">
-        {category.name}
+        {displayName}
       </h2>
       {/* Mobile: always-visible horizontal toggle */}
       <div
@@ -313,7 +317,7 @@ export function CategoryRow({
         >
           <ToggleBarContent
             caretClass={collapsed ? "-rotate-90" : ""}
-            name={category.name}
+            name={displayName}
             iconComponent={IconComponent}
             totalItemCount={totalItemCount}
             filteredItemCount={filteredItemCount}
@@ -344,7 +348,7 @@ export function CategoryRow({
           >
             <ToggleBarContent
               caretClass="-rotate-90"
-              name={category.name}
+              name={displayName}
               iconComponent={IconComponent}
               totalItemCount={totalItemCount}
               filteredItemCount={filteredItemCount}
@@ -388,7 +392,7 @@ export function CategoryRow({
                     transform: "rotate(180deg)",
                   }}
                 >
-                  {category.name}
+                  {displayName}
                 </span>
                 <span className="text-[10px] tabular-nums text-category-bar-text/80">
                   {filteredItemCount !== totalItemCount

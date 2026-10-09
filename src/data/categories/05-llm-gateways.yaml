@@ -9,20 +9,32 @@ subcategories:
     row: 0
     items:
       - name: Anthropic API
-        homepage_url: https://anthropic.com/api
+        homepage_url: https://claude.com/platform/api
         logo: anthropic.webp
         description: "APIs for Claude language models"
         tags: [api, llm, saas]
         added_at: 2026-03-18
+      - name: AWS Bedrock
+        homepage_url: https://aws.amazon.com/bedrock/
+        logo: aws-bedrock.webp
+        description: AWS managed service for foundation models from Anthropic, Meta, and Mistral
+        tags: [api, llm]
+        added_at: 2026-03-18
       - name: Cerebras Inference
-        homepage_url: https://cerebras.ai/inference
+        homepage_url: https://www.cerebras.ai/inference
         logo: cerebras.webp
         twitter_url: https://x.com/cerebras
-        description: "Ultra-fast LLM inference API powered by Cerebras hardware"
+        description: LLM inference API and cloud running on Cerebras wafer-scale hardware
         tags: [api, llm, fast-inference]
         added_at: 2026-03-18
+      - name: DeepInfra
+        homepage_url: https://deepinfra.com
+        description: Hosted inference API for open models
+        tags: [api, open-models, cloud]
+        added_at: 2026-10-09
       - name: Google Gemini API
         homepage_url: https://ai.google.dev
+        logo: google-gemini-api.webp
         description: Direct API access to Gemini models via AI Studio
         tags:
           - api
@@ -30,16 +42,18 @@ subcategories:
           - proprietary
         added_at: 2026-08-07
       - name: GroqCloud
-        homepage_url: https://groq.com
+        homepage_url: https://console.groq.com
+        logo: groq.webp
         description: Ultra-low-latency LPU inference API for open models
         tags:
           - api
           - llm
           - inference
+          - fast-inference
         added_at: 2026-08-07
       - name: Mistral API
         homepage_url: https://docs.mistral.ai
-        description: La Plateforme — API access to Mistral models
+        description: API access to Mistral models via La Plateforme
         tags:
           - api
           - llm
@@ -47,7 +61,7 @@ subcategories:
       - name: OpenAI API
         homepage_url: https://platform.openai.com
         logo: openai.webp
-        description: "APIs for GPT models, DALL-E, and Whisper"
+        description: "API platform for OpenAI models"
         tags: [api, llm, saas]
         added_at: 2026-03-18
       - name: Replicate
@@ -103,8 +117,8 @@ subcategories:
         tags: [gateway, proxy, llm, observability]
         added_at: 2026-03-18
       - name: Vercel AI Gateway
-        homepage_url: https://vercel.com/blog/ai-gateway-is-now-generally-available
+        homepage_url: https://vercel.com/ai-gateway
         logo: vercel-ai-gateway.webp
-        description: Gateway to access hundreds of models with zero token markup, including BYOK
+        description: Gateway for routing requests to models from many providers
         tags: [gateway, proxy, llm]
         added_at: 2026-03-18

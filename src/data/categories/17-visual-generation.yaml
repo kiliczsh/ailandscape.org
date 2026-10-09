@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 245)
 icon: ImageSquare
 intro: >-
-  AI image and video generators: text-to-image products like Midjourney, DALL-E 3, and Ideogram, editing and inpainting with Krea and Magnific, text-to-video like Sora, Runway, and Kling, and avatar generation with HeyGen and Synthesia. The underlying model weights live in Foundation Models.
+  AI image and video generators: text-to-image products like Midjourney, Adobe Firefly, and Ideogram, editing and inpainting with Krea and Magnific, text-to-video like Sora, Runway, and Kling, and avatar generation with HeyGen and Synthesia. The underlying model weights live in Foundation Models.
 subcategories:
   - name: Text-to-Image
     row: 0
@@ -11,7 +11,7 @@ subcategories:
       - name: Adobe Firefly
         homepage_url: https://firefly.adobe.com
         logo: adobe.webp
-        description: Adobe's generative AI for creative workflows and commercial-safe imagery
+        description: Adobe's generative AI for images, video and design workflows
         tags:
           - image-generation
           - creative
@@ -19,23 +19,15 @@ subcategories:
         added_at: 2026-03-18
       - name: Civitai
         homepage_url: https://civitai.com
+        logo: civitai.webp
         twitter_url: https://x.com/HelloCivitai
         description: "Community hub for sharing generative AI models, LoRAs, and art"
         tags: [community, image-generation, open-models]
         added_at: 2026-08-07
 
-      - name: DALL-E 3
-        homepage_url: https://openai.com/dall-e-3
-        logo: openai.webp
-        description: OpenAI's latest text-to-image generation model with improved prompt following
-        tags:
-          - image-generation
-          - api
-          - proprietary
-        added_at: 2026-03-30
       - name: Ideogram
         homepage_url: https://ideogram.ai
-        description: AI image generator with best-in-class text rendering in images
+        description: AI image generator focused on text rendering in images
         tags:
           - image-generation
           - text-rendering
@@ -52,13 +44,14 @@ subcategories:
       - name: Midjourney
         homepage_url: https://midjourney.com
         logo: midjourney.webp
-        description: AI image generation service with stunning artistic output
+        description: AI image generation service for artistic imagery
         tags:
           - image-generation
           - proprietary
         added_at: 2026-03-18
       - name: Recraft
-        homepage_url: https://recraft.ai
+        homepage_url: https://www.recraft.ai/
+        logo: recraft.webp
         twitter_url: https://x.com/recraftai
         description: "Image generation and editing built for professional design teams"
         tags: [image-generation, design, proprietary]
@@ -86,6 +79,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Krea AI
         homepage_url: https://www.krea.ai
+        logo: krea-ai.webp
         twitter_url: https://x.com/krea_ai
         description: Real-time AI image generation and enhancement platform
         tags:
@@ -94,7 +88,8 @@ subcategories:
           - proprietary
         added_at: 2026-03-30
       - name: Magnific
-        homepage_url: https://magnific.ai
+        homepage_url: https://www.magnific.com/
+        logo: magnific.webp
         twitter_url: https://x.com/Magnific_AI
         description: "AI image upscaler and enhancer adding detail with creative control"
         tags: [upscaling, image-editing, proprietary]
@@ -105,6 +100,7 @@ subcategories:
     items:
       - name: Higgsfield
         homepage_url: https://higgsfield.ai
+        logo: higgsfield.webp
         twitter_url: https://x.com/higgsfield_ai
         description: "AI-native creative suite for cinematic video generation and effects"
         tags: [video-generation, creative, proprietary]
@@ -113,7 +109,7 @@ subcategories:
         added_at: 2026-08-07
 
       - name: Kling
-        homepage_url: https://klingai.com
+        homepage_url: https://kling.ai/
         logo: kling.webp
         twitter_url: https://x.com/Kling_ai
         description: Kuaishou's advanced video generation model with physics-aware motion
@@ -138,27 +134,21 @@ subcategories:
           - video-generation
           - proprietary
         added_at: 2026-03-18
-      - name: Runway Gen-3
-        homepage_url: https://runwayml.com
-        logo: runway.webp
-        description: Runway's high-quality video generation model for creative professionals
-        tags:
-          - video-generation
-          - proprietary
-        added_at: 2026-03-18
       - name: Sora
         homepage_url: https://openai.com/sora
         logo: openai.webp
-        description: OpenAI's text-to-video generation model creating realistic scenes
+        description: OpenAI's text-to-video generation model and app, since shut down
         tags:
           - video-generation
           - proprietary
+        status: archived
         added_at: 2026-03-18
   - name: Video-to-Video & Stylization
     row: 1
     items:
       - name: Domo AI
-        homepage_url: https://www.domo.ai
+        homepage_url: https://www.domoai.app
+        logo: domo-ai.webp
         description: AI video stylization and animation from video input
         tags:
           - video-editing
@@ -166,17 +156,20 @@ subcategories:
           - proprietary
         added_at: 2026-03-30
       - name: Runway
-        homepage_url: https://runwayml.com
+        homepage_url: https://runway.com/
         logo: runway.webp
         twitter_url: https://x.com/runwayml
-        description: AI-powered creative suite for video editing, generation, and stylization
+        description: AI creative suite for video generation, editing and stylization
         tags:
           - video-editing
           - stylization
           - proprietary
+        aliases:
+          - Runway Gen-3
         added_at: 2026-03-18
       - name: Topaz Video AI
-        homepage_url: https://www.topazlabs.com/topaz-video-ai
+        homepage_url: https://www.topazlabs.com/topaz-video
+        logo: topaz-video-ai.webp
         twitter_url: https://x.com/topazlabs
         description: AI video upscaling, deinterlacing, and motion interpolation
         tags:
@@ -189,6 +182,7 @@ subcategories:
     items:
       - name: D-ID
         homepage_url: https://www.d-id.com
+        logo: d-id.webp
         description: AI-powered digital people creation and talking head video generation
         tags:
           - avatar
@@ -214,6 +208,7 @@ subcategories:
         added_at: 2026-03-18
       - name: Synthesia
         homepage_url: https://www.synthesia.io
+        logo: synthesia.webp
         description: AI video generation with digital avatars for enterprise communications
         tags:
           - avatar

@@ -12,10 +12,11 @@ subcategories:
         homepage_url: https://www.coderabbit.ai
         logo: coderabbit.webp
         twitter_url: https://x.com/coderabbitai
-        description: AI-powered code reviews — cut code review time and bugs in half
+        description: AI code review for pull requests and IDEs
         added_at: 2026-03-18
       - name: Ellipsis
         homepage_url: https://www.ellipsis.dev
+        logo: ellipsis.webp
         description: AI code reviews and bug fixes for pull requests
         tags:
           - coding
@@ -23,6 +24,7 @@ subcategories:
         added_at: 2026-08-07
       - name: Greptile
         homepage_url: https://www.greptile.com
+        logo: greptile.webp
         twitter_url: https://x.com/greptile
         description: AI codebase-aware code review bot for PRs
         tags:
@@ -31,7 +33,8 @@ subcategories:
           - proprietary
         added_at: 2026-08-07
       - name: Qodo
-        homepage_url: https://qodo.ai
+        homepage_url: https://www.qodo.ai/
+        logo: qodo.webp
         twitter_url: https://x.com/QodoAI
         description: "AI code quality platform for reviews, testing, and governance"
         tags: [coding, testing, enterprise]

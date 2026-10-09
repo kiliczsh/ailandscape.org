@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { getSiteStats } from "@/lib/site-stats";
 import { cn } from "@/lib/utils";
 
 const geistSans = Geist({
@@ -20,6 +21,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const stats = getSiteStats();
+const SEO_TITLE = `AI Tools Landscape — ${stats.label} Models, Agents & AI Tools`;
+const SEO_DESCRIPTION = `Explore ${stats.label} AI tools, models, agents, and infrastructure across ${stats.categories} categories. Compare options, filter by tags, and discover the AI ecosystem.`;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://ailandscape.org"),
   verification: {
@@ -28,9 +33,8 @@ export const metadata: Metadata = {
       "google-adsense-account": "ca-pub-8397851036658136",
     },
   },
-  title: "AI Tools Landscape — 700+ Models, Agents & AI Tools",
-  description:
-    "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories. Compare options, filter by tags, and discover the AI ecosystem.",
+  title: SEO_TITLE,
+  description: SEO_DESCRIPTION,
   alternates: {
     canonical: "https://ailandscape.org",
     types: {
@@ -44,17 +48,15 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "AI Tools Landscape — 700+ Models, Agents & AI Tools",
-    description:
-      "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories. Compare options, filter by tags, and discover the AI ecosystem.",
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
     type: "website",
     url: "https://ailandscape.org",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Tools Landscape — 700+ Models, Agents & AI Tools",
-    description:
-      "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories. Compare options, filter by tags, and discover the AI ecosystem.",
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
     site: "@ailandscape",
   },
 };
@@ -80,8 +82,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "AI Landscape",
               url: "https://ailandscape.org",
-              description:
-                "Explore 700+ AI tools, models, agents, and infrastructure across 31 categories.",
+              description: `Explore ${stats.label} AI tools, models, agents, and infrastructure across ${stats.categories} categories.`,
               potentialAction: {
                 "@type": "SearchAction",
                 target: {

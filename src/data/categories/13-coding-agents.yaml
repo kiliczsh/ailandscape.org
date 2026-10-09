@@ -3,7 +3,7 @@ group: coding
 color: oklch(0.62 0.20 0)
 icon: Code
 intro: >-
-  AI coding agents that write, review, and ship code: autonomous engineers like Devin, CLI agents like Claude Code and Aider, AI-first IDEs like Cursor and Windsurf, and editor extensions like GitHub Copilot. To choose one, start from where the agent should run. Extensions fit into your existing editor, AI IDEs replace it, CLI agents work in the terminal with full repo access, and hosted autonomous agents take on whole tasks in the cloud. The most active corner of the AI landscape.
+  AI coding agents that write, review, and ship code: autonomous engineers like Devin, CLI agents like Claude Code and Aider, AI-first IDEs like Cursor and Devin Desktop, and editor extensions like GitHub Copilot. To choose one, start from where the agent should run. Extensions fit into your existing editor, AI IDEs replace it, CLI agents work in the terminal with full repo access, and hosted autonomous agents take on whole tasks in the cloud. The most active corner of the AI landscape.
 subcategories:
   - name: Commercial Agents
     row: 0
@@ -12,36 +12,36 @@ subcategories:
         homepage_url: https://aws.amazon.com/q/developer/
         repo_url: https://github.com/aws/amazon-q-developer-cli
         logo: amazon-q-developer.webp
-        description: "AWS AI coding agent with deep AWS integration and an autonomous /dev mode"
+        description: "AWS coding assistant; AWS points IDE plugin users to Kiro"
+        tags: [agents, coding, cli, aws]
         added_at: 2026-03-18
       - name: Amp
         homepage_url: https://ampcode.com/
         logo: amp.webp
         twitter_url: https://x.com/AmpCode
         description: "Sourcegraph's coding agent for CLI and VS Code with multi-repo codebase context"
+        tags: [agents, coding, cli]
         added_at: 2026-03-18
       - name: Blackbox AI
         homepage_url: https://www.blackbox.ai/
         logo: blackbox-ai.webp
         twitter_url: https://x.com/blackboxai
         description: "Autonomous AI Coding Agent with integrated IDE"
+        tags: [agents, coding, ide]
         added_at: 2026-03-18
       - name: Codebuff
         homepage_url: https://www.codebuff.com/
         logo: codebuff.webp
         twitter_url: https://x.com/CodebuffAI
         description: "Works in your terminal to help you write and deeply understand your code"
-        added_at: 2026-03-18
-      - name: Conductor
-        homepage_url: https://conductor.build/
-        logo: conductor.webp
-        description: "Run fleets of Claude Code agents in parallel across isolated git worktrees"
+        tags: [agents, coding, cli]
         added_at: 2026-03-18
       - name: CTO.new
         homepage_url: https://cto.new
         logo: cto-new.webp
         twitter_url: https://x.com/ctodotnew
-        description: "Completely free AI code agent"
+        description: "Free AI coding agent"
+        tags: [agents, coding, free]
         added_at: 2026-03-18
       - name: Devin
         homepage_url: https://devin.ai
@@ -51,48 +51,44 @@ subcategories:
         tags: [agents, coding, autonomous]
         added_at: 2026-03-18
       - name: Factory
-        homepage_url: https://www.factory.ai/
+        homepage_url: https://factory.com/
         logo: factory.webp
         twitter_url: https://x.com/FactoryAI
-        description: "Delegate engineering tasks to AI Droids — from ticket to merged PR autonomously"
-        added_at: 2026-03-18
-      - name: Forge Code
-        homepage_url: https://forgecode.dev
-        repo_url: https://github.com/antinomyhq/forge
-        logo: forge-code.webp
-        description: "Terminal AI software engineering agent with deep codebase understanding"
+        description: "Agent-native software development platform built around Droids"
+        tags: [agents, coding, autonomous, enterprise]
         added_at: 2026-03-18
       - name: Gemini Code Assist
         homepage_url: https://codeassist.google/
-        repo_url: https://github.com/google-gemini/gemini-cli
         logo: gemini-code-assist.webp
         description: "Gemini-powered coding assistant integrating into VS Code, JetBrains, and the CLI"
+        tags: [coding, copilot, ide, cli, google]
         added_at: 2026-03-18
       - name: GitHub Copilot CLI
         homepage_url: https://github.blog/changelog/2025-09-25-github-copilot-cli-is-now-in-public-preview/
         logo: github-copilot-cli.webp
         description: "The power of GitHub Copilot coding agent brought directly to your terminal"
-        added_at: 2026-03-18
-      - name: Goose
-        homepage_url: https://block.github.io/goose/
-        repo_url: https://github.com/block/goose
-        description: "Block's open-source AI agent — runs tools, executes code, and browses the web"
+        tags: [agents, coding, cli, microsoft]
         added_at: 2026-03-18
       - name: JetBrains Junie
         homepage_url: https://www.jetbrains.com/junie/
         logo: jetbrains-junie.webp
         description: "JetBrains' smart coding agent deeply integrated into IntelliJ-based IDEs"
+        tags: [agents, coding, ide]
         added_at: 2026-03-18
       - name: Jules
         homepage_url: https://jules.google/
         logo: jules.webp
         twitter_url: https://x.com/julesagent
         description: "Google's async AI coding agent that works independently on GitHub issues and PRs"
+        tags: [agents, coding, autonomous, google]
         added_at: 2026-03-18
-      - name: Kimi-CLI
+      - name: Kimi Code
         homepage_url: https://www.kimi.com/code
         logo: kimi-cli.webp
-        description: "CLI agent for software development and terminal operations powered by Kimi"
+        description: "Moonshot's coding agent with CLI, desktop and IDE plugin surfaces"
+        tags: [agents, coding, cli]
+        aliases:
+          - Kimi-CLI
         added_at: 2026-03-18
       - name: Meta Muse Code
         homepage_url: https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2
@@ -105,31 +101,30 @@ subcategories:
         homepage_url: https://openai.com/codex/
         repo_url: https://github.com/openai/codex
         logo: openai-codex.webp
-        description: "OpenAI's cloud coding agent powered by codex-1 — plans tasks and opens PRs"
+        description: "OpenAI's coding agent across cloud, CLI and IDE"
+        tags: [agents, coding, autonomous, openai]
         added_at: 2026-03-18
       - name: Scout
         homepage_url: https://scout.new/
         logo: scout.webp
         description: "Coding and research agent for complex multi-file tasks"
+        tags: [agents, coding]
         added_at: 2026-03-18
       - name: Slate
         homepage_url: https://randomlabs.ai/
         logo: slate.webp
         description: "Purpose-built agent for long and complex coding tasks"
+        tags: [agents, coding, autonomous]
         added_at: 2026-03-18
   - name: Code-Writing Agents
     row: 1
     items:
       - name: Aider
         homepage_url: https://aider.chat
-        repo_url: https://github.com/paul-gauthier/aider
+        repo_url: https://github.com/Aider-AI/aider
+        logo: aider.webp
         description: "AI pair programming in your terminal"
         tags: [agents, coding, cli, oss]
-        added_at: 2026-03-18
-      - name: Charm
-        homepage_url: https://charm.land/
-        logo: charm.webp
-        description: "A charming terminal coding agent built on Charm's TUI framework"
         added_at: 2026-03-18
       - name: Claude Code
         homepage_url: https://claude.ai/code
@@ -143,55 +138,87 @@ subcategories:
         logo: cline.webp
         twitter_url: https://x.com/cline
         description: "Autonomous coding agent for VS Code with human-in-the-loop approval gates"
+        tags: [agents, coding, ide]
+        added_at: 2026-03-18
+      - name: Crush
+        homepage_url: https://charm.land/
+        repo_url: https://github.com/charmbracelet/crush
+        logo: charm.webp
+        description: "Charm's terminal coding agent with multi-model, LSP and MCP support"
+        tags: [agents, coding, cli]
+        aliases:
+          - Charm
+          - Charm Crush
         added_at: 2026-03-18
       - name: DeepCode
         homepage_url: https://github.com/HKUDS/DeepCode
         repo_url: https://github.com/HKUDS/DeepCode
         logo: gh-HKUDS.png
         description: "Transforms research papers and natural language into production-ready code"
+        tags: [agents, coding]
+        added_at: 2026-03-18
+      - name: Forge Code
+        homepage_url: https://forgecode.dev
+        repo_url: https://github.com/tailcallhq/forgecode
+        logo: forge-code.webp
+        description: "Terminal AI software engineering agent with deep codebase understanding"
+        tags: [agents, coding, cli, oss]
         added_at: 2026-03-18
       - name: Gemini CLI
         homepage_url: https://github.com/google-gemini/gemini-cli
         repo_url: https://github.com/google-gemini/gemini-cli
         logo: gh-google-gemini.png
         description: "Google's open-source terminal agent powered by Gemini models"
+        tags: [agents, coding, cli, google]
+        added_at: 2026-03-18
+      - name: Goose
+        homepage_url: https://goose-docs.ai/
+        repo_url: https://github.com/aaif-goose/goose
+        description: "Open-source extensible AI agent under the Linux Foundation's AAIF"
+        tags: [agents, coding, cli, oss]
         added_at: 2026-03-18
       - name: Kilo Code
-        homepage_url: https://kilocode.ai/
+        homepage_url: https://kilo.ai/
+        repo_url: https://github.com/Kilo-Org/kilocode
         logo: kilo-code.webp
         description: "AI coding agent for VS Code and JetBrains with multi-provider model support"
+        tags: [agents, coding, ide, oss]
         added_at: 2026-03-18
       - name: Mistral Vibe CLI
         homepage_url: https://github.com/mistralai/mistral-vibe
         repo_url: https://github.com/mistralai/mistral-vibe
         logo: gh-mistralai.png
         description: "Command-line coding assistant powered by Mistral's open-weight models"
+        tags: [agents, coding, cli]
         added_at: 2026-03-18
       - name: Open Interpreter
-        homepage_url: http://openinterpreter.com/
+        homepage_url: https://www.openinterpreter.com/
         repo_url: https://github.com/openinterpreter/open-interpreter
         twitter_url: https://x.com/OpenInterpreter
-        description: "Natural language interface for computers; lets LLMs run code and manage files"
+        description: "Coding agent for open models, from the open-source interpreter project"
+        tags: [agents, coding, cli]
         added_at: 2026-03-18
       - name: OpenAI Codex CLI
-        homepage_url: https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started
+        homepage_url: https://github.com/openai/codex
         repo_url: https://github.com/openai/codex
         logo: openai-codex-cli.webp
-        description: "OpenAI's open-source command-line agent — the CLI counterpart to cloud Codex"
+        description: "OpenAI's open-source coding agent that runs locally in the terminal"
+        tags: [agents, coding, cli, openai]
         added_at: 2026-03-18
       - name: OpenCode
-        homepage_url: https://github.com/opencode-ai/opencode
-        repo_url: https://github.com/opencode-ai/opencode
-        logo: gh-opencode-ai.png
+        homepage_url: https://opencode.ai/
+        repo_url: https://github.com/anomalyco/opencode
+        logo: opencode.webp
         twitter_url: https://x.com/opencode
-        description: "Open-source terminal coding assistant with multi-provider support and a TUI"
+        description: "Open-source coding agent for terminal, IDE, and desktop"
+        tags: [agents, coding, cli, oss]
         added_at: 2026-03-18
       - name: OpenHands
-        homepage_url: https://www.all-hands.dev
-        repo_url: https://github.com/All-Hands-AI/OpenHands
+        homepage_url: https://www.openhands.dev
+        repo_url: https://github.com/OpenHands/OpenHands
         logo: openhands.webp
         twitter_url: https://x.com/OpenHandsDev
-        description: "Open-source platform for software development agents"
+        description: "Open-source platform for software engineering agents"
         tags: [agents, coding, autonomous, oss]
         added_at: 2026-03-18
       - name: potpie
@@ -200,6 +227,7 @@ subcategories:
         logo: potpie.webp
         twitter_url: https://x.com/potpiedotai
         description: "Open-source AI agents for your codebase — Q&A, testing, debugging, and design"
+        tags: [agents, coding]
         added_at: 2026-03-18
       - name: Prime Agent
         homepage_url: https://www.primeintellect.ai/blog/prime-agent
@@ -215,22 +243,25 @@ subcategories:
         repo_url: https://github.com/QwenLM/qwen-code
         logo: gh-QwenLM.png
         description: "Alibaba's CLI coding agent powered by Qwen3-Coder"
+        tags: [agents, coding, cli]
         added_at: 2026-03-18
       - name: Roo Code
         homepage_url: https://github.com/RooCodeInc/Roo-Code
         repo_url: https://github.com/RooCodeInc/Roo-Code
         logo: gh-RooCodeInc.png
-        description: "VS Code fork of Cline with enhanced multi-model support and boomerang tasks"
+        description: "VS Code coding agent extension, shut down; repository archived"
+        status: archived
         added_at: 2026-03-18
       - name: Ruler
-        homepage_url: https://okigu.com/ruler
+        homepage_url: https://github.com/intellectronica/ruler
         repo_url: https://github.com/intellectronica/ruler
         logo: ruler.webp
-        description: "Central AI agent rule registry for consistent agent behavior across projects"
+        description: "Applies one set of rules to all coding agents"
+        tags: [coding, developer-tools]
         added_at: 2026-03-18
       - name: SWE-agent
         homepage_url: https://swe-agent.com
-        repo_url: https://github.com/princeton-nlp/SWE-agent
+        repo_url: https://github.com/SWE-agent/SWE-agent
         logo: swe-agent.webp
         description: "Autonomous GitHub issue-fixing agent by Princeton"
         tags: [agents, coding, autonomous, oss]
@@ -239,34 +270,55 @@ subcategories:
     row: 1
     items:
       - name: Cursor
-        homepage_url: https://cursor.sh
+        homepage_url: https://cursor.com
         logo: cursor.webp
         twitter_url: https://x.com/cursor_ai
         description: "AI-native code editor"
         tags: [coding, ide]
+        added_at: 2026-03-18
+      - name: Devin Desktop
+        homepage_url: https://devin.ai/desktop
+        logo: windsurf.webp
+        description: "Agentic IDE and agent command center, formerly Windsurf"
+        tags: [coding, ide, agentic]
+        aliases:
+          - Windsurf
+          - Codeium
         added_at: 2026-03-18
       - name: Google Antigravity
         homepage_url: https://antigravity.google/
         logo: google-antigravity.webp
         twitter_url: https://x.com/antigravity
         description: "Google's agentic development platform evolving the IDE into the agent-first era"
+        tags: [coding, ide, agentic, google]
         added_at: 2026-03-18
       - name: Kiro
         homepage_url: https://kiro.dev/
         logo: kiro.webp
         description: "Amazon's AI IDE with spec-driven development — agents write and execute specs"
+        tags: [coding, ide, agentic, aws]
+        added_at: 2026-03-18
+      - name: Trae
+        homepage_url: https://www.trae.ai/
+        repo_url: https://github.com/Trae-AI/TRAE
+        logo: trae.webp
+        description: "ByteDance's AI IDE with Builder mode, MCP support, and free frontier models"
+        tags: [coding, ide, free]
         added_at: 2026-03-18
       - name: Warp
         homepage_url: https://www.warp.dev/
         repo_url: https://github.com/warpdotdev/Warp
         logo: warp.webp
         description: "AI-native terminal with inline AI, agentic workflows, and team collaboration"
+        tags: [coding, cli, ide, agentic]
         added_at: 2026-03-18
-      - name: Windsurf
-        homepage_url: https://codeium.com/windsurf
-        logo: windsurf.webp
-        description: "Agentic IDE by Codeium with deep codebase awareness"
-        tags: [coding, ide, agentic]
+      - name: Zed
+        homepage_url: https://zed.dev/
+        repo_url: https://github.com/zed-industries/zed
+        logo: zed.webp
+        twitter_url: https://x.com/zeddotdev
+        description: "High-performance Rust code editor with native AI chat and multi-model support"
+        tags: [coding, ide]
         added_at: 2026-03-18
   - name: AI Extensions & Platforms
     row: 1
@@ -276,12 +328,7 @@ subcategories:
         repo_url: https://github.com/augmentcode/auggie
         logo: augment-code.webp
         description: "Developer AI platform with deep codebase understanding and persistent context"
-        added_at: 2026-03-18
-      - name: Codeium
-        homepage_url: https://codeium.com
-        logo: codeium.webp
-        description: "Free AI code acceleration toolkit"
-        tags: [coding, ide, free]
+        tags: [coding, agents, enterprise]
         added_at: 2026-03-18
       - name: Continue
         homepage_url: https://continue.dev
@@ -300,26 +347,13 @@ subcategories:
       - name: Sourcegraph Cody
         homepage_url: https://sourcegraph.com/cody
         twitter_url: https://x.com/SourcegraphCody
-        description: "Enterprise AI code assistant with deep codebase context by Sourcegraph"
+        description: "Enterprise-only AI code assistant by Sourcegraph"
         tags: [copilot, ide, enterprise]
         added_at: 2026-08-07
-
       - name: Tabnine
-        homepage_url: https://tabnine.com
+        homepage_url: https://www.tricentis.com/news/tricentis-acquires-tabnine
         logo: tabnine.webp
-        description: "AI code completion assistant"
+        description: "Enterprise AI coding assistant, now part of Tricentis"
         tags: [coding, ide]
-        added_at: 2026-03-18
-      - name: Trae
-        homepage_url: https://www.trae.ai/
-        repo_url: https://github.com/Trae-AI/TRAE
-        logo: trae.webp
-        description: "ByteDance's AI IDE with Builder mode, MCP support, and free frontier models"
-        added_at: 2026-03-18
-      - name: Zed
-        homepage_url: https://zed.dev/
-        repo_url: https://github.com/zed-industries/zed
-        logo: zed.webp
-        twitter_url: https://x.com/zeddotdev
-        description: "High-performance Rust code editor with native AI chat and multi-model support"
+        status: acquired
         added_at: 2026-03-18

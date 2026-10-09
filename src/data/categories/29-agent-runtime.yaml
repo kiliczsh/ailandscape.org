@@ -10,17 +10,17 @@ subcategories:
     items:
       - name: Daytona
         homepage_url: https://www.daytona.io
-        repo_url: https://github.com/daytonaio/daytona
+        logo: daytona.webp
         twitter_url: https://x.com/daytonaio
         description: Secure and elastic infrastructure for running AI-generated code
         tags:
           - sandbox
           - agents
-          - oss
         added_at: 2026-08-07
       - name: E2B
         homepage_url: https://e2b.dev
         repo_url: https://github.com/e2b-dev/e2b
+        logo: e2b.webp
         twitter_url: https://x.com/e2b
         description: Isolated cloud sandboxes for running AI-generated code
         tags:
@@ -29,7 +29,8 @@ subcategories:
           - oss
         added_at: 2026-08-07
       - name: Modal Sandboxes
-        homepage_url: https://modal.com/use-cases/sandboxes
+        homepage_url: https://modal.com/products/sandboxes
+        logo: modal.webp
         twitter_url: https://x.com/modal
         description: Serverless sandboxed code execution for AI agents
         tags:
@@ -43,6 +44,7 @@ subcategories:
       - name: Inngest
         homepage_url: https://www.inngest.com
         repo_url: https://github.com/inngest/inngest
+        logo: inngest.webp
         twitter_url: https://x.com/inngest
         description: Event-driven durable execution engine for AI and background workflows
         tags:
@@ -52,6 +54,7 @@ subcategories:
       - name: Temporal
         homepage_url: https://temporal.io
         repo_url: https://github.com/temporalio/temporal
+        logo: temporal.webp
         description: Durable execution platform for long-running, fault-tolerant workflows
         tags:
           - automation

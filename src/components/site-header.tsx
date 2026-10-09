@@ -4,15 +4,19 @@ import { MagnifyingGlass, X } from "@phosphor-icons/react";
 import { GithubLogo, PlusCircle } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Suspense, useState } from "react";
+import { GlobalSearch } from "@/components/landscape/global-search";
 import { HeaderSearch } from "@/components/landscape/header-search";
 import { LanguageToggle } from "@/components/language-toggle";
 import { ModeToggle } from "@/components/mode-toggle";
+import { useLocale } from "@/lib/i18n/use-locale";
 
 export function SiteHeader() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const { isZh } = useLocale();
 
   return (
     <header className="sticky top-0 z-10 bg-background/80 px-4 py-2.5 shadow-sm backdrop-blur-md dark:shadow-none dark:ring-1 dark:ring-white/5">
+      <GlobalSearch />
       {searchOpen && (
         <div className="flex w-full items-center gap-2 sm:hidden">
           <Suspense>
@@ -33,7 +37,7 @@ export function SiteHeader() {
         className={`flex w-full items-center gap-4 ${searchOpen ? "hidden sm:flex" : "flex"}`}
       >
         <Link
-          href="/"
+          href={isZh ? "/zh" : "/"}
           aria-label="AI Landscape — home"
           className="flex shrink-0 items-center gap-1.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >

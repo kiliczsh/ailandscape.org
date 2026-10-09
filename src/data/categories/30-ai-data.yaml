@@ -11,6 +11,7 @@ subcategories:
       - name: Label Studio
         homepage_url: https://labelstud.io
         repo_url: https://github.com/HumanSignal/label-studio
+        logo: label-studio.webp
         description: Open-source data labeling platform for all data types
         tags:
           - labeling
@@ -19,6 +20,7 @@ subcategories:
         added_at: 2026-08-07
       - name: Labelbox
         homepage_url: https://labelbox.com
+        logo: labelbox.webp
         description: Data factory for labeling, RL environments, and preference signals
         tags:
           - labeling
@@ -27,6 +29,7 @@ subcategories:
         added_at: 2026-08-07
       - name: Prodigy
         homepage_url: https://prodi.gy
+        logo: prodigy.webp
         description: Scriptable annotation tool by the makers of spaCy
         tags:
           - labeling
@@ -35,6 +38,7 @@ subcategories:
         added_at: 2026-08-07
       - name: Scale AI
         homepage_url: https://scale.com
+        logo: scale-ai.webp
         twitter_url: https://x.com/scale_AI
         description: Data labeling and human feedback platform for frontier AI training
         tags:
@@ -56,18 +60,28 @@ subcategories:
         added_at: 2026-08-07
       - name: Snorkel
         homepage_url: https://snorkel.ai
+        logo: snorkel.webp
         description: Programmatic data labeling and AI data development platform
         tags:
           - labeling
           - human-feedback
           - proprietary
         added_at: 2026-08-07
+      - name: Surge AI
+        homepage_url: https://surgehq.ai/
+        description: Human data and RLHF platform for AI training
+        tags:
+          - labeling
+          - human-feedback
+          - proprietary
+        added_at: 2026-10-09
   - name: Data Quality & Curation
     row: 0
     items:
       - name: Cleanlab
         homepage_url: https://cleanlab.ai
         repo_url: https://github.com/cleanlab/cleanlab
+        logo: cleanlab.webp
         twitter_url: https://x.com/CleanlabAI
         description: Detect and fix label errors and data issues in ML datasets
         tags:

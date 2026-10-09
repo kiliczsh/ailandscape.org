@@ -24,9 +24,8 @@ subcategories:
         description: "All-in-one agentic AI workspace for search, research, and busywork"
         tags: [agents, search, productivity, proprietary]
         added_at: 2026-08-07
-
       - name: Kagi
-        homepage_url: https://help.kagi.com/kagi/
+        homepage_url: https://kagi.com
         logo: kagi.webp
         description: Privacy-focused AI-enhanced search engine
         tags:
@@ -44,7 +43,7 @@ subcategories:
       - name: You.com
         homepage_url: https://you.com
         logo: you-com.webp
-        description: AI search engine with personalized results
+        description: AI search engine and web search APIs
         tags:
           - search
           - ai
@@ -88,15 +87,23 @@ subcategories:
           - enterprise
           - proprietary
         added_at: 2026-08-07
+      - name: Guru
+        homepage_url: https://www.getguru.com
+        logo: guru.webp
+        twitter_url: https://x.com/guru_hq
+        description: AI knowledge platform that structures and governs company knowledge
+        tags: [knowledge, search, enterprise, proprietary]
+        added_at: 2026-10-09
       - name: Hebbia
-        homepage_url: https://www.hebbia.ai
-        description: AI document analysis platform for knowledge-intensive industries
+        homepage_url: https://www.hebbia.com
+        logo: hebbia.webp
+        twitter_url: https://x.com/hebbia
+        description: AI platform for finance used by asset managers and investment banks
         tags:
           - search
           - enterprise
           - proprietary
         added_at: 2026-08-07
-
       - name: Julius AI
         homepage_url: https://julius.ai
         twitter_url: https://x.com/juliusai

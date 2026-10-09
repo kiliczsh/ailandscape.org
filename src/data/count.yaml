@@ -1,43 +1,43 @@
-total_items: 732
+total_items: 802
 total_categories: 31
-total_subcategories: 107
+total_subcategories: 112
 categories:
   - name: Frontier Labs
     group: core-ai
-    total: 56
+    total: 55
     subcategories:
       - name: Proprietary Frontier Labs
         count: 26
       - name: Open-Weight & Research Labs
-        count: 22
+        count: 21
       - name: Academic & Non-Profit Institutes
         count: 8
   - name: Foundation Models
     group: core-ai
-    total: 60
+    total: 77
     subcategories:
       - name: Language Models
-        count: 17
-      - name: Reasoning & CoT Models
-        count: 5
+        count: 26
       - name: Coding Models
-        count: 18
+        count: 12
       - name: Embedding Models
-        count: 11
+        count: 15
       - name: Image & Video Models
-        count: 3
+        count: 11
       - name: Speech & Audio Models
-        count: 6
+        count: 10
+      - name: Science & Biology Models
+        count: 3
   - name: Multimodal & Perception
     group: core-ai
-    total: 22
+    total: 18
     subcategories:
       - name: Vision-Language Models
-        count: 8
-      - name: Computer Vision
-        count: 8
-      - name: Speech Recognition
         count: 6
+      - name: Computer Vision
+        count: 7
+      - name: Speech Recognition
+        count: 5
   - name: Benchmarks & Leaderboards
     group: core-ai
     total: 27
@@ -50,32 +50,32 @@ categories:
         count: 2
   - name: Inference & Compute
     group: infrastructure
-    total: 43
+    total: 50
     subcategories:
       - name: Cloud & GPU Providers
-        count: 18
+        count: 15
       - name: Inference Optimization
-        count: 7
+        count: 14
       - name: Training Infrastructure
         count: 5
       - name: Compute & Hardware
-        count: 6
-      - name: Local & Edge Inference
         count: 7
+      - name: Local & Edge Inference
+        count: 9
   - name: LLM Gateways & APIs
     group: infrastructure
-    total: 14
+    total: 16
     subcategories:
       - name: Hosted Model APIs
-        count: 8
+        count: 10
       - name: AI Gateway & Proxy
         count: 6
   - name: Vector & Search
     group: infrastructure
-    total: 12
+    total: 14
     subcategories:
       - name: Vector Databases
-        count: 6
+        count: 8
       - name: Semantic Search
         count: 3
       - name: Similarity & Indexing
@@ -96,24 +96,24 @@ categories:
         count: 4
   - name: MLOps & Training
     group: engineering
-    total: 45
+    total: 48
     subcategories:
       - name: Experiment Tracking & CI/CD
         count: 8
       - name: Fine-tuning & RLHF
-        count: 4
+        count: 5
       - name: Pipeline Orchestration
-        count: 4
+        count: 6
       - name: Model Registry & Feature Store
         count: 6
       - name: ML Frameworks
         count: 23
   - name: Observability & Evals
     group: engineering
-    total: 27
+    total: 28
     subcategories:
       - name: LLM Observability
-        count: 6
+        count: 7
       - name: Model Monitoring
         count: 4
       - name: LLM Evaluation & Benchmarking
@@ -124,46 +124,48 @@ categories:
         count: 4
   - name: Agent Frameworks
     group: engineering
-    total: 36
+    total: 37
     subcategories:
       - name: Orchestration SDKs
-        count: 25
+        count: 26
       - name: Multi-Agent Frameworks
         count: 9
       - name: LLM Application Frameworks
         count: 2
   - name: AI Protocols
     group: engineering
-    total: 9
+    total: 19
     subcategories:
       - name: MCP Servers & Registries
-        count: 4
+        count: 8
       - name: Agent Communication Protocols
-        count: 5
+        count: 7
+      - name: Agentic Payments
+        count: 4
   - name: RAG & Memory
     group: engineering
-    total: 21
+    total: 22
     subcategories:
       - name: LLM Frameworks & RAG
         count: 6
       - name: Retrieval & Reranking
-        count: 5
+        count: 6
       - name: Document Parsing
         count: 5
       - name: Memory Layer
         count: 5
   - name: Coding Agents
     group: coding
-    total: 50
+    total: 48
     subcategories:
       - name: Commercial Agents
-        count: 19
+        count: 16
       - name: Code-Writing Agents
-        count: 18
+        count: 20
       - name: AI-Powered IDEs
-        count: 5
+        count: 7
       - name: AI Extensions & Platforms
-        count: 8
+        count: 5
   - name: AI App Builders
     group: coding
     total: 41
@@ -198,14 +200,14 @@ categories:
         count: 5
   - name: Visual Generation
     group: applications
-    total: 24
+    total: 22
     subcategories:
       - name: Text-to-Image
-        count: 7
+        count: 6
       - name: Image Editing & Inpainting
         count: 4
       - name: Text-to-Video
-        count: 6
+        count: 5
       - name: Video-to-Video & Stylization
         count: 3
       - name: Avatar & Lip-sync Video
@@ -234,47 +236,55 @@ categories:
         count: 3
   - name: Coding Agent Orchestration
     group: coding
-    total: 41
+    total: 42
     subcategories:
       - name: Visual Workflow Builders
-        count: 19
+        count: 20
       - name: Event-Driven Automation
         count: 13
       - name: Task Schedulers
         count: 9
   - name: Knowledge Discovery
     group: applications
-    total: 11
+    total: 12
     subcategories:
       - name: AI Search Engines
         count: 5
       - name: Academic Research
         count: 3
       - name: Enterprise Search & Knowledge
-        count: 3
+        count: 4
   - name: Vertical AI
     group: applications
-    total: 13
+    total: 33
     subcategories:
       - name: Healthcare
-        count: 4
+        count: 7
       - name: Legal
-        count: 3
+        count: 5
       - name: Finance
-        count: 3
+        count: 5
       - name: Education
         count: 3
+      - name: Sales & GTM
+        count: 6
+      - name: Customer Support
+        count: 6
+      - name: Life Sciences & Drug Discovery
+        count: 1
   - name: Personal Assistants
     group: applications
-    total: 26
+    total: 27
     subcategories:
       - name: General Assistants
         count: 12
       - name: OpenClaw Ecosystem
         count: 14
+      - name: Voice Dictation
+        count: 1
   - name: AI Security & Safety
     group: governance
-    total: 21
+    total: 23
     subcategories:
       - name: Offensive Testing & Red Teaming
         count: 7
@@ -283,27 +293,27 @@ categories:
       - name: Privacy & Compliance
         count: 4
       - name: Standards & Frameworks
-        count: 3
+        count: 5
   - name: Agent Skills
     group: coding
-    total: 23
+    total: 25
     subcategories:
       - name: Document & Office
-        count: 5
+        count: 6
       - name: Design & Creative
         count: 6
       - name: Dev & Engineering
-        count: 6
+        count: 8
       - name: Marketing & SEO
         count: 3
       - name: Knowledge & Learning
-        count: 3
+        count: 2
   - name: Voice Agents
     group: applications
-    total: 7
+    total: 9
     subcategories:
       - name: Voice Agent Platforms
-        count: 7
+        count: 9
   - name: Workflow Automation
     group: applications
     total: 6
@@ -312,10 +322,10 @@ categories:
         count: 6
   - name: Embodied AI & Robotics
     group: applications
-    total: 8
+    total: 13
     subcategories:
       - name: Robot Foundation Models
-        count: 4
+        count: 9
       - name: Simulation & Training
         count: 3
       - name: Robot Middleware
@@ -330,12 +340,12 @@ categories:
         count: 2
   - name: AI Data & Human Feedback
     group: engineering
-    total: 8
+    total: 9
     subcategories:
       - name: Data Labeling & Annotation
         count: 4
       - name: Human Feedback & Preference Data
-        count: 2
+        count: 3
       - name: Data Quality & Curation
         count: 1
       - name: Dataset Management

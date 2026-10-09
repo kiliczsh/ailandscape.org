@@ -3,7 +3,7 @@ group: core-ai
 color: oklch(0.62 0.20 43)
 icon: Eye
 intro: >-
-  Models that see and hear: vision-language models like GPT-4o and LLaVA, computer vision systems like SAM and Detectron2, and speech recognition engines like Whisper and Deepgram. Pure perception lives here; generative image and audio model weights belong to Foundation Models.
+  Models that see and hear: vision-language models like InternVL and LLaVA, computer vision systems like SAM and Detectron2, and speech recognition engines like Whisper and Deepgram. Pure perception lives here; generative image and audio model weights belong to Foundation Models.
 subcategories:
   - name: Vision-Language Models
     row: 0
@@ -11,76 +11,78 @@ subcategories:
       - name: Flamingo
         homepage_url: https://deepmind.google/discover/blog/tackling-multiple-tasks-with-a-single-visual-language-model
         logo: deepmind.webp
-        description: DeepMind's visual language model
+        description: DeepMind's 2022 few-shot visual language model; weights not released
         tags:
           - multimodal
           - vision
-          - open-weights
-        added_at: 2026-03-18
-      - name: Gemini Pro Vision
-        homepage_url: https://deepmind.google/technologies/gemini
-        logo: gemini.webp
-        description: Google's multimodal model with vision capabilities
-        tags:
-          - multimodal
-          - vision
-          - llm
-        added_at: 2026-03-18
-      - name: GPT-4o
-        homepage_url: https://openai.com/index/hello-gpt-4o/
-        logo: openai.webp
-        description: OpenAI's omni model with audio, vision, and text capabilities
-        tags:
-          - multimodal
-          - audio
-          - vision
+          - research
           - proprietary
         added_at: 2026-03-18
-      - name: GPT-4V
-        homepage_url: https://openai.com/research/gpt-4v-system-card
-        logo: openai.webp
-        description: OpenAI's vision-capable language model
-        tags:
-          - multimodal
-          - vision
-          - llm
-        added_at: 2026-03-18
-      - name: InternVL 2
+      - name: InternVL
         homepage_url: https://internvl.github.io
         repo_url: https://github.com/OpenGVLab/InternVL
-        description: Strong open-source vision-language model by Shanghai AI Lab
+        logo: opengvlab.webp
+        description: Shanghai AI Lab's open multimodal model family, up to 241B MoE
         tags:
           - multimodal
           - vision
           - open-weights
+        aliases:
+          - InternVL 2
+          - InternVL3
+          - InternVL3.5
         added_at: 2026-03-18
       - name: LLaVA
         homepage_url: https://llava-vl.github.io
-        repo_url: https://github.com/haotian-liu/LLaVA
-        description: Open-source visual instruction tuning model
+        repo_url: https://github.com/LLaVA-VL/LLaVA-NeXT
+        description: Open visual instruction tuning VLM family, incl. LLaVA-NeXT and OneVision
         tags:
           - multimodal
           - vision
           - oss
+        aliases:
+          - LLaVA-1.6
+          - LLaVA-NeXT
+          - LLaVA-OneVision
         added_at: 2026-03-18
+      - name: moondream
+        homepage_url: https://moondream.ai
+        repo_url: https://github.com/m87-labs/moondream
+        logo: moondream.webp
+        twitter_url: https://x.com/moondreamai
+        description: Open vision-language models by M87 Labs, with fine-tuning and a cloud API
+        tags:
+          - vision
+          - open-models
+          - small
+          - edge
+        added_at: 2026-08-07
       - name: Qwen-VL
-        homepage_url: https://qwenlm.github.io/blog/qwen-vl
-        repo_url: https://github.com/QwenLM/Qwen-VL
+        homepage_url: https://github.com/QwenLM/Qwen3-VL
+        repo_url: https://github.com/QwenLM/Qwen3-VL
+        logo: qwen.webp
         description: Alibaba's visual language model with strong document understanding
         tags:
           - multimodal
           - vision
           - open-weights
+        aliases:
+          - Qwen2.5-VL
+          - Qwen3-VL
         added_at: 2026-03-18
-      - name: Reka Core
+      - name: Reka
         homepage_url: https://reka.ai
         logo: reka.webp
-        description: Reka's multimodal model handling text, images, video, and audio
+        description: Reka's multimodal model family (Flash, Edge) for text, image, and video
         tags:
           - multimodal
-          - audio
           - vision
-          - proprietary
+          - api
+          - open-weights
+        aliases:
+          - Reka Core
+          - Reka Flash
+          - Reka Edge
         added_at: 2026-03-18
   - name: Computer Vision
     row: 0
@@ -104,6 +106,7 @@ subcategories:
           - object-detection
           - transformers
           - oss
+        status: archived
         added_at: 2026-03-18
       - name: Google Vision AI
         homepage_url: https://cloud.google.com/vision
@@ -113,45 +116,43 @@ subcategories:
           - ocr
           - vision
           - api
+          - proprietary
         added_at: 2026-03-18
       - name: PaddleOCR
-        homepage_url: https://paddlepaddle.github.io/PaddleOCR
+        homepage_url: https://www.paddleocr.com
         repo_url: https://github.com/PaddlePaddle/PaddleOCR
-        description: Multilingual OCR toolkits based on PaddlePaddle
+        logo: paddlepaddle.webp
+        description: Baidu's multilingual OCR and document parsing toolkit with PaddleOCR-VL
         tags:
           - ocr
           - multilingual
           - oss
         added_at: 2026-03-18
       - name: SAM
-        homepage_url: https://ai.meta.com/research/sam2/
-        repo_url: https://github.com/facebookresearch/sam2
+        homepage_url: https://ai.meta.com/research/sam3/
+        repo_url: https://github.com/facebookresearch/sam3
         logo: meta.webp
-        description: Segment Anything Model by Meta
-        tags:
-          - segmentation
-          - oss
-        added_at: 2026-03-18
-      - name: SAM 2
-        homepage_url: https://ai.meta.com/sam2
-        repo_url: https://github.com/facebookresearch/segment-anything-2
-        logo: meta.webp
-        description: Meta's model for image and video segmentation
+        description: Meta's Segment Anything family for promptable image and video segmentation
         tags:
           - segmentation
           - video
-          - oss
+          - open-weights
+        aliases:
+          - Segment Anything
+          - SAM 2
+          - SAM 3
+          - SAM 3.1
         added_at: 2026-03-18
       - name: Tesseract
         homepage_url: https://tesseract-ocr.github.io
         repo_url: https://github.com/tesseract-ocr/tesseract
-        description: Open-source OCR engine
+        description: Open-source OCR engine recognizing 100+ languages out of the box
         tags:
           - ocr
           - oss
         added_at: 2026-03-18
       - name: YOLO
-        homepage_url: https://ultralytics.com/yolo
+        homepage_url: https://www.ultralytics.com/yolo
         repo_url: https://github.com/ultralytics/ultralytics
         logo: ultralytics.webp
         description: Real-time object detection by Ultralytics
@@ -171,9 +172,10 @@ subcategories:
           - speech
           - asr
           - api
+          - proprietary
         added_at: 2026-03-18
       - name: Azure Speech
-        homepage_url: https://azure.microsoft.com/products/cognitive-services/speech-services
+        homepage_url: https://azure.microsoft.com/en-us/products/ai-services/ai-speech/
         logo: microsoft.webp
         description: Microsoft Azure's speech-to-text and translation service
         tags:
@@ -181,6 +183,7 @@ subcategories:
           - asr
           - api
           - cloud
+          - proprietary
         added_at: 2026-03-18
       - name: Deepgram
         homepage_url: https://deepgram.com
@@ -190,24 +193,18 @@ subcategories:
           - speech
           - asr
           - api
+          - proprietary
         added_at: 2026-03-18
       - name: Parakeet
-        homepage_url: https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html
+        homepage_url: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
         logo: nvidia.webp
-        description: NVIDIA's NeMo ASR model with state-of-the-art accuracy
+        description: NVIDIA's open FastConformer ASR models, multilingual, CC-BY-4.0
         tags:
           - speech
           - asr
           - nvidia
           - oss
         added_at: 2026-03-18
-      - name: superwhisper
-        homepage_url: https://superwhisper.com
-        twitter_url: https://x.com/superwhisper
-        description: "Offline AI voice-to-text dictation for macOS, Windows, and iOS"
-        tags: [asr, speech, productivity]
-        added_at: 2026-08-07
-
       - name: Whisper
         homepage_url: https://openai.com/research/whisper
         repo_url: https://github.com/openai/whisper

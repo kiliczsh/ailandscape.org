@@ -20,6 +20,7 @@ subcategories:
         added_at: 2026-03-18
       - name: ElevenLabs Agents
         homepage_url: https://elevenlabs.io/agents
+        logo: elevenlabs.webp
         description: Platform for building conversational voice agents with ElevenLabs voices
         tags:
           - agents
@@ -36,7 +37,7 @@ subcategories:
           - api
         added_at: 2026-07-31
       - name: LiveKit Agents
-        homepage_url: https://livekit.io/agents
+        homepage_url: https://livekit.com/agents
         repo_url: https://github.com/livekit/agents
         logo: livekit.webp
         description: Open-source framework for real-time voice AI agents
@@ -49,6 +50,7 @@ subcategories:
       - name: Pipecat
         homepage_url: https://pipecat.ai
         repo_url: https://github.com/pipecat-ai/pipecat
+        logo: pipecat.webp
         description: Open-source Python framework for real-time voice and multimodal agents
         tags:
           - agents
@@ -65,6 +67,22 @@ subcategories:
           - voice
           - api
         added_at: 2026-03-18
+      - name: Synthflow
+        homepage_url: https://synthflow.ai/
+        description: No-code platform for building AI phone and voice agents
+        tags:
+          - agents
+          - voice
+          - api
+        added_at: 2026-10-09
+      - name: Ultravox
+        homepage_url: https://www.ultravox.ai/
+        description: Speech-native voice AI models and platform for real-time agents
+        tags:
+          - agents
+          - voice
+          - realtime
+        added_at: 2026-10-09
       - name: Vapi
         homepage_url: https://vapi.ai
         logo: vapi.webp

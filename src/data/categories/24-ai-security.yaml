@@ -11,8 +11,7 @@ subcategories:
       - name: ART
         homepage_url: https://adversarial-robustness-toolbox.readthedocs.io
         repo_url: https://github.com/Trusted-AI/adversarial-robustness-toolbox
-        logo: github.webp
-        description: Adversarial Robustness Toolbox by IBM
+        description: Python library for evaluating and defending ML models against attacks
         tags:
           - adversarial
           - defense
@@ -27,6 +26,7 @@ subcategories:
           - adversarial
           - defense
           - python
+        status: maintenance
         added_at: 2026-03-18
       - name: Foolbox
         homepage_url: https://foolbox.readthedocs.io
@@ -36,10 +36,11 @@ subcategories:
           - adversarial
           - attacks
           - python
+        status: maintenance
         added_at: 2026-03-18
       - name: Garak
         homepage_url: https://garak.ai
-        repo_url: https://github.com/leondz/garak
+        repo_url: https://github.com/NVIDIA/garak
         logo: garak.webp
         description: LLM vulnerability scanner and red-teaming framework
         tags:
@@ -48,7 +49,7 @@ subcategories:
           - security
         added_at: 2026-03-18
       - name: HarmBench
-        homepage_url: https://harmbench.org
+        homepage_url: https://www.harmbench.org/
         repo_url: https://github.com/centerforaisafety/HarmBench
         logo: harmbench.webp
         description: Standardized evaluation framework for LLM robustness
@@ -58,8 +59,8 @@ subcategories:
           - safety
         added_at: 2026-03-18
       - name: PyRIT
-        homepage_url: https://github.com/Azure/PyRIT
-        repo_url: https://github.com/Azure/PyRIT
+        homepage_url: https://microsoft.github.io/PyRIT
+        repo_url: https://github.com/microsoft/PyRIT
         logo: microsoft.webp
         description: Python Risk Identification Toolkit for GenAI by Microsoft
         tags:
@@ -90,7 +91,7 @@ subcategories:
           - safety
         added_at: 2026-03-18
       - name: Lakera Guard
-        homepage_url: https://lakera.ai
+        homepage_url: https://www.lakera.ai/
         logo: lakera.webp
         description: Real-time prompt injection and jailbreak protection
         tags:
@@ -98,9 +99,9 @@ subcategories:
           - defense
           - api
         added_at: 2026-03-18
-      - name: LlamaGuard
-        homepage_url: https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations
-        repo_url: https://github.com/meta-llama/llama-recipes
+      - name: Llama Guard
+        homepage_url: https://github.com/meta-llama/PurpleLlama
+        repo_url: https://github.com/meta-llama/llama-cookbook
         logo: meta.webp
         description: Meta's LLM-based input/output safeguard
         tags:
@@ -110,7 +111,7 @@ subcategories:
         added_at: 2026-03-18
       - name: NeMo Guardrails
         homepage_url: https://docs.nvidia.com/nemo-guardrails
-        repo_url: https://github.com/NVIDIA/NeMo-Guardrails
+        repo_url: https://github.com/NVIDIA-NeMo/Guardrails
         logo: nvidia.webp
         description: NVIDIA's toolkit for adding safety guardrails to LLMs
         tags:
@@ -119,7 +120,7 @@ subcategories:
           - nvidia
         added_at: 2026-03-18
       - name: Patronus AI
-        homepage_url: https://patronus.ai
+        homepage_url: https://www.patronus.ai/
         logo: patronus.webp
         description: Enterprise LLM evaluation and safety platform
         tags:
@@ -127,8 +128,8 @@ subcategories:
           - evaluation
           - enterprise
         added_at: 2026-03-18
-      - name: Prompt Shield
-        homepage_url: https://azure.microsoft.com/products/ai-services/prompt-shield
+      - name: Prompt Shields
+        homepage_url: https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection
         logo: microsoft.webp
         description: Microsoft Azure's prompt injection detection service
         tags:
@@ -149,7 +150,7 @@ subcategories:
     items:
       - name: Microsoft Presidio
         homepage_url: https://microsoft.github.io/presidio
-        repo_url: https://github.com/microsoft/presidio
+        repo_url: https://github.com/data-privacy-stack/presidio
         logo: microsoft.webp
         description: PII detection and anonymization for text and images
         tags:
@@ -176,7 +177,7 @@ subcategories:
           - federated-learning
         added_at: 2026-03-18
       - name: TensorFlow Privacy
-        homepage_url: https://tensorflow.org/responsible_ai/privacy
+        homepage_url: https://www.tensorflow.org/responsible_ai/privacy/guide
         repo_url: https://github.com/tensorflow/privacy
         logo: tensorflow.webp
         description: Training ML models with differential privacy
@@ -196,22 +197,43 @@ subcategories:
           - compliance
           - regulation
           - governance
+        entity_type: standard
         added_at: 2026-03-18
+      - name: ISO/IEC 42001
+        homepage_url: https://www.iso.org/standard/42001
+        description: International standard for AI management systems
+        tags:
+          - compliance
+          - governance
+          - risk-management
+        entity_type: standard
+        added_at: 2026-10-09
+      - name: MITRE ATLAS
+        homepage_url: https://atlas.mitre.org/
+        description: Knowledge base of adversary tactics and techniques against AI systems
+        tags:
+          - compliance
+          - security
+          - adversarial
+        entity_type: standard
+        added_at: 2026-10-09
       - name: NIST AI RMF
-        homepage_url: https://airc.nist.gov/home
+        homepage_url: https://airc.nist.gov/
         logo: nist.webp
         description: NIST AI Risk Management Framework
         tags:
           - compliance
           - risk-management
           - governance
+        entity_type: standard
         added_at: 2026-03-18
       - name: OWASP Top 10 for LLMs
-        homepage_url: https://owasp.org/www-project-top-10-for-large-language-model-applications
+        homepage_url: https://owasp.org/projects/top-10-for-large-language-model-applications
         logo: owasp.webp
         description: Top 10 security risks for LLM applications
         tags:
           - compliance
           - security
           - owasp
+        entity_type: standard
         added_at: 2026-03-18

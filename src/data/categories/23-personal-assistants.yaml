@@ -10,7 +10,7 @@ subcategories:
     items:
       - name: accomplish
         homepage_url: https://www.accomplish.ai
-        repo_url: https://github.com/accomplish-ai/accomplish
+        repo_url: https://github.com/accomplish-ai/coworker
         logo: accomplish.webp
         description: Open-source AI coworker that lives on your desktop
         added_at: 2026-03-18
@@ -29,7 +29,7 @@ subcategories:
         homepage_url: https://hermes-agent.nousresearch.com
         repo_url: https://github.com/NousResearch/hermes-agent
         logo: hermes-agent.webp
-        description: The agent that grows with you
+        description: Open-source self-hosted AI agent with persistent memory and skills
         added_at: 2026-03-18
       - name: lemon
         homepage_url: https://github.com/z80dev/lemon
@@ -46,7 +46,8 @@ subcategories:
       - name: lettabot
         homepage_url: https://letta.bot
         repo_url: https://github.com/letta-ai/lettabot
-        description: Personal AI assistant that remembers everything across sessions
+        description: Personal AI assistant with memory (repository archived)
+        status: archived
         added_at: 2026-03-18
       - name: lobsterai
         homepage_url: https://lobsterai.youdao.com
@@ -58,7 +59,8 @@ subcategories:
         homepage_url: https://github.com/Michaelliv/mercury
         repo_url: https://github.com/Michaelliv/mercury
         logo: gh-Michaelliv.png
-        description: Personal AI assistant that lives where you chat
+        description: Personal AI assistant that runs in chat apps (repository archived)
+        status: archived
         added_at: 2026-03-18
       - name: rho
         homepage_url: https://rhobot.dev
@@ -85,7 +87,7 @@ subcategories:
         homepage_url: https://moltlaunch.com
         repo_url: https://github.com/moltlaunch/cashclaw
         logo: cashclaw.webp
-        description: An autonomous agent that takes work, does work, gets paid, and gets better at it
+        description: Autonomous agent that takes freelance work and gets paid for it
         added_at: 2026-03-18
       - name: ClawWork
         homepage_url: https://github.com/HKUDS/ClawWork
@@ -93,17 +95,11 @@ subcategories:
         logo: gh-HKUDS.png
         description: AI coworker built on the OpenClaw ecosystem
         added_at: 2026-03-18
-      - name: CoPaw
-        homepage_url: http://copaw.agentscope.io/
-        repo_url: https://github.com/agentscope-ai/CoPaw
-        logo: copaw.webp
-        description: Personal AI assistant built on the OpenClaw ecosystem
-        added_at: 2026-03-18
       - name: denchclaw
-        homepage_url: https://denchclaw.com
-        repo_url: https://github.com/DenchHQ/denchclaw
+        homepage_url: https://www.dench.com/claw
+        repo_url: https://github.com/DenchHQ/DenchClaw
         logo: denchclaw.webp
-        description: Managed framework for CRM, sales automation, and outreach agents
+        description: AI CRM and workflow automation that runs on your Mac
         added_at: 2026-03-18
       - name: ghostclaw
         homepage_url: https://ghostclaw.io
@@ -121,7 +117,7 @@ subcategories:
         homepage_url: https://github.com/aiming-lab/MetaClaw
         repo_url: https://github.com/aiming-lab/MetaClaw
         logo: gh-aiming-lab.png
-        description: Just talk to your agent — it learns and evolves
+        description: Agent layer that learns and evolves from conversations
         added_at: 2026-03-18
       - name: nanobot
         homepage_url: https://github.com/HKUDS/nanobot
@@ -131,7 +127,7 @@ subcategories:
         added_at: 2026-03-18
       - name: nanoclaw
         homepage_url: https://nanoclaw.dev
-        repo_url: https://github.com/gavrielc/nanoclaw
+        repo_url: https://github.com/nanocoai/nanoclaw
         logo: nanoclaw.webp
         description: Lightweight OpenClaw alternative running inside Apple containers for sandboxing
         added_at: 2026-03-18
@@ -139,13 +135,13 @@ subcategories:
         homepage_url: https://docs.nvidia.com/nemoclaw/latest/
         repo_url: https://github.com/NVIDIA/NemoClaw
         logo: nemoclaw.webp
-        description: NVIDIA plugin for secure OpenClaw installation
+        description: NVIDIA stack for running AI agents such as OpenClaw more securely
         added_at: 2026-03-18
       - name: openclaw
         homepage_url: https://openclaw.ai
         repo_url: https://github.com/openclaw/openclaw
         logo: openclaw.webp
-        description: Your own personal AI assistant — the core framework
+        description: Open-source personal AI assistant that runs on your machine
         added_at: 2026-03-18
       - name: piclaw
         homepage_url: https://github.com/rcarmo/piclaw
@@ -157,7 +153,14 @@ subcategories:
         homepage_url: https://picoclaw.io
         repo_url: https://github.com/sipeed/picoclaw
         logo: picoclaw.webp
-        description: Ultra-efficient AI assistant for microcontrollers
+        description: Ultra-lightweight AI assistant written in Go for low-resource devices
+        added_at: 2026-03-18
+      - name: QwenPaw
+        homepage_url: http://qwenpaw.agentscope.io/
+        repo_url: https://github.com/agentscope-ai/QwenPaw
+        logo: copaw.webp
+        description: Personal AI assistant you install and run on your own machine
+        aliases: [CoPaw]
         added_at: 2026-03-18
       - name: zclaw
         homepage_url: https://zclaw.dev
@@ -165,3 +168,17 @@ subcategories:
         logo: zclaw.webp
         description: The smallest possible AI personal assistant for ESP32
         added_at: 2026-03-18
+  - name: Voice Dictation
+    row: 1
+    items:
+      - name: superwhisper
+        homepage_url: https://superwhisper.com
+        logo: superwhisper.webp
+        twitter_url: https://x.com/superwhisper
+        description: AI voice-to-text dictation app for macOS, Windows, iOS, Android
+        tags:
+          - asr
+          - speech
+          - productivity
+          - proprietary
+        added_at: 2026-08-07

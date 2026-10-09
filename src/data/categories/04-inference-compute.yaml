@@ -14,11 +14,6 @@ subcategories:
         logo: akash-network.webp
         description: Decentralized cloud compute marketplace for AI workloads on GPU nodes
         added_at: 2026-03-18
-      - name: AWS Bedrock
-        homepage_url: https://aws.amazon.com/bedrock/
-        logo: aws-bedrock.webp
-        description: AWS managed service for foundation models from Anthropic, Meta, and Mistral
-        added_at: 2026-03-18
       - name: AWS SageMaker
         homepage_url: https://aws.amazon.com/sagemaker
         logo: aws.webp
@@ -37,21 +32,15 @@ subcategories:
           - mlops
           - azure
         added_at: 2026-03-18
-      - name: BentoML
-        homepage_url: https://bentoml.com
-        repo_url: https://github.com/bentoml/BentoML
-        logo: bentoml.webp
-        crunchbase: https://www.crunchbase.com/organization/bentoml
-        description: Framework for building ML-powered services
-        tags:
-          - serving
-          - python
-        added_at: 2026-03-18
+      - name: Baseten
+        homepage_url: https://www.baseten.co
+        description: Inference platform for deploying and scaling AI models
+        tags: [cloud, inference, serving]
+        added_at: 2026-10-09
       - name: Cloudflare AI
-        homepage_url: https://ai.cloudflare.com
-        repo_url: https://github.com/cloudflare/workers-ai-provider
+        homepage_url: https://www.cloudflare.com/solutions/ai/
         logo: cloudflare-ai.webp
-        description: AI inference at the edge via Cloudflare Workers AI with zero cold starts
+        description: Serverless AI inference on Cloudflare's global network (Workers AI)
         added_at: 2026-03-18
       - name: CoreWeave
         homepage_url: https://coreweave.com
@@ -62,6 +51,11 @@ subcategories:
           - gpu
           - infrastructure
         added_at: 2026-03-18
+      - name: Crusoe
+        homepage_url: https://www.crusoe.ai
+        description: AI infrastructure and GPU cloud provider
+        tags: [cloud, gpu, infrastructure]
+        added_at: 2026-10-09
       - name: Databricks
         homepage_url: https://databricks.com
         logo: databricks.webp
@@ -73,7 +67,7 @@ subcategories:
         added_at: 2026-03-18
       - name: Fireworks AI
         homepage_url: https://fireworks.ai
-        description: Fast, affordable inference API for open-source models with sub-100ms latency
+        description: Inference platform and API for running open-source models
         added_at: 2026-03-18
       - name: Google Vertex AI
         homepage_url: https://cloud.google.com/vertex-ai
@@ -88,80 +82,77 @@ subcategories:
         homepage_url: https://www.heurist.ai/
         repo_url: https://github.com/heurist-network/heurist-agent-framework
         logo: heurist.webp
-        description: Decentralized GPU network for low-latency, verifiable AI model inference
+        description: Agentic finance research platform with AI agents and onchain data
         added_at: 2026-03-18
+      - name: Lambda
+        homepage_url: https://lambda.ai
+        description: GPU cloud for AI training and inference
+        tags: [cloud, gpu, inference]
+        added_at: 2026-10-09
       - name: Nebius
         homepage_url: https://nebius.com
         twitter_url: https://x.com/nebiustf
         description: "AI cloud with GPU clusters and Token Factory managed inference"
         tags: [cloud, gpu, inference, enterprise]
         added_at: 2026-08-07
-
-      - name: Ray Serve
-        homepage_url: https://docs.ray.io/en/latest/serve
-        repo_url: https://github.com/ray-project/ray
-        logo: ray.webp
-        project: sandbox
-        description: Scalable model serving with Ray
-        tags:
-          - serving
-          - distributed
-        added_at: 2026-03-18
       - name: RunPod
         homepage_url: https://runpod.io
         twitter_url: https://x.com/runpod
         description: "Developer-focused GPU cloud for training, inference, and serverless AI"
         tags: [cloud, gpu, serving, inference]
         added_at: 2026-08-07
-
       - name: SambaNova
         homepage_url: https://sambanova.ai
         twitter_url: https://x.com/SambaNovaAI
         description: "Full-stack AI platform with custom RDU chips for fast inference at scale"
         tags: [inference, hardware, ai-chip, enterprise]
         added_at: 2026-08-07
-
-      - name: Seldon Core
-        homepage_url: https://seldon.io
-        repo_url: https://github.com/SeldonIO/seldon-core
-        logo: seldon.webp
-        description: Kubernetes-native ML deployment platform
-        tags:
-          - serving
-          - kubernetes
-        added_at: 2026-03-18
-      - name: TorchServe
-        homepage_url: https://pytorch.org/serve
-        repo_url: https://github.com/pytorch/serve
-        logo: pytorch.webp
-        description: PyTorch model serving framework
-        tags:
-          - serving
-          - pytorch
-        added_at: 2026-03-18
-      - name: Triton
-        homepage_url: https://developer.nvidia.com/triton-inference-server
-        repo_url: https://github.com/triton-inference-server/server
-        logo: triton.webp
-        crunchbase: https://www.crunchbase.com/organization/nvidia
-        description: NVIDIA's open-source inference serving software
-        tags:
-          - serving
-          - nvidia
-          - inference
-        added_at: 2026-03-18
   - name: Inference Optimization
     row: 0
     items:
+      - name: BentoML
+        homepage_url: https://bentoml.com
+        repo_url: https://github.com/bentoml/BentoML
+        logo: bentoml.webp
+        crunchbase: https://www.crunchbase.com/organization/bentoml
+        description: Framework for building ML-powered services
+        tags:
+          - serving
+          - python
+        added_at: 2026-03-18
       - name: llama.cpp
-        homepage_url: https://github.com/ggerganov/llama.cpp
-        repo_url: https://github.com/ggerganov/llama.cpp
+        homepage_url: https://github.com/ggml-org/llama.cpp
+        repo_url: https://github.com/ggml-org/llama.cpp
         logo: gh-ggerganov.png
         description: LLM inference in C/C++ for local deployment
         tags:
           - inference
           - llm
           - cpp
+        added_at: 2026-03-18
+      - name: llm-d
+        homepage_url: https://www.llm-d.ai
+        repo_url: https://github.com/llm-d/llm-d
+        description: Kubernetes-native distributed LLM inference stack
+        tags: [inference, llm, kubernetes, oss]
+        added_at: 2026-10-09
+      - name: NVIDIA Dynamo
+        homepage_url: https://docs.nvidia.com/dynamo/latest
+        repo_url: https://github.com/ai-dynamo/dynamo
+        description: Distributed inference serving framework for LLMs on GPU clusters
+        tags: [inference, llm, distributed, nvidia]
+        added_at: 2026-10-09
+      - name: NVIDIA Dynamo-Triton
+        homepage_url: https://developer.nvidia.com/dynamo-triton
+        repo_url: https://github.com/triton-inference-server/server
+        logo: triton.webp
+        crunchbase: https://www.crunchbase.com/organization/nvidia
+        description: NVIDIA open-source inference serving software
+        tags:
+          - serving
+          - nvidia
+          - inference
+        aliases: [Triton, Triton Inference Server]
         added_at: 2026-03-18
       - name: ONNX Runtime
         homepage_url: https://onnxruntime.ai
@@ -172,6 +163,25 @@ subcategories:
           - inference
           - optimization
           - cross-platform
+        added_at: 2026-03-18
+      - name: Ray Serve
+        homepage_url: https://docs.ray.io/en/latest/serve
+        repo_url: https://github.com/ray-project/ray
+        logo: ray.webp
+        project: sandbox
+        description: Scalable model serving with Ray
+        tags:
+          - serving
+          - distributed
+        added_at: 2026-03-18
+      - name: Seldon Core
+        homepage_url: https://seldon.io
+        repo_url: https://github.com/SeldonIO/seldon-core
+        logo: seldon.webp
+        description: Kubernetes-native ML deployment platform
+        tags:
+          - serving
+          - kubernetes
         added_at: 2026-03-18
       - name: SGLang
         homepage_url: https://sglang.io
@@ -202,6 +212,16 @@ subcategories:
         repo_url: https://github.com/NVIDIA/TensorRT-LLM
         description: NVIDIA's LLM inference framework for NVIDIA GPUs with TensorRT acceleration
         added_at: 2026-03-18
+      - name: TorchServe
+        homepage_url: https://docs.pytorch.org/serve/
+        repo_url: https://github.com/pytorch/serve
+        logo: pytorch.webp
+        description: PyTorch model serving framework (repository archived)
+        tags:
+          - serving
+          - pytorch
+        status: archived
+        added_at: 2026-03-18
       - name: vLLM
         homepage_url: https://vllm.ai
         repo_url: https://github.com/vllm-project/vllm
@@ -217,8 +237,8 @@ subcategories:
     row: 0
     items:
       - name: DeepSpeed
-        homepage_url: https://deepspeed.ai
-        repo_url: https://github.com/microsoft/DeepSpeed
+        homepage_url: https://www.deepspeed.ai/
+        repo_url: https://github.com/deepspeedai/DeepSpeed
         logo: deepspeed.webp
         description: Deep learning optimization library by Microsoft
         tags:
@@ -240,10 +260,11 @@ subcategories:
         repo_url: https://github.com/horovod/horovod
         logo: horovod.webp
         project: graduated
-        description: Distributed deep learning training framework
+        description: Distributed deep learning training framework (repository archived)
         tags:
           - training
           - distributed
+        status: archived
         added_at: 2026-03-18
       - name: Megatron-LM
         homepage_url: https://github.com/NVIDIA/Megatron-LM
@@ -280,7 +301,8 @@ subcategories:
       - name: Cerebras WSE
         homepage_url: https://cerebras.ai
         logo: cerebras.webp
-        description: Wafer-scale engine for fastest LLM training and inference
+        twitter_url: https://x.com/Cerebras
+        description: Wafer-scale AI processor and CS systems for LLM training and inference
         tags:
           - hardware
           - accelerator
@@ -295,10 +317,22 @@ subcategories:
           - compute
           - nvidia
         added_at: 2026-03-18
+      - name: Etched
+        homepage_url: https://www.etched.com
+        logo: etched.webp
+        twitter_url: https://x.com/Etched
+        description: Chip company co-designing chips, racks, and software for AI inference
+        tags:
+          - hardware
+          - ai-chip
+          - accelerator
+          - inference
+        added_at: 2026-10-09
       - name: Groq LPU
         homepage_url: https://groq.com
         logo: groq.webp
-        description: Language Processing Unit for ultra-fast LLM inference
+        twitter_url: https://x.com/GroqLLC
+        description: Groq's Language Processing Unit chip for low-latency LLM inference
         tags:
           - hardware
           - accelerator
@@ -334,7 +368,6 @@ subcategories:
         description: "Run frontier AI on your own devices by clustering everyday hardware"
         tags: [distributed, edge, inference, oss]
         added_at: 2026-08-07
-
       - name: FastChat
         homepage_url: https://github.com/lm-sys/FastChat
         repo_url: https://github.com/lm-sys/FastChat
@@ -345,15 +378,27 @@ subcategories:
         homepage_url: https://github.com/av/harbor
         repo_url: https://github.com/av/harbor
         logo: gh-av.png
-        description: Effortlessly run LLM backends, APIs, frontends, and services with one command
+        description: CLI to run local LLM backends, APIs, and frontends with one command
         added_at: 2026-03-18
+      - name: Jan
+        homepage_url: https://www.jan.ai
+        repo_url: https://github.com/janhq/jan
+        description: Open-source desktop app for running LLMs locally
+        tags: [inference, llm, oss]
+        added_at: 2026-10-09
+      - name: llamafile
+        homepage_url: https://docs.mozilla.ai/llamafile
+        repo_url: https://github.com/mozilla-ai/llamafile
+        description: Package and run LLMs as a single executable file
+        tags: [inference, llm, oss]
+        added_at: 2026-10-09
       - name: LM Studio
         homepage_url: https://lmstudio.ai/
         logo: lm-studio.webp
         twitter_url: https://x.com/lmstudio
         description: Desktop app for discovering, downloading, and running open-weight LLMs locally
         added_at: 2026-03-18
-      - name: ollama
+      - name: Ollama
         homepage_url: https://ollama.com
         repo_url: https://github.com/ollama/ollama
         logo: ollama.webp

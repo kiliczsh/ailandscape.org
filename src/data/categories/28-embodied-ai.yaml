@@ -8,6 +8,40 @@ subcategories:
   - name: Robot Foundation Models
     row: 0
     items:
+      - name: 1X Redwood
+        homepage_url: https://www.1x.tech/discover/redwood-ai
+        logo: 1x-redwood.webp
+        twitter_url: https://x.com/1x_tech
+        description: Vision-language transformer model for humanoid mobile manipulation
+        tags:
+          - robotics
+          - multimodal
+          - proprietary
+        entity_type: model_family
+        access: proprietary
+        status: active
+        aliases:
+          - Redwood AI
+          - 1X Technologies Redwood
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
+      - name: Figure Helix
+        homepage_url: https://www.figure.ai/news/helix
+        logo: figure-helix.webp
+        twitter_url: https://x.com/figure_robot
+        description: Vision-language-action model for generalist humanoid control
+        tags:
+          - robotics
+          - multimodal
+          - proprietary
+        entity_type: model_family
+        access: proprietary
+        status: active
+        aliases:
+          - Helix
+          - Figure AI Helix
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
       - name: Hugging Face LeRobot
         homepage_url: https://huggingface.co/lerobot
         repo_url: https://github.com/huggingface/lerobot
@@ -25,6 +59,25 @@ subcategories:
           - simulation
           - open-weights
         added_at: 2026-08-07
+      - name: NVIDIA Isaac GR00T
+        homepage_url: https://developer.nvidia.com/isaac/gr00t
+        repo_url: https://github.com/NVIDIA/Isaac-GR00T
+        logo: nvidia.webp
+        description: Robot foundation models and data pipelines for humanoid robotics
+        tags:
+          - robotics
+          - open-weights
+          - nvidia
+        entity_type: model_family
+        access: open_weights
+        status: active
+        aliases:
+          - GR00T
+          - Isaac GR00T
+          - GR00T N1
+          - Groot
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
       - name: Physical Intelligence π0
         homepage_url: https://www.physicalintelligence.company
         repo_url: https://github.com/Physical-Intelligence/openpi
@@ -33,11 +86,52 @@ subcategories:
         tags:
           - robotics
           - open-weights
+        entity_type: model_family
+        access: open_weights
+        status: active
+        aliases:
+          - π0
+          - pi0
+          - π0.5
+          - pi05
+          - π0-FAST
+          - openpi
         added_at: 2026-08-07
+        last_verified_at: 2026-10-09
+      - name: Skild Brain
+        homepage_url: https://www.skild.ai
+        logo: skild-brain.webp
+        twitter_url: https://x.com/SkildAI
+        description: General-purpose robotic foundation model from Skild AI
+        tags:
+          - robotics
+          - proprietary
+        entity_type: model_family
+        access: proprietary
+        status: active
+        aliases:
+          - Skild AI
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
+      - name: Wayve AI Driver
+        homepage_url: https://wayve.ai
+        logo: wayve.webp
+        twitter_url: https://x.com/wayve_ai
+        description: Mapless, vehicle-agnostic AI driving software for automakers
+        tags:
+          - robotics
+          - proprietary
+        entity_type: product
+        access: proprietary
+        status: active
+        aliases:
+          - Wayve
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
       - name: Xiaomi Robotics XR-1
-        homepage_url: https://robotics.xiaomi.com/xiaomi-robotics-1.html
+        homepage_url: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1
         repo_url: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1
-        description: Xiaomi's open-source vision-language-action foundation model for robots
+        description: Xiaomi's vision-language-action foundation model for robots
         tags:
           - robotics
           - multimodal
@@ -58,6 +152,7 @@ subcategories:
       - name: NVIDIA Isaac Lab
         homepage_url: https://developer.nvidia.com/isaac/lab
         repo_url: https://github.com/isaac-sim/IsaacLab
+        logo: nvidia.webp
         description: Open-source framework for robot learning built on Isaac Sim
         tags:
           - robotics
@@ -66,11 +161,13 @@ subcategories:
         added_at: 2026-08-07
       - name: NVIDIA Isaac Sim
         homepage_url: https://developer.nvidia.com/isaac/sim
-        description: NVIDIA's Omniverse robot simulator for testing, training, and synthetic data
+        repo_url: https://github.com/isaac-sim/IsaacSim
+        logo: nvidia.webp
+        description: NVIDIA's robot simulator for testing, training, and synthetic data
         tags:
           - robotics
           - simulation
-          - proprietary
+          - oss
         aliases:
           - Isaac Sim
           - IsaacSim

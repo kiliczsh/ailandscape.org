@@ -3,7 +3,7 @@ group: applications
 color: oklch(0.62 0.20 216)
 icon: Buildings
 intro: >-
-  AI purpose-built for regulated, knowledge-intensive industries: healthcare scribes like Abridge and Nabla, legal AI like Harvey AI and Casetext, finance models like BloombergGPT, and education tutors like Khanmigo. These handle domain compliance and professional workflows, not generic LLM wrapping.
+  AI purpose-built for specific industries and business functions: healthcare scribes like Abridge and Nabla, legal AI like Harvey AI and Spellbook, finance platforms like AlphaSense and Rogo, education tutors like Khanmigo, sales agents like Clay and Gong, and customer support agents like Sierra and Decagon. These handle domain compliance and professional workflows, not generic LLM wrapping.
 subcategories:
   - name: Healthcare
     row: 0
@@ -14,6 +14,21 @@ subcategories:
         description: "AI for automated clinical note generation"
         tags: [healthcare, documentation, proprietary]
         added_at: 2026-03-18
+      - name: Ambience Healthcare
+        homepage_url: https://www.ambiencehealthcare.com
+        logo: ambience-healthcare.webp
+        description: "AI platform for clinical documentation and coding at the point of care"
+        tags: [healthcare, documentation, proprietary]
+        aliases: [Ambience]
+        added_at: 2026-10-09
+      - name: Athelas
+        homepage_url: https://www.athelas.com
+        logo: athelas.webp
+        twitter_url: https://x.com/athelas
+        description: "AI-driven RCM, EHR, and ambient clinical notes platform for practices"
+        tags: [healthcare, documentation, proprietary]
+        aliases: [Athelas Air]
+        added_at: 2026-10-09
       - name: BioMedLM
         homepage_url: https://crfm.stanford.edu/2022/12/15/biomedlm.html
         logo: stanford.webp
@@ -32,15 +47,27 @@ subcategories:
         description: "AI-powered ambient documentation for clinicians"
         tags: [healthcare, documentation, proprietary]
         added_at: 2026-03-18
+      - name: OpenEvidence
+        homepage_url: https://www.openevidence.com
+        description: "Medical knowledge platform for clinicians grounded in peer-reviewed research"
+        tags: [healthcare, knowledge, search, proprietary]
+        added_at: 2026-10-09
   - name: Legal
     row: 0
     items:
       - name: Casetext
         homepage_url: https://casetext.com
         logo: casetext.webp
-        description: "AI legal research assistant acquired by Thomson Reuters"
+        description: "AI legal research assistant, acquired by Thomson Reuters"
         tags: [legal, research, proprietary]
+        status: acquired
         added_at: 2026-03-18
+      - name: EvenUp
+        homepage_url: https://www.evenuplaw.com
+        twitter_url: https://x.com/evenuplaw
+        description: "AI platform automating case work for personal injury law firms"
+        tags: [legal, automation, proprietary]
+        added_at: 2026-10-09
       - name: Harvey AI
         homepage_url: https://harvey.ai
         logo: harvey.webp
@@ -49,14 +76,29 @@ subcategories:
         tags: [legal, llm, proprietary]
         added_at: 2026-03-18
       - name: Lexis+ AI
-        homepage_url: https://lexisnexis.com/en-us/products/lexis-plus-ai.page
+        homepage_url: https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page
         logo: lexisnexis.webp
         description: "LexisNexis AI-powered legal research platform"
         tags: [legal, research, proprietary]
+        aliases: [Lexis+ with Protégé]
         added_at: 2026-03-18
+      - name: Spellbook
+        homepage_url: https://spellbook.com
+        logo: spellbook.webp
+        twitter_url: https://x.com/spellbooklegal
+        description: "AI contract review and drafting assistant for transactional lawyers"
+        tags: [legal, writing, proprietary]
+        added_at: 2026-10-09
   - name: Finance
     row: 0
     items:
+      - name: AlphaSense
+        homepage_url: https://www.alpha-sense.com
+        logo: alphasense.webp
+        twitter_url: https://twitter.com/AlphaSenseInc
+        description: "AI market intelligence and search platform for business and financial research"
+        tags: [finance, search, research, proprietary]
+        added_at: 2026-10-09
       - name: BloombergGPT
         homepage_url: https://bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance
         logo: bloomberg.webp
@@ -71,11 +113,18 @@ subcategories:
         tags: [finance, llm, oss]
         added_at: 2026-03-18
       - name: Kensho
-        homepage_url: https://www.spglobal.com/en/research-insights/market-insights/kensho
+        homepage_url: https://kensho.com
         logo: kensho.webp
         description: "S&P Global's AI analytics for financial intelligence"
         tags: [finance, analytics, proprietary]
         added_at: 2026-03-18
+      - name: Rogo
+        homepage_url: https://rogo.com
+        logo: rogo.webp
+        twitter_url: https://x.com/RogoAI
+        description: "AI platform for finance teams at financial institutions"
+        tags: [finance, analytics, proprietary]
+        added_at: 2026-10-09
   - name: Education
     row: 0
     items:
@@ -97,3 +146,104 @@ subcategories:
         description: "Adaptive AI math tutor for K-12 students"
         tags: [education, math, proprietary]
         added_at: 2026-03-18
+  - name: Sales & GTM
+    row: 0
+    items:
+      - name: 11x
+        homepage_url: https://www.11x.ai
+        logo: 11x.webp
+        twitter_url: https://x.com/11x_official
+        description: "AI digital workers for outbound prospecting and inbound sales calls"
+        tags: [agents, sales, voice, autonomous, proprietary]
+        added_at: 2026-10-09
+      - name: Apollo AI Assistant
+        homepage_url: https://www.apollo.io/ai/assistant
+        logo: apollo-ai-assistant.webp
+        twitter_url: https://x.com/useapolloio
+        description: "Apollo's AI assistant for prospecting, research, and sequence building"
+        tags: [agents, sales, automation, proprietary]
+        added_at: 2026-10-09
+      - name: Artisan
+        homepage_url: https://www.artisan.co
+        logo: artisan.webp
+        twitter_url: https://x.com/GetArtisanAI
+        description: "Outbound sales platform built around an AI BDR agent"
+        tags: [agents, sales, automation, proprietary]
+        added_at: 2026-10-09
+      - name: Clay
+        homepage_url: https://www.clay.com
+        logo: clay.webp
+        description: "GTM data platform with enrichment, AI research agents, and workflow automation"
+        tags: [agents, sales, data, automation, saas, proprietary]
+        added_at: 2026-10-09
+      - name: Gong
+        homepage_url: https://www.gong.io
+        logo: gong.webp
+        twitter_url: https://x.com/gong_io
+        description: "Revenue AI platform for conversation intelligence, forecasting, and agents"
+        tags: [sales, agents, analytics, enterprise, proprietary]
+        added_at: 2026-10-09
+      - name: RoomieAI
+        homepage_url: https://www.commonroom.io/product/roomie-ai/
+        logo: roomieai.webp
+        twitter_url: https://twitter.com/CommonRoomHQ
+        description: "Common Room's AI agents for go-to-market teams built on buyer intelligence"
+        tags: [agents, sales, data, proprietary]
+        aliases: [Common Room RoomieAI]
+        added_at: 2026-10-09
+  - name: Customer Support
+    row: 0
+    items:
+      - name: Ada
+        homepage_url: https://www.ada.cx
+        twitter_url: https://x.com/ada_cx
+        description: "AI agent platform that automates customer service across channels"
+        tags: [agents, automation, enterprise, proprietary]
+        added_at: 2026-10-09
+      - name: Decagon
+        homepage_url: https://decagon.ai
+        logo: decagon.webp
+        twitter_url: https://x.com/DecagonAI
+        description: "Conversational AI agents for enterprise customer support"
+        tags: [agents, enterprise, proprietary]
+        added_at: 2026-10-09
+      - name: Fin
+        homepage_url: https://fin.ai
+        logo: fin.webp
+        twitter_url: https://x.com/fin_ai
+        description: "Intercom's AI customer service agent for chat, email, and voice"
+        tags: [agents, voice, enterprise, proprietary]
+        aliases: [Intercom Fin, Fin AI Agent]
+        added_at: 2026-10-09
+      - name: Forethought
+        homepage_url: https://forethought.ai
+        logo: forethought.webp
+        twitter_url: https://x.com/forethought_ai
+        description: "AI agents that triage and resolve customer support tickets"
+        tags: [agents, automation, proprietary]
+        added_at: 2026-10-09
+      - name: Sierra
+        homepage_url: https://sierra.ai
+        logo: sierra.webp
+        twitter_url: https://x.com/sierraplatform
+        description: "Platform for building conversational AI agents for customer experience"
+        tags: [agents, enterprise, voice, proprietary]
+        added_at: 2026-10-09
+      - name: Zendesk AI
+        homepage_url: https://www.zendesk.com/service/ai/
+        logo: zendesk-ai.webp
+        twitter_url: https://twitter.com/zendesk
+        description: "AI agents, agent copilot, and automation within the Zendesk service platform"
+        tags: [agents, copilot, automation, enterprise, proprietary]
+        added_at: 2026-10-09
+  - name: Life Sciences & Drug Discovery
+    row: 0
+    items:
+      - name: Pharma.AI
+        homepage_url: https://pharma.ai
+        logo: pharma-ai.webp
+        twitter_url: https://x.com/InSilicoMeds
+        description: "Insilico Medicine's generative AI software suite for drug discovery"
+        tags: [healthcare, research, proprietary]
+        aliases: [Insilico Medicine]
+        added_at: 2026-10-09

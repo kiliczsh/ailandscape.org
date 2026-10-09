@@ -26,7 +26,7 @@ subcategories:
         added_at: 2026-03-18
       - name: DVC
         homepage_url: https://dvc.org
-        repo_url: https://github.com/iterative/dvc
+        repo_url: https://github.com/treeverse/dvc
         logo: dvc.webp
         description: Data version control for ML projects
         tags:
@@ -42,7 +42,7 @@ subcategories:
           - automation
         added_at: 2026-03-18
       - name: GitLab CI
-        homepage_url: https://docs.gitlab.com/ee/ci
+        homepage_url: https://docs.gitlab.com/ci/
         logo: gitlab.webp
         description: Integrated CI/CD for ML pipelines in GitLab
         tags:
@@ -71,10 +71,11 @@ subcategories:
         logo: wandb.webp
         crunchbase: https://www.crunchbase.com/organization/weights-biases
         twitter_url: https://x.com/wandb
-        description: Developer tools for ML experiment tracking
+        description: Experiment tracking and model development platform, part of CoreWeave
         tags:
           - experiment-tracking
           - visualization
+        status: acquired
         added_at: 2026-03-18
   - name: Fine-tuning & RLHF
     row: 0
@@ -83,25 +84,35 @@ subcategories:
         homepage_url: https://docs.axolotl.ai
         repo_url: https://github.com/axolotl-ai-cloud/axolotl
         logo: axolotl.webp
-        description: Fine-tuning framework for LLMs supporting LoRA, QLoRA, DeepSpeed, and multi-GPU
+        description: Fine-tuning framework for LLMs with LoRA, QLoRA, and multi-GPU support
+        tags: [training, python, oss]
         added_at: 2026-03-18
+      - name: LlamaFactory
+        homepage_url: https://github.com/hiyouga/LlamaFactory
+        repo_url: https://github.com/hiyouga/LlamaFactory
+        description: Unified fine-tuning framework for hundreds of LLMs
+        tags: [training, python, oss]
+        added_at: 2026-10-09
       - name: OpenRLHF
         homepage_url: https://openrlhf.readthedocs.io/
         repo_url: https://github.com/OpenRLHF/OpenRLHF
-        description: Scalable RLHF framework supporting 70B+ PPO full tuning, iterative DPO, and LoRA
+        description: Scalable RLHF framework with PPO, iterative DPO, and LoRA support
+        tags: [training, reinforcement-learning, oss]
         added_at: 2026-03-18
       - name: TRL
         homepage_url: http://hf.co/docs/trl
         repo_url: https://github.com/huggingface/trl
         logo: trl.webp
-        description: Library for training transformer LMs with RLHF, SFT, reward modeling, and PPO
+        description: Library for training transformer LMs with SFT, RLHF, and reward modeling
+        tags: [training, reinforcement-learning, transformers]
         added_at: 2026-03-18
       - name: unsloth
         homepage_url: https://unsloth.ai/docs
         repo_url: https://github.com/unslothai/unsloth
         logo: unsloth.webp
         twitter_url: https://x.com/UnslothAI
-        description: 2-5x faster LLM fine-tuning with 70% less memory
+        description: Faster, lower-memory LLM fine-tuning library
+        tags: [training, optimization, oss]
         added_at: 2026-03-18
   - name: Pipeline Orchestration
     row: 0
@@ -109,12 +120,20 @@ subcategories:
       - name: Apache Airflow
         homepage_url: https://airflow.apache.org
         repo_url: https://github.com/apache/airflow
+        logo: apache-airflow.webp
         project: graduated
         description: Workflow automation and scheduling platform
         tags:
           - orchestration
           - scheduling
         added_at: 2026-03-18
+      - name: Dagster
+        homepage_url: https://dagster.io
+        repo_url: https://github.com/dagster-io/dagster
+        description: Data orchestration platform for assets and pipelines, part of Prefect
+        tags: [orchestration, python, oss]
+        status: acquired
+        added_at: 2026-10-09
       - name: Kubeflow
         homepage_url: https://kubeflow.org
         repo_url: https://github.com/kubeflow/kubeflow
@@ -125,6 +144,12 @@ subcategories:
           - orchestration
           - kubernetes
         added_at: 2026-03-18
+      - name: Metaflow
+        homepage_url: https://metaflow.org
+        repo_url: https://github.com/Netflix/metaflow
+        description: Python framework for building and managing ML and AI systems
+        tags: [mlops, python, orchestration, oss]
+        added_at: 2026-10-09
       - name: Prefect
         homepage_url: https://prefect.io
         repo_url: https://github.com/PrefectHQ/prefect
@@ -189,7 +214,7 @@ subcategories:
           - enterprise
         added_at: 2026-03-18
       - name: Vertex Feature Store
-        homepage_url: https://cloud.google.com/vertex-ai/docs/featurestore
+        homepage_url: https://docs.cloud.google.com/vertex-ai/docs/featurestore
         logo: google-cloud.webp
         description: Google Cloud's managed feature store for ML
         tags:
@@ -204,10 +229,11 @@ subcategories:
         homepage_url: http://accord-framework.net
         repo_url: https://github.com/accord-net/framework
         logo: accord-net.webp
-        description: .NET machine learning framework
+        description: .NET machine learning framework (archived)
         tags:
           - classical-ml
           - dotnet
+        status: archived
         added_at: 2026-03-18
       - name: Alink
         homepage_url: https://github.com/alibaba/Alink
@@ -292,8 +318,8 @@ subcategories:
           - nlp
         added_at: 2026-03-18
       - name: JAX
-        homepage_url: https://jax.readthedocs.io
-        repo_url: https://github.com/google/jax
+        homepage_url: https://docs.jax.dev/en/latest/
+        repo_url: https://github.com/jax-ml/jax
         description: Google's composable function transformations for ML
         tags:
           - deep-learning
@@ -311,8 +337,8 @@ subcategories:
         added_at: 2026-03-18
       - name: LightGBM
         homepage_url: https://lightgbm.readthedocs.io
-        repo_url: https://github.com/microsoft/LightGBM
-        description: Fast gradient boosting framework by Microsoft
+        repo_url: https://github.com/lightgbm-org/LightGBM
+        description: Fast gradient boosting framework
         tags:
           - classical-ml
           - gradient-boosting

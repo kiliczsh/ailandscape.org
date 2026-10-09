@@ -9,6 +9,7 @@ interface SearchInputProps {
   onChange: (value: string) => void;
   className?: string;
   autoFocus?: boolean;
+  onFocus?: () => void;
 }
 
 export function SearchInput({
@@ -16,6 +17,7 @@ export function SearchInput({
   onChange,
   className,
   autoFocus,
+  onFocus,
 }: SearchInputProps) {
   const [localValue, setLocalValue] = useState(value);
   const syncedRef = useRef(value);
@@ -30,6 +32,16 @@ export function SearchInput({
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const v = e.target.value;
+    setLocalValue(v);
+    syncedRef.current = v;
+    // IME (Chinese/Japanese/Korean): wait for the committed text instead of
+    // propagating intermediate pinyin/kana keystrokes
+    if ((e.nativeEvent as InputEvent).isComposing) return;
+    onChange(v);
+  }
+
+  function handleCompositionEnd(e: React.CompositionEvent<HTMLInputElement>) {
+    const v = e.currentTarget.value;
     setLocalValue(v);
     syncedRef.current = v;
     onChange(v);
@@ -52,6 +64,8 @@ export function SearchInput({
         type="search"
         value={localValue}
         onChange={handleChange}
+        onCompositionEnd={handleCompositionEnd}
+        onFocus={onFocus}
         placeholder="Search tools..."
         aria-label="Search tools"
         // biome-ignore lint/a11y/noAutofocus: intentional for mobile search overlay

@@ -8,6 +8,17 @@ subcategories:
   - name: MCP Servers & Registries
     row: 0
     items:
+      - name: Arcade
+        homepage_url: https://www.arcade.dev
+        repo_url: https://github.com/ArcadeAI/arcade-mcp
+        logo: arcade.webp
+        twitter_url: https://x.com/TryArcade
+        description: Runtime for authorizing, executing, and governing AI agent tool calls
+        tags: [agents, protocol, api, security]
+        entity_type: product
+        aliases: [Arcade AI, Arcade.dev]
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
       - name: Composio
         homepage_url: https://composio.dev
         repo_url: https://github.com/ComposioHQ/composio
@@ -18,6 +29,15 @@ subcategories:
           - agents
           - api
         added_at: 2026-08-07
+      - name: Excel MCP Server
+        homepage_url: https://github.com/haris-musa/excel-mcp-server
+        repo_url: https://github.com/haris-musa/excel-mcp-server
+        description: MCP server for reading and editing Excel files without Excel installed
+        tags:
+          - protocol
+          - office
+          - document-processing
+        added_at: 2026-03-21
       - name: Glama
         homepage_url: https://glama.ai/mcp/servers
         description: Directory and gateway for MCP servers
@@ -27,11 +47,31 @@ subcategories:
         added_at: 2026-08-07
       - name: MCP
         homepage_url: https://modelcontextprotocol.io
-        repo_url: https://github.com/modelcontextprotocol/specification
+        repo_url: https://github.com/modelcontextprotocol/modelcontextprotocol
         logo: anthropic.webp
         description: "Model Context Protocol by Anthropic for tool and data access"
         tags: [protocol, context, anthropic]
         added_at: 2026-03-18
+      - name: Merge Agent Handler
+        homepage_url: https://www.merge.dev/merge-agent-handler
+        logo: merge-agent-handler.webp
+        twitter_url: https://x.com/merge_api
+        description: Merge platform connecting AI agents to third-party tools over MCP
+        tags: [agents, protocol, connectors, enterprise]
+        entity_type: product
+        access: proprietary
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
+      - name: Nango
+        homepage_url: https://nango.dev
+        repo_url: https://github.com/NangoHQ/nango
+        logo: nango.webp
+        twitter_url: https://x.com/NangoHQ
+        description: Integration platform connecting products and AI agents to external APIs
+        tags: [api, connectors, agents]
+        entity_type: product
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
       - name: Smithery
         homepage_url: https://smithery.ai
         description: Registry for discovering and deploying MCP servers
@@ -43,8 +83,8 @@ subcategories:
     row: 0
     items:
       - name: A2A
-        homepage_url: https://github.com/google/A2A
-        repo_url: https://github.com/google/A2A
+        homepage_url: https://github.com/a2aproject/A2A
+        repo_url: https://github.com/a2aproject/A2A
         logo: google-cloud.webp
         description: "Agent-to-Agent protocol by Google for multi-agent interop"
         tags: [protocol, agents, google]
@@ -55,6 +95,15 @@ subcategories:
         description: "Agent Communication Protocol by IBM/BeeAI"
         tags: [protocol, agents, ibm]
         added_at: 2026-03-18
+      - name: Agentic Commerce Protocol
+        homepage_url: https://www.agenticcommerce.dev
+        repo_url: https://github.com/agentic-commerce-protocol/agentic-commerce-protocol
+        description: Open standard by Stripe and OpenAI for agent-driven checkout flows
+        tags: [protocol, agents, openai, oss]
+        entity_type: protocol
+        access: open_source
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
       - name: AGENTS.md
         homepage_url: https://agents.md
         repo_url: https://github.com/agentsmd/agents.md
@@ -78,3 +127,47 @@ subcategories:
         description: Google Cloud's open-source Agent Payments Protocol for AI agent transactions
         tags: [protocol, agents]
         added_at: 2026-03-18
+      - name: Trusted Agent Protocol
+        homepage_url: https://developer.visa.com/capabilities/trusted-agent-protocol
+        repo_url: https://github.com/visa/trusted-agent-protocol
+        description: Visa specification letting merchants verify trusted AI shopping agents
+        tags: [protocol, agents, security]
+        entity_type: protocol
+        aliases: [Visa TAP]
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
+  - name: Agentic Payments
+    row: 0
+    items:
+      - name: Nevermined
+        homepage_url: https://nevermined.ai
+        logo: nevermined.webp
+        description: Payments infrastructure for AI agents to meter usage and settle charges
+        tags: [agents, api, finance]
+        entity_type: product
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
+      - name: Skyfire
+        homepage_url: https://skyfire.xyz
+        description: Identity and payment tooling for AI agents to log in and check out
+        tags: [agents, api, finance]
+        entity_type: product
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
+      - name: Stripe Agentic Commerce Suite
+        homepage_url: https://stripe.com/use-cases/agentic-commerce
+        logo: stripe-agentic-commerce-suite.webp
+        description: Stripe suite for accepting agentic payments and selling via AI agents
+        tags: [agents, api, finance]
+        entity_type: product
+        access: proprietary
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09
+      - name: Visa Intelligent Commerce
+        homepage_url: https://www.visa.com/en-us/solutions/intelligent-commerce
+        description: Visa program enabling AI agents to make card payments for consumers
+        tags: [agents, finance]
+        entity_type: product
+        access: proprietary
+        added_at: 2026-10-09
+        last_verified_at: 2026-10-09

@@ -4,7 +4,8 @@ import { CategoryDirectory } from "@/components/landscape/category-directory";
 import { LandscapeView } from "@/components/landscape/landscape-view";
 import { RecentlyAdded } from "@/components/landscape/recently-added";
 import { getLandscapeData, getRecentlyAdded } from "@/data/landscape";
-import { ZH_CATEGORIES, ZH_UI } from "@/lib/i18n/zh";
+import { ZH_CATEGORIES, ZH_UI, zhHomeCopy } from "@/lib/i18n/zh";
+import { getSiteStats } from "@/lib/site-stats";
 import type { LandscapeData } from "@/types/landscape";
 
 const BASE_URL = "https://ailandscape.org";
@@ -18,9 +19,10 @@ function countTools(data: LandscapeData): number {
 }
 
 export function generateMetadata(): Metadata {
+  const copy = zhHomeCopy(getSiteStats());
   return {
-    title: ZH_UI.homeTitle,
-    description: ZH_UI.homeDescription,
+    title: copy.title,
+    description: copy.description,
     alternates: {
       canonical: `${BASE_URL}/zh`,
       languages: {
@@ -30,16 +32,16 @@ export function generateMetadata(): Metadata {
       },
     },
     openGraph: {
-      title: ZH_UI.homeTitle,
-      description: ZH_UI.homeDescription,
+      title: copy.title,
+      description: copy.description,
       url: `${BASE_URL}/zh`,
       type: "website",
       locale: "zh_CN",
     },
     twitter: {
       card: "summary_large_image",
-      title: ZH_UI.homeTitle,
-      description: ZH_UI.homeDescription,
+      title: copy.title,
+      description: copy.description,
     },
   };
 }

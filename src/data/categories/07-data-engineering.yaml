@@ -60,7 +60,7 @@ subcategories:
         added_at: 2026-03-18
       - name: dbt
         homepage_url: https://getdbt.com
-        repo_url: https://github.com/dbt-labs/dbt-core
+        repo_url: https://github.com/dbt-labs/dbt
         logo: dbt.webp
         description: Data transformation tool for analytics engineers
         tags:
@@ -124,10 +124,11 @@ subcategories:
       - name: Stitch
         homepage_url: https://stitchdata.com
         logo: stitch.webp
-        description: Simple, extensible ETL platform
+        description: Cloud ETL platform, now part of Qlik
         tags:
           - ingestion
           - etl
+        status: acquired
         added_at: 2026-03-18
   - name: Data Lakehouse
     row: 0
@@ -172,14 +173,15 @@ subcategories:
           - enterprise
         added_at: 2026-03-18
       - name: Amundsen
-        homepage_url: https://www.amundsen.io
+        homepage_url: https://github.com/amundsen-io/amundsen
         repo_url: https://github.com/amundsen-io/amundsen
         logo: amundsen.webp
-        description: Data discovery and metadata engine by Lyft
+        description: Archived data discovery and metadata engine originally built at Lyft
         tags:
           - catalog
           - discovery
           - oss
+        status: archived
         added_at: 2026-03-18
       - name: Apache Atlas
         homepage_url: https://atlas.apache.org
@@ -240,7 +242,7 @@ subcategories:
         added_at: 2026-03-18
       - name: YData
         homepage_url: https://ydata.ai
-        repo_url: https://github.com/ydataai/ydata-synthetic
+        repo_url: https://github.com/Data-Centric-AI-Community/fg-data-synthetic
         logo: ydata.webp
         description: Synthetic data generation for ML and testing
         tags:

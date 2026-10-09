@@ -11,6 +11,7 @@ subcategories:
       - name: Agent QA
         homepage_url: https://github.com/vostride/agent-qa
         repo_url: https://github.com/vostride/agent-qa
+        logo: agent-qa.webp
         description: Natural-language QA for web and mobile apps through CLI and MCP
         tags: [agents, browser, automation, testing, mobile]
         added_at: 2026-08-17
@@ -24,6 +25,7 @@ subcategories:
       - name: Browserbase
         homepage_url: https://www.browserbase.com
         repo_url: https://github.com/browserbase/stagehand
+        logo: browserbase.webp
         description: Headless browser infrastructure and Stagehand framework for AI agents
         tags:
           - agents
@@ -32,6 +34,7 @@ subcategories:
         added_at: 2026-08-07
       - name: Hyperbrowser
         homepage_url: https://hyperbrowser.ai
+        logo: hyperbrowser.webp
         description: Scalable headless browser platform for AI agents
         tags:
           - agents
@@ -42,7 +45,7 @@ subcategories:
         homepage_url: https://magine.cloud
         repo_url: https://github.com/S4nfs/Magine
         logo: magine.webp
-        description: "Vision-enabled AI agents (SDAs) that autonomously browse the web using real-time screen capture and MoE planning"
+        description: "Agent orchestration companion with SDA templates and AI code analysis"
         tags: [agents, browser, automation, vision]
         added_at: 2026-04-03
       - name: Playwright Agent
@@ -55,6 +58,7 @@ subcategories:
       - name: Skyvern
         homepage_url: https://www.skyvern.com
         repo_url: https://github.com/Skyvern-AI/skyvern
+        logo: skyvern.webp
         description: Automate browser workflows with LLMs and computer vision
         tags:
           - agents
@@ -73,13 +77,14 @@ subcategories:
     row: 0
     items:
       - name: Computer Use (Anthropic)
-        homepage_url: https://www.anthropic.com/news/3-5-models-and-computer-use
+        homepage_url: https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool
         logo: anthropic.webp
-        description: "Claude's ability to control computers like a human"
+        description: "Claude tool for controlling a desktop via screenshots, mouse, and keyboard"
         tags: [agents, computer-use, automation]
         added_at: 2026-03-18
       - name: Manus
         homepage_url: https://manus.im
+        logo: manus.webp
         twitter_url: https://x.com/ManusAI
         description: "General AI agent that plans and executes real-world tasks end to end"
         tags: [agents, autonomous, computer-use, proprietary]
@@ -87,6 +92,7 @@ subcategories:
 
       - name: OpenAI Operator
         homepage_url: https://openai.com/index/introducing-operator/
+        logo: openai.webp
         description: OpenAI's agent that uses its own browser to perform tasks
         tags:
           - agents
@@ -99,6 +105,7 @@ subcategories:
       - name: Apify
         homepage_url: https://apify.com
         repo_url: https://github.com/apify/crawlee
+        logo: apify.webp
         description: Full-stack web scraping and browser automation platform
         tags:
           - browser
@@ -114,8 +121,8 @@ subcategories:
           - oss
         added_at: 2026-08-07
       - name: Firecrawl
-        homepage_url: https://firecrawl.dev/
-        repo_url: https://github.com/mendableai/firecrawl
+        homepage_url: https://www.firecrawl.dev
+        repo_url: https://github.com/firecrawl/firecrawl
         logo: firecrawl.webp
         description: "Turn any website into clean, LLM-ready markdown for RAG pipelines and agents"
         added_at: 2026-03-18

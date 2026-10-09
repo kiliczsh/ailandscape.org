@@ -10,6 +10,7 @@ subcategories:
     items:
       - name: Anyword
         homepage_url: https://anyword.com
+        logo: anyword.webp
         description: AI copywriting platform with predictive performance scoring for marketing teams
         tags:
           - copywriting
@@ -18,6 +19,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Copy.ai
         homepage_url: https://www.copy.ai
+        logo: copy-ai.webp
         description: AI-powered marketing copy and sales content generation platform
         tags:
           - copywriting
@@ -26,6 +28,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Jasper
         homepage_url: https://www.jasper.ai
+        logo: jasper.webp
         description: AI marketing copilot for brand-consistent content at scale
         tags:
           - copywriting
@@ -34,6 +37,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Writesonic
         homepage_url: https://writesonic.com
+        logo: writesonic.webp
         twitter_url: https://x.com/WriteSonic
         description: AI writing assistant for SEO-optimized blog posts, ads, and marketing copy
         tags:
@@ -46,6 +50,7 @@ subcategories:
     items:
       - name: Lex
         homepage_url: https://lex.page
+        logo: lex.webp
         description: AI-powered writing editor designed for long-form articles and essays
         tags:
           - writing
@@ -53,7 +58,8 @@ subcategories:
           - proprietary
         added_at: 2026-03-18
       - name: Notion AI
-        homepage_url: https://www.notion.so/product/ai
+        homepage_url: https://www.notion.com/product/ai
+        logo: notion-ai.webp
         description: AI writing and knowledge assistant built into the Notion workspace
         tags:
           - writing
@@ -62,8 +68,9 @@ subcategories:
         added_at: 2026-03-30
       - name: Sudowrite
         homepage_url: https://www.sudowrite.com
+        logo: sudowrite.webp
         twitter_url: https://x.com/sudowrite
-        description: AI writing partner for fiction authors — brainstorm, expand, and rewrite stories
+        description: AI writing partner for fiction authors to brainstorm and rewrite stories
         tags:
           - writing
           - fiction
@@ -71,6 +78,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Writer
         homepage_url: https://writer.com
+        logo: writer.webp
         description: Enterprise AI writing platform with brand voice and compliance controls
         tags:
           - writing
@@ -81,15 +89,20 @@ subcategories:
     row: 0
     items:
       - name: Flowrite
-        homepage_url: https://www.flowrite.com
-        description: Turn brief instructions into ready-to-send emails and messages
+        homepage_url: https://www.maestrolabs.com/flowrite
+        logo: flowrite.webp
+        description: AI email writing assistant, now offered as MailMaestro
         tags:
           - email
           - productivity
           - proprietary
+        status: rebranded
+        aliases:
+          - MailMaestro
         added_at: 2026-03-30
       - name: Lavender
         homepage_url: https://www.lavender.ai
+        logo: lavender.webp
         description: AI email coaching and writing assistant for sales teams
         tags:
           - email
@@ -98,6 +111,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Superhuman AI
         homepage_url: https://superhuman.com
+        logo: superhuman-ai.webp
         description: AI-powered email client with instant reply drafting and summarization
         tags:
           - email
@@ -109,6 +123,7 @@ subcategories:
     items:
       - name: Beautiful.ai
         homepage_url: https://www.beautiful.ai
+        logo: beautiful-ai.webp
         description: Smart presentation software with AI-driven design and formatting
         tags:
           - presentations
@@ -125,6 +140,7 @@ subcategories:
         added_at: 2026-03-30
       - name: Napkin AI
         homepage_url: https://napkin.ai
+        logo: napkin-ai.webp
         twitter_url: https://x.com/napkin_ai
         description: "Turns text into diagrams and visuals for docs and presentations"
         tags: [visualization, presentations, generation]

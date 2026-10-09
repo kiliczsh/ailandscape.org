@@ -11,19 +11,30 @@ subcategories:
       - name: AgentOps
         homepage_url: https://agentops.ai
         repo_url: https://github.com/AgentOps-AI/agentops
+        logo: agentops.webp
         twitter_url: https://x.com/AgentOpsAI
         description: "Observability and debugging platform purpose-built for AI agents"
         tags: [agents, observability, tracing, monitoring]
         added_at: 2026-08-07
 
       - name: Helicone
-        homepage_url: https://helicone.ai
+        homepage_url: https://www.helicone.ai
         repo_url: https://github.com/Helicone/helicone
         logo: helicone.webp
         twitter_url: https://x.com/helicone_ai
         description: "Open-source LLM observability and proxy"
         tags: [observability, llm, proxy, oss]
+        status: maintenance
         added_at: 2026-03-18
+      - name: Laminar
+        homepage_url: https://laminar.sh
+        repo_url: https://github.com/lmnr-ai/lmnr
+        logo: laminar.webp
+        description: "Open-source platform to trace, evaluate, and debug AI agents"
+        tags: [agents, observability, tracing, oss]
+        entity_type: product
+        access: open_source
+        added_at: 2026-10-09
       - name: Langfuse
         homepage_url: https://langfuse.com
         repo_url: https://github.com/langfuse/langfuse
@@ -40,7 +51,7 @@ subcategories:
         tags: [observability, llm, evaluation, oss]
         added_at: 2026-03-18
       - name: Phoenix (Arize)
-        homepage_url: https://phoenix.arize.com
+        homepage_url: https://arize.com/phoenix/
         repo_url: https://github.com/Arize-ai/phoenix
         logo: arize.webp
         description: "Open-source AI observability and evaluation platform"
@@ -52,6 +63,7 @@ subcategories:
         logo: traceloop.webp
         description: "OpenTelemetry-based LLM observability"
         tags: [observability, llm, opentelemetry]
+        status: acquired
         added_at: 2026-03-18
   - name: Model Monitoring
     row: 0
@@ -81,8 +93,9 @@ subcategories:
         homepage_url: https://whylabs.ai
         repo_url: https://github.com/whylabs/whylogs
         logo: whylabs.webp
-        description: "AI observability and data monitoring"
+        description: "Discontinued AI observability platform; platform and whylogs open sourced"
         tags: [monitoring, data-logging]
+        status: archived
         added_at: 2026-03-18
   - name: LLM Evaluation & Benchmarking
     row: 0
@@ -136,7 +149,7 @@ subcategories:
         added_at: 2026-03-18
       - name: Ragas
         homepage_url: https://ragas.io
-        repo_url: https://github.com/explodinggradients/ragas
+        repo_url: https://github.com/vibrantlabsai/ragas
         logo: ragas.webp
         twitter_url: https://x.com/ragas_io
         description: "Evaluation framework for RAG pipelines"
@@ -147,7 +160,7 @@ subcategories:
     items:
       - name: Captum
         homepage_url: https://captum.ai
-        repo_url: https://github.com/pytorch/captum
+        repo_url: https://github.com/meta-pytorch/captum
         logo: pytorch.webp
         description: "Model interpretability library for PyTorch"
         tags: [explainability, xai, pytorch]
@@ -175,6 +188,7 @@ subcategories:
       - name: SHAP
         homepage_url: https://shap.readthedocs.io
         repo_url: https://github.com/shap/shap
+        logo: shap.webp
         description: "Game theoretic approach to explain ML model outputs"
         tags: [explainability, xai]
         added_at: 2026-03-18
@@ -201,6 +215,7 @@ subcategories:
         logo: promptfoo.webp
         description: "Test, evaluate, and red-team LLM prompts"
         tags: [prompt-engineering, evaluation, oss]
+        status: acquired
         added_at: 2026-03-18
       - name: PromptLayer
         homepage_url: https://promptlayer.com
