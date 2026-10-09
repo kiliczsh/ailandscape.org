@@ -21,51 +21,54 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const stats = getSiteStats();
-const SEO_TITLE = `AI Tools Landscape — ${stats.label} Models, Agents & AI Tools`;
-const SEO_DESCRIPTION = `Explore ${stats.label} AI tools, models, agents, and infrastructure across ${stats.categories} categories. Compare options, filter by tags, and discover the AI ecosystem.`;
-
-export const metadata: Metadata = {
-  metadataBase: new URL("https://ailandscape.org"),
-  verification: {
-    google: "kkgUYOfGT0s-Qf25fo18UEK-a_zkjPUy3ISJc8aTuSw",
-    other: {
-      "google-adsense-account": "ca-pub-8397851036658136",
+// Computed per request so dev YAML edits show up in the SEO counts
+export function generateMetadata(): Metadata {
+  const stats = getSiteStats();
+  const SEO_TITLE = `AI Tools Landscape — ${stats.label} Models, Agents & AI Tools`;
+  const SEO_DESCRIPTION = `Explore ${stats.label} AI tools, models, agents, and infrastructure across ${stats.categories} categories. Compare options, filter by tags, and discover the AI ecosystem.`;
+  return {
+    metadataBase: new URL("https://ailandscape.org"),
+    verification: {
+      google: "kkgUYOfGT0s-Qf25fo18UEK-a_zkjPUy3ISJc8aTuSw",
+      other: {
+        "google-adsense-account": "ca-pub-8397851036658136",
+      },
     },
-  },
-  title: SEO_TITLE,
-  description: SEO_DESCRIPTION,
-  alternates: {
-    canonical: "https://ailandscape.org",
-    types: {
-      "application/rss+xml": [
-        { url: "/feed.xml", title: "AI Landscape — Recently Added" },
-      ],
-    },
-  },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
-  openGraph: {
     title: SEO_TITLE,
     description: SEO_DESCRIPTION,
-    type: "website",
-    url: "https://ailandscape.org",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SEO_TITLE,
-    description: SEO_DESCRIPTION,
-    site: "@ailandscape",
-  },
-};
+    alternates: {
+      canonical: "https://ailandscape.org",
+      types: {
+        "application/rss+xml": [
+          { url: "/feed.xml", title: "AI Landscape — Recently Added" },
+        ],
+      },
+    },
+    icons: {
+      icon: "/favicon.svg",
+      shortcut: "/favicon.svg",
+    },
+    openGraph: {
+      title: SEO_TITLE,
+      description: SEO_DESCRIPTION,
+      type: "website",
+      url: "https://ailandscape.org",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: SEO_TITLE,
+      description: SEO_DESCRIPTION,
+      site: "@ailandscape",
+    },
+  };
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const stats = getSiteStats();
   return (
     <html
       lang="en"
