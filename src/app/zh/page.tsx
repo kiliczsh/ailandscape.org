@@ -6,17 +6,8 @@ import { RecentlyAdded } from "@/components/landscape/recently-added";
 import { getLandscapeData, getRecentlyAdded } from "@/data/landscape";
 import { ZH_CATEGORIES, ZH_UI, zhHomeCopy } from "@/lib/i18n/zh";
 import { getSiteStats } from "@/lib/site-stats";
-import type { LandscapeData } from "@/types/landscape";
 
 const BASE_URL = "https://ailandscape.org";
-
-function countTools(data: LandscapeData): number {
-  return data.landscape.reduce(
-    (sum, cat) =>
-      sum + cat.subcategories.reduce((s, sub) => s + sub.items.length, 0),
-    0,
-  );
-}
 
 export function generateMetadata(): Metadata {
   const copy = zhHomeCopy(getSiteStats());
@@ -52,7 +43,7 @@ const ZH_LABELS = Object.fromEntries(
 
 export default function ZhHome() {
   const data = getLandscapeData();
-  const total = countTools(data);
+  const { total } = getSiteStats();
   const recent = getRecentlyAdded(data, 6);
 
   return (

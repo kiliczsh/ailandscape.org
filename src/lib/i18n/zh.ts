@@ -24,7 +24,6 @@ export function zhHomeCopy(stats: { rounded: number; categories: number }) {
   return {
     title: `AI 全景图 — ${stats.rounded}+ AI 工具的交互式地图`,
     description: `在一张交互式地图上探索 ${count} AI 工具——大模型、智能体、基础设施与应用，按类别浏览、按标签筛选。`,
-    intro: `AI Landscape 是一张覆盖整个 AI 生态的开源全景图：前沿实验室、基础模型、推理与算力、智能体框架、编程助手等 ${stats.categories} 个类别、${count}工具。点击任意类别查看详情。`,
   };
 }
 
