@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   CommandDialog,
@@ -11,6 +11,8 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import { trackEvent } from "@/lib/analytics";
+import { useLocale } from "@/lib/i18n/use-locale";
+import { ZH_CATEGORIES } from "@/lib/i18n/zh";
 import {
   closeSearch,
   openSearch,
@@ -90,11 +92,16 @@ function fuzzyScore(
   }
 
   // 1b. Exact substring on an alias (works for CJK: plain indexOf, no ASCII folding)
+  let aliasScore = 0;
   for (const alias of aliasesLower) {
     const idx = alias.indexOf(search);
-    if (idx === 0) return 92;
-    if (idx > 0) return 85;
+    if (idx === 0) {
+      aliasScore = 92;
+      break;
+    }
+    if (idx > 0) aliasScore = 85;
   }
+  if (aliasScore) return aliasScore;
 
   // 2. Fuzzy match on item name only
   const nameScore = fuzzyWalk(nameLower, search);
@@ -154,18 +161,21 @@ const MAX_CATEGORIES = 5;
 export function CommandPalette() {
   const { open, query: search } = useSearchState();
   const router = useRouter();
-  const pathname = usePathname();
-  const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
+  const { isZh, prefix, categoryLabel } = useLocale();
   const [index, setIndex] = useState<SearchIndex | null>(null);
+  const [loadFailed, setLoadFailed] = useState(false);
 
   useEffect(() => {
     if (!open || index) return;
+    setLoadFailed(false);
     let cancelled = false;
     loadSearchIndex()
       .then((idx) => {
         if (!cancelled) setIndex(idx);
       })
-      .catch(() => {});
+      .catch(() => {
+        if (!cancelled) setLoadFailed(true);
+      });
     return () => {
       cancelled = true;
     };
@@ -224,9 +234,13 @@ export function CommandPalette() {
   const categoryMatches = useMemo(() => {
     if (!index || lowerSearch.length < 2) return [];
     return index.categories
-      .filter((name) => name.toLowerCase().includes(lowerSearch))
+      .filter(
+        (name) =>
+          name.toLowerCase().includes(lowerSearch) ||
+          (isZh && ZH_CATEGORIES[name]?.name.includes(lowerSearch)),
+      )
       .slice(0, MAX_CATEGORIES);
-  }, [index, lowerSearch]);
+  }, [index, lowerSearch, isZh]);
 
   // Group results by category for display
   const grouped = useMemo(() => {
@@ -245,7 +259,11 @@ export function CommandPalette() {
   // Track settled palette queries (grid search tracks its own, without source)
   const lastTrackedRef = useRef("");
   useEffect(() => {
-    if (!open || !index || lowerSearch.length < 2) return;
+    if (!open) {
+      lastTrackedRef.current = "";
+      return;
+    }
+    if (!index || lowerSearch.length < 2) return;
     if (lowerSearch === lastTrackedRef.current) return;
     const t = setTimeout(() => {
       lastTrackedRef.current = lowerSearch;
@@ -274,7 +292,7 @@ export function CommandPalette() {
       search_term: search.trim(),
     });
     closeSearch();
-    router.push(`${isZh ? "/zh" : ""}/category/${toSlug(name)}`);
+    router.push(`${prefix}/category/${toSlug(name)}`);
   }
 
   // Disable cmdk's built-in filter — we handle it ourselves
@@ -295,9 +313,15 @@ export function CommandPalette() {
         onValueChange={setSearchQuery}
       />
       <CommandList>
-        <CommandEmpty>{index ? "No results found." : "Loading…"}</CommandEmpty>
+        <CommandEmpty>
+          {index
+            ? "No results found."
+            : loadFailed
+              ? "Couldn't load search. Close and reopen to retry."
+              : "Loading…"}
+        </CommandEmpty>
         {[...grouped.entries()].map(([category, items]) => (
-          <CommandGroup key={category} heading={category}>
+          <CommandGroup key={category} heading={categoryLabel(category)}>
             {items.map((entry) => (
               <CommandItem
                 key={`${entry.category}-${entry.subcategory}-${entry.name}`}
@@ -327,7 +351,7 @@ export function CommandPalette() {
                 onSelect={() => handleCategorySelect(name)}
                 className="cursor-pointer"
               >
-                <span className="font-medium">{name}</span>
+                <span className="font-medium">{categoryLabel(name)}</span>
                 <span className="ml-auto text-muted-foreground">Category</span>
               </CommandItem>
             ))}
