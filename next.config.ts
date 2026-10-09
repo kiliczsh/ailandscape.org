@@ -74,11 +74,18 @@ const nextConfig: NextConfig = {
           permanent: true,
         },
       ]),
-      ...["audioldm-2", "styletts2"].map((from) => ({
-        source: `/tool/${from}`,
-        destination: "/category/foundation-models",
-        permanent: true,
-      })),
+      ...["audioldm-2", "styletts2"].flatMap((from) => [
+        {
+          source: `/tool/${from}`,
+          destination: "/category/foundation-models",
+          permanent: true,
+        },
+        {
+          source: `/tool/${from}.md`,
+          destination: "/category/foundation-models.md",
+          permanent: true,
+        },
+      ]),
     ];
   },
   // Machine-readable markdown twins: /tool/x.md and /category/x.md serve the
